@@ -1,0 +1,242 @@
+FILE: 04_Wireless_CC_Theory_Practice.pdf
+PAGES: 7
+TITLE: 
+
+ABSTRACT/FRONT:
+1
+Wireless Channel Charting:
+Theory, Practice, and Applications
+Paul Ferrand, Senior Member , IEEE, Maxime Guillaud, Senior Member , IEEE,
+Christoph Studer, Senior Member , IEEE, Olav Tirkkonen, Fellow, IEEE
+Abstract—Channel charting is a recently proposed framework
+that applies dimensionality reduction to channel state information
+(CSI) in wireless systems with the goal of associating a pseudo-
+position to each mobile user in a low-dimensional space: the
+channel chart . Channel charting summarizes the entire CSI
+dataset in a self-supervised manner, which opens up a range
+of applications that are tied to user location. In this article,
+we introduce the theoretical underpinnings of channel charting
+and present an overview of recent algorithmic developments and
+experimental results obtained in the ﬁeld. We furthermore discuss
+concrete application examples of channel charting to network-
+and user-related applications, and we provide a perspective on
+future developments and challenges as well as the role of channel
+charting in next-generation wireless networks.
+I. I NTRODUCTION
+M
+ODERN wireless communications systems rely on
+ever-increasing bandwidth and number of antennas
+to enable better service. This trend results in a growing
+number of parameters required to represent the state of the
+wireless channel, even though channel modeling studies have
+demonstrated that the wireless channel can be characterized by
+a comparatively small set of parameters, such as the locations
+of antennas and environmental scatterers.
+Communication protocols and applications increasingly rely
+on knowledge about the geographical location of the user
+equipments (UEs) to support high-level network functions,
+such as handover between base stations and proximity de-
+tection [1]. Location-based services are expected to bring a
+signiﬁcant part of the value provided by 6G networks [2,
+Chap. 3]. Unfortunately, existing positioning approaches are
+either imprecise or require a signiﬁcant amount of dedicated
+resources to obtain feedback from the UE [3]. They are also
+not universally applicable: UEs may not have global navigation
+satellite system (GNSS) positioning capabilities, they may be
+indoors or without satellite coverage, or they may forbid sharing
+the position with a third party.
+For many location-based services, absolute position informa-
+tion is in fact not required: a pseudo-location that accurately
+characterizes short-distance neighborhood relationships may
+be sufﬁcient. Capitalizing on this, channel charting (CC) has
+recently emerged as an alternative to classical localization
+techniques that alleviates some of the aforementioned draw-
+backs [4]. CC consists of learning a mapping between CSI
+samples and points in a so-called channel chart , which is
+deﬁned as a compact set in a low-dimensional Euclidean space.
+This mapping is constructed such that nearness between two
+points on the channel chart indicates similarity between the
+corresponding CSI samples, their propagation conditions, and
+thus their proximity in the physical space. Desirable properties
+of the channel chart are consistency in time and across the
+UEs, and low dimensionality.
+Every CSI estimate gives rise to a sam
+
+INTRO:
+imal protocol
+overhead, while preserving location privacy and processing
+only CSI data that is acquired at the BS anyway.
+In this article we provide an intuitive idea of the principles
+of CC (Secs. II and III), and of the related algorithmic
+and practical implementation aspects (Sec. IV). Since the
+introduction of CC in [4], several research groups have
+demonstrated that meaningful channel charts can be practically
+obtained using data originating from both simulated [4] and
+measured propagation environments [9]; these will be discussed
+in Sec. V. We showcase two concrete examples that leverage
+CC and provide a list of potential applications (Sec. VI),
+and we discuss challenges, extensions, and future research
+perspectives (Sec. VII). A regularly updated collection of CC-
+related publications, code, and datasets may be found on the
+Channel Charting Resources website [10].
+arXiv:2304.08095v1 [cs.IT] 17 Apr 2023
+2
+Rx
+TxS
+Rx
+TxS
+Channel 
+chart
+Dimensionality reduction using
+self-supervised machine learning
+Dimensionality reduction using
+self-supervised machine learning
+CSI samples
+No location information
+CSI data from normal operation
+...
+...
+...
+...
+...
+...
+x1 x2
+x3
+x4
+x5
+x6
+x8
+x9 x10
+x11
+x12 xS...
+...
+CSI and ground truth location data 
+from measurement campaign
+...
+CSI dim. 1 
+CSI dim. 2 
+CSI dim. N 
+...
+...
+CSI fingerprint
+map
+CSI fingerprint
+map
+Supervised machine learningSupervised machine learning
+CSI samples
+Rx
+TxS
+Channel 
+chart
+Dimensionality reduction using
+self-supervised machine learning
+CSI samples
+No location information
+CSI data from normal operation
+...
+...
+...
+x1 x2
+x3
+x4
+x5
+x6
+x8
+x9 x10
+x11
+x12 xS...
+...
+CSI and ground truth location data 
+from measurement campaign
+...
+CSI dim. 1 
+CSI dim. 2 
+CSI dim. N 
+...
+...
+CSI fingerprint
+map
+Supervised machine learning
+CSI samples
+Fig. 1: CSI ﬁngerprinting vs. channel charting (CC). CSI ﬁngerprinting (left) requires CSI samples labeled with location
+information for training. CC (right) uses unlabeled CSI samples only, thus avoiding costly measurement campaigns; the resulting
+chart is locally consistent but not necessarily globally accurate.
+II. T HE WIRELESS CHANNEL MANIFOLD AND ITS
+SAMPLING
+Wireless signals propagate from a transmitting antenna to a
+receiving antenna according to Maxwell’s equations. The set
+of parameters governing these equations include the positions
+of the transmitter (Tx) and receiver (Rx) antenna elements,
+the carrier frequency, as well as the nature and positions of
+scattering objects in the environment. The effective channel
+response experienced by a user is a continuous function of
+these parameters.
+Consider, e.g., a set-up with a static BS receiver equipped
+with an antenna array in a static scattering environment, and
+a single-antenna mobile user transmitter located anywhere in
+a two-dimensional (2D) coverage area. The complex-valued
+vector of channel responses measu
+
+CONCLUSION/LAST:
+5
+TABLE I: Applications of Channel Charting
+Application Details Leveraged channel chart property
+Radio resource management Handover prediction [10], pilot allocation [8], rate or protocol adapta-
+tion, predictive buffering [1], BS association.
+Temporal consistency, user trajectory extrapolation
+mmWave beam management Accelerated beam discovery [7], predictive beam tracking Temporal and spatial consistency, multi-view chart
+Device grouping for D2D Identify and cluster nearby mobile devices [13] Spatial consistency
+CSI compression Representing CSI using the minimal number of dimensions, for efﬁcient
+quantization and feedback
+Data-driven, time consistency
+Proximity detection, geofencing Detect user proximity or relative position to a ﬁxed feature on the
+ground (shop, prohibited areas) using the channel chart
+Spatial consistency
+Network event labeling Identify and cluster link failures events and low performance spots for
+network planning purposes
+Spatial and temporal consistency
+Context awareness Infer contextual information (e.g., pedestrian or in-vehicle; work
+commute or unusual trip) from the radio link
+Data driven, spatial and temporal consistency
+Localization Supervised or semi-supervised version of charting [10] Spatial and temporal consistency
+Channel modeling and simulation Understand and model the wireless propagation medium, generate
+realistic CSI samples
+Data-driven, temporal consistency
+Cell A Cell B Cell C Cell D Cell E Cell F Cell G
+ Cell A .68 .00 .00 .03 .00 .30 .00
+ Cell B .00 .92 .00 .01 .07 .00 .00
+ Cell C .00 .71 .00 .00 .29 .00 .00
+ Cell D .02 .09 .00 .89 .00 .00 .00
+ Cell E .00 .00 .00 .00 1.00 .00 .00
+ Cell F .17 .00 .00 .00 .00 .83 .00
+ Cell G .00 .00 .00 .00 .00 .00 .00
+True ID
+Estimated ID
+Fig. 4: Example of chart-based cell association in a network of
+seven mmWave cell. (Top) test user trajectory colored according
+to the estimated cell ID. The channel chart (not shown) was
+constructed from Dataset 1, shown in gray. (Bottom) confusion
+matrix showing the probability of the true cell ID, for each
+estimated cell ID.
+mmWave BSs (red triangles). Samples from the test dataset
+(trajectory depicted in the ﬁgure) are mapped to the channel
+chart, and their mmWave cell association is estimated from the
+color of the neighboring training set points in the channel chart.
+This approach achieves 85% accuracy; most errors occur at
+cell-edge locations where a neighboring cell is chosen instead.
+0 005 01 015 02 025 03
+085
+09
+095
+1
+False positive rate
+True positive rate
+Self-supervised (channel charting)
+Semi-supervised (location-based)
+Fig. 5: ROC curves for channel-chart-based proximity detection.
+The second example deals with proximity detection. We train
+two channel charts using Dataset 1 again: a pseudo-location
+based fully self-supervised channel chart and a semi-supervised
+version using known Tx-position information acquired every
+ﬁve minutes. Test user positions are sampled from the channel
+chart, and their position is average

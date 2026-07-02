@@ -1,0 +1,619 @@
+{
+  "query": "robust multidimensional scaling graph topology denoising",
+  "source": "arxiv",
+  "offline": false,
+  "http": {
+    "arxiv": 200
+  },
+  "count": 30,
+  "records": [
+    {
+      "source_api": "arXiv",
+      "title": "Positron-Emitting and Electron-Capturing Double-Beta Processes in the Standard Model and Beyond",
+      "authors": [
+        "Lukáš Gráf",
+        "Jenni Kotila",
+        "Oliver Scholer"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26097v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We study positron-emitting and electron-capturing double-beta-decay modes as probes complementary to the usual double beta decay. Motivated by the proposed NuDoubt++ experiment, we analyze the candidate isotopes ${}^{78}$Kr, ${}^{106}$Cd, and ${}^{124}$Xe, providing nuclear matrix elements and phase-space factors for both neutrinoful and neutrinoless modes. For the Standard-Model channels, we find that $2ν$ECEC and $2νβ^+$EC are the most experimentally accessible, whereas $2νβ^+β^+$ remains strongly phase-space suppressed. For the neutrinoless channel, we interpret a projected sensitivity of $T_{1/2}^{0ν} = 10^{24}$ y in terms of dimension-seven SMEFT operators and find sensitivity to lepton-number-violating new-physics scales of order 1-100 TeV. We further show that measurements in multiple isotopes can help to resolve degeneracies in multi-operator scenarios, making positron-emitting double-beta searches a useful complement to conventional neutrinoless double beta decay experiments.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26097v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Higher Berry curvature, second Chern numbers and magnetoelectric coupling in crystalline insulators",
+      "authors": [
+        "Niclas Heinsdorf",
+        "Ken Shiozaki"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26096v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We rewrite a lattice model of the four-dimensional Chern insulator as a family of translationally-invariant infinite chains over the three-dimensional Brillouin zone and compute its higher three-form Berry curvature using infinite matrix product states (iMPS). We calculate the topological phase diagram of the associated Dixmier--Douady--Kapustin--Spodyneiko (DDKS) number as a function of the model's mass term, and show that it is exactly congruent to the phase diagram in terms of the second Chern number, the analytic expression of which is known for this particular model. This agreement demonstrates that higher Berry curvature can be used to compute second Chern numbers in a manifestly quantized manner. Motivated by the connection between the second Chern form and the Chern--Simons axion coupling, we study magnetoelectric coupling in three dimensions and its relation to higher Berry phases.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26096v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Learning Action Priors for Cross-embodiment Robot Manipulation",
+      "authors": [
+        "Dong Jing",
+        "Tianqi Zhang",
+        "Jiaqi Liu",
+        "Jinman Zhao",
+        "Zelong Sun",
+        "Li Erran Li",
+        "Zhiwu Lu",
+        "Mingyu Ding"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26095v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Most Vision-Language-Action (VLA) models build on a Vision-Language Model (VLM) backbone by attaching an action module and optimizing the full policy jointly. This design inherits strong visual and linguistic priors from the VLM, but leaves the action module to learn physical motion almost from scratch. As a result, the policy lacks an explicit motion prior, forcing early optimization to simultaneously discover temporal action dynamics and cross-modal alignment, a challenge further amplified in cross-embodiment settings. In this work, we propose to pretrain the action module with motion priors before cross-modal VLA alignment. Specifically, we introduce a two-stage training framework that equips the action module with cross-embodiment temporal motion structure before VLA training begins. In Stage~1, a lightweight flow-matching-based encoder-decoder action module efficiently learns temporal motion structure solely from unconditioned action trajectories, without processing visual or language tokens. In Stage~2, this learned prior is transferred to VLA training through decoder reuse and early-stage latent distillation, aligning visual-language features with the action embedding space while still allowing end-to-end policy refinement. In addition, the trained encoder serves as a compact history compressor, summarizing state-action histories into a single temporal context token for history-aware modeling at negligible cost. Extensive experiments across 13 diverse cross-embodiment tasks on both simulated and real-world platforms validate the effectiveness of our approach. Compared with VLA training without action priors, our model achieves faster convergence, higher success rates, and substantially stronger performance on data-scarce real-world tasks. Moreover, scaling up the action data in Stage~1 yields a more generalizable action prior that directly improves downstream VLA performance.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26095v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "TryOnCrafter: Unleashing Camera Trajectories for Realistic Video Virtual Try-on via a Renderable 4D Try-on Proxy",
+      "authors": [
+        "Hao Sun",
+        "Hao Yan",
+        "Mengting Chen",
+        "Quanjian Song",
+        "Yu Li",
+        "Juan Cao",
+        "Jinsong Lan",
+        "Xiaoyong Zhu"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26092v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "While Video Virtual Try-on (VVT) has achieved remarkable progress in synthesizing realistic garment overlays on dynamic subjects, existing paradigms remains fundamentally constrained by a passive dependency on source camera trajectories, failing to accommodate the requisite interactive freedom for omnidirectional viewpoint exploration. To address this limitation, we define a pioneering research frontier: Camera-controllable Video Virtual Try-on (CaM-VVT). Unlike conventional VVT, CaM-VVT not only necessitates viewpoint-agnostic texture hallucination but also strict structural synchronization between non-rigid human dynamics and background contexts under arbitrary, unconstrained camera movements. To tackle these challenges, we present TryOnCrafter, the first unified DiT-based framework specifically architected for the CaM-VVT task. Departing from implicit pixel-space manipulation, we introduce a Renderable 4D Try-on Proxy that explicitly decouples the human subject from the environment. This is achieved by distilling high-fidelity 2D try-on priors into a clothed 3DGS-based avatar, which is subsequently animated via SMPL-X sequences and metric-aligned into a reconstructed background point cloud. This proxy establishes a robust structural foundation with superior texture density and motion integrity. Our Proxy-Anchored Video DiT leverages this robust structural foundation as a primary geometric anchor, ensuring that the synthesized photorealistic videos are strictly constrained by prescribed trajectories and physically plausible deformations. Benefiting from the inherent editability of the 4D proxy, TryOnCrafter facilitates diverse downstream applications, including human relocalization, ``bullet time'' effects, and $360$-degree orbital viewing.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26092v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity",
+      "authors": [
+        "Andrei Liviu Nicolicioiu",
+        "Mohammad Pezeshki",
+        "Aaron Courville"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26091v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "On-policy self-distillation achieves strong pass@1 accuracy by using a single model as both teacher and student, with the teacher conditioned on a correct demonstration to provide dense token-level feedback. We show that this could come at a hidden cost: rollout diversity decreases and pass@k curves flatten (i.e., generating more rollouts fails to improve accuracy). We trace this to compounding biases in the design of self-distillation with sampled demonstrations. The teacher scores each student rollout while conditioned on a sampled correct rollout, channeling its feedback through the model's own biases. We theoretically analyze the optimal self-distillation policy and show that it tilts the base distribution by a pointwise conditional mutual information score between the student's rollout and the correct rollout used as context. Unlike the ideal optimal on-policy reinforcement learning (RL), which preserves probability ratios among equally correct rollouts, self-distillation can amplify existing probability gaps, concentrating mass on already-dominant modes. On a controlled graph path-finding task and science question-answering benchmarks, self-distilled models match or exceed RL on average performance but exhibit substantially lower functional and semantic diversity, failing on out-of-distribution settings that require diverse strategies.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26091v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Analytic Approach to Quantum Control Using Quantum Signal Processing",
+      "authors": [
+        "Aishwarya Majumdar",
+        "John M. Martyn",
+        "Yuan Liu",
+        "Nathan Wiebe"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26085v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Realizing coherent quantum computation requires precise and robust manipulation of quantum systems through quantum control protocols. Most quantum control techniques rely on heuristic methods for designing the driving pulses that steer the system towards a target state. Such methods are often based on brute-force optimization and offer limited understanding of the solution landscape. In contrast, quantum algorithms offer a rich body of analytical methods with rigorous error guarantees for implementing unitary and non-unitary transformations, which suggests a promising direction for developing new approaches to quantum control. Among various such algorithms, quantum signal processing (QSP) has emerged as a powerful framework for quantum algorithm design, implementation, and optimization. However, its potential for quantum control remains largely unexplored. In this work, we establish QSP-Control, an analytical framework for quantum control of qubit-oscillator dynamics. We focus on dispersively coupled qubit-oscillator systems and employ the QSP formalism to mitigate unwanted nonlinear effects arising from cross-Kerr interactions. In addition, we develop constructions for precise manipulation of Fock states by designing Fock-state-selective operators, based on structural parallels between the Jaynes-Cummings interaction and QSP. These findings demonstrate how several practically relevant problems in quantum control can be mapped to forms amenable to QSP, offering both a systematic design framework and an interpretable perspective on quantum control.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26085v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents",
+      "authors": [
+        "Changdae Oh",
+        "Wendi Li",
+        "Seongheon Park",
+        "Samuel Yeh",
+        "Tanwi Mallick",
+        "Sharon Li"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26080v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Process reward models enable fine-grained, step-level evaluation of LLMs, yet building them for agentic settings remains prohibitively difficult: long-horizon interactions, irreversible actions, and stochastic environment feedback make both human annotation and Monte Carlo estimation infeasible at scale. In this work, we show that reinforcement learning (RL) post-training already provides the ingredients for effective step-level scoring, eliminating the need for dedicated reward model training altogether. Concretely, we derive an implicit advantage under a general stochastic Markov decision process, which we term progress advantage -- log-probability ratio between the RL-trained policy and its reference policy exactly recovers the optimal advantage function. This formulation makes the resulting signal annotation-free, domain-agnostic, and available as a byproduct of the standard RL post-training pipeline. We validate the effectiveness of the progress advantage across three different applications: test-time scaling, uncertainty quantification, and failure attribution on five benchmarks and four model families. Across all settings, it consistently outperforms confidence-based baselines and, despite requiring no task-specific training, surpasses dedicated trained reward models. We complement these results with deeper analyses on characteristics of progress advantage, offering practical guidance for adoption in real-world agentic systems.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26080v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models",
+      "authors": [
+        "Akshay Paruchuri",
+        "Sanmi Koyejo",
+        "Ehsan Adeli"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26079v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Standard benchmarks for multimodal large language models (MLLMs) score each item on one canonical ordering and miss whether order-irrelevant shuffling changes the answer, a baseline reliability property called for by emerging AI evaluation guidelines. We introduce Facet-Probe, a five-facet audit (option, evidence-chunk, document-rank, image-set, and mixed-modality ordering) of 18 frontier and open-weight MLLMs. A Bayesian item-response model separates ordering noise from per-facet bias, and a same-ordering control estimates the decoder-stochastic floor for observed flips. We find that none of the 18 MLLMs we audit are order-invariant: screened per-facet panel-mean flip rates span 24-50%. A Gemini same-ordering control at temperature 0 estimates a substantial ordering excess over a same-input decoder-noise floor in verified cells. Capability predicts but does not eliminate flips; the best model still flips on 13.4% of trials. In our Gemini mitigation tests, training-free prompt changes are modality-conditional and do not transfer from text to visual reasoning. These results suggest that prompt-level mitigation alone is unlikely to provide general order robustness, motivating future work on training-time and architectural approaches. We propose cross-ordering flip rate as a standard reporting axis for MLLMs.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26079v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Glossy Silicate Clouds on the Scorched Dayside of LTT9779b",
+      "authors": [
+        "Suman Saha",
+        "James S. Jenkins",
+        "Jonathan Brande",
+        "Reza Ashtari",
+        "Ian J. M. Crossfield",
+        "Sarah Stamer",
+        "Diana Dragomir",
+        "Kevin B. Stevenson"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26075v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Discovered deep within the \"Neptunian desert\", LTT9779b remains the only known ultra-hot Neptune, prompting significant speculation regarding its unique formation and evolutionary history. Its exceptionally high geometric albedo has previously been attributed either to the presence of clouds or to an extremely metal-rich atmosphere. Here, we present a comprehensive panchromatic analysis of its dayside atmosphere using JWST NIRISS and NIRSpec/G395H observations to characterize its atmospheric structure and composition. Leveraging the exceptional signal-to-noise ratio (S/N) in the observed spectra, we report a 3-to-5$σ$ detection of dayside clouds, with strong evidence for Mg$_2$SiO$_4$(s) (silicate) condensation. This constitutes the first statistically significant detection of clouds on the dayside of a Neptunian-mass exoplanet. We demonstrate that a highly reflective cloud deck, rather than an extremely high-metallicity atmosphere, is the most likely explanation for the planet's anomalously high optical albedo. Furthermore, our atmospheric retrievals yield robust detections of both CO ($\\sim$4.88$σ$) and CO$_2$ ($\\sim$8.76$σ$), while providing tentative constraints on the H$_2$O abundance and upper limits on SiO, TiO, and VO. Finally, our analysis places a robust constraint on the C/O ratio of 0.984 $\\pm$ 0.019. This aligns LTT9779b with other known ultra-hot Jupiters exhibiting super-solar C/O ratios, suggesting a broader trend driven by the sequestration of oxygen-bearing condensates in ultra-hot atmospheres.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26075v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Converging on bound states in coupled-channel calculations",
+      "authors": [
+        "C. Ruth Le Sueur",
+        "James F. E. Croft",
+        "Jeremy M. Hutson"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26069v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We develop a robust algorithm for locating bound states in coupled-channel calculations. Bound states exist at energies where an individual eigenvalue of a log-derivative or ratio matching matrix passes through zero. We describe an algorithm to identify the required eigenvalue of the matching matrix over the full range of energy where it exists. This allows much simpler programming than previous methods. We also consider the choice of the matching distance $R_\\textrm{match}$, where the matching matrix is defined; coupled-channel methods are most efficient if $R_\\textrm{match}$ is chosen to be in the classically allowed region for all channels that support bound states of interest, but not very close to a node in the wavefunction.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26069v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "From Gaussian beams to Helmholtz waves",
+      "authors": [
+        "A. Dominguez-Cruz",
+        "B. M. Rodriguez-Lara"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26068v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We identify the scale ratio between the Helmholtz transverse-wavenumber scale and the paraxial Gaussian-beam-width scale as the physical parameter connecting separable Gaussian beams with Helmholtz waves. Our optical scale ratio factors the Helmholtz-to-paraxial angular-spectrum restriction with the paraxial-to-Helmholtz large-Rayleigh-range limit. It turns the algebraic Inönü--Wigner contraction and the Cayley--Klein deformation into optical limits governed by scale. Our spectral contraction connects Hermite, Laguerre, Ince, and Boyer--Wolf Gaussian beam families with plane, Bessel, Mathieu, and Weber wave families, respectively, at the coordinate, differential wave equation, algebraic deformation, separation operator, separated differential equation, and separation-spectrum levels.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26068v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Localized Centered Second-Chaos Operator",
+      "authors": [
+        "Guangqian Zhao"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26065v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We prove a localized continuous-frequency operator estimate for centered Gaussian chaoses of order two. The result applies to operator-valued centered second chaoses, including Wick-centered same-family variants, between Hilbert spaces. In the model, two Gaussian frequency legs at scale $N$, an input leg at scale $Q$, and an output leg at scale $M$ are coupled through a soft incidence kernel; non-orthogonal Gaussian profiles are represented by covariance synthesis maps.\n  The proof combines four oriented flattenings, rectangular non-commutative Khintchine inequalities, soft-incidence Schatten bounds, and Sobolev--Besov dyadic summation. The time lift gives $L^p$ operator convergence, while a Galerkin stabilization hypothesis gives pathwise full-cutoff convergence by the first Borel--Cantelli lemma. Under $\\mathcal G(N)\\lesssim N^{-Γ}$ one obtains the window \\[\n  Γ>\\frac d2,\n  \\qquad\n  s<λ+Γ-d,\n  \\qquad\n  \\max\\{0,d-Γ\\}<σ<λ+Γ-d. \\] The theorem applies to the near-output Wick-centered branch of localized paracontrolled resonant products on $\\mathbb R^d$.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26065v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Quantum Back-Action Expands the Excitonic Hilbert Space in a Soft Polar Semiconductor",
+      "authors": [
+        "Arnab Ghosh",
+        "Patrick Brosseau",
+        "Priya Nagpal",
+        "Dmitry N. Dirin",
+        "Rui Tao",
+        "Maksym V. Kovalenko",
+        "Patanjali Kambhampati"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26063v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Electronic excitations in solids are commonly described within a hierarchy in which the excitonic Hamiltonian is defined first and the lattice acts later through renormalization, relaxation, and dephasing. This picture assumes that the optically accessible excitonic manifold is already present at the moment of photoexcitation. Here we show that this assumption fails in a soft polar semiconductor. Using femtosecond coherent multidimensional spectroscopy on lead-halide perovskite nanocrystals, we observe quantum back-action between an electronic excitation and a collective lattice-polarization field that expands the excitonic Hilbert space in real time. The optical pulse first prepares an excitonic polarization, X1. A second configuration, X2, emerges only after the polaron field develops, while coherent X1-X2 coupling appears at later times. State formation and coherence formation are therefore resolved as distinct stages of quasiparticle formation. In contrast, CdSe quantum dots exhibit the conventional limit in which excitonic states and couplings are present at time zero and are only weakly perturbed by phonons. The observed diagonal and anti-diagonal splittings increase with nanocrystal size and correlate with radiative oscillator strength, opposite to expectations from simple quantum confinement. A dynamical polaron-field model describes the lattice polarization as an order parameter that expands the optically accessible manifold and generates time-dependent coherent coupling. These results show that strong system-bath coupling can actively create excitonic states and the coherent manifold in which they evolve.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26063v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "When Certainty Is an Artifact: Keyword Lexicon Blindness and the (Mis)Measurement of Rhetorical Stance",
+      "authors": [
+        "Bo Chen"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26062v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Can a statistically significant, large-effect-size finding in computational social science be entirely an artifact of the measurement instrument? We present a case where the answer appears to be yes. Analyzing 85 interviews across four public intellectuals (2016--2026), we find a robust negative-affect/emphatic-certainty lexical co-occurrence pattern under keyword-based scoring ($r = 0.72$--$0.93$, $p < 0.01$ for all four speakers). Replacing keyword counting with LLM-based zero-shot semantic classification on the complete diarized corpus (32,625 sentences) dramatically reduces this correlation: Dalio's $r = 0.851$ drops to $r = 0.206$, with two speakers showing negative $r(\\text{neg}, \\text{emphatic})$ and one showing null. In contrast, the LLM reveals a strong negative-hedging coupling across speakers -- Rogoff's $r(\\text{neg}, \\text{hedged}) = 0.875$ ($p = 0.001$) and Zeihan's $r(\\text{neg}, \\text{hedged}) = 0.722$ ($p = 0.008$) -- consistent with the conventional expectation that pessimistic discourse attracts hedging, not certainty. Sentence-level error analysis traces this discrepancy to three structural failure modes in keyword lexicons -- syntactic blindness, polysemy blindness, and categorical absence -- illustrated through cases where keyword counting inverts semantic meaning (e.g., ''never absolutely totally confident'' scored as high-certainty). We argue that keyword lexicons measure a universal lexical co-occurrence tendency -- negative discourse naturally attracts emphatic vocabulary -- that is orthogonal to, and can systematically invert, rhetorical stance. Treating keyword counts as measurements of epistemic certainty is a category error: a finding that appears to be about a speaker's psychology may be entirely about the counting of words.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26062v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "A welding penetration prediction model for laser welding process based on self-supervised learning using physics-informed neural networks",
+      "authors": [
+        "Sen Li",
+        "Xiaoying Liu",
+        "Xiaojian Xu",
+        "Chendong Shao",
+        "Yaqi Wang",
+        "Ling Lan",
+        "Xinhua Tang",
+        "Haichao Cui"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "10.1016/j.jmapro.2026.01.035",
+      "arxiv_id": "2606.26059v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "The laser welding full-penetration is of critical importance, as it constitutes one of the fundamental factors in achieving defect-free welded joints. Accurate prediction of the penetration state is therefore essential for ensuring weld quality. To this end, this paper introduces SimPhysNet, a novel algorithm that achieves high classification accuracy in laser welding penetration prediction using only a limited number of labelled images. This approach effectively overcomes the limitations of supervised learning classification algorithms, which are hindered in industrial applications by their dependence on extensive, high-quality labelled data. The core of SimPhysNet is a unique self-supervised learning paradigm that embeds physical priors into a contrastive learning framework. By incorporating a physics-informed neural network (PINN), the model is guided to extract physically meaningful features of the molten pool and keyhole from a large set of unlabelled data, while three image augmentation tasks further enhance its generalization capabilities. Subsequently, a few-shot learning strategy, based on prototypical networks, enables robust classification by constructing class representations from a minimal set of labelled images. Experimental results demonstrate that SimPhysNet achieves a classification accuracy of 96.06% using only 200 labelled images (approximately 5% of the total labelled dataset), which is comparable to the performance of conventional supervised learning algorithms that utilize the entire labelled dataset. This work presents a new, efficient, and highly accurate method, providing the way for the intelligent automation of laser welding.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26059v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Laser-intensity-spike-dominated hot electron generation from two-plasmon decay instability driven by moderate-bandwidth pulses",
+      "authors": [
+        "C. Yao",
+        "Z. H. Cai",
+        "X. Wang",
+        "X. C. Wang",
+        "H. R. Yin",
+        "Z. A. Zhu",
+        "C. W. Lian",
+        "Y. Ji"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26054v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Our direct-drive-relevant experiments on the low-coherence Kunwu laser facility identify two-plasmon decay (TPD) as the primary source of hot electrons, and demonstrate for the first time that broadband laser pulses enhance TPD. Using particle-in-cell simulations, we attribute this TPD enhancement and the consequent hot electron production to stochastic intensity spikes inherent in broadband laser fields, robust in both weakly- and strongly-driven regimes. These findings suggest that mitigating hot electron generation requires suppressing these intensity spikes.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26054v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Oscillation inequalities, lower ball growth and Sobolev embeddings on metric measure spaces",
+      "authors": [
+        "Joaquim Martín"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26051v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We study the relation between lower ball growth, rearrangement oscillations, and Sobolev-type embeddings on metric measure spaces. We prove that a lower estimate for the ball function \\[ h_μ(r):=\\inf_{x\\inΩ}μ(B(x,r)) \\] implies pointwise symmetrization inequalities for averaged differences and Hajłasz gradients, without doubling, Poincaré-type assumptions, or extra topological hypotheses. Conversely, the validity of either family of inequalities for suitable cutoff functions recovers the corresponding lower growth estimate. Thus, up to multiplicative constants, the lower geometry of the measure is equivalent to the pointwise oscillation principle itself.\n  Taking norms in rearrangement-invariant spaces yields normed oscillation inequalities and Sobolev embeddings for Hajłasz and averaged Besov spaces. This separates the metric-measure input from the choice of the final function-space target. In the power-growth model, the resulting targets are identified with Lorentz spaces. We also show how Sobolev inequalities between general rearrangement-invariant spaces force lower ball estimates through the fundamental functions of the source and target spaces. The results apply to general admissible growth functions and moduli of smoothness, beyond the classical power setting.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26051v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Natural Ungrokking: Asymmetric Control of Which Rules Survive Pretraining",
+      "authors": [
+        "Juliana Li",
+        "Diya Sreedhar"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26050v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Midway through an ordinary pretraining run, a small language model learns the pronoun-gender rule: cued with a girl's name (\"Sue cried because\"), it resolves the next pronoun to she, generalizing to held-out probes (0.94 by step 925). By step 3,500 the same model scores near zero on the same probes, although the rule's evidence is still in the training data. We call this within-run reversal natural ungrokking: the corpus decides, with no trace in the loss curve, which learned rules a model keeps.\n  Which rules survive is predictable from one corpus statistic: how often the training stream shows the rule winning. Across un-intervened runs (two corpora, three budgets, three seeds), support frequency decides a rule's fate; the data-to-parameter ratio only modulates how deeply a doomed rule falls. The same emerge-then-collapse dynamics appear in public Pythia checkpoints, collapse depth ordered by model scale as predicted. The forgetting is a displacement: a competing surface pattern out-competes the rule, and the log-probability margin between them crosses zero within 100 training steps of the behavioral collapse.\n  Control over this fate is asymmetric: the same edit that destroys a rule on demand cannot restore it. Flipping support to counter-evidence in place kills the rule with monotone dose-response in two unrelated rules; but injecting support back, even to 450 times the level that naturally sustains it, buys no recovery. Every confirmatory threshold and prediction was pre-registered before the data it governed was read.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26050v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "RoboAtlas: Contextual Active SLAM",
+      "authors": [
+        "Alexander Schperberg",
+        "Shivam K. Panda",
+        "Abraham P. Vinod",
+        "M. K. Jawed",
+        "Stefano Di Cairano"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26046v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We present RoboAtlas, a contextual Active SLAM framework that adaptively balances geometric exploration and semantic reasoning using a scalable 3D semantic mapping system, OpenRoboVox. RoboAtlas integrates frontier exploration, global semantic-map reasoning, and egocentric VLM-based reasoning through a contextual multi-armed bandit that transitions from exploration to semantically guided navigation as scene understanding improves. We evaluate the system in simulation and on a Unitree Go2 robot in large-scale real-world environments exceeding 1800 m2 with approx. 30k mapped semantic instances, achieving a 100% task success rate. On the GOAT-Bench \"Val Unseen\" benchmark, RoboAtlas achieves state-of-the-art performance with highest reported success rate (SR) of 90.6%, using GPT-4o, improving over the strongest prior baseline by 17.8 percentage points in SR. Using the much smaller Qwen2.5-VL-7B model, it still achieves 88.8% SR, outperforming all baselines using GPT-4o in SR, and revealing the importance of the information gained by our semantic mapping framework over simply replacing the underlying foundation model. The results demonstrate that grounding foundation models with large-scale 3D semantic maps enables robust and efficient contextual Active SLAM.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26046v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Interfacial Spectral Memory as a State Variable for Finite-Depth Salt-Finger Exchange",
+      "authors": [
+        "Sriram P. Kalathoor"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26045v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Thermohaline interfaces in the ocean are often treated through local double-diffusive favorability, yet finite interfaces can also inherit roughness from prior waves, stirring, intrusions, and earlier mixing events. Such inherited geometry can matter because salt fingering does not develop from a flat abstract surface in many geophysical settings. We use controlled three-dimensional direct simulations to test whether the spectral state of a finite rough interface changes the pathway by which salt-finger activity develops between adjacent layers. The density ratio, diffusivity ratio, Prandtl number, interface thickness, roughness amplitude, domain, resolution, and analysis window are held fixed; only the imposed roughness spectrum and, for one pair, the realization are changed. Broad low-mode memory produces the largest cumulative salt exchange and the earliest finite-depth contact. High-annulus memory remains localized and intermediate-scale dominated. Mixed memory produces delayed scale transfer and scalar-rich structure that is robust in integrated exchange and broad-memory measures across a second realization, while local plume timing and probe amplitudes remain realization-sensitive. The simulations therefore support treating interfacial spectral memory as an additional state variable for finite-depth double-diffusive exchange, complementary to local thermodynamic descriptors.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26045v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Jets and Outflows in Young Stellar Objects with the SKAO",
+      "authors": [
+        "Giovanni Sabatini",
+        "Gemma Busquet",
+        "Carlos Carrasco-González",
+        "Adriana Rodríguez-Kamenetzky",
+        "Codella Claudio",
+        "Linda Podio",
+        "Antonio Martínez-Henares",
+        "Josep Miquel Girart"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26044v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Jets and outflows are ubiquitous phenomena associated with the formation of young stellar objects (YSOs). They play a crucial role in removing angular momentum from the accreting system and in regulating star-formation efficiency. Theoretical studies and observations with ALMA and VLA have shown that jets and winds may have a crucial role in promoting dust growth in the envelope-disc system and in shaping the physical and chemical properties of the surrounding environment. Despite these significant advances, many fundamental questions remain unanswered regarding the acceleration, collimation, and chemical impact of jets and outflows from YSOs. The SKA-project will overcome the limitations of current mm/cm-facilities by enabling high-angular resolution and high-sensitivity cm-observations, crucial for probing jets/outflows near YSOs. Radio recombination lines, combined with proper motions, offer a unique opportunity to study the 3D-kinematics of jets. Non-thermal linearly polarised synchrotron emission will allow measuring magnetic field strength and morphology at unprecedented scales of a few au. Observations of dust emission in outflow cavities will allow studying how dust grows and is eventually transported from the disc to the envelope and back. Finally, the SKA-project will allow exploring the dust composition and chemical enrichment in shocks, where sputtering/shattering of grains cause the release of their mantles and refractory cores in the gas-phase. Complementary to ALMA's detection of simple and complex organic molecules, the SKAO will probe, for the first time, long carbon chains/rings, several Cl-, Al-, Mg-, and other metal-bearing species (missed by current sub-mm facilities).",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26044v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "How Robust is OCR-Reasoning? Evaluating OCR-Reasoning Robustness of Vision-Language Models under Visual Perturbations",
+      "authors": [
+        "Yuxing Cheng",
+        "Yuan Wu",
+        "Yi Chang"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26041v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Vision-language models (VLMs) have achieved strong performance on OCR-based benchmarks and increasingly focused on text-rich understanding, but their robustness under controlled visual degradation remains insufficiently understood. This gap is critical for OCR reasoning, where visual corruption can induce OCR errors and structural distortions, thereby introducing uncertainty into the reasoning task. To systematically study this problem, we introduce OCR-Robust, a benchmark designed for evaluating OCR reasoning robustness under visual perturbations. It contains 812 samples across two complementary subsets: OCR1.0, covering documents, scene text, receipts, handwriting, and mathematical content, and OCR2.0, focusing on charts, geometry diagrams, and tables. To enable efficient yet informative evaluation, we conduct a pilot study over 18 candidate perturbations and select 5 representative types at 3 severity levels each based on their impact and cross-model discriminability. We evaluate robustness using clean accuracy, Relative Corruption Retention (RCR), Worst-Case Retention (WCR), and a composite Corruption Robustness Index (CRI), and benchmark 18 models spanning proprietary systems, open-source VLMs, and OCR+LLM pipelines. Our results show that higher clean accuracy does not necessarily imply stronger robustness, and that models can suffer pronounced degradation in the worst case on OCR tasks that are sensitive to structure, and charts and tables are substantially more fragile than document-like inputs under perturbation.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26041v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "A one-parameter family of realizability-interior closures for odd-order kinetic moment systems",
+      "authors": [
+        "Somdeb Bandopadhyay"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26032v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Moment closures at odd truncation order present a fundamental difficulty: the standard Gramian closure saturates the realizability boundary, producing only weak hyperbolicity and failing to preserve Maxwellian equilibrium. We show that every odd-order closure for the one-dimensional kinetic equation admits a decomposition into a boundary term, given by the Schur complement of the Hankel moment matrix, and a positive margin above it. An exact polynomial identity connects this margin to the eigenvalues of the flux Jacobian, reducing hyperbolicity to a root-splitting problem. A dimensional argument proves that no margin depending only on density, velocity, and temperature can produce a hyperbolic system for $M \\geq 5$. A one-parameter family $C_{η,n}$, $η\\in [0,1]$, built from normalized Schur-complement ratios, reveals that the Morin-McDonald closure is the arithmetic endpoint. The weighted AM-GM inequality orders the family: the geometric endpoint ($η= 0$) is 2-4% more accurate on bimodal benchmarks, while the arithmetic endpoint ($η= 1$, Morin-McDonald) is the most robust. All members share the same equilibrium Jacobian, whose spectral radius is 13% ($M = 5$) to 29% ($M = 13$) smaller than Grad's closure, allowing larger CFL time steps. A linearized entropy exists for all $M$, and the BGK source dissipates it near equilibrium; a smooth nonlinear entropy exists for $M = 3$ but provably does not for $M \\geq 5$. The closure is validated on bimodal and Mott-Smith benchmarks, achieving errors 10-40x smaller than the Gramian or Grad closures, and demonstrated in free-transport Riemann problems at $M = 5, 7, 9, 11$ and BGK Riemann problems at $M = 5$ and $9$.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26032v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Geometrically convex return risk measures on AM-algebras",
+      "authors": [
+        "Christian Laudagé"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26031v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Monetary risk measures quantify the risk of uncertain monetary payoffs (or losses), whereas in time series analysis risk is typically assessed using logarithmic returns. Return risk measures (RRMs) provide an axiomatic foundation for this latter approach, which relies crucially on the positive cone of the space of essentially bounded random variables. We extend RRMs to general ordered vector spaces and characterize positive homogeneity via the geometric epigraph. To investigate geometric convexity and establish connections with monetary risk measures, we specialize the domain to AM-algebras, encompassing Euclidean spaces and spaces of multidimensional essentially bounded random variables. The latter is novel in the context of RRMs and leads to the new classes of systemic and vector-valued RRMs. We establish results on finiteness, continuity, separability, as well as dual and aggregation-based representations.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26031v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "TriViewBench: Controlled Complexity Scaling for Multi-View Structural Reasoning in MLLMs",
+      "authors": [
+        "Yu-Yang Chen",
+        "Lan-Zhe Guo"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26029v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Multimodal Large Language Models (MLLMs) demonstrate strong performance on standard visual question answering benchmarks, yet their scalability under controlled structural complexity remains poorly understood. We introduce TriViewBench, a controlled three-view visual reasoning benchmark constructed from synthetic 3D scenes with explicitly parameterized object count and occlusion. The benchmark contains 1,923 scenes and over 14K Question-Answer (QA) pairs organized into four complexity levels and three reasoning categories: Local Decision, Object Counting, and Global Recovery. We evaluate 18 open- and closed-source MLLMs under a unified prompting protocol. All 18 models exhibit an identical capability hierarchy without exception (Local Decision > Object Counting > Global Recovery), and performance degrades monotonically with complexity: Local Decision tasks decline modestly (12.11% relative drop), while Object Counting degrades substantially (59.14%) and Global Recovery collapses severely (80.02%). Error analysis on Object Counting reveals two mechanistically independent failure modes: single-view tasks are dominated by undercounting due to occlusion blindness, whereas the multi-view task reverses to overcounting due to cross-view identity confusion. Chain-of-Thought (CoT) prompting yields near-zero overall benefit ($Δ= -0.16\\%$) and its effect on Global Recovery is strongly capability-gated, suggesting that the bottleneck lies in cross-view spatial representation rather than reasoning strategy. These findings reveal fundamental scalability limitations in current MLLMs and position TriViewBench as a controlled diagnostic framework for analyzing structural reasoning failures.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26029v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Why Multi-Step Tool-Use Reinforcement Learning Collapses and How Supervisory Signals Fix It",
+      "authors": [
+        "Yupu Hao",
+        "Zhuoran Jin",
+        "Huanxuan Liao",
+        "Kang Liu",
+        "Jun Zhao"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26027v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Tool use enables large language models (LLMs) to perform complex tasks, and recent agentic reinforcement learning (RL) methods show promise for enhancing model capabilities. However, RL alone often leads to instability or limited gains in tool-use tasks. In our experiments, some models exhibit catastrophic collapse, where performance abruptly drops and tool-invocation structures fail. The analysis reveals that these failures stem from unexpected probability spikes in specific control tokens, disrupting structured execution, yet the underlying tool-use capability remains intact, merely obscured by specific formats. To address this, we systematically investigate a diverse set of supervisory signals, including off-policy supervision, hint-based guidance, erroneous example supervision, and others, applied under both synchronous and interleaved training schemes. We find that interleaving supervised fine-tuning (SFT) with RL substantially improves stability, but exhibits degraded performance under format and content out-of-distribution (OOD) evaluation. We also analyze the impact of learning rates and generalization across settings. These results highlight the importance of understanding RL failures and demonstrate how diverse supervisory signals can guide exploratory learning, enabling robust training of LLMs for complex, multi-step tool-use tasks. Our Code is available at https://github.com/hypasd-art/Tool-RL-Box.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26027v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Can giant impacts be directly detected in other star systems?",
+      "authors": [
+        "Pavan Tanna",
+        "Simon Lock",
+        "Amy Bonsor",
+        "Simon Hodgkin",
+        "Cathie. J. Clarke"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26026v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Giant impacts, collisions between planet-sized bodies, play an important role in planet and moon formation. As we enter a new era of large-scale surveys, such as \\textit{Gaia} and LSST at the Vera C. Rubin observatory, there is potential to directly observe the remnants produced in such events and gain insights into the process of planet formation. Here, by modelling the emission and cooling of a series of giant impact remnants, we show that giant impacts are detectable as a sudden brightening followed by gradual dimming in the optical and near-infrared. Giant impacts between Earth-composition planets were simulated using the smoothed particle hydrodynamics code {\\small SWIFT}, with total colliding masses ranging from 0.2 to 4 $M_{\\oplus}$. By constraining the location of the photic surface of the post-impact bodies produced by the simulations, the initial luminosities of post-impact bodies were found to be between $5\\times10^{-5}$ and $10^{-1}$ solar luminosities, with luminosity falling roughly exponentially on a timescale between 1 and 2000 days. Based on our results, along with estimates for planet and giant impact occurrence rates, we anticipate that between 0 and 14 terrestrial giant impacts will be observed in the full release of \\textit{Gaia} epoch photometry in DR4, with at least a comparable number found by LSST. Identifying the remnants of multiple giant impacts will offer a powerful constraint on the frequency of giant impacts in the galaxy and hence the role of such collisions in planet formation.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26026v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "G2DP: Diffusion Planning with Spatio-Temporal Grid Guidance",
+      "authors": [
+        "Hang Yu",
+        "Ye Jin",
+        "Alessandro Canevaro",
+        "Julian Schmidt",
+        "Julian Jordan",
+        "Peizheng Li",
+        "Marc Kaufeld",
+        "Silvan Lindner"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26017v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "In autonomous driving, diffusion-based planners have emerged as a promising paradigm for robust motion planning in dense and interactive traffic, as they can effectively model diverse driving behaviors. However, their inherent stochasticity often requires explicit guidance during denoising to ensure safety and route adherence for robust closed-loop execution. Existing guidance typically relies on sparse, entity-centric geometric queries or post-hoc refinement, yielding limited situational awareness and fragile performance in interactive scenes. To address this issue, we propose G2DP (Grid-Guided Diffusion Planning), a diffusion-based planner that directly enforces dense environmental constraints through inference-time guidance. Specifically, G2DP constructs a differentiable spatio-temporal cost volume by fusing probabilistic future occupancy distributions with a route-progress map. By formulating this volume as a continuous safety energy functional, it injects dense gradients directly into the denoising loop, actively steering trajectory generation toward collision-free and progress-optimal regions. Extensive closed-loop evaluations show that G2DP achieves state-of-the-art performance on nuPlan, outperforming the strongest imitation-learning baseline by +7.2 points in reactive score. It further maintains top scores in zero-shot transfers to interPlan and DeepScenario benchmarks, with collision avoidance improving by +10.15 over the unguided approach on interPlan. These results demonstrate that spatio-temporal cost grids serve as an effective representation for robust guidance in diffusion-based planning.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26017v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "MIMFlow: Integrating Masked Image Modeling with Normalizing Flows for End-to-End Image Generation",
+      "authors": [
+        "Yang Chen",
+        "Xiaowei Xu",
+        "Shuai Wang",
+        "Xinwen Zhang",
+        "Qiushi Guo",
+        "Tiezheng Ge",
+        "Limin Wang"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26016v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Normalizing Flows (NFs) are powerful generative models capable of exact density estimation and sampling. However, their strict invertibility often forces the model to exhaust its capacity on low-level pixel details, hindering the capture of high-level semantic structures. While Masked Image Modeling (MIM) has excelled in representation learning, its integration into generative pipelines has remained largely modular and disjointed. In this paper, we propose MIMFlow, a unified end-to-end framework that jointly optimizes latent semantics, pixel reconstruction, and generative flow. By employing a VAE encoder to infer semantic latent from masked images, MIMFlow achieves a principled decoupling of the generative task: the Normalizing Flow focuses on modeling a simplified, low-frequency semantic manifold, while a specialized decoder handles high-frequency synthesis. This design effectively resolves the inherent capacity bottleneck of NFs, allowing the model to prioritize global structural coherence over redundant noise. Empirical results on ImageNet 256$\\times$256 show that MIMFlow-L reaches 71.3\\% linear probing accuracy and an FID of 2.50. Despite using only 128 tokens (50\\% fewer than standard models), it yields a 32.8\\% performance gain over similar-scale NF baselines. Our code is available at https://github.com/MCG-NJU/MIMFlow.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26016v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "On the Parameterized Complexity of Bounded-Density Vertex Deletion",
+      "authors": [
+        "Jakob Raupach",
+        "Tom-Lukas Breitkopf",
+        "Anton Herrmann",
+        "André Nichterlein"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26012v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We explore the parameterized complexity of Bounded Density Vertex Deletion (BDVD): given a graph $G$, an integer budget $k$, and a target density $τ_ρ$, the task is to determine whether the density (i.e. number of edges divided by number of vertices) of the densest subgraph of $G$ can be reduced to at most $τ_ρ$ by deleting at most $k$ vertices. Our primary focus is on structural graph parameters related to treewidth, as the parameterized complexity of BDVD with respect to treewidth was left as open question by Bazgan et al. [JCSS, 2025]. We resolve this question by showing W[1]-hardness with respect to various parameters, including treedepth and feedback vertex number. These results imply W[1]-hardness with respect to treewidth. We obtain positive results for parameters larger than treedepth and feedback vertex number, namely we show BDVD is in FPT parameterized by the max leaf number or vertex integrity. Under the assumption that the target density $τ_ρ$ is a fixed constant the parameterized complexity landscape of BDVD changes drastically, allowing a fixed-parameter tractable algorithm even for parameters smaller than treewidth, namely cliquewidth. Altogether, our results provide a refined complexity landscape for Bounded Density Vertex Deletion, sharply distinguishing between tractable and intractable parameter regimes under structural parameterizations.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26012v1"
+    }
+  ]
+}

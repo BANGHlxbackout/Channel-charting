@@ -1,0 +1,173 @@
+FILE: 24_Time_Varying_Graph_Signal.pdf
+PAGES: 21
+TITLE: 
+
+ABSTRACT/FRONT:
+Time-Varying Graph Signal Recovery Using
+High-Order Smoothness and Adaptive
+Low-rankness
+Weihong Guo, Yifei Lou, Jing Qin, and Ming Yan
+Abstract Time-varying graph signal recovery has been widely used in many appli-
+cations, including climate change, environmental hazard monitoring, and epidemic
+studies. It is crucial to choose appropriate regularizations to describe the character-
+istics of the underlying signals, such as the smoothness of the signal over the graph
+domain and the low-rank structure of the spatial-temporal signal modeled in a matrix
+form. As one of the most popular options, the graph Laplacian is commonly adopted
+in designing graph regularizations for reconstructing signals defined on a graph
+from partially observed data. In this work, we propose a time-varying graph signal
+recovery method based on the high-order Sobolev smoothness and an error-function
+weighted nuclear norm regularization to enforce the low-rankness. Two efficient
+algorithms based on the alternating direction method of multipliers and iterative
+Weihong Guo
+Department of Mathematics, Applied Mathematics, and Statistics
+Case Western Reserve University
+Cleveland, OH 44106
+e-mail: wxg49@case.edu
+Yifei Lou
+Department of Mathematics & School of Data Science and Society
+University of North Carolina at Chapel Hill
+Chapel Hill, NC 27599
+e-mail: yflou@unc.edu
+Jing Qin
+Department of Mathematics
+University of Kentucky
+Lexington, KY 40506
+e-mail: jing.qin@uky.edu
+Ming Yan
+School of Data Science
+The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)
+Shenzhen, China 518172
+e-mail: yanming@cuhk.edu.cn
+1
+arXiv:2405.09752v1 [eess.SP] 16 May 2024
+2 Weihong Guo, Yifei Lou, Jing Qin, and Ming Yan
+reweighting are proposed, and convergence of one algorithm is shown in detail.
+We conduct various numerical experiments on synthetic and real-world data sets to
+demonstrate the proposed method’s effectiveness compared to the state-of-the-art in
+graph signal recovery.
+Key words: Time-varying graph signal, Sobolev smoothness, weighted nuclear
+norm, error function, low-rank
+1 Introduction
+Many real-world datasets are represented in the form of graphs, such as sea surface
+temperatures, Covid-19 cases at regional or global levels, and PM 2.5 levels in the
+atmosphere. Graphs play a crucial role in data science, facilitating the mathemat-
+ical modeling of intricate relationships among data points. Typically composed of
+vertices with either undirected or directed edges, graphs regard each data point as
+a vertex and use edges to represent pairwise connections in terms of distances or
+similarities. A graph signal is a collection of values defined on the vertex set. The
+graph structure can be either provided by specific applications or learned from partial
+or complete datasets.
+As an extension of (discrete) signal processing, graph signal processing [1] has
+become an emerging field in data science and attracted tremendous attention due to
+its capability of dealing with big data with irregular and complex graph structures
+from various applications, such as natural language processing [2], traffic predic-
+tion [3], climate change
+
+INTRO:
+l.
+We conduct various numerical experiments on synthetic and real-world data sets to
+demonstrate the proposed method’s effectiveness compared to the state-of-the-art in
+graph signal recovery.
+Key words: Time-varying graph signal, Sobolev smoothness, weighted nuclear
+norm, error function, low-rank
+1 Introduction
+Many real-world datasets are represented in the form of graphs, such as sea surface
+temperatures, Covid-19 cases at regional or global levels, and PM 2.5 levels in the
+atmosphere. Graphs play a crucial role in data science, facilitating the mathemat-
+ical modeling of intricate relationships among data points. Typically composed of
+vertices with either undirected or directed edges, graphs regard each data point as
+a vertex and use edges to represent pairwise connections in terms of distances or
+similarities. A graph signal is a collection of values defined on the vertex set. The
+graph structure can be either provided by specific applications or learned from partial
+or complete datasets.
+As an extension of (discrete) signal processing, graph signal processing [1] has
+become an emerging field in data science and attracted tremendous attention due to
+its capability of dealing with big data with irregular and complex graph structures
+from various applications, such as natural language processing [2], traffic predic-
+tion [3], climate change monitoring [4], and epidemic prediction [5]. Graph signal
+recovery aims to recover a collection of signals with certain smoothness assumptions
+defined on a graph from partial and/or noisy observations. Unlike signals defined in
+traditional Euclidean spaces, the intricate geometry of the underlying graph domain
+must be considered when processing and recovering graph signals. Graph signals
+typically exhibit smoothness either locally or globally over the graph.
+There are some challenges in graph signal recovery when exploiting the underly-
+ing graph structure to improve signal reconstruction accuracy. First, the topology of
+a graph desires a comprehensive representation involving many graph components,
+such as structural properties, connectivity patterns, vertex/edge density, and distri-
+bution. Second, it may be insufficient to describe the smoothness of graph signals
+by simply restricting the similarity of signal values locally. Moreover, the growth
+of graph size leads to a significant computational burden. To address them, var-
+ious techniques have been developed, including graph-based regularization meth-
+ods [6, 7, 8, 9], spectral graph theory [10, 11, 12, 13], and optimization algo-
+rithms [14, 15].
+Smooth and Low-Rank Time-Varying Graph Signal Recovery 3
+1.1 Time-Varying Graph Signal Recovery
+A time-varying or spatial-temporal graph signal can be considered as a sequence
+of signals arranged chronologically, where each signal at a specific time instance is
+defined on a static or dynamically changing spatial
+
+CONCLUSION/LAST:
+10-1
+RMSE
+r=1 =0
+r=1 =0.1
+r=2 =0.1
+r=2 =0.01
+r=2 =0.01
+0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9
+sampling rate
+10-3
+10-2
+10-1
+RMSE
+1000
+10000
+100000
+1000000
+10000000
+Fig. 9 Sensitivity analysis with respect to varying the graph Laplacian (left) and𝜎2 in ERF (right)
+on the Sea Surface Temperature data.
+4 Conclusions and Future Work
+In this paper, we exploit high-order smoothness across the temporal domain and adap-
+tive low-rankness for time-varying graph signal recovery. In particular, we propose a
+novel graph signal recovery model based on a hybrid graph regularization involving
+a general order temporal difference, together with an error-function weighted nuclear
+norm. We also derive an effective optimization algorithm with guaranteed conver-
+gence by adopting a reweighting scheme and the ADMM framework. Numerical
+experiments have demonstrated their efficiency and performance in terms of accu-
+racy. In the future, we will explore using high-order difference schemes to create
+a temporal Laplacian and low-rankness for recovering graph signals with dynamic
+graph topology.
+20 Weihong Guo, Yifei Lou, Jing Qin, and Ming Yan
+Acknowledgements
+The authors would like to thank the support from the American Institute of Math-
+ematics during 2019-2022 for making this collaboration happen. WG, YL, and JQ
+would also like to thank the Women in Data Science and Mathematics Research
+Workshop (WiSDM) hosted by UCLA in 2023 for the support of continuing this
+collaboration. YL is partially supported by NSF CAREER 2414705. JQ is partially
+supported by the NSF grant DMS-1941197. MY was partially supported by the
+Guangdong Key Lab of Mathematical Foundations for Artificial Intelligence, the
+Shenzhen Science and Technology Program ZDSYS20211021111415025, and the
+Shenzhen Stability Science Program.
+References
+1. David I Shuman, Sunil K Narang, Pascal Frossard, Antonio Ortega, and Pierre Vandergheynst.
+The emerging field of signal processing on graphs: Extending high-dimensional data analysis
+to networks and other irregular domains. IEEE signal processing magazine , 30(3):83–98,
+2013.
+2. Michael T Mills and Nikolaos G Bourbakis. Graph-based methods for natural language
+processing and understanding - a survey and analysis. IEEE Transactions on Systems, Man,
+and Cybernetics: Systems, 44(1):59–71, 2013.
+3. Nicolas Tremblay and Pierre Borgnat. Graph wavelets for multiscale community mining.IEEE
+Transactions on Signal Processing, 62(20):5227–5239, 2014.
+4. Aliaksei Sandryhaila and Jos ´e MF Moura. Discrete signal processing on graphs. IEEE
+transactions on signal processing, 61(7):1644–1656, 2013.
+5. Jhony H Giraldo and Thierry Bouwmans. On the minimization of sobolev norms of time-
+varying graph signals: estimation of new coronavirus disease 2019 cases. In 2020 IEEE 30th
+International Workshop on Machine Learning for Signal Processing (MLSP), pages 1–6. IEEE,
+2020.
+6. Siheng Chen, Aliaksei Sandryhaila, Jos ´e MF Moura, and Jelena Kovaˇcevi´c. Signal recovery on
+graphs: Variation minimization. IEEE Transactions on Signal Processing, 63(17):4609–4624,
+2015.
+7. Ariel Kroizer, Yonina C Eldar, and Tirza Routtenberg. Modeling and recovery of graph signals
+and difference-based signals. In 2019 IEEE Global Conference on Signal and Information
+Processing (GlobalSIP), pages 1–5. IEEE,

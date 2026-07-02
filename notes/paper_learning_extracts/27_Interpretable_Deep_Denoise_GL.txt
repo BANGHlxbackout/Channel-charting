@@ -1,0 +1,186 @@
+FILE: 27_Interpretable_Deep_Denoise_GL.pdf
+PAGES: 7
+TITLE: 
+
+ABSTRACT/FRONT:
+CONSTRUCTING AN INTERPRETABLE DEEP DENOISER BY UNROLLING GRAPH
+LAPLACIAN REGULARIZER
+Seyed Alireza Hosseini†, Tam Thuc Do†, Gene Cheung†, Yuichi Tanaka⋆
+†York University, Canada ⋆Osaka University, Japan
+ABSTRACT
+An image denoiser can be used for a wide range of restoration
+problems via the Plug-and-Play (PnP) architecture. In this pa-
+per, we propose a general framework to build an interpretable
+graph-based deep denoiser (GDD) by unrolling a solution to a
+maximum a posteriori (MAP) problem equipped with a graph
+Laplacian regularizer (GLR) as signal prior. Leveraging a re-
+cent theorem showing that any (pseudo-)linear denoiser Ψ,
+under mild conditions, can be mapped to a solution of a MAP
+denoising problem regularized using GLR, we first initialize a
+graph Laplacian matrix L via truncated Taylor Series Expan-
+sion (TSE) of Ψ−1. Then, we compute the MAP linear sys-
+tem solution by unrolling iterations of the conjugate gradient
+(CG) algorithm into a sequence of neural layers as a feed-
+forward network—one that is amenable to parameter tuning.
+The resulting GDD network is “graph-interpretable”, low in
+parameter count, and easy to initialize thanks to L derived
+from a known well-performing denoiser Ψ. Experimental
+results show that GDD achieves competitive image denois-
+ing performance compared to competitors, but employing far
+fewer parameters, and is more robust to covariate shift.
+Index Terms— Image denoising, graph signal process-
+ing, convex optimization, algorithm unrolling
+1. INTRODUCTION
+Denoising is the oldest and most well-studied image restora-
+tion problem in the literature. A well-designed denoiser can
+also be used for other restoration tasks, such as interpola-
+tion [1] and deblurring [2], where the denoiser is used to
+solve a sub-problem during an alternating directional mul-
+tiplier method (ADMM) iteration [3], under the Plug-and-
+Play (PnP) framework [4]. While many early denoisers are
+based on mathematical models such as bilateral filter (BF)
+[5], sparse coding [6], low-rank matrices [7, 8], and BM3D
+[9, 10], recent advances in deep learning (DL) have led to
+state-of-the-art (SOTA) denoisers such as DnCNN [11]. How-
+ever, DL solutions based on generic network architectures,
+The work of G. Cheung was supported in part by the Natural Sci-
+ences and Engineering Research Council of Canada (NSERC) RGPIN-2019-
+06271, RGPAS-2019-00110.
+such as convolutional neural nets (CNN), generative adver-
+sarial nets (GAN) and transformers, are difficult to initialize,
+require big data volume for network parameter training, and
+behave like “black boxes” that are not easy to interpret.
+As an alternative approach, algorithm unrolling [12] im-
+plements model-based algorithm iterations as neural layers of
+a feed-forward network (FFN) for data-driven parameter op-
+timization, resulting in an algorithm-specific neural net that is
+interpretable and robust, while requiring a smaller training set
+to tune fewer parameters. A classic example is the unrolling
+of iterative soft-thresholding algorithm (ISTA) in sparse cod-
+ing into Learned ISTA (LISTA) [13], with results showing
+that, with end-to-end parameter tuning, better denoising per-
+formance can be achieved
+
+INTRO:
+denoiser Ψ. Experimental
+results show that GDD achieves competitive image denois-
+ing performance compared to competitors, but employing far
+fewer parameters, and is more robust to covariate shift.
+Index Terms— Image denoising, graph signal process-
+ing, convex optimization, algorithm unrolling
+1. INTRODUCTION
+Denoising is the oldest and most well-studied image restora-
+tion problem in the literature. A well-designed denoiser can
+also be used for other restoration tasks, such as interpola-
+tion [1] and deblurring [2], where the denoiser is used to
+solve a sub-problem during an alternating directional mul-
+tiplier method (ADMM) iteration [3], under the Plug-and-
+Play (PnP) framework [4]. While many early denoisers are
+based on mathematical models such as bilateral filter (BF)
+[5], sparse coding [6], low-rank matrices [7, 8], and BM3D
+[9, 10], recent advances in deep learning (DL) have led to
+state-of-the-art (SOTA) denoisers such as DnCNN [11]. How-
+ever, DL solutions based on generic network architectures,
+The work of G. Cheung was supported in part by the Natural Sci-
+ences and Engineering Research Council of Canada (NSERC) RGPIN-2019-
+06271, RGPAS-2019-00110.
+such as convolutional neural nets (CNN), generative adver-
+sarial nets (GAN) and transformers, are difficult to initialize,
+require big data volume for network parameter training, and
+behave like “black boxes” that are not easy to interpret.
+As an alternative approach, algorithm unrolling [12] im-
+plements model-based algorithm iterations as neural layers of
+a feed-forward network (FFN) for data-driven parameter op-
+timization, resulting in an algorithm-specific neural net that is
+interpretable and robust, while requiring a smaller training set
+to tune fewer parameters. A classic example is the unrolling
+of iterative soft-thresholding algorithm (ISTA) in sparse cod-
+ing into Learned ISTA (LISTA) [13], with results showing
+that, with end-to-end parameter tuning, better denoising per-
+formance can be achieved using fewer layers (iterations).
+The crux in algorithm unrolling is to decide on which
+model-based algorithm to unroll, so that the resulting unrolled
+FFN has good performance along with desirable properties.
+In this paper, leveraging recent progress in graph signal pro-
+cessing (GSP) [14, 15], we build an FFN unrolled from a
+graph-based algorithm that can be initialized from a known
+well-performing denoiser Ψ, so that the unrolled FFN is
+guaranteed a quality benchmark before parameter tuning
+further improves denoising performance.
+In GSP, amaximum a posteriori (MAP) image restoration
+problem typically employs a signal prior such as the graph
+Laplacian regularizer (GLR) [16] x⊤Lx, where the sought
+signal x is assumed smooth with respect to (w.r.t.) a graph
+G specified by graph Laplacian matrix L. GLR has been suc-
+cessfully applied to a range of image restoration problems, in-
+cluding im
+
+CONCLUSION/LAST:
+= 20 by the two schemes.
+GDD outperformed DnCNN by around 1.25dB in this case of
+small training dataset and covariate shift. This demonstrates
+the effectiveness and robustness of our unrolled network that
+requires training of very few parameters from a small training
+dataset, compared to DnCNN.
+6. CONCLUSION
+We propose a general framework to construct an interpretable
+graph-based deep denoiser (GDD) involving three major
+steps. First, we choose a trusted (pseudo-)linear denoiser
+Ψ with known good denoising performance, such as the
+bilateral filter. Second, we approximate the corresponding
+graph Laplacian matrix L = µ−1(Ψ−1 − IN), leveraging
+Theorem 1 in [24], stating a one-to-one mapping between de-
+noiser Ψ and an equivalent graph filter for a MAP denoising
+problem with a graph Laplacian regularizer (GLR) as prior,
+(a) Noisy image (28.29dB)
+ (b) Bilateral Filter (29.91dB)
+(c) TV (33.13dB)
+ (d) Proposed (34.78dB)
+Fig. 4 : Examples of noisy and denoised wall images by
+competing methods and their quality in PSNR.
+(a) Noisy image (28.25dB)
+ (b) Bilateral Filter (30.46dB)
+(c) TV (33.49dB)
+ (d) Proposed (35.65dB)
+Fig. 5: Examples of noisy and denoised office images by
+competing methods and their quality in PSNR.
+Method PSNR on Test set for specified σ
+σ = 10 σ = 15 σ = 20 σ = 25 σ = 30
+DnCNN 35.24 30.45 25.82 22.90 20.87
+GDD 33.23 29.79 26.19 23.22 20.89
+Table 1: PSNR versus noise SD for test set. Both models
+were trained on small dataset with noise SD σ = 10.
+via truncated Taylor series expansion (TSE). Finally, given
+L we solve a linear system to compute the filter solution by
+unrolling a conjugate gradient (CG) algorithm. The resulting
+unrolled network is fully interpretable, and easily initialized
+using trusted Ψ and thus ensuring a baseline performance.
+It also requires tuning of very few parameters using a small
+dataset. Experimental results show that our data-optimized
+unrolled network outperformed the untrained initialized net-
+work and is competitive with competing methods, and is
+more robust to covariate shift. Deep network training using
+a small dataset for few parameters is important for future
+algorithm design, given the worsening global climate change
+and environmentally costly energy consumption.
+(a) GDD (28.29dB)
+ (b) DnCNN (27.04dB)
+Fig. 6: Results in statistical mismatch and small dataset train-
+ing. Training on σ = 10 and testing on σ = 20.
+7. REFERENCES
+[1] F. Chen and X. Cheung, G.and Zhang, “Fast & robust image in-
+terpolation using gradient graph laplacian regularizer,” in2021
+IEEE International Conference on Image Processing (ICIP) ,
+2021, pp. 1964–1968.
+[2] Y . Bai, G. Cheung, X. Liu, and W. Gao, “Graph-based blind
+image deblurring from a single photograph,” IEEE Transac-
+tions on Image Processing, vol. 28, no.3, pp. 1404–1418, 2019.
+[3] S. Boyd, N. Parikh, E. Chu, B. Peleato, and J. Eckstein, “Dis-
+tributed optimization and statistical learning via the alternating
+direction method of multipliers,” inFoundations and Trends in
+Optimization, 2011, vol. 3, no.1, pp. 1–122.
+[4] Stanley H. Chan, Xiran Wang, and Omar A. Elgendy, “Plug-
+and-play admm for image restoration: Fixed-point conver-
+gence and applications,”IEEE Transactions on Computational
+Imaging, vol. 3, no. 1, pp. 84–98, 2017.
+[5] C. Tomasi and R. Manduchi, “Bila

@@ -66,7 +66,7 @@ def parse_example(record: memoryview) -> tuple[np.ndarray, np.ndarray, float]:
 
 
 def load_spec(raw_dir: Path) -> tuple[list[list[list[int]]], np.ndarray, float]:
-    with (raw_dir / "spec.json").open() as f:
+    with (raw_dir / "specv2.0.json").open() as f:
         spec = json.load(f)
     assignments = [antenna["assignments"] for antenna in spec["antennas"]]
     ap_pos = np.asarray([antenna["location"] for antenna in spec["antennas"]], dtype=np.float64)
@@ -155,6 +155,7 @@ def main() -> int:
     pow_per_ap_full = pow_per_ap_full[order]
 
     angle = np.pi / 15
+    
     rotation_matrix = np.array(
         [[np.cos(angle), -np.sin(angle)], [np.sin(angle), np.cos(angle)]],
         dtype=np.float64,

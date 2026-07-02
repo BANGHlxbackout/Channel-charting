@@ -1,0 +1,124 @@
+FILE: 16_Gradient_Graph_Laplacian_Regularizer.pdf
+PAGES: 17
+TITLE: 
+
+ABSTRACT/FRONT:
+1
+Manifold Graph Signal Restoration using
+Gradient Graph Laplacian Regularizer
+Fei Chen, Member, IEEE, Gene Cheung, Fellow, IEEE, Xue Zhang, Member, IEEE
+Abstract—In the graph signal processing (GSP) literature,
+graph Laplacian regularizer (GLR) was used for signal restora-
+tion to promote piecewise smooth / constant reconstruction with
+respect to an underlying graph. However, for signals slowly
+varying across graph kernels, GLR suffers from an undesirable
+“staircase” effect. In this paper, focusing on manifold graphs—
+collections of uniform discrete samples on low-dimensional con-
+tinuous manifolds—we generalize GLR to gradient graph Lapla-
+cian regularizer (GGLR) that promotes planar / piecewise planar
+(PWP) signal reconstruction. Specifically, for a graph endowed
+with sampling coordinates (e.g., 2D images, 3D point clouds),
+we first define a gradient operator, using which we construct a
+gradient graph for nodes’ gradients in the sampling manifold
+space. This maps to a gradient-induced nodal graph (GNG)
+and a positive semi-definite (PSD) Laplacian matrix with planar
+signals as the 0 frequencies. For manifold graphs without explicit
+sampling coordinates, we propose a graph embedding method to
+obtain node coordinates via fast eigenvector computation. We
+derive the means-square-error minimizing weight parameter for
+GGLR efficiently, trading off bias and variance of the signal
+estimate. Experimental results show that GGLR outperformed
+previous graph signal priors like GLR and graph total variation
+(GTV) in a range of graph signal restoration tasks.
+Index Terms —Graph signal processing, graph smoothness
+priors, graph embedding, quadratic programming
+I. I NTRODUCTION
+Due to cost, complexity and limitations of signal sensing,
+acquired signals are often imperfect with distortions and/or
+missing samples. Signal restoration is the task of recovering
+a pristine signal from corrupted and/or partial observations.
+We focus on restoration of graph signals —sets of discrete
+samples residing on graph-structured data kernels—studied in
+the graph signal processing (GSP) field [1], [2]. Examples
+of graph signal restoration include denoising [3], [4], [5],
+dequantization [6], [7], deblurring [8], and interpolation [9].
+As an under-determined problem, signal restoration requires
+appropriate signal priors for regularization. Given a graph
+The work of F. Chen was supported in part by the National Natural
+Science Foundation of China (61771141) and the Natural Science Foundation
+of Fujian Province (2021J01620). The work of G. Cheung was supported
+in part by the Natural Sciences and Engineering Research Council of
+Canada (NSERC) RGPIN-2019-06271, RGPAS-2019-00110. The work of X.
+Zhang was supported in part by the National Natural Science Foundation
+of China (62302278), the Natural Science Foundation of Shandong Province
+(ZR2023QF014) and the Natural Science Foundation of Qingdao Municipality
+(23-2-1-112-zyyd-jch). (Corresponding author: Xue Zhang)
+F. Chen is with College of Computer and Data Science, Fuzhou University,
+Fuzhou, China (e-mail:chenfei314@fzu.edu.cn).
+G. Cheung is with the department of EECS, York University,
+
+INTRO:
+
+
+CONCLUSION/LAST:
+15
+TABLE VI
+PSNR VALUE (DB) AND ACCURACY BY DIFFERENT METHODS ON DATASET
+FGNE T AND FIFA17 WITH DIFFERENT MISSING RATIO .
+Dataset Method
+Signal missing ratio
+90% 70% 40% 10%
+PSNR Acc PSNR Acc PSNR Acc PSNR Acc
+FGNet
+SDGLR 33.71 0.480 37.82 0.752 39.42 0.898 44.46 0.937
+GTVM 32.57 0.457 37.56 0.670 39.33 0.833 43.67 0.923
+LE+GGLR 32.21 0.471 37.80 0.756 40.48 0.904 45.40 0.964
+LLE+GGLR 32.78 0.467 38.38 0.759 40.88 0.906 45.15 0.968
+GE+GGLR 33.63 0.476 39.19 0.761 43.81 0.920 48.30 0.976
+FIFA17
+SDGLR 25.65 0.167 28.71 0.468 33.48 0.748 38.15 0.915
+GTVM 24.58 0.159 28.65 0.453 32.96 0.721 37.58 0.908
+LE+GGLR 25.51 0.164 29.85 0.484 33.73 0.753 38.54 0.917
+LLE+GGLR 24.64 0.171 28.93 0.478 33.25 0.750 38.63 0.921
+GE+GGLR 25.74 0.172 29.57 0.480 34.20 0.767 39.01 0.923
+an age interpolation problem: some nodes had missing age
+information, and the task was to estimate them. Specifically,
+we randomly removed age information from 90%, 70%, 40%,
+and 10% of nodes—we call this the signal missing ratio . We
+first conducted experiments to test our embedding method, and
+then evaluated our proposed GGLR on the embedded latent
+space.
+FIFA17 includes the statistics for all players according to
+FIFA records. It was downloaded from the Kaggle website. We
+collected club, age, and rating information from 1618 England
+players for our experiments. The players were represented by
+a graph where nodes represented players, and edges connected
+players with the same club or age. The graph has a total of
+94092 edges. VBC for this graph is 3e−8—small enough to
+qualify as a manifold graph. The graph signal here was the
+player rating. Similarly, we computed a graph embedding and
+then evaluated GGLR on the latent space.
+For manifold graph embedding, we computed eigenvector
+matrix P for matrix A using Algorithm 1, and checked how
+many eigenvectors were required to significantly reduce a
+normalized variant of cost function tr (P⊤AP) in (38). For
+both FGNet and FIFA17, the latent spaces were chosen as
+two dimensions.
+2) Age Estimation: We applied our proposed embedding
+method and GGLR to age estimation. We first compared our
+embedding using general eigenvectors (GE) against LLE [28]
+and LE [29]. From Table VI, we observe that GGLR on the
+coordinate vector provided by LLE and LE were not stable.
+They could not obtain better interpolation results, compared
+to the results obtained using GE. We also compared SDGGLR
+against SDGLR and GTVM. Quantitative results in peak
+signal-to-noise ratio (PSNR) and accuracy (Acc) are shown in
+Table VI. PSNR is a measure computed from mean squared
+error; a higher PSNR means a higher signal quality. Accuracy
+is the number of correct predictions divided by the total
+number of predictions. We observe that PSNR and accuracy
+of SDGGLR were better than GTVM, and slightly better than
+SDGLR when the missing ratio was smaller than 70%.
+3) Player Rating Estimation: From Table VI, we observe
+that GGLR on three embedding methods achieved better
+interpolation results

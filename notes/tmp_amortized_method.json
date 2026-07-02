@@ -1,0 +1,3883 @@
+{
+  "query": "graph signal denoising teacher student distillation amortized proximal operator",
+  "offline": false,
+  "from_date": "",
+  "sort_by": "relevance",
+  "raw_count": 106,
+  "merged_count": 106,
+  "relevance_warning": "未加相关度过滤：前 8 条仅 0 条命中 query 多数词（0%），纯被引排序可能顶出领域外高被引跑题文。建议加 --require-terms/--exclude-terms/--min-score 收窄，详见 SKILL「检索策略」。",
+  "recency_boost": true,
+  "recency_note": "已按相关度×时效综合重排（half_life=4年，current_year=2026）；经典高被引文豁免时效惩罚，每条 rerank_parts 留痕可复核。",
+  "records": [
+    {
+      "source_api": "OpenAlex",
+      "title": "",
+      "authors": [],
+      "year": null,
+      "venue": "Edinburgh Research Explorer (University of Edinburgh)",
+      "doi": "",
+      "cited_by": 1806,
+      "cited_by_src": "OpenAlex",
+      "type": "article",
+      "abstract": "The field of meta-learning, or learning-to-learn, has seen a dramatic rise in interest in recent years. Contrary to conventional approaches to AI where a given task is solved from scratch using a fixed learning algorithm, meta-learning aims to improve the learning algorithm itself, given the experience of multiple learning episodes. This paradigm provides an opportunity to tackle many of the conventional challenges of deep learning, including data and computation bottlenecks, as well as the fundamental issue of generalization. In this survey we describe the contemporary meta-learning landscape. We first discuss definitions of meta-learning and position it with respect to related fields, such as transfer learning, multi-task learning, and hyperparameter optimization. We then propose a new taxonomy that provides a more comprehensive breakdown of the space of meta-learning methods today. We survey promising applications and successes of meta-learning including few-shot learning, reinforcement learning and architecture search. Finally, we discuss outstanding challenges and promising areas for future research.",
+      "url": "https://openalex.org/W3163842339",
+      "oa_relevance": 137.54857,
+      "referenced_works": [
+        "https://openalex.org/W139960808",
+        "https://openalex.org/W1486056878",
+        "https://openalex.org/W1542791059",
+        "https://openalex.org/W1621791442",
+        "https://openalex.org/W1996579288",
+        "https://openalex.org/W2016153422",
+        "https://openalex.org/W2016589492",
+        "https://openalex.org/W2050310928",
+        "https://openalex.org/W2085627234",
+        "https://openalex.org/W2091118421",
+        "https://openalex.org/W2092027887",
+        "https://openalex.org/W2092387347",
+        "https://openalex.org/W2097998348",
+        "https://openalex.org/W2100483895",
+        "https://openalex.org/W2117539524",
+        "https://openalex.org/W2122053572",
+        "https://openalex.org/W2123399796",
+        "https://openalex.org/W2126204609",
+        "https://openalex.org/W2137825550",
+        "https://openalex.org/W2145680191",
+        "https://openalex.org/W2151103935",
+        "https://openalex.org/W2151710526",
+        "https://openalex.org/W2151834591",
+        "https://openalex.org/W2161336914",
+        "https://openalex.org/W2162953669",
+        "https://openalex.org/W2165698076",
+        "https://openalex.org/W2192203593",
+        "https://openalex.org/W2194775991",
+        "https://openalex.org/W2257979135",
+        "https://openalex.org/W2296073425",
+        "https://openalex.org/W2330338143",
+        "https://openalex.org/W2486740305",
+        "https://openalex.org/W2565684601",
+        "https://openalex.org/W2578206533",
+        "https://openalex.org/W2583761661",
+        "https://openalex.org/W2596367596",
+        "https://openalex.org/W2605353576",
+        "https://openalex.org/W2614367549",
+        "https://openalex.org/W2618530766",
+        "https://openalex.org/W2625674597",
+        "https://openalex.org/W2726717203",
+        "https://openalex.org/W2734408173",
+        "https://openalex.org/W2736601468",
+        "https://openalex.org/W2742093937",
+        "https://openalex.org/W2756202949",
+        "https://openalex.org/W2763549966",
+        "https://openalex.org/W2785494456",
+        "https://openalex.org/W2788388592",
+        "https://openalex.org/W2798454267",
+        "https://openalex.org/W2798836702",
+        "https://openalex.org/W2806143712",
+        "https://openalex.org/W2808492412",
+        "https://openalex.org/W2809558795",
+        "https://openalex.org/W2888541716",
+        "https://openalex.org/W2894846593",
+        "https://openalex.org/W2898436992",
+        "https://openalex.org/W2906697496",
+        "https://openalex.org/W2913340405",
+        "https://openalex.org/W2916826721",
+        "https://openalex.org/W2925306934",
+        "https://openalex.org/W2945978556",
+        "https://openalex.org/W2946547492",
+        "https://openalex.org/W2947341830",
+        "https://openalex.org/W2947825023",
+        "https://openalex.org/W2949736877",
+        "https://openalex.org/W2962824366",
+        "https://openalex.org/W2962843773",
+        "https://openalex.org/W2962957598",
+        "https://openalex.org/W2963043696",
+        "https://openalex.org/W2963070905",
+        "https://openalex.org/W2963078159",
+        "https://openalex.org/W2963201472",
+        "https://openalex.org/W2963288281",
+        "https://openalex.org/W2963403143",
+        "https://openalex.org/W2963866663",
+        "https://openalex.org/W2963900541",
+        "https://openalex.org/W2963922698",
+        "https://openalex.org/W2963943197",
+        "https://openalex.org/W2964081807",
+        "https://openalex.org/W2964105864",
+        "https://openalex.org/W2964220187",
+        "https://openalex.org/W2965658867",
+        "https://openalex.org/W2965963242",
+        "https://openalex.org/W2970958841",
+        "https://openalex.org/W2978409868",
+        "https://openalex.org/W2978625989",
+        "https://openalex.org/W2978745145",
+        "https://openalex.org/W2979525559",
+        "https://openalex.org/W2981344907",
+        "https://openalex.org/W2982361422",
+        "https://openalex.org/W2983156430",
+        "https://openalex.org/W2984618279",
+        "https://openalex.org/W2985936292",
+        "https://openalex.org/W2990452356",
+        "https://openalex.org/W2990747716",
+        "https://openalex.org/W2995690873",
+        "https://openalex.org/W2998506323",
+        "https://openalex.org/W3005787005",
+        "https://openalex.org/W3010079431",
+        "https://openalex.org/W3015585292",
+        "https://openalex.org/W3019510943",
+        "https://openalex.org/W3034251792",
+        "https://openalex.org/W3034942609",
+        "https://openalex.org/W3035513921",
+        "https://openalex.org/W3037023107",
+        "https://openalex.org/W3043510298",
+        "https://openalex.org/W3083205286",
+        "https://openalex.org/W3096541549",
+        "https://openalex.org/W3097975205",
+        "https://openalex.org/W3099518626",
+        "https://openalex.org/W3101072153",
+        "https://openalex.org/W3102727759",
+        "https://openalex.org/W3110608229",
+        "https://openalex.org/W3127352841",
+        "https://openalex.org/W3128930327",
+        "https://openalex.org/W3135228776",
+        "https://openalex.org/W3159045549",
+        "https://openalex.org/W3180562345",
+        "https://openalex.org/W4206723194",
+        "https://openalex.org/W4211061250",
+        "https://openalex.org/W4213308398",
+        "https://openalex.org/W4214807090",
+        "https://openalex.org/W4241811150",
+        "https://openalex.org/W4287662527",
+        "https://openalex.org/W4288560661",
+        "https://openalex.org/W4294646197",
+        "https://openalex.org/W4297779241",
+        "https://openalex.org/W4300971732",
+        "https://openalex.org/W4302969537",
+        "https://openalex.org/W4303633609",
+        "https://openalex.org/W4320930577"
+      ],
+      "cited_by_by_src": {
+        "OpenAlex": 1806
+      },
+      "sources": [
+        "OpenAlex"
+      ],
+      "relevance_score": 0.0,
+      "rerank_score": 0.85,
+      "rerank_parts": {
+        "relevance": 1.0,
+        "recency": 0.85,
+        "is_classic": true
+      }
+    },
+    {
+      "source_api": "OpenAlex",
+      "title": "Meta-Learning in Neural Networks: A Survey",
+      "authors": [
+        "Timothy M. Hospedales",
+        "Antreas Antoniou",
+        "Paul Micaelli",
+        "Amos Storkey"
+      ],
+      "year": 2021,
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "doi": "10.1109/tpami.2021.3079209",
+      "cited_by": 257,
+      "cited_by_src": "OpenAlex",
+      "type": "preprint",
+      "abstract": "The field of meta-learning, or learning-to-learn, has seen a dramatic rise in interest in recent years. Contrary to conventional approaches to AI where tasks are solved from scratch using a fixed learning algorithm, meta-learning aims to improve the learning algorithm itself, given the experience of multiple learning episodes. This paradigm provides an opportunity to tackle many conventional challenges of deep learning, including data and computation bottlenecks, as well as generalization. This survey describes the contemporary meta-learning landscape. We first discuss definitions of meta-learning and position it with respect to related fields, such as transfer learning and hyperparameter optimization. We then propose a new taxonomy that provides a more comprehensive breakdown of the space of meta-learning methods today. We survey promising applications and successes of meta-learning such as few-shot learning and reinforcement learning. Finally, we discuss outstanding challenges and promising areas for future research.",
+      "url": "https://openalex.org/W3015606043",
+      "oa_relevance": 56.044544,
+      "referenced_works": [
+        "https://openalex.org/W54398672",
+        "https://openalex.org/W91121345",
+        "https://openalex.org/W139960808",
+        "https://openalex.org/W172298727",
+        "https://openalex.org/W1486056878",
+        "https://openalex.org/W1487219635",
+        "https://openalex.org/W1510488293",
+        "https://openalex.org/W1525859397",
+        "https://openalex.org/W1542791059",
+        "https://openalex.org/W1621791442",
+        "https://openalex.org/W1996579288",
+        "https://openalex.org/W2016153422",
+        "https://openalex.org/W2016589492",
+        "https://openalex.org/W2050310928",
+        "https://openalex.org/W2085627234",
+        "https://openalex.org/W2091118421",
+        "https://openalex.org/W2092027887",
+        "https://openalex.org/W2092387347",
+        "https://openalex.org/W2097998348",
+        "https://openalex.org/W2100483895",
+        "https://openalex.org/W2117539524",
+        "https://openalex.org/W2119717200",
+        "https://openalex.org/W2122053572",
+        "https://openalex.org/W2123399796",
+        "https://openalex.org/W2126204609",
+        "https://openalex.org/W2137825550",
+        "https://openalex.org/W2145680191",
+        "https://openalex.org/W2149933564",
+        "https://openalex.org/W2151103935",
+        "https://openalex.org/W2151834591",
+        "https://openalex.org/W2155858138",
+        "https://openalex.org/W2160398503",
+        "https://openalex.org/W2161336914",
+        "https://openalex.org/W2161969291",
+        "https://openalex.org/W2162953669",
+        "https://openalex.org/W2163605009",
+        "https://openalex.org/W2165698076",
+        "https://openalex.org/W2174940656",
+        "https://openalex.org/W2186054958",
+        "https://openalex.org/W2192203593",
+        "https://openalex.org/W2194775991",
+        "https://openalex.org/W2257979135",
+        "https://openalex.org/W2296073425",
+        "https://openalex.org/W2330338143",
+        "https://openalex.org/W2407277018",
+        "https://openalex.org/W2472819217",
+        "https://openalex.org/W2486740305",
+        "https://openalex.org/W2550182557",
+        "https://openalex.org/W2551887912",
+        "https://openalex.org/W2565684601",
+        "https://openalex.org/W2583761661",
+        "https://openalex.org/W2596367596",
+        "https://openalex.org/W2601450892",
+        "https://openalex.org/W2602585184",
+        "https://openalex.org/W2604763608",
+        "https://openalex.org/W2605353576",
+        "https://openalex.org/W2614367549",
+        "https://openalex.org/W2618530766",
+        "https://openalex.org/W2624086852",
+        "https://openalex.org/W2625674597",
+        "https://openalex.org/W2726717203",
+        "https://openalex.org/W2734408173",
+        "https://openalex.org/W2736601468",
+        "https://openalex.org/W2739068567",
+        "https://openalex.org/W2740275380",
+        "https://openalex.org/W2742093937",
+        "https://openalex.org/W2753160622",
+        "https://openalex.org/W2753433947",
+        "https://openalex.org/W2753798143",
+        "https://openalex.org/W2754560798",
+        "https://openalex.org/W2756202949",
+        "https://openalex.org/W2763549966",
+        "https://openalex.org/W2767286248",
+        "https://openalex.org/W2770173563",
+        "https://openalex.org/W2770468159",
+        "https://openalex.org/W2781474777",
+        "https://openalex.org/W2785397462",
+        "https://openalex.org/W2785494456",
+        "https://openalex.org/W2786471719",
+        "https://openalex.org/W2787501667",
+        "https://openalex.org/W2788364218",
+        "https://openalex.org/W2788388592",
+        "https://openalex.org/W2795900505",
+        "https://openalex.org/W2796979132",
+        "https://openalex.org/W2798454267",
+        "https://openalex.org/W2798836702",
+        "https://openalex.org/W2804047946",
+        "https://openalex.org/W2804180102",
+        "https://openalex.org/W2806143712",
+        "https://openalex.org/W2808492412",
+        "https://openalex.org/W2808809512",
+        "https://openalex.org/W2808912095",
+        "https://openalex.org/W2809234895",
+        "https://openalex.org/W2809558795",
+        "https://openalex.org/W2810075754",
+        "https://openalex.org/W2810602713",
+        "https://openalex.org/W2885965553",
+        "https://openalex.org/W2888541716",
+        "https://openalex.org/W2889965839",
+        "https://openalex.org/W2890870050",
+        "https://openalex.org/W2893918048",
+        "https://openalex.org/W2894846593",
+        "https://openalex.org/W2895531857",
+        "https://openalex.org/W2898436992",
+        "https://openalex.org/W2899457449",
+        "https://openalex.org/W2902211424",
+        "https://openalex.org/W2902253437",
+        "https://openalex.org/W2902345490",
+        "https://openalex.org/W2903630557",
+        "https://openalex.org/W2906697496",
+        "https://openalex.org/W2906841252",
+        "https://openalex.org/W2908369924",
+        "https://openalex.org/W2908974255",
+        "https://openalex.org/W2911504222",
+        "https://openalex.org/W2912528108",
+        "https://openalex.org/W2913340405",
+        "https://openalex.org/W2914331073",
+        "https://openalex.org/W2915604253",
+        "https://openalex.org/W2916118939",
+        "https://openalex.org/W2916826721",
+        "https://openalex.org/W2917028965",
+        "https://openalex.org/W2918894365",
+        "https://openalex.org/W2919681562",
+        "https://openalex.org/W2923504512",
+        "https://openalex.org/W2925306934",
+        "https://openalex.org/W2945978556",
+        "https://openalex.org/W2946154049",
+        "https://openalex.org/W2946547492",
+        "https://openalex.org/W2946584829",
+        "https://openalex.org/W2946707734",
+        "https://openalex.org/W2946757877",
+        "https://openalex.org/W2947298857",
+        "https://openalex.org/W2947341830",
+        "https://openalex.org/W2947825023",
+        "https://openalex.org/W2948215242",
+        "https://openalex.org/W2948917818",
+        "https://openalex.org/W2948974578",
+        "https://openalex.org/W2949736877",
+        "https://openalex.org/W2950527759",
+        "https://openalex.org/W2952193948",
+        "https://openalex.org/W2954737642",
+        "https://openalex.org/W2955035422",
+        "https://openalex.org/W2962716258",
+        "https://openalex.org/W2962723986",
+        "https://openalex.org/W2962824366",
+        "https://openalex.org/W2962826047",
+        "https://openalex.org/W2962843773",
+        "https://openalex.org/W2962847160",
+        "https://openalex.org/W2962902376",
+        "https://openalex.org/W2962908092",
+        "https://openalex.org/W2962921245",
+        "https://openalex.org/W2962957598",
+        "https://openalex.org/W2962974944",
+        "https://openalex.org/W2963043696",
+        "https://openalex.org/W2963070905",
+        "https://openalex.org/W2963078159",
+        "https://openalex.org/W2963078860",
+        "https://openalex.org/W2963081269",
+        "https://openalex.org/W2963094133",
+        "https://openalex.org/W2963137684",
+        "https://openalex.org/W2963154787",
+        "https://openalex.org/W2963168530",
+        "https://openalex.org/W2963176272",
+        "https://openalex.org/W2963201472",
+        "https://openalex.org/W2963207607",
+        "https://openalex.org/W2963211188",
+        "https://openalex.org/W2963220331",
+        "https://openalex.org/W2963233958",
+        "https://openalex.org/W2963281697",
+        "https://openalex.org/W2963288281",
+        "https://openalex.org/W2963303956",
+        "https://openalex.org/W2963306862",
+        "https://openalex.org/W2963341924",
+        "https://openalex.org/W2963341956",
+        "https://openalex.org/W2963371670",
+        "https://openalex.org/W2963371846",
+        "https://openalex.org/W2963374479",
+        "https://openalex.org/W2963403143",
+        "https://openalex.org/W2963451822",
+        "https://openalex.org/W2963547174",
+        "https://openalex.org/W2963559821",
+        "https://openalex.org/W2963577254",
+        "https://openalex.org/W2963580001",
+        "https://openalex.org/W2963581679",
+        "https://openalex.org/W2963630234",
+        "https://openalex.org/W2963680188",
+        "https://openalex.org/W2963741406",
+        "https://openalex.org/W2963775850",
+        "https://openalex.org/W2963777593",
+        "https://openalex.org/W2963804140",
+        "https://openalex.org/W2963866663",
+        "https://openalex.org/W2963887494",
+        "https://openalex.org/W2963900541",
+        "https://openalex.org/W2963922698",
+        "https://openalex.org/W2963943197",
+        "https://openalex.org/W2964026991",
+        "https://openalex.org/W2964032613",
+        "https://openalex.org/W2964078140",
+        "https://openalex.org/W2964081807",
+        "https://openalex.org/W2964096423",
+        "https://openalex.org/W2964105864",
+        "https://openalex.org/W2964112702",
+        "https://openalex.org/W2964121744",
+        "https://openalex.org/W2964121937",
+        "https://openalex.org/W2964208960",
+        "https://openalex.org/W2964212578",
+        "https://openalex.org/W2964220187",
+        "https://openalex.org/W2964227899",
+        "https://openalex.org/W2964296021",
+        "https://openalex.org/W2964344823",
+        "https://openalex.org/W2965132998",
+        "https://openalex.org/W2965658867",
+        "https://openalex.org/W2965963242",
+        "https://openalex.org/W2969446767",
+        "https://openalex.org/W2970010326",
+        "https://openalex.org/W2970084209",
+        "https://openalex.org/W2970105755",
+        "https://openalex.org/W2970122980",
+        "https://openalex.org/W2970144620",
+        "https://openalex.org/W2970384648",
+        "https://openalex.org/W2970410020",
+        "https://openalex.org/W2970433714",
+        "https://openalex.org/W2970505118",
+        "https://openalex.org/W2970689606",
+        "https://openalex.org/W2970697704",
+        "https://openalex.org/W2970711760",
+        "https://openalex.org/W2970717270",
+        "https://openalex.org/W2970806862",
+        "https://openalex.org/W2970850803",
+        "https://openalex.org/W2970867946",
+        "https://openalex.org/W2970893544",
+        "https://openalex.org/W2970958841",
+        "https://openalex.org/W2970990534",
+        "https://openalex.org/W2971035910",
+        "https://openalex.org/W2971071159",
+        "https://openalex.org/W2971137988",
+        "https://openalex.org/W2971218263",
+        "https://openalex.org/W2971285974",
+        "https://openalex.org/W2972555645",
+        "https://openalex.org/W2974885182",
+        "https://openalex.org/W2976365868",
+        "https://openalex.org/W2976847563",
+        "https://openalex.org/W2978409868",
+        "https://openalex.org/W2978625989",
+        "https://openalex.org/W2978745145",
+        "https://openalex.org/W2979525559",
+        "https://openalex.org/W2980037473",
+        "https://openalex.org/W2981147706",
+        "https://openalex.org/W2981720610",
+        "https://openalex.org/W2982361422",
+        "https://openalex.org/W2982662204",
+        "https://openalex.org/W2983156430",
+        "https://openalex.org/W2984618279",
+        "https://openalex.org/W2985936292",
+        "https://openalex.org/W2990379018",
+        "https://openalex.org/W2990452356",
+        "https://openalex.org/W2990520147",
+        "https://openalex.org/W2990747716",
+        "https://openalex.org/W2991023628",
+        "https://openalex.org/W2991232432",
+        "https://openalex.org/W2991247578",
+        "https://openalex.org/W2991420892",
+        "https://openalex.org/W2994653652",
+        "https://openalex.org/W2994814245",
+        "https://openalex.org/W2994871715",
+        "https://openalex.org/W2994964801",
+        "https://openalex.org/W2995083766",
+        "https://openalex.org/W2995196103",
+        "https://openalex.org/W2995253937",
+        "https://openalex.org/W2995322030",
+        "https://openalex.org/W2995444997",
+        "https://openalex.org/W2995627493",
+        "https://openalex.org/W2995686239",
+        "https://openalex.org/W2995690873",
+        "https://openalex.org/W2995808739",
+        "https://openalex.org/W2995892679",
+        "https://openalex.org/W2996012599",
+        "https://openalex.org/W2996193212",
+        "https://openalex.org/W2996623013",
+        "https://openalex.org/W2996641835",
+        "https://openalex.org/W2997359900",
+        "https://openalex.org/W2997731708",
+        "https://openalex.org/W2998506323",
+        "https://openalex.org/W2999917162",
+        "https://openalex.org/W3005787005",
+        "https://openalex.org/W3009705522",
+        "https://openalex.org/W3010079431",
+        "https://openalex.org/W3015585292",
+        "https://openalex.org/W3019510943",
+        "https://openalex.org/W3032377877",
+        "https://openalex.org/W3034251792",
+        "https://openalex.org/W3034561179",
+        "https://openalex.org/W3034942609",
+        "https://openalex.org/W3035513921",
+        "https://openalex.org/W3035559424",
+        "https://openalex.org/W3037120332",
+        "https://openalex.org/W3037207827",
+        "https://openalex.org/W3038082334",
+        "https://openalex.org/W3043510298",
+        "https://openalex.org/W3083205286",
+        "https://openalex.org/W3091905774",
+        "https://openalex.org/W3093116395",
+        "https://openalex.org/W3096541549",
+        "https://openalex.org/W3097975205",
+        "https://openalex.org/W3101072153",
+        "https://openalex.org/W3104912149",
+        "https://openalex.org/W3110608229",
+        "https://openalex.org/W3127461190",
+        "https://openalex.org/W3128930327",
+        "https://openalex.org/W3135228776",
+        "https://openalex.org/W3159045549",
+        "https://openalex.org/W3180562345",
+        "https://openalex.org/W4206723194",
+        "https://openalex.org/W4211061250",
+        "https://openalex.org/W4213308398",
+        "https://openalex.org/W4214807090",
+        "https://openalex.org/W4241811150",
+        "https://openalex.org/W6602170065",
+        "https://openalex.org/W6603751605",
+        "https://openalex.org/W6630349879",
+        "https://openalex.org/W6631190155",
+        "https://openalex.org/W6637646422",
+        "https://openalex.org/W6639506587",
+        "https://openalex.org/W6640425456",
+        "https://openalex.org/W6674385629",
+        "https://openalex.org/W6681968150",
+        "https://openalex.org/W6682132143",
+        "https://openalex.org/W6682608967",
+        "https://openalex.org/W6683124652",
+        "https://openalex.org/W6684821475",
+        "https://openalex.org/W6685663092",
+        "https://openalex.org/W6686819018",
+        "https://openalex.org/W6693919493",
+        "https://openalex.org/W6697715979",
+        "https://openalex.org/W6713960836",
+        "https://openalex.org/W6714477741",
+        "https://openalex.org/W6714895740",
+        "https://openalex.org/W6717367658",
+        "https://openalex.org/W6717697761",
+        "https://openalex.org/W6720057410",
+        "https://openalex.org/W6728612264",
+        "https://openalex.org/W6729433768",
+        "https://openalex.org/W6729556111",
+        "https://openalex.org/W6729956949",
+        "https://openalex.org/W6731982132",
+        "https://openalex.org/W6732467815",
+        "https://openalex.org/W6734265508",
+        "https://openalex.org/W6735236233",
+        "https://openalex.org/W6735487127",
+        "https://openalex.org/W6735618850",
+        "https://openalex.org/W6735641298",
+        "https://openalex.org/W6735944222",
+        "https://openalex.org/W6736057607",
+        "https://openalex.org/W6738045163",
+        "https://openalex.org/W6738693370",
+        "https://openalex.org/W6739653404",
+        "https://openalex.org/W6740472315",
+        "https://openalex.org/W6741002519",
+        "https://openalex.org/W6741753795",
+        "https://openalex.org/W6741776117",
+        "https://openalex.org/W6742288159",
+        "https://openalex.org/W6743661861",
+        "https://openalex.org/W6743755419",
+        "https://openalex.org/W6744038347",
+        "https://openalex.org/W6744458404",
+        "https://openalex.org/W6744580074",
+        "https://openalex.org/W6745674251",
+        "https://openalex.org/W6745777752",
+        "https://openalex.org/W6745921498",
+        "https://openalex.org/W6746260573",
+        "https://openalex.org/W6747473740",
+        "https://openalex.org/W6747625265",
+        "https://openalex.org/W6747943641",
+        "https://openalex.org/W6747944915",
+        "https://openalex.org/W6748026067",
+        "https://openalex.org/W6748284727",
+        "https://openalex.org/W6748317118",
+        "https://openalex.org/W6748331328",
+        "https://openalex.org/W6748600884",
+        "https://openalex.org/W6748728731",
+        "https://openalex.org/W6749423406",
+        "https://openalex.org/W6749733343",
+        "https://openalex.org/W6749859622",
+        "https://openalex.org/W6750254146",
+        "https://openalex.org/W6750348766",
+        "https://openalex.org/W6750523955",
+        "https://openalex.org/W6751281049",
+        "https://openalex.org/W6751776053",
+        "https://openalex.org/W6751797489",
+        "https://openalex.org/W6751813273",
+        "https://openalex.org/W6751869817",
+        "https://openalex.org/W6751959828",
+        "https://openalex.org/W6752031173",
+        "https://openalex.org/W6752040014",
+        "https://openalex.org/W6752232076",
+        "https://openalex.org/W6752515464",
+        "https://openalex.org/W6752606089",
+        "https://openalex.org/W6752796717",
+        "https://openalex.org/W6752846148",
+        "https://openalex.org/W6753311412",
+        "https://openalex.org/W6753772092",
+        "https://openalex.org/W6754038005",
+        "https://openalex.org/W6754568377",
+        "https://openalex.org/W6754778195",
+        "https://openalex.org/W6754779071",
+        "https://openalex.org/W6754979576",
+        "https://openalex.org/W6755095635",
+        "https://openalex.org/W6755318597",
+        "https://openalex.org/W6755365793",
+        "https://openalex.org/W6755476724",
+        "https://openalex.org/W6755477022",
+        "https://openalex.org/W6755905128",
+        "https://openalex.org/W6756054015",
+        "https://openalex.org/W6756103505",
+        "https://openalex.org/W6756469835",
+        "https://openalex.org/W6756727096",
+        "https://openalex.org/W6756840741",
+        "https://openalex.org/W6756978416",
+        "https://openalex.org/W6757068045",
+        "https://openalex.org/W6757204547",
+        "https://openalex.org/W6757457622",
+        "https://openalex.org/W6757740418",
+        "https://openalex.org/W6758126075",
+        "https://openalex.org/W6758314753",
+        "https://openalex.org/W6758419613",
+        "https://openalex.org/W6758853722",
+        "https://openalex.org/W6759370769",
+        "https://openalex.org/W6759402996",
+        "https://openalex.org/W6759458965",
+        "https://openalex.org/W6759546789",
+        "https://openalex.org/W6760021216",
+        "https://openalex.org/W6760036574",
+        "https://openalex.org/W6760210782",
+        "https://openalex.org/W6760378562",
+        "https://openalex.org/W6760481270",
+        "https://openalex.org/W6760698134",
+        "https://openalex.org/W6760842081",
+        "https://openalex.org/W6761044209",
+        "https://openalex.org/W6762503783",
+        "https://openalex.org/W6762959442",
+        "https://openalex.org/W6762981687",
+        "https://openalex.org/W6763049584",
+        "https://openalex.org/W6763315676",
+        "https://openalex.org/W6763424315",
+        "https://openalex.org/W6763430915",
+        "https://openalex.org/W6763752302",
+        "https://openalex.org/W6764276074",
+        "https://openalex.org/W6764592398",
+        "https://openalex.org/W6764969207",
+        "https://openalex.org/W6765145614",
+        "https://openalex.org/W6766578407",
+        "https://openalex.org/W6766895606",
+        "https://openalex.org/W6767015469",
+        "https://openalex.org/W6767062508",
+        "https://openalex.org/W6767105546",
+        "https://openalex.org/W6767111925",
+        "https://openalex.org/W6767151586",
+        "https://openalex.org/W6767252667",
+        "https://openalex.org/W6767258249",
+        "https://openalex.org/W6767283756",
+        "https://openalex.org/W6767291801",
+        "https://openalex.org/W6767331726",
+        "https://openalex.org/W6767341998",
+        "https://openalex.org/W6767468162",
+        "https://openalex.org/W6767471572",
+        "https://openalex.org/W6767500435",
+        "https://openalex.org/W6767599400",
+        "https://openalex.org/W6767953722",
+        "https://openalex.org/W6768532476",
+        "https://openalex.org/W6768560635",
+        "https://openalex.org/W6768602481",
+        "https://openalex.org/W6768755554",
+        "https://openalex.org/W6768791272",
+        "https://openalex.org/W6768920517",
+        "https://openalex.org/W6769066991",
+        "https://openalex.org/W6769148693",
+        "https://openalex.org/W6769596995",
+        "https://openalex.org/W6769737877",
+        "https://openalex.org/W6770070843",
+        "https://openalex.org/W6770166944",
+        "https://openalex.org/W6770629296",
+        "https://openalex.org/W6770761700",
+        "https://openalex.org/W6770858529",
+        "https://openalex.org/W6771326545",
+        "https://openalex.org/W6771486561",
+        "https://openalex.org/W6771559773",
+        "https://openalex.org/W6771590690",
+        "https://openalex.org/W6771800978",
+        "https://openalex.org/W6771838272",
+        "https://openalex.org/W6771843596",
+        "https://openalex.org/W6771847183",
+        "https://openalex.org/W6771853929",
+        "https://openalex.org/W6771876938",
+        "https://openalex.org/W6772287207",
+        "https://openalex.org/W6772329248",
+        "https://openalex.org/W6774352360",
+        "https://openalex.org/W6776498132",
+        "https://openalex.org/W6779630500",
+        "https://openalex.org/W6779724372",
+        "https://openalex.org/W6779744012",
+        "https://openalex.org/W6780513481",
+        "https://openalex.org/W6780559895",
+        "https://openalex.org/W6783529969",
+        "https://openalex.org/W6864424756"
+      ],
+      "cited_by_by_src": {
+        "OpenAlex": 257
+      },
+      "sources": [
+        "OpenAlex"
+      ],
+      "relevance_score": 0.0,
+      "rerank_score": 0.1713,
+      "rerank_parts": {
+        "relevance": 0.407,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "OpenAlex",
+      "title": "Distribution Matching Distillation Meets Reinforcement Learning",
+      "authors": [
+        "Dengyang Jiang",
+        "Dongyang Liu",
+        "Zanyi Wang",
+        "Q. M. Jonathan Wu",
+        "Liuzhuozheng Li",
+        "Haobin Li",
+        "Xin Jin",
+        "David Liu"
+      ],
+      "year": 2025,
+      "venue": "ArXiv.org",
+      "doi": "10.48550/arxiv.2511.13649",
+      "cited_by": 0,
+      "cited_by_src": "OpenAlex",
+      "type": "preprint",
+      "abstract": "Distribution Matching Distillation (DMD) facilitates efficient inference by distilling multi-step diffusion models into few-step variants. Concurrently, Reinforcement Learning (RL) has emerged as a vital tool for aligning generative models with human preferences. While both represent critical post-training stages for large-scale diffusion models, existing studies typically treat them as independent, sequential processes, leaving a systematic framework for their unification largely unexplored. In this work, we demonstrate that jointly optimizing these two objectives yields mutual benefits: RL enables more preference-aware and controllable distillation rather than uniformly compressing the full data distribution, while DMD serves as an effective regularizer to mitigate reward hacking during RL training. Building on these insights, we propose DMDR, a unified framework that incorporates Reward-Tilted Distribution Matching optimization alongside two dynamic distillation training strategies in the initial stage, followed by the joint DMD and RL optimization in the second stage. Extensive experiments demonstrate that DMDR achieves state-of-the-art visual quality and prompt adherence among few-step generation methods, even surpassing the performance of its multi-step teacher model.",
+      "url": "https://openalex.org/W4417209054",
+      "oa_relevance": 8.995125,
+      "referenced_works": [],
+      "cited_by_by_src": {
+        "OpenAlex": 0
+      },
+      "sources": [
+        "OpenAlex"
+      ],
+      "relevance_score": 0.144,
+      "rerank_score": 0.055,
+      "rerank_parts": {
+        "relevance": 0.065,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "OpenAlex",
+      "title": "Inference-Time Alignment in Diffusion Models with Reward-Guided Generation: Tutorial and Review",
+      "authors": [
+        "Masatoshi Uehara",
+        "Yulai Zhao",
+        "Chenyu Wang",
+        "Xiner Li",
+        "Aviv Regev",
+        "Sergey Levine",
+        "Tommaso Biancalani"
+      ],
+      "year": 2025,
+      "venue": "ArXiv.org",
+      "doi": "10.48550/arxiv.2501.09685",
+      "cited_by": 0,
+      "cited_by_src": "OpenAlex",
+      "type": "preprint",
+      "abstract": "This tutorial provides an in-depth guide on inference-time guidance and alignment methods for optimizing downstream reward functions in diffusion models. While diffusion models are renowned for their generative modeling capabilities, practical applications in fields such as biology often require sample generation that maximizes specific metrics (e.g., stability, affinity in proteins, closeness to target structures). In these scenarios, diffusion models can be adapted not only to generate realistic samples but also to explicitly maximize desired measures at inference time without fine-tuning. This tutorial explores the foundational aspects of such inference-time algorithms. We review these methods from a unified perspective, demonstrating that current techniques -- such as Sequential Monte Carlo (SMC)-based guidance, value-based sampling, and classifier guidance -- aim to approximate soft optimal denoising processes (a.k.a. policies in RL) that combine pre-trained denoising processes with value functions serving as look-ahead functions that predict from intermediate states to terminal rewards. Within this framework, we present several novel algorithms not yet covered in the literature. Furthermore, we discuss (1) fine-tuning methods combined with inference-time techniques, (2) inference-time algorithms based on search algorithms such as Monte Carlo tree search, which have received limited attention in current research, and (3) connections between inference-time algorithms in language models and diffusion models. The code of this tutorial on protein design is available at https://github.com/masa-ue/AlignInversePro",
+      "url": "https://openalex.org/W4406549379",
+      "oa_relevance": 2.993931,
+      "referenced_works": [],
+      "cited_by_by_src": {
+        "OpenAlex": 0
+      },
+      "sources": [
+        "OpenAlex"
+      ],
+      "relevance_score": 0.033,
+      "rerank_score": 0.0183,
+      "rerank_parts": {
+        "relevance": 0.022,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "OpenAlex",
+      "title": "Multi-access edge computing scheduling optimization model for remote education under 6G network environment based on reinforcement learning",
+      "authors": [
+        "Lei Jin",
+        "Xin Gao",
+        "Ji Wang",
+        "Shuhong Yuan"
+      ],
+      "year": 2026,
+      "venue": "Scientific Reports",
+      "doi": "10.1038/s41598-025-29849-8",
+      "cited_by": 0,
+      "cited_by_src": "OpenAlex",
+      "type": "article",
+      "abstract": "The evolution of digital education necessitates robust computational frameworks to address the complexities inherent in remote learning environments. Traditional scheduling mechanisms often fall short in accommodating the dynamic nature of learner engagement and the asynchronous delivery of content. To bridge this gap, we introduce a novel computational model that leverages reinforcement learning to optimize content delivery schedules. Central to our approach is the Attentive Stochastic Transition Estimation Network (ASTEN), which models the probabilistic transitions of learner states, accounting for factors such as attention variability and feedback delays. Complementing ASTEN is the Selective Informative Delivery Strategy (SIDS), a decision-theoretic framework that determines optimal content emission based on real-time uncertainty assessments and pedagogical utility. Our approach captures nuanced behavioral trends, such as sporadic learner interaction, temporal learning decay, and individualized attention cycles, thereby enabling a more responsive and tailored instructional strategy. By explicitly integrating cognitive and behavioral signals within the scheduling framework, our model facilitates the delivery of content that aligns with each learner's evolving state. Empirical evaluations demonstrate that our integrated model significantly enhances learning outcomes by adapting to individual learner trajectories and mitigating the challenges posed by sparse feedback. This research contributes to the theoretical foundations of computational learning models and offers practical insights for the development of adaptive educational technologies, particularly in environments where traditional one-size-fits-all approaches prove inadequate.",
+      "url": "https://openalex.org/W7118938095",
+      "oa_relevance": 2.4359007,
+      "referenced_works": [
+        "https://openalex.org/W3035240825",
+        "https://openalex.org/W3118600296",
+        "https://openalex.org/W3133518153",
+        "https://openalex.org/W3136793533",
+        "https://openalex.org/W3147184966",
+        "https://openalex.org/W3166166117",
+        "https://openalex.org/W3168600998",
+        "https://openalex.org/W3169450514",
+        "https://openalex.org/W3169651898",
+        "https://openalex.org/W3183588514",
+        "https://openalex.org/W3209793239",
+        "https://openalex.org/W4214694907",
+        "https://openalex.org/W4225888491",
+        "https://openalex.org/W4283318673",
+        "https://openalex.org/W4285147180",
+        "https://openalex.org/W4292264335",
+        "https://openalex.org/W4292851291",
+        "https://openalex.org/W4293211529",
+        "https://openalex.org/W4312433903",
+        "https://openalex.org/W4312605624",
+        "https://openalex.org/W4312772600",
+        "https://openalex.org/W4361009670",
+        "https://openalex.org/W4379382376",
+        "https://openalex.org/W4385392769",
+        "https://openalex.org/W4385562572",
+        "https://openalex.org/W4386065775",
+        "https://openalex.org/W4386065890",
+        "https://openalex.org/W4386075837",
+        "https://openalex.org/W4388118083",
+        "https://openalex.org/W4390875033",
+        "https://openalex.org/W4394625793"
+      ],
+      "cited_by_by_src": {
+        "OpenAlex": 0
+      },
+      "sources": [
+        "OpenAlex"
+      ],
+      "relevance_score": 0.0,
+      "rerank_score": 0.0177,
+      "rerank_parts": {
+        "relevance": 0.018,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "OpenAlex",
+      "title": "LPM 1.0: Video-based Character Performance Model",
+      "authors": [
+        "Ailing Zeng",
+        "Casper Yang",
+        "Chauncey Ge",
+        "Eddie Zhang",
+        "Garvey Xu",
+        "Gavin Lin",
+        "Gilbert Gu",
+        "Jeremy Pi"
+      ],
+      "year": 2026,
+      "venue": "arXiv (Cornell University)",
+      "doi": "",
+      "cited_by": 0,
+      "cited_by_src": "OpenAlex",
+      "type": "article",
+      "abstract": "Performance, the externalization of intent, emotion, and personality through visual, vocal, and temporal behavior, is what makes a character alive. Learning such performance from video is a promising alternative to traditional 3D pipelines. However, existing video models struggle to jointly achieve high expressiveness, real-time inference, and long-horizon identity stability, a tension we call the performance trilemma. Conversation is the most comprehensive performance scenario, as characters simultaneously speak, listen, react, and emote while maintaining identity over time. To address this, we present LPM 1.0 (Large Performance Model), focusing on single-person full-duplex audio-visual conversational performance. Concretely, we build a multimodal human-centric dataset through strict filtering, speaking-listening audio-video pairing, performance understanding, and identity-aware multi-reference extraction; train a 17B-parameter Diffusion Transformer (Base LPM) for highly controllable, identity-consistent performance through multimodal conditioning; and distill it into a causal streaming generator (Online LPM) for low-latency, infinite-length interaction. At inference, given a character image with identity-aware references, LPM 1.0 generates listening videos from user audio and speaking videos from synthesized audio, with text prompts for motion control, all at real-time speed with identity-stable, infinite-length generation. LPM 1.0 thus serves as a visual engine for conversational agents, live streaming characters, and game NPCs. To systematically evaluate this setting, we propose LPM-Bench, the first benchmark for interactive character performance. LPM 1.0 achieves state-of-the-art results across all evaluated dimensions while maintaining real-time inference.",
+      "url": "https://openalex.org/W7153671179",
+      "oa_relevance": 2.0121877,
+      "referenced_works": [],
+      "cited_by_by_src": {
+        "OpenAlex": 0
+      },
+      "sources": [
+        "OpenAlex"
+      ],
+      "relevance_score": 0.0,
+      "rerank_score": 0.0146,
+      "rerank_parts": {
+        "relevance": 0.015,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Surrogate as Teacher: Distillation-Guided Graph Poisoning Attack",
+      "authors": [
+        "Xingyu Peng",
+        "Ke Xu"
+      ],
+      "year": 2026,
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "doi": "10.1609/aaai.v40i29.39668",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "While leveraging pseudo-labels has become a common paradigm in untargeted gray-box graph poisoning attacks, it suffers from two critical limitations: the use of brittle hard pseudo-labels that overlook uncertainty and can amplify surrogate model errors, and static guidance that progressively becomes stale as the graph is perturbed. To resolve these issues, we propose MetaDist, a novel framework that reframes the attack as an adversarial self-knowledge distillation process. Here, a \"teacher\" model provides continuously refined soft pseudo-labels to a \"student\" model, with the attack objective being to maximize the divergence between them. MetaDist makes two synergistic innovations. It employs the Reverse KL (RKL) divergence as a more strategic attack loss that efficiently converts uncertain nodes into robust, high-confidence errors. Concurrently, it introduces the Online Adaptive Teacher (OAT) mechanism, which adapts the teacher via student feedback to ensure the guidance signal remains relevant. Extensive experiments demonstrate that MetaDist consistently and significantly outperforms strong baselines across multiple datasets, proving its effectiveness and transferability even against advanced graph defenses.",
+      "url": "https://doi.org/10.1609/aaai.v40i29.39668",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.4,
+      "rerank_score": 0.0029,
+      "rerank_parts": {
+        "relevance": 0.003,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "DTSNet: A Denoising Teacher-Student Network with Reverse Distillation for Anomaly Detection",
+      "authors": [
+        "Taixiang Lin",
+        "Shuyuan Lin",
+        "Yanjie Liang",
+        "Rong Chen",
+        "Yang Lu"
+      ],
+      "year": 2025,
+      "venue": "2025 IEEE International Conference on Multimedia and Expo (ICME)",
+      "doi": "10.1109/icme59968.2025.11209857",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icme59968.2025.11209857",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.311,
+      "rerank_score": 0.0019,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "T2-GNN: Graph Neural Networks for Graphs with Incomplete Features and Structure via Teacher-Student Distillation",
+      "authors": [
+        "Cuiying Huo",
+        "Di Jin",
+        "Yawen Li",
+        "Dongxiao He",
+        "Yu-Bin Yang",
+        "Lingfei Wu"
+      ],
+      "year": 2023,
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "doi": "10.1609/aaai.v37i4.25553",
+      "cited_by": 43,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "Graph Neural Networks (GNNs) have been a prevailing technique for tackling various analysis tasks on graph data. A key premise for the remarkable performance of GNNs relies on complete and trustworthy initial graph descriptions (i.e., node features and graph structure), which is often not satisfied since real-world graphs are often incomplete due to various unavoidable factors. In particular, GNNs face greater challenges when both node features and graph structure are incomplete at the same time. The existing methods either focus on feature completion or structure completion. They usually rely on the matching relationship between features and structure, or employ joint learning of node representation and feature (or structure) completion in the hope of achieving mutual benefit. However, recent studies confirm that the mutual interference between features and structure leads to the degradation of GNN performance. When both features and structure are incomplete, the mismatch between features and structure caused by the missing randomness exacerbates the interference between the two, which may trigger incorrect completions that negatively affect node representation. To this end, in this paper we propose a general GNN framework based on teacher-student distillation to improve the performance of GNNs on incomplete graphs, namely T2-GNN. To avoid the interference between features and structure, we separately design feature-level and structure-level teacher models to provide targeted guidance for student model (base GNNs, such as GCN) through distillation. Then we design two personalized methods to obtain well-trained feature and structure teachers. To ensure that the knowledge of the teacher model is comprehensively and effectively distilled to the student model, we further propose a dual distillation mode to enable the student to acquire as much expert knowledge as possible. Extensive experiments on eight benchmark datasets demonstrate the effectiveness and robustness of the new framework on graphs with incomplete features and structure.",
+      "url": "https://doi.org/10.1609/aaai.v37i4.25553",
+      "cited_by_by_src": {
+        "Crossref": 43
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.444,
+      "rerank_score": 0.0019,
+      "rerank_parts": {
+        "relevance": 0.003,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Local LLM-Based Teacher–Student Knowledge Distillation and AI Agent-Centric Approach",
+      "authors": [
+        "Sunghun Jang",
+        "MyoungRak Lee",
+        "Taeshik Shon"
+      ],
+      "year": 2026,
+      "venue": "",
+      "doi": "10.20944/preprints202605.2016.v1",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "posted-content",
+      "abstract": "Recent cyber incidents have become increasingly sophisticated through 'Living-off-the-Land (LotL)' techniques that exploit legitimate behavior and multi-stage attacks. This demands advanced reasoning capabilities to discern attack contexts within fragmented, large-scale logs. However, closed network environments with physical network separation (air-gapped), such as national critical infrastructure, restrict the use of high-performance cloud LLMs, limiting the adoption of cutting-edge AI-based analysis technologies. This research proposes a Local LLM-based intrusion analysis framework that can operate independently within closed networks to overcome these constraints. The proposed framework combines (i) an Offline Knowledge Distillation technique that transfers the analytical reasoning process of external high-performance models to the Local LLM after security review, and (ii) an AI agent orchestration structure that controls the analysis procedure step-by-step and suppresses hallucinations. Experiments and validation using the public dataset (Atomic Red Team) demonstrate that the proposed model achieves significantly higher detection accuracy (88.4%) and MITRE ATT&amp;amp;CK mapping performance (0.91 F1-Score) compared to existing general-purpose Local LLMs. Furthermore, it suppressed hallucination rates to 6.2% through an automated verification mechanism and significantly improved analysis efficiency by refining large-scale logs to focus on core events. This study quantitatively demonstrates that AI-based intrusion incident analysis automation is achievable using a single GPU server even under the resource constraints of closed networks, presenting a practical solution for intelligent security monitoring.",
+      "url": "https://doi.org/10.20944/preprints202605.2016.v1",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.267,
+      "rerank_score": 0.0019,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Enhanced Traffic Sign Detection in Severe Weather: A Multi-Teacher-Single-Student Knowledge Distillation Approach",
+      "authors": [
+        "Xuan Sun",
+        "Yancan Wu",
+        "Lingyun Zhang"
+      ],
+      "year": 2026,
+      "venue": "Signal, Image and Video Processing",
+      "doi": "10.1007/s11760-026-05276-8",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1007/s11760-026-05276-8",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0017,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Denoising precedes enrichment: aspect-sentiment-aware graph contrastive distillation network for review-based recommendation",
+      "authors": [
+        "Tongtong Yu",
+        "Sheng Sang",
+        "Kang Liu"
+      ],
+      "year": 2026,
+      "venue": "Information Sciences",
+      "doi": "10.1016/j.ins.2025.122756",
+      "cited_by": 1,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.ins.2025.122756",
+      "cited_by_by_src": {
+        "Crossref": 1
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0017,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "JFRFFNet: A Data–Model Co-Driven Graph Signal Denoising Model With Partial Prior Information",
+      "authors": [
+        "Ziqi Yan",
+        "Zhichao Zhang"
+      ],
+      "year": 2026,
+      "venue": "IEEE Signal Processing Letters",
+      "doi": "10.1109/lsp.2026.3665652",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/lsp.2026.3665652",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0017,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "An adaptive multi-teacher-student knowledge distillation framework for scalable cloud–edge multimodal learning",
+      "authors": [
+        "Arshad Hashmi",
+        "Mohammed Ameen"
+      ],
+      "year": 2026,
+      "venue": "Journal of Cloud Computing",
+      "doi": "10.1186/s13677-026-00935-0",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1186/s13677-026-00935-0",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0017,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Toward fair graph neural networks via dual-teacher knowledge distillation",
+      "authors": [
+        "Chengyu Li",
+        "Debo Cheng",
+        "Guixian Zhang",
+        "Yi Li",
+        "Shichao Zhang"
+      ],
+      "year": 2026,
+      "venue": "Neural Networks",
+      "doi": "10.1016/j.neunet.2025.108184",
+      "cited_by": 3,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.neunet.2025.108184",
+      "cited_by_by_src": {
+        "Crossref": 3
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0017,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Denoising Student Features with Diffusion Models for Knowledge Distillation in Speaker Verification",
+      "authors": [
+        "Zezhong Jin",
+        "Youzhi Tu",
+        "Zhe Li",
+        "Zilong Huang",
+        "Chong-Xin Gan",
+        "Man-Wai Mak"
+      ],
+      "year": 2025,
+      "venue": "ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp49660.2025.10889980",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp49660.2025.10889980",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0014,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Dual-Teacher Guided Denoising Distillation for Anomaly Detection",
+      "authors": [
+        "Ning Li",
+        "Ajian Liu",
+        "Chaohao Jiang",
+        "Suigu Tang",
+        "Yongze Li",
+        "Yanyan Liang"
+      ],
+      "year": 2025,
+      "venue": "IEEE Access",
+      "doi": "10.1109/access.2025.3616789",
+      "cited_by": 1,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/access.2025.3616789",
+      "cited_by_by_src": {
+        "Crossref": 1
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0014,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Enhancing Cross-Domain Graph Classification with Multi-Teacher Knowledge Distillation",
+      "authors": [
+        "Jiateng Li"
+      ],
+      "year": 2025,
+      "venue": "2025 4th International Symposium on Computer Applications and Information Technology (ISCAIT)",
+      "doi": "10.1109/iscait64916.2025.11010624",
+      "cited_by": 1,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/iscait64916.2025.11010624",
+      "cited_by_by_src": {
+        "Crossref": 1
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0014,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Distillation Progressive Teacher-student Architecture to Improve Abstractive Summarization",
+      "authors": [
+        "Guoliang Wang",
+        "Diandian Wang",
+        "Shuai Liu",
+        "Kun Wang",
+        "Xilin Liu",
+        "Jun Qiang",
+        "Jin Liu"
+      ],
+      "year": 2025,
+      "venue": "",
+      "doi": "10.2139/ssrn.5731335",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "posted-content",
+      "abstract": "",
+      "url": "https://doi.org/10.2139/ssrn.5731335",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0014,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "From Teacher to Student: Tracking Memorization Through Model Distillation",
+      "authors": [
+        "Simardeep Singh"
+      ],
+      "year": 2025,
+      "venue": "Proceedings of the First Workshop on Large Language Model Memorization (L2M2)",
+      "doi": "10.18653/v1/2025.l2m2-1.6",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.18653/v1/2025.l2m2-1.6",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0014,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "An area efficient FPGA design for EEG signal denoising using LMS adaptive filtering and Teager–Kaiser energy operator",
+      "authors": [
+        "Suma Nair",
+        "Britto Pari James"
+      ],
+      "year": 2025,
+      "venue": "Signal, Image and Video Processing",
+      "doi": "10.1007/s11760-025-04087-7",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1007/s11760-025-04087-7",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0014,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Improve Student Understanding of Amortized Loans",
+      "authors": [
+        "Percy Poon"
+      ],
+      "year": 2025,
+      "venue": "Applied Finance and Accounting",
+      "doi": "10.11114/afa.v10i1.7877",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "Amortized loans, such as mortgages and auto loans, are common real-world examples introduced in the first finance college course. Many students mistakenly believe that the monthly payments on an amortized loan should be larger than the monthly equivalent of the annual payments (the annual payment divided by 12) of the same loan. This paper mathematically demonstrates that the monthly payments must, in fact, be smaller than this monthly equivalent. Also, the paper shows a loanee does pay more interest with monthly payments. Furthermore, this paper presents an alternative approach to treat amortized loan payments as investment or an opportunity cost, thus improving student understanding of amortized loans and financial decision-making.",
+      "url": "https://doi.org/10.11114/afa.v10i1.7877",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.222,
+      "rerank_score": 0.0014,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Bridging Architectural Gaps in Knowledge Distillation: Dynamic Proximal Teacher Interaction Via Cross-Attention Mechanism",
+      "authors": [
+        "Tongtong Su",
+        "Xukai Wang",
+        "Huilin Liu",
+        "Chunmei Ma",
+        "Jinqi Zhu",
+        "Huazhi Sun",
+        "Yun Liao",
+        "Xiguo Zhou"
+      ],
+      "year": 2025,
+      "venue": "",
+      "doi": "10.2139/ssrn.5244158",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "posted-content",
+      "abstract": "",
+      "url": "https://doi.org/10.2139/ssrn.5244158",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0014,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Enhancing clinical reasoning in quantized vision–language models for chest X-ray report generation through chain-of-thought teacher–student distillation",
+      "authors": [
+        "Parsa Mohammadi",
+        "Saeed Sharifian"
+      ],
+      "year": 2025,
+      "venue": "",
+      "doi": "10.2139/ssrn.5802503",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "posted-content",
+      "abstract": "",
+      "url": "https://doi.org/10.2139/ssrn.5802503",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0014,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "A Metamorphic Testing Perspective on Knowledge Distillation for Language Models of Code: Does the Student Deeply Mimic the Teacher?",
+      "authors": [
+        "Abdul Awal",
+        "Mrigank Rochan",
+        "Chanchal  K. Roy"
+      ],
+      "year": 2025,
+      "venue": "",
+      "doi": "10.2139/ssrn.5768480",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "posted-content",
+      "abstract": "",
+      "url": "https://doi.org/10.2139/ssrn.5768480",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0014,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Symbolic-Domain Musical Instrument Classification Using Knowledge Distillation from Audio-Teacher to Symbolic-Student",
+      "authors": [
+        "Shun Sawada"
+      ],
+      "year": 2024,
+      "venue": "2024 32nd European Signal Processing Conference (EUSIPCO)",
+      "doi": "10.23919/eusipco63174.2024.10715031",
+      "cited_by": 4,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.23919/eusipco63174.2024.10715031",
+      "cited_by_by_src": {
+        "Crossref": 4
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0012,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Dynamic Ensemble Teacher-Student Distillation Framework for Light-Weight Fake Audio Detection",
+      "authors": [
+        "Jun Xue",
+        "Cunhang Fan",
+        "Jiangyan Yi",
+        "Jian Zhou",
+        "Zhao Lv"
+      ],
+      "year": 2024,
+      "venue": "IEEE Signal Processing Letters",
+      "doi": "10.1109/lsp.2024.3431936",
+      "cited_by": 7,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/lsp.2024.3431936",
+      "cited_by_by_src": {
+        "Crossref": 7
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0012,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Dual knowledge distillation for visual tracking with teacher–student network",
+      "authors": [
+        "Yuanyun Wang",
+        "Chuanyu Sun",
+        "Jun Wang",
+        "Bingfei Chai"
+      ],
+      "year": 2024,
+      "venue": "Signal, Image and Video Processing",
+      "doi": "10.1007/s11760-024-03226-w",
+      "cited_by": 3,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1007/s11760-024-03226-w",
+      "cited_by_by_src": {
+        "Crossref": 3
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0012,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "A Graph Signal Denoising Method Using Total Variation Regularization and Fractional Graph Fourier Transform",
+      "authors": [
+        "Chien-Cheng Tseng",
+        "Su-Ling Lee"
+      ],
+      "year": 2024,
+      "venue": "2024 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)",
+      "doi": "10.1109/ispacs62486.2024.10869261",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/ispacs62486.2024.10869261",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0012,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Mixed Graph Signal Analysis of Joint Image Denoising / Interpolation",
+      "authors": [
+        "Niruhan Viswarupan",
+        "Gene Cheung",
+        "Fengbo Lan",
+        "Michael S. Brown"
+      ],
+      "year": 2024,
+      "venue": "ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp48485.2024.10445943",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp48485.2024.10445943",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0012,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Eatsa-Gnn: Edge-Aware and Two-Stage Attention for Enhancing Graph Neural Networks Based on Teacher-Student Mechanisms for Graph Node Classification",
+      "authors": [
+        "Abdul  J. Fofanah",
+        "Alpha  Omar Leigh"
+      ],
+      "year": 2024,
+      "venue": "",
+      "doi": "10.2139/ssrn.4840883",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "posted-content",
+      "abstract": "",
+      "url": "https://doi.org/10.2139/ssrn.4840883",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0012,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Zero-Shot Sketch-Based Image Retrieval with Teacher-Guided and Student-Centered Cross-Modal Bidirectional Knowledge Distillation",
+      "authors": [
+        "Yang Liu",
+        "Xinbo Gao",
+        "Jiale Du",
+        "Jungong Han"
+      ],
+      "year": 2024,
+      "venue": "",
+      "doi": "10.2139/ssrn.5002228",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "posted-content",
+      "abstract": "",
+      "url": "https://doi.org/10.2139/ssrn.5002228",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0012,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph Signal Denoising in Power Systems and its Effects on GSP-Based State Estimation",
+      "authors": [
+        "Soumav Biswas",
+        "Mia Naeini"
+      ],
+      "year": 2024,
+      "venue": "2024 56th North American Power Symposium (NAPS)",
+      "doi": "10.1109/naps61145.2024.10741774",
+      "cited_by": 1,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/naps61145.2024.10741774",
+      "cited_by_by_src": {
+        "Crossref": 1
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0012,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "A Graph Signal Denoising Method Using Eigenvector Associated with Minimum Eigenvalue",
+      "authors": [
+        "Chien-Cheng Tseng",
+        "Su-Ling Lee"
+      ],
+      "year": 2024,
+      "venue": "2024 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)",
+      "doi": "10.1109/icce-taiwan62264.2024.10674332",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icce-taiwan62264.2024.10674332",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0012,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Improved image denoising via DeepONet-based Weickert operator learning",
+      "authors": [
+        "Amine Laghrib"
+      ],
+      "year": 2026,
+      "venue": "Digital Signal Processing",
+      "doi": "10.1016/j.dsp.2026.106063",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.dsp.2026.106063",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0011,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Quantized phase-coded waveform design by using ADMM with proximal operator",
+      "authors": [
+        "Wei Lu",
+        "Junzheng Jiang",
+        "Yaojun Wu",
+        "Yinghui Quan"
+      ],
+      "year": 2026,
+      "venue": "Digital Signal Processing",
+      "doi": "10.1016/j.dsp.2025.105876",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.dsp.2025.105876",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0011,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Denoising of astrophysical image mixtures from nonstationary noise by vertex-frequency graph Wiener filtering",
+      "authors": [
+        "Sabri Özen",
+        "Mehmet Tankut Özgen"
+      ],
+      "year": 2026,
+      "venue": "Digital Signal Processing",
+      "doi": "10.1016/j.dsp.2026.106114",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.dsp.2026.106114",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0011,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Pairing Denoising Enhanced Hash-Aware Distillation for Unsupervised Cross-Modal Retrieval",
+      "authors": [
+        "Xinsheng Shu",
+        "Mingyong Li"
+      ],
+      "year": 2026,
+      "venue": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp55912.2026.11462864",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp55912.2026.11462864",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0011,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Data-Adaptive Proximal Operator: Demonstration on Low-Rank Sparse Subspace Clustering",
+      "authors": [
+        "Ivica Kopriva"
+      ],
+      "year": 2026,
+      "venue": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp55912.2026.11462628",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp55912.2026.11462628",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0011,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 1.0,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "NC-WAMKD: Neighborhood Correction Weight-Adaptive Multi-Teacher Knowledge Distillation for Graph-Based Semi-Supervised Node Classification",
+      "authors": [
+        "Jiahao Liu",
+        "Pengcheng Guo",
+        "Yonghong Song"
+      ],
+      "year": 2023,
+      "venue": "ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp49357.2023.10095852",
+      "cited_by": 3,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp49357.2023.10095852",
+      "cited_by_by_src": {
+        "Crossref": 3
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.001,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Teacher-Student Complementary Sample Contrastive Distillation",
+      "authors": [
+        "Zhiqiang Bao",
+        "Zhenhua Huang",
+        "Jianping Gou",
+        "Lan Du",
+        "Kang Liu",
+        "Yunwen Chen"
+      ],
+      "year": 2023,
+      "venue": "",
+      "doi": "10.2139/ssrn.4476473",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "posted-content",
+      "abstract": "",
+      "url": "https://doi.org/10.2139/ssrn.4476473",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.001,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Complexity Reduction of Graph Signal Denoising Based on Fast Graph Fourier Transform",
+      "authors": [
+        "Takayuki Sasaki",
+        "Yukihiro Bandoh",
+        "Masaki Kitahara"
+      ],
+      "year": 2023,
+      "venue": "2023 IEEE International Conference on Image Processing (ICIP)",
+      "doi": "10.1109/icip49359.2023.10222250",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icip49359.2023.10222250",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.001,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Continuous Relaxation of Discontinuous Shrinkage Operator: Proximal Inclusion and Conversion",
+      "authors": [
+        "Masahiro Yukawa"
+      ],
+      "year": 2025,
+      "venue": "IEEE Open Journal of Signal Processing",
+      "doi": "10.1109/ojsp.2025.3579646",
+      "cited_by": 3,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/ojsp.2025.3579646",
+      "cited_by_by_src": {
+        "Crossref": 3
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.001,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Multimodadl Graph Signal Denoising With Simultaneous Graph Learning using Deep Algorithm Unrolling",
+      "authors": [
+        "Keigo Takanami",
+        "Yukihiro Bandoh",
+        "Seishi Takamura",
+        "Yuichi Tanaka"
+      ],
+      "year": 2023,
+      "venue": "2023 IEEE International Conference on Image Processing (ICIP)",
+      "doi": "10.1109/icip49359.2023.10222480",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icip49359.2023.10222480",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.001,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "A Multi-Graph Neural Group Recommendation Model with Meta-Learning and Multi-Teacher Distillation",
+      "authors": [
+        "Zhenhua Huang",
+        "Weizhen Zhou",
+        "Cheng Wang",
+        "Yunwen Chen"
+      ],
+      "year": 2023,
+      "venue": "",
+      "doi": "10.2139/ssrn.4412754",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "posted-content",
+      "abstract": "",
+      "url": "https://doi.org/10.2139/ssrn.4412754",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.001,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Total Variation Denoising for Graph Signals Enhanced with Moreau Envelope",
+      "authors": [
+        "Zihao Jia",
+        "Yangfan He",
+        "Zhichao Zhang"
+      ],
+      "year": 2025,
+      "venue": "Circuits, Systems, and Signal Processing",
+      "doi": "10.1007/s00034-025-03175-w",
+      "cited_by": 1,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1007/s00034-025-03175-w",
+      "cited_by_by_src": {
+        "Crossref": 1
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.001,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Student and Teacher Models in KD",
+      "authors": [
+        "Linfeng Zhang"
+      ],
+      "year": 2025,
+      "venue": "SpringerBriefs in Computer Science",
+      "doi": "10.1007/978-981-95-0367-4_2",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "book-chapter",
+      "abstract": "",
+      "url": "https://doi.org/10.1007/978-981-95-0367-4_2",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.001,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Teacher-Student Knowledge Distillation for Radar Perception on Embedded Accelerators",
+      "authors": [
+        "Steven Shaw",
+        "Kanishka Tyagi",
+        "Shan Zhang"
+      ],
+      "year": 2023,
+      "venue": "2023 57th Asilomar Conference on Signals, Systems, and Computers",
+      "doi": "10.1109/ieeeconf59524.2023.10476842",
+      "cited_by": 5,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/ieeeconf59524.2023.10476842",
+      "cited_by_by_src": {
+        "Crossref": 5
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.001,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Efficient Quantization and Denoising Using Local Graph Fourier Frames",
+      "authors": [
+        "Philipp Reingruber",
+        "Gerald Matz"
+      ],
+      "year": 2025,
+      "venue": "ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp49660.2025.10889673",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp49660.2025.10889673",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.001,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.841,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "GraphSTAR: Proximal Operator-Based Graph Neural Network Enhanced by Dynamic Graph Aggregation for Spatial Transcriptomics_supp1-3644379.pdf",
+      "authors": [
+        "Hongmin Cai"
+      ],
+      "year": null,
+      "venue": "",
+      "doi": "10.1109/jbhi.2025.3644379/mm1",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "component",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/jbhi.2025.3644379/mm1",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0008,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Table 3: Test accuracy (%) of different teacher-student distillation on CIFAR100 dataset with densety = 0.9.",
+      "authors": [],
+      "year": null,
+      "venue": "",
+      "doi": "10.7717/peerj-cs.3388/table-3",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "component",
+      "abstract": "",
+      "url": "https://doi.org/10.7717/peerj-cs.3388/table-3",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0008,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Multimodal Graph Signal Denoising Via Twofold Graph Smoothness Regularization with Deep Algorithm Unrolling",
+      "authors": [
+        "Masatoshi Nagahama",
+        "Yuichi Tanaka"
+      ],
+      "year": 2022,
+      "venue": "ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp43922.2022.9747784",
+      "cited_by": 4,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp43922.2022.9747784",
+      "cited_by_by_src": {
+        "Crossref": 4
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0008,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Distributed Graph Regularized Denoising via Constrained Chebyshev Polynomials",
+      "authors": [
+        "David B. Tay"
+      ],
+      "year": 2024,
+      "venue": "IEEE Signal Processing Letters",
+      "doi": "10.1109/lsp.2024.3421972",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/lsp.2024.3421972",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0008,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "The Proximal Operator of the Piece-Wise Exponential Function",
+      "authors": [
+        "Yulan Liu",
+        "Yuyang Zhou",
+        "Rongrong Lin"
+      ],
+      "year": 2024,
+      "venue": "IEEE Signal Processing Letters",
+      "doi": "10.1109/lsp.2024.3370493",
+      "cited_by": 7,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/lsp.2024.3370493",
+      "cited_by_by_src": {
+        "Crossref": 7
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0008,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "A Convex Optimization Method for Edge Signal Denoising over Graph",
+      "authors": [
+        "Su-Ling Lee",
+        "Chien-Cheng Tseng"
+      ],
+      "year": 2022,
+      "venue": "2022 IEEE International Conference on Consumer Electronics - Taiwan",
+      "doi": "10.1109/icce-taiwan55306.2022.9869174",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icce-taiwan55306.2022.9869174",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0008,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Knowledge Distillation via Multi-Teacher Feature Ensemble",
+      "authors": [
+        "Xin Ye",
+        "Rongxin Jiang",
+        "Xiang Tian",
+        "Rui Zhang",
+        "Yaowu Chen"
+      ],
+      "year": 2024,
+      "venue": "IEEE Signal Processing Letters",
+      "doi": "10.1109/lsp.2024.3359573",
+      "cited_by": 14,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/lsp.2024.3359573",
+      "cited_by_by_src": {
+        "Crossref": 14
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0008,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.707,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "TC3KD: Knowledge distillation via teacher-student cooperative curriculum customization",
+      "authors": [
+        "Chaofei Wang",
+        "Ke Yang",
+        "Shaowei Zhang",
+        "Gao Huang",
+        "Shiji Song"
+      ],
+      "year": 2022,
+      "venue": "Neurocomputing",
+      "doi": "10.1016/j.neucom.2022.07.055",
+      "cited_by": 15,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.neucom.2022.07.055",
+      "cited_by_by_src": {
+        "Crossref": 15
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0008,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Teacher-student knowledge distillation for real-time correlation tracking",
+      "authors": [
+        "Qihuang Chen",
+        "Bineng Zhong",
+        "Qihua Liang",
+        "Qingyong Deng",
+        "Xianxian Li"
+      ],
+      "year": 2022,
+      "venue": "Neurocomputing",
+      "doi": "10.1016/j.neucom.2022.05.064",
+      "cited_by": 11,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.neucom.2022.05.064",
+      "cited_by_by_src": {
+        "Crossref": 11
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0008,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Image Deep Steganography Detection based on Knowledge Distillation in Teacher-Student Network",
+      "authors": [
+        "Huifang Hao",
+        "Shangping Zhong",
+        "Kaizhi Chen"
+      ],
+      "year": 2021,
+      "venue": "2021 3rd International Conference on Video, Signal and Image Processing",
+      "doi": "10.1145/3503961.3503971",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1145/3503961.3503971",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph Unrolling Networks: Interpretable Neural Networks for Graph Signal Denoising",
+      "authors": [
+        "Siheng Chen",
+        "Yonina C. Eldar",
+        "Lingxiao Zhao"
+      ],
+      "year": 2021,
+      "venue": "IEEE Transactions on Signal Processing",
+      "doi": "10.1109/tsp.2021.3087905",
+      "cited_by": 71,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/tsp.2021.3087905",
+      "cited_by_by_src": {
+        "Crossref": 71
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Student Customized Knowledge Distillation: Bridging the Gap Between Student and Teacher",
+      "authors": [
+        "Yichen Zhu",
+        "Yi Wang"
+      ],
+      "year": 2021,
+      "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "doi": "10.1109/iccv48922.2021.00501",
+      "cited_by": 70,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/iccv48922.2021.00501",
+      "cited_by_by_src": {
+        "Crossref": 70
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Improved analytical learning proximal operator method for sparse recovery",
+      "authors": [
+        "Tao Pu",
+        "Weike Feng",
+        "Ningning Tong",
+        "Pengcheng Wan",
+        "Xiaowei Hu"
+      ],
+      "year": 2023,
+      "venue": "Signal Processing",
+      "doi": "10.1016/j.sigpro.2023.109198",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.sigpro.2023.109198",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph Signal Denoising Method via Hybrid Neumann-Series and Edge-Variant Graph Filters",
+      "authors": [
+        "Chien-Cheng Tseng",
+        "Su-Ling Lee"
+      ],
+      "year": 2021,
+      "venue": "2021 7th International Conference on Applied System Innovation (ICASI)",
+      "doi": "10.1109/icasi52993.2021.9568465",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icasi52993.2021.9568465",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "A Proximity Operator-Based Method for Denoising Biomedical Measurements",
+      "authors": [
+        "Priya Ranjan Muduli",
+        "Vinit Kumar"
+      ],
+      "year": 2023,
+      "venue": "Circuits, Systems, and Signal Processing",
+      "doi": "10.1007/s00034-023-02400-8",
+      "cited_by": 7,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1007/s00034-023-02400-8",
+      "cited_by_by_src": {
+        "Crossref": 7
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph Signal Denoising Methods Using Sparseness and Bandlimitedness Priors in GFT Domain",
+      "authors": [
+        "Chien-Cheng Tseng",
+        "Su-Ling Lee"
+      ],
+      "year": 2021,
+      "venue": "2021 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)",
+      "doi": "10.1109/ispacs51563.2021.9651110",
+      "cited_by": 3,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/ispacs51563.2021.9651110",
+      "cited_by_by_src": {
+        "Crossref": 3
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Medical Image Joint Deringing and Denoising using Fourier Neural Operator",
+      "authors": [
+        "Maksim Penkin",
+        "Andrey Krylov"
+      ],
+      "year": 2023,
+      "venue": "Proceedings of the 2023 8th International Conference on Biomedical Imaging, Signal Processing",
+      "doi": "10.1145/3634875.3634881",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1145/3634875.3634881",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Denoising graph neural network based hydraulic component fault diagnosis method",
+      "authors": [
+        "Zhiwei Qiu",
+        "Wanli Li",
+        "Tang Tang",
+        "Daozhi Wang",
+        "Qiuping Wang"
+      ],
+      "year": 2023,
+      "venue": "Mechanical Systems and Signal Processing",
+      "doi": "10.1016/j.ymssp.2023.110828",
+      "cited_by": 45,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.ymssp.2023.110828",
+      "cited_by_by_src": {
+        "Crossref": 45
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.595,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "MulDE: Multi-teacher Knowledge Distillation for Low-dimensional Knowledge Graph Embeddings",
+      "authors": [
+        "Kai Wang",
+        "Yu Liu",
+        "Qian Ma",
+        "Quan Z. Sheng"
+      ],
+      "year": 2021,
+      "venue": "Proceedings of the Web Conference 2021",
+      "doi": "10.1145/3442381.3449898",
+      "cited_by": 41,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1145/3442381.3449898",
+      "cited_by_by_src": {
+        "Crossref": 41
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph Signal Denoising Using Nested-Structured Deep Algorithm Unrolling",
+      "authors": [
+        "Masatoshi Nagahama",
+        "Koki Yamada",
+        "Yuichi Tanaka",
+        "Stanley H. Chan",
+        "Yonina C. Eldar"
+      ],
+      "year": 2021,
+      "venue": "ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp39728.2021.9414093",
+      "cited_by": 8,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp39728.2021.9414093",
+      "cited_by_by_src": {
+        "Crossref": 8
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "A Unified View on Graph Neural Networks as Graph Signal Denoising",
+      "authors": [
+        "Yao Ma",
+        "Xiaorui Liu",
+        "Tong Zhao",
+        "Yozen Liu",
+        "Jiliang Tang",
+        "Neil Shah"
+      ],
+      "year": 2021,
+      "venue": "Proceedings of the 30th ACM International Conference on Information &amp; Knowledge Management",
+      "doi": "10.1145/3459637.3482225",
+      "cited_by": 93,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1145/3459637.3482225",
+      "cited_by_by_src": {
+        "Crossref": 93
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0007,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph Auto-Encoder for Graph Signal Denoising",
+      "authors": [
+        "Tien Huu Do",
+        "Duc Minh Nguyen",
+        "Nikos Deligiannis"
+      ],
+      "year": 2020,
+      "venue": "ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp40776.2020.9053623",
+      "cited_by": 17,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp40776.2020.9053623",
+      "cited_by_by_src": {
+        "Crossref": 17
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.354,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph denoising of impulsive EEG signals and the effect of their graph representation",
+      "authors": [
+        "Anastasia Pentari",
+        "George Tzagkarakis",
+        "Kostas Marias",
+        "Panagiotis Tsakalides"
+      ],
+      "year": 2022,
+      "venue": "Biomedical Signal Processing and Control",
+      "doi": "10.1016/j.bspc.2022.103886",
+      "cited_by": 8,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.bspc.2022.103886",
+      "cited_by_by_src": {
+        "Crossref": 8
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Spectral Graph Based Vertex-Frequency Wiener Filtering for Image and Graph Signal Denoising",
+      "authors": [
+        "Ali Can Yagan",
+        "Mehmet Tankut Ozgen"
+      ],
+      "year": 2020,
+      "venue": "IEEE Transactions on Signal and Information Processing over Networks",
+      "doi": "10.1109/tsipn.2020.2976704",
+      "cited_by": 31,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/tsipn.2020.2976704",
+      "cited_by_by_src": {
+        "Crossref": 31
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.354,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Amortized Proximal Optimization",
+      "authors": [
+        "Juhan Bae",
+        "Paul Vicol",
+        "Jeff Z. Haochen",
+        "Roger Grosse"
+      ],
+      "year": 2022,
+      "venue": "Advances in Neural Information Processing Systems 35",
+      "doi": "10.52202/068431-0653",
+      "cited_by": 1,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.52202/068431-0653",
+      "cited_by_by_src": {
+        "Crossref": 1
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Distributed algorithms for scalable proximity operator computation and application to video denoising",
+      "authors": [
+        "Feriel Abboud",
+        "Marin Stamm",
+        "Emilie Chouzenoux",
+        "Jean-Christophe Pesquet",
+        "Hugues Talbot"
+      ],
+      "year": 2022,
+      "venue": "Digital Signal Processing",
+      "doi": "10.1016/j.dsp.2022.103610",
+      "cited_by": 4,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.dsp.2022.103610",
+      "cited_by_by_src": {
+        "Crossref": 4
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Untrained Graph Neural Networks for Denoising",
+      "authors": [
+        "Samuel Rey",
+        "Santiago Segarra",
+        "Reinhard Heckel",
+        "Antonio G. Marques"
+      ],
+      "year": 2022,
+      "venue": "IEEE Transactions on Signal Processing",
+      "doi": "10.1109/tsp.2022.3223552",
+      "cited_by": 26,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/tsp.2022.3223552",
+      "cited_by_by_src": {
+        "Crossref": 26
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "A Wavelet Denoising and Teager Energy Operator-Based Method for Automatic QRS Complex Detection in ECG Signal",
+      "authors": [
+        "Lahcen El Bouny",
+        "Mohammed Khalil",
+        "Abdellah Adib"
+      ],
+      "year": 2020,
+      "venue": "Circuits, Systems, and Signal Processing",
+      "doi": "10.1007/s00034-020-01397-8",
+      "cited_by": 16,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1007/s00034-020-01397-8",
+      "cited_by_by_src": {
+        "Crossref": 16
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.354,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Unsupervised Graph Spectral Feature Denoising for Crop Yield Prediction",
+      "authors": [
+        "Saghar Bagheri",
+        "Chinthaka Dinesh",
+        "Gene Cheung",
+        "Timothy Eadie"
+      ],
+      "year": 2022,
+      "venue": "2022 30th European Signal Processing Conference (EUSIPCO)",
+      "doi": "10.23919/eusipco55093.2022.9909707",
+      "cited_by": 1,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.23919/eusipco55093.2022.9909707",
+      "cited_by_by_src": {
+        "Crossref": 1
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Atomic filter: A weak form of shift operator for graph signals",
+      "authors": [
+        "Lihua Yang",
+        "Qing Zhang",
+        "Qian Zhang",
+        "Chao Huang"
+      ],
+      "year": 2022,
+      "venue": "Digital Signal Processing",
+      "doi": "10.1016/j.dsp.2022.103644",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.dsp.2022.103644",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Speech Signal Processing on Graphs: Graph Topology, Graph Frequency Analysis and Denoising",
+      "authors": [
+        "Tingting Wang",
+        "Haiyan Guo",
+        "Bin Lyu",
+        "Zhen Yang"
+      ],
+      "year": 2020,
+      "venue": "Chinese Journal of Electronics",
+      "doi": "10.1049/cje.2020.08.008",
+      "cited_by": 7,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1049/cje.2020.08.008",
+      "cited_by_by_src": {
+        "Crossref": 7
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.354,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Operator Graph Theory",
+      "authors": [],
+      "year": 2022,
+      "venue": "The Mathematics of Finite Networks",
+      "doi": "10.1017/9781316466919.003",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "book-part",
+      "abstract": "",
+      "url": "https://doi.org/10.1017/9781316466919.003",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Protein Engineering with Lightweight Graph Denoising Neural Networks",
+      "authors": [],
+      "year": null,
+      "venue": "",
+      "doi": "10.1021/acs.jcim.4c00036.s001",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "component",
+      "abstract": "",
+      "url": "https://doi.org/10.1021/acs.jcim.4c00036.s001",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Hybrid Learning with Teacher-student Knowledge Distillation for Recommenders",
+      "authors": [
+        "Hangbin Zhang",
+        "Raymond K. Wong",
+        "Victor W. Chu"
+      ],
+      "year": 2020,
+      "venue": "2020 International Conference on Data Mining Workshops (ICDMW)",
+      "doi": "10.1109/icdmw51313.2020.00040",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icdmw51313.2020.00040",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.354,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Figure 11: Denoising efficiency graph of each algorithm.",
+      "authors": [],
+      "year": null,
+      "venue": "",
+      "doi": "10.7717/peerjcs.1604/fig-11",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "component",
+      "abstract": "",
+      "url": "https://doi.org/10.7717/peerjcs.1604/fig-11",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Robust Feature Graph for Point Cloud Denoising",
+      "authors": [
+        "Xin Shang",
+        "Rong Ye",
+        "Hui Feng",
+        "Xueqin Jiang"
+      ],
+      "year": 2022,
+      "venue": "2022 7th International Conference on Communication, Image and Signal Processing (CCISP)",
+      "doi": "10.1109/ccisp55629.2022.9974370",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/ccisp55629.2022.9974370",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0006,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.5,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Sensor network data denoising via recursive graph median filters",
+      "authors": [
+        "David B. Tay"
+      ],
+      "year": 2021,
+      "venue": "Signal Processing",
+      "doi": "10.1016/j.sigpro.2021.108302",
+      "cited_by": 37,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.sigpro.2021.108302",
+      "cited_by_by_src": {
+        "Crossref": 37
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0005,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph polynomial filter for signal denoising",
+      "authors": [
+        "Waseem Waheed",
+        "David B.H. Tay"
+      ],
+      "year": 2018,
+      "venue": "IET Signal Processing",
+      "doi": "10.1049/iet-spr.2016.0700",
+      "cited_by": 30,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "A technique for denoising signals defined over graphs was recently proposed by Chen\n                    et al\n                    . (2014). The technique is based on a regularisation framework and denoising is achieved by solving an optimisation problem. Matrix inversion is required and an approximate solution that avoids directly calculating the inverse, by using a graph filter, was proposed by Chen\n                    et al\n                    . (2014). The technique, however, requires an eigendecomposition and the resulting filter degree is high. In this study, the authors propose a computationally efficient technique that is based on a least squares approximation of the eigenvalues of the inverse. They show that a good approximation can be achieved with a low degree graph polynomial filter without the need for any eigendecomposition. Low degree filters also have the desirable property of vertex localisation (analogous to time localisation). The filter gives denoising results that are very similar to that using the exact solution and can be implemented using distributed processing.",
+      "url": "https://doi.org/10.1049/iet-spr.2016.0700",
+      "cited_by_by_src": {
+        "Crossref": 30
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.3,
+      "rerank_score": 0.0005,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.25,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Robust Graph-Filter Identification with Graph Denoising Regularization",
+      "authors": [
+        "Samuel Rey",
+        "Antonio G. Marques"
+      ],
+      "year": 2021,
+      "venue": "ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp39728.2021.9414909",
+      "cited_by": 9,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp39728.2021.9414909",
+      "cited_by_by_src": {
+        "Crossref": 9
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0005,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph-based Denoising of EEG Signals in Impulsive Environments",
+      "authors": [
+        "Anastasia Pentari",
+        "George Tzagkarakis",
+        "Kostas Marias",
+        "Panagiotis Tsakalides"
+      ],
+      "year": 2021,
+      "venue": "2020 28th European Signal Processing Conference (EUSIPCO)",
+      "doi": "10.23919/eusipco47968.2020.9287329",
+      "cited_by": 5,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.23919/eusipco47968.2020.9287329",
+      "cited_by_by_src": {
+        "Crossref": 5
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0005,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "3D Point Cloud Denoising Using a Joint Geometry and Color k-NN Graph",
+      "authors": [
+        "Muhammad Abeer Irfan",
+        "Enrico Magli"
+      ],
+      "year": 2021,
+      "venue": "2020 28th European Signal Processing Conference (EUSIPCO)",
+      "doi": "10.23919/eusipco47968.2020.9287341",
+      "cited_by": 6,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.23919/eusipco47968.2020.9287341",
+      "cited_by_by_src": {
+        "Crossref": 6
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0005,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.42,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "On the Shift Operator, Graph Frequency, and Optimal Filtering in Graph Signal Processing",
+      "authors": [
+        "Adnan Gavili",
+        "Xiao-Ping Zhang"
+      ],
+      "year": 2017,
+      "venue": "IEEE Transactions on Signal Processing",
+      "doi": "10.1109/tsp.2017.2752689",
+      "cited_by": 147,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/tsp.2017.2752689",
+      "cited_by_by_src": {
+        "Crossref": 147
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0004,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.21,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "FLOW SMOOTHING AND DENOISING: GRAPH SIGNAL PROCESSING IN THE EDGE-SPACE",
+      "authors": [
+        "Michael T. Schaub",
+        "Santiago Segarra"
+      ],
+      "year": 2018,
+      "venue": "2018 IEEE Global Conference on Signal and Information Processing (GlobalSIP)",
+      "doi": "10.1109/globalsip.2018.8646701",
+      "cited_by": 43,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/globalsip.2018.8646701",
+      "cited_by_by_src": {
+        "Crossref": 43
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0004,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.25,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Point Cloud Denoising using Joint Geometry/Color Graph Wavelets",
+      "authors": [
+        "Muhammad Abeer Irfan",
+        "Enrico Magli"
+      ],
+      "year": 2020,
+      "venue": "2020 IEEE Workshop on Signal Processing Systems (SiPS)",
+      "doi": "10.1109/sips50750.2020.9195231",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/sips50750.2020.9195231",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0004,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.354,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Erratum to: Bandlimited graph signal reconstruction by diffusion operator",
+      "authors": [
+        "Lishan Yang",
+        "Kangyong You",
+        "Wenbin Guo"
+      ],
+      "year": 2017,
+      "venue": "EURASIP Journal on Advances in Signal Processing",
+      "doi": "10.1186/s13634-017-0447-2",
+      "cited_by": 0,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1186/s13634-017-0447-2",
+      "cited_by_by_src": {
+        "Crossref": 0
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0004,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.21,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Feature Graph Learning for 3D Point Cloud Denoising",
+      "authors": [
+        "Wei Hu",
+        "Xiang Gao",
+        "Gene Cheung",
+        "Zongming Guo"
+      ],
+      "year": 2020,
+      "venue": "IEEE Transactions on Signal Processing",
+      "doi": "10.1109/tsp.2020.2978617",
+      "cited_by": 96,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/tsp.2020.2978617",
+      "cited_by_by_src": {
+        "Crossref": 96
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0004,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.354,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph Neural Net Using Analytical Graph Filters and Topology Optimization for Image Denoising",
+      "authors": [
+        "Weng-tai Su",
+        "Gene Cheung",
+        "Richard Wildes",
+        "Chia-Wen Lin"
+      ],
+      "year": 2020,
+      "venue": "ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp40776.2020.9054201",
+      "cited_by": 6,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp40776.2020.9054201",
+      "cited_by_by_src": {
+        "Crossref": 6
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0004,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.354,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Graph Signal Denoising via Trilateral Filter on Graph Spectral Domain",
+      "authors": [
+        "Masaki Onuki",
+        "Shunsuke Ono",
+        "Masao Yamagishi",
+        "Yuichi Tanaka"
+      ],
+      "year": 2016,
+      "venue": "IEEE Transactions on Signal and Information Processing over Networks",
+      "doi": "10.1109/tsipn.2016.2532464",
+      "cited_by": 84,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/tsipn.2016.2532464",
+      "cited_by_by_src": {
+        "Crossref": 84
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0003,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.177,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Bandlimited graph signal reconstruction by diffusion operator",
+      "authors": [
+        "Lishan Yang",
+        "Kangyong You",
+        "Wenbin Guo"
+      ],
+      "year": 2016,
+      "venue": "EURASIP Journal on Advances in Signal Processing",
+      "doi": "10.1186/s13634-016-0421-4",
+      "cited_by": 7,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1186/s13634-016-0421-4",
+      "cited_by_by_src": {
+        "Crossref": 7
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0003,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.177,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Image Reconstruction Combined With Interference Removal Using a Mixed-Domain Proximal Operator",
+      "authors": [
+        "Jason Zalev",
+        "Michael C. Kolios"
+      ],
+      "year": 2018,
+      "venue": "IEEE Signal Processing Letters",
+      "doi": "10.1109/lsp.2018.2875348",
+      "cited_by": 2,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/lsp.2018.2875348",
+      "cited_by_by_src": {
+        "Crossref": 2
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0003,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.25,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Estimating graph topology from sparse graph signals with an application to image denoising",
+      "authors": [
+        "Darshan Batavia",
+        "Aditya Tatu"
+      ],
+      "year": 2017,
+      "venue": "2017 IEEE 19th International Workshop on Multimedia Signal Processing (MMSP)",
+      "doi": "10.1109/mmsp.2017.8122233",
+      "cited_by": 1,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/mmsp.2017.8122233",
+      "cited_by_by_src": {
+        "Crossref": 1
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0002,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.21,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Signal denoising on graphs via graph filtering",
+      "authors": [
+        "Siheng Chen",
+        "Aliaksei Sandryhaila",
+        "Jose M. F. Moura",
+        "Jelena Kovacevic"
+      ],
+      "year": 2014,
+      "venue": "2014 IEEE Global Conference on Signal and Information Processing (GlobalSIP)",
+      "doi": "10.1109/globalsip.2014.7032244",
+      "cited_by": 120,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/globalsip.2014.7032244",
+      "cited_by_by_src": {
+        "Crossref": 120
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0002,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.125,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "A spectral graph wiener filter in graph fourier domain for improved image denoising",
+      "authors": [
+        "Ali Can Yagan",
+        "Mehmet Tankut Ozgen"
+      ],
+      "year": 2016,
+      "venue": "2016 IEEE Global Conference on Signal and Information Processing (GlobalSIP)",
+      "doi": "10.1109/globalsip.2016.7905882",
+      "cited_by": 4,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/globalsip.2016.7905882",
+      "cited_by_by_src": {
+        "Crossref": 4
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0002,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.177,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Image denoising via sparse coding using eigenvectors of graph Laplacian",
+      "authors": [
+        "Yibin Tang",
+        "Ying Chen",
+        "Ning Xu",
+        "Aimin Jiang",
+        "Lin Zhou"
+      ],
+      "year": 2016,
+      "venue": "Digital Signal Processing",
+      "doi": "10.1016/j.dsp.2015.12.013",
+      "cited_by": 22,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.dsp.2015.12.013",
+      "cited_by_by_src": {
+        "Crossref": 22
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0002,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.177,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Distributed sparsified graph filters for denoising and diffusion tasks",
+      "authors": [
+        "Elvin Isufi",
+        "Geert Leus"
+      ],
+      "year": 2017,
+      "venue": "2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/icassp.2017.7953281",
+      "cited_by": 9,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/icassp.2017.7953281",
+      "cited_by_by_src": {
+        "Crossref": 9
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0002,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.21,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Redefining self-similarity in natural images for denoising using graph signal gradient",
+      "authors": [
+        "Jiahao Pang",
+        "Gene Cheung",
+        "Wei Hu",
+        "Oscar C. Au"
+      ],
+      "year": 2014,
+      "venue": "Signal and Information Processing Association Annual Summit and Conference (APSIPA), 2014 Asia-Pacific",
+      "doi": "10.1109/apsipa.2014.7041627",
+      "cited_by": 21,
+      "cited_by_src": "Crossref",
+      "type": "proceedings-article",
+      "abstract": "",
+      "url": "https://doi.org/10.1109/apsipa.2014.7041627",
+      "cited_by_by_src": {
+        "Crossref": 21
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.233,
+      "rerank_score": 0.0002,
+      "rerank_parts": {
+        "relevance": 0.002,
+        "recency": 0.125,
+        "is_classic": false
+      }
+    },
+    {
+      "source_api": "Crossref",
+      "title": "Hysteresis Thresholding: A Graph-Based Wavelet Block Denoising Algorithm",
+      "authors": [
+        "Radu Ranta",
+        "Valerie Louis-Dorr"
+      ],
+      "year": 2010,
+      "venue": "The Open Signal Processing Journal",
+      "doi": "10.2174/1876825301003010006",
+      "cited_by": 1,
+      "cited_by_src": "Crossref",
+      "type": "journal-article",
+      "abstract": "",
+      "url": "https://doi.org/10.2174/1876825301003010006",
+      "cited_by_by_src": {
+        "Crossref": 1
+      },
+      "sources": [
+        "Crossref"
+      ],
+      "relevance_score": 0.156,
+      "rerank_score": 0.0001,
+      "rerank_parts": {
+        "relevance": 0.001,
+        "recency": 0.062,
+        "is_classic": false
+      }
+    }
+  ]
+}

@@ -72,6 +72,11 @@ python3 run_adp_fused.py --data-path datasets/adp_old_shard4 \
 # 3. Siamese FCF 学初始 chart（产出 results/adp_old_siamese/.../embedding.npz）
 python3 run_adp_siamese.py --data-path datasets/adp_old_shard4 \
   --stride 1 --out-dir results/adp_old_siamese
+python run_adp_siamese.py 
+  --data-path datasets/adp_old_shard4 
+  --distance-run results/adp_old_fused/stride1_n20997_seed10 
+  --stride 1 
+  --out-dir results/adp_old_siamese
 
 # 4. ★ 图扩散精修（本工作）
 python3 run_diffusion_refined_charting.py \
@@ -102,3 +107,43 @@ python3 run_diffusion_refined_charting.py \
    GSP 图 Tikhonov 去噪），把贡献定位成系统性、物理驱动、免训练的 CC 精修研究。
 
 `notes/` 里有更详细的复现记录和待办。
+## Held-Out Workflow (seed 10 acceptance)
+
+These commands add a held-out protocol without changing the full-data
+reproduction scripts. The scripts support other `--seed` values, but this
+acceptance run executes seed 10 only.
+
+```powershell
+conda activate diffusion_charting
+
+python run_adp_fused_heldout.py `
+  --data-path datasets/adp_old_shard4 `
+  --full-distance-run results/adp_old_fused/stride1_n20997_seed10 `
+  --out-dir results/heldout `
+  --seed 10 `
+  --neighbors 20
+
+python run_adp_siamese_heldout.py `
+  --data-path datasets/adp_old_shard4 `
+  --distance-run results/heldout/seed10/adp_fused_train `
+  --out-dir results/heldout `
+  --seed 10
+
+python run_diffusion_refined_heldout.py `
+  --distance-run results/heldout/seed10/adp_fused_train `
+  --init-embedding results/heldout/seed10/adp_siamese/embedding_train.npz `
+  --out-dir results/heldout `
+  --seed 10 `
+  --graph-k 128 `
+  --lambda-smooth 0.15 `
+  --iterations 200
+```
+
+Interpretation:
+
+- `Y_test` is the held-out FCF result.
+- `Z_train` is a training-graph refinement diagnostic.
+- There is no `Z_test` until out-of-sample extension is implemented.
+- Seed 10 was already present in earlier full-data runs, so this is an
+  implementation-acceptance held-out run, not a historically untouched final
+  test set.

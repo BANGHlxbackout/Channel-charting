@@ -1,0 +1,186 @@
+FILE: 29_Parameter_Efficient_CT_GL.pdf
+PAGES: 7
+TITLE: Parameter-Efficient CT Reconstruction via Deep Graph Laplacian Regularization
+
+ABSTRACT/FRONT:
+Parameter-Efficient CT Reconstruction via Deep
+Graph Laplacian Regularization
+Veera Varuni Radhakrishnan1, Chinthaka Dinesh 1, Qurat-ul-Ain Azim 1
+1Mechanical and Industrial Engineering Department
+Northeastern University
+Vancouver, Canada
+{radhakrishnan.ve, c.herathgedara, q.azim}@northeastern.edu
+Abstract—Low-dose computed tomography (LDCT) recon-
+struction faces a critical tradeoff between reconstruction quality
+and resource requirements. While recent deep learning methods
+achieve state-of-the-art performance, they typically rely on over
+500,000 parameters trained on large-scale datasets exceeding
+35,000 scans. This work investigates whether graph-based reg-
+ularization can provide meaningful noise reduction under strict
+resource constraints. We propose Deep Graph Laplacian Regular-
+ization (Deep GLR), integrating quadratic graph regularization
+into a Proximal Forward-Backward Splitting optimization frame-
+work with three lightweight CNN modules. Evaluated on the
+LoDoPaB-CT benchmark, Deep GLR achieves 30.70 dB PSNR,
+representing a 6.33 dB improvement over filtered backprojection,
+while using only 91,848 parameters trained on 1000 samples
+(2.8% of standard training set). Compared to benchmark meth-
+ods, this represents 5.8 times better parameter efficiency and 30
+times better data efficiency per dB improvement. The learned
+graph bandwidth parameter (ϵ=1.25) converges to interpretable
+values, suggesting the method captures meaningful image priors
+rather than overfitting. While a 13 dB gap remains versus
+state-of-the-art methods, results demonstrate that graph-based
+regularization provides a favorable efficiency-quality tradeoff for
+resource-constrained medical imaging scenarios.
+Index Terms—computed tomography, graph Laplacian regu-
+larization, proximal algorithms, deep learning, medical imaging,
+ct image reconstruction
+I. INTRODUCTION
+Low-dose computed tomography (LDCT) reconstruction
+addresses the major challenge of reducing patient radiation
+exposure while maintaining diagnostic image quality. Studies
+show measurable cancer risks from CT radiation exposure,
+with excess relative risk estimates of 1.05 per 100 mGy for
+leukemia and 0.80 per 100 mGy for brain tumors [1]. With
+approximately 6.4 million CT scans performed annually in
+Canada alone [2], radiation dose reduction is essential for
+patient safety going forward.
+The CT reconstruction problem involves recovering the at-
+tenuation coefficient distributionx∈R n from noisy projection
+measurementsy∈R m:
+y=Ax+n(1)
+whereArepresents the discretized Radon transform andn
+denotes Poisson-distributed measurement noise.
+While recent deep learning methods achieve impressive
+reconstruction quality [3], [4], they face two practical bar-
+riers in medical imaging tasks [5]: (1) requirement for large
+labeled training sets, which may be unavailable due to privacy
+constraints, rare pathologies, or limited institutional resources,
+and (2) models with a large number of parameters requir-
+ing substantial computational resources for both training and
+clinical deployment. These constraints motivate investigation
+of whether classical optimization frameworks enhanced with
+lightweight learning can achieve acceptable reconstruction
+quality under strict resource limitations.
+Traditional analytical reconstruction
+
+INTRO:
+s, results demonstrate that graph-based
+regularization provides a favorable efficiency-quality tradeoff for
+resource-constrained medical imaging scenarios.
+Index Terms—computed tomography, graph Laplacian regu-
+larization, proximal algorithms, deep learning, medical imaging,
+ct image reconstruction
+I. INTRODUCTION
+Low-dose computed tomography (LDCT) reconstruction
+addresses the major challenge of reducing patient radiation
+exposure while maintaining diagnostic image quality. Studies
+show measurable cancer risks from CT radiation exposure,
+with excess relative risk estimates of 1.05 per 100 mGy for
+leukemia and 0.80 per 100 mGy for brain tumors [1]. With
+approximately 6.4 million CT scans performed annually in
+Canada alone [2], radiation dose reduction is essential for
+patient safety going forward.
+The CT reconstruction problem involves recovering the at-
+tenuation coefficient distributionx∈R n from noisy projection
+measurementsy∈R m:
+y=Ax+n(1)
+whereArepresents the discretized Radon transform andn
+denotes Poisson-distributed measurement noise.
+While recent deep learning methods achieve impressive
+reconstruction quality [3], [4], they face two practical bar-
+riers in medical imaging tasks [5]: (1) requirement for large
+labeled training sets, which may be unavailable due to privacy
+constraints, rare pathologies, or limited institutional resources,
+and (2) models with a large number of parameters requir-
+ing substantial computational resources for both training and
+clinical deployment. These constraints motivate investigation
+of whether classical optimization frameworks enhanced with
+lightweight learning can achieve acceptable reconstruction
+quality under strict resource limitations.
+Traditional analytical reconstruction methods like filtered
+backprojection (FBP) provide computational efficiency but
+also cause severe noise production in low-dose scenarios.
+Recent deep learning approaches have achieved significant im-
+provements, with convolutional neural network (CNN) meth-
+ods that use millions of parameters and extensive training.
+However, these approaches often lack interpretability that can
+benefit medical applications.
+This work investigates whether graph-based regularization
+integrated with classical optimization can achieve meaningful
+noise reduction under strict resource constraints. Our specific
+contributions are as follows:
+1) Adaptation of Deep Graph Laplacian Regularization
+(Zeng et al. [6]) to CT reconstruction by integrat-
+ing quadratic graph regularization into the Proximal
+Forward-Backward Splitting framework (Ding et al.
+[4]), enabling parameter-efficient reconstruction with a
+smaller number of parameters and closed- form gradi-
+ents.
+2) Demonstration that this approach achieves clear perfor-
+mance improvement over filtered backprojection while
+using approximately one-fifth the parameters of existing
+deep learning methods, with effecti
+
+CONCLUSION/LAST:
+uisitions. Extending graph
+construction to 3D volumes would capture inter-slice relation-
+ships but requires addressing computational challenges - 26×
+larger Laplacian matrices - potentially through hierarchical
+graph representations or sparse approximations maintaining
+efficiency advantages.
+VIII. CONCLUSION
+Deep Graph Laplacian Regularization demonstrates effec-
+tive integration of classical optimization with modern deep
+learning for low-dose CT reconstruction. The proposed method
+achieves a 6.33 dB improvement over analytical reconstruction
+while using only 91,848 parameters and training on just 2.8%
+of the standard dataset size. The quadratic GLR formulation
+provides both computational stability and mathematical inter-
+pretability through explicit graph-based modeling.
+These results indicate that Deep GLR offers a practi-
+cal and efficient solution for medical imaging applications
+where parameter efficiency and data efficiency are critical
+constraints. Future work will explore scaling the approach
+to larger datasets and extending the framework to 3D CT
+reconstruction.
+REFERENCES
+[1] A. Berrington de Gonzalez, E. Pasqual, and L. Veiga, “Epidemiolog-
+ical studies of CT scans and cancer risk: the state of the science,”
+Br. J. Radiol., vol. 94, no. 1126, Oct. 2021, Art. no. 20210471, doi:
+10.1259/bjr.20210471.
+[2] Canadian Agency for Drugs and Technologies in Health, “Canadian
+Medical Imaging Inventory 2022-2023: CT,”Can. J. Health Technol.,
+vol. 4, no. 8, Aug. 2024.
+[3] H. Chen, Q. Li, L. Zhou, and F. Li, “Deep learning-based algorithms for
+low-dose CT imaging: A review,”Eur. J. Radiol., vol. 172, Mar. 2024,
+Art. no. 111355, doi: 10.1016/j.ejrad.2024.111355.
+[4] Q. Ding, G. Chen, X. Zhang, Q. Huang, H. Ji, and H. Gao, “Low-dose
+CT with deep learning regularization via proximal forward backward
+splitting,”arXiv preprint arXiv:1909.09773, 2019.
+[5] Q. Ding, G. Chen, X. Zhang, Q. Huang, H. Ji, and H. Gao, “Low-
+dose CT with deep learning regularization via proximal forward-backward
+splitting,”Phys. Med. Biol., vol. 65, no. 12, Jun. 2020, Art. no. 125009,
+doi: 10.1088/1361-6560/ab831a.
+[6] J. Zeng, J. Pang, W. Sun, and G. Cheung, “Deep graph Laplacian regu-
+larization for robust denoising of real images,” inProc. IEEE/CVF Conf.
+Comput. Vis. Pattern Recognit. Workshops (CVPRW), 2019, pp. 1759–
+1768, doi: 10.1109/CVPRW.2019.00226.
+[7] J. Leuschner, M. Schmidt, D. O. Baguer, and P. Maass, “LoDoPaB-CT,
+a benchmark dataset for low-dose computed tomography reconstruction,”
+Sci. Data, vol. 8, no. 1, Apr. 2021, Art. no. 109, doi: 10.1038/s41597-
+021-00893-z.
+[8] H. Vu, G. Cheung, and Y . C. Eldar, “Unrolling of deep graph
+total variation for image denoising,” inProc. IEEE Int. Conf.
+Acoust., Speech Signal Process. (ICASSP), 2021, pp. 2050–2054, doi:
+10.1109/ICASSP39728.2021.9414453.
+[9] S. Ramanathan and M. Ramasundaram, “Low-dose CT image reconstruc-
+tion using vector quantized convolutional autoencoder with perceptual
+loss,”Sadhana, vol. 48, Mar. 2023, Art. no. 43, doi: 10.1007/s12046-
+023-02107-1.
+[10] R. Dutt, L. Ericsson, P. Sanchez, S. A. Tsaftaris, and T. Hospedales,
+“Parameter-efficient fine-tuning for medical image analysis: The missed
+opportunity,” inProc. 7th Int. Conf. Med. Imag. Deep Learn. (MIDL),
+2024, pp. 406–425.
+[11] V . Monga, Y . L

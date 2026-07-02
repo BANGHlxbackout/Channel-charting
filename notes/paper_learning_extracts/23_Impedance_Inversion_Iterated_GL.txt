@@ -1,0 +1,164 @@
+FILE: 23_Impedance_Inversion_Iterated_GL.pdf
+PAGES: 29
+TITLE: 
+
+ABSTRACT/FRONT:
+Improved impedance inversion
+by the iterated graph Laplacian
+Davide Bianchi 1, Florian Boßmann 2, Wenlong Wang 2 and Mingming Liu 2
+ABSTRACT
+We introduce a data-adaptive inversion method that integrates classical or deep
+learning-based approaches with iterative graph Laplacian regularization, specif-
+ically targeting acoustic impedance inversion — a critical task in seismic explo-
+ration. Our method initiates from an impedance estimate derived using either tra-
+ditional inversion techniques or neural network-based methods. This initial esti-
+mate guides the construction of a graph Laplacian operator, effectively capturing
+structural characteristics of the impedance profile. Utilizing a Tikhonov-inspired
+variational framework with this graph-informed prior, our approach iteratively
+updates and refines the impedance estimate while continuously recalibrating the
+graph Laplacian. This iterative refinement shows rapid convergence, increased
+accuracy, and enhanced robustness to noise compared to initial reconstructions
+alone. Extensive validation performed on synthetic and real seismic datasets
+across varying noise levels confirms the effectiveness of our method. Performance
+evaluations include four initial inversion methods: two classical techniques and
+two neural networks — previously established in the literature.
+INTRODUCTION
+Impedance inversion has become a standard technique used to characterize subsurface
+reservoirs in many applications Sams and Saussus (2013); Ray and Chopra (2016).
+Here, subsurface properties and structures have to be reconstructed from seismic
+profiles. Mathematically, a subsurface impedance x ∈ X has to be recovered from a
+possibly noisy seismic profile y ∈ Y , i.e., we have to find x such that
+yδ = F (x) + η, ∥η∥ ≤ δ, (1)
+where F : X → Y is the forward operator. The inverse problem of equation 1 is ill-
+posed in many cases Wu et al. (2021) which means that even a small amount of noise
+0 < δ ≪ 1 can lead to extreme approximation errors. This ill-posedness originates
+1School of Mathematics (Zhuhai), Sun Yat-sen University, Zhuhai, 518055, China.
+Email: bianchid@mail.sysu.edu.cn
+2School of Mathematics, Harbin Institute of Technology, Harbin, 150001, China.
+Email: f.bossmann@hit.edu.cn
+Email: wenlong.wang@hit.edu.cn
+arXiv:2404.16324v2 [math.NA] 15 Apr 2025
+2
+from a non-linear operator F , heterogeneity in the profile x, or an insufficient amount
+of data available.
+A classical approach to overcome the ill-posedness is to regularize the inverse
+problem Wang (2010); Liu et al. (2015). Many of these methods fall under the
+broader category of Tikhonov-like variational methods which assumes the form
+xα := argmin
+x∈X
+
+D(F (x); yδ) + αR(x)
+ 
+, (2)
+where D(·; ·) is a pseudo-distance that quantifies the fidelity of the reconstruction,
+R(·) serves as regularization term, and α > 0 balances the trade-off between data
+fidelity and the regularization effect. A standard choice is
+D(F (x); yδ) = 1
+2 ∥F (x) − yδ∥2
+2, R(x) = ∥x∥1.
+As references see Engl et al. (1996); Scherzer et al. (2009).
+The regularization operator R is of crucial importance. If we have access to a prio
+
+INTRO:
+e. Extensive validation performed on synthetic and real seismic datasets
+across varying noise levels confirms the effectiveness of our method. Performance
+evaluations include four initial inversion methods: two classical techniques and
+two neural networks — previously established in the literature.
+INTRODUCTION
+Impedance inversion has become a standard technique used to characterize subsurface
+reservoirs in many applications Sams and Saussus (2013); Ray and Chopra (2016).
+Here, subsurface properties and structures have to be reconstructed from seismic
+profiles. Mathematically, a subsurface impedance x ∈ X has to be recovered from a
+possibly noisy seismic profile y ∈ Y , i.e., we have to find x such that
+yδ = F (x) + η, ∥η∥ ≤ δ, (1)
+where F : X → Y is the forward operator. The inverse problem of equation 1 is ill-
+posed in many cases Wu et al. (2021) which means that even a small amount of noise
+0 < δ ≪ 1 can lead to extreme approximation errors. This ill-posedness originates
+1School of Mathematics (Zhuhai), Sun Yat-sen University, Zhuhai, 518055, China.
+Email: bianchid@mail.sysu.edu.cn
+2School of Mathematics, Harbin Institute of Technology, Harbin, 150001, China.
+Email: f.bossmann@hit.edu.cn
+Email: wenlong.wang@hit.edu.cn
+arXiv:2404.16324v2 [math.NA] 15 Apr 2025
+2
+from a non-linear operator F , heterogeneity in the profile x, or an insufficient amount
+of data available.
+A classical approach to overcome the ill-posedness is to regularize the inverse
+problem Wang (2010); Liu et al. (2015). Many of these methods fall under the
+broader category of Tikhonov-like variational methods which assumes the form
+xα := argmin
+x∈X
+
+D(F (x); yδ) + αR(x)
+ 
+, (2)
+where D(·; ·) is a pseudo-distance that quantifies the fidelity of the reconstruction,
+R(·) serves as regularization term, and α > 0 balances the trade-off between data
+fidelity and the regularization effect. A standard choice is
+D(F (x); yδ) = 1
+2 ∥F (x) − yδ∥2
+2, R(x) = ∥x∥1.
+As references see Engl et al. (1996); Scherzer et al. (2009).
+The regularization operator R is of crucial importance. If we have access to a priori
+information on the ground-truth solution, we can tailor a specific R to incorporate
+such information and guide the overall regularization towards a narrower subset of
+approximate solutions which present the features we aim to recover.
+Another typical example in image processing is given by R(x) = ∥Lx∥q
+q, where
+L is a linear differential operator, such as the first or second derivative along each
+axis, and ∥ · ∥q is the Euclidean q-norm, q ≥ 1, see Hansen et al. (2006); Jain (1989);
+Ng et al. (1999). Differential operators are particularly useful because they detect
+intensity jumps (edges), widely acknowledged as essential visual cues for perception
+and image interpretation. See the discussions in (Chan and Shen, 2005,Section 3.2.4),
+(Marr, 2010,Chapter 2), and Canny (1986); Mumford and
+
+CONCLUSION/LAST:
+27
+18th problem: Proceedings of the National Academy of Sciences, e2107151119.
+Das, V., A. Pollack, U. Wollner, and T. Mukerji, 2019, Convolutional neural network
+for seismic impedance inversion: Geophysics, 84, R869–R880.
+Engl, H. W., M. Hanke, and A. Neubauer, 1996, Regularization of inverse problems:
+Springer Science & Business Media.
+Equinor, 2018, Volve oil field data: https://www.equinor.com/energy/
+volve-data-sharing.
+Fehler, M., and P. J. Keliher, 2011, Seam phase 1: Challenges of subsalt imaging in
+tertiary basins, with emphasis on deepwater gulf of mexico: Society of Exploration
+Geophysicists.
+Gholami, A., 2016, A fast automatic multichannel blind seismic inversion for high-
+resolution impedance recovery: Geophysics, 81, V357–V364.
+Gilboa, G., and S. Osher, 2007, Nonlocal linear image regularization and supervised
+segmentation: Multiscale Modeling & Simulation, 6, 595–630.
+——–, 2009, Nonlocal operators with applications to image processing: Multiscale
+Modeling & Simulation, 7, 1005–1028.
+Goldstein, T., and S. Osher, 2009, The split Bregman method for L1-regularized
+problems: SIAM journal on imaging sciences, 2, 323–343.
+Hanke, M., and C. W. Groetsch, 1998, Nonstationary iterated Tikhonov regulariza-
+tion: Journal of Optimization Theory and Applications, 98, 37–53.
+Hansen, P. C., J. G. Nagy, and D. P. O’leary, 2006, Deblurring images: matrices,
+spectra, and filtering: SIAM.
+Huot, F., B. Biondi, and G. Beroza, 2018, Jump-starting neural network training
+for seismic problems: SEG International Exposition and Annual Meeting, SEG,
+SEG–2018.
+Jain, A. K., 1989, Fundamentals of digital image processing: Prentice-Hall, Inc.
+Jin, Q., and M. Zhong, 2014, Nonstationary iterated Tikhonov regularization in Ba-
+nach spaces with uniformly convex penalty terms: Numerische Mathematik, 127,
+485–513.
+Karimpouli, S., and P. Tahmasebi, 2020, Physics informed machine learning: Seismic
+wave equation: Geoscience Frontiers, 11, 1993–2001.
+Keller, M., D. Lenz, and R. K. Wojciechowski, 2021, Graphs and Discrete Dirichlet
+Spaces: Springer, Cham. Grundlehren der mathematischen Wissenschaften.
+Khosro Anjom, F., F. Vaccarino, and L. V. Socco, 2024, Machine learning for seismic
+exploration: Where are we and how far are we from the holy grail?: Geophysics,
+89, WA157–WA178.
+Kim, S.-J., K. Koh, M. Lustig, S. Boyd, and D. Gorinevsky, 2007, An interior-point
+method for large-scale l1-regularized least squares: IEEE journal of selected topics
+in signal processing, 1, 606–617.
+——–, 2008, Simple Matlab Solver for l1-regularized Least Squares Problems: https:
+//web.stanford.edu/~boyd/l1_ls/.
+Lanza, A., S. Morigi, L. Reichel, and F. Sgallari, 2015, A generalized krylov subspace
+method for ℓp-ℓq minimization: SIAM Journal on Scientific Computing, 37, S30–
+S50.
+Li, H., J. Schwab, S. Antholzer, and M. Haltmeier, 2020, NETT: Solving inverse
+28
+problems with deep neural networks: Inverse Problems, 36, 065005.
+Liu, C., C. Song, Q. Lu, Y. Liu, X. Feng, and Y. Gao, 2015, Impedance inver

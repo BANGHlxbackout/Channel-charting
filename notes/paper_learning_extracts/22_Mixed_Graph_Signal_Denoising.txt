@@ -1,0 +1,168 @@
+FILE: 22_Mixed_Graph_Signal_Denoising.pdf
+PAGES: 5
+TITLE: 
+
+ABSTRACT/FRONT:
+MIXED GRAPH SIGNAL ANALYSIS OF JOINT IMAGE DENOISING / INTERPOLATION
+Niruhan Viswarupan†, Gene Cheung†, Fengbo Lan‡, Michael S. Brown†
+†York University, Canada ‡Hong Kong Polytechnic University
+ABSTRACT
+A noise-corrupted image often requires interpolation. Given a lin-
+ear denoiser and a linear interpolator, when should the operations
+be independently executed in separate steps, and when should they
+be combined and jointly optimized? We study joint denoising / in-
+terpolation of images from a mixed graph filtering perspective: we
+model denoising using an undirected graph, and interpolation using
+a directed graph. We first prove that, under mild conditions, a linear
+denoiser is a solution graph filter to a maximum a posteriori (MAP)
+problem using an undirected graph smoothness prior, while a linear
+interpolator is a solution to a MAP problem using a directed graph
+smoothness prior. Next, we study two variants of the joint interpo-
+lation / denoising problem: a graph-based denoiser followed by an
+interpolator has an optimal separable solution, while an interpola-
+tor followed by a denoiser has an optimal non-separable solution.
+Experiments show that our joint denoising / interpolation method
+outperformed separate approaches noticeably.
+Index Terms — Image denoising, image interpolation, graph
+signal processing
+1. INTRODUCTION
+Acquired sensor images are typically noise-corrupted, and a subse-
+quent interpolation task is often required for processing and/or dis-
+play purposes. For example, images captured on a Bayer-patterned
+grid require demosaicing [1, 2], and a perspective image may need
+rectification into a different viewpoint [3]. However, image denois-
+ers and interpolators are often designed and optimized as individual
+components [4–6]. This leads to a natural question: should these
+denoisers and interpolators be independently executed in separate
+steps, or should they be combined and jointly optimized?
+We study the joint image denoising / interpolation problem from
+a mixed graph filtering perspective, leveraging recent progress in
+the graph signal processing (GSP) field [7, 8] for image restora-
+tion [?,?, 9–14]. Our work makes two contributions. First, we prove
+that, under mild conditions, a linear denoiser is also an optimal graph
+filter to a maximum a poseriori (MAP) denoising problem using an
+undirected graph smoothness prior 1 [10] (Theorem 1), while a lin-
+ear interpolator is also an optimal graph filter to a MAP interpolation
+problem using a directed graph smoothness prior [16] (Theorem 2).
+These two basic theorems establish one-to-one mappings from con-
+ventional linear image filters [17] to MAP-optimized graph filters for
+appropriately defined graphs.
+Considering both denoising and interpolation simultaneously
+thus naturally leads to a mixed graph model with both directed
+The work of G. Cheung was supported in part by the Natural Sci-
+ences and Engineering Research Council of Canada (NSERC) RGPIN-2019-
+06271, RGPAS-2019-00110.
+1 [15] proved a similar theorem for linear denoiser, but our proof based
+on linear algebra is simpler and more intuitive. See Section 3.1 for details.
+and undirected edges—a formalism that provides a
+
+INTRO:
+imal separable solution, while an interpola-
+tor followed by a denoiser has an optimal non-separable solution.
+Experiments show that our joint denoising / interpolation method
+outperformed separate approaches noticeably.
+Index Terms — Image denoising, image interpolation, graph
+signal processing
+1. INTRODUCTION
+Acquired sensor images are typically noise-corrupted, and a subse-
+quent interpolation task is often required for processing and/or dis-
+play purposes. For example, images captured on a Bayer-patterned
+grid require demosaicing [1, 2], and a perspective image may need
+rectification into a different viewpoint [3]. However, image denois-
+ers and interpolators are often designed and optimized as individual
+components [4–6]. This leads to a natural question: should these
+denoisers and interpolators be independently executed in separate
+steps, or should they be combined and jointly optimized?
+We study the joint image denoising / interpolation problem from
+a mixed graph filtering perspective, leveraging recent progress in
+the graph signal processing (GSP) field [7, 8] for image restora-
+tion [?,?, 9–14]. Our work makes two contributions. First, we prove
+that, under mild conditions, a linear denoiser is also an optimal graph
+filter to a maximum a poseriori (MAP) denoising problem using an
+undirected graph smoothness prior 1 [10] (Theorem 1), while a lin-
+ear interpolator is also an optimal graph filter to a MAP interpolation
+problem using a directed graph smoothness prior [16] (Theorem 2).
+These two basic theorems establish one-to-one mappings from con-
+ventional linear image filters [17] to MAP-optimized graph filters for
+appropriately defined graphs.
+Considering both denoising and interpolation simultaneously
+thus naturally leads to a mixed graph model with both directed
+The work of G. Cheung was supported in part by the Natural Sci-
+ences and Engineering Research Council of Canada (NSERC) RGPIN-2019-
+06271, RGPAS-2019-00110.
+1 [15] proved a similar theorem for linear denoiser, but our proof based
+on linear algebra is simpler and more intuitive. See Section 3.1 for details.
+and undirected edges—a formalism that provides a mathemati-
+cal framework for joint optimization and explains under which
+scenarios a joint denoising / interpolation approach would be nec-
+essary. Our second contribution is to study two variants of the
+joint problem: i) an undirected-graph-based denoiser followed
+by a directed-graph-based interpolator has an optimal separable
+solution (Corollary 1), and ii) a directed-graph-based interpolator
+followed by an undirected-graph-based denoiser has an optimalnon-
+separable solution (Corollary 2). In the latter case, we analytically
+derive the optimal joint solution that comprises derivative denoising
+and interpolation operators that are easily computable functions of
+the input interpolator / denoiser. Experiments show that using thes
+
+CONCLUSION/LAST:
+or NLM over a larger range of noise variance,
+because NLM generally produced high-quality output, and thus the
+PSNR difference betweenjoint and sequential is small at low
+noise levels. For image warping, the maximum gains were 1.05dB
+and 1.14dB for bilateral and Gaussian denoisers, respectively.
+6. CONCLUSION
+We presented two theorems, under mild conditions, connecting any
+linear denoiser / interpolator to optimal graph filter using undirected
+/ directed graph smoothness priors, respectively. The theorems
+demonstrate the generality of graph filters and provide graph inter-
+pretations for common linear denoisers / interpolators. Using the
+two theorems, we examine scenarios of joint denoising / interpola-
+tion where the optimal solution can be separable or non-separable.
+In the latter case, we analytically derive derivative denoiser / inter-
+polator computed as functions of original denoiser and interpolator.
+We demonstrate that using these computed operators resulted in
+noticeable performance gain over seperate schemes in a range of
+joint denoising / interpolation settings.
+7. REFERENCES
+[1] Henrique S Malvar, Li-wei He, and Ross Cutler, “High-
+quality linear interpolation for demosaicing of bayer-patterned
+color images,” inIEEE International Conference on Acoustics,
+Speech, and Signal Processing. IEEE, 2004, vol. 3, pp. iii–485.
+[2] Daniele Menon and Giancarlo Calvagno, “Color image demo-
+saicking: An overview,” Signal Processing: Image Communi-
+cation, vol. 26, no. 8-9, pp. 518–533, 2011.
+[3] Zhucun Xue, Nan Xue, Gui-Song Xia, and Weiming Shen,
+“Learning to calibrate straight lines for fisheye image rectifi-
+cation,” in Proceedings of the IEEE/CVF Conference on Com-
+puter Vision and Pattern Recognition, 2019, pp. 1643–1651.
+[4] Kai Zhang, Wangmeng Zuo, Yunjin Chen, Deyu Meng, and
+Lei Zhang, “Beyond a Gaussian denoiser: Residual learning of
+deep CNN for image denoising,” IEEE Transactions on Image
+Processing, vol. 26, no. 7, pp. 3142–3155, 2017.
+[5] Wenzhu Xing and Karen Egiazarian, “End-to-end learning for
+joint image demosaicing, denoising and super-resolution,” in
+Proceedings of the IEEE/CVF Conference on Computer Vision
+and Pattern Recognition, 2021, pp. 3507–3516.
+[6] Filippos Kokkinos and Stamatios Lefkimmiatis, “Iterative joint
+image demosaicking and denoising using a residual denoising
+network,” IEEE Transactions on Image Processing , vol. 28,
+no. 8, pp. 4177–4188, 2019.
+[7] A. Ortega, P. Frossard, J. Kovacevi ´c, J. M. F. Moura, and
+P. Vandergheynst, “Graph signal processing: Overview, chal-
+lenges, and applications,” in Proceedings of the IEEE , May
+2018, vol. 106, no.5, pp. 808–828.
+[8] G. Cheung, E. Magli, Y . Tanaka, and M. Ng, “Graph spectral
+image processing,” inProceedings of the IEEE, May 2018, vol.
+106, no.5, pp. 907–930.
+[9] W. Hu, G. Cheung, and M. Kazui, “Graph-based dequantiza-
+tion of block-compressed piecewise smooth images,” in IEEE
+Signal Processing Letters , February 2016, vol. 23, no.2, pp.
+242–246.
+[10] J. Pang and G. Cheung, “Graph Laplacian regularization for
+inverse imaging: Analysis in the continuous domain,” in IEEE
+Transactions on Image Processing, April 2017, vol. 26, no.4,
+pp. 1770–1785.
+[11] Xianming Liu, Gene Cheung, Xiaolin Wu, and Debin Zhao,
+“Random walk graph Laplacian-based smoothness prior for
+so

@@ -1,0 +1,131 @@
+FILE: 08_CC_Real_World_DMIMO.pdf
+PAGES: 15
+TITLE: 
+
+ABSTRACT/FRONT:
+1
+Channel Charting in Real-World Coordinates
+with Distributed MIMO
+Sueda Taner, Victoria Palhares, and Christoph Studer
+Abstract—Channel charting is an emerging self-supervised
+method that maps channel-state information (CSI) to a low-
+dimensional latent space (the channel chart) that represents
+pseudo-positions of user equipments (UEs). While channel charts
+preserve local geometry, i.e., nearby UEs are nearby in the channel
+chart (and vice versa), the pseudo-positions are in arbitrary
+coordinates and global geometry is typically not preserved. In
+order to embed channel charts in real-world coordinates, we first
+propose a bilateration loss for distributed multiple-input multiple-
+output (D-MIMO) wireless systems in which only the access point
+(AP) positions are known. The idea behind this loss is to compare
+the received power at pairs of APs to determine whether a UE
+should be placed closer to one AP or the other in the channel chart.
+We then propose a line-of-sight (LoS) bounding-box loss that places
+the UE in a predefined LoS area of each AP that is estimated
+to have a LoS path to the UE. We demonstrate the efficacy of
+combining both of these loss functions with neural-network-based
+channel charting using ray-tracing-based and measurement-based
+channel vectors. Our proposed approach outperforms several
+baselines and maintains the self-supervised nature of channel
+charting as it neither relies on geometrical propagation models
+nor on any ground-truth UE position information.
+I. I NTRODUCTION
+Channel charting is a self-supervised method that extracts
+user equipment (UE) pseudo-position solely by processing
+estimated channel-state information (CSI) at infrastructure
+basestations (BSs) or access points (APs) [3]. The key idea
+is to apply dimensionality reduction to a large database of
+CSI features that represent large-scale fading properties of the
+wireless channel, such as time-of-arrival (ToA), angle-of-arrival
+(AoA), power-delay profile, etc. The low-dimensional latent
+space resulting from dimensionality reduction is the so-called
+channel chart, which is tied to UE position. More specifically,
+UEs nearby in real space are nearby in the channel chart and
+vice versa. The learned channel chart can be used to assist
+a wide range of applications in wireless systems that rely on
+UE position information, such as pilot allocation [4], beam
+S. Taner, V . Palhares, and C. Studer are with the Department of Infor-
+mation Technology and Electrical Engineering, ETH Zurich, Switzerland
+(taners@iis.ee.ethz.ch, vmenescal@ethz.ch, and studer@ethz.ch).
+The work of ST, VP, and CS was supported in part by an ETH Research
+Grant, by the Swiss National Science Foundation (SNSF) grant 200021_207314,
+and by CHIST-ERA grant for the project CHASER (CHIST-ERA-22-W AI-01)
+through the SNSF grant 20CH21_218704.
+The authors thank Remcom for providing a license for the Wireless InSite
+ray-tracing software. The authors also thank Olav Tirkkonen and Maxime
+Guillaud for discussions on channel charting in real-world coordinates.
+A preliminary version of this work was presented at the 2023 IEEE
+GLOBEC
+
+INTRO:
+
+
+CONCLUSION/LAST:
+13
+TABLE IV
+CHANNEL CHARTING AND POSITIONING PERFORMANCE COMPARISON FOR THE MEASURED INDOOR SCENARIO
+Latent space quality metrics Positioning error [m]
+Method Figure TW ↑ CT↑ KS↓ RD↓ Mean↓ 95th percentile↓
+P1 7(b) 0.842 0.852 0.441 0.961 2.83 ± 0.24 6.28 ± 0.61
+P2 7(c) 0.972 0.980 0.192 0.799 1.33 ± 0.03 3.05 ± 0.17
+B1 7(d) 0.989 0.990 0.179 0.769 – –
+B2 7(e) 0.990 0.991 0.125 0.678 0.83 ± 0.37 1.78 ± 0.76
+B3 7(f) 0.955 0.969 0.182 0.783 1.02 ± 0.06 2.47 ± 0.30
+B4 – 0.998 0.998 0.036 0.401 0.18 ± 0.01 0.42 ± 0.02
+0 1040 2080 3120 4160 5200
+timestamp [s]
+5
+3
+11
+19
+27
+35AP-side receive power
+power threshold
+(a) AP-side receive power with respect to time
+1 3 5 7 9 11 13
+distance between AP and UE [m]
+5
+3
+11
+19
+27
+35AP-side receive powerestimated LoS
+estimated non-LoS
+(b) AP-side receive power versus AP-to-UE distance
+Fig. 6. Receive power (in decibels) at one AP for the measurement-based
+indoor scenario [2] with respect to (a) timestamps and (b) AP-to-UE distance
+in the xy-plane. In (a), the red line designates the power threshold chosen to
+identify LoS APs. In (b), the power values above the threshold (highlighted
+with green) indicate instances where the AP is estimated to be in LoS.
+size of the subset of known CSI samples for semi-supervised
+baseline methods depends heavily on the scenario and the size
+of the area of interest. Moreover, we have demonstrated that a
+two-stage approach that maps a learned channel chart to real-
+world coordinates using an affine transform may completely
+fail depending on the channel chart quality.
+There are many avenues for future work. In order to improve
+positioning accuracy, the bounding boxes could be extended to
+more general shapes, the LoS/non-LoS channel classification
+could be performed using more advanced (and automated)
+methods than power-thresholding, and improved loss functions
+that compare AP angle-of-arrival information besides receive
+power could be utilized as well. In addition, investigating the
+efficacy of other dissimilarity metrics further to improve the
+quality of the learned channel charts is part of ongoing work.
+REFERENCES
+[1] S. Taner, V . Palhares, and C. Studer, “Channel charting in real-world
+coordinates,” in Proc. IEEE Global Telecommun. Conf. (GLOBECOM) ,
+Dec. 2023, pp. 3940–3946.
+[2] F. Euchner and M. Gauger, “CSI dataset dichasus-cf0x: Distributed
+antenna setup in industrial environment, day 1,” 2022. [Online].
+Available: https://doi.org/doi:10.18419/darus-2854
+[3] C. Studer, S. Medjkouh, E. Gönülta¸ s, T. Goldstein, and O. Tirkkonen,
+“Channel charting: Locating users within the radio environment using
+channel state information,” IEEE Access, vol. 6, pp. 47 682–47 698, Aug.
+2018.
+[4] L. Ribeiro, M. Leinonen, H. Al-Tous, O. Tirkkonen, and M. Juntti,
+“Channel charting aided pilot reuse for massive MIMO systems with
+spatially correlated channels,” IEEE Open J. Commun. Soc. , vol. 3, pp.
+2390–2406, Dec. 2022.
+[5] L. L. Magoarou, T. Yassine, S. Paquelet, and M. Crussière, “Channel
+charting b

@@ -1,0 +1,155 @@
+FILE: 03_Model_Based_Approaches_CC.pdf
+PAGES: 17
+TITLE: 
+
+ABSTRACT/FRONT:
+206.14330v4 [cs.ET] 30 Oct 2023
+Model-Based Approaches to Channel Charting
+Amr Aly, Student Member , IEEE
+CPCC, Department of EECS
+University of California, Irvine, CA, USA
+alyas@uci.edu
+Ender Ayanoglu, Fellow, IEEE
+CPCC, Department of EECS
+University of California, Irvine, CA, USA
+ayanoglu@uci.edu
+Abstract—We present new ways of producing a channel chart
+[1] employing model-based approaches. We estimate the angl e
+of arrival θ and the distance ρ between the base station and
+the user equipment by employing our algorithms, inverse of t he
+root sum squares of channel coefﬁcients (ISQ) algorithm, li near
+regression (LR) algorithm, and MUSIC/MUSIC (MM) algorithm .
+We compare these methods with the channel charting algorith ms
+principal component analysis (PCA), Sammon’s method (SM),
+and autoencoder (AE) [1]. We show that ISQ, LR, and MM
+surpass PCA, SM, and AE in performance. We also compare
+our algorithm MM with an algorithm from the literature that
+uses the MUSIC algorithm jointly on θ and ρ. We call this
+algorithm the JM algorithm. JM performs very slightly bette r
+than MM but at a substantial increase in complexity. Finally , we
+introduce the rotate-and-sum (RS) algorithm which has abou t
+the same performance as the MM and JM algorithms. Unlike
+MUSIC, RS does not employ eigenvalue and eigenvector analys is.
+Thus, it is more suitable for direct register transfer logic (RTL)
+implementation.
+Index Terms—Channel charting, user equipment (UE), channel
+state information (CSI), multiple signal classiﬁcation (M USIC),
+principal component analysis (PCA), Sammon’s method (SM),
+autoencoder (AE).
+I. I NTRODUCTION
+A channel chart is a chart created from channel state
+information (CSI) that preserves the relative geometry of t he
+radio environment consisting of a base station (BS) and user
+equipments (UEs) [1]. This chart helps the BS locate the
+UEs (relatively), which can help in many applications such
+as handover, cell search, user localization, and more. Prev ious
+papers have proposed estimation of a channel chart using a
+number of dimensionality reduction techniques whereas in
+this paper we calculate the channel chart directly, employi ng
+model-based approaches.
+Channel charting was introduced in [1]. Consider Fig. 1,
+which is a redrawn and simpliﬁed version of Fig. 3 in [1].
+As discussed in [1], UE transmitters are located in spatial
+geometry RD, where D = 2 or 3. The BS receiver extracts CSI
+in radio geometry CM where M ≫ D. In the next two steps,
+a channel chart is generated in RD′
+where D′ ≤ D such that
+the representation in RD′
+preserves the relative positions of the
+UEs. Reference [1] discusses and compares three dimensiona l-
+ity reduction algorithms from the machine learning literat ure,
+This work is partially supported by NSF grant 2030029.
+This work was partially presented at the International Conf erence on
+Computing, Networking, and Communications (ICNC) 2023 and the IEEE
+International Conference on Communications (ICC) 2023.
+Spatial
+Geometry
+Radio
+Geometry
+Channel
+Chart
+Wireless
+Channel
+Forward
+Charting
+Function Geometry
+Feature
+Local
+Geometry
+Preserved
+Feature
+Extraction
+F
+H
+C
+RD
+RD′
+CM
+CM ′
+Fig. 1. Summary of channel charting via dimensionality redu ction [1].
+namely principal component analysis (PCA), Sammon’s map-
+ping (SM), and auto
+
+INTRO:
+
+
+CONCLUSION/LAST:
+is stated that the TW and CT performance of
+SM and SM+ are close while SM+ provides more visually
+satisfying results than PCA, SM, and AE. Y et, comparing
+[1, Fig. 6] with our Fig. 8 and Fig 10, one can observe that
+LR, ISQ, and MM provide better visual outcomes than SM+.
+We have observed the same conclusion for the RS algorithm,
+which we are not presenting due to avoiding repetitive ﬁgure s.
+For that reason, we did not attempt to simulate the SM+
+algorithm in this paper. One can conclude based on the
+comparisons discussed above that MM, JM, and RS will
+outperform SM+ in TW and CT as well as the visual quality
+of the channel charts.
+We have carried out extensive simulations for the bias and
+variability of our estimation algorithms. The results show that
+their bias and variability vanish asymptotically. A theore tical
+analysis of these facts is beyond the scope of this paper and
+is left as potential future work.
+VII. A CKNOWLEDGMENT
+The authors would like to thank the editor and the anony-
+mous reviewers whose comments improved the presentation
+in the paper.
+REFERENCES
+[1] C. Studer, S. Medjkouh, E. Gonultas, T. Goldstein, and O. Tirkkonen,
+“Channel charting: Locating users within the radio environ ment using
+channel state information,” IEEE Access , vol. 6, pp. 47 682–47 698,
+2018.
+[2] J. Deng, S. Medjkouh, N. Malm, O. Tirkkonen, and C. Studer , “Multi-
+point channel charting for wireless networks,” in 2018 52nd Asilomar
+Conference on Signals, Systems, and Computers , 2018, pp. 286–290.
+[3] P . Huang, O. Castaneda, E. Gonultas, S. Medjkouh, O. Tirk ko-
+nen, T. Goldstein, and C. Studer, “Improving channel charti ng with
+representation-constrained autoencoders,” in 2019 IEEE 20th Interna-
+tional W orkshop on Signal Processing Advances in Wireless C ommuni-
+cations (SPAWC), 2019, pp. 1–5.
+[4] E. Lei, O. Castaneda, O. Tirkkonen, T. Goldstein, and C. S tuder,
+“Siamese neural networks for wireless positioning and chan nel charting,”
+in 2019 57th Annual Allerton Conference on Communication, Con trol,
+and Computing (Allerton) , 2019, pp. 200–207.
+[5] P . Agostini, Z. Utkovski, and S. Stanczak, “Channel char ting: An
+Euclidean distance matrix completion perspective,” in ICASSP 2020 -
+2020 IEEE International Conference on Acoustics, Speech an d Signal
+Processing (ICASSP) , 2020, pp. 5010–5014.
+[6] C. Geng, H. Huang, and J. Langerman, “Multipoint channel charting
+with multiple-input multiple-output convolutional autoe ncoder,” in 2020
+IEEE/ION Position, Location and Navigation Symposium (PLA NS),
+2020, pp. 1022–1028.
+[7] P . Kazemi, H. Al-Tous, C. Studer, and O. Tirkkonen, “SNR p rediction
+in cellular systems based on channel charting,” in 2020 IEEE Eighth In-
+ternational Conference on Communications and Networking ( ComNet),
+2020, pp. 1–8.
+[8] P . Ferrand, A. Decurninge, L. G. Ordonez, and M. Guillaud , “Triplet-
+based wireless channel charting,” in GLOBECOM 2020 - 2020 IEEE
+Global Communications Conference , 2020, pp. 1–6.
+[9] J. Pihlajasalo, M. Koivisto, J. Talvitie, S. Ali-Loytty , and M. V alkama,
+“Absolute positioning with unsupervised multipoint chann el charting for
+5G networks,” in 2020 IEEE 92nd V ehicular Technology Conference
+(VTC2020-Fall), 2020, pp. 1–5.
+[10] L. Ribeiro, M. Leinonen, H. Djelouat, and M. Juntti, “Ch annel charting
+for pi

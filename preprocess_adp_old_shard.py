@@ -9,9 +9,9 @@ from pathlib import Path
 import numpy as np
 
 
-REPO_ROOT = Path(__file__).resolve().parent
+REPO_ROOT = Path(__file__).resolve().parent   # 当前脚本所在目录（项目根目录）
 P2_ROOT = REPO_ROOT  # preprocess_dichasus_numpy.py 在同一目录
-sys.path.insert(0, str(P2_ROOT))
+sys.path.insert(0, str(P2_ROOT))  # 将项目根目录加入模块搜索路径，使 import preprocess_dichasus_numpy 生效
 
 from preprocess_dichasus_numpy import decode_tensor  # type: ignore  # noqa: E402
 from tfrecord import example_pb2  # noqa: E402

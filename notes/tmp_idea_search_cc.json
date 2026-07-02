@@ -1,0 +1,608 @@
+{
+  "query": "channel charting graph refinement",
+  "source": "arxiv",
+  "offline": false,
+  "http": {
+    "arxiv": 200
+  },
+  "count": 30,
+  "records": [
+    {
+      "source_api": "arXiv",
+      "title": "Positron-Emitting and Electron-Capturing Double-Beta Processes in the Standard Model and Beyond",
+      "authors": [
+        "Lukáš Gráf",
+        "Jenni Kotila",
+        "Oliver Scholer"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26097v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We study positron-emitting and electron-capturing double-beta-decay modes as probes complementary to the usual double beta decay. Motivated by the proposed NuDoubt++ experiment, we analyze the candidate isotopes ${}^{78}$Kr, ${}^{106}$Cd, and ${}^{124}$Xe, providing nuclear matrix elements and phase-space factors for both neutrinoful and neutrinoless modes. For the Standard-Model channels, we find that $2ν$ECEC and $2νβ^+$EC are the most experimentally accessible, whereas $2νβ^+β^+$ remains strongly phase-space suppressed. For the neutrinoless channel, we interpret a projected sensitivity of $T_{1/2}^{0ν} = 10^{24}$ y in terms of dimension-seven SMEFT operators and find sensitivity to lepton-number-violating new-physics scales of order 1-100 TeV. We further show that measurements in multiple isotopes can help to resolve degeneracies in multi-operator scenarios, making positron-emitting double-beta searches a useful complement to conventional neutrinoless double beta decay experiments.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26097v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Learning Action Priors for Cross-embodiment Robot Manipulation",
+      "authors": [
+        "Dong Jing",
+        "Tianqi Zhang",
+        "Jiaqi Liu",
+        "Jinman Zhao",
+        "Zelong Sun",
+        "Li Erran Li",
+        "Zhiwu Lu",
+        "Mingyu Ding"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26095v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Most Vision-Language-Action (VLA) models build on a Vision-Language Model (VLM) backbone by attaching an action module and optimizing the full policy jointly. This design inherits strong visual and linguistic priors from the VLM, but leaves the action module to learn physical motion almost from scratch. As a result, the policy lacks an explicit motion prior, forcing early optimization to simultaneously discover temporal action dynamics and cross-modal alignment, a challenge further amplified in cross-embodiment settings. In this work, we propose to pretrain the action module with motion priors before cross-modal VLA alignment. Specifically, we introduce a two-stage training framework that equips the action module with cross-embodiment temporal motion structure before VLA training begins. In Stage~1, a lightweight flow-matching-based encoder-decoder action module efficiently learns temporal motion structure solely from unconditioned action trajectories, without processing visual or language tokens. In Stage~2, this learned prior is transferred to VLA training through decoder reuse and early-stage latent distillation, aligning visual-language features with the action embedding space while still allowing end-to-end policy refinement. In addition, the trained encoder serves as a compact history compressor, summarizing state-action histories into a single temporal context token for history-aware modeling at negligible cost. Extensive experiments across 13 diverse cross-embodiment tasks on both simulated and real-world platforms validate the effectiveness of our approach. Compared with VLA training without action priors, our model achieves faster convergence, higher success rates, and substantially stronger performance on data-scarce real-world tasks. Moreover, scaling up the action data in Stage~1 yields a more generalizable action prior that directly improves downstream VLA performance.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26095v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity",
+      "authors": [
+        "Andrei Liviu Nicolicioiu",
+        "Mohammad Pezeshki",
+        "Aaron Courville"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26091v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "On-policy self-distillation achieves strong pass@1 accuracy by using a single model as both teacher and student, with the teacher conditioned on a correct demonstration to provide dense token-level feedback. We show that this could come at a hidden cost: rollout diversity decreases and pass@k curves flatten (i.e., generating more rollouts fails to improve accuracy). We trace this to compounding biases in the design of self-distillation with sampled demonstrations. The teacher scores each student rollout while conditioned on a sampled correct rollout, channeling its feedback through the model's own biases. We theoretically analyze the optimal self-distillation policy and show that it tilts the base distribution by a pointwise conditional mutual information score between the student's rollout and the correct rollout used as context. Unlike the ideal optimal on-policy reinforcement learning (RL), which preserves probability ratios among equally correct rollouts, self-distillation can amplify existing probability gaps, concentrating mass on already-dominant modes. On a controlled graph path-finding task and science question-answering benchmarks, self-distilled models match or exceed RL on average performance but exhibit substantially lower functional and semantic diversity, failing on out-of-distribution settings that require diverse strategies.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26091v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Simulating Universal Quantum Gate Sets on Photonic OAM Qubits: Single-Qubit and Multi-Qubit Operations via Spatial Light Modulator Phase Holography",
+      "authors": [
+        "Saleha Maqsood",
+        "Muhammad Kamran",
+        "Tahir Malik"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26088v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Spatial light modulators (SLMs) have emerged as reconfigurable platforms for photonic quantum information processing, offering software-defined control over the orbital angular momentum (OAM) of light encoded in Laguerre-Gaussian (LG) beams. This paper presents a comprehensive simulation and hardware-grounded fidelity analysis of quantum gate operations implemented on the HOLOEYE LC 2012 transmissive SLM. A realistic three-channel noise model comprising 8-bit quantisation noise, twisted-nematic (TN) electronic and thermal noise, and phase-wrap clipping error is obtained from the manufacturer's datasheet without free-parameter fitting, yielding a total noise of $σ_{\\text{total}} = 92.4\\text{mrad}$. The complete universal single-qubit gate set $\\{X, Y, Z, S, T, H\\}$ and two-qubit entangling gates $\\{\\text{CNOT}, \\text{CZ}, \\text{SWAP}\\}$ are simulated on a $512 \\times 512$ computational grid. Results show that predicted gate fidelity are in the range of $F = 0.9914\\text{--}0.9936$, with fork grating gates limited primarily by TN noise and phase gates achieving higher fidelity owing to zero phase-wrap clipping error. In addition, Bell state preparation via the H-CNOT circuit achieves $F(Φ^+) = 0.9914$ after two SLM interactions. We benchmark our obtained results against six published experimental studies spanning the 78%--99.6% fidelity range. Finally, a wavelength-dependent analysis identifies 450--532 nm operation as the optimal regime for this device.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26088v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Model Forensics: Investigating Whether Concerning Behavior Reflects Misalignment",
+      "authors": [
+        "Aditya Singh",
+        "Gerson Kroiz",
+        "Senthooran Rajamanoharan",
+        "Neel Nanda"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26071v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "A central goal of safety research is determining whether a model is misaligned. Prior work has largely focused on detecting concerning behavior. But behavior alone does not establish misalignment: a concerning action can arise from benign causes such as confusion. This motivates model forensics: investigating whether the action was driven by malign intent. In this paper, we propose a baseline protocol for model forensics consisting of two steps, iterated as needed. First, we read the chain of thought (CoT) to generate hypotheses about what drives model behavior. Second, we make edits to the prompt or environment to test these hypotheses. While the CoT is not always faithful, it is a rich source of unsupervised insight that can guide the collection of more rigorous evidence. To evaluate our protocol, we create a suite of six agentic environments where models exhibit concerning behavior, and apply it to each. We establish that Kimi K2 Thinking takes shortcuts due to a genuine disposition towards low-effort actions, by showing this hypothesis successfully predicts its behavior. Through counterfactual experiments, we show DeepSeek R1 deceives out of a desire to be consistent with a previous instance of itself. Our methods nonetheless leave significant room for refinement. For example, when we test whether Kimi K2 Thinking believes it is violating user intent, we find no evidence of such a belief, but without positive controls we cannot confirm our tests would detect it. Overall, we find our simple protocol provides a strong baseline that we hope future work will improve upon. More broadly, our work is a concrete step in developing the growing field of model forensics.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26071v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Converging on bound states in coupled-channel calculations",
+      "authors": [
+        "C. Ruth Le Sueur",
+        "James F. E. Croft",
+        "Jeremy M. Hutson"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26069v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We develop a robust algorithm for locating bound states in coupled-channel calculations. Bound states exist at energies where an individual eigenvalue of a log-derivative or ratio matching matrix passes through zero. We describe an algorithm to identify the required eigenvalue of the matching matrix over the full range of energy where it exists. This allows much simpler programming than previous methods. We also consider the choice of the matching distance $R_\\textrm{match}$, where the matching matrix is defined; coupled-channel methods are most efficient if $R_\\textrm{match}$ is chosen to be in the classically allowed region for all channels that support bound states of interest, but not very close to a node in the wavefunction.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26069v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "How Robust is OCR-Reasoning? Evaluating OCR-Reasoning Robustness of Vision-Language Models under Visual Perturbations",
+      "authors": [
+        "Yuxing Cheng",
+        "Yuan Wu",
+        "Yi Chang"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26041v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Vision-language models (VLMs) have achieved strong performance on OCR-based benchmarks and increasingly focused on text-rich understanding, but their robustness under controlled visual degradation remains insufficiently understood. This gap is critical for OCR reasoning, where visual corruption can induce OCR errors and structural distortions, thereby introducing uncertainty into the reasoning task. To systematically study this problem, we introduce OCR-Robust, a benchmark designed for evaluating OCR reasoning robustness under visual perturbations. It contains 812 samples across two complementary subsets: OCR1.0, covering documents, scene text, receipts, handwriting, and mathematical content, and OCR2.0, focusing on charts, geometry diagrams, and tables. To enable efficient yet informative evaluation, we conduct a pilot study over 18 candidate perturbations and select 5 representative types at 3 severity levels each based on their impact and cross-model discriminability. We evaluate robustness using clean accuracy, Relative Corruption Retention (RCR), Worst-Case Retention (WCR), and a composite Corruption Robustness Index (CRI), and benchmark 18 models spanning proprietary systems, open-source VLMs, and OCR+LLM pipelines. Our results show that higher clean accuracy does not necessarily imply stronger robustness, and that models can suffer pronounced degradation in the worst case on OCR tasks that are sensitive to structure, and charts and tables are substantially more fragile than document-like inputs under perturbation.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26041v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "G2DP: Diffusion Planning with Spatio-Temporal Grid Guidance",
+      "authors": [
+        "Hang Yu",
+        "Ye Jin",
+        "Alessandro Canevaro",
+        "Julian Schmidt",
+        "Julian Jordan",
+        "Peizheng Li",
+        "Marc Kaufeld",
+        "Silvan Lindner"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26017v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "In autonomous driving, diffusion-based planners have emerged as a promising paradigm for robust motion planning in dense and interactive traffic, as they can effectively model diverse driving behaviors. However, their inherent stochasticity often requires explicit guidance during denoising to ensure safety and route adherence for robust closed-loop execution. Existing guidance typically relies on sparse, entity-centric geometric queries or post-hoc refinement, yielding limited situational awareness and fragile performance in interactive scenes. To address this issue, we propose G2DP (Grid-Guided Diffusion Planning), a diffusion-based planner that directly enforces dense environmental constraints through inference-time guidance. Specifically, G2DP constructs a differentiable spatio-temporal cost volume by fusing probabilistic future occupancy distributions with a route-progress map. By formulating this volume as a continuous safety energy functional, it injects dense gradients directly into the denoising loop, actively steering trajectory generation toward collision-free and progress-optimal regions. Extensive closed-loop evaluations show that G2DP achieves state-of-the-art performance on nuPlan, outperforming the strongest imitation-learning baseline by +7.2 points in reactive score. It further maintains top scores in zero-shot transfers to interPlan and DeepScenario benchmarks, with collision avoidance improving by +10.15 over the unguided approach on interPlan. These results demonstrate that spatio-temporal cost grids serve as an effective representation for robust guidance in diffusion-based planning.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26017v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "On the Parameterized Complexity of Bounded-Density Vertex Deletion",
+      "authors": [
+        "Jakob Raupach",
+        "Tom-Lukas Breitkopf",
+        "Anton Herrmann",
+        "André Nichterlein"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.26012v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We explore the parameterized complexity of Bounded Density Vertex Deletion (BDVD): given a graph $G$, an integer budget $k$, and a target density $τ_ρ$, the task is to determine whether the density (i.e. number of edges divided by number of vertices) of the densest subgraph of $G$ can be reduced to at most $τ_ρ$ by deleting at most $k$ vertices. Our primary focus is on structural graph parameters related to treewidth, as the parameterized complexity of BDVD with respect to treewidth was left as open question by Bazgan et al. [JCSS, 2025]. We resolve this question by showing W[1]-hardness with respect to various parameters, including treedepth and feedback vertex number. These results imply W[1]-hardness with respect to treewidth. We obtain positive results for parameters larger than treedepth and feedback vertex number, namely we show BDVD is in FPT parameterized by the max leaf number or vertex integrity. Under the assumption that the target density $τ_ρ$ is a fixed constant the parameterized complexity landscape of BDVD changes drastically, allowing a fixed-parameter tractable algorithm even for parameters smaller than treewidth, namely cliquewidth. Altogether, our results provide a refined complexity landscape for Bounded Density Vertex Deletion, sharply distinguishing between tractable and intractable parameter regimes under structural parameterizations.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.26012v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Variable Bound Tightening for Nash Equilibrium Computation in Multiplayer Imperfect-Information Games",
+      "authors": [
+        "Sam Ganzfried"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25997v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "There has been significant recent progress in algorithms for approximation of Nash equilibrium in large two-player zero-sum imperfect-information games and exact computation of Nash equilibrium in multiplayer strategic-form games. While counterfactual regret minimization and fictitious play are scalable to large games and have convergence guarantees in two-player zero-sum games, they do not guarantee convergence to Nash equilibrium in multiplayer games. Recently, an approach has been presented for exact computation of Nash equilibrium in multiplayer imperfect-information games that solves a quadratically constrained program based on a nonlinear complementarity problem formulation derived from the sequence-form game representation. This formulation was solved using Gurobi's nonconvex quadratic solver, which employs spatial branch-and-bound to iteratively refine variable bounds by solving convex relaxations of bilinear terms via McCormick envelopes. During presolve, Gurobi introduces auxiliary variables and, in some cases, binary variables, leading to an internal MIQCP reformulation. This approach was demonstrated to outperform prior algorithms from the Gambit software suite and quickly solve three-player Kuhn poker after removal of dominated actions; however, the algorithm was not able to solve the full version of the game within 24 hours. In this paper, we derive finite bounds on slack and multiplier variables in the nonlinear complementarity formulation. These bounds strengthen the convex relaxations used within spatial branch-and-bound and lead to substantial computational improvements. We demonstrate the impact of the proposed bounds on exact Nash equilibrium computation in three-player Kuhn poker.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25997v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Conflict-Free Coloring Planar Graphs with 4 Colors",
+      "authors": [
+        "Petr Hliněný",
+        "Lukáš Málik"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25988v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We efficiently conflict-free color every planar graph with 4 colors. An (open-neighborhood) conflict-free coloring assigns colors to vertices in a way that every vertex v has a neighbor w such that the color of w is distinct from the colors of the other neighbors of v (i.e., the color of w is unique in the open neighborhood of v). A previous best upper bound on the conflict-free chromatic number of planar graphs was 5, and it is known that 4 colors are sometimes necessary. Deciding whether, e.g., a planar graph admits a conflict-free coloring with 3 colors is NP-complete. Our approach uses a refined variant of the classical Gallai-Edmonds decomposition and the Four Color Theorem. In fact, our result is equivalent to the Four Color Theorem.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25988v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Weave of Formal Thought",
+      "authors": [
+        "Alexandre Bouayad"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25987v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Large language models (LLMs) attain remarkable surface fluency on code, yet they neither formally guarantee the syntactic validity of their output nor leverage the hierarchical structure defining the target language. While existing constrained-decoding frameworks address the former, they operate under rigid assumptions that preclude critical lexical mechanisms -- including context-sensitive lexing, maximal-munch tokenization, and keyword extraction -- and only approximate vocabulary masking, sacrificing completeness. For the latter, code LLMs typically inject grammatical structure via predetermined policies rather than learning which structural information to expose. In this work, we introduce Weave of Formal Thought (WoFT), a paradigm uniting rigorous syntactic validation with learned structural representations. First, we present a formal engine and constrained decoder that is sound and complete with respect to the full Tree-sitter specification. By augmenting generalized LR (GLR) parsing with a speculative-lexing construction that maintains concurrent lexer-state hypotheses synchronized with a GLR graph-structured stack, our decoder admits every subword token extending to a valid program prefix and rejects all others. Second, we present a latent-variable fine-tuning method training the language model to interleave non-terminal grammar symbols directly into generation. Utilizing the reweighted wake-sleep (RWS) algorithm to optimize the importance-weighted evidence lower bound (IW-ELBO) of the surface text, the model learns to selectively retain formal derivations as an adaptive structural scratchpad. For Python, fine-tuning StarCoder2-3B with our RWS objective reduces per-token cross-entropy by 14.3% relative to a text-only SFT baseline, demonstrating that discretionary latent syntax recovers critical structural information that flat autoregressive training discards.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25987v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Lepton number violation at hadron colliders via pseudo-Dirac heavy neutral leptons",
+      "authors": [
+        "Stefan Antusch",
+        "Jan Hajer",
+        "Bruno M. S. Oliveira"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25982v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Symmetry-protected low-scale seesaw models can account for the observed neutrino flavour oscillations without fine-tuning, while yielding collider-accessible signatures through pseudo-Dirac heavy neutral leptons (HNLs). Seesaw frameworks generically predict lepton number (LN) violation, which provides a powerful discovery channel. In symmetry-protected realisations, however, the amplitudes for LN violation are strongly suppressed by destructive interference between the contributions of the two quasi-degenerate HNLs within the usual QFT plane-wave treatment. We demonstrate that damped heavy neutrino-antineutrino oscillations significantly alleviate this suppression. We compare the sensitivities to pseudo-Dirac HNLs in both LN-blind and LN-violating channels at the LHC and future hadron colliders such as the FCC-$hh$ and the S$pp$C. We find that, although searches for LN violation outperform their LN-blind counterparts, small mass splittings in the pseudo-Dirac HNL pair can drastically reduce the sensitivities in these channels. We further show that combining LN-blind and LN-violating searches can distinguish a pseudo-Dirac HNL pair from the double-Majorana limit in the intermediate regime where LN violation is observable but not yet saturated.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25982v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "HI Simulations for Cosmology with the SKA Observatory",
+      "authors": [
+        "Tommaso Ronconi",
+        "Gabriella De Lucia",
+        "Marta Spinelli",
+        "Pascal Hitz",
+        "Fabio Fontanot",
+        "Francesco Sinigaglia",
+        "Lizhi Xie",
+        "Robert M. Yates"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25969v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We present a comparative overview of state-of-the-art methods for modelling the distribution of neutral hydrogen (HI) in the post-reionization Universe, developed in preparation for upcoming SKAO cosmological surveys. Our aim is to assess how different physical and empirical assumptions reflect into predictions for key observables such as the cosmic HI density, the HI mass function, and the HI-halo mass relation. We consider both: (i) semi-analytical approaches that self-consistently evolve baryonic components within dark matter merger trees through physically motivated prescriptions and (ii) empirical schemes tailored to different observables and based on fast approximations designed for large ensemble studies. By comparing the predictions from the different methods considered, we find overall consistency in integrated quantities such as $Ω_{\\mathrm{HI}}$, yet systematic differences in the detailed shape and scatter of the HI--halo mass relation and its redshift evolution. Semi-analytical models offer physically grounded predictions but depend on assumed prescriptions, while empirical methods provide flexibility and computational efficiency at the expense of robustness in extrapolated regions of the parameter space. The increasing number of HI measurements from SKA precursors and pathfinders (including surveys with MeerKAT, ASKAP, and FAST) will provide critical observational constraints to refine and calibrate current simulation methodologies. In turn, increasingly realistic HI simulations play a key role in interpreting these data, guiding survey design and analysis strategies, in preparation for the advent of SKAO data.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25969v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Revisiting multi-phase variational problems: A Muckenhoupt weight approach",
+      "authors": [
+        "Thanh-Nhan Nguyen",
+        "Minh-Phuong Tran"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25958v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "In this paper, we investigate the regularity theory of local minimizers of multi-phase energy functionals. As a key feature of our work, instead of the classical Hölder continuity assumptions on the modulating coefficients and interaction between the growth exponents, we assume that these coefficients belong to a suitable class of Muckenhoupt weights. The presence of multiple growth phases with the degenerate or singular nature of Muckenhoupt weights poses substantial analytical difficulties that prevent a direct application of classical theory. Our approach requires a refinement of localized energy estimates and an adapted iteration scheme that exploits the reverse Hölder properties of the Muckenhoupt weights. As our main results, we establish the higher integrability, local boundedness, and Hölder continuity of local minimizers. Most notably, we prove the Harnack inequality for non-negative local minimizers, which, to the best of our knowledge, stands as the first result of its kind in the multi-phase setting involving Muckenhoupt modulating coefficients. This paper is a contribution toward a better understanding of the qualitative behavior of minimizers in non-uniformly elliptic variational problems, and offers a new framework that complements the existing literature beyond the classical Hölder continuity of modulating coefficients.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25958v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Pulmonary Embolism Risk Stratification from CTPA and Medical Records: Vascular Graphs Are Not All You Need",
+      "authors": [
+        "Nathan Painchaud",
+        "Tristan Habémont",
+        "Morgane des Ligneris",
+        "Allan Serva",
+        "Pierre Croisille",
+        "Laurent Bertoletti",
+        "Thomas Lampert",
+        "Johannes F. Lutzeyer"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25956v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Risk stratification for pulmonary embolism (PE) is critical for clinical decision-making. Stratification guidelines are based on patient medical records, parameters measured from computed tomography pulmonary angiography (CTPA), and blood tests. However, blood tests are often missing in routine practice. This work studies whether state-of-the-art models can accurately classify risk stratification from only medical records and biomarkers extracted from CTPA images. We benchmark different approaches to combine medical records and cardiac biomarkers with rich pulmonary vascular information; we add vascular biomarkers to tabular models and apply graph neural networks (GNNs) on the vascular tree's intrinsic graph representation. We use a private dataset (n=353) with uniquely complete data for PE risk stratification. Our results show that, among global features, medical records and cardiac biomarkers are the most significant predictors, while vascular biomarkers do not further improve stratification. Even more surprising, even GNNs on vascular graphs fail to outperform strong tabular baseline on global features. We consider hypotheses, on both models and data, that could explain this suboptimal performance. Our investigation suggests that, counter-intuitively, vascular graphs might hold no discriminative information for PE risk stratification. Code is available from https://github.com/creatis-myriad/GENESIS.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25956v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Single-dish HI Intensity Mapping with the SKAO: Precursor Progress with MeerKAT's Large Area Synoptic Survey (MeerKLASS)",
+      "authors": [
+        "Steven Cunnington",
+        "Jingying Wang",
+        "Mario G. Santos",
+        "Matilde Barberi-Squarotti",
+        "Philip Bull",
+        "Stefano Camera",
+        "Isabella P. Carucci",
+        "Zhaoting Chen"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25955v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Using the SKAO to map the intensity of neutral hydrogen's 21cm emission line will be a golden opportunity to constrain models of cosmology. To access the largest cosmological scales, wide-sky surveys should ideally reach thousands of square degrees, requiring SKA-Mid's dishes to scan the sky in auto-correlation mode, so-called single-dish observations. In this chapter, we overview the latest results from MeerKAT's Large Area Synoptic Survey (MeerKLASS), which has been pioneering this single-dish observing strategy, and motivating its continuation with the SKA-Mid AA4 deployment. MeerKLASS, operating on the same Karoo site where the SKA-Mid is being built, has now achieved multiple cosmological detections from single-dish observations, including high-significance cross-correlations with optical galaxy surveys and continually improving measurements of the HI auto-power spectrum. These results demonstrate that stable calibration, effective foreground mitigation, and statistical recovery of cosmological signal are all achievable with a large multi-dish telescope in total-power mode. The success of MeerKLASS therefore validates the observational strategies required for SKA-Mid and marks a key milestone in demonstrating the viability of single-dish HI intensity mapping for cosmology. Looking ahead, SKA-Mid's increased sensitivity and Band 1 coverage (350-1050 MHz) will allow the same methodology to probe redshifts up to $z\\,{\\sim}\\,3$, mapping volumes several orders of magnitude larger than currently accessible. The techniques refined with MeerKLASS thus form the operational and scientific foundation for a large portion of the SKAO's cosmology programme.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25955v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Dispersion Suppression for Wedge-Based Final Cooling at a 10 TeV Muon Collider",
+      "authors": [
+        "Inci Karaaslan",
+        "Karri DiPetrillo",
+        "David Neuffer",
+        "Diktys Stratakis",
+        "Katsuya Yonehara"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "10.18429/jacow-ipac2026-wep1345",
+      "arxiv_id": "2606.25944v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Achieving a luminosity of $\\gtrsim 10^{34} cm^{-2} s^{-1}$ in a $10 \\text{ } TeV$ Muon Collider, given the short lifetime of a muon, requires reducing the 6D emittance of the muon beam through a process known as ionization cooling. In the final stage of this cooling process, the transverse emittance must be reduced to $22 \\text{ } μm$, typically by allowing longitudinal emittance growth up to downstream acceptance limits. While the current International Muon Collider Collaboration designs involve $40 \\text{ } T$ solenoids to reach the transverse emittance target, such high-field solenoids come with several challenges, including mechanical stress management, quench protection, and potential limitations in relying on High Temperature Superconductor technology. Designed as an alternative to using such solenoids while simultaneously reaching target transverse emittance, the previously proposed wedge-based, reverse emittance-exchange cooling scheme requires excellent dispersion suppression. In this study, we design and simulate a dispersion suppressor channel for the wedge-based final cooling design that reduces dispersion in the target direction to a target value of $D_x \\sim 0.001 \\text{ } m$.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25944v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Explainable Control Framework (XCF) based on Fuzzy Model-Agnostic Explanation and LLM Agent-Supported Interface",
+      "authors": [
+        "Faliang Yin",
+        "Hak-Keung Lam",
+        "David Watson"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25941v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Increasing demand for precise and reliable control in complex scenarios has led to the development of increasingly sophisticated controllers, including data-driven approaches employing closed box models and mathematically rigorous yet complex designs. This complexity highlights the needs for explainable control that can provide human-understandable insights into controller behavior. In this paper, an explainable control framework (XCF) along with supporting algorithms and user interface are proposed to explain how controllers determine their control actions and their underlying working mechanism. The novel contributions of this work are threefold: First, the XCF is designed to provide model-agnostic explanations for controllers in closed-loop systems and can optionally refine local explanations by system response dynamics. Second, a novel explanation method, hierarchical fuzzy model-agnostic explanation for control systems (HFMAE-C), is proposed based on the designed framework. The HFMAE-C employs a fuzzy logic system to approximate the controller's behavior and system dynamics, providing sample, local, domain and universe level explanations via IF-THEN rules revealing the controller's decision logic and salience values quantifying the contribution of system states to control actions. Third, a large language model agent-supported user interface is developed to automatically analyze user requirements, select appropriate algorithms, interpret the generated explanations to a natural language report, and provide interactive consultation. Case studies on inverted pendulum system and Turtlebot obstacle avoidance demonstrate the effectiveness of the proposed method through simulated user experiments and quantitative comparisons with mainstream explainable control approaches.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25941v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Electroweak corrections to Higgs boson pair production: The quark channel",
+      "authors": [
+        "Marco Bonetti",
+        "Gudrun Heinrich",
+        "Philipp Rendler",
+        "William J. Torres Bobadilla"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25928v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We present the mixed QCD-electroweak corrections to Higgs boson pair production in the quark-antiquark channel. The virtual amplitudes are computed fully analytically using the method of differential equations. We determine the integration constants by matching our expressions to the large mass expansion limit of the canonical integrals. We implement the results in the POWHEG-BOX framework for phenomenological studies. The corrections are found to have a significant impact on the shapes of differential cross sections, reaching up to +10% for the invariant mass distribution of the Higgs boson pair near the production threshold. This channel has not been considered before in calculations of the next-to-leading order electroweak corrections to Higgs boson pair production.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25928v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "A Tattered Cloak of Invisibility: Measuring Anonymity Loss in Railgun on Ethereum",
+      "authors": [
+        "Kanan Huseynov",
+        "Ali Shahzaib",
+        "István András Seres",
+        "János Tapolcai"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25926v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "From a user's perspective, perhaps the most significant difference between traditional banking services and widely used blockchain-based financial systems is that, in the latter, transactions and, either directly or indirectly, account balances and transaction histories are publicly observable. Therefore, a growing number of cryptographic solutions have been proposed to add a privacy layer to such systems. However, the privacy that users actually obtain does not depend solely on the security of the underlying cryptographic protocol: user behavior, transaction amount patterns, and timing decisions can substantially reduce anonymity.\n  In this work, we study behavioral leakage in cryptocurrency mixers, focusing on Railgun on Ethereum. We aim to heuristically estimate the probability that a given deposit and withdrawal transaction belong to the same user. We consider five sources of leakage: characteristic timing patterns, address reuse, proximity in the transaction graph induced by prior public transactions, amount fingerprints that preserve distinctive digit patterns across transaction values, and knapsack type matches in which groups of transaction amounts add up in revealing ways. Our results show that even cryptographically strong privacy systems may suffer substantial anonymity loss due to user behavior and transaction patterns. Our five heuristics are able to uniquely link 17.65% of Railgun withdraw transactions to deposit transactions. We also applied a knapsack solver algorithm that was able to produce a 3.42 bit median anonymity loss for withdraw transactions. This work contributes to a better understanding of the practical privacy limits of mixers and anonymity pools, and points toward safer usage practices and design principles.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25926v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Robustness and Leadership in Markov-switching Consensus Networks",
+      "authors": [
+        "Sarah H. Cen",
+        "Vaibhav Srivastava",
+        "Naomi Ehrich Leonard"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25888v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We investigate how time-varying interactions, modeled via a Markov switching graph (MSG), impact the robustness of noisy multi-agent dynamics in both continuous- and discrete-time settings. Our focus is on the steady-state performance of consensus and leader-follower tracking dynamics subject to stochastic noise. Using the framework of Markov jump linear systems (MJLS), we derive expressions for the steady-state covariance of each agent's deviation from consensus and tracking error, respectively, and use them to quantify individual and group performance as a function of the interaction graphs and the switching dynamics. We extend established notions of robustness, certainty indices, and joint centrality from static graphs to the MSG setting. To gain analytical insight, we specialize our results to systems switching between two topologies and characterize how switching influences performance. Numerical simulations further illustrate how switching topologies affects system robustness in both coordination tasks.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25888v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "A Stronger Conditional Running-Time Lower Bound for Global Label Min-Cut",
+      "authors": [
+        "Yuanhao Wang",
+        "Wei Wang"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25875v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Let $n$ and $p$ denote the numbers of vertices and labels, respectively, in an undirected edge-labeled graph. Previous work showed that, under the Exponential Time Hypothesis (ETH), there is no deterministic algorithm with running time \\[ (np)^{o\\left(\\frac{\\log n}{(\\log\\log n)^2}\\right)}. \\] In this paper, we give a deterministic reduction that strengthens this conditional running-time lower bound to \\[ (np)^{o\\left(\\frac{\\log n}{\\log\\log n}\\right)}. \\]",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25875v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Topology-Dependent Emergence of Polychronous Neuronal Groups: A Recurrence-Plot Characterization",
+      "authors": [
+        "Lucas A. T. X. Carneiro",
+        "Armand D. Jiofack",
+        "Fernando F. Ferreira"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25874v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Polychronous Neuronal Groups (PNGs) reproducible, time-locked spatiotemporal firing cascades stabilised by Spike-Timing-Dependent Plasticity (STDP) and heterogeneous axonal delays provide a combinatorially rich substrate for neural computation whose structural determinants remain poorly understood. We simulate a recurrent network of N=1000 Izhikevich neurons over ten hours of biological time and identify 1545 unique PNGs via an offline event-driven detection algorithm. A parametric Watts-Strogatz topology sweep reveals that the clusteringcoefficient C is the primary structural driver of PNG yield: the transition from a ring-lattice (C~0.35, $\\sim\\!850$ \\PNGs) to a random graph (C~!0.20$, $<\\!50$ \\PNGs) reduces representational capacity by more than 90%. We further introduce a sparse-dot-product Recurrence Plot (RP) framework that identifies PNGs as unit-slope diagonal structures in the phase-space recurrence matrix, entirely independent of anatomical neuron labelling. Recurrence Quantification Analysis yields DET~0.65, quantifying the reproducibility of the network's dynamical trajectory. Together, the results establish small-world topology as the structural optimum for polychronization and the \\RP decoder as a principled, label-free tool for PNG identification.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25874v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Evolving Quantum Error-Correcting Encodings for Molecular Simulation",
+      "authors": [
+        "Kenny Heitritter",
+        "James Brown",
+        "Tarini Hardikar"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25870v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Useful quantum algorithms require many coupled discrete design choices. We study LLM-driven evolutionary program synthesis -- a language model edits a program, an external verifier scores the result, and high-scoring programs are retained and re-mutated -- as a tool for quantum-computing research. As a case study, we apply this loop to the Generalized Superfast Encoding (GSE), a fermion-to-qubit encoding whose prior molecular constructions reach code distance $3$. The search discovered interpretable constructor programs whose codes have \\emph{exact} distance $5$ on the molecular instances tested, and distance $6$ on one $20$-mode instance, under strict stabilizer-coset semantics. To our knowledge these are the first GSE/superfast encodings beyond distance $3$ for dense molecular Hamiltonians. A second search, guided by verifier analysis of the first artifact, found a circulant constructor that reaches a five-qubits-per-mode floor on the tested $12$-, $14$-, $16$-, and $20$-mode instances, with certified dense-rule fallback at the failing $18$-mode case. As secondary resource descriptors, in a code-capacity \\emph{memory} comparison at $p=10^{-3}$ the resulting encodings use $4.2$--$5.0\\times$ fewer data qubits than a scoped per-mode Jordan--Wigner $+$ $[[25,1,5]]$ surface route and have $3.4$--$8.2\\times$ lower logical-failure rates under finite-weight decoding tables with explicit truncation brackets; we claim no circuit-level fault-tolerance or Trotter-cost advantage. The search trajectory illustrates a general operating lesson: rewarding distance alone selects trivial dense graphs, whereas holding verified distance fixed and rewarding compression selects structured rules.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25870v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Leptonic CP asymmetry and heavy neutrino searches in seesaw scenario",
+      "authors": [
+        "Arindam Das",
+        "Wei Liu",
+        "Supriya Senapati"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25869v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We investigate the prospects for probing heavy Majorana neutrinos in the type-I seesaw framework at the 14 TeV LHC. In this scenario, the light-heavy neutrino mixing enables the production of heavy neutrinos in association with charged leptons, followed by decays into dilepton plus dijet final states. We perform a detector-level cut-based analysis of both same-sign (SS) and opposite-sign (OS) dilepton channels and investigate the sensitivity as a function of the ratio $R_{ll}$ of SS to OS events. We derive projected constraints on the light-heavy neutrino mixing as a function of the heavy-neutrino mass. For $R_{ll} \\simeq 1$, the sensitivity at $140~\\rm{fb}^{-1}$ improves upon current LHC bounds by about one order of magnitude for $M_N \\simeq 60-80~\\rm{GeV}$, with a further order of magnitude improvement expected at the HL-LHC with $3~\\rm{ab}^{-1}$. The sensitivity decreases substantially for smaller $R_{ll}$. We show that, for $50~\\text{GeV} \\lesssim M_N \\lesssim 100~\\text{GeV}$, the collider reach is strongly correlated with $R_{ll}$ and the associated CP asymmetry, providing additional motivation for future measurements of $R_{ll}$ and heavy-neutrino oscillations at colliders.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25869v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Sequential and Generative Models for Vehicular Distributed MIMO Channel Prediction",
+      "authors": [
+        "Malek Abida",
+        "Rafik Zayani",
+        "Eric Simon",
+        "Davy Gaillot"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25864v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "Vehicular communication is a key 6G use case requiring reliable and high-capacity connectivity under fast mobility and highly time-varying propagation conditions. However, large-scale vehicular channel estimation is costly and limited, impacting system-level performance of vehicular communications, and realistic channel prediction models are needed. This paper proposes a vehicular channel prediction framework based on real measured urban channels collected through a dedicated measurement campaign using the MaMIMOSA channel sounder. The framework enables the training and systematic benchmarking of sequential and generative models for both single-step and multi-horizon vehicular channel state information (CSI) prediction to assess prediction robustness across different forecasting horizons, including LSTM, TCN, a CNN-enhanced Transformer, and ChannelGPT, with the goal of accurately predicting channel evolution while preserving spatiotemporal dynamics and non-stationarity. In addition, a system-level evaluation framework is introduced to assess the impact of channel prediction on the performance of vehicular distributed MIMO communications. Using predicted channels, spectral efficiency (SE) is evaluated against true CSI. Results show that ChannelGPT achieves over 94% normalized mean squared error (NMSE) reduction compared to LSTM and significant improvements over other baselines, while reducing FLOPs by 28% and inference latency by 39% relative to the CNN + Transformer. Moreover, ChannelGPT-predicted channels yield SE distributions nearly indistinguishable from those obtained with real measurements, demonstrating its effectiveness for reliable performance evaluation in high-mobility 6G vehicular networks.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25864v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Parameterized Complexity of Power Network Design: Coordinating Cable Placement is Hard",
+      "authors": [
+        "Thekla Hamm",
+        "Bart M. P. Jansen",
+        "Faezeh Motiei"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25859v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We study generalizations of the Steiner Tree problem motivated by the design of power networks. While Steiner Tree asks for a single minimum-cost tree connecting given terminal vertices, a power network typically consists of multiple trees, each connecting a subset of the terminals, to avoid electrical overloads. The cost of installing depends on both the cable lengths and the cost of digging underground trenches for putting the cables where the digging costs can be shared. These leads to variants of Steiner Tree where the goal is to compute a minimum-cost set of Steiner trees with a common root, that together connect all terminals while balancing the power demand of the terminals in each tree. Two important variants arise depending on whether the network is intended for low-voltage or high-voltage power. In the low-voltage case, power loss imposes a bound on the maximum depth of each tree, while no such restriction applies in the high-voltage case. We study the parameterized complexity of several power network design problems, parameterized by the number of terminals. While Steiner Tree is fixed-parameter tractable under this parameterization, most of our variants are W[1]-hard. For low-voltage networks, we present an XP-algorithm for planar inputs based on structural bounds on the treewidth of solution subgraphs. We also give a reduction from Grid Tiling showing tightness under ETH. The XP-algorithm extends to the high-voltage setting and general graphs, albeit at a cost in the running time. For high-voltage networks, we show the problem remains W[1]-hard even on planar graphs. Finally, we explore a variant of the cost model for sharing digging costs in which both problems become fixed-parameter tractable.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25859v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Hybrid deep learning-based phase diversity method for wavefront reconstruction",
+      "authors": [
+        "Y. Rodimkov",
+        "A. Kotov",
+        "K. Burdonov",
+        "S. Perevalov",
+        "V. Volokitin",
+        "I. Meyerov",
+        "A. Soloviev"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25855v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "The efficiency of high-power laser systems is limited by wavefront distortions in the beam, particularly non-common path aberrations, which reduce the peak intensity at the focal plane. Compensating for these aberrations requires the calibration of the adaptive optics system. Conventional calibration methods rely on a time-consuming iterative optimization that is highly sensitive to initial conditions. While deep learning-based models offer high speed, they often demonstrate insufficient accuracy. In this work, we present a hybrid wavefront reconstruction method that combines a convolutional neural network to generate an initial estimate of the wavefront distortions, with the L-BFGS (Limited-memory Broyden-Fletcher-Goldfarb-Shanno) algorithm for its subsequent refinement. In numerical simulations, the method achieved an efficiency of $\\sim 0.99$ in 80% of the cases for a root-mean-square (RMS) of wavefront distortions ranging from 0 to $1.3λ$. In a physical experiment, for initial wavefront distortions with RMS values from 0.15 to $0.6λ$, the method achieved an efficiency of $\\sim 0.75$. As a result, focusing with a Strehl ratio of $0.96 \\pm 0.02$ was attained within 2 to 4 iterations of the algorithm, confirming the applicability of the method for the fast and accurate calibration of adaptive optics systems under real experimental conditions.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25855v1"
+    },
+    {
+      "source_api": "arXiv",
+      "title": "Sharp approximate Carathéodory theorem and application to iterated Delaunay refinement",
+      "authors": [
+        "Raphaël Tinarrage"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2606.25854v1",
+      "cited_by": null,
+      "cited_by_src": null,
+      "abstract": "We analyze the decrease of simplex diameters under iterated refinement of spherical Delaunay complexes. Unlike in ordinary subdivision, the refined Delaunay complex need not be a subdivision of the previous one, so mesh contraction is not automatic. We derive explicit contraction bounds for several families of Steiner points, including Delaunay analogues of barycentric and edgewise subdivision. The proof reduces the problem to sharp covering estimates for Euclidean simplices. These estimates are obtained through a strengthening of Maurey's empirical method via pivotal sampling and a dimension-dependent version of the approximate Carathéodory theorem. Theoretical results and numerical experiments show that Delaunay refinements achieve stronger contraction than their subdivision counterparts.",
+      "is_preprint": true,
+      "published_doi": "",
+      "url": "http://arxiv.org/abs/2606.25854v1"
+    }
+  ]
+}
