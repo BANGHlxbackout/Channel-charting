@@ -153,7 +153,7 @@ def main() -> None:
         out_dir / "chart.png",
         train_positions,
         z_train,
-        f"Train Diffusion Diagnostic\nCT={metrics['ct']:.3f}, TW={metrics['tw']:.3f}",
+        f"Diffusion Refined Train Split\nCT={metrics['ct']:.3f}, TW={metrics['tw']:.3f}",
     )
     print("RESULT", json.dumps(result, indent=2, sort_keys=True))
 

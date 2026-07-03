@@ -4,3 +4,15 @@ datasets/
 results/
 .venv/
 *.egg-info/
+notes/channel_charting_light_literature_search.md
+notes/graph_laplacian_regularization_light_literature_search.md
+notes/image.png
+notes/paper_deep_extracts/
+notes/paper_learning_extracts/
+notes/physics_chart_disagreement_*.md
+notes/refinement_repair_*.md
+notes/tmp_*.json
+notes/tmp_*.md
+notes/运行记录和理解.md
+methods/P2/utils/._*.py
+tests/test_cross_fitted_gated_refinement.py
