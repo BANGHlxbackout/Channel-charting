@@ -1,0 +1,22 @@
+{
+  "arrays_A": [
+    0,
+    2
+  ],
+  "arrays_B": [
+    1,
+    3
+  ],
+  "auc_population": "physical <0.25 m versus physical >0.5 m; middle excluded",
+  "bootstrap_seed": 11,
+  "candidate_definition": "unique unordered original Stage-1 k20 relation; abs(dt)>60 s; saved ADP <= saved gamma*abs(dt)",
+  "far_m": 0.5,
+  "gamma": 12.983333587646484,
+  "gt_read_after_score_artifact": true,
+  "minimum_group_count": 30,
+  "near_m": 0.25,
+  "seed": 10,
+  "stratification": "full ADP decile x time-gap quartile x endpoint-density tertile",
+  "time_gap_s": 60.0,
+  "top5_population": "all candidates; only physical <0.25 m is a hit"
+}

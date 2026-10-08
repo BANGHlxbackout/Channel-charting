@@ -1,0 +1,16 @@
+{
+  "agreement_quantiles": [
+    0.2729818438734939,
+    0.7797654061943222,
+    0.9120786672772435,
+    0.983059165083854,
+    0.9999911723700676
+  ],
+  "candidate_count": 23973,
+  "decomposition_max_abs": 9.5367431640625e-06,
+  "decomposition_mean_abs": 1.532132508324795e-06,
+  "directed_graph_edges": 419940,
+  "directed_qualifying_count": 36811,
+  "gamma": 12.983333587646484,
+  "unique_undirected_count": 228773
+}

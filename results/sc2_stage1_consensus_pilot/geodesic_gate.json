@@ -1,0 +1,216 @@
+{
+  "decision": {
+    "consensus_local_mae_within_1pct_of_baseline": false,
+    "consensus_local_p95_within_1pct_of_baseline": false,
+    "consensus_uniform_mae_at_least_1pct_lower_vs_each_control": false,
+    "consensus_uniform_mae_improvement_m_vs_controls": {
+      "baseline": -0.06892075351856186,
+      "shuffled": -0.018379170147124868,
+      "uniform": -0.06892091808572942
+    },
+    "consensus_uniform_p95_within_1pct_of_baseline": false,
+    "gate_positive": false,
+    "uniform_mae_m": {
+      "baseline": 0.39915324940133246,
+      "consensus": 0.4680740029198943,
+      "shuffled": 0.44969483277276945,
+      "uniform": 0.3991530848341649
+    }
+  },
+  "experiment": "SC2-inspired Stage-1 consensus pilot",
+  "gate": "independent held-out physical-distance isotonic gate",
+  "gt_role": "physical positions used only for calibration and held-out evaluation; no GT entered graph construction, shortest paths, or FCF targets",
+  "split": {
+    "calibration_count": 100000,
+    "local_sampling_frame": "results\\adp_old_fused\\stride1_n20997_seed10\\geodesic_top512.npy",
+    "local_sampling_frame_columns": 128,
+    "local_test_count": 50000,
+    "pair_sampling": "uniform unordered IDs for calibration/uniform; source uniform and target uniform among original geodesic_top512 first 128 columns for local",
+    "pair_sets_disjoint": true,
+    "seed": 20260925,
+    "self_pairs_rejected": true,
+    "uniform_test_count": 50000
+  },
+  "variants": {
+    "baseline": {
+      "calibration": {
+        "distance_summary": {
+          "max": 791.7716064453125,
+          "mean": 299.5427947581857,
+          "median": 285.9728240966797,
+          "min": 0.6339518427848816,
+          "p01": 49.49995864868164,
+          "p25": 188.40520858764648,
+          "p75": 400.5360107421875,
+          "p99": 641.6227435302734
+        },
+        "isotonic_knot_count": 1034,
+        "physical_distance_summary_m": {
+          "max": 15.25866191510536,
+          "mean": 5.406653813656482,
+          "median": 5.117225346042153,
+          "min": 0.0030910784058436357,
+          "p01": 0.4808988598306002,
+          "p25": 3.041421862717805,
+          "p75": 7.5677840374409495,
+          "p99": 12.315450449550164
+        }
+      },
+      "local_test": {
+        "mae_m": 0.10940029191749526,
+        "mean_over_residual_m_pred_minus_physical": 0.09894673329598279,
+        "mean_signed_residual_m_pred_minus_physical": 0.007083760387867531,
+        "mean_under_residual_m_pred_minus_physical": -0.12435768818322199,
+        "over_fraction": 0.58862,
+        "p95_abs_residual_m": 0.3011868073488351,
+        "spearman_rho": 0.6193994531542109,
+        "under_fraction": 0.41138
+      },
+      "uniform_test": {
+        "mae_m": 0.39915324940133246,
+        "mean_over_residual_m_pred_minus_physical": 0.4077870367431132,
+        "mean_signed_residual_m_pred_minus_physical": 0.0016687847542083364,
+        "mean_under_residual_m_pred_minus_physical": -0.3908094394217998,
+        "over_fraction": 0.49146,
+        "p95_abs_residual_m": 1.055826178087512,
+        "spearman_rho": 0.9837219814703009,
+        "under_fraction": 0.50854
+      }
+    },
+    "consensus": {
+      "calibration": {
+        "distance_summary": {
+          "max": 932.6207275390625,
+          "mean": 351.32551635984004,
+          "median": 335.4533386230469,
+          "min": 0.6483598351478577,
+          "p01": 59.7083540725708,
+          "p25": 222.2202606201172,
+          "p75": 468.11544036865234,
+          "p99": 754.4265783691405
+        },
+        "isotonic_knot_count": 956,
+        "physical_distance_summary_m": {
+          "max": 15.25866191510536,
+          "mean": 5.406653813656482,
+          "median": 5.117225346042153,
+          "min": 0.0030910784058436357,
+          "p01": 0.4808988598306002,
+          "p25": 3.041421862717805,
+          "p75": 7.5677840374409495,
+          "p99": 12.315450449550164
+        }
+      },
+      "local_test": {
+        "mae_m": 0.12337799858629588,
+        "mean_over_residual_m_pred_minus_physical": 0.11869644469906514,
+        "mean_signed_residual_m_pred_minus_physical": 0.022452453370975577,
+        "mean_under_residual_m_pred_minus_physical": -0.1308342561774958,
+        "over_fraction": 0.6143,
+        "p95_abs_residual_m": 0.32880990616574796,
+        "spearman_rho": 0.5249226481967618,
+        "under_fraction": 0.3857
+      },
+      "uniform_test": {
+        "mae_m": 0.4680740029198943,
+        "mean_over_residual_m_pred_minus_physical": 0.47143057948990924,
+        "mean_signed_residual_m_pred_minus_physical": 0.0011314242348225685,
+        "mean_under_residual_m_pred_minus_physical": -0.4647489635769883,
+        "over_fraction": 0.49764,
+        "p95_abs_residual_m": 1.1994469134725247,
+        "spearman_rho": 0.9786449101662633,
+        "under_fraction": 0.50236
+      }
+    },
+    "shuffled": {
+      "calibration": {
+        "distance_summary": {
+          "max": 879.533935546875,
+          "mean": 331.22845886372505,
+          "median": 315.6582946777344,
+          "min": 0.6483598351478577,
+          "p01": 55.278187942504886,
+          "p25": 208.50522232055664,
+          "p75": 442.04100036621094,
+          "p99": 715.3801989746094
+        },
+        "isotonic_knot_count": 1009,
+        "physical_distance_summary_m": {
+          "max": 15.25866191510536,
+          "mean": 5.406653813656482,
+          "median": 5.117225346042153,
+          "min": 0.0030910784058436357,
+          "p01": 0.4808988598306002,
+          "p25": 3.041421862717805,
+          "p75": 7.5677840374409495,
+          "p99": 12.315450449550164
+        }
+      },
+      "local_test": {
+        "mae_m": 0.1186594196749563,
+        "mean_over_residual_m_pred_minus_physical": 0.1122718866303885,
+        "mean_signed_residual_m_pred_minus_physical": 0.01773295907910489,
+        "mean_under_residual_m_pred_minus_physical": -0.12854253985920244,
+        "over_fraction": 0.60742,
+        "p95_abs_residual_m": 0.3184852445585641,
+        "spearman_rho": 0.5584118515271866,
+        "under_fraction": 0.39258
+      },
+      "uniform_test": {
+        "mae_m": 0.44969483277276945,
+        "mean_over_residual_m_pred_minus_physical": 0.4561712434090584,
+        "mean_signed_residual_m_pred_minus_physical": 0.0014585269587892753,
+        "mean_under_residual_m_pred_minus_physical": -0.4433593529317312,
+        "over_fraction": 0.4945,
+        "p95_abs_residual_m": 1.158381505480026,
+        "spearman_rho": 0.980326081475274,
+        "under_fraction": 0.5055
+      }
+    },
+    "uniform": {
+      "calibration": {
+        "distance_summary": {
+          "max": 978.9866333007812,
+          "mean": 370.36992035518585,
+          "median": 353.5913391113281,
+          "min": 0.7838502526283264,
+          "p01": 61.20426193237304,
+          "p25": 232.95376205444336,
+          "p75": 495.24305725097656,
+          "p99": 793.3349163818359
+        },
+        "isotonic_knot_count": 1036,
+        "physical_distance_summary_m": {
+          "max": 15.25866191510536,
+          "mean": 5.406653813656482,
+          "median": 5.117225346042153,
+          "min": 0.0030910784058436357,
+          "p01": 0.4808988598306002,
+          "p25": 3.041421862717805,
+          "p75": 7.5677840374409495,
+          "p99": 12.315450449550164
+        }
+      },
+      "local_test": {
+        "mae_m": 0.1094002941414922,
+        "mean_over_residual_m_pred_minus_physical": 0.09894674187493782,
+        "mean_signed_residual_m_pred_minus_physical": 0.0070837682633595874,
+        "mean_under_residual_m_pred_minus_physical": -0.12435768131427463,
+        "over_fraction": 0.58862,
+        "p95_abs_residual_m": 0.3011868073488351,
+        "spearman_rho": 0.6193995331795158,
+        "under_fraction": 0.41138
+      },
+      "uniform_test": {
+        "mae_m": 0.3991530848341649,
+        "mean_over_residual_m_pred_minus_physical": 0.4077881310488135,
+        "mean_signed_residual_m_pred_minus_physical": 0.0016700249363349518,
+        "mean_under_residual_m_pred_minus_physical": -0.3908080582627028,
+        "over_fraction": 0.49146,
+        "p95_abs_residual_m": 1.055826178087512,
+        "spearman_rho": 0.9837219807954453,
+        "under_fraction": 0.50854
+      }
+    }
+  }
+}

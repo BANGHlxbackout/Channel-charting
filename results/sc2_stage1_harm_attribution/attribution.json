@@ -1,0 +1,11 @@
+{
+  "R_only_mean_increment_m": 0.007006533970062179,
+  "R_only_p95_increment_m": -0.00029227045477508984,
+  "T_is_major_harm_source_evidence": true,
+  "T_only_mean_increment_m": 0.12236585171768061,
+  "T_only_p95_increment_m": 0.2318887845361609,
+  "full_mean_increment_m": 0.12433104655929433,
+  "full_p95_increment_m": 0.2122115465517559,
+  "mean_attribution_condition": true,
+  "p95_same_direction_condition": true
+}

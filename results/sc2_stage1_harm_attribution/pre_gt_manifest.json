@@ -1,0 +1,13 @@
+{
+  "N": 20997,
+  "R_count": 383129,
+  "T_count": 36811,
+  "directed_edges": 419940,
+  "edge_set_match": true,
+  "edge_weight_max_abs_diff": 0.0,
+  "gamma": 12.983333587646484,
+  "gt_loaded": false,
+  "shortest_path_directed": false,
+  "sources_definition": "np.arange(0,20997,10)",
+  "time_threshold_s": 60.0
+}

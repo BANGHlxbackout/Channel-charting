@@ -1,0 +1,45 @@
+{
+  "baseline_localization_errors_after_affine": {
+    "max_m": 7.893630027770996,
+    "mean_m": 0.409347265958786,
+    "median_m": 0.37222808599472046,
+    "p90_m": 0.7141520380973816,
+    "p95_m": 0.8557930588722229
+  },
+  "baseline_metrics": {
+    "ct": 0.9957121024091857,
+    "ks": 0.0840268307097306,
+    "n_neighbors": 209,
+    "tw": 0.9959871853305127
+  },
+  "dataset": "datasets\\adp_old_shard4",
+  "elapsed_s": 10.168640851974487,
+  "graph_edges": 2985826,
+  "graph_k": 128,
+  "graph_source": "init_embedding_euclidean",
+  "init_embedding": "results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+  "iterations": 200,
+  "lambda_smooth": 0.15,
+  "localization_errors_after_affine": {
+    "max_m": 8.413256645202637,
+    "mean_m": 0.3943704068660736,
+    "median_m": 0.367170125246048,
+    "p90_m": 0.6607016324996948,
+    "p95_m": 0.7644847631454468
+  },
+  "method": "Graph-harmonic diffusion refinement with Euclidean kNN graph on the initial chart",
+  "metric_subset_fraction": 0.2,
+  "metric_subset_size": 4199,
+  "metrics": {
+    "ct": 0.9955319544043676,
+    "ks": 0.08035711014434645,
+    "n_neighbors": 209,
+    "tw": 0.9955766866635369
+  },
+  "num_samples": 20997,
+  "paper_context": "Euclidean graph ablation on the ADP-native DICHASUS channel charting dataset",
+  "run_name": "stride1_n20997_euclidean_k128_lambda0.15_seed10",
+  "seed": 10,
+  "stride": 1,
+  "top_k": 512
+}

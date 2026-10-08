@@ -1,0 +1,81 @@
+{
+  "T_low_support_quartile_cutoff": 0.10526315867900848,
+  "delta_negative_fraction": 0.0,
+  "delta_positive_fraction": 1.0,
+  "examples": [
+    {
+      "baseline_geodesic": 18.075119018554688,
+      "consensus_geodesic": 25.971851348876953,
+      "delta": 7.896732330322266,
+      "physical_distance_m": 0.05670000985264778,
+      "sample_i": 1,
+      "sample_j": 5064,
+      "support": 0.10526315867900848,
+      "treatment_multiplier": 1.4473683834075928
+    },
+    {
+      "baseline_geodesic": 24.893138885498047,
+      "consensus_geodesic": 37.33970642089844,
+      "delta": 12.44656753540039,
+      "physical_distance_m": 0.17421483993530273,
+      "sample_i": 4,
+      "sample_j": 17894,
+      "support": 0.0,
+      "treatment_multiplier": 1.5
+    },
+    {
+      "baseline_geodesic": 16.92731475830078,
+      "consensus_geodesic": 24.50006103515625,
+      "delta": 7.572746276855469,
+      "physical_distance_m": 0.01580168679356575,
+      "sample_i": 5,
+      "sample_j": 6503,
+      "support": 0.10526315867900848,
+      "treatment_multiplier": 1.4473683834075928
+    },
+    {
+      "baseline_geodesic": 16.33376693725586,
+      "consensus_geodesic": 23.64097785949707,
+      "delta": 7.307210922241211,
+      "physical_distance_m": 0.024199284613132477,
+      "sample_i": 5,
+      "sample_j": 6504,
+      "support": 0.10526315867900848,
+      "treatment_multiplier": 1.4473683834075928
+    },
+    {
+      "baseline_geodesic": 19.887069702148438,
+      "consensus_geodesic": 23.273540496826172,
+      "delta": 3.3864707946777344,
+      "physical_distance_m": 0.18484126031398773,
+      "sample_i": 6,
+      "sample_j": 17844,
+      "support": 0.10000000149011612,
+      "treatment_multiplier": 1.4500000476837158
+    }
+  ],
+  "geodesic_delta_consensus_minus_baseline": {
+    "count": 10947,
+    "max": 16.70169448852539,
+    "mean": 8.996296532156043,
+    "median": 9.161787033081055,
+    "min": 1.8085012435913086,
+    "p01": 3.594711227416992,
+    "p25": 7.412534713745117,
+    "p75": 10.686224937438965,
+    "p95": 12.453015899658203
+  },
+  "physical_near_definition_m": 0.25,
+  "physical_summary_m": {
+    "count": 10947,
+    "max": 0.24989622831344604,
+    "mean": 0.07042936685607719,
+    "median": 0.04901489242911339,
+    "min": 0.0010687379399314523,
+    "p01": 0.0066498788818717,
+    "p25": 0.033330123871564865,
+    "p75": 0.07751569524407387,
+    "p95": 0.19399013966321926
+  },
+  "selected_count": 10947
+}

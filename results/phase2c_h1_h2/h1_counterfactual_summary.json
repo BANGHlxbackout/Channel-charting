@@ -1,0 +1,449 @@
+{
+  "H1_counterfactual_supported": "false",
+  "H1_supported": null,
+  "artifacts": {
+    "config": "results\\phase2c_h1_h2\\h1_counterfactual_config.json",
+    "control_balance": "results\\phase2c_h1_h2\\h1_counterfactual_control_balance.csv",
+    "control_edges": "results\\phase2c_h1_h2\\h1_counterfactual_control_edges.parquet",
+    "design": "results\\phase2c_h1_h2\\h1_counterfactual_design.npz",
+    "run_table": "results\\phase2c_h1_h2\\h1_counterfactual_runs.parquet",
+    "test_pairs": "results\\phase2c_h1_h2\\h1_counterfactual_test_pairs.parquet"
+  },
+  "candidate_descriptions": {
+    "100": {
+      "boundary_tie_ambiguous_count": 3,
+      "boundary_tie_ambiguous_fraction": 0.03,
+      "branch_counts": {
+        "adp": 37,
+        "timestamp": 63
+      },
+      "discovery_bad_path_enrichment": {
+        "max": 7.666598320007324,
+        "median": 0.8731292188167572,
+        "min": 0.15439839661121368,
+        "p25": 0.5079044178128242,
+        "p75": 1.6073065102100372,
+        "sum": 130.7285232245922
+      },
+      "discovery_path_usage": {
+        "max": 10442.0,
+        "median": 584.0,
+        "min": 31.0,
+        "p25": 281.25,
+        "p75": 1152.5,
+        "sum": 114603.0
+      },
+      "discovery_severe_path_usage": {
+        "max": 341.0,
+        "median": 25.5,
+        "min": 10.0,
+        "p25": 15.75,
+        "p75": 40.25,
+        "sum": 3721.0
+      },
+      "edge_count": 100,
+      "robust_mismatch_score": {
+        "max": 4.398319721221924,
+        "median": 2.0506463050842285,
+        "min": 1.3431679010391235,
+        "p25": 1.7295234203338623,
+        "p75": 2.645512819290161,
+        "sum": 228.92743456363678
+      }
+    },
+    "25": {
+      "boundary_tie_ambiguous_count": 0,
+      "boundary_tie_ambiguous_fraction": 0.0,
+      "branch_counts": {
+        "adp": 18,
+        "timestamp": 7
+      },
+      "discovery_bad_path_enrichment": {
+        "max": 5.658679962158203,
+        "median": 1.2815245389938354,
+        "min": 0.15439839661121368,
+        "p25": 0.8450493216514587,
+        "p75": 2.0076684951782227,
+        "sum": 44.90707977116108
+      },
+      "discovery_path_usage": {
+        "max": 10442.0,
+        "median": 681.0,
+        "min": 63.0,
+        "p25": 365.0,
+        "p75": 1289.0,
+        "sum": 42085.0
+      },
+      "discovery_severe_path_usage": {
+        "max": 341.0,
+        "median": 41.0,
+        "min": 18.0,
+        "p25": 31.0,
+        "p75": 52.0,
+        "sum": 1507.0
+      },
+      "edge_count": 25,
+      "robust_mismatch_score": {
+        "max": 4.398319721221924,
+        "median": 3.1836183071136475,
+        "min": 2.145087242126465,
+        "p25": 2.955519914627075,
+        "p75": 3.73014235496521,
+        "sum": 81.52717661857605
+      }
+    },
+    "50": {
+      "boundary_tie_ambiguous_count": 1,
+      "boundary_tie_ambiguous_fraction": 0.02,
+      "branch_counts": {
+        "adp": 23,
+        "timestamp": 27
+      },
+      "discovery_bad_path_enrichment": {
+        "max": 5.658679962158203,
+        "median": 1.1469913721084595,
+        "min": 0.15439839661121368,
+        "p25": 0.7631286531686783,
+        "p75": 1.5855900645256042,
+        "sum": 70.3708034157753
+      },
+      "discovery_path_usage": {
+        "max": 10442.0,
+        "median": 572.0,
+        "min": 63.0,
+        "p25": 365.25,
+        "p75": 1252.0,
+        "sum": 64900.0
+      },
+      "discovery_severe_path_usage": {
+        "max": 341.0,
+        "median": 32.0,
+        "min": 13.0,
+        "p25": 20.0,
+        "p75": 50.75,
+        "sum": 2319.0
+      },
+      "edge_count": 50,
+      "robust_mismatch_score": {
+        "max": 4.398319721221924,
+        "median": 2.4425759315490723,
+        "min": 1.5760002136230469,
+        "p25": 2.065259099006653,
+        "p75": 3.1779865622520447,
+        "sum": 134.43954026699066
+      }
+    }
+  },
+  "decision_comparisons": {
+    "100": {
+      "checks": {
+        "connected_and_zero_unreachable": true,
+        "median_delta_above_both_control_p95": false,
+        "new_overestimation_not_above_either_control_p95": false,
+        "repair_rate_above_both_control_p95": true,
+        "supported_at_this_X": false,
+        "well_estimated_inflation_not_above_either_control_p95": false
+      },
+      "controls": {
+        "matched_random": {
+          "median_delta_r_baseline_severe": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "median_log_inflation_well_estimated": {
+            "mean": 2.2628247938602773e-10,
+            "median": 2.051468439357353e-10,
+            "p05": 0.0,
+            "p95": 4.571925115224586e-10
+          },
+          "new_overestimation_fraction_increase": {
+            "mean": 0.00310882568359375,
+            "median": 0.00286102294921875,
+            "p05": 0.0009536743164062501,
+            "p95": 0.006198883056640622
+          },
+          "repair_rate": {
+            "mean": 0.032673031026252984,
+            "median": 0.030429594272076373,
+            "p05": 0.016378281622911696,
+            "p95": 0.06309665871121718
+          }
+        },
+        "suspicious_low_impact": {
+          "median_delta_r_baseline_severe": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "median_log_inflation_well_estimated": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "new_overestimation_fraction_increase": {
+            "mean": 0.00502532958984375,
+            "median": 0.00506591796875,
+            "p05": 0.00466766357421875,
+            "p95": 0.005379486083984375
+          },
+          "repair_rate": {
+            "mean": 0.011324582338902149,
+            "median": 0.011336515513126491,
+            "p05": 0.010143198090692125,
+            "p95": 0.012231503579952268
+          }
+        }
+      },
+      "targeted": {
+        "median_delta_r_baseline_severe": 0.0,
+        "median_log_inflation_well_estimated": 0.0033134842512150854,
+        "new_overestimation_fraction_increase": 0.0098724365234375,
+        "repair_rate": 0.23597852028639618
+      }
+    },
+    "25": {
+      "checks": {
+        "connected_and_zero_unreachable": true,
+        "median_delta_above_both_control_p95": false,
+        "new_overestimation_not_above_either_control_p95": false,
+        "repair_rate_above_both_control_p95": true,
+        "supported_at_this_X": false,
+        "well_estimated_inflation_not_above_either_control_p95": true
+      },
+      "controls": {
+        "matched_random": {
+          "median_delta_r_baseline_severe": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "median_log_inflation_well_estimated": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "new_overestimation_fraction_increase": {
+            "mean": 0.00080657958984375,
+            "median": 0.00057220458984375,
+            "p05": 0.00015106201171875,
+            "p95": 0.0022529602050781247
+          },
+          "repair_rate": {
+            "mean": 0.014057279236276851,
+            "median": 0.012082338902147972,
+            "p05": 0.004310859188544153,
+            "p95": 0.025447494033412885
+          }
+        },
+        "suspicious_low_impact": {
+          "median_delta_r_baseline_severe": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "median_log_inflation_well_estimated": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "new_overestimation_fraction_increase": {
+            "mean": 0.002735595703125,
+            "median": 0.003082275390625,
+            "p05": 0.000678253173828125,
+            "p95": 0.003466796875
+          },
+          "repair_rate": {
+            "mean": 0.007852028639618137,
+            "median": 0.007756563245823389,
+            "p05": 0.0059665871121718375,
+            "p95": 0.008949880668257757
+          }
+        }
+      },
+      "targeted": {
+        "median_delta_r_baseline_severe": 0.0,
+        "median_log_inflation_well_estimated": 0.0,
+        "new_overestimation_fraction_increase": 0.0062713623046875,
+        "repair_rate": 0.1730310262529833
+      }
+    },
+    "50": {
+      "checks": {
+        "connected_and_zero_unreachable": true,
+        "median_delta_above_both_control_p95": false,
+        "new_overestimation_not_above_either_control_p95": false,
+        "repair_rate_above_both_control_p95": true,
+        "supported_at_this_X": false,
+        "well_estimated_inflation_not_above_either_control_p95": false
+      },
+      "controls": {
+        "matched_random": {
+          "median_delta_r_baseline_severe": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "median_log_inflation_well_estimated": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "new_overestimation_fraction_increase": {
+            "mean": 0.00113433837890625,
+            "median": 0.001007080078125,
+            "p05": 0.0002593994140625,
+            "p95": 0.00248870849609375
+          },
+          "repair_rate": {
+            "mean": 0.01778639618138425,
+            "median": 0.016706443914081145,
+            "p05": 0.008189140811455848,
+            "p95": 0.030086515513126487
+          }
+        },
+        "suspicious_low_impact": {
+          "median_delta_r_baseline_severe": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "median_log_inflation_well_estimated": {
+            "mean": 0.0,
+            "median": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "new_overestimation_fraction_increase": {
+            "mean": 0.0036297607421875,
+            "median": 0.00385284423828125,
+            "p05": 0.0015106201171875,
+            "p95": 0.004551696777343749
+          },
+          "repair_rate": {
+            "mean": 0.008908114558472555,
+            "median": 0.009248210023866348,
+            "p05": 0.007294152744630072,
+            "p95": 0.009844868735083532
+          }
+        }
+      },
+      "targeted": {
+        "median_delta_r_baseline_severe": 0.0,
+        "median_log_inflation_well_estimated": 2.582215552160102e-10,
+        "new_overestimation_fraction_increase": 0.0067596435546875,
+        "repair_rate": 0.18436754176610978
+      }
+    },
+    "counts": {
+      "fully_supported_X_count": 0,
+      "primary_advantage_X_count": 0
+    }
+  },
+  "fresh_test": {
+    "baseline_overestimation_count": 3428,
+    "baseline_overestimation_fraction": 0.05230712890625,
+    "baseline_residual": {
+      "median": 0.00017766601381996594,
+      "p01": -0.34592428380408,
+      "p05": -0.18509119101793425,
+      "p95": 0.19038535404864398,
+      "p99": 0.30355440029930775
+    },
+    "baseline_severe_count": 3352,
+    "baseline_severe_fraction": 0.0511474609375,
+    "baseline_shortest_paths_exactly_match_saved_D_geo_float32": true,
+    "baseline_well_estimated_count": 32038,
+    "pair_count": 65536,
+    "source_count": 128
+  },
+  "interpretation_boundary": "counterfactual true does not set H1_supported=true; q/source sensitivity remains required",
+  "scope": "H1 targeted-removal counterfactual only; no sensitivity, H2, or method development",
+  "targeted_results": [
+    {
+      "connected_components": 1,
+      "directed_entries_removed": 33,
+      "edge_count": 25,
+      "family": "targeted",
+      "giant_component_ratio": 1.0,
+      "mean_delta_r_baseline_severe": 0.03300501532323003,
+      "median_delta_r_baseline_severe": 0.0,
+      "median_log_inflation_well_estimated": 0.0,
+      "new_overestimation_fraction_increase": 0.0062713623046875,
+      "overestimation_fraction_after": 0.0585784912109375,
+      "p25_delta_r_baseline_severe": 0.0,
+      "p95_log_inflation_well_estimated": 0.062203161783797,
+      "repair_rate": 0.1730310262529833,
+      "replicate": -1,
+      "residual_median": 0.015114254393640447,
+      "residual_p01": -0.3267920906141713,
+      "residual_p05": -0.16936487598106864,
+      "residual_p95": 0.19714805956771353,
+      "residual_p99": 0.30444527533768695,
+      "runtime_seconds": 1.086108699993929,
+      "severe_fraction_after": 0.04229736328125,
+      "spearman_physical_vs_geodesic": 0.9824074987197738,
+      "unreachable_test_pairs": 0
+    },
+    {
+      "connected_components": 1,
+      "directed_entries_removed": 78,
+      "edge_count": 50,
+      "family": "targeted",
+      "giant_component_ratio": 1.0,
+      "mean_delta_r_baseline_severe": 0.034781680376817024,
+      "median_delta_r_baseline_severe": 0.0,
+      "median_log_inflation_well_estimated": 2.582215552160102e-10,
+      "new_overestimation_fraction_increase": 0.0067596435546875,
+      "overestimation_fraction_after": 0.0590667724609375,
+      "p25_delta_r_baseline_severe": 0.0,
+      "p95_log_inflation_well_estimated": 0.06341316695564747,
+      "repair_rate": 0.18436754176610978,
+      "replicate": -1,
+      "residual_median": 0.01587918724319337,
+      "residual_p01": -0.32604485179957426,
+      "residual_p05": -0.1686722358100916,
+      "residual_p95": 0.19771632754585466,
+      "residual_p99": 0.30444527533768695,
+      "runtime_seconds": 1.0856113999907393,
+      "severe_fraction_after": 0.041717529296875,
+      "spearman_physical_vs_geodesic": 0.9823676412642416,
+      "unreachable_test_pairs": 0
+    },
+    {
+      "connected_components": 1,
+      "directed_entries_removed": 163,
+      "edge_count": 100,
+      "family": "targeted",
+      "giant_component_ratio": 1.0,
+      "mean_delta_r_baseline_severe": 0.04393575184253283,
+      "median_delta_r_baseline_severe": 0.0,
+      "median_log_inflation_well_estimated": 0.0033134842512150854,
+      "new_overestimation_fraction_increase": 0.0098724365234375,
+      "overestimation_fraction_after": 0.0621795654296875,
+      "p25_delta_r_baseline_severe": 0.0,
+      "p95_log_inflation_well_estimated": 0.07001939818009584,
+      "repair_rate": 0.23597852028639618,
+      "replicate": -1,
+      "residual_median": 0.02064160260080916,
+      "residual_p01": -0.31872333339090386,
+      "residual_p05": -0.16276336048143047,
+      "residual_p95": 0.2006769566988411,
+      "residual_p99": 0.30505842824249646,
+      "runtime_seconds": 1.1088148999988334,
+      "severe_fraction_after": 0.0390777587890625,
+      "spearman_physical_vs_geodesic": 0.9828562093985723,
+      "unreachable_test_pairs": 0
+    }
+  ]
+}

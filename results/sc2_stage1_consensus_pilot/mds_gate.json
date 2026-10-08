@@ -1,0 +1,108 @@
+{
+  "decision": {
+    "consensus_ct_not_more_than_0_005_below_baseline": true,
+    "consensus_ks_not_more_than_0_01_above_baseline": false,
+    "consensus_mean_lower_by_at_least_0_005_m_vs_each_control": false,
+    "consensus_p95_not_more_than_0_01_m_above_baseline": false,
+    "consensus_tw_not_more_than_0_005_below_baseline": true,
+    "gate_positive": false
+  },
+  "experiment": "SC2-inspired Stage-1 consensus pilot",
+  "gate": "fixed stride-10 MDS pre-FCF gate",
+  "gt_role": "positions used only for affine evaluation and CT/TW/KS; MDS receives only the candidate D_geo submatrix",
+  "max_iter": 80,
+  "mds_indices_definition": "np.arange(0,20997,10)",
+  "mds_sample_count": 2100,
+  "n_init": 4,
+  "seed": 10,
+  "variants": {
+    "baseline": {
+      "elapsed_s": 41.19690656661987,
+      "indices_definition": "np.arange(0,20997,10)",
+      "localization_errors_after_affine": {
+        "max_m": 8.89653969356567,
+        "mean_m": 0.4581295488183936,
+        "median_m": 0.3851502103625156,
+        "p90_m": 0.7967160858224879,
+        "p95_m": 0.9614525508898767
+      },
+      "max_iter": 80,
+      "metrics": {
+        "ct": 0.9916714189967095,
+        "ks": 0.09069236425835213,
+        "n_neighbors": 105,
+        "tw": 0.9933596544694088
+      },
+      "n_init": 4,
+      "num_samples": 2100,
+      "seed": 10,
+      "variant": "baseline"
+    },
+    "consensus": {
+      "elapsed_s": 40.59771394729614,
+      "indices_definition": "np.arange(0,20997,10)",
+      "localization_errors_after_affine": {
+        "max_m": 9.38056014471423,
+        "mean_m": 0.5824605953776879,
+        "median_m": 0.49548322770016673,
+        "p90_m": 0.9477581015124562,
+        "p95_m": 1.1736640974416326
+      },
+      "max_iter": 80,
+      "metrics": {
+        "ct": 0.987894897608889,
+        "ks": 0.11014286729685768,
+        "n_neighbors": 105,
+        "tw": 0.991686341546574
+      },
+      "n_init": 4,
+      "num_samples": 2100,
+      "seed": 10,
+      "variant": "consensus"
+    },
+    "shuffled": {
+      "elapsed_s": 41.084144592285156,
+      "indices_definition": "np.arange(0,20997,10)",
+      "localization_errors_after_affine": {
+        "max_m": 9.329247992934055,
+        "mean_m": 0.5593663077473415,
+        "median_m": 0.4751124112039865,
+        "p90_m": 0.9336674868530207,
+        "p95_m": 1.1563673541099653
+      },
+      "max_iter": 80,
+      "metrics": {
+        "ct": 0.9886626803141442,
+        "ks": 0.10527656934346974,
+        "n_neighbors": 105,
+        "tw": 0.9918452515231977
+      },
+      "n_init": 4,
+      "num_samples": 2100,
+      "seed": 10,
+      "variant": "shuffled"
+    },
+    "uniform": {
+      "elapsed_s": 41.46857714653015,
+      "indices_definition": "np.arange(0,20997,10)",
+      "localization_errors_after_affine": {
+        "max_m": 8.896539735058198,
+        "mean_m": 0.4581295624696226,
+        "median_m": 0.38515022526007114,
+        "p90_m": 0.7967160842614406,
+        "p95_m": 0.9614525633033527
+      },
+      "max_iter": 80,
+      "metrics": {
+        "ct": 0.9916714213320069,
+        "ks": 0.09069236796216615,
+        "n_neighbors": 105,
+        "tw": 0.9933596544694088
+      },
+      "n_init": 4,
+      "num_samples": 2100,
+      "seed": 10,
+      "variant": "uniform"
+    }
+  }
+}

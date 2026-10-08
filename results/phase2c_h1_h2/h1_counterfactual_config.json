@@ -1,0 +1,605 @@
+{
+  "calibration": {
+    "model": "frozen first-stage isotonic threshold arrays",
+    "no_recalibration": true,
+    "overestimation_threshold": 0.18755884633681646,
+    "severe_threshold": -0.18340832744215135,
+    "well_estimated_abs_residual_threshold": 0.06011182814836502
+  },
+  "candidate_descriptions": {
+    "100": {
+      "boundary_tie_ambiguous_count": 3,
+      "boundary_tie_ambiguous_fraction": 0.03,
+      "branch_counts": {
+        "adp": 37,
+        "timestamp": 63
+      },
+      "discovery_bad_path_enrichment": {
+        "max": 7.666598320007324,
+        "median": 0.8731292188167572,
+        "min": 0.15439839661121368,
+        "p25": 0.5079044178128242,
+        "p75": 1.6073065102100372,
+        "sum": 130.7285232245922
+      },
+      "discovery_path_usage": {
+        "max": 10442.0,
+        "median": 584.0,
+        "min": 31.0,
+        "p25": 281.25,
+        "p75": 1152.5,
+        "sum": 114603.0
+      },
+      "discovery_severe_path_usage": {
+        "max": 341.0,
+        "median": 25.5,
+        "min": 10.0,
+        "p25": 15.75,
+        "p75": 40.25,
+        "sum": 3721.0
+      },
+      "edge_count": 100,
+      "robust_mismatch_score": {
+        "max": 4.398319721221924,
+        "median": 2.0506463050842285,
+        "min": 1.3431679010391235,
+        "p25": 1.7295234203338623,
+        "p75": 2.645512819290161,
+        "sum": 228.92743456363678
+      }
+    },
+    "25": {
+      "boundary_tie_ambiguous_count": 0,
+      "boundary_tie_ambiguous_fraction": 0.0,
+      "branch_counts": {
+        "adp": 18,
+        "timestamp": 7
+      },
+      "discovery_bad_path_enrichment": {
+        "max": 5.658679962158203,
+        "median": 1.2815245389938354,
+        "min": 0.15439839661121368,
+        "p25": 0.8450493216514587,
+        "p75": 2.0076684951782227,
+        "sum": 44.90707977116108
+      },
+      "discovery_path_usage": {
+        "max": 10442.0,
+        "median": 681.0,
+        "min": 63.0,
+        "p25": 365.0,
+        "p75": 1289.0,
+        "sum": 42085.0
+      },
+      "discovery_severe_path_usage": {
+        "max": 341.0,
+        "median": 41.0,
+        "min": 18.0,
+        "p25": 31.0,
+        "p75": 52.0,
+        "sum": 1507.0
+      },
+      "edge_count": 25,
+      "robust_mismatch_score": {
+        "max": 4.398319721221924,
+        "median": 3.1836183071136475,
+        "min": 2.145087242126465,
+        "p25": 2.955519914627075,
+        "p75": 3.73014235496521,
+        "sum": 81.52717661857605
+      }
+    },
+    "50": {
+      "boundary_tie_ambiguous_count": 1,
+      "boundary_tie_ambiguous_fraction": 0.02,
+      "branch_counts": {
+        "adp": 23,
+        "timestamp": 27
+      },
+      "discovery_bad_path_enrichment": {
+        "max": 5.658679962158203,
+        "median": 1.1469913721084595,
+        "min": 0.15439839661121368,
+        "p25": 0.7631286531686783,
+        "p75": 1.5855900645256042,
+        "sum": 70.3708034157753
+      },
+      "discovery_path_usage": {
+        "max": 10442.0,
+        "median": 572.0,
+        "min": 63.0,
+        "p25": 365.25,
+        "p75": 1252.0,
+        "sum": 64900.0
+      },
+      "discovery_severe_path_usage": {
+        "max": 341.0,
+        "median": 32.0,
+        "min": 13.0,
+        "p25": 20.0,
+        "p75": 50.75,
+        "sum": 2319.0
+      },
+      "edge_count": 50,
+      "robust_mismatch_score": {
+        "max": 4.398319721221924,
+        "median": 2.4425759315490723,
+        "min": 1.5760002136230469,
+        "p25": 2.065259099006653,
+        "p75": 3.1779865622520447,
+        "sum": 134.43954026699066
+      }
+    }
+  },
+  "controls": {
+    "all_critical_replicates_pass": true,
+    "all_low_impact_replicates_pass": true,
+    "assignment_blocks": [
+      [
+        0,
+        25
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        50,
+        100
+      ]
+    ],
+    "assignment_cost": "0.05 * nearest-target secondary distance + Uniform(0,0.10) seeded jitter; suspicious-low-impact additionally minimizes pool enrichment rank",
+    "balance_summary": {
+      "matched_random": {
+        "absolute_smd_max": 0.19998893738195164,
+        "absolute_smd_median": 0.12871100915791855,
+        "absolute_smd_p95": 0.19885461578267913,
+        "by_feature_mean_absolute_smd": {
+          "fused_rank_percentile": 0.14879192355705811,
+          "log1p_discovery_path_usage": 0.0968279340829719,
+          "log_physical_local_scale": 0.17746845925919819,
+          "max_endpoint_degree": 0.19203225050588915,
+          "midpoint_x": 0.06853402413273807,
+          "midpoint_y": 0.07943762604246601
+        }
+      },
+      "suspicious_low_impact": {
+        "absolute_smd_max": 0.1999117673675541,
+        "absolute_smd_median": 0.09931177608029107,
+        "absolute_smd_p95": 0.19766694096134657,
+        "by_feature_mean_absolute_smd": {
+          "fused_rank_percentile": 0.12168044631023169,
+          "log1p_discovery_path_usage": 0.09908981274275372,
+          "log_physical_local_scale": 0.056663172630862985,
+          "max_endpoint_degree": 0.07152223458155764,
+          "midpoint_x": 0.05827524407940721,
+          "midpoint_y": 0.19197785434214487,
+          "robust_mismatch_score": 0.09945057507666967
+        }
+      }
+    },
+    "critical_balance": {
+      "matched_random": {
+        "100": {
+          "max_absolute_smd": 0.09997552927681763,
+          "median_absolute_smd": 0.09964979124612805,
+          "p95_absolute_smd": 0.09994042162483514,
+          "replicate_pass_fraction": 1.0
+        },
+        "25": {
+          "max_absolute_smd": 0.09993894766606637,
+          "median_absolute_smd": 0.09627621883439819,
+          "p95_absolute_smd": 0.09961161791474052,
+          "replicate_pass_fraction": 1.0
+        },
+        "50": {
+          "max_absolute_smd": 0.09994892386559595,
+          "median_absolute_smd": 0.09749486712967581,
+          "p95_absolute_smd": 0.09982386649192274,
+          "replicate_pass_fraction": 1.0
+        }
+      },
+      "suspicious_low_impact": {
+        "100": {
+          "max_absolute_smd": 0.09999970868073482,
+          "median_absolute_smd": 0.09988578294885575,
+          "p95_absolute_smd": 0.09999193743519665,
+          "replicate_pass_fraction": 1.0
+        },
+        "25": {
+          "max_absolute_smd": 0.09999533409914707,
+          "median_absolute_smd": 0.09906810100644159,
+          "p95_absolute_smd": 0.09989805086942176,
+          "replicate_pass_fraction": 1.0
+        },
+        "50": {
+          "max_absolute_smd": 0.09997842517810995,
+          "median_absolute_smd": 0.09958146843182114,
+          "p95_absolute_smd": 0.09995952188468116,
+          "replicate_pass_fraction": 1.0
+        }
+      }
+    },
+    "critical_balance_limit": 0.1,
+    "low_impact_definition_check": {
+      "100": {
+        "control_median_mean": 0.0,
+        "control_median_p95": 0.0,
+        "fraction_replicates_below_target_median": 1.0,
+        "target_median_bad_path_enrichment": 0.8731292188167572
+      },
+      "25": {
+        "control_median_mean": 0.0,
+        "control_median_p95": 0.0,
+        "fraction_replicates_below_target_median": 1.0,
+        "target_median_bad_path_enrichment": 1.2815245389938354
+      },
+      "50": {
+        "control_median_mean": 0.0,
+        "control_median_p95": 0.0,
+        "fraction_replicates_below_target_median": 1.0,
+        "target_median_bad_path_enrichment": 1.1469913721084595
+      }
+    },
+    "matched_random": {
+      "critical_features": [
+        "log1p_discovery_path_usage"
+      ],
+      "excluded": [
+        "robust_mismatch_score",
+        "discovery_severe_path_usage",
+        "discovery_bad_path_enrichment",
+        "candidate_score"
+      ],
+      "features": [
+        "log1p_discovery_path_usage",
+        "fused_rank_percentile",
+        "max_endpoint_degree",
+        "log_physical_local_scale",
+        "midpoint_x",
+        "midpoint_y"
+      ],
+      "pool_size": 228673,
+      "secondary_features": [
+        "fused_rank_percentile",
+        "max_endpoint_degree",
+        "log_physical_local_scale",
+        "midpoint_x",
+        "midpoint_y"
+      ]
+    },
+    "method": "critical-neighbor admissible graph plus blockwise binary optimization with explicit prefix SMD constraints",
+    "nearest_critical_query_count": 512,
+    "nested_prefixes": true,
+    "replicates": 50,
+    "secondary_balance_limit": 0.2,
+    "suspicious_low_impact": {
+      "critical_features": [
+        "log1p_discovery_path_usage",
+        "robust_mismatch_score"
+      ],
+      "discovery_path_usage_positive": true,
+      "features": [
+        "log1p_discovery_path_usage",
+        "robust_mismatch_score",
+        "fused_rank_percentile",
+        "max_endpoint_degree",
+        "log_physical_local_scale",
+        "midpoint_x",
+        "midpoint_y"
+      ],
+      "low_impact_definition": "within each target's 512 nearest critical-covariate matches, include low discovery bad-path enrichment as a secondary assignment penalty; every retained replicate must have lower median enrichment than its targeted prefix",
+      "pool_size": 47038,
+      "secondary_features": [
+        "fused_rank_percentile",
+        "max_endpoint_degree",
+        "log_physical_local_scale",
+        "midpoint_x",
+        "midpoint_y"
+      ]
+    }
+  },
+  "decision_rule": {
+    "H1_supported_remains_null_pending_sensitivity": true,
+    "false": "no X exceeds both control-family P95 values on both P1 and P2, or no primary-advantage X passes connectivity and harm checks",
+    "otherwise": "inconclusive",
+    "supported": "at least 2 of 3 X exceed both control-family P95 values on P1 and P2, remain connected with zero unreachable test pairs, and do not exceed either control-family P95 on H1 or H2"
+  },
+  "design_artifacts": {
+    "balance": "results\\phase2c_h1_h2\\h1_counterfactual_control_balance.csv",
+    "control_edges": "results\\phase2c_h1_h2\\h1_counterfactual_control_edges.parquet",
+    "design_npz": "results\\phase2c_h1_h2\\h1_counterfactual_design.npz"
+  },
+  "fresh_test": {
+    "pair_count": 65536,
+    "physical_q16_zero_median_fallback_count": 11,
+    "q16_quartile_boundaries": [
+      0.07031243294477463,
+      0.09060697257518768,
+      0.11039670556783676
+    ],
+    "seed": 11,
+    "source_count": 128,
+    "source_disjoint_from_first_stage_discovery_validation": true,
+    "source_ids": [
+      7214,
+      8165,
+      11600,
+      20081,
+      10376,
+      9803,
+      19579,
+      19560,
+      13296,
+      12484,
+      9596,
+      20935,
+      9522,
+      3058,
+      20202,
+      20100,
+      20987,
+      9964,
+      7719,
+      18017,
+      2397,
+      10135,
+      2776,
+      4537,
+      20412,
+      6248,
+      16572,
+      7080,
+      17679,
+      4113,
+      684,
+      13996,
+      17642,
+      16695,
+      10993,
+      7882,
+      5872,
+      1576,
+      9888,
+      14626,
+      11739,
+      10145,
+      9339,
+      11284,
+      19193,
+      20930,
+      1457,
+      14787,
+      3170,
+      18901,
+      1497,
+      3213,
+      7845,
+      15246,
+      3079,
+      10096,
+      15794,
+      6993,
+      1823,
+      13665,
+      2682,
+      10728,
+      6809,
+      6048,
+      2873,
+      17429,
+      6832,
+      3307,
+      15718,
+      11018,
+      12819,
+      12589,
+      6940,
+      4728,
+      4986,
+      5426,
+      3631,
+      10930,
+      2736,
+      9054,
+      6214,
+      5341,
+      4436,
+      17500,
+      13583,
+      19992,
+      14098,
+      20729,
+      13245,
+      14943,
+      1237,
+      15369,
+      6618,
+      356,
+      1440,
+      3955,
+      19220,
+      9817,
+      11694,
+      6556,
+      5444,
+      11200,
+      11491,
+      17606,
+      19475,
+      17464,
+      14932,
+      16302,
+      11476,
+      11824,
+      14388,
+      7162,
+      15345,
+      1769,
+      2928,
+      6120,
+      14071,
+      11467,
+      20816,
+      19406,
+      19976,
+      15080,
+      19320,
+      15073,
+      4144,
+      16534,
+      13808,
+      19866
+    ],
+    "source_ids_need_not_be_disjoint_from_calibration_endpoints": true,
+    "source_quartile_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "sources_per_q16_density_quartile": 32,
+    "targets_per_source": 512,
+    "unordered_pair_disjoint_from_calibration_discovery_validation": true
+  },
+  "frozen_ranking": {
+    "formula": "mismatch_percentile * positive-severe-usage percentile; discovery only",
+    "no_reranking": true,
+    "removal_counts": [
+      25,
+      50,
+      100
+    ],
+    "target_edge_ids": [
+      97797,
+      125813,
+      127147,
+      127148,
+      38755,
+      30054,
+      37417,
+      217888,
+      36696,
+      47837,
+      123703,
+      122022,
+      222306,
+      125678,
+      30100,
+      30543,
+      222699,
+      38756,
+      198049,
+      24819,
+      48776,
+      30590,
+      97810,
+      122118,
+      122183,
+      24880,
+      222469,
+      23101,
+      20375,
+      125430,
+      24422,
+      22318,
+      24736,
+      24747,
+      24635,
+      22993,
+      20973,
+      25029,
+      30328,
+      29955,
+      51546,
+      21227,
+      127143,
+      220477,
+      140609,
+      125615,
+      30133,
+      194895,
+      30318,
+      144126,
+      24813,
+      167965,
+      93209,
+      24930,
+      89604,
+      22180,
+      24636,
+      24631,
+      24733,
+      85897,
+      122275,
+      144233,
+      20715,
+      192416,
+      21164,
+      144194,
+      140625,
+      108039,
+      24653,
+      107889,
+      135469,
+      47820,
+      140601,
+      144008,
+      110088,
+      24895,
+      23064,
+      60492,
+      24865,
+      126431,
+      125793,
+      122162,
+      144130,
+      127142,
+      30132,
+      72093,
+      58662,
+      60689,
+      123658,
+      19805,
+      126503,
+      127331,
+      173531,
+      22319,
+      132960,
+      93361,
+      141182,
+      196274,
+      194676,
+      167957
+    ]
+  },
+  "harm_outcomes": {
+    "H1": "increase in fraction above frozen calibration residual P95",
+    "H2": "median log path inflation on baseline well-estimated pairs",
+    "H3": "connected components, giant-component ratio, unreachable fresh-test pairs"
+  },
+  "input_artifacts": {
+    "first_stage_summary": "results\\phase2c_h1_h2\\h1_summary.json",
+    "frozen_calibration_curve": "results\\phase2c_h1_h2\\h1_calibration_curve.npz",
+    "frozen_edge_table": "results\\phase2c_h1_h2\\h1_edge_table.parquet",
+    "frozen_pair_table": "results\\phase2c_h1_h2\\h1_pair_table.parquet",
+    "positions": "results\\adp_old_fused\\stride1_n20997_seed10\\distance_data.npz",
+    "saved_D_geo": "results\\adp_old_fused\\stride1_n20997_seed10\\geodesic.npy",
+    "stage1_graph": "results\\phase2c_h1_h2\\stage1_graph.npz"
+  },
+  "package_versions": {
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "pyarrow": "25.0.1",
+    "python": "3.11.15",
+    "scikit_learn": "1.8.0",
+    "scipy": "1.17.1"
+  },
+  "primary_outcomes": {
+    "P1": "repair rate among baseline-severe fresh-test pairs",
+    "P2": "median delta r_geo among baseline-severe fresh-test pairs"
+  },
+  "removal_semantics": "delete both stored directions of each logical undirected edge; directed=False shortest paths",
+  "scope": "H1 targeted-removal counterfactual only; no sensitivity, H2, or method development"
+}

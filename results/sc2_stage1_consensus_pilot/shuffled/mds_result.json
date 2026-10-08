@@ -1,0 +1,22 @@
+{
+  "elapsed_s": 41.084144592285156,
+  "indices_definition": "np.arange(0,20997,10)",
+  "localization_errors_after_affine": {
+    "max_m": 9.329247992934055,
+    "mean_m": 0.5593663077473415,
+    "median_m": 0.4751124112039865,
+    "p90_m": 0.9336674868530207,
+    "p95_m": 1.1563673541099653
+  },
+  "max_iter": 80,
+  "metrics": {
+    "ct": 0.9886626803141442,
+    "ks": 0.10527656934346974,
+    "n_neighbors": 105,
+    "tw": 0.9918452515231977
+  },
+  "n_init": 4,
+  "num_samples": 2100,
+  "seed": 10,
+  "variant": "shuffled"
+}

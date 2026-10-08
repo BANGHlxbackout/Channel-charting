@@ -1,0 +1,24 @@
+{
+  "geodesic_subset_max_abs_error": 0.0,
+  "max_per_sample_error_abs_delta": 0.0,
+  "metric_deltas": {
+    "max_m": 0.0,
+    "mean_m": 0.0,
+    "p95_m": 0.0
+  },
+  "old_gate_metrics": {
+    "max_m": 8.89653969356567,
+    "mean_m": 0.4581295488183936,
+    "median_m": 0.3851502103625156,
+    "p90_m": 0.7967160858224879,
+    "p95_m": 0.9614525508898767
+  },
+  "recomputed_metrics": {
+    "max_m": 8.89653969356567,
+    "mean_m": 0.4581295488183936,
+    "median_m": 0.3851502103625156,
+    "p90_m": 0.7967160858224879,
+    "p95_m": 0.9614525508898767
+  },
+  "reproduction_ok": true
+}
