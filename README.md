@@ -17,7 +17,7 @@ datasets/
   adp_old_shard4/             # 预处理输出，初始只有 .gitkeep
 ```
 
-官方 TFRecord MD5：cf02 `95ab14e40536089b2365f76d72345403`；cf03 `12e8d8458809400ef1e0524a0254c61c`；cf04 `847efb9caef7d3d997d9e23c68db375f`。本机这三份 MD5 已按用户提供的核对记录与官方页面一致。官方 `spec.json` 的 MD5 为 `cce58edb6d40998b929488a204ec4412`；本地曾命名为 `specv2.0.json`。**预处理脚本不读取 spec 文件**，它只读取上面六个准确文件名。
+官方 TFRecord MD5：cf02 `95ab14e40536089b2365f76d72345403`；cf03 `12e8d8458809400ef1e0524a0254c61c`；cf04 `847efb9caef7d3d997d9e23c68db375f`。本机这三份 MD5 已按用户提供的核对记录与官方页面一致。官方 `spec.json` 的 MD5 为 `cce58edb6d40998b929488a204ec4415`；本地曾命名为 `specv2.0.json`。**预处理脚本不读取 spec 文件**，它只读取上面六个准确文件名。
 
 `preprocess_adp_old_shard.py` 默认从 `datasets/` 读取原始文件，按 cf02→cf03→cf04 顺序拼接后全局每 4 条取 1 条，生成 `datasets/adp_old_shard4/` 中的 `H.npy`、`UE_pos.npy`、`timestamps.npy`、`AP_pos.npy`，应有 20,997 个样本。**不要添加 `--sort-by-time`**，否则样本顺序与本次实验不符。仓库只提交两个空占位 `datasets/.gitkeep` 和 `datasets/adp_old_shard4/.gitkeep`；TFRecord、offset JSON、预处理数据均不上传。
 
