@@ -1,0 +1,52 @@
+{
+  "status": "local preparation only; NOT pushed to Gitee",
+  "gitee_remote": "https://gitee.com/cactus-jacque/diffusion-charting.git",
+  "branch": "codex/sc2-stage2-edge-consensus",
+  "protocol": "CG-A transductive, N=20997, Stage-2 k128, lambda=.15, 200 Jacobi",
+  "code": [
+    "methods/sc2_stage2_edge_consensus/run.py",
+    "methods/sc2_stage2_edge_consensus/random_followup.py",
+    "methods/sc2_stage2_edge_consensus/complete_metrics.py",
+    "methods/sc2_stage2_edge_consensus/best_lambda_followup.py",
+    "methods/sc2_stage2_edge_consensus/plot_representative_chart.py",
+    "diagnostics/sc2_edge_posthoc/audit.py"
+  ],
+  "run_command": "D:\\anaconda3\\envs\\diffusion_charting\\python.exe -u diagnostics\\sc2_edge_posthoc\\audit.py",
+  "input_and_retained_artifact_sha256": {
+    "geodesic.npy": {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic.npy",
+      "size_bytes": 1763496164,
+      "sha256": "de464ef9598757a9893e78a4a5335ac9ebbd363be14863e316e816005e73439d"
+    },
+    "geodesic_top512.npy": {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic_top512.npy",
+      "size_bytes": 43001984,
+      "sha256": "7b6708af03913174950cc43d20ebe08674c5460f6351bcce28661dff71477f19"
+    },
+    "distance_data.npz": {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\distance_data.npz",
+      "size_bytes": 336470,
+      "sha256": "3680b93db493598e544fb5017c8afe5ac5942843602c96fe510290480272806e"
+    },
+    "Y0_embedding.npz": {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+      "size_bytes": 504696,
+      "sha256": "8382214735e441f2b18905c9e6faa490674d7b0837717170ca3489d01d832d8e"
+    },
+    "saved_baseline_Z_embedding.npz": {
+      "path": "D:\\diffusion_refined_charting\\results\\diffusion_refined_charting\\stride1_n20997_k128_lambda0.15_seed10\\embedding.npz",
+      "size_bytes": 504696,
+      "sha256": "42e991dab00db9b676d25c1f0b1754bed4f8e08566ec9dcd94f755a84247dd16"
+    },
+    "edge_scores_and_masks.npz": {
+      "path": "D:\\.codex\\worktrees\\sc2-stage2-edge-consensus\\diffusion_refined_charting\\results\\sc2_stage2_edge_consensus\\edge_scores_and_masks.npz",
+      "size_bytes": 20439583,
+      "sha256": "6fd9184afbbc110938953f616460c4d39021d93444b5e2ba05b2435d95855fdf"
+    },
+    "variant_embeddings.npz": {
+      "path": "D:\\.codex\\worktrees\\sc2-stage2-edge-consensus\\diffusion_refined_charting\\results\\sc2_stage2_edge_consensus\\embeddings.npz",
+      "size_bytes": 949073,
+      "sha256": "d06114e5a78aa252beb6997a111e9d8a370985b8d0fa62ecea5c2558a90930f7"
+    }
+  }
+}

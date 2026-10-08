@@ -1,3 +1,57 @@
+# 本次 SC² 启发的 Stage-2 边级实验复现
+
+本节是给导师检查本次实验使用的入口；下方原 README 是历史说明，**本次请以这里的路径和命令为准**。第 1 阶段的 Y0 与 D_geo、第 2 阶段的原图基线均保持原配置；本实验只把部分 Stage-2 图边权减半。GT 位置只用于评价和事后分析。全部 20,997 个样本参与原图建图，结果属于 transductive 评估。
+
+## 1. 数据放在哪里
+
+从 [DICHASUS cf0x 官方数据 v2.0](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/DARUS-2854&version=2.0)下载**旧版而非 rev2**的三个 TFRecord，并把以下六个文件放在仓库根目录的 `datasets/`。各自的 REFTX offset JSON 下载方式见[官方 Channel Charting 教程](https://dichasus.inue.uni-stuttgart.de/tutorials/tutorial/channelcharting/)：
+
+```text
+datasets/
+  dichasus-cf02.tfrecords
+  dichasus-cf03.tfrecords
+  dichasus-cf04.tfrecords
+  reftx-offsets-dichasus-cf02.json
+  reftx-offsets-dichasus-cf03.json
+  reftx-offsets-dichasus-cf04.json
+  adp_old_shard4/             # 预处理输出，初始只有 .gitkeep
+```
+
+官方 TFRecord MD5：cf02 `95ab14e40536089b2365f76d72345403`；cf03 `12e8d8458809400ef1e0524a0254c61c`；cf04 `847efb9caef7d3d997d9e23c68db375f`。本机这三份 MD5 已按用户提供的核对记录与官方页面一致。官方 `spec.json` 的 MD5 为 `cce58edb6d40998b929488a204ec4412`；本地曾命名为 `specv2.0.json`。**预处理脚本不读取 spec 文件**，它只读取上面六个准确文件名。
+
+`preprocess_adp_old_shard.py` 默认从 `datasets/` 读取原始文件，按 cf02→cf03→cf04 顺序拼接后全局每 4 条取 1 条，生成 `datasets/adp_old_shard4/` 中的 `H.npy`、`UE_pos.npy`、`timestamps.npy`、`AP_pos.npy`，应有 20,997 个样本。**不要添加 `--sort-by-time`**，否则样本顺序与本次实验不符。仓库只提交两个空占位 `datasets/.gitkeep` 和 `datasets/adp_old_shard4/.gitkeep`；TFRecord、offset JSON、预处理数据均不上传。
+
+## 2. 从数据跑到汇报结果
+
+在仓库根目录执行。已记录环境为 Python 3.11.15，NumPy 2.4.6，SciPy 1.17.1，scikit-learn 1.8.0，matplotlib 3.10.9，tfrecord 1.14.6，PyTorch 2.11.0+cu128。全量距离矩阵和 MDS 较耗时、耗内存；`geodesic.npy` 单文件约 1.76 GB。命令里的 `python` 应指向安装这些依赖的环境。
+
+```powershell
+python preprocess_adp_old_shard.py --raw-dir datasets --out-dir datasets/adp_old_shard4 --expect-samples 20997
+
+python run_adp_fused.py --data-path datasets/adp_old_shard4 --out-dir results/adp_old_fused --stride 1 --seed 10 --neighbors 20 --mds-iter 80 --mds-n-init 4 --mds-reduction 1
+
+python run_adp_siamese.py --data-path datasets/adp_old_shard4 --distance-run results/adp_old_fused/stride1_n20997_seed10 --out-dir results/adp_old_siamese --stride 1 --seed 10
+
+python run_diffusion_refined_charting.py --data-path datasets/adp_old_shard4 --distance-run results/adp_old_fused/stride1_n20997_seed10 --init-embedding results/adp_old_siamese/stride1_n20997_seed10/embedding.npz --out-dir results/diffusion_refined_charting --stride 1 --seed 10 --top-k 512 --graph-k 128 --lambda-smooth 0.15 --iterations 200
+
+python methods/sc2_stage2_edge_consensus/run.py
+python methods/sc2_stage2_edge_consensus/random_followup.py --pool eligible
+python methods/sc2_stage2_edge_consensus/random_followup.py --pool all
+python methods/sc2_stage2_edge_consensus/random_followup.py --pool incompatible
+python methods/sc2_stage2_edge_consensus/complete_metrics.py
+python diagnostics/sc2_edge_posthoc/audit.py
+python methods/sc2_stage2_edge_consensus/plot_representative_chart.py
+```
+
+边级脚本目前在 `SOURCE = Path(...)` 一行使用原实验机路径 `D:\diffusion_refined_charting`。导师在自己的机器上**只需将该行改成克隆后的仓库绝对路径**；算法公式、输入文件相对位置和随机种子不需改。需要复现报告里 `lambda=0.1344` 的已有最优原图对照时，先用相同的 `run_diffusion_refined_charting.py` 命令把 `--lambda-smooth` 改为 `0.1344`，并将 `--out-dir` 改为 `results/lambda_sensitivity_refined_charting`，再执行 `python methods/sc2_stage2_edge_consensus/best_lambda_followup.py`。
+
+预期原图平均误差约 0.318748 m；SC² 选边约 0.318021 m（P95 约 0.636267 m）；一阶兼容边内分层随机选边的 20 次指标中位数约 0.317755 m。20 次只是固定同一数据与 Y0 后，更换 seed 10–29 的选边掩码。指标与图见 [REPORT.md](results/sc2_stage2_edge_consensus/REPORT.md)；精确参数见 [config.json](results/sc2_stage2_edge_consensus/config.json)；原始输入哈希见 [local_gitee_review_manifest.json](results/sc2_stage2_edge_consensus/local_gitee_review_manifest.json)。CUDA 累加顺序可能导致坐标最后几位不同，应核对样本顺序、配置与指标，不要求逐字节相同。
+
+**上传范围：**代码、README、配置、小型 JSON/图及必要的小数组；不上传上述数据集、生成的 ADP/fused/geodesic 矩阵、模型权重或可再生的 20 MB `edge_scores_and_masks.npz`。目前仅在本地分支准备，尚未 push Gitee。
+
+---
+
+## 以下为原 README 历史内容
 # Graph-Harmonic Diffusion Refined Channel Charting（图扩散精修）
 
 这是我们在 channel charting 上的改进工作的代码。核心思路：先用 ADP+时间戳测地相异性
