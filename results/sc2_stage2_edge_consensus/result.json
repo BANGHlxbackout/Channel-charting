@@ -1,0 +1,190 @@
+{
+  "question": "Does second-order common support among compatible Stage-2 edges identify harmful smoothing relations?",
+  "source_paper": "https://arxiv.org/html/2203.14453",
+  "source_code": "https://github.com/ZhiChen902/SC2-PCR/blob/main/SC2_PCR.py",
+  "seed": 10,
+  "n": 20997,
+  "graph_k": 128,
+  "lambda": 0.15,
+  "iterations": 200,
+  "first_order_threshold": 0.6269410284271022,
+  "log_scale": -0.2966327796720163,
+  "median_residual": 0.389479157488684,
+  "mad_residual": 0.2374618709384182,
+  "eligible_edges": 1108622,
+  "candidate_edges": 1544167,
+  "selected_edges": 110862,
+  "attenuation": 0.5,
+  "mass_ratio": 0.9729330922936127,
+  "uniform_max_abs_vs_saved": 0.0003662109375,
+  "diagnostic": {
+    "definition": "Within each D_geo decile and B=1, physical top-decile edges are offline suspect labels.",
+    "rows": [
+      {
+        "geo_bin": 0,
+        "eligible_edges": 66633,
+        "low_score_bad_rate": 0.22182200210115563,
+        "high_score_bad_rate": 0.027164940717394566,
+        "low_score_median_physical_m": 0.19105838732581562,
+        "high_score_median_physical_m": 0.060748600251367926
+      },
+      {
+        "geo_bin": 1,
+        "eligible_edges": 104450,
+        "low_score_bad_rate": 0.22044040210627094,
+        "high_score_bad_rate": 0.033173767352800386,
+        "low_score_median_physical_m": 0.31170627164466436,
+        "high_score_median_physical_m": 0.13774813455665944
+      },
+      {
+        "geo_bin": 2,
+        "eligible_edges": 111479,
+        "low_score_bad_rate": 0.24211706660686252,
+        "high_score_bad_rate": 0.026328773267548778,
+        "low_score_median_physical_m": 0.3965262979037063,
+        "high_score_median_physical_m": 0.1899921659119492
+      },
+      {
+        "geo_bin": 3,
+        "eligible_edges": 114342,
+        "low_score_bad_rate": 0.25585971663459856,
+        "high_score_bad_rate": 0.024138534196256778,
+        "low_score_median_physical_m": 0.41881908068962603,
+        "high_score_median_physical_m": 0.2256405652745856
+      },
+      {
+        "geo_bin": 4,
+        "eligible_edges": 116107,
+        "low_score_bad_rate": 0.24964471814306016,
+        "high_score_bad_rate": 0.02941303130786788,
+        "low_score_median_physical_m": 0.46377411272325736,
+        "high_score_median_physical_m": 0.28043221674096974
+      },
+      {
+        "geo_bin": 5,
+        "eligible_edges": 117567,
+        "low_score_bad_rate": 0.2525836771147876,
+        "high_score_bad_rate": 0.030919066048568877,
+        "low_score_median_physical_m": 0.5050395427030826,
+        "high_score_median_physical_m": 0.3171550681633294
+      },
+      {
+        "geo_bin": 6,
+        "eligible_edges": 120277,
+        "low_score_bad_rate": 0.25965495738931615,
+        "high_score_bad_rate": 0.021658698815215132,
+        "low_score_median_physical_m": 0.5388549787593195,
+        "high_score_median_physical_m": 0.3440662709298695
+      },
+      {
+        "geo_bin": 7,
+        "eligible_edges": 120528,
+        "low_score_bad_rate": 0.2563783447417548,
+        "high_score_bad_rate": 0.022650902302426883,
+        "low_score_median_physical_m": 0.552419081860387,
+        "high_score_median_physical_m": 0.36838195312593996
+      },
+      {
+        "geo_bin": 8,
+        "eligible_edges": 120219,
+        "low_score_bad_rate": 0.252297966143992,
+        "high_score_bad_rate": 0.02108721873310319,
+        "low_score_median_physical_m": 0.6006754373593322,
+        "high_score_median_physical_m": 0.3913521377319098
+      },
+      {
+        "geo_bin": 9,
+        "eligible_edges": 117020,
+        "low_score_bad_rate": 0.23504529140317895,
+        "high_score_bad_rate": 0.04093317381644163,
+        "low_score_median_physical_m": 0.658168337184776,
+        "high_score_median_physical_m": 0.4727434970617944
+      }
+    ],
+    "pooled_low_rate": 0.2459814506182541,
+    "pooled_high_rate": 0.02767449263153518,
+    "rho_score_vs_physical": -0.5438214401527469,
+    "rho_first_order_residual_vs_physical": 0.014128750661308871,
+    "suspect_count": 110865,
+    "eligible_count": 1108622,
+    "geo_cuts": [
+      14.973847198486332,
+      23.578569412231445,
+      28.143062591552734,
+      31.660842895507812,
+      34.70241928100586,
+      37.40315628051758,
+      40.009986877441406,
+      42.91799621582031,
+      46.902198028564456
+    ]
+  },
+  "metrics": {
+    "uniform": {
+      "ct": 0.998219592614248,
+      "tw": 0.998222526526258,
+      "ks": 0.06506457606508861,
+      "n_neighbors": 209,
+      "mean_m": 0.31874796748161316,
+      "median_m": 0.2929166555404663,
+      "p90_m": 0.5586743950843811,
+      "p95_m": 0.6346395015716553,
+      "max_m": 1.1414309740066528,
+      "edge_weight_sum": 1727021.674880892,
+      "graph_edges": 3088334
+    },
+    "sc2": {
+      "ct": 0.9982151698951438,
+      "tw": 0.998226069335732,
+      "ks": 0.0649822541991973,
+      "n_neighbors": 209,
+      "mean_m": 0.31802091002464294,
+      "median_m": 0.29303738474845886,
+      "p90_m": 0.558251142501831,
+      "p95_m": 0.6362671852111816,
+      "max_m": 1.1280558109283447,
+      "edge_weight_sum": 1680276.5385999605,
+      "graph_edges": 3088334
+    },
+    "first_order": {
+      "ct": 0.9982155966513144,
+      "tw": 0.9982235035192506,
+      "ks": 0.06499038655054488,
+      "n_neighbors": 209,
+      "mean_m": 0.31865206360816956,
+      "median_m": 0.2930975556373596,
+      "p90_m": 0.5589738488197327,
+      "p95_m": 0.6356849670410156,
+      "max_m": 1.1352595090866089,
+      "edge_weight_sum": 1663700.5439747274,
+      "graph_edges": 3088334
+    },
+    "shuffled": {
+      "ct": 0.9982251005552293,
+      "tw": 0.998231782002354,
+      "ks": 0.06487445145218766,
+      "n_neighbors": 209,
+      "mean_m": 0.3177453577518463,
+      "median_m": 0.291640967130661,
+      "p90_m": 0.5574775338172913,
+      "p95_m": 0.6333004236221313,
+      "max_m": 1.1357744932174683,
+      "edge_weight_sum": 1679327.647507526,
+      "graph_edges": 3088334
+    },
+    "uniform_mass": {
+      "ct": 0.9982208986934423,
+      "tw": 0.9982254487061396,
+      "ks": 0.06501484707094461,
+      "n_neighbors": 209,
+      "mean_m": 0.31860601902008057,
+      "median_m": 0.29257965087890625,
+      "p90_m": 0.5592560172080994,
+      "p95_m": 0.6344785094261169,
+      "max_m": 1.1381856203079224,
+      "edge_weight_sum": 1680276.575414881,
+      "graph_edges": 3088334
+    }
+  },
+  "elapsed_s": 34.00819492340088
+}

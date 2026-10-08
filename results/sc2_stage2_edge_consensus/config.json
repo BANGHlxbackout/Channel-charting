@@ -1,0 +1,48 @@
+{
+  "status": "record of completed experiment; diagnostic follow-up is evaluation only",
+  "dataset_protocol": "CG-A transductive full chart, no held-out CSI split",
+  "original_input_root": "D:\\diffusion_refined_charting",
+  "distance_run": "results/adp_old_fused/stride1_n20997_seed10",
+  "y0": "results/adp_old_siamese/stride1_n20997_seed10/embedding.npz",
+  "saved_baseline_z": "results/diffusion_refined_charting/stride1_n20997_k128_lambda0.15_seed10/embedding.npz",
+  "n": 20997,
+  "stage2_graph_k": 128,
+  "neighbor_cache_top_k": 512,
+  "lambda_smooth": 0.15,
+  "jacobi_iterations": 200,
+  "method_seed": 10,
+  "score": {
+    "candidate_edges": "undirected union of original directed D_geo top128; same W as baseline",
+    "log_scale": "median over directed top128 of log(||Y0_i-Y0_j||)-log(D_geo_ij)",
+    "first_order_residual": "abs(log(||Y0_i-Y0_j||)-log(D_geo_ij)-log_scale)",
+    "first_order_compatibility": "B_ij=1 if residual <= median(residual)+MAD(residual), symmetric union, diagonal zero",
+    "observed_threshold": 0.6269410284271022,
+    "second_order": "T_ij = B_ij * sum_k B_ik B_kj"
+  },
+  "fixed_edge_change": {
+    "eligible_pool": "B_ij=1 among existing W edges",
+    "selection": "bottom 10 percent by T, random tie break from default_rng(10)",
+    "selected_undirected_edges": 110862,
+    "selected_edge_weight_multiplier": 0.5,
+    "node_fidelity": 1.0
+  },
+  "controls": {
+    "first_order": "same eligible count, largest first-order residual",
+    "seed10_random": "same eligible edge count per D_geo decile, default_rng(10)",
+    "repeated_random_seeds": "10..29 inclusive",
+    "random_pools": ["B=1", "all W edges", "B=0"],
+    "uniform_mass": "all W weights scaled to match SC2 total edge weight",
+    "existing_best_lambda_crosscheck": 0.1344
+  },
+  "metrics": {
+    "ct_tw_ks": "same Python random.sample seed10 subset of 4199 samples",
+    "affine_errors": "full 20997 samples, each embedding aligned independently",
+    "ground_truth": "offline evaluation and post-hoc diagnosis only; never score, select, weight, or tune edges"
+  },
+  "source_of_truth": [
+    "methods/sc2_stage2_edge_consensus/run.py",
+    "docs/tasks/sc2_stage2_edge_consensus.md",
+    "results/sc2_stage2_edge_consensus/result.json",
+    "results/sc2_stage2_edge_consensus/complete_metrics_followup.json"
+  ]
+}
