@@ -5,7 +5,6 @@ parameters. Ground-truth positions are read only for offline assessment.
 """
 from __future__ import annotations
 
-import hashlib
 import json
 import sys
 from pathlib import Path
@@ -22,7 +21,6 @@ from common_metrics import affine_transform  # noqa: E402
 SOURCE = Path(r"D:\diffusion_refined_charting")
 DIST = SOURCE / "results/adp_old_fused/stride1_n20997_seed10"
 Y0 = SOURCE / "results/adp_old_siamese/stride1_n20997_seed10/embedding.npz"
-SAVED_Z = SOURCE / "results/diffusion_refined_charting/stride1_n20997_k128_lambda0.15_seed10/embedding.npz"
 OUT = ROOT / "results/sc2_stage2_edge_consensus"
 
 
@@ -36,14 +34,6 @@ def as_json(value):
     if isinstance(value, (np.integer, np.floating, np.bool_)):
         return value.item()
     return value
-
-
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as file:
-        for chunk in iter(lambda: file.read(8 * 1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
 
 
 def subset_stats(values: np.ndarray) -> dict:
@@ -331,37 +321,6 @@ def main() -> None:
     fig.savefig(OUT / "posthoc_selected_edge_diagnostic.png", dpi=190)
     plt.close(fig)
 
-    files = {
-        "geodesic.npy": DIST / "geodesic.npy",
-        "geodesic_top512.npy": DIST / "geodesic_top512.npy",
-        "distance_data.npz": DIST / "distance_data.npz",
-        "Y0_embedding.npz": Y0,
-        "saved_baseline_Z_embedding.npz": SAVED_Z,
-        "edge_scores_and_masks.npz": OUT / "edge_scores_and_masks.npz",
-        "variant_embeddings.npz": OUT / "embeddings.npz",
-    }
-    manifest = {
-        "status": "local preparation only; NOT pushed to Gitee",
-        "gitee_remote": "https://gitee.com/cactus-jacque/diffusion-charting.git",
-        "branch": "codex/sc2-stage2-edge-consensus",
-        "protocol": "CG-A transductive, N=20997, Stage-2 k128, lambda=.15, 200 Jacobi",
-        "code": [
-            "methods/sc2_stage2_edge_consensus/run.py",
-            "methods/sc2_stage2_edge_consensus/random_followup.py",
-            "methods/sc2_stage2_edge_consensus/complete_metrics.py",
-            "methods/sc2_stage2_edge_consensus/best_lambda_followup.py",
-            "methods/sc2_stage2_edge_consensus/plot_representative_chart.py",
-            "diagnostics/sc2_edge_posthoc/audit.py",
-        ],
-        "run_command": "D:\\anaconda3\\envs\\diffusion_charting\\python.exe -u diagnostics\\sc2_edge_posthoc\\audit.py",
-        "input_and_retained_artifact_sha256": {
-            name: {"path": str(path), "size_bytes": int(path.stat().st_size), "sha256": sha256(path)}
-            for name, path in files.items()
-        },
-    }
-    (OUT / "local_gitee_review_manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
     print("SC2 suspect fraction", output["sc2_selected"]["GT_suspect_fraction"])
     print("Random suspect fraction", output["seed10_random_selected"]["GT_suspect_fraction"])
     print("SC2 outcomes", output["outcomes"]["sc2"])

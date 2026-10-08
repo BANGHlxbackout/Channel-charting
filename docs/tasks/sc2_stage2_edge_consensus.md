@@ -48,7 +48,7 @@ The retained original-W lambda family has the lowest recorded mean at lambda=0.1
 
 The earlier repeat controls saved all-N affine errors but not CT/TW/KS for every random seed. Re-run the exact fixed masks (seeds 10..29, B=1/all/B=0 pools at lambda=0.15, and B=1 at lambda=0.1344) with the unchanged 200-step solver. Use exactly the baseline seed-10 random.sample 20% subset for CT/TW/KS and full-N affine alignment for mean, median, P90, P95, max. Record each run's full metrics and group medians/min/max. Verify repeat all-N mean/p95 against already saved JSON within CUDA run variability. No mask, score, graph rule, seed set, lambda, or evaluation protocol change.
 
-## 2026-10-08 advisor-requested post-hoc audit and Gitee preparation
+## Post-hoc edge and sample audit
 
 Question: Why did the fixed low-common-support mask fail to beat distance-stratified random edge attenuation, despite enriching physically long edges? No new mask selection, training, graph solve or tuning is authorized in this audit. Reuse the saved scores, edge indices, fixed masks, baseline and variant embeddings; recompute only evaluation diagnostics and presentation plots. GT positions are offline diagnostics only.
 
@@ -56,4 +56,4 @@ Freeze outputs before reading outcomes: document the exact first-order residual,
 
 For outcomes, affine-align each saved chart separately exactly as baseline evaluation; compute per-sample baseline-minus-variant errors, repair/harm counts and sums for SC2 and seed-10 random; report spatial map, initial-error quintiles and a few explicitly post-selected sample/edge examples with sample IDs, coordinates, score and incident selected-edge counts. State that simultaneous edge changes propagate and cannot assign a sample outcome to a single edge. Inspect whether distinct antenna-view arrays are available, but do not construct, fit or tune a new view rule in this audit.
 
-Organize a local tracked config/reproduction manifest, exact source paths and hashes, code pointers, machine results and one updated REPORT.md in this isolated branch. The Gitee remote URL may be documented, but do not push or merge. Later upload requires a user instruction and should cite the then-current remote commit, not an unpushed local SHA.
+Retain the exact configuration, code pointers, machine results and one updated REPORT.md in the isolated branch.

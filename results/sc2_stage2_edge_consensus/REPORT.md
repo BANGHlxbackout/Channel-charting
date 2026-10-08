@@ -1,4 +1,4 @@
-# 2026-10-08 导师反馈后的边与样本事后分析
+# SC² 边级实验事后分析
 
 **范围。**沿用已固定的 Stage-2 图、SC² 选边掩码、seed-10 分层随机掩码和三份保存的最终图谱。本节没有重算测地距离、训练 FCF、重新选边、改变权重或重跑优化。现有 CG-A 是全样本 transductive 协议，并无独立 held-out CSI 测试集。真实 UE 位置只用于离线评价和选取展示案例，不参与分数、掩码或调参。
 
@@ -13,25 +13,6 @@
 **具体样本与连接。**事后挑出的样本 8876（物理位置约 -10.99,-6.71 m）在 SC² 方案下误差从 0.1501 降到 0.0799 m，周围有 24 条选中边；样本 8337（约 -9.51,-5.74 m）则从 0.2479 升到 0.3111 m，周围有 30 条选中边。一条展示用的低支持边 3183–14204，T=9、物理端点距离 2.398 m；另一条 14876–15269，T=11、距离 0.498 m。前者两端样本在完整 SC² 掩码下改善，后者两端样本之一变差。**边和样本示例是看完 GT 后挑出来说明现象的；完整掩码同时改变十万余条边，不能把某个样本的改变归因于上述单条边。**原始编号、坐标、r、D_geo、W、端点误差与逐点数组已保存。
 
 **对不同天线视角的判断。**原始 CSI H.npy 为 20,997×32×13，现有加载代码把 32 个天线重排为 4 组、每组 8 个，AP_pos.npy 有 4 个位置。因此可以进一步核验“同一候选边是否在多个阵列视角都得到支持”。目前保存的 ADP 距离是合并视角后的结果，并没有现成的四组独立边分数。本轮不添加多视角规则；下一步先核对每组阵列的独立距离定义、尺度和缺失情况，再设计不使用 GT 选边的相互核验对照。
-
-**Gitee 准备状态。**运行环境为 Python 3.11.15、NumPy 2.4.6、SciPy 1.17.1、PyTorch 2.11.0+cu128、scikit-learn 1.8.0，GPU 为 NVIDIA GeForce RTX 3050 Laptop。目标远端为 https://gitee.com/cactus-jacque/diffusion-charting.git；本地分支 codex/sc2-stage2-edge-consensus。config.json、代码、逐次指标、边索引及掩码、最终图谱、事后诊断 JSON/PNG 和输入 SHA-256 清单 local_gitee_review_manifest.json 均放在本分支。原始 geodesic.npy 约 1.76 GB，未随代码提交；清单记录其路径和哈希以便核验。**尚未推送 Gitee，不能把本地提交号说成远端已可查看的版本。**推送后的仓库链接和远端提交版本应再核对后用于正式汇报。
-
----
-# 给用户的简要结论与实验脉络
-
-这是**先后两轮不同实验**，没有方法的一一对应。两轮共用同一份原始 Stage-2 baseline：原图 W、Y0、lambda=0.15、200 次迭代，mean 约 0.318748 m。
-
-**第一轮：节点 fidelity pilot。**图 W 不变，只按一阶或 SC² 式点分数调整每个点对 Y0 的信任强度。SC² 节点版 mean=0.322221 m，P95=0.648272 m，都比原 baseline 差。这个方案被结果否定，已经结束；它的 first_order、sc2、sc2_shuffled 只属于第一轮，不参与下面的边级排名。原报告在独立分支 codex/sc2-adaptive-fidelity-pilot。
-
-**第二轮：本报告的边级实验。**所有点的 fidelity 都固定为 1，只修改少数 Stage-2 图边的权重。先在一阶兼容的边中，用共同支持数量选出最低的 10%，把这些边的权重乘 0.5；再与原图、一阶边分数、同距离层随机选边、等总权重缩放比较。此处的 SC² 指的是**边分数**，与第一轮的 SC² 节点版不是同一个方法。原始 Y0、D_geo、图 k=128、lambda=0.15、200 次迭代和评价子集固定，GT 只用于结果评价。
-
-边级 SC² 版 mean=0.318021 m，确实比原 baseline 的 0.318748 m 低约 0.73 毫米；但它的 median 和 P95 变差。第一轮固定的分层随机边对照 mean=0.317745 m，更好。于是按用户要求继续做控制实验：固定每个 D_geo 距离层选边数、降权强度和 seed 范围 10–29，分别从一阶兼容边、所有边、一阶不兼容边随机选；随后用已有最优原图 lambda=0.1344 核对。后续结果没有回头修改最初的边分数、门槛或降权强度。
-
-**目前真正站得住的观察：**在原 lambda=0.15 下，兼容边随机和所有边随机各 20 次，CT、TW、KS、mean、median、P90、P95、max 全部优于原 baseline。兼容边随机的 mean 中位数为 0.317755 m，比 baseline 低约 0.99 毫米；所有边随机为 0.317847 m；不兼容边随机为 0.318247 m。20 个 seed 只产生 20 个不同掩码，数据与 Y0 仍是同一份，**不是 20 套独立数据**。在旧最优原图 lambda=0.1344 上，兼容边随机的 mean 中位数进一步到 0.317687 m，但 P90 20 次全部变差，尾部存在取舍。
-
-**不能推出的结论：**不能把随机降权的改善称为 SC² 排名有效；20 个兼容边随机结果的均值都比定向 SC² 版好。也不能宣称论文提出的 SC²-PCR 已被完整迁移：原论文处理刚体匹配的候选对应关系，我们这里用 D_geo 与 Y0 的边关系改图权，是新设计。现有证据只支持“在这一张 transductive chart 上，少量分层边降权稳定改善原 baseline”；机制和独立数据效果还需另验。
-
-下面是第二轮的原始设计、完整指标和机器产物。第一轮结果不混入第二轮排名。
 
 ---
 # SC²-inspired Stage-2 edge-consensus test
@@ -68,7 +49,7 @@ Frozen support criterion met: False.
 This tests a specific edge-consensus transfer, not the full SC²-PCR registration pipeline. The relationship between D_geo and Y0 is not a rigid-transform invariant, and Y0 was trained using D_geo. The offline GT suspect label is an imperfect proxy for a graph edge's causal effect on refinement.
 No Stage-1 artifact was changed. No node reliability or adaptive fidelity was used. All inputs on D: were read-only.
 
-Machine outputs: result.json, edge_scores_and_masks.npz, embeddings.npz.
+Machine outputs: result.json and embeddings.npz. The reproducible edge_scores_and_masks.npz is generated locally by run.py and is not included in the repository.
 
 ## Follow-up: what actually caused the improvement?
 
@@ -96,7 +77,7 @@ The 200-step solver's equation residual RMS was about 0.000387 chart units for o
 
 The repeatable baseline improvement is currently a graph-constraint perturbation finding. It merits a separate mechanism and generalization study before being called a research contribution. No Stage-1 graph, D_geo, FCF or node fidelity was changed.
 
-Machine evidence: [random_followup.json](random_followup.json), [random_all_edges_followup.json](random_all_edges_followup.json), [random_incompatible_followup.json](random_incompatible_followup.json), [best_lambda_followup.json](best_lambda_followup.json).
+Machine evidence: [result.json](result.json), [complete_metrics_followup.json](complete_metrics_followup.json), and [posthoc_edge_and_sample_audit.json](posthoc_edge_and_sample_audit.json).
 
 All 20 seeds in **each** of the three random pools also had P95 below the original lambda=0.15 P95 (0.634640 m). Thus the improvement is not confined to mean error. The eligible-only random mask downweighted 110,862 of 1,544,167 undirected W edges (7.18% of all edges), reducing total graph weight by about 2.76%; the equal-total-weight uniform scaling control achieved only 0.318606 m mean, so uniform weakening alone did not match the random mask's 0.317755 m median.
 

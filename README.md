@@ -45,9 +45,9 @@ python methods/sc2_stage2_edge_consensus/plot_representative_chart.py
 
 边级脚本目前在 `SOURCE = Path(...)` 一行使用原实验机路径 `D:\diffusion_refined_charting`。**需将该行改成克隆后的仓库绝对路径**；算法公式、输入文件相对位置和随机种子不需改。需要复现报告里 `lambda=0.1344` 的已有最优原图对照时，先用相同的 `run_diffusion_refined_charting.py` 命令把 `--lambda-smooth` 改为 `0.1344`，并将 `--out-dir` 改为 `results/lambda_sensitivity_refined_charting`，再执行 `python methods/sc2_stage2_edge_consensus/best_lambda_followup.py`。
 
-预期原图平均误差约 0.318748 m；SC² 选边约 0.318021 m（P95 约 0.636267 m）；一阶兼容边内分层随机选边的 20 次指标中位数约 0.317755 m。20 次只是固定同一数据与 Y0 后，更换 seed 10–29 的选边掩码。指标与图见 [REPORT.md](results/sc2_stage2_edge_consensus/REPORT.md)；精确参数见 [config.json](results/sc2_stage2_edge_consensus/config.json)；原始输入哈希见 [local_gitee_review_manifest.json](results/sc2_stage2_edge_consensus/local_gitee_review_manifest.json)。CUDA 累加顺序可能导致坐标最后几位不同，应核对样本顺序、配置与指标，不要求逐字节相同。
+预期原图平均误差约 0.318748 m；SC² 选边约 0.318021 m（P95 约 0.636267 m）；一阶兼容边内分层随机选边的 20 次指标中位数约 0.317755 m。20 次只是固定同一数据与 Y0 后，更换 seed 10–29 的选边掩码。指标与图见 [REPORT.md](results/sc2_stage2_edge_consensus/REPORT.md)；精确参数见 [config.json](results/sc2_stage2_edge_consensus/config.json)。CUDA 累加顺序可能导致坐标最后几位不同，应核对样本顺序、配置与指标，不要求逐字节相同。
 
-**上传范围：**代码、README、配置、小型 JSON/图及必要的小数组；不上传上述数据集、生成的 ADP/fused/geodesic 矩阵、模型权重或可再生的 20 MB `edge_scores_and_masks.npz`。目前仅在本地分支准备，尚未 push Gitee。
+**上传范围：**代码、README、配置、小型 JSON/图及必要的小数组；不上传上述数据集、生成的 ADP/fused/geodesic 矩阵、模型权重或可再生的 20 MB `edge_scores_and_masks.npz`。
 
 ---
 
