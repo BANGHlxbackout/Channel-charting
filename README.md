@@ -4,7 +4,7 @@
 
 **当前发现：**SC² 定向选边的平均误差比原 baseline 低约 0.73 毫米，但 P95 变差；沿相同 `D_geo` 距离层配额随机选边的 20 次运行，平均误差中位数比 baseline 低约 0.99 毫米，P95 也降低。共同支持分数倾向选中物理跨度偏大的边，却未证明“将这些边减半”比随机更好。随机对照选中边的 73.2% 集中在最长四个距离层，因此目前也无法单独解释随机对照为何改善。完整设计、全部指标、三张图及其含义见 [实验报告](results/sc2_stage2_edge_consensus/REPORT.md)。
 
-## 1. 数据放在哪里
+## 1. 数据集下载
 
 从 [DICHASUS cf0x 官方数据 v2.0](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/DARUS-2854&version=2.0)下载 cf02、cf03、cf04 的三个 TFRecord，并把以下六个文件放在仓库根目录的 `datasets/`。各自的 REFTX offset JSON 下载方式见[官方 Channel Charting 教程](https://dichasus.inue.uni-stuttgart.de/tutorials/tutorial/channelcharting/)：
 
@@ -23,10 +23,9 @@ datasets/
 
 `preprocess_adp_old_shard.py` 默认从 `datasets/` 读取原始文件，按 cf02→cf03→cf04 顺序拼接后全局每 4 条取 1 条，生成 `datasets/adp_old_shard4/` 中的 `H.npy`、`UE_pos.npy`、`timestamps.npy`、`AP_pos.npy`，应有 20,997 个样本。**不要添加 `--sort-by-time`**，否则样本顺序与本次实验不符。仓库只提交两个空占位 `datasets/.gitkeep` 和 `datasets/adp_old_shard4/.gitkeep`；TFRecord、offset JSON、预处理数据均不上传。
 
-## 2. 从数据跑到汇报结果
+## 2. 运行命令和结果
 
-在仓库根目录执行。已记录环境为 Python 3.11.15，NumPy 2.4.6，SciPy 1.17.1，scikit-learn 1.8.0，matplotlib 3.10.9，tfrecord 1.14.6，PyTorch 2.11.0+cu128。全量距离矩阵和 MDS 较耗时、耗内存；`geodesic.npy` 单文件约 1.76 GB。命令里的 `python` 应指向安装这些依赖的环境。
-
+在仓库根目录执行。已记录环境为 Python 3.11.15，NumPy 2.4.6，SciPy 1.17.1，scikit-learn 1.8.0，matplotlib 3.10.9，tfrecord 1.14.6，PyTorch 2.11.0+cu128。`geodesic.npy` 单文件约 1.76 GB。命令里的 `python` 应指向安装这些依赖的环境。
 ```powershell
 python preprocess_adp_old_shard.py --raw-dir datasets --out-dir datasets/adp_old_shard4 --expect-samples 20997
 
