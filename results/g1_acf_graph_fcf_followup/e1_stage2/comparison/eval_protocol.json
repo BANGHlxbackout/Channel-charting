@@ -1,0 +1,27 @@
+{
+  "aligned_keys": {
+    "B0": "b0",
+    "B0+S2": "b0_s2",
+    "G1-Graph": "graph",
+    "G1-Graph+S2": "g1_graph_s2",
+    "G1-Identity": "identity",
+    "G1-Identity+S2": "g1_identity_s2"
+  },
+  "alignment": "separate affine fit and evaluation on all identical N nodes",
+  "chart_quality": "same-node transductive; no held-out claim",
+  "colors": "same GT x/y mapping in all four panels",
+  "embeddings": {
+    "B0": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+    "B0+S2": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e1_stage2\\b0\\embedding.npz",
+    "G1-Graph": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+    "G1-Graph+S2": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e1_stage2\\g1_graph\\embedding.npz",
+    "G1-Identity": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+    "G1-Identity+S2": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e1_stage2\\g1_identity\\embedding.npz"
+  },
+  "metric_subset_path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e1_stage2\\comparison\\metric_subset_seed10.npy",
+  "metric_subset_size": 4199,
+  "metric_subset_source": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\metric_subset_seed10.npy",
+  "num_samples": 20997,
+  "plot_function": "run_adp_siamese.plot_chart (external axes; align=False for raw)",
+  "seed": 10
+}

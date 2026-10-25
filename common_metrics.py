@@ -1,3 +1,7 @@
+# coding: gbk
+"""
+评测指标代码文件
+"""
 from __future__ import annotations
 
 import json

@@ -1,0 +1,21 @@
+{
+  "count": 200000,
+  "hash": "86664796b714af93838f11d8c37aebc3b895913671b9347d231072aed4772f80",
+  "left_index_distribution": {
+    "max": 6155.0,
+    "mean": 2898.40883,
+    "median": 2816.0,
+    "p10": 532.0,
+    "p90": 5424.0,
+    "p95": 5787.0
+  },
+  "limitation": "original sorted-key truncation biases pairs toward smaller indices; reproduced unchanged",
+  "right_index_distribution": {
+    "max": 20996.0,
+    "mean": 11935.607115,
+    "median": 12042.0,
+    "p10": 4686.0,
+    "p90": 19187.0,
+    "p95": 20091.0
+  }
+}

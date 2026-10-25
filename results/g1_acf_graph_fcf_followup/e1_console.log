@@ -1,0 +1,147 @@
+computing geodesic top-512 neighbors on cuda:0
+D:\diffusion_refined_charting\run_diffusion_refined_charting.py:30: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  d = torch.from_numpy(distances).to(device)
+computing geodesic top-512 neighbors on cuda:0
+Jacobi iteration 1/200
+Jacobi iteration 10/200
+Jacobi iteration 50/200
+Jacobi iteration 100/200
+Jacobi iteration 200/200
+Jacobi iteration 1/200
+Jacobi iteration 10/200
+Jacobi iteration 50/200
+Jacobi iteration 100/200
+Jacobi iteration 200/200
+Jacobi iteration 1/200
+Jacobi iteration 10/200
+Jacobi iteration 50/200
+Jacobi iteration 100/200
+Jacobi iteration 200/200
+Jacobi iteration 1/200
+Jacobi iteration 10/200
+Jacobi iteration 50/200
+Jacobi iteration 100/200
+Jacobi iteration 200/200
+{
+  "status": "completed",
+  "parameters": {
+    "top_k": 512,
+    "graph_k": 128,
+    "lambda_smooth": 0.15,
+    "iterations": 200
+  },
+  "graph_hash": "a800ec4a21980923f11ccc800b2c040df77be0eb306fa1b89143f7bb36b1a77a",
+  "graph_entries": 3088334,
+  "neighbor_hash": "c499e52e85d517ff542e0d5b6adbd9aead11518696ef536ec75cc5de07996e48",
+  "fresh_topk_repeat_exact": true,
+  "old_neighbor_cache": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic_top512.npy",
+  "old_neighbor_different_entries": 0,
+  "input_paths": {
+    "B0": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+    "G1-Identity": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+    "G1-Graph": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz"
+  },
+  "command": [
+    "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+    "D:\\diffusion_refined_charting\\methods\\g1_acf_graph_fcf\\run_stage2_comparison.py",
+    "--device",
+    "cuda:0",
+    "--out-root",
+    "results/g1_acf_graph_fcf_followup"
+  ],
+  "device": "cuda:0",
+  "repeat_solver_max_abs_diff": 0.000274658203125,
+  "graph_s2_minus_identity_s2": {
+    "ct": -1.2203759963247407e-05,
+    "tw": -1.6985482196529844e-05,
+    "ks": 0.00013312911449386844,
+    "mean_m": 0.0016910731792449951,
+    "median_m": 0.002261340618133545,
+    "p90_m": 7.355213165283203e-05,
+    "p95_m": 0.0007344484329223633,
+    "max_m": -0.013983011245727539
+  },
+  "historical_b0_s2_raw_max_abs_diff": 0.000244140625,
+  "total_time_s": 27.165565100003732,
+  "source_inputs_unchanged": true,
+  "results": {
+    "B0": {
+      "ct": 0.9957121024091857,
+      "tw": 0.9959871853305127,
+      "ks": 0.0840268307097306,
+      "mean_m": 0.409347265958786,
+      "median_m": 0.37222808599472046,
+      "p90_m": 0.7141520380973816,
+      "p95_m": 0.8557930588722229,
+      "max_m": 7.893630027770996,
+      "source_json": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+      "train_time_s": null,
+      "peak_vram_bytes": null
+    },
+    "G1-Identity": {
+      "ct": 0.9969656416128634,
+      "tw": 0.9968684174648,
+      "ks": 0.0794014101751083,
+      "mean_m": 0.3983430862426758,
+      "median_m": 0.36171627044677734,
+      "p90_m": 0.7139160633087158,
+      "p95_m": 0.8431971073150635,
+      "max_m": 1.4292629957199097,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\result.json",
+      "train_time_s": 5292.062650499996,
+      "peak_vram_bytes": 698310656
+    },
+    "G1-Graph": {
+      "ct": 0.9969470488290759,
+      "tw": 0.996848713648453,
+      "ks": 0.07933974003817006,
+      "mean_m": 0.39977070689201355,
+      "median_m": 0.3645780682563782,
+      "p90_m": 0.7144079804420471,
+      "p95_m": 0.8463372588157654,
+      "max_m": 1.4631786346435547,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\result.json",
+      "train_time_s": 6224.643790000002,
+      "peak_vram_bytes": 707461120
+    },
+    "B0+S2": {
+      "ct": 0.9982195961338866,
+      "tw": 0.9982226051315183,
+      "ks": 0.06506456933345191,
+      "mean_m": 0.31874796748161316,
+      "median_m": 0.2929167151451111,
+      "p90_m": 0.5586745738983154,
+      "p95_m": 0.6346397995948792,
+      "max_m": 1.1414315700531006,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e1_stage2\\b0\\result.json",
+      "train_time_s": null,
+      "peak_vram_bytes": 111771648
+    },
+    "G1-Identity+S2": {
+      "ct": 0.9981637814129259,
+      "tw": 0.9981591290374083,
+      "ks": 0.0665592638095388,
+      "mean_m": 0.32300427556037903,
+      "median_m": 0.29690203070640564,
+      "p90_m": 0.5654670000076294,
+      "p95_m": 0.6484394669532776,
+      "max_m": 1.1465619802474976,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e1_stage2\\g1_identity\\result.json",
+      "train_time_s": null,
+      "peak_vram_bytes": 111771648
+    },
+    "G1-Graph+S2": {
+      "ct": 0.9981515776529627,
+      "tw": 0.9981421435552118,
+      "ks": 0.06669239292403267,
+      "mean_m": 0.324695348739624,
+      "median_m": 0.2991633713245392,
+      "p90_m": 0.5655405521392822,
+      "p95_m": 0.6491739153862,
+      "max_m": 1.13257896900177,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e1_stage2\\g1_graph\\result.json",
+      "train_time_s": null,
+      "peak_vram_bytes": 111771648
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "adjacency": "graph",
+  "checkpoint": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\model_best.pt",
+  "eval": true,
+  "feature_chunk_size": 128,
+  "grad_enabled": false,
+  "margin": 51.49518966674805,
+  "validation_pair_hash": "86664796b714af93838f11d8c37aebc3b895913671b9347d231072aed4772f80"
+}

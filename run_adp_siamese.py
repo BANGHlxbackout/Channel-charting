@@ -96,26 +96,31 @@ def predict(model: nn.Module, h: np.ndarray, device: torch.device, batch_size: i
     return np.concatenate(out, axis=0)
 
 
-def plot_chart(path: Path, reference: np.ndarray, embedding: np.ndarray, title: str) -> None:
-    aligned = affine_transform(reference, embedding)
+def plot_chart(path: Path | None, reference: np.ndarray, embedding: np.ndarray, title: str,
+               *, axes=None, align: bool = True) -> None:
+    aligned = affine_transform(reference, embedding) if align else embedding
     colors = np.zeros((len(reference), 3), dtype=np.float32)
     colors[:, 0] = (reference[:, 0] - reference[:, 0].min()) / np.ptp(reference[:, 0])
     colors[:, 1] = (reference[:, 1] - reference[:, 1].min()) / np.ptp(reference[:, 1])
     colors[:, 2] = 0.25
 
-    fig, axes = plt.subplots(1, 2, figsize=(9, 4))
-    axes[0].scatter(reference[:, 0], reference[:, 1], c=colors, s=5, linewidths=0)
-    axes[0].set_title("Ground Truth")
-    axes[0].axis("equal")
-    axes[0].grid(True, alpha=0.25)
+    standalone = axes is None
+    if standalone:
+        fig, axes = plt.subplots(1, 2, figsize=(9, 4))
+    if axes[0] is not None:
+        axes[0].scatter(reference[:, 0], reference[:, 1], c=colors, s=5, linewidths=0)
+        axes[0].set_title("Ground Truth")
+        axes[0].axis("equal")
+        axes[0].grid(True, alpha=0.25)
     axes[1].scatter(aligned[:, 0], aligned[:, 1], c=colors, s=5, linewidths=0)
     axes[1].set_title(title)
     axes[1].axis("equal")
     axes[1].grid(True, alpha=0.25)
-    fig.tight_layout()
-    path.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(path, dpi=180)
-    plt.close(fig)
+    if standalone:
+        fig.tight_layout()
+        path.parent.mkdir(parents=True, exist_ok=True)
+        fig.savefig(path, dpi=180)
+        plt.close(fig)
 
 
 def main() -> None:

@@ -1,0 +1,123 @@
+{
+  "command": [
+    "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+    "D:\\diffusion_refined_charting\\methods\\g1_acf_graph_fcf\\run_stage2_comparison.py",
+    "--device",
+    "cuda:0",
+    "--out-root",
+    "results/g1_acf_graph_fcf_followup"
+  ],
+  "device": "cuda:0",
+  "fresh_topk_repeat_exact": true,
+  "graph_entries": 3088334,
+  "graph_hash": "a800ec4a21980923f11ccc800b2c040df77be0eb306fa1b89143f7bb36b1a77a",
+  "graph_s2_minus_identity_s2": {
+    "ct": -1.2203759963247407e-05,
+    "ks": 0.00013312911449386844,
+    "max_m": -0.013983011245727539,
+    "mean_m": 0.0016910731792449951,
+    "median_m": 0.002261340618133545,
+    "p90_m": 7.355213165283203e-05,
+    "p95_m": 0.0007344484329223633,
+    "tw": -1.6985482196529844e-05
+  },
+  "historical_b0_s2_raw_max_abs_diff": 0.000244140625,
+  "input_paths": {
+    "B0": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+    "G1-Graph": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+    "G1-Identity": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz"
+  },
+  "neighbor_hash": "c499e52e85d517ff542e0d5b6adbd9aead11518696ef536ec75cc5de07996e48",
+  "old_neighbor_cache": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic_top512.npy",
+  "old_neighbor_different_entries": 0,
+  "parameters": {
+    "graph_k": 128,
+    "iterations": 200,
+    "lambda_smooth": 0.15,
+    "top_k": 512
+  },
+  "repeat_solver_max_abs_diff": 0.000274658203125,
+  "results": {
+    "B0": {
+      "ct": 0.9957121024091857,
+      "ks": 0.0840268307097306,
+      "max_m": 7.893630027770996,
+      "mean_m": 0.409347265958786,
+      "median_m": 0.37222808599472046,
+      "p90_m": 0.7141520380973816,
+      "p95_m": 0.8557930588722229,
+      "peak_vram_bytes": null,
+      "source_json": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+      "train_time_s": null,
+      "tw": 0.9959871853305127
+    },
+    "B0+S2": {
+      "ct": 0.9982195961338866,
+      "ks": 0.06506456933345191,
+      "max_m": 1.1414315700531006,
+      "mean_m": 0.31874796748161316,
+      "median_m": 0.2929167151451111,
+      "p90_m": 0.5586745738983154,
+      "p95_m": 0.6346397995948792,
+      "peak_vram_bytes": 111771648,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e1_stage2\\b0\\result.json",
+      "train_time_s": null,
+      "tw": 0.9982226051315183
+    },
+    "G1-Graph": {
+      "ct": 0.9969470488290759,
+      "ks": 0.07933974003817006,
+      "max_m": 1.4631786346435547,
+      "mean_m": 0.39977070689201355,
+      "median_m": 0.3645780682563782,
+      "p90_m": 0.7144079804420471,
+      "p95_m": 0.8463372588157654,
+      "peak_vram_bytes": 707461120,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\result.json",
+      "train_time_s": 6224.643790000002,
+      "tw": 0.996848713648453
+    },
+    "G1-Graph+S2": {
+      "ct": 0.9981515776529627,
+      "ks": 0.06669239292403267,
+      "max_m": 1.13257896900177,
+      "mean_m": 0.324695348739624,
+      "median_m": 0.2991633713245392,
+      "p90_m": 0.5655405521392822,
+      "p95_m": 0.6491739153862,
+      "peak_vram_bytes": 111771648,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e1_stage2\\g1_graph\\result.json",
+      "train_time_s": null,
+      "tw": 0.9981421435552118
+    },
+    "G1-Identity": {
+      "ct": 0.9969656416128634,
+      "ks": 0.0794014101751083,
+      "max_m": 1.4292629957199097,
+      "mean_m": 0.3983430862426758,
+      "median_m": 0.36171627044677734,
+      "p90_m": 0.7139160633087158,
+      "p95_m": 0.8431971073150635,
+      "peak_vram_bytes": 698310656,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\result.json",
+      "train_time_s": 5292.062650499996,
+      "tw": 0.9968684174648
+    },
+    "G1-Identity+S2": {
+      "ct": 0.9981637814129259,
+      "ks": 0.0665592638095388,
+      "max_m": 1.1465619802474976,
+      "mean_m": 0.32300427556037903,
+      "median_m": 0.29690203070640564,
+      "p90_m": 0.5654670000076294,
+      "p95_m": 0.6484394669532776,
+      "peak_vram_bytes": 111771648,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e1_stage2\\g1_identity\\result.json",
+      "train_time_s": null,
+      "tw": 0.9981591290374083
+    }
+  },
+  "source_inputs_unchanged": true,
+  "status": "completed",
+  "total_time_s": 27.165565100003732
+}

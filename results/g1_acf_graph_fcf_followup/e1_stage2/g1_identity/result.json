@@ -1,0 +1,29 @@
+{
+  "graph_hash": "a800ec4a21980923f11ccc800b2c040df77be0eb306fa1b89143f7bb36b1a77a",
+  "graph_k": 128,
+  "input_embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+  "iterations": 200,
+  "lambda_smooth": 0.15,
+  "localization_errors_after_affine": {
+    "max_m": 1.1465619802474976,
+    "mean_m": 0.32300427556037903,
+    "median_m": 0.29690203070640564,
+    "p90_m": 0.5654670000076294,
+    "p95_m": 0.6484394669532776
+  },
+  "method": "G1-Identity+S2",
+  "metrics": {
+    "ct": 0.9981637814129259,
+    "ks": 0.0665592638095388,
+    "tw": 0.9981591290374083
+  },
+  "num_samples": 20997,
+  "peak_vram_bytes": 111771648,
+  "phase": "full_postprocessing",
+  "postprocess_time_s": 0.3439958000089973,
+  "protocol": "same-node transductive; GT used only after refinement",
+  "relative_system_residual": 2.8154654501122423e-06,
+  "seed": 10,
+  "status": "completed",
+  "top_k": 512
+}

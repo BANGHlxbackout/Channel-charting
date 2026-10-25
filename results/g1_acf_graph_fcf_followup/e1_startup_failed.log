@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\diffusion_refined_charting\methods\g1_acf_graph_fcf\run_stage2_comparison.py", line 171, in <module>
+    run(parser.parse_args())
+  File "D:\diffusion_refined_charting\methods\g1_acf_graph_fcf\run_stage2_comparison.py", line 97, in run
+    torch.cuda.reset_peak_memory_stats(device)
+  File "D:\anaconda3\envs\diffusion_charting\Lib\site-packages\torch\cuda\memory.py", line 376, in reset_peak_memory_stats
+    return torch._C._cuda_resetPeakMemoryStats(device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Invalid device argument 

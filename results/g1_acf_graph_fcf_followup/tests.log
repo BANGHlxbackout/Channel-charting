@@ -1,0 +1,31 @@
+D:\diffusion_refined_charting\methods\g1_acf_graph_fcf\graph_utils.py:119: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\Context.cpp:767.)
+  return torch.sparse_coo_tensor(torch.stack((axis, axis)), torch.ones(n), (n, n)).coalesce()
+Jacobi iteration 1/200
+Jacobi iteration 10/200
+Jacobi iteration 50/200
+Jacobi iteration 100/200
+Jacobi iteration 200/200
+Jacobi iteration 1/200
+Jacobi iteration 10/200
+Jacobi iteration 50/200
+Jacobi iteration 100/200
+Jacobi iteration 200/200
+Jacobi iteration 1/200
+Jacobi iteration 10/200
+Jacobi iteration 50/200
+Jacobi iteration 100/200
+Jacobi iteration 200/200
+Jacobi iteration 1/200
+Jacobi iteration 10/200
+Jacobi iteration 50/200
+Jacobi iteration 100/200
+Jacobi iteration 200/200
+Jacobi iteration 1/200
+Jacobi iteration 10/200
+Jacobi iteration 50/200
+Jacobi iteration 100/200
+Jacobi iteration 200/200
+----------------------------------------------------------------------
+Ran 10 tests in 4.477s
+
+OK

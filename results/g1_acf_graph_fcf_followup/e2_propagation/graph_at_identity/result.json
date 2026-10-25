@@ -1,0 +1,60 @@
+{
+  "checkpoint_mode": "graph",
+  "inference_time_s": 1.434338299994124,
+  "layer_statistics": {
+    "layer0_delta_over_h": {
+      "max": 1.6225217580795288,
+      "mean": 0.7744808197021484,
+      "median": 0.8239341974258423,
+      "p10": 0.27620917558670044,
+      "p90": 1.1979156732559204,
+      "p95": 1.2812883853912354
+    },
+    "layer0_message_minus_self_over_h": {
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "p10": 0.0,
+      "p90": 0.0,
+      "p95": 0.0
+    },
+    "layer1_delta_over_h": {
+      "max": 1.149610161781311,
+      "mean": 0.5791991949081421,
+      "median": 0.5943725109100342,
+      "p10": 0.24402225017547607,
+      "p90": 0.871346652507782,
+      "p95": 0.9153739213943481
+    },
+    "layer1_message_minus_self_over_h": {
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "p10": 0.0,
+      "p90": 0.0,
+      "p95": 0.0
+    }
+  },
+  "localization_errors_after_affine": {
+    "max_m": 8.185935020446777,
+    "mean_m": 0.49134311079978943,
+    "median_m": 0.43852001428604126,
+    "p90_m": 0.8722503185272217,
+    "p95_m": 1.0251227617263794
+  },
+  "method": "Graph ckpt @ I",
+  "metrics": {
+    "ct": 0.9910641742481403,
+    "ks": 0.0996216403319853,
+    "tw": 0.9906330631114728
+  },
+  "num_samples": 20997,
+  "peak_vram_bytes": 400580096,
+  "phase": "frozen_checkpoint_diagnostic",
+  "protocol": "post-training adjacency sensitivity; not retraining",
+  "seed": 10,
+  "source_checkpoint": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\model_best.pt",
+  "state_unchanged": true,
+  "status": "completed",
+  "stress": 3.2089521884918213
+}

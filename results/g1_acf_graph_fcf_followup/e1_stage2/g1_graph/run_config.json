@@ -1,0 +1,9 @@
+{
+  "device": "cuda:0",
+  "graph_k": 128,
+  "iterations": 200,
+  "lambda_smooth": 0.15,
+  "seed": 10,
+  "source": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+  "top_k": 512
+}

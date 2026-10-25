@@ -1,0 +1,21 @@
+{
+  "aligned_keys": {
+    "Graph ckpt @ Graph": "graph_ckpt_graph",
+    "Graph ckpt @ I": "graph_ckpt_i",
+    "Identity ckpt @ I": "identity_ckpt_i"
+  },
+  "alignment": "separate affine fit and evaluation on all identical N nodes",
+  "chart_quality": "same-node transductive; no held-out claim",
+  "colors": "same GT x/y mapping in all four panels",
+  "embeddings": {
+    "Graph ckpt @ Graph": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e2_propagation\\graph_at_graph\\embedding.npz",
+    "Graph ckpt @ I": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e2_propagation\\graph_at_identity\\embedding.npz",
+    "Identity ckpt @ I": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e2_propagation\\identity_at_identity\\embedding.npz"
+  },
+  "metric_subset_path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e2_propagation\\comparison\\metric_subset_seed10.npy",
+  "metric_subset_size": 4199,
+  "metric_subset_source": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\metric_subset_seed10.npy",
+  "num_samples": 20997,
+  "plot_function": "run_adp_siamese.plot_chart (external axes; align=False for raw)",
+  "seed": 10
+}

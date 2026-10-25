@@ -1,0 +1,20 @@
+{
+  "protected_source_files_and_distance_directory_unchanged": true,
+  "tests_passed": 10,
+  "stages": {
+    "e1_stage2": {
+      "status": "completed",
+      "comparison_rows": 6,
+      "same_frozen_eval_subset": true,
+      "csv_matches_source_json": true
+    },
+    "e2_propagation": {
+      "status": "completed",
+      "comparison_rows": 3,
+      "same_frozen_eval_subset": true,
+      "csv_matches_source_json": true
+    }
+  },
+  "optional_identity_at_graph": "not executed",
+  "new_training": "none"
+}

@@ -1,0 +1,62 @@
+{
+  "checkpoint_mode": "identity",
+  "inference_time_s": 1.537622800009558,
+  "layer_statistics": {
+    "layer0_delta_over_h": {
+      "max": 1.5008585453033447,
+      "mean": 0.6378927230834961,
+      "median": 0.6246702075004578,
+      "p10": 0.22660870850086212,
+      "p90": 1.1117910146713257,
+      "p95": 1.1904683113098145
+    },
+    "layer0_message_minus_self_over_h": {
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "p10": 0.0,
+      "p90": 0.0,
+      "p95": 0.0
+    },
+    "layer1_delta_over_h": {
+      "max": 0.6794170141220093,
+      "mean": 0.3145860731601715,
+      "median": 0.3225589394569397,
+      "p10": 0.19216389954090118,
+      "p90": 0.41919848322868347,
+      "p95": 0.4558468163013458
+    },
+    "layer1_message_minus_self_over_h": {
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "p10": 0.0,
+      "p90": 0.0,
+      "p95": 0.0
+    }
+  },
+  "localization_errors_after_affine": {
+    "max_m": 1.4292629957199097,
+    "mean_m": 0.3983430862426758,
+    "median_m": 0.36171627044677734,
+    "p90_m": 0.7139160633087158,
+    "p95_m": 0.8431971073150635
+  },
+  "method": "Identity ckpt @ I",
+  "metrics": {
+    "ct": 0.9969656416128634,
+    "ks": 0.0794014101751083,
+    "tw": 0.9968684174648
+  },
+  "native_embedding_max_abs_diff": 0.0,
+  "num_samples": 20997,
+  "peak_vram_bytes": 400580096,
+  "phase": "frozen_checkpoint_diagnostic",
+  "protocol": "post-training adjacency sensitivity; not retraining",
+  "seed": 10,
+  "source_checkpoint": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\model_best.pt",
+  "state_unchanged": true,
+  "status": "completed",
+  "stored_validation_stress": 1.8625240325927734,
+  "stress": 1.8625240325927734
+}

@@ -1,0 +1,276 @@
+{
+  "checks": {
+    "B0": {
+      "indices_equal": true,
+      "positions_equal": true,
+      "shape": [
+        20997,
+        2
+      ],
+      "finite": true,
+      "std": [
+        163.082275390625,
+        167.1175537109375
+      ]
+    },
+    "G1-Identity": {
+      "indices_equal": true,
+      "positions_equal": true,
+      "shape": [
+        20997,
+        2
+      ],
+      "finite": true,
+      "std": [
+        156.99842834472656,
+        176.4513702392578
+      ]
+    },
+    "G1-Graph": {
+      "indices_equal": true,
+      "positions_equal": true,
+      "shape": [
+        20997,
+        2
+      ],
+      "finite": true,
+      "std": [
+        169.0200653076172,
+        165.43154907226562
+      ]
+    },
+    "geodesic": {
+      "shape": [
+        20997,
+        20997
+      ],
+      "zero_diagonal": true,
+      "off_diagonal_zeros": 0
+    }
+  },
+  "protected_inputs": [
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic.npy",
+      "size": 1763496164,
+      "mtime_ns": 1780305588638840000
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\fused.npy",
+      "size": 1763496164,
+      "mtime_ns": 1780305587603602700
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\distance_data.npz",
+      "size": 336470,
+      "mtime_ns": 1780316652949345200
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\datasets\\adp_old_shard4\\H.npy",
+      "size": 69878144,
+      "mtime_ns": 1780304727771711200
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\datasets\\adp_old_shard4\\timestamps.npy",
+      "size": 84116,
+      "mtime_ns": 1780304727772709200
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\metric_subset_seed10.npy",
+      "size": 33720,
+      "mtime_ns": 1792224425788686600
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+      "size": 504696,
+      "mtime_ns": 1780328672560500600
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+      "size": 504696,
+      "mtime_ns": 1792136626360185500
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+      "size": 504696,
+      "mtime_ns": 1792131277286712600
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\model_best.pt",
+      "size": 56660853,
+      "mtime_ns": 1792136423070039600
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\model_last.pt",
+      "size": 56660853,
+      "mtime_ns": 1792136621005488900
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\run_config.json",
+      "size": 1534,
+      "mtime_ns": 1792138419088490800
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\result.json",
+      "size": 1523,
+      "mtime_ns": 1792136627168086200
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\graph_metadata.json",
+      "size": 1933,
+      "mtime_ns": 1792131323874544500
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\feature_metadata.json",
+      "size": 408,
+      "mtime_ns": 1792131323909984400
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\_feature_cache\\acf_n20997_58907b6356b2.npy",
+      "size": 2236096640,
+      "mtime_ns": 1792124118135243900
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\_feature_cache\\acf_n20997_58907b6356b2.json",
+      "size": 317,
+      "mtime_ns": 1792124121920088900
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\model_best.pt",
+      "size": 56660853,
+      "mtime_ns": 1792131069748646400
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\model_last.pt",
+      "size": 56660853,
+      "mtime_ns": 1792131272718625500
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\run_config.json",
+      "size": 1528,
+      "mtime_ns": 1792138418996502400
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\result.json",
+      "size": 1523,
+      "mtime_ns": 1792131277883370900
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\graph_metadata.json",
+      "size": 1930,
+      "mtime_ns": 1792125043274126000
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\feature_metadata.json",
+      "size": 408,
+      "mtime_ns": 1792125043317874900
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\adp.npy",
+      "size": 1763496164,
+      "mtime_ns": 1780305397209754100
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\chart.png",
+      "size": 449872,
+      "mtime_ns": 1780316653814141800
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\embedding.npz",
+      "size": 672672,
+      "mtime_ns": 1780316652946344800
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic_top512.npy",
+      "size": 43001984,
+      "mtime_ns": 1780332057454220400
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\result.json",
+      "size": 877,
+      "mtime_ns": 1780316652965339200
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\chart.png",
+      "size": 466844,
+      "mtime_ns": 1792138774553306000
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\model.pt",
+      "size": 111887582,
+      "mtime_ns": 1780328668704994300
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+      "size": 2224,
+      "mtime_ns": 1792138774277429800
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\diffusion_refined_charting\\stride1_n20997_k128_lambda0.15_seed10\\embedding.npz",
+      "size": 504696,
+      "mtime_ns": 1783587548211066300
+    }
+  ],
+  "git_branch": "codex/new-stage1",
+  "initial_git_status": " D CF_HRD/README.md\n D CF_HRD/__init__.py\n D CF_HRD/closed_loop_validation.md\n D CF_HRD/plot_residual_student_charts.py\n D CF_HRD/run_cross_fitted_teacher.py\n D CF_HRD/run_landmark_context.py\n D CF_HRD/run_residual_student.py\n D CF_HRD/run_stage5_evaluation.py\nA  codex_idea/02_multiview_edge_uncertainty_geodesic_plan.md\n D codex_idea/cross_fitted_harmonic_residual_distillation.md\nA  codex_idea/multiview_edge_uncertainty_2023_2026.md\n M common_metrics.py\n D docs/tasks/sc2_stage2_edge_consensus.md\n M run_adp_siamese.py\n?? .codex/\n?? AGENTS.md\n?? archive/\n?? codex_idea/archive/\n?? docs/PROJECT_GUIDE.md\n?? docs/research/\n?? docs/superpowers/plans/2026-07-09-smoothness-audited-adaptive-diffusion.md\n?? docs/tasks/D1_2026-10-17.md\n?? docs/tasks/G1_ACF_2026-10-17.md\n?? docs/tasks/G1_GraphFCF.md\n?? docs/tasks/G1_S2_2026-10-17.md\n?? docs/tasks/archive/\n?? docs/tasks/baseline_optimization_next_cycle.md\n?? docs/tasks/geodesic_stage1_loss.md\n?? docs/tasks/phase2c_empirical_diagnosis.md\n?? methods/g1_acf_graph_fcf/\n?? methods/multiview_edge_uncertainty/\n?? methods/sc2_stage2_adaptive_fidelity/\n?? run_smoothness_audited_refined_charting.py\n?? tests/test_g1_acf_graph_fcf.py\n?? tests/test_multiview_adp_gate0.py\n?? tests/test_sc2_stage2_adaptive_fidelity.py\n",
+  "historical_stage2": {
+    "commit": "61178b5",
+    "path": "results/diffusion_refined_charting/stride1_n20997_k128_lambda0.15_seed10/result.json",
+    "result": {
+      "baseline_localization_errors_after_affine": {
+        "max_m": 7.893630027770996,
+        "mean_m": 0.409347265958786,
+        "median_m": 0.37222808599472046,
+        "p90_m": 0.7141520380973816,
+        "p95_m": 0.8557930588722229
+      },
+      "baseline_metrics": {
+        "ct": 0.9957121024091857,
+        "ks": 0.0840268307097306,
+        "n_neighbors": 209,
+        "tw": 0.9959871853305127
+      },
+      "dataset": "datasets\\adp_old_shard4",
+      "distance_run": "results\\adp_old_fused\\stride1_n20997_seed10",
+      "elapsed_s": 8.079510927200317,
+      "graph_edges": 3088334,
+      "graph_k": 128,
+      "idea": "Estimate the UE manifold Laplace-Beltrami operator from the ADP/time geodesic graph, then solve a graph-harmonic Tikhonov problem that denoises the neural FCF chart while preserving the intrinsic channel manifold.",
+      "init_embedding": "results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+      "iterations": 200,
+      "lambda_smooth": 0.15,
+      "localization_errors_after_affine": {
+        "max_m": 1.1414309740066528,
+        "mean_m": 0.31874796748161316,
+        "median_m": 0.2929162085056305,
+        "p90_m": 0.5586743354797363,
+        "p95_m": 0.6346393823623657
+      },
+      "method": "Graph-harmonic diffusion refinement of ADP/time geodesic channel charts",
+      "metric_subset_fraction": 0.2,
+      "metric_subset_size": 4199,
+      "metrics": {
+        "ct": 0.9982195920276415,
+        "ks": 0.06506457375183232,
+        "n_neighbors": 209,
+        "tw": 0.9982226051315183
+      },
+      "num_samples": 20997,
+      "paper_context": "new method on the ADP-native DICHASUS channel charting dataset",
+      "run_name": "stride1_n20997_k128_lambda0.15_seed10",
+      "seed": 10,
+      "stride": 1,
+      "top_k": 512
+    }
+  },
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "distance_dir_listing": [
+    "adp.npy",
+    "chart.png",
+    "distance_data.npz",
+    "embedding.npz",
+    "fused.npy",
+    "geodesic.npy",
+    "geodesic_top512.npy",
+    "result.json"
+  ]
+}

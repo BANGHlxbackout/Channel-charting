@@ -1,0 +1,29 @@
+{
+  "graph_hash": "a800ec4a21980923f11ccc800b2c040df77be0eb306fa1b89143f7bb36b1a77a",
+  "graph_k": 128,
+  "input_embedding": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+  "iterations": 200,
+  "lambda_smooth": 0.15,
+  "localization_errors_after_affine": {
+    "max_m": 1.1414315700531006,
+    "mean_m": 0.31874796748161316,
+    "median_m": 0.2929167151451111,
+    "p90_m": 0.5586745738983154,
+    "p95_m": 0.6346397995948792
+  },
+  "method": "B0+S2",
+  "metrics": {
+    "ct": 0.9982195961338866,
+    "ks": 0.06506456933345191,
+    "tw": 0.9982226051315183
+  },
+  "num_samples": 20997,
+  "peak_vram_bytes": 111771648,
+  "phase": "full_postprocessing",
+  "postprocess_time_s": 0.41784650000045076,
+  "protocol": "same-node transductive; GT used only after refinement",
+  "relative_system_residual": 2.7449884782981826e-06,
+  "seed": 10,
+  "status": "completed",
+  "top_k": 512
+}

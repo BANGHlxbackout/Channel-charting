@@ -1,0 +1,31 @@
+{
+  "graph": {
+    "required_files_present": true,
+    "history_steps_exact": true,
+    "finite_loss_and_lr": true,
+    "best_matches_validation_minimum": true,
+    "indices_match_b0": true,
+    "finite_embedding": true,
+    "geodesic_mismatch_count": 0
+  },
+  "identity": {
+    "required_files_present": true,
+    "history_steps_exact": true,
+    "finite_loss_and_lr": true,
+    "best_matches_validation_minimum": true,
+    "indices_match_b0": true,
+    "finite_embedding": true,
+    "geodesic_mismatch_count": 0
+  },
+  "same_state_shapes": true,
+  "same_validation_pairs": true,
+  "same_first_train_pairs": true,
+  "combined_training_hours": 3.1990851223611108,
+  "budget_within_6_hours": true,
+  "maintenance": {
+    "code_directory": "methods/g1_acf_graph_fcf",
+    "relocated_tests_passed": 5,
+    "legacy_default_plot_pixels_unchanged": true,
+    "b0_original_result_and_chart_restored_from": "61178b5"
+  }
+}

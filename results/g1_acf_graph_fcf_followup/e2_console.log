@@ -1,0 +1,272 @@
+D:\diffusion_refined_charting\methods\g1_acf_graph_fcf\graph_utils.py:101: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\Context.cpp:767.)
+  adj = torch.sparse_coo_tensor(indices, values_t, (n, n)).coalesce()
+{
+  "status": "completed",
+  "command": [
+    "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+    "D:\\diffusion_refined_charting\\methods\\g1_acf_graph_fcf\\diagnose_graph_propagation.py",
+    "--device",
+    "cuda:0",
+    "--out-root",
+    "results/g1_acf_graph_fcf_followup"
+  ],
+  "path_audit": {
+    "source_ids": [
+      0,
+      677,
+      1354,
+      2031,
+      2709,
+      3386,
+      4063,
+      4741,
+      5418,
+      6095,
+      6772,
+      7450,
+      8127,
+      8804,
+      9482,
+      10159,
+      10836,
+      11513,
+      12191,
+      12868,
+      13545,
+      14223,
+      14900,
+      15577,
+      16254,
+      16932,
+      17609,
+      18286,
+      18964,
+      19641,
+      20318,
+      20996
+    ],
+    "max_abs_diff": 0.0,
+    "mismatch_count": 0,
+    "atol": 0.0001,
+    "directed_entries": 419940
+  },
+  "affinity": {
+    "undirected_edges": 228773,
+    "reciprocal_asymmetric_pairs": 2759,
+    "reciprocal_max_abs_diff": 1.1444091796875e-05,
+    "affinity_min": 3.5593705835248664e-19,
+    "affinity_max": 0.9999900460243225
+  },
+  "validation_pairs": {
+    "hash": "86664796b714af93838f11d8c37aebc3b895913671b9347d231072aed4772f80",
+    "count": 200000,
+    "left_index_distribution": {
+      "mean": 2898.40883,
+      "median": 2816.0,
+      "p10": 532.0,
+      "p90": 5424.0,
+      "p95": 5787.0,
+      "max": 6155.0
+    },
+    "right_index_distribution": {
+      "mean": 11935.607115,
+      "median": 12042.0,
+      "p10": 4686.0,
+      "p90": 19187.0,
+      "p95": 20091.0,
+      "max": 20996.0
+    },
+    "limitation": "original sorted-key truncation biases pairs toward smaller indices; reproduced unchanged"
+  },
+  "native_tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "probes": {
+    "Graph ckpt @ Graph": {
+      "checkpoint_mode": "graph",
+      "stress": 1.8726577758789062,
+      "inference_time_s": 4.120211799978279,
+      "peak_vram_bytes": 400580096,
+      "state_unchanged": true,
+      "layer_statistics": {
+        "layer0_delta_over_h": {
+          "mean": 0.8087694644927979,
+          "median": 0.859599769115448,
+          "p10": 0.26231318712234497,
+          "p90": 1.276909589767456,
+          "p95": 1.3599258661270142,
+          "max": 1.7305636405944824
+        },
+        "layer0_message_minus_self_over_h": {
+          "mean": 0.36091679334640503,
+          "median": 0.35722047090530396,
+          "p10": 0.15268196165561676,
+          "p90": 0.5650457143783569,
+          "p95": 0.6273682713508606,
+          "max": 2.656461715698242
+        },
+        "layer1_delta_over_h": {
+          "mean": 0.5719922780990601,
+          "median": 0.5977045893669128,
+          "p10": 0.23621153831481934,
+          "p90": 0.8421987891197205,
+          "p95": 0.8778864145278931,
+          "max": 1.0774953365325928
+        },
+        "layer1_message_minus_self_over_h": {
+          "mean": 0.2502385079860687,
+          "median": 0.23958800733089447,
+          "p10": 0.12167062610387802,
+          "p90": 0.3906515836715698,
+          "p95": 0.43853244185447693,
+          "max": 3.4395811557769775
+        }
+      },
+      "native_embedding_max_abs_diff": 6.103515625e-05,
+      "stored_validation_stress": 1.8726577758789062
+    },
+    "Identity ckpt @ I": {
+      "checkpoint_mode": "identity",
+      "stress": 1.8625240325927734,
+      "inference_time_s": 1.537622800009558,
+      "peak_vram_bytes": 400580096,
+      "state_unchanged": true,
+      "layer_statistics": {
+        "layer0_delta_over_h": {
+          "mean": 0.6378927230834961,
+          "median": 0.6246702075004578,
+          "p10": 0.22660870850086212,
+          "p90": 1.1117910146713257,
+          "p95": 1.1904683113098145,
+          "max": 1.5008585453033447
+        },
+        "layer0_message_minus_self_over_h": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p10": 0.0,
+          "p90": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "layer1_delta_over_h": {
+          "mean": 0.3145860731601715,
+          "median": 0.3225589394569397,
+          "p10": 0.19216389954090118,
+          "p90": 0.41919848322868347,
+          "p95": 0.4558468163013458,
+          "max": 0.6794170141220093
+        },
+        "layer1_message_minus_self_over_h": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p10": 0.0,
+          "p90": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        }
+      },
+      "native_embedding_max_abs_diff": 0.0,
+      "stored_validation_stress": 1.8625240325927734
+    },
+    "Graph ckpt @ I": {
+      "checkpoint_mode": "graph",
+      "stress": 3.2089521884918213,
+      "inference_time_s": 1.434338299994124,
+      "peak_vram_bytes": 400580096,
+      "state_unchanged": true,
+      "layer_statistics": {
+        "layer0_delta_over_h": {
+          "mean": 0.7744808197021484,
+          "median": 0.8239341974258423,
+          "p10": 0.27620917558670044,
+          "p90": 1.1979156732559204,
+          "p95": 1.2812883853912354,
+          "max": 1.6225217580795288
+        },
+        "layer0_message_minus_self_over_h": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p10": 0.0,
+          "p90": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "layer1_delta_over_h": {
+          "mean": 0.5791991949081421,
+          "median": 0.5943725109100342,
+          "p10": 0.24402225017547607,
+          "p90": 0.871346652507782,
+          "p95": 0.9153739213943481,
+          "max": 1.149610161781311
+        },
+        "layer1_message_minus_self_over_h": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p10": 0.0,
+          "p90": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        }
+      }
+    }
+  },
+  "graph_checkpoint_raw_displacement": {
+    "mean": 15.747148513793945,
+    "median": 12.967082977294922,
+    "p10": 3.308398485183716,
+    "p90": 30.34915542602539,
+    "p95": 37.69942855834961,
+    "max": 459.03118896484375,
+    "unit": "raw chart coordinates",
+    "relative_centered_rms": 0.09259460121393204
+  },
+  "stress_change": {
+    "absolute": 1.336294412612915,
+    "relative": 0.7135817498665733
+  },
+  "chart_evaluation": {
+    "Graph ckpt @ Graph": {
+      "ct": 0.9969470488290759,
+      "tw": 0.996848713648453,
+      "ks": 0.07933973995757644,
+      "mean_m": 0.39977070689201355,
+      "median_m": 0.3645780682563782,
+      "p90_m": 0.7144079804420471,
+      "p95_m": 0.8463372588157654,
+      "max_m": 1.4631786346435547,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e2_propagation\\graph_at_graph\\result.json",
+      "train_time_s": null,
+      "peak_vram_bytes": 400580096
+    },
+    "Graph ckpt @ I": {
+      "ct": 0.9910641742481403,
+      "tw": 0.9906330631114728,
+      "ks": 0.0996216403319853,
+      "mean_m": 0.49134311079978943,
+      "median_m": 0.43852001428604126,
+      "p90_m": 0.8722503185272217,
+      "p95_m": 1.0251227617263794,
+      "max_m": 8.185935020446777,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e2_propagation\\graph_at_identity\\result.json",
+      "train_time_s": null,
+      "peak_vram_bytes": 400580096
+    },
+    "Identity ckpt @ I": {
+      "ct": 0.9969656416128634,
+      "tw": 0.9968684174648,
+      "ks": 0.0794014101751083,
+      "mean_m": 0.3983430862426758,
+      "median_m": 0.36171627044677734,
+      "p90_m": 0.7139160633087158,
+      "p95_m": 0.8431971073150635,
+      "max_m": 1.4292629957199097,
+      "source_json": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf_followup\\e2_propagation\\identity_at_identity\\result.json",
+      "train_time_s": null,
+      "peak_vram_bytes": 400580096
+    }
+  },
+  "total_time_s": 38.79805410001427,
+  "source_inputs_unchanged": true,
+  "optional_identity_at_graph": "not executed"
+}
