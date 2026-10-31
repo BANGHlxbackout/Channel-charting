@@ -1,0 +1,39 @@
+{
+  "cg": {
+    "atol": 0.0,
+    "dtype": "float64",
+    "info": [
+      0,
+      0
+    ],
+    "iterations": [
+      42,
+      42
+    ],
+    "maxiter": 5000,
+    "normalized_relative_residuals": [
+      9.950824284571387e-11,
+      8.908312353513265e-11
+    ],
+    "preconditioner": "inverse diagonal of I+lambda L",
+    "raw_relative_residuals": [
+      9.950824665322653e-11,
+      8.908313108193592e-11
+    ],
+    "rtol": 1e-10,
+    "time_s": 0.6631909999996424
+  },
+  "cg_minus_jacobi_raw": {
+    "max_abs": 0.0002034362278777735,
+    "rms_per_node": 4.251557790204387e-05
+  },
+  "jacobi": {
+    "dtype": "float32, original function unchanged",
+    "iterations": 200,
+    "peak_vram_bytes": 111771648,
+    "relative_raw_linear_residual": 2.345189742450161e-06,
+    "time_s": 0.47659900004509836
+  },
+  "objective": "0.5||U-X||_F^2 + 0.15/2 ||sqrt(W) D U||_F^2; each undirected edge once",
+  "target": "(I+0.15*L)Z=Y; equivalently normalized (I+0.15*L)U=X"
+}

@@ -1,0 +1,17 @@
+{
+  "dataset": "datasets\\adp_old_shard4",
+  "elapsed_s": 165.19452381134033,
+  "gamma_train": 13.316666603088379,
+  "geodesic_shape": [
+    16798,
+    16798
+  ],
+  "neighbors": 20,
+  "num_samples": 20997,
+  "num_test": 4199,
+  "num_train": 16798,
+  "protocol": "heldout_train_graph",
+  "seed": 10,
+  "seed10_historical_visibility": true,
+  "source_full_distance_run": "results\\adp_old_fused\\stride1_n20997_seed10"
+}

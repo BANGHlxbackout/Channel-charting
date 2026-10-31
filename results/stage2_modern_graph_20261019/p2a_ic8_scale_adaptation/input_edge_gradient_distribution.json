@@ -1,0 +1,74 @@
+{
+  "N": 20997,
+  "W_IC": "original W / undirected positive edge mean",
+  "inputs": [
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+      "sha256": "8382214735e441f2b18905c9e6faa490674d7b0837717170ca3489d01d832d8e"
+    },
+    {
+      "bytes": 11572308,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\G128.npz",
+      "sha256": "7bc0a6ba32199ce248bea5cba886b26953a34b5bb27e08c7b9b60656883231ee"
+    },
+    {
+      "bytes": 4854775,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\incidence_D.npz",
+      "sha256": "e719adc3f518d6432733b62945c7d21d7dfa30a0ba52579fc1196bf33b00e257"
+    },
+    {
+      "bytes": 24959930,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\edges_and_degrees.npz",
+      "sha256": "4279c0c0ab552ea94633bf22248b8e5b2ef3d26c9a5b84c7e9bc013aa5b7ccfd"
+    },
+    {
+      "bytes": 1009100,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\chart_gauge.npz",
+      "sha256": "fe8d9efdf15a9cb1c006d35dad083e35f2a973634c660e0e93626c6eca682ac1"
+    }
+  ],
+  "max": 1.935718227531024,
+  "mean": 0.06411054750315522,
+  "min": 0.0,
+  "old_alpha_input_coverage": [
+    {
+      "alpha": 0.2,
+      "edge_exceed_fraction": 0.2275731834704407,
+      "kappa": 0.125,
+      "pooled_exceed_fraction": 0.12036262917158572
+    },
+    {
+      "alpha": 0.5,
+      "edge_exceed_fraction": 0.0019414998507285804,
+      "kappa": 0.5,
+      "pooled_exceed_fraction": 0.0014036694217659101
+    },
+    {
+      "alpha": 0.8,
+      "edge_exceed_fraction": 0.0,
+      "kappa": 2.0000000000000004,
+      "pooled_exceed_fraction": 0.0
+    }
+  ],
+  "pool_definition": "abs(sqrt(W_IC) D X), both scalar coordinates pooled",
+  "pool_entries": 3088334,
+  "pool_sha256": "e13b97dd3e80548b723c2db824dad3d31b956a9f8b31f2af0d8a03db2a64d139",
+  "quantile_method": "linear",
+  "quantiles": {
+    "0.0": 0.0,
+    "0.01": 0.0008676536676901855,
+    "0.05": 0.004394001394548059,
+    "0.1": 0.008886528844380926,
+    "0.25": 0.02328561233446514,
+    "0.5": 0.05129956984293113,
+    "0.75": 0.09047887447575893,
+    "0.9": 0.1330142975246524,
+    "0.95": 0.1614905933767557,
+    "0.99": 0.22579795228060293,
+    "0.995": 0.2624168804298217,
+    "0.999": 0.7449758524895358,
+    "1.0": 1.935718227531024
+  },
+  "undirected_edges": 1544167
+}

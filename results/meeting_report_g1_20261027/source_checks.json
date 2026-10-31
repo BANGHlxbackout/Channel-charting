@@ -1,0 +1,30 @@
+{
+  "status": "source_checks_passed",
+  "template": "D:\\diffusion_refined_charting\\tools\\meeting_report\\reference_2026_10_21.docx",
+  "template_sha256": "b575cf9328ffdf756bbc77fe0589e7012a9b29a9286c384ebab99cbb579f94ff",
+  "comparison_csv": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\comparison.csv",
+  "eval_protocol": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\eval_protocol.json",
+  "technical_report": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\REPORT.md",
+  "methods": [
+    "B0",
+    "G1-Identity",
+    "G1-Graph"
+  ],
+  "source_json": [
+    "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+    "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\result.json",
+    "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\result.json"
+  ],
+  "figures": [
+    "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\four_column_raw_channel_chart.png",
+    "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\four_column_affine_channel_chart.png"
+  ],
+  "supplementary_figure": {
+    "path": "results/meeting_report_g1_20261027/affine_error_cdf.png",
+    "source_npz": "results/g1_acf_graph_fcf/comparison/aligned_charts.npz",
+    "width_cm": 8.6,
+    "caption": "图 5  三组已保存图谱的仿射误差累计分布；横轴展示 0–2 m，极值见表。"
+  },
+  "output_docx": "D:\\diffusion_refined_charting\\results\\meeting_report_g1_20261027\\刘梓健-2026-10-27.docx",
+  "output_sha256": "1fa4c4de953d01a24ed7b6a1932c4f7752bbf107d73ddc660682f4bdc55a7449"
+}

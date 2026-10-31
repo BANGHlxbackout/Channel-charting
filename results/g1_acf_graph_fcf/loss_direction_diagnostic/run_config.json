@@ -1,0 +1,19 @@
+{
+  "GT_usage": "post-step offline evaluation only",
+  "lambda": 1.0,
+  "median_fused_edge_geodesic": 13.084765434265137,
+  "metric_subset_source": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\metric_subset_seed10.npy",
+  "model_training": false,
+  "operator": "row-normalized symmetric original fused Gaussian affinity plus self-loops",
+  "pair_count": 399980,
+  "pair_seed": 20261026,
+  "phase": "offline_embedding_gradient_probe",
+  "source_distance_run": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10",
+  "source_embeddings": {
+    "G1-Graph": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+    "G1-Identity": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz"
+  },
+  "step_fraction_of_median_fused_edge_geodesic": 0.05,
+  "step_rms_raw": 0.6542382717132569,
+  "undirected_support_edges": 228773
+}

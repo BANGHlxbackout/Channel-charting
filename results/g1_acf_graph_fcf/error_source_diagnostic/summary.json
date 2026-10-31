@@ -1,0 +1,26 @@
+{
+  "Dgeo_quantile_edges": [
+    0.0789794921875,
+    122.17600708007812,
+    241.80479431152347,
+    368.88187866210933,
+    493.13355102539055,
+    797.290283203125
+  ],
+  "GT_usage": "offline beta fitting, attribution, and evaluation only; no training or checkpoint selection",
+  "beta_m_per_Dgeo": 0.01839743258516511,
+  "edge_count": 228773,
+  "fused_edge_source_counts": {
+    "adp": 49626,
+    "time": 179147
+  },
+  "input_paths": {
+    "distance": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10",
+    "graph": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+    "identity": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz"
+  },
+  "margin": 51.49518966674805,
+  "random_pair_count": 399983,
+  "seed": 20261027,
+  "spearman_Dgeo_physical": 0.9827249128345383
+}

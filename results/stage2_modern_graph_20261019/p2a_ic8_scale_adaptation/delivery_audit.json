@@ -1,0 +1,13 @@
+{
+  "HEAD": "f63652fc3bec725f4fddd1105d13e288cbf233dc",
+  "all_five_metric_subsets_identical": true,
+  "branch": "codex/new-stage1",
+  "committed": false,
+  "comparison_rows_checked": 58,
+  "images_manually_reviewed": true,
+  "max_CSV_JSON_metric_difference": 0.0,
+  "protected_files": 1122,
+  "protected_files_unchanged": true,
+  "status": "PASS",
+  "uploaded": false
+}

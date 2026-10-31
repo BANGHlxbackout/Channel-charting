@@ -1,0 +1,162 @@
+FILE: 15_Data_Dependent_Regularization_GL.pdf
+PAGES: 30
+TITLE: The graphLa+ method
+
+ABSTRACT/FRONT:
+A DA T A-DEPENDENT REGULARIZA TION METHOD BASED ON
+THE GRAPH LAPLACIAN
+DAVIDE BIANCHI ∗, DAVIDE EVANGELISTA †, STEFANO ALEOTTI ‡, MARCO
+DONATELLI‡, ELENA LOLI PICCOLOMINI †, AND WENBIN LI §
+Abstract. We investigate a variational method for ill-posed problems, namedgraphLa+Ψ, which
+embeds a graph Laplacian operator in the regularization term. The novelty of this method lies in
+constructing the graph Laplacian based on a preliminary approximation of the solution, which is
+obtained using any existing reconstruction method Ψ from the literature. As a result, the regulariza-
+tion term is both dependent on and adaptive to the observed data and noise. We demonstrate that
+graphLa+Ψ is a regularization method and rigorously establish both its convergence and stability
+properties.
+We present selected numerical experiments in 2D computerized tomography, wherein we integrate
+the graphLa+Ψ method with various reconstruction techniques Ψ, including Filter Back Projection
+(graphLa+FBP), standard Tikhonov (graphLa+Tik), Total Variation (graphLa+TV), and a trained deep
+neural network ( graphLa+Net). The graphLa+Ψ approach significantly enhances the quality of the
+approximated solutions for each method Ψ. Notably, graphLa+Net is outperforming, offering a robust
+and stable application of deep neural networks in solving inverse problems.
+Key words. ill-posed problems; non-local operators; graph Laplacian; deep learning; deep
+neural networks; medical imaging
+MSC codes. 47A52; 05C90; 68T07; 92C55
+1. Introduction. We consider the model equation
+(ME) Kx = yδ,
+where K : X ≃ Rn → Y ≃ Rm represents a discretized version of a linear operator
+that is inherently ill-posed. Given a fixed xgt ∈ X and y := Kxgt, we want to recover
+a good approximation of the ground-truth xgt from a noisy observation yδ of y, that
+is
+(1.1) yδ := y + η, ∥yδ − y∥ ≤ δ,
+where η is a random perturbation, typically unavoidable in practical scenarios, and
+δ > 0 is the noise intensity.
+The ill-posedness of K and the presence of noise force the introduction of a reg-
+ularization strategy to solve our model equation. A standard variational method for
+(ME) reads
+(1.2) xδ
+α ∈ argmin
+x∈X
+1
+2 ∥Kx − yδ∥2
+2 + α∥Dx∥1
+
+,
+∗School of Mathematics (Zhuhai), Sun Yat-sen University, Zhuhai, 519082, China
+(bianchid@mail.sysu.edu.cn).
+†Department of Computer Science and Engineering, University of Bologna, Bologna, 40126, Italy
+(davide.evangelista5@unibo.it, elena.loli@unibo.it).
+‡Department of Science and High Technology, University of Insubria, Como, 22100, Italy
+(saleotti@uninsubria.it, marco.donatelli@uninsubria.it).
+§School of Science, Harbin Institute of Technology, Shenzhen, Shenzhen, 518055, China
+(liwenbin@hit.edu.cn).
+F unding: Davide Bianchi is supported by NSFC (Grant No. 12250410253) and by the Startup
+Fund of Sun Yat-sen University. Marco Donatelli is partially supported by MIUR - PRIN 2022
+N.2022ANC8HL and GNCS-INDAM. Wenbin Li is supported by the Fundamental Research Funds
+for the Central Universities (grant no. HIT.OCEF.2024017), and the University Innovative Team
+Project of Guangdong (grant no. 2022KCXTD039).
+1
+arXiv:2312.16936v2 [math.NA] 21 Oct 2024
+2 BIANCHI ET AL.
+where D is a linear m
+
+INTRO:
+Ψ. Notably, graphLa+Net is outperforming, offering a robust
+and stable application of deep neural networks in solving inverse problems.
+Key words. ill-posed problems; non-local operators; graph Laplacian; deep learning; deep
+neural networks; medical imaging
+MSC codes. 47A52; 05C90; 68T07; 92C55
+1. Introduction. We consider the model equation
+(ME) Kx = yδ,
+where K : X ≃ Rn → Y ≃ Rm represents a discretized version of a linear operator
+that is inherently ill-posed. Given a fixed xgt ∈ X and y := Kxgt, we want to recover
+a good approximation of the ground-truth xgt from a noisy observation yδ of y, that
+is
+(1.1) yδ := y + η, ∥yδ − y∥ ≤ δ,
+where η is a random perturbation, typically unavoidable in practical scenarios, and
+δ > 0 is the noise intensity.
+The ill-posedness of K and the presence of noise force the introduction of a reg-
+ularization strategy to solve our model equation. A standard variational method for
+(ME) reads
+(1.2) xδ
+α ∈ argmin
+x∈X
+1
+2 ∥Kx − yδ∥2
+2 + α∥Dx∥1
+
+,
+∗School of Mathematics (Zhuhai), Sun Yat-sen University, Zhuhai, 519082, China
+(bianchid@mail.sysu.edu.cn).
+†Department of Computer Science and Engineering, University of Bologna, Bologna, 40126, Italy
+(davide.evangelista5@unibo.it, elena.loli@unibo.it).
+‡Department of Science and High Technology, University of Insubria, Como, 22100, Italy
+(saleotti@uninsubria.it, marco.donatelli@uninsubria.it).
+§School of Science, Harbin Institute of Technology, Shenzhen, Shenzhen, 518055, China
+(liwenbin@hit.edu.cn).
+F unding: Davide Bianchi is supported by NSFC (Grant No. 12250410253) and by the Startup
+Fund of Sun Yat-sen University. Marco Donatelli is partially supported by MIUR - PRIN 2022
+N.2022ANC8HL and GNCS-INDAM. Wenbin Li is supported by the Fundamental Research Funds
+for the Central Universities (grant no. HIT.OCEF.2024017), and the University Innovative Team
+Project of Guangdong (grant no. 2022KCXTD039).
+1
+arXiv:2312.16936v2 [math.NA] 21 Oct 2024
+2 BIANCHI ET AL.
+where D is a linear mapping, characterized by the property that ker(D)∩ker(K) = {0},
+see [27, Chapter 8] and [51]. In this context, the term 1
+2 ∥Kx − yδ∥2
+2 quantifies the
+fidelity of the reconstruction, the ∥Dx∥1 component serves as regularization term,
+and α > 0 balances the trade-off between data fidelity and the regularization effect.
+Formulation (1.2) is a special case of generalized Tikhonov.
+Typical choices for D include linear differential operators, especially for denois-
+ing applications involving signals that are nearly piecewise-constant, such as those
+encountered in imaging [37].
+In the classical approach, D is a discretization of Euclidean first or second-order
+linear differential operators, see e.g. [25, 55]. However, the last decade has seen an
+increasing interest in nonlocal models and techniques from graph theory [6,32,33,53].
+This approach has been further investigated in the context of image deblurri
+
+CONCLUSION/LAST:
+28 BIANCHI ET AL.
+[4] A. Ali and R. J. Tibshirani , The Generalized Lasso Problem and Uniqueness , Electronic
+Journal of Statistics, 13 (2019), pp. 2307–2347.
+[5] V. Antun, F. Renna, C. Poon, B. Adcock, and A. C. Hansen, On instabilities of deep learn-
+ing in image reconstruction and the potential costs of AI , in Proceedings of the National
+Academy of Sciences, vol. 117, 2020, pp. 30088–30095.
+[6] P. Arias, V. Caselles, and G. Sapiro, A variational framework for non-local image inpaint-
+ing, in International Workshop on Energy Minimization Methods in Computer Vision and
+Pattern Recognition, Springer, 2009, pp. 345–358.
+[7] S. Arridge, P. Maass, O. ¨Oktem, and C.-B. Sch ¨onlieb, Solving inverse problems using
+data-driven models, Acta Numerica, 28 (2019), pp. 1–174.
+[8] H. H. Bauschke and P. L. Combettes , Convex Analysis and Monotone Operator Theory in
+Hilbert Spaces, CMS books in mathematics, Springer Cham, 2 ed., 2017.
+[9] D. Bianchi, A. Buccini, M. Donatelli, and E. Randazzo , Graph Laplacian for image de-
+blurring, ETNA, 55 (2022), pp. 169–186.
+[10] D. Bianchi, A. Buccini, M. Donatelli, and S. Serra-Capizzano , Iterated fractional
+Tikhonov regularization, Inverse Problems, 31 (2015), p. 055005.
+[11] D. Bianchi and M. Donatelli, On generalized iterated Tikhonov regularization with operator-
+dependent seminorms, Electronic Transactions on Numerical Analysis, 47 (2017), pp. 73–
+99.
+[12] D. Bianchi and M. Donatelli, Graph approximation and generalized Tikhonov regularization
+for signal deblurring , in 2021 21st International Conference on Computational Science and
+Its Applications (ICCSA), IEEE, 2021, pp. 93–100.
+[13] D. Bianchi, M. Donatelli, D. Evangelista, W. Li, and E. L. Piccolomini, Graph Laplacian
+and Neural Networks for Inverse Problems in Imaging: GraphLaNet , in International
+Conference on Scale Space and Variational Methods in Computer Vision, 2023, pp. 175–
+186.
+[14] D. Bianchi, G. Lai, and W. Li, Uniformly convex neural networks and non-stationary iterated
+network Tikhonov (iNETT) method , Inverse Problems, 39 (2023), p. 055002.
+[15] C. M. Bishop and H. Bishop, Deep learning: Foundations and concepts, vol. 1, Springer, 2024.
+[16] M. M. Bronstein, J. Bruna, Y. LeCun, A. Szlam, and P. Vandergheynst, Geometric Deep
+Learning: Going beyond Euclidean data , IEEE Signal Processing Magazine, 34 (2017),
+pp. 18–42.
+[17] A. Buccini and M. Donatelli, Graph Laplacian in ℓ2 −ℓq regularization for image reconstruc-
+tion, in 2021 21st International Conference on Computational Science and Its Applications
+(ICCSA), IEEE, 2021, pp. 29–38.
+[18] A. Buccini and L. Reichel , Limited memory restarted ℓp − ℓq minimization methods using
+generalized Krylov subspaces, Advances in Computational Mathematics, 49 (2023), p. 26.
+[19] J.-F. Cai, R. H. Chan, and Z. Shen , A framelet-based image inpainting algorithm , Applied
+and Computational Harmonic Analysis, 24 (2008), pp. 131–149.
+[20] Y. Cai, M. Donatelli, D. Bianchi, and T.-Z. Huang , Regularization precondition

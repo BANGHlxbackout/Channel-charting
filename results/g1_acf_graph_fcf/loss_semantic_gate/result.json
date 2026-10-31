@@ -1,0 +1,116 @@
+{
+  "status": "offline_diagnostic_only",
+  "seed": 10,
+  "source_count": 64,
+  "targets_per_source": 256,
+  "retained_pairs": 16222,
+  "calibration_pairs": 461,
+  "calibration_straight_long_pairs": 662,
+  "curved_long_test_pairs": 283,
+  "straight_long_test_pairs": 369,
+  "group_thresholds_from_calibration": {
+    "hop_q25": 16.0,
+    "hop_q75": 32.0,
+    "curvature_q25": 1.099254076595719,
+    "curvature_q75": 1.279917570113193
+  },
+  "dgeo_to_meter_alpha_offline_only": 0.01823336446698664,
+  "dgeo_to_meter_alpha_long_straight_sensitivity": 0.020694067210733764,
+  "max_recomputed_vs_saved_dgeo": 3.0517578125e-05,
+  "max_path_edge_cost_sum_vs_saved_dgeo": 0.0001220703125,
+  "curved_long": {
+    "median_alpha_dgeo_m": 7.539127288622363,
+    "median_gt_path_m": 9.611249211741075,
+    "median_gt_chord_m": 7.1067832577699805,
+    "median_gt_curvature": 1.331804255227116,
+    "median_abs_alpha_dgeo_minus_gt_path_m": 2.142072230460249,
+    "median_abs_alpha_dgeo_minus_gt_chord_m": 0.41679226297273964,
+    "median_paired_path_advantage_m": -1.7727728575046582,
+    "source_cluster_bootstrap_95pct_ci_m": [
+      -1.9927702818771929,
+      -1.459808948435752
+    ],
+    "fraction_dgeo_closer_to_gt_path": 0.08833922261484099,
+    "long_straight_alpha_sensitivity": {
+      "median_abs_alpha_dgeo_minus_gt_path_m": 1.1101939095322653,
+      "median_abs_alpha_dgeo_minus_gt_chord_m": 1.480781504035022
+    },
+    "median_g1_chord_stretch_ratio": 0.02793361012179743,
+    "median_g1_raw_path_over_dgeo": 1.2288231489476031,
+    "edge_deficit_decomposition_short_straight_alpha": {
+      "all_edges_deficit_m": 586.1825534838994,
+      "gt_0p5m_edge_fraction": 0.13541861771867392,
+      "gt_0p5m_edges_deficit_m": 700.907350302375,
+      "gt_1m_edge_fraction": 0.043172878816257726,
+      "gt_1m_edges_deficit_m": 495.1204643760643
+    }
+  },
+  "straight_long": {
+    "median_gt_curvature": 1.0602572881751346,
+    "median_g1_chord_stretch_ratio": -0.029072504835811527
+  },
+  "long_test_spearman_gt_curvature_vs_signed_g1_chord_stretch": 0.3450784717962638,
+  "long_test_spearman_g1_path_residual_vs_signed_chord_stretch": 0.15479401839259865,
+  "global_pair_diagnostic": {
+    "seed": 17,
+    "nonself_pairs": 59995,
+    "spearman_dgeo_vs_physical_chord": 0.9826490024423216,
+    "spearman_g1_aligned_chord_vs_physical_chord": 0.9915622737129199,
+    "distance_quartiles": [
+      {
+        "dgeo_range": [
+          0.4373435974121094,
+          184.62018585205078
+        ],
+        "median_physical_chord_over_dgeo": 0.01446656875493733
+      },
+      {
+        "dgeo_range": [
+          184.62018585205078,
+          279.1990661621094
+        ],
+        "median_physical_chord_over_dgeo": 0.016961356570392834
+      },
+      {
+        "dgeo_range": [
+          279.1990661621094,
+          393.3224792480469
+        ],
+        "median_physical_chord_over_dgeo": 0.018348089404349982
+      },
+      {
+        "dgeo_range": [
+          393.3224792480469,
+          793.2512817382812
+        ],
+        "median_physical_chord_over_dgeo": 0.019100836303516826
+      }
+    ]
+  },
+  "temporal_diagnostic_offline_gt_only": {
+    "valid_steps": 20976,
+    "valid_triplets": 20955,
+    "timestamp_dt_quantiles_s": [
+      0.19140625,
+      0.671875,
+      0.9609375
+    ],
+    "gt": {
+      "median_velocity_change": 0.05638197475907969,
+      "p95_velocity_change": 0.19082216602863925
+    },
+    "graph": {
+      "median_velocity_change": 0.32898167568548115,
+      "p95_velocity_change": 1.0531718006007595
+    },
+    "identity": {
+      "median_velocity_change": 0.33813485097914986,
+      "p95_velocity_change": 1.1660583509047147
+    }
+  },
+  "inputs": {
+    "embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+    "distance_run": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10"
+  },
+  "gt_use": "offline physical path/chord, global rank, and temporal diagnosis only; no training or checkpoint selection"
+}

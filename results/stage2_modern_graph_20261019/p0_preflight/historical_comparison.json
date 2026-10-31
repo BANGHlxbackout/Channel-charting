@@ -1,0 +1,8 @@
+{
+  "absolute_differences": {
+    "ks": 1.3983939561867942e-09,
+    "mean_m": 0.0,
+    "p95_m": 5.960464477539062e-07
+  },
+  "history": "D:\\diffusion_refined_charting\\results\\diffusion_refined_charting\\stride1_n20997_k128_lambda0.15_seed10\\result.json"
+}

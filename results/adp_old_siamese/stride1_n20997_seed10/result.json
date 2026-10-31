@@ -1,0 +1,93 @@
+{
+  "dataset": "datasets\\adp_old_shard4",
+  "distance_run": "results\\adp_old_fused\\stride1_n20997_seed10",
+  "elapsed_s": 1633.5547530651093,
+  "history": [
+    {
+      "batch_size": 500,
+      "loss": 49.771529296239216,
+      "lr": 0.01,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 1
+    },
+    {
+      "batch_size": 1000,
+      "loss": 3.2021830749511717,
+      "lr": 0.01,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 2
+    },
+    {
+      "batch_size": 1500,
+      "loss": 2.7454474711418153,
+      "lr": 0.008,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 3
+    },
+    {
+      "batch_size": 2000,
+      "loss": 2.535494254430135,
+      "lr": 0.004,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 4
+    },
+    {
+      "batch_size": 3000,
+      "loss": 2.4276881980895997,
+      "lr": 0.001,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 5
+    },
+    {
+      "batch_size": 4000,
+      "loss": 2.4370864082027124,
+      "lr": 0.0005,
+      "requested_samples": 150000,
+      "samples": 148000,
+      "session": 6
+    },
+    {
+      "batch_size": 5000,
+      "loss": 2.39899841149648,
+      "lr": 0.0002,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 7
+    },
+    {
+      "batch_size": 6000,
+      "loss": 2.368188571929932,
+      "lr": 0.0001,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 8
+    }
+  ],
+  "localization_errors_after_affine": {
+    "max_m": 7.893630027770996,
+    "mean_m": 0.409347265958786,
+    "median_m": 0.37222808599472046,
+    "p90_m": 0.7141520380973816,
+    "p95_m": 0.8557930588722229
+  },
+  "margin": 51.49518966674805,
+  "method": "ADP + timestamp fused + geodesic + Siamese FCF",
+  "metric_subset_fraction": 0.2,
+  "metric_subset_size": 4199,
+  "metrics": {
+    "ct": 0.9957121024091857,
+    "ks": 0.0840268307097306,
+    "n_neighbors": 209,
+    "tw": 0.9959871853305127
+  },
+  "num_samples": 20997,
+  "paper": "Angle-Delay Profile-Based and Timestamp-Aided Dissimilarity Metrics for Channel Charting",
+  "run_name": "stride1_n20997_seed10",
+  "seed": 10,
+  "stride": 1
+}

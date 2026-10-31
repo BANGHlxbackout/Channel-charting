@@ -1,0 +1,15 @@
+{
+  "baseline_metric_max_difference": 0.0,
+  "comparison_rows_checked": 84,
+  "comparison_sources_protocols_pass": true,
+  "fulln_configurations": 27,
+  "max_feas": 3.510502175218163e-17,
+  "max_prox": 1.9979413021448008e-06,
+  "phase": "P2A_FULL_N",
+  "protected_count": 49,
+  "protected_inputs_unchanged": true,
+  "retries": 0,
+  "stop": "P2A only; no P2B/P3/P4/P5",
+  "valid": 27,
+  "visual_review": "Viewed native J/IC8/IC9-P/G and matched mid raw/affine plus larger-budget affine; plot_chart style and GT colors consistent"
+}

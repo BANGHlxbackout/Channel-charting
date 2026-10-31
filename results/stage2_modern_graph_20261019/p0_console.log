@@ -1,0 +1,157 @@
+computing geodesic top-512 neighbors on cuda:0
+D:\diffusion_refined_charting\run_diffusion_refined_charting.py:30: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  d = torch.from_numpy(distances).to(device)
+Jacobi iteration 1/200
+Jacobi iteration 10/200
+Jacobi iteration 50/200
+Jacobi iteration 100/200
+Jacobi iteration 200/200
+{
+  "status": "PASS",
+  "delta0": 0.09517167367990964,
+  "graph": {
+    "G128": {
+      "shape": [
+        20997,
+        20997
+      ],
+      "nnz": 3088334,
+      "data_dtype": "float32",
+      "sha256": "c1c50ca7104d768f673c7c2756507a9a374f979303cb0574d98eac9a88a7a27e"
+    },
+    "incidence_D": {
+      "shape": [
+        1544167,
+        20997
+      ],
+      "nnz": 3088334,
+      "data_dtype": "float64",
+      "sha256": "73c54fbce8d2998159e047136a694edb30f2da164f8c3c0228c232217c1038eb"
+    },
+    "L_csr": {
+      "shape": [
+        20997,
+        20997
+      ],
+      "nnz": 3109331,
+      "data_dtype": "float64",
+      "sha256": "f9c920656086c5427c52f255f8ff55fb3e57c1753399f968612b69504298e0b6"
+    },
+    "undirected_edges": 1544167,
+    "symmetric_nnz_entries": 3088334,
+    "symmetry_max_abs": 0.0,
+    "self_loops": 0,
+    "weights": {
+      "min": 0.08263929933309555,
+      "median": 0.5116423964500427,
+      "mean": 0.5592081927929078,
+      "max": 0.9999990463256836
+    },
+    "weighted_degree": {
+      "min": 56.86905428767204,
+      "median": 80.21283730864525,
+      "mean": 82.25087750063781,
+      "max": 177.25190047174692
+    },
+    "unweighted_degree": {
+      "min": 128.0,
+      "median": 140.0,
+      "mean": 147.08453588607895,
+      "max": 397.0
+    },
+    "connected_components": 1,
+    "incidence_row_nnz_unique": [
+      2
+    ],
+    "incidence_row_sum_max_abs": 0.0,
+    "incidence_values_unique": [
+      -1.0,
+      1.0
+    ],
+    "matvec_float64_relative_error": 5.344658883610971e-16,
+    "L_times_one_max_abs": 0.0,
+    "probe_seed": 10,
+    "probe_columns": 4,
+    "construction_peak_vram_bytes": 1937957376
+  },
+  "solver": {
+    "target": "(I+0.15*L)Z=Y; equivalently normalized (I+0.15*L)U=X",
+    "objective": "0.5||U-X||_F^2 + 0.15/2 ||sqrt(W) D U||_F^2; each undirected edge once",
+    "jacobi": {
+      "dtype": "float32, original function unchanged",
+      "iterations": 200,
+      "relative_raw_linear_residual": 2.345189742450161e-06,
+      "time_s": 0.47659900004509836,
+      "peak_vram_bytes": 111771648
+    },
+    "cg": {
+      "rtol": 1e-10,
+      "atol": 0.0,
+      "maxiter": 5000,
+      "preconditioner": "inverse diagonal of I+lambda L",
+      "dtype": "float64",
+      "info": [
+        0,
+        0
+      ],
+      "iterations": [
+        42,
+        42
+      ],
+      "normalized_relative_residuals": [
+        9.950824284571387e-11,
+        8.908312353513265e-11
+      ],
+      "raw_relative_residuals": [
+        9.950824665322653e-11,
+        8.908313108193592e-11
+      ],
+      "time_s": 0.6631909999996424
+    },
+    "cg_minus_jacobi_raw": {
+      "max_abs": 0.0002034362278777735,
+      "rms_per_node": 4.251557790204387e-05
+    }
+  },
+  "results": {
+    "B0": {
+      "ct": 0.9957121024091857,
+      "tw": 0.9959871853305127,
+      "ks": 0.0840268307097306,
+      "mean_m": 0.409347265958786,
+      "median_m": 0.37222808599472046,
+      "p90_m": 0.7141520380973816,
+      "p95_m": 0.8557930588722229,
+      "max_m": 7.893630027770996,
+      "source_json": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+      "train_time_s": null,
+      "peak_vram_bytes": null
+    },
+    "B0+S2-J": {
+      "ct": 0.9982195917343384,
+      "tw": 0.998222526526258,
+      "ks": 0.06506457235343836,
+      "mean_m": 0.31874796748161316,
+      "median_m": 0.2929166555404663,
+      "p90_m": 0.5586746335029602,
+      "p95_m": 0.6346399784088135,
+      "max_m": 1.1414313316345215,
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\result.json",
+      "train_time_s": null,
+      "peak_vram_bytes": null
+    },
+    "B0+S2-CG": {
+      "ct": 0.9982195937874608,
+      "tw": 0.998222526526258,
+      "ks": 0.06506456867429661,
+      "mean_m": 0.31874793833859877,
+      "median_m": 0.2929166435001435,
+      "p90_m": 0.5586743200122963,
+      "p95_m": 0.6346392331934765,
+      "max_m": 1.1414315380410822,
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_cg\\result.json",
+      "train_time_s": null,
+      "peak_vram_bytes": null
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "baseline_localization_errors_after_affine": {
+    "max_m": 7.893630027770996,
+    "mean_m": 0.409347265958786,
+    "median_m": 0.37222808599472046,
+    "p90_m": 0.7141520380973816,
+    "p95_m": 0.8557930588722229
+  },
+  "baseline_metrics": {
+    "ct": 0.9957121024091857,
+    "ks": 0.0840268307097306,
+    "n_neighbors": 209,
+    "tw": 0.9959871853305127
+  },
+  "dataset": "datasets\\adp_old_shard4",
+  "direct_support_stats": {
+    "degree_ratio_summary": {
+      "max": 1.1154043674468994,
+      "mean": 1.004262649684246,
+      "median": 1.0161861181259155,
+      "min": 0.683609664440155,
+      "p5": 0.8662999868392944,
+      "p90": 1.0759331941604615,
+      "p95": 1.088354468345642
+    },
+    "energy_preserving": true,
+    "energy_scale": 1.1160609053432804,
+    "eps": 1e-06,
+    "num_edges": 3088334,
+    "original_weight_sum": 1727021.674880892,
+    "q_summary": {
+      "max": 2.190268039703369,
+      "mean": 0.040409455186885726,
+      "median": 0.0,
+      "min": 0.0,
+      "p5": 0.0,
+      "p90": 0.13631218224763875,
+      "p95": 0.27354884147644043
+    },
+    "raw_weight_ratio": 0.8960084482955863,
+    "raw_weight_sum": 1547426.0110828727,
+    "refined_weight_sum": 1727021.593929857,
+    "reliability_summary": {
+      "max": 1.0,
+      "mean": 0.9164032031770727,
+      "median": 1.0,
+      "min": 0.6000000238418579,
+      "p5": 0.6000000238418579,
+      "p90": 1.0,
+      "p95": 1.0
+    },
+    "rho": 0.6,
+    "tau_min": 1e-06,
+    "tau_q_raw_median": 0.0,
+    "tau_q_used": 1e-06
+  },
+  "distance_run": "results\\adp_old_fused\\stride1_n20997_seed10",
+  "elapsed_s": 7.487234115600586,
+  "graph_edges": 3088334,
+  "graph_k": 128,
+  "init_embedding": "results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+  "iterations": 200,
+  "lambda_smooth_requested": 0.15,
+  "lambda_smooth_used": 0.15,
+  "localization_errors_after_affine": {
+    "max_m": 1.1541811227798462,
+    "mean_m": 0.32230761647224426,
+    "median_m": 0.2973710000514984,
+    "p90_m": 0.5609437823295593,
+    "p95_m": 0.6363733410835266
+  },
+  "method": "Direct-Support-Aware Physical Edge Filtering",
+  "metric_subset_fraction": 0.2,
+  "metric_subset_size": 4199,
+  "metrics": {
+    "ct": 0.9981721643119721,
+    "ks": 0.06574256095569596,
+    "n_neighbors": 209,
+    "tw": 0.9981597493736976
+  },
+  "mode": "energy_preserving",
+  "mode_description": "Direct-support reliability weights rescaled to preserve total graph energy",
+  "num_samples": 20997,
+  "paper_context": "Direct-support edge reliability feasibility test on ADP/time channel chart refinement",
+  "run_name": "stride1_n20997_direct_support_energy_preserving_k128_lambda0.15_rho0.6_seed10",
+  "seed": 10,
+  "stride": 1,
+  "top_k": 512,
+  "uses_positions_for_evaluation_only": true,
+  "uses_positions_for_parameter_selection": false,
+  "uses_positions_for_refinement": false
+}

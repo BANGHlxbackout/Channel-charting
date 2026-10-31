@@ -1,0 +1,118 @@
+FILE: 02_Triplet_Loss_On_the_Fly_CC.pdf
+PAGES: 5
+TITLE: 
+
+ABSTRACT/FRONT:
+Leveraging triplet loss and nonlinear dimensionality
+reduction for on-the-ﬂy channel charting
+Taha Yassine∗†, Luc Le Magoarou∗, St ´ephane Paquelet∗ and Matthieu Crussi `ere∗†
+∗b<>com, Rennes, France
+†Univ Rennes, INSA Rennes, CNRS, IETR - UMR 6164, F-35000 Rennes
+Abstract—Channel charting is an unsupervised learning
+method that aims at mapping wireless channels to a so-called
+chart, preserving as much as possible spatial neighborhoods.
+In this paper, a model-based deep learning approach to this
+problem is proposed. It builds on a physically motivated distance
+measure to structure and initialize a neural network that is
+subsequently trained using a triplet loss function. The proposed
+structure exhibits a low number of parameters and clever
+initialization leads to fast training. These two features make the
+proposed approach amenable to on-the-ﬂy channel charting. The
+method is empirically assessed on realistic synthetic channels,
+yielding encouraging results.
+Index Terms—channel charting, triplet network, dimensional-
+ity reduction, MIMO signal processing, machine learning.
+I. I NTRODUCTION
+Signal processing has greatly beneﬁted from the recent
+advent of machine learning and the growth of computing
+power. Deep learning in particular has been widely used in
+a plethora of domains and only a few are left untouched. In
+wireless communication, neural networks have been exploited
+to solve many classical problems ranging from physical layer
+tasks like channel estimation [2], [3] and symbol decoding
+[4] to higher level tasks like end-to-end learning of the transmit
+and receive chains [5]. Another prominent example of deep
+learning application in wireless systems is user localization
+where the objective is to determine the physical locations of
+user equipments (UEs) solely based on their uplink channel
+measurements by a multi-antenna base station (BS) [ 6]. Standard
+deep models require a dataset of channel measurements and their
+corresponding transmit locations to perform supervised learning.
+Recently, channel charting has been proposed as an
+unsupervised alternative to user positioning where a charting
+function (or encoder) is learned in order to project high-
+dimensional channel vectors into a low dimensional space (a
+chart) that resembles the geometrical space of UEs’ locations.
+The challenge consists in providing a map without a priori
+location knowledge, only using channel measurements.
+Related work. Channel charting was ﬁrst introduced in [7].
+The approach therein builds on projecting precomputed channel
+features into a low-dimensional space using manifold learning
+techniques such as Sammon’s mapping and autoencoders.
+Thereafter, a number of channel charting approaches building on
+the same ideas have been proposed. In [ 8], autoencoders are used
+together with representation constraints as a way of injecting
+prior knowledge to further guide the learning process. In [9],
+the Sammon’s mapping-based approach is reframed as a neural
+network model in a siamese conﬁguration. In [10], channel
+charting is performed using triplet networks. In order to train the
+model, a database of channel vector triplets is constructed based
+on travel information of UEs. Similarly, [ 11] explores the use of
+triplet networks for channel
+
+INTRO:
+
+
+CONCLUSION/LAST:
+a consequence, it is necessary to make use of unsupervised
+learning methods. In particular, contrastive learning has been
+used extensively for various tasks [ 19]. Simply put, it aims at
+teaching the network which samples are similar and which are
+different with the help of a speciﬁcally designed loss function
+L. Triplet networks (Fig. 2) are an implementation of this
+framework where triplets of three samples each are constructed
+and fed to a neural network. A single triplet comprises an anchor
+sample h, a close sample h+ and a far sample h−. The network
+produces their corresponding projections into the channel chart
+z, z+ and z− respectively. The loss function is deﬁned as
+L(z, z+, z−) = max(0 , d+ − d− + m), (2)
+where d+ = ∥z − z+∥2, d− = ∥z − z−∥2 and m is a margin
+parameter. In essence, minimizing L amounts to maximizing
+the difference between d+ and d− by pulling the close sample
+closer and pushing the far sample farther until the difference
+is greater that m and therefore L = 0.
+Fig. 2: Triplet network structure. θ is the set of parameters (i.e.
+weights) that the neural network learns throughout training.
+Instead of using a generic MLP as in [ 10], we propose to use
+the hybrid encoder presented in Section III-B initialized with a
+small subset of channel observations following the proposed strat-
+egy. The parameters (i.e. weights) of the network θ = {D, Z}
+are then optimized through the training of the encoder in the
+triplet conﬁguration. The learned charting function is denoted Fθ.
+It is important to note that constructing triplets obviously
+requires knowledge of positive and negative samples for a given
+anchor sample. In the unsupervised setting, this knowledge has
+to come from the dataset of inputs itself. Section IV-B describes
+how channel triplets are extracted from such a dataset.
+IV. E XPERIMENTS
+A. DeepMIMO channels
+To assess the performance of the proposed method, we rely
+on synthetic data generated from the DeepMIMO “O1” outdoor
+ray-tracing scenario [20]. A total of N = 5910 channels
+are generated and their transmit locations are geographically
+distributed along a path representing the route of a pedestrian
+(Fig. 3). The pedestrian starts their journey at the lower
+rightmost point of the path and navigates counterclockwise. The
+pedestrian walks at a speed of v = 1.4 m/s. The sampling rate
+fs is set at 7 samples/s which means that consecutive samples
+are separated, on average, by 1.4/7 = 20 cm along the path.
+In addition, mild noise is added perpendicularly to the direction
+of travel to better emulate the walking of a real person that
+would not follow a perfectly straight line.
+A single BS (BS 16 in the original scenario) equipped with a
+UPA of Nr = 64 half-wavelength spaced antennas collects the
+uplink channels at a central frequency of fc = 3.5 GHz, with
+S = 16 evenly spaced subcarriers spanning a band of 20 MHz.
+The resulting complex channels are of dimension M = 1024.
+B. Triplet dataset construction
+Special care should be taken 

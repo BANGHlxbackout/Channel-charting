@@ -1,0 +1,12 @@
+{
+  "directed": false,
+  "dtype_saved": "float32",
+  "elapsed_s": 29.721015214920044,
+  "source_count": 2100,
+  "subset_shape": [
+    2100,
+    2100
+  ],
+  "target_count": 20997,
+  "variant": "R_only"
+}

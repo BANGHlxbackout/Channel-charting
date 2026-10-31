@@ -1,0 +1,2295 @@
+{
+  "budget": {
+    "config_retries": 0,
+    "max_iterations": 15000,
+    "wall_time_cap_s": 3600
+  },
+  "code": [
+    {
+      "bytes": 13009,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\edge_small.py",
+      "sha256": "c7a4e954315cb0e6d0367544b29c81615cbe91a153e2d3cd896d85969a54a2ff"
+    },
+    {
+      "bytes": 12598,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\edge_repair.py",
+      "sha256": "dcb7430f16a35513855abfa3575b9b2866525d3e1397472288d74fbac972c032"
+    }
+  ],
+  "commands": [
+    [
+      "D:/anaconda3/envs/diffusion_charting/python.exe",
+      "-m",
+      "diagnostics.stage2_p1.edge_repair",
+      "--stage",
+      "small"
+    ],
+    [
+      "D:/anaconda3/envs/diffusion_charting/python.exe",
+      "-m",
+      "diagnostics.stage2_p1.edge_repair",
+      "--stage",
+      "full"
+    ]
+  ],
+  "configurations_completed": 30,
+  "documentation": [
+    {
+      "bytes": 48853,
+      "path": "D:\\diffusion_refined_charting\\docs\\tasks\\Stage2_2026-10-19.md",
+      "sha256": "485429260920f8fff29fe7a9cee22a39962305b521970d660cd69516e5be1304"
+    },
+    {
+      "bytes": 13820,
+      "path": "D:\\diffusion_refined_charting\\docs\\research\\research_state.md",
+      "sha256": "6f5e4ab574e2436e1a4fea45b5952b7404c6a54009c52f94bf8542f0c783497b"
+    },
+    {
+      "bytes": 65622,
+      "path": "D:\\diffusion_refined_charting\\docs\\research\\experiment_log.md",
+      "sha256": "b302e98e60600f500b90b507c27d5aeadbe3b410c88d2f239c8d74f10db67f4a"
+    },
+    {
+      "bytes": 19410,
+      "path": "D:\\diffusion_refined_charting\\docs\\research\\experiment_registry.md",
+      "sha256": "58cc3653dd5bb574215024db052f03c3a18aa29e946b9b919b96a21bb0be93c8"
+    }
+  ],
+  "entry_reporting_changes": "After formal start only init bootstrap was added; after all runs Lambda2 export became ndarray for legacy NPZ/JSON serializer compatibility. Update equations, strategy, stopping rules unchanged. No new configuration or run.",
+  "environment": {
+    "blas_threads": 1,
+    "clarabel": "0.11.1",
+    "cvxpy": "1.9.3",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+    "python_executable": "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+    "reference_environment": "same diffusion_charting environment as accepted P1"
+  },
+  "family_G1": {
+    "DoT": "FAIL",
+    "FE": "FAIL",
+    "SEF": "FAIL"
+  },
+  "final_code": [
+    {
+      "bytes": 13070,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\edge_small.py",
+      "sha256": "ff42b8deb55d4367a906d64b3a5082c2a89b54a02594cf09e9035506bb2a9667"
+    },
+    {
+      "bytes": 14724,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\edge_repair.py",
+      "sha256": "d03af08566da5e7e97f6e179c6ece4e75807020e8b17b1936bbeb56294931e2c"
+    },
+    {
+      "bytes": 22863,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\edge_repair_report.py",
+      "sha256": "79edc97b0cf8423992043c395bf92046619449db98b90fc95956b589b8cce486"
+    },
+    {
+      "bytes": 1721,
+      "path": "D:\\diffusion_refined_charting\\tests\\test_stage2_edge_repair.py",
+      "sha256": "5411f40917f10a39f16972f21db9c426f04c13e2d004bb13cec871681b2047c9"
+    }
+  ],
+  "full256_B_pass_count": 1,
+  "git_branch": "codex/new-stage1",
+  "git_head": "f63652fc3bec725f4fddd1105d13e288cbf233dc",
+  "lambda1": 1,
+  "lambda2": 1,
+  "nu": 0.1,
+  "original_edge_source": {
+    "bytes": 6360,
+    "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\edge_small.py",
+    "sha256": "636f70d63feb2bccf787f61c16a9851dc56a2cf024ceeb8d75d70154c21f5695"
+  },
+  "original_git_blob": "f53338de480d3c787c00fbac7823d7cfba8aebbc",
+  "protected_inputs": [
+    {
+      "bytes": 11548,
+      "path": "D:\\diffusion_refined_charting\\AGENTS.md",
+      "sha256": "536b80bba241cd559d3fd4a6ef44344dc5441dfc8b7f824db68af77cee114655"
+    },
+    {
+      "bytes": 5283,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\ic_solver.py",
+      "sha256": "58b9cfa1b7fa91bd6879065b200456a7b02d0527524298cb82b1c7aacbbd45f9"
+    },
+    {
+      "bytes": 4690,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\framelet_solver.py",
+      "sha256": "baa3ca4e846b8ffea247e6d2a7074892096c9f027f25702b2b37406c9256ee83"
+    },
+    {
+      "bytes": 3543,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\framelet_operator.py",
+      "sha256": "1ee67207cc1b468a168d61fc59d4beef24d9fb252e541ac561b33220f070d21f"
+    },
+    {
+      "bytes": 1013,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\cases.py",
+      "sha256": "2477ddfee31f2663593812713b318f9b5415948f36d7df780596e6c36e6fa0a2"
+    },
+    {
+      "bytes": 3190,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\reference.py",
+      "sha256": "c12293462f73e3f5f125a765e6565c0e6580f74adc8ffc54e8482aa7d022548f"
+    },
+    {
+      "bytes": 140,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\equivariance.json",
+      "sha256": "b97c4faa5bcd29426d390c2921cd2e555f3139b5d013ecbd3237cab0767ddc14"
+    },
+    {
+      "bytes": 61,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\huber.json",
+      "sha256": "9653916a625917c216c7b471f6c9d70b6b73d68f1d6086c27704d34914b16bdd"
+    },
+    {
+      "bytes": 5994,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\case.npz",
+      "sha256": "c3fa980b8c641fb9d136543a9739435babfe2fa955635cb2fc49877f62d61977"
+    },
+    {
+      "bytes": 89,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\graph_checks.json",
+      "sha256": "0802928bc609b22d0f2c5048a1fcf6ba224ec8821dcea97310287c93c31fb04b"
+    },
+    {
+      "bytes": 92966,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\comparison\\5_column_affine_channel_chart.png",
+      "sha256": "5ce549b285c20701d4452ba0bfd8275fed5127607c7c4b022fc8fdfa2c478527"
+    },
+    {
+      "bytes": 74557,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\comparison\\5_column_raw_channel_chart.png",
+      "sha256": "fd5f6df202a1bb74df3f599afc34ba9cddcd73e150e4fe4e63581ab0e0e16be6"
+    },
+    {
+      "bytes": 2906,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\comparison\\aligned_charts.npz",
+      "sha256": "fcfdb6a5ea8c8f8520536c8961245542e5f0942f52c238dc2600acdc14da7f1c"
+    },
+    {
+      "bytes": 1082,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\comparison\\comparison.csv",
+      "sha256": "70746e5348e079e9fd8a6c8862e7c0af55198a00ce027ffd5f312847b10269c6"
+    },
+    {
+      "bytes": 1299,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\comparison\\comparison.md",
+      "sha256": "639cd7971732fcb6c3bc180e07896c6985f9dd6a2d2b436da2353ab791342b64"
+    },
+    {
+      "bytes": 1268,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\comparison\\eval_protocol.json",
+      "sha256": "96aa7649a702ce2b999c50e74ab83da93ed402a089ed5ed9101e25ce15401f28"
+    },
+    {
+      "bytes": 152,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\comparison\\metric_subset_seed10.npy",
+      "sha256": "ed7730de0e12fbb5e66feeffe04c6e4fef3058aea074824436ff8df3bdb991cb"
+    },
+    {
+      "bytes": 331,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis0_attempt1.json",
+      "sha256": "572357255ea2e1224007193edae6f033b663f6089472c707e672bad0bfbf2ccd"
+    },
+    {
+      "bytes": 1322,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis0_attempt1_arrays.npz",
+      "sha256": "57fc9c40fa730f4abc69ad406c4f832aafbb7af7ed3da952f5f12219e3f1a186"
+    },
+    {
+      "bytes": 182,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis0_attempt1_history.csv",
+      "sha256": "906e1e0c3adda3bc2d25e3367babde942438008f03f82e4af0f0fbd6623328f3"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis0_reference.json",
+      "sha256": "dd486d4ea926f2ca09802f6bbf263e088a07bafeba2726982835d61f89a03f6c"
+    },
+    {
+      "bytes": 850,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis0_reference_arrays.npz",
+      "sha256": "80f2223cd852800d15bd953fd97ea037b84a2b338275814d3c03e38e2dbd2f75"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis0_zero_radius_reference.json",
+      "sha256": "99b0d82fa65f35251da3913f4f890d24c598e54ea04a69642779f4630258a0b0"
+    },
+    {
+      "bytes": 850,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis0_zero_radius_reference_arrays.npz",
+      "sha256": "c7de6016ed7c58d20a586db3ff787807649e7ae08bae7443a6b8ce93f4464868"
+    },
+    {
+      "bytes": 313,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis1_attempt1.json",
+      "sha256": "ef344f1909f9e79fa26d6d4dab6d508dc4799549baaef73f1fa2a9c8614efb1a"
+    },
+    {
+      "bytes": 1322,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis1_attempt1_arrays.npz",
+      "sha256": "985cbc76b39edcbdc9adc2cb01ef7c901167cea380cd16ef45d6540b752b582d"
+    },
+    {
+      "bytes": 97,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis1_attempt1_history.csv",
+      "sha256": "fe90dd07c2cbfb2fb1f263eabfe504c195bcbc6db5496800c3f330da8cf4a522"
+    },
+    {
+      "bytes": 147,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis1_reference.json",
+      "sha256": "c1aa8f1fd86dc055384e9787e830c3c1a9a39b38a9b64e05bbac4efca52de7ab"
+    },
+    {
+      "bytes": 850,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis1_reference_arrays.npz",
+      "sha256": "58846d7e74456b9709f95ea56f3fc06950c9a22ba528f8e6f13c8287e33aab32"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis1_zero_radius_reference.json",
+      "sha256": "6a994a30698d226dd7ac24d0eaef67d38dc520741307cdc418a3d866858167a6"
+    },
+    {
+      "bytes": 850,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\axis1_zero_radius_reference_arrays.npz",
+      "sha256": "5a88f2b29d0d1372645cdda27a56f4062c7905e0e969a10c013177ee31ef902f"
+    },
+    {
+      "bytes": 48208,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\chart.png",
+      "sha256": "1e0e5384be1a9a931506f758cd9b380db8ed61275c0d7ffa0e3339cad5ee3e7f"
+    },
+    {
+      "bytes": 997,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\checks.json",
+      "sha256": "7f82bfee39019e9e02552e646712b420fccbe37fac25c883b53366bb76f01a30"
+    },
+    {
+      "bytes": 1408,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\embedding.npz",
+      "sha256": "bc745746ebfdf7499f6732f27bcc472be059e1c650b5727c1f6eb8b693fe3e64"
+    },
+    {
+      "bytes": 328,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\eta0_native.json",
+      "sha256": "bf4872048ad3da863516c36fc1a06f1a33bf0ac8d57c3bfe3335474cb29e42c5"
+    },
+    {
+      "bytes": 1322,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\eta0_native_arrays.npz",
+      "sha256": "0b1fefe4584120dbc625e2920b6fc6270a33d2ad9d7a7e595b6ab1f9fb6fe9a6"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\eta0_native_history.csv",
+      "sha256": "b1e05db4b4e0f437df3d11310adc0d764c228b8c4d4c583619d24d28da7e1ea9"
+    },
+    {
+      "bytes": 1479,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\result.json",
+      "sha256": "567a1a79ad5e819152574665b9df48d7ce8aed219ebd0bba2c262ffe2470b31b"
+    },
+    {
+      "bytes": 261,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\axis0_attempt1.json",
+      "sha256": "df0af6bdcac549e3e1a86ed21c2fc69cb85733020582f64ffb20869452e57d6f"
+    },
+    {
+      "bytes": 1706,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\axis0_attempt1_arrays.npz",
+      "sha256": "8bc5912d3e9052bbb1e1b697e9afccc29d3257195da8be9c455349fb2978b52b"
+    },
+    {
+      "bytes": 96,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\axis0_attempt1_history.csv",
+      "sha256": "1e89c9bd04e7e1f039eadc50e03203c65b0d7e09cb0bdfce0d97f90edb9d7a9c"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\axis0_reference.json",
+      "sha256": "72c74c53102700ba28da2123ad28390c01fbdabeeb1aefff75174c7f32495eae"
+    },
+    {
+      "bytes": 1210,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\axis0_reference_arrays.npz",
+      "sha256": "6d66673400916bf22ed124f58a7e6fbb9fbc1ea69e655f083ca36804dae56997"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\axis0_zero_radius_reference.json",
+      "sha256": "8169479ceff916006dff31d93b537f886e1011babee841c72c24db3259dcb4b0"
+    },
+    {
+      "bytes": 1210,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\axis0_zero_radius_reference_arrays.npz",
+      "sha256": "a47d56de7de68bc5b100d4a20e39ade55db1adbf8ba12af45c29684e5b9eaf8f"
+    },
+    {
+      "bytes": 48084,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\chart.png",
+      "sha256": "ed6a461e5715c8dcef9f529797966fcdd2f92e119f3259c19c4cb1e701c52cb6"
+    },
+    {
+      "bytes": 589,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\checks.json",
+      "sha256": "17001787e9e84ada3e510168556d9b35a5ecf3b1f125be3e10ca2027fc0436cf"
+    },
+    {
+      "bytes": 1408,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\embedding.npz",
+      "sha256": "72c0c315004ae73cd573106fc6792f88e0e127ff7926a8fdcf6cdde6311481a4"
+    },
+    {
+      "bytes": 255,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\eta0_native.json",
+      "sha256": "f22afa0b199bb2b87bde5d2bb4a5ad1fd94f3303a81627bf7c8b92f2563d2c5b"
+    },
+    {
+      "bytes": 1706,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\eta0_native_arrays.npz",
+      "sha256": "a8c7263eb3ebebf1542713ac2bd0e88f349635839e70a63d3330231c625f1bed"
+    },
+    {
+      "bytes": 77,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\eta0_native_history.csv",
+      "sha256": "71682cd933df91381afdf65768e6a6e2c89eef06890affd6eb15fe5fd108b32c"
+    },
+    {
+      "bytes": 1071,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\result.json",
+      "sha256": "72cf0c41a51c9fcb92dcd3ef951b0b0da9c59a9bb1f7e4bfd6658f42ee69561b"
+    },
+    {
+      "bytes": 331,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis0_attempt1.json",
+      "sha256": "3445aadc64f7804105231589681edadc581fe7263eac569a32caa2720c4275bf"
+    },
+    {
+      "bytes": 1218,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis0_attempt1_arrays.npz",
+      "sha256": "5025c595f5242d8023ed73ee3f79c39fc11b70161d73f0017f6e02af49d7f7b9"
+    },
+    {
+      "bytes": 114,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis0_attempt1_history.csv",
+      "sha256": "96d2803a78ff7f858cbe5b07477853ab9c5863dd69422e85b2c8344e2d756a54"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis0_reference.json",
+      "sha256": "856853fc9538603bc1378edafc13c4026241845242b569e1d1161384357d92b7"
+    },
+    {
+      "bytes": 850,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis0_reference_arrays.npz",
+      "sha256": "632bee84c69e3e8003f0741424ac806ad365b89e027938458955db481df110f4"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis0_zero_radius_reference.json",
+      "sha256": "a08d8ce3f06cb79385e1fb0789e33381c8e9b9695cfe9a0b8924b003b9bbb95d"
+    },
+    {
+      "bytes": 850,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis0_zero_radius_reference_arrays.npz",
+      "sha256": "18decfabfbd192eefd0d3ca16725e67e900afd284382dae410daad685d5a4ffe"
+    },
+    {
+      "bytes": 314,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis1_attempt1.json",
+      "sha256": "fd54919306cef4c42570314607b2dd849400e697c6615ccf37ec7dc0b5808ba2"
+    },
+    {
+      "bytes": 1218,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis1_attempt1_arrays.npz",
+      "sha256": "62ceff050f6c3633840b5e25c0899b9406afa4d6ce65db5b162c9f7c57e35784"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis1_attempt1_history.csv",
+      "sha256": "e89db8d702895ee2ae5ac27b6aef1f96ee494cc019eb24bd59fbe2e31686c32f"
+    },
+    {
+      "bytes": 150,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis1_reference.json",
+      "sha256": "c66d8ae9eb0c14629dac96d7766d68e38a2521f9c14b2b60b652103806902adf"
+    },
+    {
+      "bytes": 850,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis1_reference_arrays.npz",
+      "sha256": "63229aa84bcc2e124c8ac374591839b61d843519e64f6b3d1a6e293934326197"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis1_zero_radius_reference.json",
+      "sha256": "6bb82e47b759bf265dff16f79d38f8809d852bc9a56d968203018e319529de0f"
+    },
+    {
+      "bytes": 850,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\axis1_zero_radius_reference_arrays.npz",
+      "sha256": "08c03987b3af829de05370efb10888d15638db057ce4059250ba8e5cf7a12263"
+    },
+    {
+      "bytes": 48032,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\chart.png",
+      "sha256": "45fa4d0d5e347cdac53b3d0a0654b89a2c34702db43eca68ba8ffd11b11e90fe"
+    },
+    {
+      "bytes": 999,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\checks.json",
+      "sha256": "61fc70e8c6cb74cd75a2ba36ccb10dd7fb9cc05c9a80a5b9355bac488717b1d3"
+    },
+    {
+      "bytes": 1408,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\embedding.npz",
+      "sha256": "d733503b3a50a0fce1e20fc8bcfca946ade2b9d0aee6fdee1d6d9e55a8af3e98"
+    },
+    {
+      "bytes": 308,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\eta0_native.json",
+      "sha256": "918cf8c5a15937d7c8c62e9f30d40d7bfaa6f949424278a0fd34a2e0d5c4d37c"
+    },
+    {
+      "bytes": 1218,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\eta0_native_arrays.npz",
+      "sha256": "b428cecff4ed1344ecf8708ca99014f8c9d3e780ce9b4ef3e6a84bb9d6f52215"
+    },
+    {
+      "bytes": 78,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\eta0_native_history.csv",
+      "sha256": "921e787e011cc8b9cfdddb036706e4d57f0aa245caaa610b5293b08df6ffe0af"
+    },
+    {
+      "bytes": 1482,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\result.json",
+      "sha256": "215434a3fe9f2ae3ceb397e4e62388db3b6c0c144eb3f15761e9dde21f7e0ce9"
+    },
+    {
+      "bytes": 49690,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\observation\\chart.png",
+      "sha256": "8b050b610d4e32df259172dd32a6789ac6be62593e18d9097b8eceba99ce911c"
+    },
+    {
+      "bytes": 1408,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\observation\\embedding.npz",
+      "sha256": "71095f0a03d91e955d990c24b8544eb94b397de64cc76bba94dfbf58d2f59560"
+    },
+    {
+      "bytes": 524,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\observation\\result.json",
+      "sha256": "217b0c469b0d26e62132333694b3f77be9c60ba6d00c5b079589de72277350c2"
+    },
+    {
+      "bytes": 18922,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\case.npz",
+      "sha256": "98829e9ac7f60aac8fc668a2d40dae47e029b477a7b2be0d675960698007b861"
+    },
+    {
+      "bytes": 107,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\graph_checks.json",
+      "sha256": "57c44ace45145e44c4cb148cde5db5d34cbfcf5448f572fcbeaff761897fc69e"
+    },
+    {
+      "bytes": 87904,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\comparison\\5_column_affine_channel_chart.png",
+      "sha256": "438ab5fbd40155ab6b8c9dcf6c5b798970a8571f8237f091fa71e5636f4f6c0a"
+    },
+    {
+      "bytes": 98504,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\comparison\\5_column_raw_channel_chart.png",
+      "sha256": "a2452f3079517f37007a3c75c357151d2c87006ce3df5e25ac8c02915846eb66"
+    },
+    {
+      "bytes": 4314,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\comparison\\aligned_charts.npz",
+      "sha256": "8956dce544c4e5f6d4650c98fc8e309f807c229eaab5104dd30a72f1d53dc70e"
+    },
+    {
+      "bytes": 1110,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\comparison\\comparison.csv",
+      "sha256": "eb7c8415a334310b97f78af121f62d654acbd14f24cc1a1c81994b3d49685dd5"
+    },
+    {
+      "bytes": 1299,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\comparison\\comparison.md",
+      "sha256": "baf466345d4bb42358c2eb004618a96909eb644cdf898dbfd7c79d09062e3b69"
+    },
+    {
+      "bytes": 1268,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\comparison\\eval_protocol.json",
+      "sha256": "fa18a279c759432d8e2dffc5c1933e9a073f740a22699e78faa94484d85e4240"
+    },
+    {
+      "bytes": 176,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\comparison\\metric_subset_seed10.npy",
+      "sha256": "eddfd75fac59dc865bc72e1283aadaa04a62eb161cdb06d2896c723f9e16620b"
+    },
+    {
+      "bytes": 310,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis0_attempt1.json",
+      "sha256": "750772903b327ea5dbca848ad8ac0a97db5156a5dfde8d91838941ae9193ff0f"
+    },
+    {
+      "bytes": 1962,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis0_attempt1_arrays.npz",
+      "sha256": "3e76adaef582504e0bafb9c88ecd656db103df59b063707108d64542aa453043"
+    },
+    {
+      "bytes": 97,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis0_attempt1_history.csv",
+      "sha256": "db6b0f12dd03369e17f779cc5b610289ef14fbb8f01e6b522802047a5b2e1407"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis0_reference.json",
+      "sha256": "6b6a09ec328310defbc07e6a9399fec430d6fdbe676f6f1d90dba2c0be37a5ac"
+    },
+    {
+      "bytes": 1234,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis0_reference_arrays.npz",
+      "sha256": "fd20d7ecb2fc3dcacfbfc435b971316b8d922817c382f6b5b3737df7c0376a55"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis0_zero_radius_reference.json",
+      "sha256": "0d3723890e613c53da05315562c9135e0424c173c6f59063571e9eb8845c0a7f"
+    },
+    {
+      "bytes": 1234,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis0_zero_radius_reference_arrays.npz",
+      "sha256": "dc580058d736860077f3c0b026f03ad563f7c56d165bc2a409788c0c5720bb7e"
+    },
+    {
+      "bytes": 329,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis1_attempt1.json",
+      "sha256": "c161a6adcf9deacd11707494b11ea295db4457ce246902533946a1ed839fd2d7"
+    },
+    {
+      "bytes": 1962,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis1_attempt1_arrays.npz",
+      "sha256": "8f363d04cee3109d512b1bc8536b46e13dd317902e0fe509ffd522a742d98bd2"
+    },
+    {
+      "bytes": 116,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis1_attempt1_history.csv",
+      "sha256": "53807e50fcd34e4449d45ff9aaf63d073e8496743c2001efabcbb06c48166265"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis1_reference.json",
+      "sha256": "beace0ededf472f426cdde5f5cecc6eacb17315614e7f9529da54aad1fafd16e"
+    },
+    {
+      "bytes": 1234,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis1_reference_arrays.npz",
+      "sha256": "6ed29c9dc3d123797db784523fd88231a6dd0390e25c314eeadf6a25e3a7efe7"
+    },
+    {
+      "bytes": 146,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis1_zero_radius_reference.json",
+      "sha256": "d1aece95984b87ee21085f054f3097f9fc47f66aaba363fc691e3c152d64fa55"
+    },
+    {
+      "bytes": 1234,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\axis1_zero_radius_reference_arrays.npz",
+      "sha256": "50251b4a2f088d5f832a56ccc7f9c4984e009d962788a16a1127442cfe2129bc"
+    },
+    {
+      "bytes": 45126,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\chart.png",
+      "sha256": "dac271ab7dde9b20a5c2960da45ee1d290a2c6bf1e0bd9ffa0f9526ab717540c"
+    },
+    {
+      "bytes": 1001,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\checks.json",
+      "sha256": "1fbf6dda71511931486fecb5004b494d69a008b9519a7adccf788e2f7b273a61"
+    },
+    {
+      "bytes": 2048,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\embedding.npz",
+      "sha256": "e8a0fad257e1ba307a818fb1e8cb76fc22e7d8fe166ad4b108e505a459c96f50"
+    },
+    {
+      "bytes": 324,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\eta0_native.json",
+      "sha256": "07a4ab1a301861dc10901546366ae0e83a47dad38ab51d79a3a1c1905e691272"
+    },
+    {
+      "bytes": 1962,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\eta0_native_arrays.npz",
+      "sha256": "3cc027af72a47c066933736cfb43c0f3eecf29b2e0e3bd347845ba50612b734c"
+    },
+    {
+      "bytes": 146,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\eta0_native_history.csv",
+      "sha256": "9483af827082e7275fb4adb79c4a05a4853b534256787694c4acee890ab68997"
+    },
+    {
+      "bytes": 1482,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\result.json",
+      "sha256": "eefdde53673c4d11ff64ded472173565626b939f77131898f6d3f8dbf2d5aefc"
+    },
+    {
+      "bytes": 260,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\axis0_attempt1.json",
+      "sha256": "d56dec715431f57b108ae1721e1f067a0f47511c91f53f6b76eb317ef7e8de01"
+    },
+    {
+      "bytes": 2730,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\axis0_attempt1_arrays.npz",
+      "sha256": "e2fce84ce8d52cab4370c2078431a9a30639cd43d87f4a8954e94b857fc86450"
+    },
+    {
+      "bytes": 147,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\axis0_attempt1_history.csv",
+      "sha256": "502225eb5a012fc79b705fd9b426bb0b388468704f3493a092c20086b5cfa212"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\axis0_reference.json",
+      "sha256": "49bff773f5ef940dbc1c653b608bd05a02e325687d70cdab45727e30ff395c77"
+    },
+    {
+      "bytes": 1978,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\axis0_reference_arrays.npz",
+      "sha256": "488ef4f062239069caf10fc32e8e5345be3233d9afe40493e79f944033047752"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\axis0_zero_radius_reference.json",
+      "sha256": "35196b954331ac8be054c3a4de5b3e3ed3219c132e40c00b98c1111368b70c13"
+    },
+    {
+      "bytes": 1978,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\axis0_zero_radius_reference_arrays.npz",
+      "sha256": "09ae59ddb18ca8fc6db51a9315d8eefa95f5180b46fe60d8197631230aae87de"
+    },
+    {
+      "bytes": 44700,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\chart.png",
+      "sha256": "ce8e07ade60bb05d1f367040e778c5559aa48a724a031b99d5f288905d16fc79"
+    },
+    {
+      "bytes": 588,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\checks.json",
+      "sha256": "e09fa5e219a254b398aa690871ff36570c1bd76f6a94f7e807797f583d09c0c2"
+    },
+    {
+      "bytes": 2048,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\embedding.npz",
+      "sha256": "39e997b65b99a0667cc60a00727caab1d7d90f31e6c41965858ab3eb6232f306"
+    },
+    {
+      "bytes": 256,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\eta0_native.json",
+      "sha256": "68445d93f23a5d7ffba5f416e27bf6e432382e515f93b68043dafa5374766320"
+    },
+    {
+      "bytes": 2730,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\eta0_native_arrays.npz",
+      "sha256": "686ab58ae9f9e5b39534e2b76912881db3cf4ac453f12fa74709cd5573faa82d"
+    },
+    {
+      "bytes": 78,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\eta0_native_history.csv",
+      "sha256": "16a1a5cee5da1c017a398a2569475ba595a9a22f0b07f73594ee2c0d2e9bde4e"
+    },
+    {
+      "bytes": 1069,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\result.json",
+      "sha256": "0c37c2d696eec50da3b25e330a255da702c7328f6b2e72f7aaf697c18a1351cf"
+    },
+    {
+      "bytes": 313,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis0_attempt1.json",
+      "sha256": "f2c670be97103e6108006d9b260c52bf02dc233ed5f4e0aed0123f2a3aa42992"
+    },
+    {
+      "bytes": 1730,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis0_attempt1_arrays.npz",
+      "sha256": "b9b491c4be22748f7a75beaa32706464ffef5666ea8e291c5ba8efe662744fd3"
+    },
+    {
+      "bytes": 197,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis0_attempt1_history.csv",
+      "sha256": "87058dc0f7b49bafa3aea64afcf9dbc01acbd6a922e6d568ec0725cfc1a4a11d"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis0_reference.json",
+      "sha256": "fa46a0b1b53ca0a7d297c80cbfbbd7207dc3f1319e20e3bbcf01d8a35e84438c"
+    },
+    {
+      "bytes": 1234,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis0_reference_arrays.npz",
+      "sha256": "af1bba068649d205658a62f487672391cb43711ac4bae7effe6c0b6018864604"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis0_zero_radius_reference.json",
+      "sha256": "6fb5a9e7ebe9ba1a13b51269ed547be97f161c64ea3fe6067d1f3892c50f63ea"
+    },
+    {
+      "bytes": 1234,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis0_zero_radius_reference_arrays.npz",
+      "sha256": "22e03e61db1259ebb9c861d7c2aae8c0dd4962a58abe079ef59d3bc92b8a0dca"
+    },
+    {
+      "bytes": 332,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis1_attempt1.json",
+      "sha256": "7186fee93ad8591b7418317e69eeea265ecc1931b1302f8eced4af327724db86"
+    },
+    {
+      "bytes": 1730,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis1_attempt1_arrays.npz",
+      "sha256": "99ad367fe64ada1bf4d02d80500eb3185107d7ebe806ee456f73b6f752e294ed"
+    },
+    {
+      "bytes": 166,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis1_attempt1_history.csv",
+      "sha256": "f3b0c92c2ff74a95882c8d60ef4b79be3d75bcfaf73e7462f008845dbc7a33dc"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis1_reference.json",
+      "sha256": "2ee895d1d8fb4691e247844a0b1232a4044d761100eb391baed3ffec38b4c62f"
+    },
+    {
+      "bytes": 1234,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis1_reference_arrays.npz",
+      "sha256": "92c5e5ba4f98a1c363bff395b66ffa72bf0db864295a9a2672291b9f63c8cb8a"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis1_zero_radius_reference.json",
+      "sha256": "99d98217f0c67819530ba892f87c2d95ff259d3cf9c4893df08af1c8d85681a2"
+    },
+    {
+      "bytes": 1234,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\axis1_zero_radius_reference_arrays.npz",
+      "sha256": "f732a1d06946d098cb970ba1f0e321ff795e53c315874cf9ce9651075c546421"
+    },
+    {
+      "bytes": 44919,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\chart.png",
+      "sha256": "e3845cf60bce16031941fb36f27bab5e93e480844113b08d0f3398daedf95daf"
+    },
+    {
+      "bytes": 1002,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\checks.json",
+      "sha256": "3baec7713a2f1b2a95cc3465d922224ed0f3b5026e11cca5ad98122d3ad505f8"
+    },
+    {
+      "bytes": 2048,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\embedding.npz",
+      "sha256": "b172851986ae46e93aada917e821e594fcc68ec791ebc4a3d369c0b01608bc26"
+    },
+    {
+      "bytes": 307,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\eta0_native.json",
+      "sha256": "4785289f7814632b4aed155da706e68006ca76c7bfa6544cc9d574479e4675a8"
+    },
+    {
+      "bytes": 1730,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\eta0_native_arrays.npz",
+      "sha256": "cfdd4459ef9e4b26001762cc807e147119d7c8069dbef1e001c30a3fa41b98ca"
+    },
+    {
+      "bytes": 78,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\eta0_native_history.csv",
+      "sha256": "3ed98d382aaa85f1d424118c906581162fd3613cc3364867e61173e2acdf01a1"
+    },
+    {
+      "bytes": 1483,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\result.json",
+      "sha256": "3f191cdd96e53fffced61700df8408cee4c05271f131d423f8840c7fbe4f036c"
+    },
+    {
+      "bytes": 49698,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\observation\\chart.png",
+      "sha256": "521b460f81de53cbe01440f1631947d69e983f3493e3c8c55e103f0aa7cb34d4"
+    },
+    {
+      "bytes": 2048,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\observation\\embedding.npz",
+      "sha256": "e9ddcb3870a7be50846fc14991737cdbf1c2d25c7468bd69450de21688a48ce2"
+    },
+    {
+      "bytes": 556,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\observation\\result.json",
+      "sha256": "12fb1b59cbaea40cfa9f242953eeddf768c6e041ce18a5d5a590dde594992876"
+    },
+    {
+      "bytes": 69354,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\case.npz",
+      "sha256": "fdca176b78a9c2c5bbe62c4d1529011e8a9747444067b6992e54287acaaedf18"
+    },
+    {
+      "bytes": 107,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\graph_checks.json",
+      "sha256": "4afa9f5b7e83e1eecd7bdaba07cf91e6beb6d90d0e052c3ab568c3ff4dbb013a"
+    },
+    {
+      "bytes": 113442,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\comparison\\5_column_affine_channel_chart.png",
+      "sha256": "86736bc1d9517b9b28247d91278b8d40cda633757f8cd3a2ec4bffbf5ea0195c"
+    },
+    {
+      "bytes": 112886,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\comparison\\5_column_raw_channel_chart.png",
+      "sha256": "adf449df4c5caf8c77da83a5e3d5e9a3a8f48ac023adfe0e6a34b523eff2f241"
+    },
+    {
+      "bytes": 7130,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\comparison\\aligned_charts.npz",
+      "sha256": "04ec03da100c1b1024bb388f8cff22aa696e1971bf2f8ae24efae19826e5a8ce"
+    },
+    {
+      "bytes": 1121,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\comparison\\comparison.csv",
+      "sha256": "88eb6157c1d7e465530960b1499c1b9ea4a0335938755fcd9c51ab987d69a26e"
+    },
+    {
+      "bytes": 1299,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\comparison\\comparison.md",
+      "sha256": "67e97f9369d900872bb3cf3c97b8cdf55d4b54338e12e65c32049407e66872e0"
+    },
+    {
+      "bytes": 1269,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\comparison\\eval_protocol.json",
+      "sha256": "e70f1dae3f60ccdc05430fb91e0a67dc1d9b7b51e05ddb79b994af9d7a6f05f9"
+    },
+    {
+      "bytes": 224,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\comparison\\metric_subset_seed10.npy",
+      "sha256": "815df7356ca48cb4df6d8506cd147c8f8b7e4c4d6a463d00ce0ddf1b828b041b"
+    },
+    {
+      "bytes": 311,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis0_attempt1.json",
+      "sha256": "802a8a051bb4bbaecafcdbf5a1d173d8d57f407128ad7a0f8b71f576f851f964"
+    },
+    {
+      "bytes": 3242,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis0_attempt1_arrays.npz",
+      "sha256": "aaf6c763d8f91b09282b65b4a23efca31bbcb511440afc9fe0cb7c141c1665dc"
+    },
+    {
+      "bytes": 97,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis0_attempt1_history.csv",
+      "sha256": "4df2e72af5498ff6ea19b800303ad160f70c295010510079cb9698177a33e861"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis0_reference.json",
+      "sha256": "a422fbf06961d604118db5b2f422dd269a139328267b477e40b5f260fcbdf8dc"
+    },
+    {
+      "bytes": 2002,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis0_reference_arrays.npz",
+      "sha256": "fbb9f421a1447c0625a511a67caf0c9b14d1dd35d87266d813bc43e44170a73a"
+    },
+    {
+      "bytes": 147,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis0_zero_radius_reference.json",
+      "sha256": "0ade7b7647dc5ec5578d73530ad04b8ad02b2d82dc0d5a1fe884b1aed4106f36"
+    },
+    {
+      "bytes": 2002,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis0_zero_radius_reference_arrays.npz",
+      "sha256": "ab030cc2470bb38153b0b16458592b25ffe9418813e01dfd621c87f8bd76a33d"
+    },
+    {
+      "bytes": 330,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis1_attempt1.json",
+      "sha256": "9f9047669ecbd7382d314070e45add080dea741a2b1c1a43716163cbffb03b5c"
+    },
+    {
+      "bytes": 3242,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis1_attempt1_arrays.npz",
+      "sha256": "afc043eee980dc06b3eecf86425b89d993ea83184dab1d032136b4e513ec8d3f"
+    },
+    {
+      "bytes": 116,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis1_attempt1_history.csv",
+      "sha256": "078718c1e9f61871d4c162c00574397c23fab9573439d0e0a9f0f35a1aeab567"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis1_reference.json",
+      "sha256": "92b4eac8222307cc625444a8e327b2238a7f8403dc39921221b8ee7920e52201"
+    },
+    {
+      "bytes": 2002,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis1_reference_arrays.npz",
+      "sha256": "bdd3ff2cb1d6b3ebda279cc824400f7ccb2d43fe05c37dd4722f79667ce01aaa"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis1_zero_radius_reference.json",
+      "sha256": "5fd3a89cd630e2c9e88fedbda6d3e7803282ace717a09fd03032da5b284d2ae2"
+    },
+    {
+      "bytes": 2002,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\axis1_zero_radius_reference_arrays.npz",
+      "sha256": "be152c33546728972e9ef88a1d211b87d974bc235be9ea4469ce05eb2daf8ad3"
+    },
+    {
+      "bytes": 54726,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\chart.png",
+      "sha256": "79b7b4bb827cb67289212d7a9ff91ca62eb8c45ec9ada31055eb14ee6000ac98"
+    },
+    {
+      "bytes": 1000,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\checks.json",
+      "sha256": "e08e68ac2e51d23db35c444845fc4de2eab61b016507f68378f14eb15d1d3669"
+    },
+    {
+      "bytes": 3328,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\embedding.npz",
+      "sha256": "9e6a72b47072c73d0c682eb7543a28109df06c51095b05306d05aeb75fc5d57f"
+    },
+    {
+      "bytes": 326,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\eta0_native.json",
+      "sha256": "9c3a121966035266760d2dcee3a2963af8634476b659c08705a58114be2f77a9"
+    },
+    {
+      "bytes": 3242,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\eta0_native_arrays.npz",
+      "sha256": "a89c89bccb17c1a3ce685075380215f0032cc7291a37f0037cc775804ab30b6f"
+    },
+    {
+      "bytes": 147,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\eta0_native_history.csv",
+      "sha256": "dcb315c3183ed5cb604e88a3a96dba9368a8dd17284ba2d465346abdd5103037"
+    },
+    {
+      "bytes": 1484,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\result.json",
+      "sha256": "bca99ea8af0de04a20959f6b8b7a7521afb35ac66939746dcbe9c0c7decd58b6"
+    },
+    {
+      "bytes": 261,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\axis0_attempt1.json",
+      "sha256": "fee96d2c0ebba9818af2c1a419c982de2c3f36e31d1509f87a967dcc006f5a52"
+    },
+    {
+      "bytes": 4778,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\axis0_attempt1_arrays.npz",
+      "sha256": "fb26d77a1289a877c07fe38c4913eddb5f214396dba31db9e0c53328a7a0ac1e"
+    },
+    {
+      "bytes": 97,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\axis0_attempt1_history.csv",
+      "sha256": "fe86a45c2c556e2803040e85b7f351f36020679ad810d54f4e1e01395e6801fa"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\axis0_reference.json",
+      "sha256": "ba97b95636c9468c146ed211585d4274fb4bd402814c07df6f58d555f7022f85"
+    },
+    {
+      "bytes": 3514,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\axis0_reference_arrays.npz",
+      "sha256": "5b288f7252749113c1c58181cd5521a408cf1526f6a3fb7288e9cc44035f1a13"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\axis0_zero_radius_reference.json",
+      "sha256": "e69c808478741655490f3781711fc9703875caf3db5f00ffb536a980d2b5b644"
+    },
+    {
+      "bytes": 3514,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\axis0_zero_radius_reference_arrays.npz",
+      "sha256": "8e36f049718c2b0c7cdfa71ade39240f3bb0263cf570d91f6d82d14d1b0ee17b"
+    },
+    {
+      "bytes": 55429,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\chart.png",
+      "sha256": "5deb9fb7cff595278fea27e5e99232d1cf923edd4510b9669fcfbcc34de1053d"
+    },
+    {
+      "bytes": 595,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\checks.json",
+      "sha256": "2c7c404291a0189b70c3b99713ddddb3bec9a00df99cb1f99853e03d402263e5"
+    },
+    {
+      "bytes": 3328,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\embedding.npz",
+      "sha256": "110935176519b63cc8c76899a6a44a79edd7d19b8816edd2df6c6e89042cd7ec"
+    },
+    {
+      "bytes": 255,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\eta0_native.json",
+      "sha256": "36fb7eb074048ccb4a034d49ff2860871837223277e735f2e41eeb5050795aa8"
+    },
+    {
+      "bytes": 4778,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\eta0_native_arrays.npz",
+      "sha256": "2325067f245d341af80dbfe31112b81593690ab2d742ce7bd9368fa9c4227756"
+    },
+    {
+      "bytes": 77,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\eta0_native_history.csv",
+      "sha256": "73225a3a01352ab8ea7a8b950760d60661d8fc54ae8c052a6b859f308b0bbfbb"
+    },
+    {
+      "bytes": 1081,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\result.json",
+      "sha256": "9fa6cc88a46186d0d3f07760be814f63f87e21489dabce05fe091ba2a1625e6e"
+    },
+    {
+      "bytes": 313,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis0_attempt1.json",
+      "sha256": "c7af0fe172d93672f1b3243cb467fbdda43206482d7b250d2f0725e94195361a"
+    },
+    {
+      "bytes": 2754,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis0_attempt1_arrays.npz",
+      "sha256": "2ca0443008ab197940565d56992ba042a29b639ce84f5a23e857109a1ce21212"
+    },
+    {
+      "bytes": 97,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis0_attempt1_history.csv",
+      "sha256": "302bf35a71924391a55fb03eb79a3c3ac8ec96736bf5d7170607825243934f8c"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis0_reference.json",
+      "sha256": "6ff558767e2dca4394a157e26b7bb293c2c529ac7686cd40c4cbdc5ff79378de"
+    },
+    {
+      "bytes": 2002,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis0_reference_arrays.npz",
+      "sha256": "36e7d1e6547a9bee4e057693c8a383cf49f6555cd29677f6d98096fb0d2df5e9"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis0_zero_radius_reference.json",
+      "sha256": "5b74f70c7baa83493de18b4c205d11c4afd0f007834dfff7684ca76d8d0bfdd4"
+    },
+    {
+      "bytes": 2002,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis0_zero_radius_reference_arrays.npz",
+      "sha256": "79dc6ddfca35a17b9fe27d022732f5c0dc4516f08bdfd5ef87e8296c7e0ba31d"
+    },
+    {
+      "bytes": 332,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis1_attempt1.json",
+      "sha256": "3bea20f8214425b591641de5e9af3158d7fff3475bdfbccb9d04c04e9fef15a4"
+    },
+    {
+      "bytes": 2754,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis1_attempt1_arrays.npz",
+      "sha256": "e4c4721a4fb1077dcda45ed9def093c8653e23dacfe59bcac1038b03fbcb810f"
+    },
+    {
+      "bytes": 167,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis1_attempt1_history.csv",
+      "sha256": "4f833b919b3249c5c655c27ed18f4b497da82b3d4884db54d62d7e2ea25dd361"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis1_reference.json",
+      "sha256": "bf19fb5d28d43e8ae4d570b58e0d9f4a447b06338a27bc4c7d3339507a2337cf"
+    },
+    {
+      "bytes": 2002,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis1_reference_arrays.npz",
+      "sha256": "c4753554c1c4b8de6b323b986d57400a0ba8e670916fc63c185a77685e6630d2"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis1_zero_radius_reference.json",
+      "sha256": "7364b276baeb4508fd71f0b1a835ea9efbc2bede30245a3ad21624a680cf62e6"
+    },
+    {
+      "bytes": 2002,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\axis1_zero_radius_reference_arrays.npz",
+      "sha256": "bc14513df7a2db4f5e1cdf983aeb1bdf76355e7129e2977e77936a731d73f3f4"
+    },
+    {
+      "bytes": 54618,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\chart.png",
+      "sha256": "b50ed3d51fd74ba9110f8e26b6e6f350cf0d09f22015b1408170f574c22a3484"
+    },
+    {
+      "bytes": 998,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\checks.json",
+      "sha256": "31580861855c64c053ac435b9faaeb242bbe165d4af2ba032b002bb6df5288c0"
+    },
+    {
+      "bytes": 3328,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\embedding.npz",
+      "sha256": "0a589a027c3a9feb2ff778332d88a2d270d1cc5ce7f52feeace3ba0e7b1bc98f"
+    },
+    {
+      "bytes": 307,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\eta0_native.json",
+      "sha256": "d41a556eeca0825b730ff244dde87fe5a55f55fc570a67a4e43f2e46791a9553"
+    },
+    {
+      "bytes": 2754,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\eta0_native_arrays.npz",
+      "sha256": "01657120df1ca7fa76862d7599cee9a780c8c19e7ada21d1f8974a350bbb6a7e"
+    },
+    {
+      "bytes": 77,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\eta0_native_history.csv",
+      "sha256": "6b750cc8df4409fe01a5e7270e9d96478ec9010ea1c83322f6eef976c3f57102"
+    },
+    {
+      "bytes": 1483,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\result.json",
+      "sha256": "664266a62e02de17e2fa17bf5de5458b5fcf56db8d9f574859b196adb9131abb"
+    },
+    {
+      "bytes": 57363,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\observation\\chart.png",
+      "sha256": "74175f657e7f900951881794af25f808a4bd07e42d447034108bf3dd48f02d5f"
+    },
+    {
+      "bytes": 3328,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\observation\\embedding.npz",
+      "sha256": "a4670b3a74c4555b6636d559aaddbe3f0da21425e4e0f0eb8136755722ccd44b"
+    },
+    {
+      "bytes": 555,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\observation\\result.json",
+      "sha256": "af3a02b723f5a30b3ebcb3a270d35a1ab9b30b51ddb87a7ed2c1a4bab3690073"
+    },
+    {
+      "bytes": 139,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\FN-G-delta_equivariance.json",
+      "sha256": "6901aa3109ed51e43949375b756903a0a2b4de85ad07caf6009a210e0d4b8605"
+    },
+    {
+      "bytes": 141,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\FN-G-nu_equivariance.json",
+      "sha256": "b159f626d52839d97ed2929b57132fd2cd70107b150daf878c45258fcc9a0f5b"
+    },
+    {
+      "bytes": 198,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\author_operator_comparison.json",
+      "sha256": "fbccf81122dbd41b53496009f38ecd06a1ff63f29ab6da03a5af2f9a2525d204"
+    },
+    {
+      "bytes": 1149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\delta_matching.json",
+      "sha256": "9154abac130ad859672617e62b1c5c2b812b8075286ed490fbeb747c32040483"
+    },
+    {
+      "bytes": 28,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\nu_zero.json",
+      "sha256": "921e01a0df3dda6cea5d98b0455475e000d85df860118299af03732521a3da1c"
+    },
+    {
+      "bytes": 1190,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\operator_attempts.json",
+      "sha256": "1c0620a8241130e01cf2ffc86e658ce2dcd4aea005e73aac762787c099b4d1e8"
+    },
+    {
+      "bytes": 88451,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\comparison\\5_column_affine_channel_chart.png",
+      "sha256": "8b8c2c5569ccdda415ec905efc7c3cf685faf10073ce034c6e84a325e50bdd51"
+    },
+    {
+      "bytes": 74162,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\comparison\\5_column_raw_channel_chart.png",
+      "sha256": "803ed8473a9d910f7abd46669dca7d5a28ab89a5a1646db44c5256f5db96e21f"
+    },
+    {
+      "bytes": 2918,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\comparison\\aligned_charts.npz",
+      "sha256": "dbbb1f336bd62d5de0bba890715416ae9a9113d90d084214ca271d20d2fc0136"
+    },
+    {
+      "bytes": 1111,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\comparison\\comparison.csv",
+      "sha256": "32a46bd009e9fa92938f37979c2177cd9c8cd45316f155386173d747cad24df4"
+    },
+    {
+      "bytes": 1335,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\comparison\\comparison.md",
+      "sha256": "3f03fc007c2d45020d398a0fe1a46953f97ad6b3f8e2a7d07717d7500ee8dae7"
+    },
+    {
+      "bytes": 1322,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\comparison\\eval_protocol.json",
+      "sha256": "9aeab1d62ab34c7f5faef9684058f935eafdcad60e99a81de06f2b7bffc7be48"
+    },
+    {
+      "bytes": 152,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\comparison\\metric_subset_seed10.npy",
+      "sha256": "ed7730de0e12fbb5e66feeffe04c6e4fef3058aea074824436ff8df3bdb991cb"
+    },
+    {
+      "bytes": 474,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\attempt1.json",
+      "sha256": "91ba2ea9e89e7f30b6af8d362576df5032cd247006049eca99a6072e1245617c"
+    },
+    {
+      "bytes": 3494,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\attempt1_arrays.npz",
+      "sha256": "6daba51204a0c660640a21b330831b1d715ae657dd306515a2c440a79c1ea3e5"
+    },
+    {
+      "bytes": 656,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\attempt1_history.csv",
+      "sha256": "8732181a1028fcbcd454d0f59a90de058e17037eb60ba5545aa0c2ee4c917485"
+    },
+    {
+      "bytes": 48658,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\chart.png",
+      "sha256": "a8088e0847ae686f7f4e9a3ffc59dd71e15e3de4f520a97925f0b08ded9f0326"
+    },
+    {
+      "bytes": 682,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\checks.json",
+      "sha256": "f3831162714756d8a1f08d727f57fbf42f0e56fdf1ff5972102a49ad0fca5cd1"
+    },
+    {
+      "bytes": 1408,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\embedding.npz",
+      "sha256": "e6b992deb6c4aa87f684f4272fc3e7d545ca43c92656e6ef0fbc46c44b6d8652"
+    },
+    {
+      "bytes": 150,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\reference.json",
+      "sha256": "b3c4b66911dce0502ce89300b7e5fa4bbc0d8d76360bf4ab04c154c1d269e925"
+    },
+    {
+      "bytes": 512,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\reference_arrays.npz",
+      "sha256": "2e7ca19c69a1b2532b1defa1bb15dd7245e7b08317ce99a667b27703df3338c5"
+    },
+    {
+      "bytes": 1167,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\result.json",
+      "sha256": "14d1a1667455ecb0011f328bab67a4ea61365ce815d9632bb83e67a95849c3a8"
+    },
+    {
+      "bytes": 472,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\attempt1.json",
+      "sha256": "4992ecf999d3e6b366a32c7227df8b1aa382c3082d391599f79c5d4095184ff1"
+    },
+    {
+      "bytes": 3494,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\attempt1_arrays.npz",
+      "sha256": "2616e5dbf69fa21ad0397cc146a5657d9763d28c6a1b43cf7f2ce556cc7dfe6b"
+    },
+    {
+      "bytes": 544,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\attempt1_history.csv",
+      "sha256": "9dace76b1d187c332fbacd4b568092279cb4bbfb2422e699678dea920006dc3f"
+    },
+    {
+      "bytes": 47577,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\chart.png",
+      "sha256": "3504d0b94639694e7d43dde0e441fadd316f47143761a4b6b3b0e78929d7eeb4"
+    },
+    {
+      "bytes": 680,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\checks.json",
+      "sha256": "446ab5c29d0b744c12f3e291885ce978939760b9d143f2e822032334a94e832d"
+    },
+    {
+      "bytes": 1408,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\embedding.npz",
+      "sha256": "18ff961a805fb8468d9ebcbaaafbbe3f6cda12efbb8a42d606721895dc2afc37"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\reference.json",
+      "sha256": "c6c63433cc2c045d0e5685bc583ccb7ca55bdf41c40bdc38d564a2174377916e"
+    },
+    {
+      "bytes": 512,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\reference_arrays.npz",
+      "sha256": "ed84361a307b3c9fc8caefb7e90640c3f70f3df5a5fd05f117670ad2be5662a6"
+    },
+    {
+      "bytes": 1162,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\result.json",
+      "sha256": "21b227f5c1fce288d711a3ae65bd1878ac12200620248c6b2a2966a12da277f8"
+    },
+    {
+      "bytes": 474,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\attempt1.json",
+      "sha256": "0b75b7a4d1f1ab027f86adb1dd5b536d69d322e978ffac5494971cd52b063ab0"
+    },
+    {
+      "bytes": 3494,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\attempt1_arrays.npz",
+      "sha256": "1bf70aa9da9a735e7d400ea6e383c030ed4c0ec7b6aabb91957349ae5203514e"
+    },
+    {
+      "bytes": 8947,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\attempt1_history.csv",
+      "sha256": "084a59e91f947f8c32d409e26d271c47e704e18ae19ea887434554fbd2008a60"
+    },
+    {
+      "bytes": 46628,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\chart.png",
+      "sha256": "5c5c76750ffcce908f90610917e35416fbb19d78427ebef35bd3551ea7f26310"
+    },
+    {
+      "bytes": 683,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\checks.json",
+      "sha256": "70a3f692ab831e2e2685110695f2d78081a8404515526e8073827a6406813507"
+    },
+    {
+      "bytes": 1408,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\embedding.npz",
+      "sha256": "c81edf1044f61ebd6428608b1b7b70b86dc379b15412a974c448cd8ec6c3fe2a"
+    },
+    {
+      "bytes": 150,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\reference.json",
+      "sha256": "ea769f00783702c40926814e1fb841383e126979c6b8dc404abb894627145115"
+    },
+    {
+      "bytes": 512,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\reference_arrays.npz",
+      "sha256": "b5b14f6ca86afbcd3cd7698379160d96ce3860ba382e456f7e4375af03b29dee"
+    },
+    {
+      "bytes": 1162,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\result.json",
+      "sha256": "febb9e675ab44e1ad36db3c29929e62b5270f4667a41f7330e65e9b127ccdbff"
+    },
+    {
+      "bytes": 49690,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\observation\\chart.png",
+      "sha256": "8b050b610d4e32df259172dd32a6789ac6be62593e18d9097b8eceba99ce911c"
+    },
+    {
+      "bytes": 1408,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\observation\\embedding.npz",
+      "sha256": "71095f0a03d91e955d990c24b8544eb94b397de64cc76bba94dfbf58d2f59560"
+    },
+    {
+      "bytes": 524,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\observation\\result.json",
+      "sha256": "217b0c469b0d26e62132333694b3f77be9c60ba6d00c5b079589de72277350c2"
+    },
+    {
+      "bytes": 198,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\author_operator_comparison.json",
+      "sha256": "e2a4604b06a12b5ab97c177edbade151ae55e99e926a506d7561597b08e742df"
+    },
+    {
+      "bytes": 1137,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\delta_matching.json",
+      "sha256": "e7164203998093125db721caf497873676a4df5aaf9f9733906f89637ccfbf4c"
+    },
+    {
+      "bytes": 28,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\nu_zero.json",
+      "sha256": "921e01a0df3dda6cea5d98b0455475e000d85df860118299af03732521a3da1c"
+    },
+    {
+      "bytes": 1193,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\operator_attempts.json",
+      "sha256": "2ad36e7bfe4dbd9a9a1ec40fa0b62779969ef52e530b5fb7436feffc77a0f7ed"
+    },
+    {
+      "bytes": 90668,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\comparison\\5_column_affine_channel_chart.png",
+      "sha256": "80e2093b3c17f271ff2fcd18d1ee6a9383083ce0e1f8b5f17c68e765161fa55d"
+    },
+    {
+      "bytes": 91020,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\comparison\\5_column_raw_channel_chart.png",
+      "sha256": "5af6d625ce4b41589caad46cb6a9fa357e2f8a13d3991dcb16f66b44b656f514"
+    },
+    {
+      "bytes": 4326,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\comparison\\aligned_charts.npz",
+      "sha256": "2acab20d7b60b1131610d4f782b9bc8abf6d04a795725f4712862079b69af286"
+    },
+    {
+      "bytes": 1144,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\comparison\\comparison.csv",
+      "sha256": "828667687b612896e5d20a158f3a4461586dc37c412e0886448fdd1bd34fca5f"
+    },
+    {
+      "bytes": 1335,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\comparison\\comparison.md",
+      "sha256": "7fd2819b3b6a9b151da1d454e0b76489868f8da643d052f267ef7e06cf084726"
+    },
+    {
+      "bytes": 1322,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\comparison\\eval_protocol.json",
+      "sha256": "f219e0f09764c5c8d2da79335379a4d74b36adb87822e5a0babb6c7b44090f21"
+    },
+    {
+      "bytes": 176,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\comparison\\metric_subset_seed10.npy",
+      "sha256": "eddfd75fac59dc865bc72e1283aadaa04a62eb161cdb06d2896c723f9e16620b"
+    },
+    {
+      "bytes": 482,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-delta\\attempt1.json",
+      "sha256": "27dddd727e0d5bda8a0f84f89c3c11c9d1046de4d5b230a1d7772574a2a667a1"
+    },
+    {
+      "bytes": 5286,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-delta\\attempt1_arrays.npz",
+      "sha256": "0cd408c0f6cac546dee06567ff9b3d00c2defdf9042a2a8d39af3fdab0e4fc03"
+    },
+    {
+      "bytes": 2848,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-delta\\attempt1_history.csv",
+      "sha256": "55c7dc41ad32074e6b1abb3681ef581c7c695e284c42649469e6a2bc7fe0e027"
+    },
+    {
+      "bytes": 45572,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-delta\\chart.png",
+      "sha256": "7fa9dfe872fc3d6f6c23baa3a29e53c900a8cc0b09ee3feee7d287e98a2e9b2c"
+    },
+    {
+      "bytes": 689,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-delta\\checks.json",
+      "sha256": "b77b53ae82af8927c212270c4400ccc5f3c66f807e34cd8a2a44db5a776a3268"
+    },
+    {
+      "bytes": 2048,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-delta\\embedding.npz",
+      "sha256": "aeb88b04a815ed27eb2f88272cb17e4744913e681908d48edf638ac99872d70d"
+    },
+    {
+      "bytes": 150,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-delta\\reference.json",
+      "sha256": "652e529b9631f0838a57a4772aa8c87030b10138ae0f617bfaf67a0b3151f1a0"
+    },
+    {
+      "bytes": 768,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-delta\\reference_arrays.npz",
+      "sha256": "0a45ca1475ed10544ff827089860dd3ec685ec80df8a0c925444dbdf4709b2f9"
+    },
+    {
+      "bytes": 1174,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-delta\\result.json",
+      "sha256": "8bea4706425fe48988951aa57cf8526e77918315ea88aec1c45354d9868f8d8b"
+    },
+    {
+      "bytes": 473,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-nu\\attempt1.json",
+      "sha256": "6ea5ec6674a4eaca5ad534f5c83947bc2032c37890d8461366cc1c6ca202ac76"
+    },
+    {
+      "bytes": 5286,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-nu\\attempt1_arrays.npz",
+      "sha256": "7af24049ac3935d5b6b35cc6701d30da24ccc9ac72181e6f70b3b1ba87eae65c"
+    },
+    {
+      "bytes": 1341,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-nu\\attempt1_history.csv",
+      "sha256": "dfb029155b482425153081061a9784a6c6926f90cce2e889f6e47e6e16661f4d"
+    },
+    {
+      "bytes": 44744,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-nu\\chart.png",
+      "sha256": "adfaec5d7e8a245dbf502ae29adaf735faf20f3e99b1c7f6d44144c47513e38c"
+    },
+    {
+      "bytes": 683,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-nu\\checks.json",
+      "sha256": "f7ea463b4cc0fffdd7238271299038b804d2cee36df95bf8d2d2bb3bc9278b6a"
+    },
+    {
+      "bytes": 2048,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-nu\\embedding.npz",
+      "sha256": "3cbf402ad77b396948e8f99ea68c778f154aeed3aebaa92eceb388bbaeca1e0c"
+    },
+    {
+      "bytes": 150,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-nu\\reference.json",
+      "sha256": "288afcb73297dd1c2d94f6188511ac85d5155cc767ceab12d8602540b41e533b"
+    },
+    {
+      "bytes": 768,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-nu\\reference_arrays.npz",
+      "sha256": "e980b3a8270ca88ac22bd9551b567788267866a93eff49b8f95dbc5cd03e43ac"
+    },
+    {
+      "bytes": 1164,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-nu\\result.json",
+      "sha256": "c1a2d2bdd4fbd7f38bd80a0568ca328cabe89d6914d365f4d937a349cd18210a"
+    },
+    {
+      "bytes": 474,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-p\\attempt1.json",
+      "sha256": "bdcef798c7005200ac91fb72ef19fa00629351395bb098679852a2703a68cffe"
+    },
+    {
+      "bytes": 5286,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-p\\attempt1_arrays.npz",
+      "sha256": "f82338f6301a18acb215f2af989ed8b053281e4f68ea5550156f695f23d63fe7"
+    },
+    {
+      "bytes": 1339,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-p\\attempt1_history.csv",
+      "sha256": "44227bdcf906c90017208f16497ab5b1e67e99c216e2246546f415b2e57c9a24"
+    },
+    {
+      "bytes": 43695,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-p\\chart.png",
+      "sha256": "4856935f7c263981aee37d6bf50686c4ffd836d8778b1caa79212a78646e4fe6"
+    },
+    {
+      "bytes": 680,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-p\\checks.json",
+      "sha256": "c2f0f26fc70b31581c12c0daab7e9662a8b020406dea2e854abeefa5ce09a0ef"
+    },
+    {
+      "bytes": 2048,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-p\\embedding.npz",
+      "sha256": "3e7580dfcc66e4e672abe64375874eeb2208dba9393062c7723b95435587d6d4"
+    },
+    {
+      "bytes": 150,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-p\\reference.json",
+      "sha256": "e8e02ad342a891c195b1d3d2de1d8ad5d5ae9195e7c5ab377e5fce734fb1f969"
+    },
+    {
+      "bytes": 768,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-p\\reference_arrays.npz",
+      "sha256": "0e436306d67e8ea00f8744a49e311a24ce1b482e3e1a6d0a61a99ddd74a1fd41"
+    },
+    {
+      "bytes": 1161,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-p\\result.json",
+      "sha256": "b79ce4f5708aa0ba3d8c0291c86f54be34bc57b7b1026dbf9646d819a40379d7"
+    },
+    {
+      "bytes": 49698,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\observation\\chart.png",
+      "sha256": "521b460f81de53cbe01440f1631947d69e983f3493e3c8c55e103f0aa7cb34d4"
+    },
+    {
+      "bytes": 2048,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\observation\\embedding.npz",
+      "sha256": "e9ddcb3870a7be50846fc14991737cdbf1c2d25c7468bd69450de21688a48ce2"
+    },
+    {
+      "bytes": 556,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\observation\\result.json",
+      "sha256": "12fb1b59cbaea40cfa9f242953eeddf768c6e041ce18a5d5a590dde594992876"
+    },
+    {
+      "bytes": 196,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\author_operator_comparison.json",
+      "sha256": "bd640259c4f47f874ad08129a15e270d384a1e840dc89200013330bda9ee4e32"
+    },
+    {
+      "bytes": 1147,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\delta_matching.json",
+      "sha256": "d8442886c733af94b054ea344d12b41aaf09e2e0995e1ea874d0f6d2a3a08ed5"
+    },
+    {
+      "bytes": 28,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\nu_zero.json",
+      "sha256": "921e01a0df3dda6cea5d98b0455475e000d85df860118299af03732521a3da1c"
+    },
+    {
+      "bytes": 1776,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\operator_attempts.json",
+      "sha256": "666d743e725637e19a6df76059b676b74c1f52415e63c95c658b7409c58e9ccb"
+    },
+    {
+      "bytes": 112593,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\comparison\\5_column_affine_channel_chart.png",
+      "sha256": "60bbcb115271bb9dc9aa4f9bc395a417f980735aee306b0d6851126bd8e458c5"
+    },
+    {
+      "bytes": 111408,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\comparison\\5_column_raw_channel_chart.png",
+      "sha256": "cf3d08e9d8535559db53702951c3663ad379f145bc063448598105c22b73e78e"
+    },
+    {
+      "bytes": 7142,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\comparison\\aligned_charts.npz",
+      "sha256": "4fd59369de68463043a08678e8c1a9b1b337d576f0c6e077095317efcaa5cefb"
+    },
+    {
+      "bytes": 1208,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\comparison\\comparison.csv",
+      "sha256": "c617d1c1b28927d018d1780374f5645a6fd3dee0c3b8fba343b20a9dc9adce8d"
+    },
+    {
+      "bytes": 1335,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\comparison\\comparison.md",
+      "sha256": "ab7d94428aa6a0ff2130ec84f8429ea231823a8fd9ae6d0de675b5c5f87ee58d"
+    },
+    {
+      "bytes": 1323,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\comparison\\eval_protocol.json",
+      "sha256": "039b37d85d3a1bc2ab3f72b68b24f836c385d5c31efa4203a15b9fab0fe83231"
+    },
+    {
+      "bytes": 224,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\comparison\\metric_subset_seed10.npy",
+      "sha256": "815df7356ca48cb4df6d8506cd147c8f8b7e4c4d6a463d00ce0ddf1b828b041b"
+    },
+    {
+      "bytes": 492,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-delta\\attempt1.json",
+      "sha256": "bf6f6472b7cdf44c2279092cc854c7c5d451d406538b1db1999d70873b3cfb06"
+    },
+    {
+      "bytes": 8870,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-delta\\attempt1_arrays.npz",
+      "sha256": "407a883fd918b32c4b318ea5ae91894044a0de49506d9fdbbf956d5b1dac84d0"
+    },
+    {
+      "bytes": 1585,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-delta\\attempt1_history.csv",
+      "sha256": "5fc57710f958b6a99a95dca0427f5f27a3cd68937a3ca171e8369c7da0c626d8"
+    },
+    {
+      "bytes": 56149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-delta\\chart.png",
+      "sha256": "60324b189e5e04773e42ce9b581d2beac86376ee8b9870965b3b1d4c735f946a"
+    },
+    {
+      "bytes": 699,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-delta\\checks.json",
+      "sha256": "cf3dad31e8d05fa84628c356ed2ee6577857d443304e12965171a694264e923a"
+    },
+    {
+      "bytes": 3328,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-delta\\embedding.npz",
+      "sha256": "dd6f65031845acdf4bb6ce8119d56ed7b4f890172ab0c2eccdea0ed1754735da"
+    },
+    {
+      "bytes": 150,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-delta\\reference.json",
+      "sha256": "4522ddda4159ff7aa024d3daf4aeea595e43b6cbf608b8d72f0b1b8676b642d9"
+    },
+    {
+      "bytes": 1280,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-delta\\reference_arrays.npz",
+      "sha256": "c97044334045f26b80ba4c2e7a67b21da26180dae3ece9486ec715ec7cfe5f08"
+    },
+    {
+      "bytes": 1214,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-delta\\result.json",
+      "sha256": "8da8ea720bef548d31f13ab30e0a154c1a6561759ed1cd4e8b67ee4365957237"
+    },
+    {
+      "bytes": 474,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-nu\\attempt1.json",
+      "sha256": "5e67dc29a1290bc8ef891645faf630e80e45167cd20155c4f4013d5518f19314"
+    },
+    {
+      "bytes": 8870,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-nu\\attempt1_arrays.npz",
+      "sha256": "5adc41643465f99eca9959621763dfda9518b2b5ba4e4cde791e1e8444278aef"
+    },
+    {
+      "bytes": 884,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-nu\\attempt1_history.csv",
+      "sha256": "ffd0751d0785a843673859fe2fe5490102e3cbc73fcf0ca2244d8fcbe4bf009c"
+    },
+    {
+      "bytes": 55096,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-nu\\chart.png",
+      "sha256": "af40bcde75e2063940921df0b5e50d678f89fb1df7c1183fd538f55871dc0c3f"
+    },
+    {
+      "bytes": 681,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-nu\\checks.json",
+      "sha256": "3e0a99469237827f8cdfbe454f68b2daa5caf0f415de0c2f52a13aa6372b167f"
+    },
+    {
+      "bytes": 3328,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-nu\\embedding.npz",
+      "sha256": "27f4fe9fb5d75a4f721089287878151699bdbdc3ee96ca1906db3adef2535319"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-nu\\reference.json",
+      "sha256": "f1f1e2bb8c7e6f1ef02080b4dd9d5584a4ecff27d22124122597fe2dbac68f1f"
+    },
+    {
+      "bytes": 1280,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-nu\\reference_arrays.npz",
+      "sha256": "1d92eaddda0363246f5ee2831e1522f9e00e205e6613387946e763d135963c11"
+    },
+    {
+      "bytes": 1194,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-nu\\result.json",
+      "sha256": "f316034487d157892d437ba1a01c2e97a9cbb1b4ee2f8bb41756e26d6ff44e9f"
+    },
+    {
+      "bytes": 474,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-p\\attempt1.json",
+      "sha256": "84ee8a0d2a276af053835a31a8d721a94d6b8c776eda33a13d65d6fd3daea28d"
+    },
+    {
+      "bytes": 8870,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-p\\attempt1_arrays.npz",
+      "sha256": "1211a693370222e097fc48c0446c629c8525aa507b5e8e96abd6e14402e92d4f"
+    },
+    {
+      "bytes": 10363,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-p\\attempt1_history.csv",
+      "sha256": "d0ff75eb983bb4001a8cd8104ea8aef0947a495de0df6a7e6fd42d3c6253dd54"
+    },
+    {
+      "bytes": 54084,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-p\\chart.png",
+      "sha256": "5aab2819fcf458fc5ad657652f7d1b4cfb1f899bb9882da2aa33537e5284fed8"
+    },
+    {
+      "bytes": 681,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-p\\checks.json",
+      "sha256": "3e45cf7d06ceea08410359124896b9b6e74e6b940e4d81e52b02f23026328adf"
+    },
+    {
+      "bytes": 3328,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-p\\embedding.npz",
+      "sha256": "03963bb4d981c45afa1b55b64ae320b08df9d226b2a9274fd3000e09cd19ae4b"
+    },
+    {
+      "bytes": 151,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-p\\reference.json",
+      "sha256": "c85db063331dc4bce80f56fc625ff0fd4913d36a9b13315202a9db6a0155868e"
+    },
+    {
+      "bytes": 1280,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-p\\reference_arrays.npz",
+      "sha256": "b58588821da3fadde0eba996844f96bfa640b91f72c2fd368c827cd457c034e0"
+    },
+    {
+      "bytes": 1165,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-p\\result.json",
+      "sha256": "ff7ea0e859c4c32d7660d06c7556783098834f7bc841719acef627aa7a6da64a"
+    },
+    {
+      "bytes": 57363,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\observation\\chart.png",
+      "sha256": "74175f657e7f900951881794af25f808a4bd07e42d447034108bf3dd48f02d5f"
+    },
+    {
+      "bytes": 3328,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\observation\\embedding.npz",
+      "sha256": "a4670b3a74c4555b6636d559aaddbe3f0da21425e4e0f0eb8136755722ccd44b"
+    },
+    {
+      "bytes": 555,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\observation\\result.json",
+      "sha256": "af3a02b723f5a30b3ebcb3a270d35a1ab9b30b51ddb87a7ed2c1a4bab3690073"
+    },
+    {
+      "bytes": 198,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\author_operator_comparison.json",
+      "sha256": "423959909361d45138ce0b3f047a245a48ec44d300f705d5747eba6c330cbed3"
+    },
+    {
+      "bytes": 537606,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\case.npz",
+      "sha256": "3fc334bebe9a39eb377b4d396fb791dada4d4ea2a973afcd0395ae311e97c3e6"
+    },
+    {
+      "bytes": 6801,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\convergence_diagnostics.json",
+      "sha256": "3a4b94c0603c139555c78e4c6a6ee02978a20c8747a505ff1df62abd56b6c950"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small_fixed_S0_reference.json",
+      "sha256": "2bd8407edbd0598cb0820c38843a5beff762cf37aba573d1efa4810c639896ae"
+    },
+    {
+      "bytes": 4352,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small_fixed_S0_reference_arrays.npz",
+      "sha256": "e2353125755f1c4f522fbfe9df5fcaed7c2142d8c617fb1c156e649d52e5921b"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small_fixed_S0_reference.json",
+      "sha256": "a89581388466adf341199ac20a5120fd3efbe32a1db842089aca0c2ee1e4829a"
+    },
+    {
+      "bytes": 4352,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small_fixed_S0_reference_arrays.npz",
+      "sha256": "2ece73d9f4f01530ba48ed27a18f519f34bfa2939edaba76901740bafa82708b"
+    },
+    {
+      "bytes": 804,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fixed_vs_learned_S.json",
+      "sha256": "18361f6b849090a15faebdd47e437a64c9426dc2c1433e11351312c4e45ce770"
+    },
+    {
+      "bytes": 270,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\initialization_sensitivity.json",
+      "sha256": "e8d738a7a79b6820eb85ce0217a611e8876d243c4e470c1b0b311087a14720ca"
+    },
+    {
+      "bytes": 1168,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\operator_attempts.json",
+      "sha256": "21649c0e06162c4e045368c23ad3936631b7b4ca161a03eed54fbee6d76ece2d"
+    },
+    {
+      "bytes": 306609,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\comparison\\7_column_affine_channel_chart.png",
+      "sha256": "f27979978035adfd48233c9e515203bf24543d1d6534b242bde1eecf6febc5ee"
+    },
+    {
+      "bytes": 307749,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\comparison\\7_column_raw_channel_chart.png",
+      "sha256": "4f7de0a6c5c7a3c43f7179d75d5473ce763686f3bf90cc3d6156d14a8f1c29d4"
+    },
+    {
+      "bytes": 32914,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\comparison\\aligned_charts.npz",
+      "sha256": "9d0643e956ea293263a64b9424e4cbebe84d978b707a41a33e63e29d7613b423"
+    },
+    {
+      "bytes": 1904,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\comparison\\comparison.csv",
+      "sha256": "8bd2c07e83e3ede95adf1f801a7053b74dff54b9b5cf1b3fe1d4fcc15918c1fb"
+    },
+    {
+      "bytes": 1969,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\comparison\\comparison.md",
+      "sha256": "0443cad8a6ff7a78c1ec72087b763f3b54c30fa19214c306f74e68dc16daada9"
+    },
+    {
+      "bytes": 1966,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\comparison\\eval_protocol.json",
+      "sha256": "bcfd70c362356965fa0ccf37a71cecf3f0babacfb2bc1ac38394eb5725bf603e"
+    },
+    {
+      "bytes": 536,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\comparison\\metric_subset_seed10.npy",
+      "sha256": "6336b927d258bfaace49c807dc16f18e36d1efc22192000fa87cb48e483fc7e2"
+    },
+    {
+      "bytes": 468,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\attempt1.json",
+      "sha256": "3227e56a78bd6ec323c8882fdf589448f6b1ffaae299418854feebc4db703501"
+    },
+    {
+      "bytes": 533204,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\attempt1_arrays.npz",
+      "sha256": "07a05fb71da9d57d3d06216fa412c10f72fdf02fd4fe8f65ebe83ff3e3bf6389"
+    },
+    {
+      "bytes": 88059,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\attempt1_history.csv",
+      "sha256": "958d88eab11fb683cb46de494c0ecc8b59bd7308bdbcf39b511aafa974ddd171"
+    },
+    {
+      "bytes": 469,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\attempt2.json",
+      "sha256": "96390537e7a7399885eac6d9cc19514725648ef162e4e6b107283ec1299ca031"
+    },
+    {
+      "bytes": 533204,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\attempt2_arrays.npz",
+      "sha256": "61d9b9ee1399d14f00fea47c1bebf3a48d3234ca2fa8b4885706910ac8eb1fd3"
+    },
+    {
+      "bytes": 264983,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\attempt2_history.csv",
+      "sha256": "a574fca774d8f9bda61216477b6dbcf9c0686a6a4c7d2ec477a56d4c7a3d02ff"
+    },
+    {
+      "bytes": 95681,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\chart.png",
+      "sha256": "1b33b1293cda699a94b8fa558bdbb4988db0a47318d828eac847f9078947f36b"
+    },
+    {
+      "bytes": 1254,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\checks.json",
+      "sha256": "573511aeda3831f54719de3f9a4542e4ef91a87dab4adaec4c4981ba1fc679aa"
+    },
+    {
+      "bytes": 11008,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\embedding.npz",
+      "sha256": "688fe9c87216aab1eaf0055f8432050325d30ff3ec2ef2d14301f876cec79da5"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\fixed_S_Ublock_reference.json",
+      "sha256": "ce8b4fcaef5bacfd1b72e7d962668161ae9fd3499a903e199255f814a0142c14"
+    },
+    {
+      "bytes": 4352,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\fixed_S_Ublock_reference_arrays.npz",
+      "sha256": "1f4286e14a750276a4d8e4942139ad1d2f3c931d526ec7ad70f407b1883db70b"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\fixed_U_Sblock_reference.json",
+      "sha256": "ac468d8d6ecc30f56c5b48a42e367e6ac15217bdd5817fba62166c88d5f74b13"
+    },
+    {
+      "bytes": 528874,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\fixed_U_Sblock_reference_arrays.npz",
+      "sha256": "494fbedccc7893e4caca757c6b3b910aef55f3d8739c3c9368dd08bc4971046d"
+    },
+    {
+      "bytes": 1779,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\result.json",
+      "sha256": "cf2b62f0f510f4716d911a9e923d3c9d6727a8f61d8389f92c354c97a1cca569"
+    },
+    {
+      "bytes": 468,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\attempt1.json",
+      "sha256": "3dc74b8b393e88036fade47a332a1c1b46be1416779a405d40d326c2bde94d12"
+    },
+    {
+      "bytes": 533204,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\attempt1_arrays.npz",
+      "sha256": "ce4534e33a36fc41bfa71350e8ab2a71f1a50f6d4916de9dc643d4c98a34654b"
+    },
+    {
+      "bytes": 88168,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\attempt1_history.csv",
+      "sha256": "ee0cf118d6737c79f438ddb00954ead4dfa1252bbc0653a3b255d516183f7cc9"
+    },
+    {
+      "bytes": 468,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\attempt2.json",
+      "sha256": "be910610d500eb62df225d3b9fb8c833feb70968a1689f6785f873597b06b876"
+    },
+    {
+      "bytes": 533204,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\attempt2_arrays.npz",
+      "sha256": "38964974983d5d95166b33778a34afe539a029eeb9be3abc4de04b7b2fe5c39d"
+    },
+    {
+      "bytes": 265185,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\attempt2_history.csv",
+      "sha256": "d3a141567c1f85a5b9ba00d65e2dcf6921932b42ba1dab34caee62b8bed9020b"
+    },
+    {
+      "bytes": 95154,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\chart.png",
+      "sha256": "3580b90b3fba7e726a8c20fb6ea702b78988aafe06d1a1eec547a314e56106ad"
+    },
+    {
+      "bytes": 1252,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\checks.json",
+      "sha256": "200969af680fce68adfd549fdf46e4f8a79e9694f812ba76c14cf9e4ec77aa58"
+    },
+    {
+      "bytes": 11008,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\embedding.npz",
+      "sha256": "714c2f2235203165f71ac1f1a3aeab4322e654cb8e1ea2d9a0e9e57db10d1d65"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\fixed_S_Ublock_reference.json",
+      "sha256": "a4299b84ad6a8e1f64fdef3153d045746cb7d3ba37abf2195ed6cafee9175bd7"
+    },
+    {
+      "bytes": 4352,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\fixed_S_Ublock_reference_arrays.npz",
+      "sha256": "a2cf40dd3c81ed429004e5e471cfd51835f7a84ff306ee14e2d26663cdb64653"
+    },
+    {
+      "bytes": 144,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\fixed_U_Sblock_reference.json",
+      "sha256": "fb2024f2086e89f4eeb20b7b932e907691a01690638ded0a66c3a2f1da2feff0"
+    },
+    {
+      "bytes": 528874,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\fixed_U_Sblock_reference_arrays.npz",
+      "sha256": "0b115da22431c388577c3cb116ec9e83744e61e732365c333eacb9b2c5d4b16e"
+    },
+    {
+      "bytes": 1776,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\result.json",
+      "sha256": "a742697af20e3d8e2a5518c2b16c6082efb075a50030a841c1ff444834c3344b"
+    },
+    {
+      "bytes": 469,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\attempt1.json",
+      "sha256": "199e83d7a28eaa4571f1e115220fa6e90a43d9a97caecf3b58417c0db6f2f61d"
+    },
+    {
+      "bytes": 533204,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\attempt1_arrays.npz",
+      "sha256": "3768f8fc987066ddf03e07ac1fcf3c908326b8dfd06811d4600bb98eb70fa8a9"
+    },
+    {
+      "bytes": 78949,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\attempt1_history.csv",
+      "sha256": "6cf0484caba6fddad053c9e30cd54858d138c323a2d3dd365b90e12bf4920f7f"
+    },
+    {
+      "bytes": 468,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\attempt2.json",
+      "sha256": "bcf61f452baf0de25d7948343620a41be6f45209cd8778c329994dd117a83e59"
+    },
+    {
+      "bytes": 533204,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\attempt2_arrays.npz",
+      "sha256": "0afa3720bdf8b11ed87fed36f82e16863dad9faade4ecb7a3128c1c620b7434d"
+    },
+    {
+      "bytes": 237367,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\attempt2_history.csv",
+      "sha256": "8be3f0f5db72060d645d3df82d5eafe97b7e356ed759c64a166e59e180b238cd"
+    },
+    {
+      "bytes": 97111,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\chart.png",
+      "sha256": "ea4224f2fb45e3227c53098323454bdc83933c692c74966b4f3a25b5ce2e6dda"
+    },
+    {
+      "bytes": 1253,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\checks.json",
+      "sha256": "3c7fdb00cc4c27c1ad099f79bd66476852dc6780fd38f08a7e0f4a9de73d24b8"
+    },
+    {
+      "bytes": 11008,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\embedding.npz",
+      "sha256": "0215b7569f0c7217ae44d5329c6e9713a68779b4ec88c5732ac1c74bd9947ec6"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\fixed_S_Ublock_reference.json",
+      "sha256": "33ce3d3532ed35cead26ac493561b0748fd99feac9afe4c4ea6acd46250bbf0d"
+    },
+    {
+      "bytes": 4352,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\fixed_S_Ublock_reference_arrays.npz",
+      "sha256": "da29da4543cee911b4e01e0c082843bc8def11791b0b38bec75f7e940ca96afe"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\fixed_U_Sblock_reference.json",
+      "sha256": "63600f88ed84f5653c509da322d60c030e37673bed7a6ec28b99f65c84001400"
+    },
+    {
+      "bytes": 528874,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\fixed_U_Sblock_reference_arrays.npz",
+      "sha256": "3d3d81e0a642ecd9a54392b04d09248457d3c8d6fbcf0d1a034543a0bb076781"
+    },
+    {
+      "bytes": 1777,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\result.json",
+      "sha256": "c1fb6fc42bda73aafa3458a472b2c2cb9d1c93bfafe460405422c40caef4aeb8"
+    },
+    {
+      "bytes": 469,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\attempt1.json",
+      "sha256": "303c24717267230096b43709542239a22acb8aa6f0d5bd8b6ceaa9dbf516c802"
+    },
+    {
+      "bytes": 533204,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\attempt1_arrays.npz",
+      "sha256": "ee42e54265fb65609bdacbf0a7acf2133cb9a84b80166576c9e443f9ccb91aec"
+    },
+    {
+      "bytes": 79755,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\attempt1_history.csv",
+      "sha256": "b17f7a048a024520d36410870a6df43bb95effd05f5b72d455f762ad27345803"
+    },
+    {
+      "bytes": 472,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\attempt2.json",
+      "sha256": "4464541d53af3260ea3bed9c38560dc2d2fdf4f04116cdc1e986a28504809c7c"
+    },
+    {
+      "bytes": 533204,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\attempt2_arrays.npz",
+      "sha256": "f3aa8bbc8e1433e4b9c03dde0572fcf93f52f8b47918b9ae7cba8818ff7429e6"
+    },
+    {
+      "bytes": 240522,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\attempt2_history.csv",
+      "sha256": "bc9fc2c60aa142976f7b3c023f0a03012a53b36b1a1b403305ad73ded51ecda3"
+    },
+    {
+      "bytes": 97194,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\chart.png",
+      "sha256": "272958ad7729101caebbe6bbf22929aee51edd42eb92dfeb888bda7e22a09ce7"
+    },
+    {
+      "bytes": 1256,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\checks.json",
+      "sha256": "310a9b6e2ce543de75906fd883bfabe294e106419315c23a9a2e1acd07ddc5ad"
+    },
+    {
+      "bytes": 11008,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\embedding.npz",
+      "sha256": "eefdfeee9f99ed704033e7e6e7669d14a35c57b27cd52bb3a6263c8b2b188c50"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\fixed_S_Ublock_reference.json",
+      "sha256": "3d4a07a252feacd758a045e235b19a6a502cdbc4c3050202da9de183a49b1685"
+    },
+    {
+      "bytes": 4352,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\fixed_S_Ublock_reference_arrays.npz",
+      "sha256": "93985ee6cc99bc7a8a8879293551a6306b72b8642e61bd3a3f6786da6af53d8a"
+    },
+    {
+      "bytes": 148,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\fixed_U_Sblock_reference.json",
+      "sha256": "c72b64576cec84f7a2408aae39a21bfda45816a502159e93c38eef18e3e7afb4"
+    },
+    {
+      "bytes": 528874,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\fixed_U_Sblock_reference_arrays.npz",
+      "sha256": "2f93045df3e81e0736489c546387f4db54883d446e47907a6bffada1793acb55"
+    },
+    {
+      "bytes": 1782,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\result.json",
+      "sha256": "f9dd2a6e9b538a7220955389a145085746919ddf1f68540291220c666c4726ff"
+    },
+    {
+      "bytes": 90740,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fnode\\chart.png",
+      "sha256": "220b6240f603d5c74797b6bd1ffa656e07ddc7362718cbf60f8ace699c6bd4e1"
+    },
+    {
+      "bytes": 11008,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fnode\\embedding.npz",
+      "sha256": "be7dd754905d8ba6417c687c647c94ef67f06ea04e60e6a9d9b43737e915082e"
+    },
+    {
+      "bytes": 459,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fnode\\native.json",
+      "sha256": "0738bc3c437429f6c6d94fc8fa78ceba0d82b0c4401edbe66cb5181418d723f5"
+    },
+    {
+      "bytes": 30374,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fnode\\native_arrays.npz",
+      "sha256": "7e8c21b3d4f2e4b1d3d1ea2960e1e3eb9baa0f076d1c7d65c70db27941dc2a89"
+    },
+    {
+      "bytes": 32612,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fnode\\native_history.csv",
+      "sha256": "3acfa11daf9eb53dbee343016427275363c63f40014b838e1db1d50795593a39"
+    },
+    {
+      "bytes": 151,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fnode\\reference.json",
+      "sha256": "3aaf021feaa7506503d08aa2be8d39b7faac84c7692bdf22e0565f8b19f184bd"
+    },
+    {
+      "bytes": 4352,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fnode\\reference_arrays.npz",
+      "sha256": "7d47fc43efb664b3bc0e631bcfa04f87ff8072b965198b7a51cb7742b4cc24f6"
+    },
+    {
+      "bytes": 612,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fnode\\result.json",
+      "sha256": "7b9235b33d87df8a288555ea60c8215162428d65fc622422657f4a70bc3932e7"
+    },
+    {
+      "bytes": 94283,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\observation\\chart.png",
+      "sha256": "c9c05649a2ddd8629de11b97de5232473c43943a2e56b30b4278354c801564af"
+    },
+    {
+      "bytes": 11008,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\observation\\embedding.npz",
+      "sha256": "3f357fe691b4ad69826eba47a36c191a4c05af179df68cbb520cacd20ce02257"
+    },
+    {
+      "bytes": 555,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\observation\\result.json",
+      "sha256": "4b781c35b5f4adb21b07d5bd5d5483235a694bbf2a2cc8ea8557f1b96dec2d8c"
+    },
+    {
+      "bytes": 434,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\attempt1.json",
+      "sha256": "ddf371df5864d96dfc4ff78b952eb1df9ede819e59905c08f684be6e313ec7ee"
+    },
+    {
+      "bytes": 533204,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\attempt1_arrays.npz",
+      "sha256": "071638ff7cc6c5da540e8ebc21d0ff16e17d4b175a761ab46b1a1f80321e3122"
+    },
+    {
+      "bytes": 61917,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\attempt1_history.csv",
+      "sha256": "ee7133b2608b80adf69761afebd2f2a8f43d3cfbabd29a0f5acce753efd6aaa4"
+    },
+    {
+      "bytes": 437,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\attempt2.json",
+      "sha256": "ffb5b371c2ba107e366c2eac2614820f0955536f0eea07b5b6384a6a434c37e8"
+    },
+    {
+      "bytes": 533204,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\attempt2_arrays.npz",
+      "sha256": "0eb7deab9d233f877b6f4b82e856157e5c2cec2637275e14f12c9d696892c862"
+    },
+    {
+      "bytes": 188004,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\attempt2_history.csv",
+      "sha256": "490526de7652f21253d78fff81fa3e7ddde7342cb2e1de05fd226330b02b9511"
+    },
+    {
+      "bytes": 1166,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\checks.json",
+      "sha256": "2e649fa8d043892ded57cc2c317f5e46df4f15eefd5b3bc63db1985926057425"
+    },
+    {
+      "bytes": 149,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\fixed_U_Sblock_reference.json",
+      "sha256": "43b52767795d693ab5f27fff571ab8140bffd5eedef862936262dd8cafccabea"
+    },
+    {
+      "bytes": 528874,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\fixed_U_Sblock_reference_arrays.npz",
+      "sha256": "5a61853b4038919b22cab5886287529545ad7ffe25bf93ed9a1528ebf7723714"
+    },
+    {
+      "bytes": 3039,
+      "path": "D:\\diffusion_refined_charting\\references\\stage2_p1\\gnn_dot\\config.py",
+      "sha256": "5abb848463224ac86395e30f15d6816503d9b1de127807d1a6fcf06e4015a63c"
+    },
+    {
+      "bytes": 17591,
+      "path": "D:\\diffusion_refined_charting\\references\\stage2_p1\\gnn_dot\\denoising_filters.py",
+      "sha256": "1bc48598521dce6c3f193f173c437d26f8baa8d3dae553933390dfba3cd4d4f9"
+    },
+    {
+      "bytes": 12677,
+      "path": "D:\\diffusion_refined_charting\\references\\stage2_p1\\gnn_dot\\main.py",
+      "sha256": "91cadb0784e61cd3c4e0c263e5174df3be361944870b8344e134336cde16b83a"
+    },
+    {
+      "bytes": 1506,
+      "path": "D:\\diffusion_refined_charting\\references\\stage2_p1\\gnn_dot\\utils.py",
+      "sha256": "8720e2ee53384c022d9c17bf1160f48cb5d8746d50a9c89e55e9c7fcb64ecf30"
+    }
+  ],
+  "protected_inputs_unchanged": true,
+  "scope": "numerical only; no channel charts or performance metrics",
+  "stage_times_s": {
+    "full": 892.7399932999979,
+    "small": 130.89132649998646
+  },
+  "status": "NUMERICAL_BLOCKER",
+  "stop": "P1-Edge only; await user review; no additional retry or P2A",
+  "stop_tolerance": 2e-05,
+  "stopped": true,
+  "strategies": {
+    "A": "fixed mu1/mu3/mu4=10",
+    "B": "normalized residual balancing: interval50, iterations100..3000, ratio10, factor2, bounds[0.001,10000]; mu2 fixed; scaled dual multiplied by old_mu/new_mu"
+  },
+  "task": "P1-Edge Solver Repair"
+}

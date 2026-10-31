@@ -1,0 +1,263 @@
+[
+  {
+    "case": "16_ic8-p_axis0",
+    "decrease": 0.5096366745174361,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\checks.json",
+    "family": "ic",
+    "final": 1.215213792754822,
+    "initial": 1.7248504672722582,
+    "status": "PASS"
+  },
+  {
+    "case": "16_ic8-p_axis1",
+    "decrease": 0.34006356306836916,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic8-p\\checks.json",
+    "family": "ic",
+    "final": 0.9492756609620615,
+    "initial": 1.2893392240304307,
+    "status": "PASS"
+  },
+  {
+    "case": "16_ic9-g_axis0",
+    "decrease": 0.7665044565399739,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-g\\checks.json",
+    "family": "ic",
+    "final": 0.8598084693695602,
+    "initial": 1.6263129259095341,
+    "status": "PASS"
+  },
+  {
+    "case": "16_ic9-p_axis0",
+    "decrease": 0.6410376319060781,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\checks.json",
+    "family": "ic",
+    "final": 0.7272379881925816,
+    "initial": 1.3682756200986597,
+    "status": "PASS"
+  },
+  {
+    "case": "16_ic9-p_axis1",
+    "decrease": 0.3848318327592265,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\ic9-p\\checks.json",
+    "family": "ic",
+    "final": 0.49421057086487097,
+    "initial": 0.8790424036240975,
+    "status": "PASS"
+  },
+  {
+    "case": "32_ic8-p_axis0",
+    "decrease": 0.5980795927875481,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\checks.json",
+    "family": "ic",
+    "final": 0.5747679759801937,
+    "initial": 1.1728475687677418,
+    "status": "PASS"
+  },
+  {
+    "case": "32_ic8-p_axis1",
+    "decrease": 0.6490389316314122,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic8-p\\checks.json",
+    "family": "ic",
+    "final": 0.5612482974400048,
+    "initial": 1.210287229071417,
+    "status": "PASS"
+  },
+  {
+    "case": "32_ic9-g_axis0",
+    "decrease": 1.444228595689426,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-g\\checks.json",
+    "family": "ic",
+    "final": 0.4601215822314136,
+    "initial": 1.9043501779208396,
+    "status": "PASS"
+  },
+  {
+    "case": "32_ic9-p_axis0",
+    "decrease": 0.9809216501883871,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\checks.json",
+    "family": "ic",
+    "final": 0.3151442111021332,
+    "initial": 1.2960658612905203,
+    "status": "PASS"
+  },
+  {
+    "case": "32_ic9-p_axis1",
+    "decrease": 1.0507816195137352,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\ic9-p\\checks.json",
+    "family": "ic",
+    "final": 0.3444828292454484,
+    "initial": 1.3952644487591834,
+    "status": "PASS"
+  },
+  {
+    "case": "64_ic8-p_axis0",
+    "decrease": 1.7344882110377782,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\checks.json",
+    "family": "ic",
+    "final": 0.5971175935131828,
+    "initial": 2.331605804550961,
+    "status": "PASS"
+  },
+  {
+    "case": "64_ic8-p_axis1",
+    "decrease": 1.154695175964871,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic8-p\\checks.json",
+    "family": "ic",
+    "final": 0.3584102006429135,
+    "initial": 1.5131053766077844,
+    "status": "PASS"
+  },
+  {
+    "case": "64_ic9-g_axis0",
+    "decrease": 2.1670250051032856,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-g\\checks.json",
+    "family": "ic",
+    "final": 0.8540071657071169,
+    "initial": 3.0210321708104027,
+    "status": "PASS"
+  },
+  {
+    "case": "64_ic9-p_axis0",
+    "decrease": 1.558092185660436,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\checks.json",
+    "family": "ic",
+    "final": 0.8225152458153235,
+    "initial": 2.3806074314757595,
+    "status": "PASS"
+  },
+  {
+    "case": "64_ic9-p_axis1",
+    "decrease": 1.4921154113276445,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\ic9-p\\checks.json",
+    "family": "ic",
+    "final": 0.3678156638600635,
+    "initial": 1.8599310751877078,
+    "status": "PASS"
+  },
+  {
+    "case": "16_fn-g-delta_axis0",
+    "decrease": 0.0028860986556567287,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\checks.json",
+    "family": "framelet",
+    "final": 0.010599128264937157,
+    "initial": 0.013485226920593885,
+    "status": "PASS"
+  },
+  {
+    "case": "16_fn-g-nu_axis0",
+    "decrease": 0.0016036397952361465,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\checks.json",
+    "family": "framelet",
+    "final": 0.00820379796519577,
+    "initial": 0.009807437760431916,
+    "status": "PASS"
+  },
+  {
+    "case": "16_fn-p_axis0",
+    "decrease": 0.0028459564328459277,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\checks.json",
+    "family": "framelet",
+    "final": 0.010019841979791014,
+    "initial": 0.012865798412636941,
+    "status": "PASS"
+  },
+  {
+    "case": "32_fn-g-delta_axis0",
+    "decrease": 0.0025815891757917956,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-delta\\checks.json",
+    "family": "framelet",
+    "final": 0.006891562824410742,
+    "initial": 0.009473152000202538,
+    "status": "PASS"
+  },
+  {
+    "case": "32_fn-g-nu_axis0",
+    "decrease": 0.0016774716126846572,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-g-nu\\checks.json",
+    "family": "framelet",
+    "final": 0.005807487992413644,
+    "initial": 0.0074849596050983016,
+    "status": "PASS"
+  },
+  {
+    "case": "32_fn-p_axis0",
+    "decrease": 0.0028089074953467847,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\fn-p\\checks.json",
+    "family": "framelet",
+    "final": 0.006814558585479789,
+    "initial": 0.009623466080826574,
+    "status": "PASS"
+  },
+  {
+    "case": "64_fn-g-delta_axis0",
+    "decrease": 0.002752082692894082,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-delta\\checks.json",
+    "family": "framelet",
+    "final": 0.007175209847558196,
+    "initial": 0.009927292540452277,
+    "status": "PASS"
+  },
+  {
+    "case": "64_fn-g-nu_axis0",
+    "decrease": 0.0017242874085873945,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-g-nu\\checks.json",
+    "family": "framelet",
+    "final": 0.006071377899252433,
+    "initial": 0.007795665307839828,
+    "status": "PASS"
+  },
+  {
+    "case": "64_fn-p_axis0",
+    "decrease": 0.0029157745082732025,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\fn-p\\checks.json",
+    "family": "framelet",
+    "final": 0.007003722239458934,
+    "initial": 0.009919496747732136,
+    "status": "PASS"
+  },
+  {
+    "case": "dot-p-small-author",
+    "decrease": 94.42709884109013,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\checks.json",
+    "family": "edge",
+    "final": 260.12132393027036,
+    "initial": 354.5484227713605,
+    "status": "PASS"
+  },
+  {
+    "case": "dot-p-small-prior",
+    "decrease": 94.4914856498691,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\checks.json",
+    "family": "edge",
+    "final": 260.0569371214914,
+    "initial": 354.5484227713605,
+    "status": "PASS"
+  },
+  {
+    "case": "fe-p-small-author",
+    "decrease": 92.58474015496796,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\checks.json",
+    "family": "edge",
+    "final": 256.52883835115375,
+    "initial": 349.1135785061217,
+    "status": "PASS"
+  },
+  {
+    "case": "fe-p-small-prior",
+    "decrease": 92.70505318626925,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\checks.json",
+    "family": "edge",
+    "final": 256.40852531985246,
+    "initial": 349.1135785061217,
+    "status": "PASS"
+  },
+  {
+    "case": "sef-p-small-author",
+    "decrease": 445.14151795713883,
+    "evidence": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\checks.json",
+    "family": "edge",
+    "final": 190.80058282542257,
+    "initial": 635.9421007825614,
+    "status": "PASS"
+  }
+]

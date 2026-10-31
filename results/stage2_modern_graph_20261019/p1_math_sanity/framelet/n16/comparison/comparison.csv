@@ -1,0 +1,5 @@
+method,ct,tw,ks,mean_m,median_m,p90_m,p95_m,max_m,source_json,train_time_s,peak_vram_bytes
+Observation,1.0,1.0,0.08504021886033705,0.11109325776720717,0.11087898148723913,0.1623222606517375,0.17803254669773189,0.2234948881914863,D:\diffusion_refined_charting\results\stage2_modern_graph_20261019\p1_math_sanity\framelet\n16\observation\result.json,,
+FN-P,1.0,1.0,0.02806515715518548,0.07403653062597307,0.07917029105922137,0.1193143512448896,0.13515017513107588,0.13765714225205208,D:\diffusion_refined_charting\results\stage2_modern_graph_20261019\p1_math_sanity\framelet\n16\fn-p\result.json,,
+FN-G-nu,1.0,1.0,0.03591754362920321,0.07789230274892357,0.08564038214789364,0.1326072526824245,0.14460023407507702,0.14655669684748682,D:\diffusion_refined_charting\results\stage2_modern_graph_20261019\p1_math_sanity\framelet\n16\fn-g-nu\result.json,,
+FN-G-delta,1.0,1.0,0.02625053856984613,0.07181563089151384,0.0764082159005146,0.12249690670152921,0.13140649827533368,0.14045326284080142,D:\diffusion_refined_charting\results\stage2_modern_graph_20261019\p1_math_sanity\framelet\n16\fn-g-delta\result.json,,

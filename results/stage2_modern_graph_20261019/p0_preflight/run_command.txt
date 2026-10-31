@@ -1,0 +1,1 @@
+D:\anaconda3\envs\diffusion_charting\python.exe -m diagnostics.stage2_p0.preflight --out-dir results\stage2_modern_graph_20261019\p0_preflight --device cuda:0

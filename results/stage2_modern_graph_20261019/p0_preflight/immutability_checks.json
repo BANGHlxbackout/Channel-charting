@@ -1,0 +1,297 @@
+{
+  "after": [
+    {
+      "bytes": 11548,
+      "path": "D:\\diffusion_refined_charting\\AGENTS.md",
+      "sha256": "536b80bba241cd559d3fd4a6ef44344dc5441dfc8b7f824db68af77cee114655"
+    },
+    {
+      "bytes": 1763496164,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic.npy",
+      "sha256": "de464ef9598757a9893e78a4a5335ac9ebbd363be14863e316e816005e73439d"
+    },
+    {
+      "bytes": 336470,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\distance_data.npz",
+      "sha256": "3680b93db493598e544fb5017c8afe5ac5942843602c96fe510290480272806e"
+    },
+    {
+      "bytes": 877,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\result.json",
+      "sha256": "9860d2282654da127007a7e024dd6f536a86e9820d6b7273f76cadc251836021"
+    },
+    {
+      "bytes": 33720,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\metric_subset_seed10.npy",
+      "sha256": "a99deb7a912ecd199c7f4b834cf941d53dd5bdccaeab7a0461e88459c5bcdf09"
+    },
+    {
+      "bytes": 1617,
+      "path": "D:\\diffusion_refined_charting\\results\\diffusion_refined_charting\\stride1_n20997_k128_lambda0.15_seed10\\result.json",
+      "sha256": "c1f4eb4f401fc4a9c41b91a9ff9c10eaef6f58a5545fd31bf2fb6563e03afb02"
+    },
+    {
+      "bytes": 7958,
+      "path": "D:\\diffusion_refined_charting\\run_diffusion_refined_charting.py",
+      "sha256": "f255b92cadf4da770ea3986d1589bfc54c4c24f9fb82f7019a3c07b3987aab0f"
+    },
+    {
+      "bytes": 2180,
+      "path": "D:\\diffusion_refined_charting\\common_metrics.py",
+      "sha256": "e26561d78735f5e5b939d3934f123a784e2a4d5b510aa8264b3732a206479a44"
+    },
+    {
+      "bytes": 10149,
+      "path": "D:\\diffusion_refined_charting\\run_adp_siamese.py",
+      "sha256": "c53f4ecd42b42b03e4fd697243395183a7efe13c09678d7025486de6b5ee6091"
+    },
+    {
+      "bytes": 6822,
+      "path": "D:\\diffusion_refined_charting\\methods\\g1_acf_graph_fcf\\compare.py",
+      "sha256": "4b3f6defe6449d3e2279f3ec288ce04a42b6ff7fb1a6823937e59e6548d4d1fa"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+      "sha256": "8382214735e441f2b18905c9e6faa490674d7b0837717170ca3489d01d832d8e"
+    },
+    {
+      "bytes": 2224,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+      "sha256": "ca71c242dd526e3d6395e1b5653b069d2e5d9979a5fe199db352efe33a9ff768"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+      "sha256": "b18c41e09a7565a960219eb9725f75dd68813badd2d67f49677aa46b7f9bd2fd"
+    },
+    {
+      "bytes": 1523,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\result.json",
+      "sha256": "aeed670ab487ac9776dfb64f0349f7dac44fc5acd9579e3ac2f9388b21670576"
+    },
+    {
+      "bytes": 1534,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\run_config.json",
+      "sha256": "0e5e42f010ccd8fd233be62d0d50a7949ce5197cba2c5befedf687c18850be3c"
+    },
+    {
+      "bytes": 56660853,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\model_best.pt",
+      "sha256": "d4747d5cbdc81e3d11fc4fc97e7a6c2f8b44bd72fd49464da3384aec2f59c461"
+    },
+    {
+      "bytes": 1933,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\graph_metadata.json",
+      "sha256": "683c33d6a8f05a41678b53c1df5b3f93bbb0f1aed3a4928cb4b013d86eda128f"
+    },
+    {
+      "bytes": 408,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\feature_metadata.json",
+      "sha256": "4f4420b63883922629fbe4e4e5654e029aa079d8eeab4ffb18b67212582150cd"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+      "sha256": "b6d33dc77bbeecd308aaa5c0cf5168d75300cca8c71b3a9acd74fb309c778960"
+    },
+    {
+      "bytes": 1523,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\result.json",
+      "sha256": "3dbabf24672d071aff5e98c87889fc1b5d534888ca3c63364d2f02599b64799b"
+    },
+    {
+      "bytes": 1528,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\run_config.json",
+      "sha256": "83783dded22eb7b585e71012a32f0f21d7ebb1297d748396133d0f1a9b03dced"
+    },
+    {
+      "bytes": 56660853,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\model_best.pt",
+      "sha256": "38486e2c773117898610008672617ba159d4c0a3d2aa541757f50b5d961dd714"
+    },
+    {
+      "bytes": 1930,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\graph_metadata.json",
+      "sha256": "9db3c5eaa8e8096d33f9dd02c368f52d61e05b3e99d7dd7ed3dfdc8e771e4b04"
+    },
+    {
+      "bytes": 408,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\feature_metadata.json",
+      "sha256": "4f4420b63883922629fbe4e4e5654e029aa079d8eeab4ffb18b67212582150cd"
+    },
+    {
+      "bytes": 1763496164,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\adp.npy",
+      "sha256": "823bea633fddeb9e80eb25dc2b578ffca9e28eeda8101b2e5962c5b33a7e37f1"
+    },
+    {
+      "bytes": 449872,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\chart.png",
+      "sha256": "941dd8a470937810c23dcdacd4a3e15fdac8b6ac3d530f221686e46cfcb20e21"
+    },
+    {
+      "bytes": 672672,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\embedding.npz",
+      "sha256": "624dce8e15a6d2c7c40553a331ed4923a58863de7c8e4d4f01f7c98e5ebc41f1"
+    },
+    {
+      "bytes": 1763496164,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\fused.npy",
+      "sha256": "4ec665404fbb2be7508743aa4bbfcb523e45fea33a85cbc2234b6ce6cde6ebd7"
+    },
+    {
+      "bytes": 43001984,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic_top512.npy",
+      "sha256": "7b6708af03913174950cc43d20ebe08674c5460f6351bcce28661dff71477f19"
+    }
+  ],
+  "before": [
+    {
+      "bytes": 11548,
+      "path": "D:\\diffusion_refined_charting\\AGENTS.md",
+      "sha256": "536b80bba241cd559d3fd4a6ef44344dc5441dfc8b7f824db68af77cee114655"
+    },
+    {
+      "bytes": 1763496164,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic.npy",
+      "sha256": "de464ef9598757a9893e78a4a5335ac9ebbd363be14863e316e816005e73439d"
+    },
+    {
+      "bytes": 336470,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\distance_data.npz",
+      "sha256": "3680b93db493598e544fb5017c8afe5ac5942843602c96fe510290480272806e"
+    },
+    {
+      "bytes": 877,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\result.json",
+      "sha256": "9860d2282654da127007a7e024dd6f536a86e9820d6b7273f76cadc251836021"
+    },
+    {
+      "bytes": 33720,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\metric_subset_seed10.npy",
+      "sha256": "a99deb7a912ecd199c7f4b834cf941d53dd5bdccaeab7a0461e88459c5bcdf09"
+    },
+    {
+      "bytes": 1617,
+      "path": "D:\\diffusion_refined_charting\\results\\diffusion_refined_charting\\stride1_n20997_k128_lambda0.15_seed10\\result.json",
+      "sha256": "c1f4eb4f401fc4a9c41b91a9ff9c10eaef6f58a5545fd31bf2fb6563e03afb02"
+    },
+    {
+      "bytes": 7958,
+      "path": "D:\\diffusion_refined_charting\\run_diffusion_refined_charting.py",
+      "sha256": "f255b92cadf4da770ea3986d1589bfc54c4c24f9fb82f7019a3c07b3987aab0f"
+    },
+    {
+      "bytes": 2180,
+      "path": "D:\\diffusion_refined_charting\\common_metrics.py",
+      "sha256": "e26561d78735f5e5b939d3934f123a784e2a4d5b510aa8264b3732a206479a44"
+    },
+    {
+      "bytes": 10149,
+      "path": "D:\\diffusion_refined_charting\\run_adp_siamese.py",
+      "sha256": "c53f4ecd42b42b03e4fd697243395183a7efe13c09678d7025486de6b5ee6091"
+    },
+    {
+      "bytes": 6822,
+      "path": "D:\\diffusion_refined_charting\\methods\\g1_acf_graph_fcf\\compare.py",
+      "sha256": "4b3f6defe6449d3e2279f3ec288ce04a42b6ff7fb1a6823937e59e6548d4d1fa"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+      "sha256": "8382214735e441f2b18905c9e6faa490674d7b0837717170ca3489d01d832d8e"
+    },
+    {
+      "bytes": 2224,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+      "sha256": "ca71c242dd526e3d6395e1b5653b069d2e5d9979a5fe199db352efe33a9ff768"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+      "sha256": "b18c41e09a7565a960219eb9725f75dd68813badd2d67f49677aa46b7f9bd2fd"
+    },
+    {
+      "bytes": 1523,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\result.json",
+      "sha256": "aeed670ab487ac9776dfb64f0349f7dac44fc5acd9579e3ac2f9388b21670576"
+    },
+    {
+      "bytes": 1534,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\run_config.json",
+      "sha256": "0e5e42f010ccd8fd233be62d0d50a7949ce5197cba2c5befedf687c18850be3c"
+    },
+    {
+      "bytes": 56660853,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\model_best.pt",
+      "sha256": "d4747d5cbdc81e3d11fc4fc97e7a6c2f8b44bd72fd49464da3384aec2f59c461"
+    },
+    {
+      "bytes": 1933,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\graph_metadata.json",
+      "sha256": "683c33d6a8f05a41678b53c1df5b3f93bbb0f1aed3a4928cb4b013d86eda128f"
+    },
+    {
+      "bytes": 408,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\feature_metadata.json",
+      "sha256": "4f4420b63883922629fbe4e4e5654e029aa079d8eeab4ffb18b67212582150cd"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+      "sha256": "b6d33dc77bbeecd308aaa5c0cf5168d75300cca8c71b3a9acd74fb309c778960"
+    },
+    {
+      "bytes": 1523,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\result.json",
+      "sha256": "3dbabf24672d071aff5e98c87889fc1b5d534888ca3c63364d2f02599b64799b"
+    },
+    {
+      "bytes": 1528,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\run_config.json",
+      "sha256": "83783dded22eb7b585e71012a32f0f21d7ebb1297d748396133d0f1a9b03dced"
+    },
+    {
+      "bytes": 56660853,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\model_best.pt",
+      "sha256": "38486e2c773117898610008672617ba159d4c0a3d2aa541757f50b5d961dd714"
+    },
+    {
+      "bytes": 1930,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\graph_metadata.json",
+      "sha256": "9db3c5eaa8e8096d33f9dd02c368f52d61e05b3e99d7dd7ed3dfdc8e771e4b04"
+    },
+    {
+      "bytes": 408,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\feature_metadata.json",
+      "sha256": "4f4420b63883922629fbe4e4e5654e029aa079d8eeab4ffb18b67212582150cd"
+    },
+    {
+      "bytes": 1763496164,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\adp.npy",
+      "sha256": "823bea633fddeb9e80eb25dc2b578ffca9e28eeda8101b2e5962c5b33a7e37f1"
+    },
+    {
+      "bytes": 449872,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\chart.png",
+      "sha256": "941dd8a470937810c23dcdacd4a3e15fdac8b6ac3d530f221686e46cfcb20e21"
+    },
+    {
+      "bytes": 672672,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\embedding.npz",
+      "sha256": "624dce8e15a6d2c7c40553a331ed4923a58863de7c8e4d4f01f7c98e5ebc41f1"
+    },
+    {
+      "bytes": 1763496164,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\fused.npy",
+      "sha256": "4ec665404fbb2be7508743aa4bbfcb523e45fea33a85cbc2234b6ce6cde6ebd7"
+    },
+    {
+      "bytes": 43001984,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic_top512.npy",
+      "sha256": "7b6708af03913174950cc43d20ebe08674c5460f6351bcce28661dff71477f19"
+    }
+  ],
+  "unchanged": true
+}

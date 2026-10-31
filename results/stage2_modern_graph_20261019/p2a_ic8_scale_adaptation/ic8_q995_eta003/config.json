@@ -1,0 +1,9 @@
+{
+  "alpha": 0.3441908057988971,
+  "alpha_source": "q995",
+  "aux_mode": "enabled",
+  "eta": 0.03,
+  "kappa": 0.2624168804298217,
+  "method": "IC8-P",
+  "slug": "ic8_q995_eta003"
+}

@@ -1,0 +1,105 @@
+{
+  "G2": {
+    "auxiliary_max_abs": 0.0,
+    "auxiliary_nonzero_rows": 0,
+    "cpu_objective": [
+      37.984427750867994,
+      61.671592436478456
+    ],
+    "cuda_cpu_objective_relative_error": 5.760697167759673e-16,
+    "feasibility": 0.0,
+    "finite": true,
+    "indices_positions_identical": true,
+    "largest_identical_point_fraction": 4.76258513120922e-05,
+    "objective_no_sustained_worsening": true,
+    "prox": 1.8148877968036411e-06,
+    "spread": 0.9637271201618387
+  },
+  "G3": {
+    "ADVISOR_HIT": false,
+    "SOLVER_LEVEL_GAIN_ONLY": false,
+    "SURVIVOR": false,
+    "TARGET_HIT": false,
+    "config": {
+      "alpha": 0.2,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a20_eta150"
+    },
+    "label": "NO_GO",
+    "numerically_valid": true,
+    "relative_improvement_vs_CG": {
+      "ks": -0.3090800914622791,
+      "mean_m": -0.2076783650939751,
+      "p95_m": -0.35374463762862635
+    },
+    "relative_improvement_vs_J": {
+      "ks": -0.30908001743902724,
+      "mean_m": -0.20767825467636758,
+      "p95_m": -0.35374304801671935
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a20_eta150\\result.json"
+  },
+  "N": 20997,
+  "attempts": 1,
+  "checkpoint": "attempt1/state.npz",
+  "config": {
+    "alpha": 0.2,
+    "eta": 0.14275751051986446,
+    "eta_factor": 1.5,
+    "group": false,
+    "kind": "IC9",
+    "method": "IC9-P",
+    "slug": "ic9-p_a20_eta150"
+  },
+  "converged": true,
+  "data_source": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+  "delta": 0.1427575105198645,
+  "delta_axes": [
+    0.14275751051986463,
+    0.14275751051986432
+  ],
+  "evaluation_status": "EVALUATED_FROZEN_PROTOCOL",
+  "feasibility": [
+    0.0,
+    0.0
+  ],
+  "finite": true,
+  "gpu": "cuda:0",
+  "iterations": 2800,
+  "largest_identical_point_fraction": 4.76258513120922e-05,
+  "localization_errors_after_affine": {
+    "max_m": 1.406825557636735,
+    "mean_m": 0.38494498904983415,
+    "median_m": 0.34778730557537996,
+    "p90_m": 0.7151147996103272,
+    "p95_m": 0.8591394587644121
+  },
+  "metrics": {
+    "ct": 0.9972580605137229,
+    "ks": 0.08517473151110194,
+    "tw": 0.9970088789055711
+  },
+  "numerically_valid": true,
+  "objective": [
+    37.984427750867994,
+    61.67159243647842
+  ],
+  "peak_ram_bytes": 1273782272,
+  "peak_vram_bytes": 418604032,
+  "phase": "P2A_FULL_N",
+  "selected_attempt": 1,
+  "selection": "only numerical convergence; never GT",
+  "solve_time_s": 24.55881270003738,
+  "spread_ratio": 0.9637271201618387,
+  "stationarity": [
+    1.8148877968036411e-06,
+    1.3071423612488438e-08
+  ],
+  "status": "VALID",
+  "total_runtime_s": 24.708326799969655,
+  "train_time_s": null
+}

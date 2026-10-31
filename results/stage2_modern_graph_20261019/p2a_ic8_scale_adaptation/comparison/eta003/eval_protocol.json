@@ -1,0 +1,36 @@
+{
+  "CT_TW_neighbors": 209,
+  "GT_use": "evaluation/plots only; no solver, parameter or numerical checkpoint selection",
+  "aligned_keys": {
+    "B0": "b0",
+    "B0+S2-CG": "b0_s2_cg",
+    "B0+S2-J": "b0_s2_j",
+    "Ball-GLR": "ball_glr",
+    "IC8-P q95": "ic8_p_q95",
+    "IC8-P q99": "ic8_p_q99",
+    "IC8-P q995": "ic8_p_q995"
+  },
+  "alignment": "separate affine fit and evaluation on all identical N nodes",
+  "chart_quality": "same-node transductive; no held-out claim",
+  "colors": "same GT-normalized x/y RGB in every panel; blue=0.25",
+  "embeddings": {
+    "B0": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\references\\b0\\embedding.npz",
+    "B0+S2-CG": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\references\\s2_cg\\embedding.npz",
+    "B0+S2-J": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\references\\s2_j\\embedding.npz",
+    "Ball-GLR": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ball_glr_eta003\\embedding.npz",
+    "IC8-P q95": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q95_eta003\\embedding.npz",
+    "IC8-P q99": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q99_eta003\\embedding.npz",
+    "IC8-P q995": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q995_eta003\\embedding.npz"
+  },
+  "metric_functions": [
+    "common_metrics.chart_metrics",
+    "common_metrics.localization_error_summary"
+  ],
+  "metric_subset_path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\comparison\\eta003\\metric_subset_seed10.npy",
+  "metric_subset_size": 4199,
+  "metric_subset_source": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\comparison\\metric_subset_seed10.npy",
+  "node_identity": "exact indices and positions checked before metrics",
+  "num_samples": 20997,
+  "plot_function": "run_adp_siamese.plot_chart (external axes; align=False for raw)",
+  "seed": 10
+}

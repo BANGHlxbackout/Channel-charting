@@ -1,0 +1,23 @@
+{
+  "advisor_hit_count": 0,
+  "auxiliary_rows_by_method": {
+    "IC8-P": {
+      "max": 173563,
+      "min": 0
+    },
+    "IC9-G": {
+      "max": 0,
+      "min": 0
+    },
+    "IC9-P": {
+      "max": 0,
+      "min": 0
+    }
+  },
+  "surviving_grid_cells": [
+    "ic8-p_a50_eta100",
+    "ic8-p_a80_eta100"
+  ],
+  "survivor_normalized_output_relative_difference": 2.210901571066088e-11,
+  "target_hit_count": 0
+}

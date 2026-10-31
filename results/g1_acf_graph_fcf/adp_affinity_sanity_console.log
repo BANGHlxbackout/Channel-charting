@@ -1,0 +1,60 @@
+D:\diffusion_refined_charting\methods\g1_acf_graph_fcf\graph_utils.py:116: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\Context.cpp:767.)
+  adj = torch.sparse_coo_tensor(indices, values_t, (n, n)).coalesce()
+{"step": 10, "train_loss": 66.97795867919922, "lr": 0.0001, "elapsed_s": 1.3376393000071403, "validation_loss": 83.63302612304688}
+{"step": 20, "train_loss": 52.45836639404297, "lr": 0.0002, "elapsed_s": 2.1691614000010304, "validation_loss": 67.56785583496094}
+{"step": 30, "train_loss": 46.01176452636719, "lr": 0.0003, "elapsed_s": 2.9774734000093304, "validation_loss": 59.13228988647461}
+{"step": 40, "train_loss": 41.76167297363281, "lr": 0.0004, "elapsed_s": 3.801218799999333, "validation_loss": 53.13002395629883}
+{"step": 50, "train_loss": 37.3062744140625, "lr": 0.0005, "elapsed_s": 4.625366500011296, "validation_loss": 47.52042770385742}
+{"step": 60, "train_loss": 33.07317352294922, "lr": 0.0006, "elapsed_s": 5.445799300010549, "validation_loss": 43.43977355957031}
+{"step": 70, "train_loss": 28.85310935974121, "lr": 0.0007, "elapsed_s": 6.269901100007701, "validation_loss": 40.05188751220703}
+{"step": 80, "train_loss": 22.213050842285156, "lr": 0.0008, "elapsed_s": 7.095741400000406, "validation_loss": 31.7266788482666}
+{"step": 90, "train_loss": 17.457834243774414, "lr": 0.0009000000000000001, "elapsed_s": 7.91486290001194, "validation_loss": 27.552080154418945}
+{"step": 100, "train_loss": 13.284154891967773, "lr": 0.001, "elapsed_s": 8.739653700002236, "validation_loss": 21.47616958618164}
+RESULT {
+  "status": "completed",
+  "phase": "sanity",
+  "mode": "graph",
+  "affinity_source": "adp",
+  "dataset": "D:\\diffusion_refined_charting\\datasets\\adp_old_shard4",
+  "distance_run": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride10_n2100_seed10",
+  "num_samples": 2100,
+  "stride": 10,
+  "seed": 10,
+  "input_dim": 26624,
+  "hidden_dim": 512,
+  "num_layers": 2,
+  "dropout": 0.1,
+  "neighbors": 35,
+  "margin": 1.7679036855697632,
+  "feature_mode": "resident",
+  "feature_chunk_size": 128,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "pairs_per_step": 65536,
+  "validation_pairs": 200000,
+  "validation_pair_hash": "8fa6931e7349d2e3ba445ad709ab47c3f3df32a7155b0439760dd1699538d135",
+  "first_train_pair_hash": "bad8d4ccca62b396616c297a630f57ef8f90441f5bd759345b170a790314f93c",
+  "max_steps": 100,
+  "best_step": 100,
+  "best_validation_loss": 21.47616958618164,
+  "actual_steps": 100,
+  "train_time_s": 8.81989220000105,
+  "total_time_s": 12.589253899990581,
+  "peak_vram_bytes": 531593216,
+  "parameter_count": 14162434,
+  "metrics": {
+    "ct": 0.5772441966477313,
+    "tw": 0.7109655889847348,
+    "ks": 0.6098354669292803,
+    "n_neighbors": 21
+  },
+  "localization_errors_after_affine": {
+    "mean_m": 3.4731719493865967,
+    "median_m": 3.3822684288024902,
+    "p90_m": 5.903951168060303,
+    "p95_m": 6.4786529541015625,
+    "max_m": 8.696918487548828
+  },
+  "protocol": "same-node transductive chart quality; GT used only after training"
+}

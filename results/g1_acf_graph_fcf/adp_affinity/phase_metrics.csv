@@ -1,0 +1,3 @@
+method,ct,tw,ks,mean_m,median_m,p90_m,p95_m,max_m,source_json,phase,status,N,train_time_s,peak_vram_bytes
+G1-Graph/ADP-affinity-Sanity,0.5772441966477313,0.7109655889847348,0.6098354669292803,3.4731719493865967,3.3822684288024902,5.903951168060303,6.4786529541015625,8.696918487548828,D:\diffusion_refined_charting\results\g1_acf_graph_fcf\stride10_n2100_seed10_graph_adp_sanity\result.json,sanity,completed,2100,8.81989220000105,531593216
+G1-Graph/ADP-affinity-Pilot,0.7040742310418048,0.6146531028069239,0.5989681920981041,3.4922306537628174,3.214146614074707,6.270279407501221,7.216507434844971,10.748052597045898,D:\diffusion_refined_charting\results\g1_acf_graph_fcf\stride1_n20997_seed10_graph_adp_pilot\result.json,pilot,completed,20997,27.51049210000201,707292672

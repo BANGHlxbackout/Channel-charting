@@ -1,0 +1,74 @@
+[
+  {
+    "N": 16,
+    "hashes": {
+      "X": "7a690db4eaa1873dd3160f6f486b0e14e426bfea4b17a15b1bb633a261c78ea1",
+      "csr_data": "25faad896b53e45a3fca9ae8c6427f11d63ff36602230fd25f829fc36aedb939",
+      "csr_indices": "5c6c0e2657eda250b87abe8760cc561b80cb7c384367b26902883d18f264d552",
+      "csr_indptr": "0ddeda2084f4ec165ba5ec76b4d212af7b7677460203cebdeca7b79db81ac3d8",
+      "observation": "039ae63dfb71b6a271d89ca1b0a8e586c600d516e27b3f4c9dec719337619e97",
+      "positions": "235cfb7c0e4d41c087b7de0d1665d657b0696400d9da12b83b852f17de244edc"
+    },
+    "ic_weight_mean": 1.0,
+    "original_weight_mean": 0.6537835124255004,
+    "positive_degree_min": 0.8630433880569089,
+    "seed": 20261035,
+    "self_loops": 0,
+    "symmetric": true,
+    "undirected_edges": 29
+  },
+  {
+    "N": 32,
+    "hashes": {
+      "X": "dc6b24231aa0512d4302c0c650dbc21e41635d9be5e569b259ec155a7fc1a624",
+      "csr_data": "23555401845e43359eac6cce7203c29404d8704239201cd04f7edb1be46217c1",
+      "csr_indices": "ce54faf9a08d3ef7b0215b6aeae470653d97f8e7da77fe4f4df857f1ac00acf8",
+      "csr_indptr": "ab669419769c611883d80d1e4c14a89535c7896e03d75471566ecd03ca9f9eaf",
+      "observation": "7f555326e5626f0a9e18ba08141ccde5bc9641d0f489c4f8be5d63ad0b666720",
+      "positions": "8f81f14ba56b46441f58794bc54dc7022ca8d9c3b6bb5bc020823bd61a592a75"
+    },
+    "ic_weight_mean": 1.0000000000000004,
+    "original_weight_mean": 0.6428240187944457,
+    "positive_degree_min": 0.8579695403205215,
+    "seed": 20261051,
+    "self_loops": 0,
+    "symmetric": true,
+    "undirected_edges": 61
+  },
+  {
+    "N": 64,
+    "hashes": {
+      "X": "a3f04016e0a53012645dd4f504a5363bea26c483fe2da0bb9535cf3316be14cb",
+      "csr_data": "207a05aba1e4be25941ccb0e9726b2a1227061d28b5404afd1c928685f47a8f2",
+      "csr_indices": "43227ee3fd577b71276f59b3e2824f4fd25a1db7bc397da39bf42dcc22648208",
+      "csr_indptr": "88b156b0ef23ecdbfada113870fd629b26b45888406f4df3bce8a6746b4aa07b",
+      "observation": "e33e97fa2b9dc21e825e99702e00a4fc28f2d51f97893c3fe3ff66f761b5a683",
+      "positions": "af1aa03ba2d0437b00fe4659c198a4daff4047377a77c75d7ea4c8871bba8473"
+    },
+    "ic_weight_mean": 0.9999999999999996,
+    "original_weight_mean": 0.6385875373305252,
+    "positive_degree_min": 0.7511280171232148,
+    "seed": 20261083,
+    "self_loops": 0,
+    "symmetric": true,
+    "undirected_edges": 125
+  },
+  {
+    "N": 256,
+    "hashes": {
+      "X": "48b69abfae18d4a4b46982582bacfa5a06ba91fb944475c5b3df5c6905dec53b",
+      "csr_data": "21a237416dccc9d465d44eb2277390b439269fbc0badbcf85f6a437e9b422083",
+      "csr_indices": "39ef46c08b119bed4b1471b6f9fc271707c9c0744efa8c9b1ee1220470868559",
+      "csr_indptr": "5192f59349d863b3a5f8b641be16ee91f900f712111b205e3b533f73e1fc35b4",
+      "observation": "3a43cba689169620be5a14a57dfd1bd967d394c11d0851484a8666867c7b0f58",
+      "positions": "b43d5bc46a01ae7a0f0daecea960c17958ee2ddb329579d8715b5880cbf44f8e"
+    },
+    "ic_weight_mean": 0.9999999999999999,
+    "original_weight_mean": 0.63883430774645,
+    "positive_degree_min": 0.7419456343509283,
+    "seed": 20261275,
+    "self_loops": 0,
+    "symmetric": true,
+    "undirected_edges": 509
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 0.3227471652915905,
+    "row_identity_error": 2.740863092043355e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n32\\SEF-author\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 14,
+    "row_error_split_gain": 0.5714799642005477,
+    "row_identity_error": 2.220446049250313e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n32\\SEF-author\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 3.5002009150196423,
+    "row_identity_error": 2.498001805406602e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n32\\FE-author\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 4,
+    "row_error_split_gain": 3.4185434203891583,
+    "row_identity_error": 1.1102230246251565e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n32\\FE-author\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 3.1438428910504017,
+    "row_identity_error": 2.1163626406917047e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n32\\FE-prior\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 6,
+    "row_error_split_gain": 3.417290077827053,
+    "row_identity_error": 1.1102230246251565e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n32\\FE-prior\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 2.7539656793557925,
+    "row_identity_error": 1.6653345369377348e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n32\\DoT-author\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 4,
+    "row_error_split_gain": 4.363251064008136,
+    "row_identity_error": 5.551115123125783e-17,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n32\\DoT-author\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 4.061290785223905,
+    "row_identity_error": 2.636779683484747e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n32\\DoT-prior\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 12,
+    "row_error_split_gain": 4.066819191663223,
+    "row_identity_error": 1.1102230246251565e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n32\\DoT-prior\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 0.0012936593649585562,
+    "row_identity_error": 2.3592239273284576e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n64\\SEF-author\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 6,
+    "row_error_split_gain": 0.0017185248964925776,
+    "row_identity_error": 2.220446049250313e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n64\\SEF-author\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 4.272460761383566,
+    "row_identity_error": 3.2612801348363973e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n64\\FE-author\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 4,
+    "row_error_split_gain": 3.739429399501065,
+    "row_identity_error": 1.942890293094024e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n64\\FE-author\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 6.591255460961503,
+    "row_identity_error": 3.2699537522162814e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n64\\FE-prior\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 8,
+    "row_error_split_gain": 6.566273942762984,
+    "row_identity_error": 1.1102230246251565e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n64\\FE-prior\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 6.44632916319285,
+    "row_identity_error": 2.3592239273284576e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n64\\DoT-author\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 9,
+    "row_error_split_gain": 6.450825588221547,
+    "row_identity_error": 1.1102230246251565e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n64\\DoT-author\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 6.122113384633641,
+    "row_identity_error": 2.636779683484747e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n64\\DoT-prior\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 5,
+    "row_error_split_gain": 6.180437342228784,
+    "row_identity_error": 1.1102230246251565e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n64\\DoT-prior\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 0.0006354586070833343,
+    "row_identity_error": 3.3566899260151217e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n256\\SEF-author\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 2,
+    "row_error_split_gain": 0.0006535402677784459,
+    "row_identity_error": 3.174543961037557e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n256\\SEF-author\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 8.762321052665294,
+    "row_identity_error": 2.7755575615628914e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n256\\FE-author\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 4,
+    "row_error_split_gain": 9.568041843960144,
+    "row_identity_error": 2.220446049250313e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n256\\FE-author\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 7.901144451944714,
+    "row_identity_error": 3.7686867515596134e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n256\\FE-prior\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 5,
+    "row_error_split_gain": 10.144081677497402,
+    "row_identity_error": 7.216449660063518e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n256\\FE-prior\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 9.766926929135638,
+    "row_identity_error": 2.8449465006019636e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n256\\DoT-author\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 4,
+    "row_error_split_gain": 9.413374607966107,
+    "row_identity_error": 4.440892098500626e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n256\\DoT-author\\residual_balance\\result.json"
+  },
+  {
+    "penalty_change_count": 0,
+    "row_error_split_gain": 8.986528549485739,
+    "row_identity_error": 3.3306690738754696e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n256\\DoT-prior\\fixed\\result.json"
+  },
+  {
+    "penalty_change_count": 4,
+    "row_error_split_gain": 9.894063785034422,
+    "row_identity_error": 3.3306690738754696e-16,
+    "scaled_dual_preservation_error": 0.0,
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\n256\\DoT-prior\\residual_balance\\result.json"
+  }
+]

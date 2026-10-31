@@ -1,0 +1,425 @@
+{
+  "刘梓健-2026-9-25.docx": {
+    "sha256": "9c88db1c1e25963025819f508bcd2c1af4eb67d350c205623752db391a3e70cd",
+    "sections": 1,
+    "a4_cm": [
+      21.001,
+      29.7
+    ],
+    "margins_cm": {
+      "top_margin": 2.54,
+      "bottom_margin": 2.54,
+      "left_margin": 3.175,
+      "right_margin": 3.175,
+      "header_distance": 1.249,
+      "footer_distance": 1.249
+    },
+    "paragraph_style_counts": {
+      "Normal": 19
+    },
+    "styles": {
+      "Normal": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": null,
+          "ascii": null,
+          "hAnsi": null
+        },
+        "size_pt": null,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "alignment": null
+      },
+      "Title": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": null,
+          "ascii": null,
+          "hAnsi": null
+        },
+        "size_pt": 28.0,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "alignment": null
+      },
+      "Heading 1": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": null,
+          "ascii": null,
+          "hAnsi": null
+        },
+        "size_pt": 16.0,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "alignment": null
+      }
+    },
+    "tables": 0,
+    "table_first_row_cell_widths_cm": [],
+    "table_header_fills": [],
+    "inline_images_cm": [
+      [
+        14.651,
+        6.163
+      ],
+      [
+        14.651,
+        6.165
+      ]
+    ],
+    "word_rendered_pages": 2
+  },
+  "刘梓健-2026-10-09.docx": {
+    "sha256": "3aafa07884821cbcade259e1a984cce8267f0b2a99ad508bd6f96bb8cb84fd1a",
+    "sections": 1,
+    "a4_cm": [
+      21.001,
+      29.7
+    ],
+    "margins_cm": {
+      "top_margin": 1.649,
+      "bottom_margin": 1.6,
+      "left_margin": 1.75,
+      "right_margin": 1.75,
+      "header_distance": 1.27,
+      "footer_distance": 1.27
+    },
+    "paragraph_style_counts": {
+      "Title": 1,
+      "Meta": 1,
+      "Normal": 17,
+      "Heading 1": 7,
+      "Source": 5,
+      "Table Note": 1,
+      "Figure": 2,
+      "Caption": 2
+    },
+    "styles": {
+      "Normal": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": "微软雅黑",
+          "ascii": "Times New Roman",
+          "hAnsi": "Times New Roman"
+        },
+        "size_pt": 10.5,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": 5.0,
+        "line_spacing": 1.1791666666666667,
+        "alignment": null
+      },
+      "Title": {
+        "base": "Normal",
+        "fonts_direct": {
+          "eastAsia": "宋体",
+          "ascii": null,
+          "hAnsi": null
+        },
+        "size_pt": 12.0,
+        "bold": true,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": 1.0,
+        "alignment": null
+      },
+      "Heading 1": {
+        "base": "Normal",
+        "fonts_direct": {
+          "eastAsia": "宋体",
+          "ascii": null,
+          "hAnsi": null
+        },
+        "size_pt": 12.0,
+        "bold": true,
+        "space_before_pt": 7.0,
+        "space_after_pt": 3.0,
+        "line_spacing": null,
+        "alignment": null
+      },
+      "Caption": {
+        "base": "Normal",
+        "fonts_direct": {
+          "eastAsia": null,
+          "ascii": null,
+          "hAnsi": null
+        },
+        "size_pt": null,
+        "bold": true,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": 1.1,
+        "alignment": null
+      },
+      "Meta": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": "微软雅黑",
+          "ascii": "Times New Roman",
+          "hAnsi": "Times New Roman"
+        },
+        "size_pt": 10.5,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": 9.0,
+        "line_spacing": 1.1,
+        "alignment": null
+      },
+      "Source": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": "微软雅黑",
+          "ascii": "Times New Roman",
+          "hAnsi": "Times New Roman"
+        },
+        "size_pt": 10.5,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": 3.0,
+        "line_spacing": 1.1,
+        "alignment": null
+      },
+      "Table Note": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": "微软雅黑",
+          "ascii": "Times New Roman",
+          "hAnsi": "Times New Roman"
+        },
+        "size_pt": 10.5,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": 5.0,
+        "line_spacing": 1.1,
+        "alignment": null
+      },
+      "Figure": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": "微软雅黑",
+          "ascii": "Times New Roman",
+          "hAnsi": "Times New Roman"
+        },
+        "size_pt": 10.5,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": 1.0,
+        "line_spacing": 1.1,
+        "alignment": null
+      }
+    },
+    "tables": 1,
+    "table_first_row_cell_widths_cm": [
+      [
+        9.017,
+        4.064,
+        4.064
+      ]
+    ],
+    "table_header_fills": [
+      [
+        "1F3C55",
+        "1F3C55",
+        "1F3C55"
+      ]
+    ],
+    "inline_images_cm": [
+      [
+        13.377,
+        7.525
+      ],
+      [
+        15.05,
+        6.271
+      ]
+    ],
+    "word_rendered_pages": 3
+  },
+  "刘梓健-2026-10-21.docx": {
+    "sha256": "b575cf9328ffdf756bbc77fe0589e7012a9b29a9286c384ebab99cbb579f94ff",
+    "sections": 1,
+    "a4_cm": [
+      21.001,
+      29.7
+    ],
+    "margins_cm": {
+      "top_margin": 1.57,
+      "bottom_margin": 1.52,
+      "left_margin": 1.67,
+      "right_margin": 1.67,
+      "header_distance": 1.27,
+      "footer_distance": 1.27
+    },
+    "paragraph_style_counts": {
+      "Title": 1,
+      "Meta": 1,
+      "Normal": 12,
+      "Heading 1": 3,
+      "Caption": 4,
+      "Source": 3
+    },
+    "styles": {
+      "Normal": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": "微软雅黑",
+          "ascii": "Times New Roman",
+          "hAnsi": "Times New Roman"
+        },
+        "size_pt": 10.5,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": 5.0,
+        "line_spacing": 1.1791666666666667,
+        "alignment": null
+      },
+      "Title": {
+        "base": "Normal",
+        "fonts_direct": {
+          "eastAsia": "宋体",
+          "ascii": null,
+          "hAnsi": null
+        },
+        "size_pt": 12.0,
+        "bold": true,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": 1.0,
+        "alignment": null
+      },
+      "Heading 1": {
+        "base": "Normal",
+        "fonts_direct": {
+          "eastAsia": "宋体",
+          "ascii": null,
+          "hAnsi": null
+        },
+        "size_pt": 12.0,
+        "bold": true,
+        "space_before_pt": 7.0,
+        "space_after_pt": 3.0,
+        "line_spacing": null,
+        "alignment": null
+      },
+      "Caption": {
+        "base": "Normal",
+        "fonts_direct": {
+          "eastAsia": null,
+          "ascii": null,
+          "hAnsi": null
+        },
+        "size_pt": null,
+        "bold": true,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": 1.1,
+        "alignment": null
+      },
+      "Meta": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": "微软雅黑",
+          "ascii": "Times New Roman",
+          "hAnsi": "Times New Roman"
+        },
+        "size_pt": 10.5,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": 9.0,
+        "line_spacing": 1.1,
+        "alignment": null
+      },
+      "Source": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": "微软雅黑",
+          "ascii": "Times New Roman",
+          "hAnsi": "Times New Roman"
+        },
+        "size_pt": 10.5,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": 3.0,
+        "line_spacing": 1.1,
+        "alignment": null
+      },
+      "Table Note": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": "微软雅黑",
+          "ascii": "Times New Roman",
+          "hAnsi": "Times New Roman"
+        },
+        "size_pt": 10.5,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": 5.0,
+        "line_spacing": 1.1,
+        "alignment": null
+      },
+      "Figure": {
+        "base": null,
+        "fonts_direct": {
+          "eastAsia": "微软雅黑",
+          "ascii": "Times New Roman",
+          "hAnsi": "Times New Roman"
+        },
+        "size_pt": 10.5,
+        "bold": null,
+        "space_before_pt": null,
+        "space_after_pt": 1.0,
+        "line_spacing": 1.1,
+        "alignment": null
+      }
+    },
+    "tables": 1,
+    "table_first_row_cell_widths_cm": [
+      [
+        3.2,
+        2.05,
+        2.05,
+        2.05,
+        2.549,
+        2.549,
+        2.549
+      ]
+    ],
+    "table_header_fills": [
+      [
+        "21415A",
+        "21415A",
+        "21415A",
+        "21415A",
+        "21415A",
+        "21415A",
+        "21415A"
+      ]
+    ],
+    "inline_images_cm": [
+      [
+        16.9,
+        4.662
+      ],
+      [
+        16.9,
+        4.541
+      ],
+      [
+        16.8,
+        4.888
+      ],
+      [
+        8.6,
+        5.373
+      ]
+    ],
+    "word_rendered_pages": 2
+  }
+}

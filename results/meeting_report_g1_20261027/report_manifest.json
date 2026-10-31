@@ -1,0 +1,51 @@
+{
+  "template_sha256": "b575cf9328ffdf756bbc77fe0589e7012a9b29a9286c384ebab99cbb579f94ff",
+  "comparison_csv": "results/g1_acf_graph_fcf/comparison/comparison.csv",
+  "eval_protocol": "results/g1_acf_graph_fcf/comparison/eval_protocol.json",
+  "technical_report": "results/g1_acf_graph_fcf/REPORT.md",
+  "num_samples": 20997,
+  "seed": 10,
+  "metric_subset_size": 4199,
+  "methods": ["B0", "G1-Identity", "G1-Graph"],
+  "display_names": {
+    "B0": "原Siamese",
+    "G1-Identity": "无传播网络",
+    "G1-Graph": "图传播网络"
+  },
+  "figures": {
+    "15": {"path": "results/g1_acf_graph_fcf/comparison/four_column_raw_channel_chart.png", "width_cm": 16.8},
+    "19": {"path": "results/g1_acf_graph_fcf/comparison/four_column_affine_channel_chart.png", "width_cm": 16.8}
+  },
+  "supplementary_figure": {
+    "path": "results/meeting_report_g1_20261027/affine_error_cdf.png",
+    "source_npz": "results/g1_acf_graph_fcf/comparison/aligned_charts.npz",
+    "width_cm": 8.6,
+    "caption": "图 5  三组已保存图谱的仿射误差累计分布；横轴展示 0–2 m，极值见表。"
+  },
+  "text_slots": {
+    "0": "图传播信道图谱与无传播对照汇报",
+    "1": "2026 年 10 月 27 日  ·  DICHASUS cf02 cf03 cf04  ·  N = 20,997",
+    "2": "结论  在同一数据与评价协议下，图传播网络相对原有初始图谱的平均误差由 0.4093 m 降至 0.3998 m；但无传播的同构对照为 0.3983 m，略优于图传播网络。当前结果显示新网络整体有所改善，尚不支持把改善归因于邻域传播。",
+    "3": "研究问题与方法",
+    "4": "研究问题是：换用自相关节点特征与图谱映射网络后，初始信道图谱是否更准确；其中邻居传播是否提供独立收益。三部分信息分别承担节点表示、传播范围和测地距离监督。",
+    "6": "图 1  节点特征、邻接和测地监督在方法中的分工。",
+    "7": "节点表示  每个时延 tap 的多天线复信道构成共轭外积，13 个 tap 的实部与虚部展开为 26,624 维特征；该特征保留跨天线关系，并消除公共相位。",
+    "8": "图与监督  沿用 ADP 与时间戳融合得到的 20 近邻图及其最短路测地距离。前者限制消息传播范围，后者监督二维输出；真实位置不参与训练或选模。",
+    "10": "图 2  两层图传播网络及单位邻接对照。",
+    "11": "严格对照  两种网络使用相同特征、模型参数、点对、损失和训练规则；无传播版仅把传播邻接换成单位矩阵。由此检验邻域传播的净贡献。",
+    "12": "代码与配置  methods/g1_acf_graph_fcf/run.py；完整训练与协议见技术报告。",
+    "13": "同协议图谱对照",
+    "14": "图 3、图 4 依次展示真实位置、原有初始图谱、无传播网络和图传播网络。原图标题中的 Identity、Graph 分别对应后两者。各列沿用同一真实位置颜色映射；原始坐标的方向和尺度可任意变化。",
+    "16": "图 3  原始二维图谱；真实位置与三种信道图谱分列展示。",
+    "18": "图谱观察  两种新网络都较好保留左上弧形区域与右下分支的扫描轨迹；图传播与无传播的轮廓非常接近，图中未见传播独有的明显结构修复。",
+    "20": "图 4  各方法分别仿射对齐后的图谱；同一真实位置颜色映射。",
+    "21": "定量结果与结论",
+    "22": "结果解读  图传播版比原 Siamese 的 CT、TW 分别高约 0.0012、0.0009，KS 低约 0.0047，平均误差低约 9.6 mm；但其平均误差比无传播对照高约 1.4 mm，P95 高约 3.1 mm。故整体改善不能单独归因于传播。",
+    "23": "证据来源  完整指标与逐行 JSON 见 results/g1_acf_graph_fcf/comparison/comparison.csv；CDF 坐标见同目录 aligned_charts.npz。",
+    "24": "状态  本汇报仅整理已完成的单种子初始图谱实验，未重训；图传播版仍未超过已保存的后处理精修主基线。"
+  },
+  "conclusion_paragraphs": [
+    "可比范围  三组均为相同的 20,997 个节点。CT、TW、KS 在 seed 10 固定的 4,199 节点上计算；定位误差在全部节点上分别拟合并评价仿射对齐。该误差不是留出节点或部署定位精度。",
+    "下一步  若继续研究图传播，应先提出能区分传播收益与特征收益的具体机制及受控对照；本次单次结果不足以据此宣称图传播有效。"
+  ]
+}

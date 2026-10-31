@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\diffusion_refined_charting\methods\stage2_modern_graph\run_ic_fulln.py", line 15, in <module>
+    import psutil
+ModuleNotFoundError: No module named 'psutil'

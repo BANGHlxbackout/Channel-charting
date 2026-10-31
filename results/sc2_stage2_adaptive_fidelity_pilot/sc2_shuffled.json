@@ -1,0 +1,39 @@
+{
+  "embedding_shape": [
+    20997,
+    2
+  ],
+  "eval_subset_seed": 10,
+  "eval_subset_size": 4199,
+  "fidelity": {
+    "max": 1.5,
+    "mean": 1.0,
+    "min": 0.5
+  },
+  "localization_errors_after_affine": {
+    "max_m": 1.1441251039505005,
+    "mean_m": 0.31870952248573303,
+    "median_m": 0.2931860387325287,
+    "p90_m": 0.5586353540420532,
+    "p95_m": 0.633945107460022
+  },
+  "metrics": {
+    "ct": 0.9982207834252808,
+    "ks": 0.0649484288506288,
+    "n_neighbors": 209,
+    "tw": 0.998221842249869
+  },
+  "variant": "sc2_shuffled",
+  "versus_uniform": {
+    "harmed_count": 10376,
+    "harmed_fraction": 0.4941658332142687,
+    "improved_count": 10621,
+    "improved_fraction": 0.5058341667857313,
+    "max_positive_harm_m": 0.166409432888031,
+    "max_positive_improvement_m": 0.12737149000167847,
+    "mean_positive_harm_m": 0.002170748310163617,
+    "mean_positive_improvement_m": 0.002209186553955078,
+    "net_mean_improvement_m": 3.8438225601566955e-05,
+    "unchanged_count": 0
+  }
+}

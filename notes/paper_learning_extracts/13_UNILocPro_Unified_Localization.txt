@@ -1,0 +1,196 @@
+FILE: 13_UNILocPro_Unified_Localization.pdf
+PAGES: 13
+TITLE: UNILocPro: Unified Localization Integrating Model-Based Geometry and Channel Charting
+
+ABSTRACT/FRONT:
+DRAFT 1
+UNILocPro: Unified Localization Integrating Model-Based
+Geometry and Channel Charting
+Yuhao Zhang, Guangjin Pan,Member, IEEE, Musa Furkan Keskin,Member, IEEE,
+Ossi Kaltiokallio,Member, IEEE, Mikko Valkama,Fellow, IEEE, and Henk Wymeersch,Fellow, IEEE
+Abstract—In this paper, we propose a unified localization
+framework (called UNILocPro) that integrates model-based
+localization and channel charting ( CC) for mixed line-of-sight
+(LoS)/non-line-of-sight ( NLoS) scenarios. Specifically, based on
+LoS/NLoS identification, an adaptive activation between the
+model-based and CC-based methods is conducted. Aiming for
+unsupervised learning, information obtained from the model-
+based method is utilized to train the CC model, where a pairwise
+distance loss (involving a new dissimilarity metric design), a
+triplet loss (if timestamps are available), a LoS-based loss, and
+an optimal transport ( OT)-based loss are jointly employed such
+that the global geometry can be well preserved. To reduce the
+training complexity of UNILocPro, we propose a low-complexity
+implementation (called UNILoc), where the CC model is trained
+with self-generated labels produced by a single pre-training
+OT transformation, which avoids iterative Sinkhorn updates
+involved in the OT-based loss computation. Extensive numerical
+experiments demonstrate that the proposed unified frameworks
+achieve significantly improved positioning accuracy compared to
+both model-based and CC-based methods. Notably, UNILocPro
+with timestamps attains performance on par with fully-supervised
+fingerprinting despite operating without labelled training data. It
+is also shown that the low-complexity UNILoc can substantially
+reduce training complexity with only marginal performance
+degradation.
+Index Terms—localization, model-based localization, channel
+charting, machine learning, unsupervised learning, optimal
+transport.
+I. INTRODUCTION
+Wireless communication systems (e.g., 5G and 6G) provide
+opportunities for high-precision localization, even in global nav-
+igation satellite system ( GNSS)-challenged environments [2]–
+[4]. In general, wireless localization methods fall into two
+main categories: (1) model-based methods relying on channel
+parameter estimation and geometric relationships [5]–[8], and
+(2) data-driven methods leveraging machine learning ( ML) to
+infer user position from channel state information ( CSI) [9]–
+[12]. Model-based methods typically exploit the line-of-sight
+(LoS) path (provides the most direct and reliable information
+about the user location), whose parameters (e.g., time-of-
+arrival (ToA), angle-of-arrival (AoA), time-difference-of-arrival
+This work has been supported, in part, by the European Union through the
+project ISLANDS - Grant agreement n. 101120544, by the Swedish Research
+Council (VR) through the project 6G-PERCEF under Grant 2024-04390, and
+by Business Finland under the 6G-ISAC project.(Corresponding author:
+Guangjin Pan.)
+Yuhao Zhang, Guangjin Pan, Musa Furkan Keskin, and Henk Wymeersch
+are with the Department of Electrical Engineering, Chalmers University of
+Technology, 41296 Gothenburg, Sweden (e-mail: {yuhaozh, guangjin.pan,
+furkan, henkw}@chalmers.se).
+Ossi Kaltiokallio and Mikko Valkama are with the Unit of Electri-
+cal Eng
+
+INTRO:
+without labelled training data. It
+is also shown that the low-complexity UNILoc can substantially
+reduce training complexity with only marginal performance
+degradation.
+Index Terms—localization, model-based localization, channel
+charting, machine learning, unsupervised learning, optimal
+transport.
+I. INTRODUCTION
+Wireless communication systems (e.g., 5G and 6G) provide
+opportunities for high-precision localization, even in global nav-
+igation satellite system ( GNSS)-challenged environments [2]–
+[4]. In general, wireless localization methods fall into two
+main categories: (1) model-based methods relying on channel
+parameter estimation and geometric relationships [5]–[8], and
+(2) data-driven methods leveraging machine learning ( ML) to
+infer user position from channel state information ( CSI) [9]–
+[12]. Model-based methods typically exploit the line-of-sight
+(LoS) path (provides the most direct and reliable information
+about the user location), whose parameters (e.g., time-of-
+arrival (ToA), angle-of-arrival (AoA), time-difference-of-arrival
+This work has been supported, in part, by the European Union through the
+project ISLANDS - Grant agreement n. 101120544, by the Swedish Research
+Council (VR) through the project 6G-PERCEF under Grant 2024-04390, and
+by Business Finland under the 6G-ISAC project.(Corresponding author:
+Guangjin Pan.)
+Yuhao Zhang, Guangjin Pan, Musa Furkan Keskin, and Henk Wymeersch
+are with the Department of Electrical Engineering, Chalmers University of
+Technology, 41296 Gothenburg, Sweden (e-mail: {yuhaozh, guangjin.pan,
+furkan, henkw}@chalmers.se).
+Ossi Kaltiokallio and Mikko Valkama are with the Unit of Electri-
+cal Engineering, Tampere University, 33100 Tampere, Finland (e-mail:
+{ossi.kaltiokallio, mikko.valkama}@tuni.fi).
+Part of this work has been presented in our previous conference paper [1],
+which is a special case of the proposed localization framework.
+(TDoA)) are estimated using algorithms such as multiple
+signal classification (MUSIC) or orthogonal matching pursuit
+(OMP) [13], and then mapped to the user location via geometric
+relationships. These methods perform well in LoS scenarios
+(e.g., user 1 in Fig. 1) but degrade under non-line-of-sight
+(NLoS) conditions due to LoS blockage (e.g., user 2 in
+Fig. 1). 1 Although advanced techniques can exploit NLoS
+paths, they are often complex and scenario-specific (e.g.,
+relying on specular reflections) [5], [6], [8]. On the contrary,
+data-driven methods hold some promise for NLoS scenarios,
+but suffer from certain drawbacks. For example, supervised
+learning, e.g., fingerprinting [9]–[11], requires extensive data
+measurement and collection for each specific setting, which
+may not be practical especially for dynamic environments,
+where fingerprints can become outdated with time and thus
+frequent data re-measurement and retraining are required. As
+an unsupervised learning tech
+
+CONCLUSION/LAST:
+o can still achieve satisfactory performance (close
+to the fully-supervised fingerprinting with ∆s = 2 m). This
+indicates that the proposed unified localization frameworks
+do not rely on external LoS/NLoS identification and are also
+robust to the identification accuracy, should one be available.
+2) Discussion onp I
+In order to explore the impact of the LoS/NLoS iden-
+tification accuracy, Fig. 9 shows the MAE of UNILocPro
+with timestamps for different pI (a similar figure can be
+obtained for UNILocPro without timestamps). It is clear
+DRAFT 12
+0.6 0.7 0.8 0.9 10
+5
+10
+15
+pI
+MAE (m)
+I ′(·)Eq. (8) I(·) I ′(·)Eq. (7)
+I ′(·)Eq. (8) I(·) I ′(·)Eq. (7)
+I ′(·)Eq. (8) I(·) I ′(·)Eq. (7)
+Fig. 9: The MAE of UNILocPro with timestamps for different pI (testing
+dataset; the dotted lines represent LoS user positions; the dashed lines represent
+NLoS user positions; the solid lines represent all user positions).
+0 0.2 0.4 0.6 0.8 12
+4
+6
+8
+σv (µ)
+Error (m)
+UNILoc (MAE) UNILoc (RMSE)
+UNILocPro (MAE) UNILocPro (RMSE)
+Fig. 10: The testing error of UNILoc and UNILocPro with timestamps for
+differentσ v used in training.
+(also intuitive) that the performance of UNILocPro (the same
+for UNILoc) depends on the identification accuracy pI, and
+its estimation error would increase with the reduction of
+pI; however, using the model-based estimations to improve
+the LoS/NLoS identification (7) can significantly reduce the
+position estimation error compared with the case relying on
+the identification mechanism I(·) only. This verifies that the
+model-based methods can provide information to improve
+the LoS/NLoS identification or even replace the identification
+mechanism I(·) (as the conservative UNILocPro performs
+quite well), which is one of the advantages of the proposed
+unified localization frameworks. It also can be observed that
+for a reasonable pI ∈[0.93,1] (from the existing identification
+methods in the literature), UNILocPro (UNILoc) performs
+better than its conservative variant overall. There is a critical
+pI ≈0.76 (resp. pI ≈0.82 ) when timestamps are (resp. are
+not) available, corresponding to the intersection point of the
+overall MAE, below which the conservative method is a better
+choice. This implies that a dynamic switch between UNILocPro
+(UNILoc) and its conservative variant based on pI can be
+adopted.
+3) Discussion on Velocity Variation
+Then, we investigate the impact of velocity variation on the
+CC and localization performance. The channel chart generated
+by the triplet loss LTri for different σv = 0.5µ (resp. σv =
+0 500 1,000 1,500 2,000 2,500
+101
+102
+training time (s)
+MAE (m)
+UNILocPro (training) UNILocPro (testing)
+UNILoc (training) UNILoc (testing)
+10 100 1,000
+10
+100
+Fig. 11: The MAE of UNILoc and UNILocPro with timestamps during training.
+µ) achieves CT= 0.856 , T W= 0.720 , and KS= 0.544
+(resp. CT= 0.733 , T W= 0.664 , and KS= 0.594 ), which
+shows that the channel chart is distorted significantly when
+σv increases compared with the case with σv = 0. As shown
+in Fig. 10, where the MAE and RMSE are plotted w.r.t. the
+velocity variation from σv = 0 to σv =µ , it is intuitive that the
+increase of σv would deteriorate the localization performance;
+however, UNILoc and UNILocPro are quite robust to the
+velocity variation, and the MAE and RMSE of UNILocPro
+are

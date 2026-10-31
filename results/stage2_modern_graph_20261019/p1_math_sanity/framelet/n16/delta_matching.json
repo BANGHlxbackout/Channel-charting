@@ -1,0 +1,54 @@
+{
+  "absolute_delta_error": 3.373483669637245e-05,
+  "history": [
+    {
+      "cached_same_nu_result": true,
+      "delta": 0.053675733067370175,
+      "nu": 0.1
+    },
+    {
+      "converged": true,
+      "delta": 0.09226547455343166,
+      "nu": 0.2
+    },
+    {
+      "converged": true,
+      "delta": 0.07452187776359331,
+      "nu": 0.15000000000000002
+    },
+    {
+      "converged": true,
+      "delta": 0.06461515699873913,
+      "nu": 0.125
+    },
+    {
+      "converged": true,
+      "delta": 0.06965895708376149,
+      "nu": 0.1375
+    },
+    {
+      "converged": true,
+      "delta": 0.06716484210905607,
+      "nu": 0.13125
+    },
+    {
+      "converged": true,
+      "delta": 0.06841811825530282,
+      "nu": 0.13437500000000002
+    },
+    {
+      "converged": true,
+      "delta": 0.06904000253237515,
+      "nu": 0.13593750000000002
+    },
+    {
+      "converged": true,
+      "delta": 0.06934983640094781,
+      "nu": 0.13671875
+    }
+  ],
+  "new_solver_calls": 8,
+  "relative_delta_error": 0.00048452034489260764,
+  "selected_nu": 0.1375,
+  "target_delta": 0.06962522224706512
+}

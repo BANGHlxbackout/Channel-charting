@@ -1,0 +1,9 @@
+{
+  "alpha": null,
+  "alpha_source": "disabled",
+  "aux_mode": "disabled",
+  "eta": 0.08,
+  "kappa": null,
+  "method": "Ball-GLR",
+  "slug": "ball_glr_eta008"
+}

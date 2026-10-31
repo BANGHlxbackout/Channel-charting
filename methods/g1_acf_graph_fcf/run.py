@@ -93,7 +93,8 @@ def run(args: argparse.Namespace) -> dict:
     device = torch.device(args.device)
     data = load_data1(args.data_path, seed=args.seed)
     indices = select_indices(len(data.h_by_array), args.stride, args.max_samples)
-    run_name = f"stride{args.stride}_n{len(indices)}_seed{args.seed}_{args.mode}_{args.phase}"
+    variant = args.mode if args.affinity == "fused" else f"{args.mode}_adp"
+    run_name = f"stride{args.stride}_n{len(indices)}_seed{args.seed}_{variant}_{args.phase}"
     out_dir = args.out_dir / run_name
     if out_dir.exists() and any(out_dir.iterdir()) and not args.force:
         raise FileExistsError(f"run directory already exists: {out_dir}")
@@ -107,10 +108,13 @@ def run(args: argparse.Namespace) -> dict:
         raise ValueError("distance matrices have nonfinite entries")
     directed = rebuild_directed_graph(fused, neighbors)
     path_audit = audit_shortest_paths(directed, geo)
-    graph_adj, affinity_info = propagation_adjacency(directed, fused)
+    adp = (np.load(args.distance_run / "adp.npy", mmap_mode="r")
+           if args.affinity == "adp" else None)
+    graph_adj, affinity_info = propagation_adjacency(directed, fused, adp=adp)
     adj = graph_adj if args.mode == "graph" else identity_adjacency(n)
     adj = adj.to(device)
-    graph_info = {"mode": args.mode, "neighbors": neighbors, "path_audit": path_audit,
+    graph_info = {"mode": args.mode, "affinity_source": args.affinity,
+                  "neighbors": neighbors, "path_audit": path_audit,
                   "affinity": affinity_info, "source_distance_run": str(args.distance_run.resolve()),
                   "source_result": source_metadata}
     write_json(out_dir / "graph_metadata.json", graph_info)
@@ -214,11 +218,13 @@ def run(args: argparse.Namespace) -> dict:
     np.savez(out_dir / "embedding.npz", indices=indices, positions=positions,
              embedding=embedding)
     np.save(out_dir / "metric_subset_seed10.npy", subset)
+    method_name = f"G1-{args.mode.capitalize()}" + ("/ADP-affinity" if args.affinity == "adp" else "")
     plot_chart(out_dir / "chart.png", positions, embedding,
-               f"G1-ACF {args.mode} ({args.phase})\n"
+               f"{method_name} ({args.phase})\n"
                f"CT={metrics['ct']:.3f}, TW={metrics['tw']:.3f}, KS={metrics['ks']:.3f}")
     write_json(out_dir / "training_history.json", history)
     result = {"status": "completed", "phase": args.phase, "mode": args.mode,
+              "affinity_source": args.affinity,
               "dataset": str(args.data_path.resolve()), "distance_run": str(args.distance_run.resolve()),
               "num_samples": n, "stride": args.stride, "seed": args.seed,
               "input_dim": 26624, "hidden_dim": args.hidden_dim, "num_layers": args.num_layers,
@@ -248,6 +254,7 @@ def main() -> None:
     parser.add_argument("--distance-run", type=Path, required=True)
     parser.add_argument("--out-dir", type=Path, default=Path("results/g1_acf_graph_fcf"))
     parser.add_argument("--mode", choices=("graph", "identity"), required=True)
+    parser.add_argument("--affinity", choices=("fused", "adp"), default="fused")
     parser.add_argument("--phase", choices=("sanity", "pilot", "full"), required=True)
     parser.add_argument("--stride", type=int, default=1)
     parser.add_argument("--max-samples", type=int, default=None)

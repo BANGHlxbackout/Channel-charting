@@ -1,0 +1,298 @@
+{
+  "GT_used": false,
+  "N": 20997,
+  "cases": [
+    {
+      "alpha": 0.2,
+      "critical_alpha_for_P_zero": [
+        0.15579921930180296,
+        0.14833738536923158
+      ],
+      "eta_factor": 0.5,
+      "nonzero_P": 0,
+      "slug": "ic9-p_a20_eta050",
+      "state": {
+        "bytes": 1350410,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a20_eta050\\attempt1\\state.npz",
+        "sha256": "fc517e3c6bbef2b8955a1131e5e5069cef8e3f3099af23ecbe0057bf15b733c8"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.2,
+      "critical_alpha_for_P_zero": [
+        0.013215287676685152,
+        0.01320008278165329
+      ],
+      "eta_factor": 1.0,
+      "nonzero_P": 0,
+      "slug": "ic9-p_a20_eta100",
+      "state": {
+        "bytes": 664808,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a20_eta100\\attempt1\\state.npz",
+        "sha256": "174d124e0c45842cf8fee2450b525190bc81b3197619da14548f10c78d8abbc4"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.2,
+      "critical_alpha_for_P_zero": [
+        0.010375345384648883,
+        0.010758273818491615
+      ],
+      "eta_factor": 1.5,
+      "nonzero_P": 0,
+      "slug": "ic9-p_a20_eta150",
+      "state": {
+        "bytes": 663181,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a20_eta150\\attempt1\\state.npz",
+        "sha256": "684874be273220a9bca684fa79dbb017bf37946d7865aebfd256c7a60d72530d"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.5,
+      "critical_alpha_for_P_zero": [
+        0.15579921930180285,
+        0.14833738536923163
+      ],
+      "eta_factor": 0.5,
+      "nonzero_P": 0,
+      "slug": "ic9-p_a50_eta050",
+      "state": {
+        "bytes": 665910,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a50_eta050\\attempt1\\state.npz",
+        "sha256": "c06b35bf594201f1e72e9d162c50e9bc20df5b4f8b738ed839ec212e4b8da660"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.5,
+      "critical_alpha_for_P_zero": [
+        0.01321528631494517,
+        0.013200082737614522
+      ],
+      "eta_factor": 1.0,
+      "nonzero_P": 0,
+      "slug": "ic9-p_a50_eta100",
+      "state": {
+        "bytes": 664909,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a50_eta100\\attempt1\\state.npz",
+        "sha256": "f112013d4a9b27fc6fef94e08a3e48b389156f4b4e42bf97a9d734bc7e14772c"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.5,
+      "critical_alpha_for_P_zero": [
+        0.010375345384648411,
+        0.01075827381849134
+      ],
+      "eta_factor": 1.5,
+      "nonzero_P": 0,
+      "slug": "ic9-p_a50_eta150",
+      "state": {
+        "bytes": 663253,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a50_eta150\\attempt1\\state.npz",
+        "sha256": "0523b192618027725b161f3552974ba97ae0bfa37c002f879ad0801d38515ee3"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.8,
+      "critical_alpha_for_P_zero": [
+        0.15579921930180302,
+        0.14833738536923158
+      ],
+      "eta_factor": 0.5,
+      "nonzero_P": 0,
+      "slug": "ic9-p_a80_eta050",
+      "state": {
+        "bytes": 666075,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a80_eta050\\attempt1\\state.npz",
+        "sha256": "38fea12919e64cff6173428af3edcb86e7a516c329a0a78d1fc71e185d98d7ab"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.8,
+      "critical_alpha_for_P_zero": [
+        0.013215286314945352,
+        0.013200082737614426
+      ],
+      "eta_factor": 1.0,
+      "nonzero_P": 0,
+      "slug": "ic9-p_a80_eta100",
+      "state": {
+        "bytes": 665580,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a80_eta100\\attempt1\\state.npz",
+        "sha256": "79ac20ce31c6c8eab89b7e6c935c20569d0e9b7621a2de2c9fe608716b14c9dd"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.8,
+      "critical_alpha_for_P_zero": [
+        0.010375345384647773,
+        0.010758273818491287
+      ],
+      "eta_factor": 1.5,
+      "nonzero_P": 0,
+      "slug": "ic9-p_a80_eta150",
+      "state": {
+        "bytes": 663591,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a80_eta150\\attempt1\\state.npz",
+        "sha256": "903442f1c3d3bab3d895a0bbc4698a92e7717bbfd3fb33bdf07d43a2682cdbc3"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.2,
+      "critical_alpha_for_P_zero": [
+        0.14732511256588265
+      ],
+      "eta_factor": 0.5,
+      "nonzero_P": 0,
+      "slug": "ic9-g_a20_eta050",
+      "state": {
+        "bytes": 1350543,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a20_eta050\\attempt1\\state.npz",
+        "sha256": "60b54b8bb854b5089779e7e73ffeef0c457baadcbb08a446ee4226df414bcfc1"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.2,
+      "critical_alpha_for_P_zero": [
+        0.010570063129917434
+      ],
+      "eta_factor": 1.0,
+      "nonzero_P": 0,
+      "slug": "ic9-g_a20_eta100",
+      "state": {
+        "bytes": 664899,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a20_eta100\\attempt1\\state.npz",
+        "sha256": "4fa2fc7a9db8d98a1e55a488c8ef4469e1b00b8a32fc2a3a6021e3c0f879b7d4"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.2,
+      "critical_alpha_for_P_zero": [
+        0.008314893123293504
+      ],
+      "eta_factor": 1.5,
+      "nonzero_P": 0,
+      "slug": "ic9-g_a20_eta150",
+      "state": {
+        "bytes": 663493,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a20_eta150\\attempt1\\state.npz",
+        "sha256": "69e7d2030bd9a1020a35eaddf7c353cda20300242e0b8929e2e5980c326b7632"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.5,
+      "critical_alpha_for_P_zero": [
+        0.14732511256588265
+      ],
+      "eta_factor": 0.5,
+      "nonzero_P": 0,
+      "slug": "ic9-g_a50_eta050",
+      "state": {
+        "bytes": 666004,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a50_eta050\\attempt1\\state.npz",
+        "sha256": "cba6c70a87399110e9c1a96025c901093f5c32cc170eefdb9d227f06a0de84bf"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.5,
+      "critical_alpha_for_P_zero": [
+        0.010570063129917068
+      ],
+      "eta_factor": 1.0,
+      "nonzero_P": 0,
+      "slug": "ic9-g_a50_eta100",
+      "state": {
+        "bytes": 665018,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a50_eta100\\attempt1\\state.npz",
+        "sha256": "b48f3bb12d5470b8f33309f5b2fe82542b8046d3bed8fcf82f42a183bd84290a"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.5,
+      "critical_alpha_for_P_zero": [
+        0.008314893123293553
+      ],
+      "eta_factor": 1.5,
+      "nonzero_P": 0,
+      "slug": "ic9-g_a50_eta150",
+      "state": {
+        "bytes": 663561,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a50_eta150\\attempt1\\state.npz",
+        "sha256": "36669a9aebe602f171793451842243b633a85d1a8326c2ee33f1170714ce1355"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.8,
+      "critical_alpha_for_P_zero": [
+        0.14732511256588257
+      ],
+      "eta_factor": 0.5,
+      "nonzero_P": 0,
+      "slug": "ic9-g_a80_eta050",
+      "state": {
+        "bytes": 666273,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a80_eta050\\attempt1\\state.npz",
+        "sha256": "888edd06aec5a5afa8f579b7e3978088c5da31b350c856e376a83876529ed2eb"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.8,
+      "critical_alpha_for_P_zero": [
+        0.010570063129917139
+      ],
+      "eta_factor": 1.0,
+      "nonzero_P": 0,
+      "slug": "ic9-g_a80_eta100",
+      "state": {
+        "bytes": 665832,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a80_eta100\\attempt1\\state.npz",
+        "sha256": "a5580fe448ec4dba890f0f65b5085ed29e31b55becce4e90db5121c68e9afb22"
+      },
+      "used_alpha_above_critical": true
+    },
+    {
+      "alpha": 0.8,
+      "critical_alpha_for_P_zero": [
+        0.008314893123293336
+      ],
+      "eta_factor": 1.5,
+      "nonzero_P": 0,
+      "slug": "ic9-g_a80_eta150",
+      "state": {
+        "bytes": 664121,
+        "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a80_eta150\\attempt1\\state.npz",
+        "sha256": "67dd3c353aff33aee486d08e81d1d3d5394148a66f077311afb6bdaeb7e7bb68"
+      },
+      "used_alpha_above_critical": true
+    }
+  ],
+  "formula": "At P=0, for scalar F=alpha||P||_1+(1-alpha)||D.T(WDU-P)||_2, P=0 KKT iff alpha/(1-alpha)>=max_e |[D y/||y||]_e|, y=D.T(WDU); group uses max_e row-L2 norm and Frobenius y norm. alpha_critical=c/(1+c).",
+  "graph_source": {
+    "bytes": 4854775,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\incidence_D.npz",
+    "sha256": "e719adc3f518d6432733b62945c7d21d7dfa30a0ba52579fc1196bf33b00e257"
+  },
+  "note": "Only diagnoses the frozen Eq9 objective and saved converged states; does not establish exact wording of unavailable original PDF or performance if alpha is changed.",
+  "status": "READ_ONLY_MATH_AUDIT",
+  "weight_source": {
+    "bytes": 24959930,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\edges_and_degrees.npz",
+    "sha256": "4279c0c0ab552ea94633bf22248b8e5b2ef3d26c9a5b84c7e9bc013aa5b7ccfd"
+  }
+}

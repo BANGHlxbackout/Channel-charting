@@ -1,0 +1,803 @@
+[
+  {
+    "checks": {
+      "auxiliary_max_abs": 1.2025836235099268,
+      "auxiliary_nonzero_rows": 173563,
+      "cpu_objective": [
+        3985.3337603809405,
+        5940.956931243133
+      ],
+      "cuda_cpu_objective_relative_error": 0.0,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.7453282010210055e-06,
+      "spread": 0.9866940756017437
+    },
+    "config": {
+      "alpha": 0.2,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a20_eta050"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic8-p_a20_eta050\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.23840506366957132,
+      "auxiliary_nonzero_rows": 119044,
+      "cpu_objective": [
+        2930.087237207564,
+        4604.4747252818615
+      ],
+      "cuda_cpu_objective_relative_error": 0.0,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.913162649189533e-06,
+      "spread": 0.9565211481925807
+    },
+    "config": {
+      "alpha": 0.2,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a20_eta100"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic8-p_a20_eta100\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.24698900258226544,
+      "auxiliary_nonzero_rows": 82207,
+      "cpu_objective": [
+        2371.842515120614,
+        3772.694951056191
+      ],
+      "cuda_cpu_objective_relative_error": 0.0,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.917295680077414e-06,
+      "spread": 0.9174649227272614
+    },
+    "config": {
+      "alpha": 0.2,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a20_eta150"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic8-p_a20_eta150\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.16819050052393925,
+      "auxiliary_nonzero_rows": 163,
+      "cpu_objective": [
+        2612.932478362787,
+        3944.4603200321053
+      ],
+      "cuda_cpu_objective_relative_error": 1.7403716117892182e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.9979413021448008e-06,
+      "spread": 0.9889687450490168
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a50_eta050"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic8-p_a50_eta050\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        1856.2236526012632,
+        2935.9061824140135
+      ],
+      "cuda_cpu_objective_relative_error": 1.224926075716127e-16,
+      "feasibility": 1.7128670260001094e-17,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.8200382199490265e-06,
+      "spread": 0.9560241668778799
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a50_eta100"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic8-p_a50_eta100\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        1499.961437471693,
+        2385.722510816951
+      ],
+      "cuda_cpu_objective_relative_error": 1.9061200488515464e-16,
+      "feasibility": 3.510502175218163e-17,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.9332094384875735e-06,
+      "spread": 0.9161186645712257
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a50_eta150"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic8-p_a50_eta150\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        1045.1855630976147,
+        1577.898237672047
+      ],
+      "cuda_cpu_objective_relative_error": 0.0,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.7754939832994616e-06,
+      "spread": 0.9889904861423068
+    },
+    "config": {
+      "alpha": 0.8,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a80_eta050"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic8-p_a80_eta050\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        742.4894610405051,
+        1174.362472965605
+      ],
+      "cuda_cpu_objective_relative_error": 1.5311575946451593e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.933763379664906e-06,
+      "spread": 0.9560241668612129
+    },
+    "config": {
+      "alpha": 0.8,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a80_eta100"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic8-p_a80_eta100\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        599.9845749886771,
+        954.2890043267802
+      ],
+      "cuda_cpu_objective_relative_error": 2.382650061064434e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.987340821280341e-06,
+      "spread": 0.9161186645548463
+    },
+    "config": {
+      "alpha": 0.8,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a80_eta150"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic8-p_a80_eta150\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        194.73378670871537,
+        223.2855201167934
+      ],
+      "cuda_cpu_objective_relative_error": 3.81865909829767e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.3203528979891758e-07,
+      "spread": 0.997729101525108
+    },
+    "config": {
+      "alpha": 0.2,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a20_eta050"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a20_eta050\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        54.26793050265433,
+        80.28490119930407
+      ],
+      "cuda_cpu_objective_relative_error": 3.5401064217352966e-16,
+      "feasibility": 1.7128670260001094e-17,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.9929842094822582e-06,
+      "spread": 0.9831975526113454
+    },
+    "config": {
+      "alpha": 0.2,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a20_eta100"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a20_eta100\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        37.984427750867994,
+        61.671592436478456
+      ],
+      "cuda_cpu_objective_relative_error": 5.760697167759673e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.8148877968036411e-06,
+      "spread": 0.9637271201618387
+    },
+    "config": {
+      "alpha": 0.2,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a20_eta150"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a20_eta150\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        121.70861669294709,
+        139.55345007299587
+      ],
+      "cuda_cpu_objective_relative_error": 2.036618185758757e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.3219702086460596e-07,
+      "spread": 0.997729101525108
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a50_eta050"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a50_eta050\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        33.91745656410195,
+        50.178063249565
+      ],
+      "cuda_cpu_objective_relative_error": 4.18983501558979e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.4503174067909326e-06,
+      "spread": 0.983197543649517
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a50_eta100"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a50_eta100\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        23.740267344292498,
+        38.544745272799034
+      ],
+      "cuda_cpu_objective_relative_error": 1.8434230936830946e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.826003770730711e-06,
+      "spread": 0.9637271201618387
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a50_eta150"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a50_eta150\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        48.68344667717883,
+        55.82138002919834
+      ],
+      "cuda_cpu_objective_relative_error": 3.818659098297671e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.3235914804383944e-07,
+      "spread": 0.997729101525108
+    },
+    "config": {
+      "alpha": 0.8,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a80_eta050"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a80_eta050\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        13.566982625640776,
+        20.071225299825997
+      ],
+      "cuda_cpu_objective_relative_error": 2.6186468847436187e-16,
+      "feasibility": 1.7552510876090815e-17,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.4566199453488935e-06,
+      "spread": 0.983197543649517
+    },
+    "config": {
+      "alpha": 0.8,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a80_eta100"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a80_eta100\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        9.496106937716995,
+        15.41789810911961
+      ],
+      "cuda_cpu_objective_relative_error": 5.7606971677596745e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.837256751288878e-06,
+      "spread": 0.9637271201618387
+    },
+    "config": {
+      "alpha": 0.8,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a80_eta150"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a80_eta150\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        296.26624739016495
+      ],
+      "cuda_cpu_objective_relative_error": 5.755979902693606e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 5.82018399734371e-08,
+      "spread": 0.9977283775715644
+    },
+    "config": {
+      "alpha": 0.2,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a20_eta050"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a20_eta050\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        96.41440509452696
+      ],
+      "cuda_cpu_objective_relative_error": 1.4739348027163938e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.448522421046056e-06,
+      "spread": 0.982942396627596
+    },
+    "config": {
+      "alpha": 0.2,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a20_eta100"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a20_eta100\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        71.67636029665472
+      ],
+      "cuda_cpu_objective_relative_error": 5.947925364675051e-16,
+      "feasibility": 2.4517804853772166e-17,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.9043660551177424e-06,
+      "spread": 0.9633041802935102
+    },
+    "config": {
+      "alpha": 0.2,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a20_eta150"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a20_eta150\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        185.1664046188531
+      ],
+      "cuda_cpu_objective_relative_error": 4.604783922154884e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 5.824879800006557e-08,
+      "spread": 0.9977283775715644
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a50_eta050"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a50_eta050\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        60.25900318407934
+      ],
+      "cuda_cpu_objective_relative_error": 1.1791478421731152e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.4520838358715808e-06,
+      "spread": 0.982942396627596
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a50_eta100"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a50_eta100\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        44.79772518540919
+      ],
+      "cuda_cpu_objective_relative_error": 6.344453722320055e-16,
+      "feasibility": 2.4517804853772166e-17,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.9106376067557865e-06,
+      "spread": 0.9633041802935102
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a50_eta150"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a50_eta150\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        74.06656184754121
+      ],
+      "cuda_cpu_objective_relative_error": 5.755979902693608e-16,
+      "feasibility": 6.1294512134430416e-18,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 5.829583202612938e-08,
+      "spread": 0.9977283775715644
+    },
+    "config": {
+      "alpha": 0.8,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a80_eta050"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a80_eta050\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        24.103601273631725
+      ],
+      "cuda_cpu_objective_relative_error": 2.947869605432788e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.4556628063586743e-06,
+      "spread": 0.982942396627596
+    },
+    "config": {
+      "alpha": 0.8,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a80_eta100"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a80_eta100\\result.json",
+    "status": "VALID",
+    "valid": true
+  },
+  {
+    "checks": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        17.919090074163673
+      ],
+      "cuda_cpu_objective_relative_error": 5.947925364675053e-16,
+      "feasibility": 2.4517804853772166e-17,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.916950602287252e-06,
+      "spread": 0.9633041802935102
+    },
+    "config": {
+      "alpha": 0.8,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a80_eta150"
+    },
+    "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a80_eta150\\result.json",
+    "status": "VALID",
+    "valid": true
+  }
+]

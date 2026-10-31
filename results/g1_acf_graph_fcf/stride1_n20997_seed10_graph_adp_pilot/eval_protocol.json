@@ -1,0 +1,13 @@
+{
+  "GT_usage": "post-training metrics and chart only",
+  "chart_quality": "same-node transductive; no held-out claim",
+  "error_alignment": "separate affine fit and evaluation on all nodes in this phase",
+  "metric_subset": "random.Random(10) sample of 20% of the same nodes",
+  "metric_subset_path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_adp_pilot\\metric_subset_seed10.npy",
+  "metric_subset_size": 4199,
+  "num_samples": 20997,
+  "phase": "pilot",
+  "plot_function": "run_adp_siamese.plot_chart",
+  "seed": 10,
+  "source_embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_adp_pilot\\embedding.npz"
+}

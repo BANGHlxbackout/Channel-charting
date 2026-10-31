@@ -1,0 +1,7 @@
+test_both_baselines_required (tests.test_stage2_p2a_g3.G3Tests.test_both_baselines_required) ... ok
+test_thresholds_and_deterioration_caps (tests.test_stage2_p2a_g3.G3Tests.test_thresholds_and_deterioration_caps) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK

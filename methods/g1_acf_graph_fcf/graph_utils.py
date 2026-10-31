@@ -71,7 +71,8 @@ def audit_shortest_paths(graph: sparse.csr_matrix, geo: np.ndarray,
     return result
 
 
-def propagation_adjacency(graph: sparse.csr_matrix, fused: np.ndarray) -> tuple[torch.Tensor, dict]:
+def propagation_adjacency(graph: sparse.csr_matrix, fused: np.ndarray,
+                          adp: np.ndarray | None = None) -> tuple[torch.Tensor, dict]:
     """Symmetric GCN affinity on the baseline directed graph's undirected support.
 
     The baseline's directed costs remain untouched. A canonical upper-triangle
@@ -83,8 +84,22 @@ def propagation_adjacency(graph: sparse.csr_matrix, fused: np.ndarray) -> tuple[
     lo, hi = np.minimum(row, col), np.maximum(row, col)
     pairs = np.unique(lo * n + hi)
     left, right = pairs // n, pairs % n
-    rho = np.maximum.reduceat(graph.data, graph.indptr[:-1]).astype(np.float64)
-    cost = np.asarray(fused[left, right], dtype=np.float64)
+    if adp is None:
+        rho = np.maximum.reduceat(graph.data, graph.indptr[:-1]).astype(np.float64)
+        cost = np.asarray(fused[left, right], dtype=np.float64)
+    else:
+        if adp.shape != fused.shape:
+            raise ValueError("ADP matrix shape differs from fused matrix")
+        k = int(np.diff(graph.indptr)[0])
+        rho = np.empty(n, dtype=np.float64)
+        for start in range(0, n, 128):
+            stop = min(start + 128, n)
+            block = np.array(adp[start:stop], copy=True)
+            block[np.arange(stop - start), np.arange(start, stop)] = np.inf
+            rho[start:stop] = np.partition(block, k - 1, axis=1)[:, k - 1]
+        cost = np.asarray(adp[left, right], dtype=np.float64)
+        if not np.all(np.isfinite(rho)) or np.any(rho < 0):
+            raise ValueError("ADP local neighbor scales are invalid")
     denom = np.maximum(rho[left], 1e-6) * np.maximum(rho[right], 1e-6)
     weight = np.exp(-(cost * cost) / denom).astype(np.float32)
     rows = np.concatenate((left, right, np.arange(n)))
@@ -111,6 +126,9 @@ def propagation_adjacency(graph: sparse.csr_matrix, fused: np.ndarray) -> tuple[
             "reciprocal_asymmetric_pairs": int(np.count_nonzero(asym)),
             "reciprocal_max_abs_diff": float(np.max(asym)) if len(asym) else 0.0,
             "affinity_min": float(weight.min()), "affinity_max": float(weight.max())}
+    if adp is not None:
+        info["affinity_source"] = "adp_cost_on_fused_support"
+        info["adp_local_scale_median"] = float(np.median(rho))
     return adj, info
 
 

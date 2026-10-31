@@ -1,0 +1,33 @@
+{
+  "Y_row_max": 3.763966260894591e-07,
+  "budget_exhausted": false,
+  "converged": true,
+  "diagonal_max": 0.0,
+  "dual_residual": 1.6420498527560147e-05,
+  "equality_residual": 4.128021808694429e-06,
+  "feasible_objective": 32.96608911811075,
+  "frame_primal_residual": 1.8275192941704514e-06,
+  "iterations": 540,
+  "objective": 32.96592319617783,
+  "objective_components": {
+    "fidelity": 0.5602856399794361,
+    "framelet": 0.40564899805147314,
+    "group_E": 0.0,
+    "l1_S": 31.999988558146924
+  },
+  "pcg_max_relative_residual": 9.997941668844691e-11,
+  "penalties": {
+    "mu1": 10.0,
+    "mu2": 2.4507665716538254,
+    "mu3": 10.0,
+    "mu4": 10.0,
+    "rho": 1.0
+  },
+  "penalty_strategy": "fixed",
+  "primal_residual": 1.8275192941704514e-06,
+  "row_sum_residual": 1.2556578000033625e-05,
+  "self_Y_relative": 1.7540575538240625e-07,
+  "split_residual": 1.6368133209225593e-06,
+  "stationarity": 6.886566339754666e-06,
+  "stopping_error": 1.6420498527560147e-05
+}

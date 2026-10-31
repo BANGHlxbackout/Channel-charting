@@ -1,0 +1,43 @@
+{
+  "box": [
+    [
+      -2.7077402035882443,
+      -3.5093943308371127
+    ],
+    [
+      3.1094007427277717,
+      2.849967825156498
+    ]
+  ],
+  "certified_zero_aux_steps": 1400,
+  "converged": true,
+  "cuda_graph_error": null,
+  "cuda_graph_used": true,
+  "feasibility": [
+    1.7552510876090815e-17,
+    0.0
+  ],
+  "guarded_chunk_replays": 0,
+  "iterations": 1400,
+  "objective": [
+    13.566982625640772,
+    20.071225299825993
+  ],
+  "peak_ram_bytes": 1273860096,
+  "peak_reserved_vram_bytes": 528482304,
+  "peak_vram_bytes": 418604032,
+  "radius": [
+    9.631605110626088,
+    9.86993449533925
+  ],
+  "sigma": 3.1087010703416413e-05,
+  "solve_time_s": 12.274565700034145,
+  "stationarity": [
+    1.4566199453488935e-06,
+    2.0841852824284463e-08
+  ],
+  "step_product_times_norm_bound": 0.9024999999999999,
+  "step_scale": 48.15802555313045,
+  "tau": 0.0720968530057596,
+  "total_attempt_time_s": 12.420706600008998
+}

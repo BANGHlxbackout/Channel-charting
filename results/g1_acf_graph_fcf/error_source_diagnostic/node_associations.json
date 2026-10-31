@@ -1,0 +1,12 @@
+{
+  "graph": {
+    "spearman_node_error_vs_edge_target_abs": -0.02566380181120493,
+    "spearman_node_error_vs_random_model_Dgeo_abs": 0.05966555937687111,
+    "spearman_node_error_vs_random_target_abs": 0.17053655917184807
+  },
+  "identity": {
+    "spearman_node_error_vs_edge_target_abs": -0.029406421386381845,
+    "spearman_node_error_vs_random_model_Dgeo_abs": 0.054664130369953046,
+    "spearman_node_error_vs_random_target_abs": 0.173472597532851
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "dataset": "datasets\\adp_old_shard4",
+  "description": "Train-only landmark selection plus train/test ADP-time fused distances to train landmarks. Test features use test CSI/timestamps only against train landmarks; no test positions, test-test graph, or train+test diffusion solve.",
+  "distance_run": "results\\heldout\\seed10\\adp_fused_train",
+  "elapsed_s": 1.0303726196289062,
+  "feature": "rbf_of_direct_adp_time_fused_distance_to_train_landmarks",
+  "feature_formula": "q_i,b = exp(-(min(adp(i,a_b), gamma_train*abs(dt)) / sigma_b)^2)",
+  "full_distance_run": "results\\adp_old_fused\\stride1_n20997_seed10",
+  "gamma_train": 13.316666603088379,
+  "landmark_selection": "farthest_point_on_train_geodesic_start_min_mean_geodesic",
+  "normalization": "sigma_b is median train fused distance to landmark b; fitted on train only",
+  "num_landmarks": 128,
+  "num_test": 4199,
+  "num_train": 16798,
+  "output_npz": "results\\CF_HRD\\seed10\\landmark_context\\context.npz",
+  "protocol": "cf_hrd_stage3_landmark_context",
+  "seed": 10,
+  "source_arrays": {
+    "adp_full": "results\\adp_old_fused\\stride1_n20997_seed10\\adp.npy",
+    "geodesic_train": "results\\heldout\\seed10\\adp_fused_train\\geodesic_train.npy",
+    "timestamps": "datasets\\adp_old_shard4\\timestamps.npy"
+  },
+  "uses_test_positions_for_features": false,
+  "uses_test_test_graph": false,
+  "uses_train_test_diffusion_solve": false,
+  "validation": {
+    "landmark_indices_sha256": "b65926bb492826afcee65b96a3f2e7763f95a1e1f9523b4afc6a742a5d9f66f6",
+    "q_test_max": 0.9998970031738281,
+    "q_test_mean": 0.37766996026039124,
+    "q_test_min": 0.22084087133407593,
+    "q_test_shape": [
+      4199,
+      128
+    ],
+    "q_train_max": 1.0,
+    "q_train_mean": 0.37799397110939026,
+    "q_train_min": 0.2230735719203949,
+    "q_train_shape": [
+      16798,
+      128
+    ],
+    "sigma_max": 44.770599365234375,
+    "sigma_median": 41.380653381347656,
+    "sigma_min": 38.844688415527344,
+    "test_indices_sha256": "6baabd3884c23c695f308bade37cefe13ac288a9e47c6a37590e2092f311fa20",
+    "train_indices_sha256": "9e61398817cd49ee4f4792937220b6c2a1cf09343317a6ae08f5d4042a237c38"
+  }
+}

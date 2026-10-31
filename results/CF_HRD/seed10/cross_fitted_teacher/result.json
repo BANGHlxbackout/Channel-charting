@@ -1,0 +1,59 @@
+{
+  "baseline_train_localization_errors": {
+    "max_m": 7.0105180740356445,
+    "mean_m": 0.5628963708877563,
+    "median_m": 0.49238675832748413,
+    "p90_m": 1.003797173500061,
+    "p95_m": 1.1875226497650146
+  },
+  "baseline_train_metrics": {
+    "ct": 0.9925912530711863,
+    "ks": 0.10340081649971299,
+    "n_neighbors": 167,
+    "tw": 0.9895761770152316
+  },
+  "description": "Step 1-2 validation artifact for CF-HRD: load held-out train FCF outputs and ADP/time train graph, then generate out-of-fold harmonic teacher coordinates with each target node's own fidelity anchor removed.",
+  "distance_run": "results\\heldout\\seed10\\adp_fused_train",
+  "elapsed_s": 6.564267873764038,
+  "fold_sizes": [
+    3360,
+    3360,
+    3360,
+    3359,
+    3359
+  ],
+  "graph_edges": 2459366,
+  "graph_k": 128,
+  "heldout_test_metrics_available": false,
+  "init_embedding": "results\\heldout\\seed10\\adp_siamese\\embedding_train.npz",
+  "iterations": 200,
+  "lambda_teacher": 0.15,
+  "metric_subset_fraction": 0.2,
+  "metric_subset_size": 3359,
+  "num_folds": 5,
+  "num_train": 16798,
+  "output_npz": "results\\CF_HRD\\seed10\\cross_fitted_teacher\\teacher_train.npz",
+  "protocol": "cf_hrd_cross_fitted_teacher_train_only",
+  "seed": 10,
+  "teacher_residual_norm": {
+    "max": 284.7038879394531,
+    "mean": 19.840618133544922,
+    "median": 16.907888412475586,
+    "p90": 38.46811294555664,
+    "p95": 44.06367492675781
+  },
+  "teacher_train_localization_errors": {
+    "max_m": 1.9614332914352417,
+    "mean_m": 0.3976992964744568,
+    "median_m": 0.35042786598205566,
+    "p90_m": 0.6761470437049866,
+    "p95_m": 0.8615559935569763
+  },
+  "teacher_train_metrics": {
+    "ct": 0.9965914367905265,
+    "ks": 0.08019830988786764,
+    "n_neighbors": 167,
+    "tw": 0.993818669924333
+  },
+  "top_k": 512
+}

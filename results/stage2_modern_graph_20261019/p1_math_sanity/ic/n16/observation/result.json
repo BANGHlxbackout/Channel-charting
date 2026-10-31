@@ -1,0 +1,20 @@
+{
+  "localization_errors_after_affine": {
+    "max_m": 0.2234948881914863,
+    "mean_m": 0.11109325776720717,
+    "median_m": 0.11087898148723913,
+    "p90_m": 0.1623222606517375,
+    "p95_m": 0.17803254669773189
+  },
+  "method": "Observation",
+  "metrics": {
+    "ct": 1.0,
+    "ks": 0.08504021886033705,
+    "tw": 1.0
+  },
+  "num_samples": 16,
+  "phase": "P1_synthetic_math",
+  "role": "synthetic noisy input",
+  "scope": "synthetic coordinates only; not DICHASUS performance",
+  "status": "completed"
+}

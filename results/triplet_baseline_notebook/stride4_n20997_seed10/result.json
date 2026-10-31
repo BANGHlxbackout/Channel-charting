@@ -1,0 +1,30 @@
+{
+  "baseline_source": "ChannelCharting.ipynb",
+  "dataset": "datasets/dichasus-cf02-cf03-cf04.tfrecords",
+  "elapsed_s": null,
+  "feature_note": "Notebook tfrecords pipeline: calibration, subcarrier average 508:516, R2M real feature.",
+  "input_format": "DICHASUS tfrecords",
+  "localization_errors_after_affine": {
+    "max_m": 6.57588529586792,
+    "mean_m": 1.6476918458938599,
+    "median_m": 1.3055118322372437,
+    "p90_m": 3.527855396270752,
+    "p95_m": 4.138086795806885
+  },
+  "method": "Triplet baseline from ChannelCharting.ipynb",
+  "metric_seed": 10,
+  "metric_subset_fraction": 0.2,
+  "metric_subset_size": 4199,
+  "metrics": {
+    "ct": 0.9754647776156656,
+    "ks": 0.2647391245535612,
+    "n_neighbors": 209,
+    "tw": 0.9595701537040954
+  },
+  "negative_sampling": "random sample from the notebook triplet generator",
+  "num_samples": 20997,
+  "positive_sampling": "timestamp window Tc",
+  "run_name": "stride4_n20997_seed10",
+  "seed": 10,
+  "stride": 4
+}

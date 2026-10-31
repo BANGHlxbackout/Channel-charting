@@ -1,0 +1,40 @@
+{
+  "active_bands": [
+    "low2",
+    "high1",
+    "high2"
+  ],
+  "converged": true,
+  "delta": 0.06965895708376149,
+  "dual_residual": 3.855140835900418e-08,
+  "initial_objective": 0.013485226920593885,
+  "iterations": 42,
+  "localization_errors_after_affine": {
+    "max_m": 0.14045326284080142,
+    "mean_m": 0.07181563089151384,
+    "median_m": 0.0764082159005146,
+    "p90_m": 0.12249690670152921,
+    "p95_m": 0.13140649827533368
+  },
+  "lowpass_constraint_max_abs": 0.0,
+  "lowpass_shrinkage_weight": 0.0,
+  "method": "FN-G-delta",
+  "metrics": {
+    "ct": 1.0,
+    "ks": 0.02625053856984613,
+    "tw": 1.0
+  },
+  "nu": 0.1375,
+  "num_samples": 16,
+  "objective": 0.010599128264937157,
+  "pcg_max_relative_residual": 8.9988415039252e-12,
+  "phase": "P1_synthetic_math",
+  "primal_residual": 1.9331421340877094e-07,
+  "reference_objective": 0.010599128321105074,
+  "relative_objective_gap": 5.299295926762262e-09,
+  "scope": "synthetic coordinates only; not DICHASUS performance",
+  "selected_n": 3,
+  "stationarity": 3.855146012719082e-08,
+  "status": "completed",
+  "u_step_dense_relative_error": 7.821343741094088e-12
+}

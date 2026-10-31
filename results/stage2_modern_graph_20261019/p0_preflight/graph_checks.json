@@ -1,0 +1,65 @@
+{
+  "G128": {
+    "data_dtype": "float32",
+    "nnz": 3088334,
+    "sha256": "c1c50ca7104d768f673c7c2756507a9a374f979303cb0574d98eac9a88a7a27e",
+    "shape": [
+      20997,
+      20997
+    ]
+  },
+  "L_csr": {
+    "data_dtype": "float64",
+    "nnz": 3109331,
+    "sha256": "f9c920656086c5427c52f255f8ff55fb3e57c1753399f968612b69504298e0b6",
+    "shape": [
+      20997,
+      20997
+    ]
+  },
+  "L_times_one_max_abs": 0.0,
+  "connected_components": 1,
+  "construction_peak_vram_bytes": 1937957376,
+  "incidence_D": {
+    "data_dtype": "float64",
+    "nnz": 3088334,
+    "sha256": "73c54fbce8d2998159e047136a694edb30f2da164f8c3c0228c232217c1038eb",
+    "shape": [
+      1544167,
+      20997
+    ]
+  },
+  "incidence_row_nnz_unique": [
+    2
+  ],
+  "incidence_row_sum_max_abs": 0.0,
+  "incidence_values_unique": [
+    -1.0,
+    1.0
+  ],
+  "matvec_float64_relative_error": 5.344658883610971e-16,
+  "probe_columns": 4,
+  "probe_seed": 10,
+  "self_loops": 0,
+  "symmetric_nnz_entries": 3088334,
+  "symmetry_max_abs": 0.0,
+  "undirected_edges": 1544167,
+  "unweighted_degree": {
+    "max": 397.0,
+    "mean": 147.08453588607895,
+    "median": 140.0,
+    "min": 128.0
+  },
+  "weighted_degree": {
+    "max": 177.25190047174692,
+    "mean": 82.25087750063781,
+    "median": 80.21283730864525,
+    "min": 56.86905428767204
+  },
+  "weights": {
+    "max": 0.9999990463256836,
+    "mean": 0.5592081927929078,
+    "median": 0.5116423964500427,
+    "min": 0.08263929933309555
+  }
+}

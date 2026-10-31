@@ -1,0 +1,27 @@
+{
+  "aligned_keys": {
+    "B0": "b0",
+    "B0+S2-CG": "b0_s2_cg",
+    "B0+S2-J": "b0_s2_j",
+    "IC8-P a=0.5 eta=1d0": "ic8_p_a_0_5_eta_1d0",
+    "IC9-G a=0.5 eta=1d0": "ic9_g_a_0_5_eta_1d0",
+    "IC9-P a=0.5 eta=1d0": "ic9_p_a_0_5_eta_1d0"
+  },
+  "alignment": "separate affine fit and evaluation on all identical N nodes",
+  "chart_quality": "same-node transductive; no held-out claim",
+  "colors": "same GT x/y mapping in all four panels",
+  "embeddings": {
+    "B0": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\references\\b0\\embedding.npz",
+    "B0+S2-CG": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\references\\s2_cg\\embedding.npz",
+    "B0+S2-J": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\references\\s2_j\\embedding.npz",
+    "IC8-P a=0.5 eta=1d0": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic8-p_a50_eta100\\embedding.npz",
+    "IC9-G a=0.5 eta=1d0": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-g_a50_eta100\\embedding.npz",
+    "IC9-P a=0.5 eta=1d0": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\ic9-p_a50_eta100\\embedding.npz"
+  },
+  "metric_subset_path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_b0_ic_fulln\\comparison\\a50_eta100\\metric_subset_seed10.npy",
+  "metric_subset_size": 4199,
+  "metric_subset_source": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\comparison\\metric_subset_seed10.npy",
+  "num_samples": 20997,
+  "plot_function": "run_adp_siamese.plot_chart (external axes; align=False for raw)",
+  "seed": 10
+}

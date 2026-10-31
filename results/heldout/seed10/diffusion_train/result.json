@@ -1,0 +1,42 @@
+{
+  "baseline_train_localization_errors": {
+    "max_m": 7.0105180740356445,
+    "mean_m": 0.5628963708877563,
+    "median_m": 0.49238675832748413,
+    "p90_m": 1.003797173500061,
+    "p95_m": 1.1875226497650146
+  },
+  "baseline_train_metrics": {
+    "ct": 0.9925912530711863,
+    "ks": 0.10340081649971299,
+    "n_neighbors": 167,
+    "tw": 0.9895761770152316
+  },
+  "distance_run": "results\\heldout\\seed10\\adp_fused_train",
+  "elapsed_s": 6.106343746185303,
+  "graph_edges": 2459366,
+  "graph_k": 128,
+  "heldout_diffusion_metrics_available": false,
+  "init_embedding": "results\\heldout\\seed10\\adp_siamese\\embedding_train.npz",
+  "iterations": 200,
+  "lambda_smooth": 0.15,
+  "metric_subset_fraction": 0.2,
+  "metric_subset_size": 3359,
+  "num_train": 16798,
+  "protocol": "train_graph_diagnostic",
+  "refined_train_localization_errors": {
+    "max_m": 2.031857490539551,
+    "mean_m": 0.41221755743026733,
+    "median_m": 0.3721466660499573,
+    "p90_m": 0.6924238801002502,
+    "p95_m": 0.8502293229103088
+  },
+  "refined_train_metrics": {
+    "ct": 0.9966229411379005,
+    "ks": 0.07954454536709098,
+    "n_neighbors": 167,
+    "tw": 0.9939047530900146
+  },
+  "seed": 10,
+  "top_k": 512
+}

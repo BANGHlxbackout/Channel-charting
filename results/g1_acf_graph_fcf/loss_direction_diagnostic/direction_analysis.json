@@ -1,0 +1,554 @@
+{
+  "graph": {
+    "gradient_cosine_geo_diff": 0.07566379892382996,
+    "gradient_rms": {
+      "diff": 4.201128826336655e-06,
+      "geo": 3.3167357535782765e-06,
+      "new": 5.5460637749567595e-06
+    },
+    "initial_loss": {
+      "diff": 0.19671611793019703,
+      "geo": 1.9952005809356321,
+      "new": 2.191916698865829
+    },
+    "steps": {
+      "diff": {
+        "lambda": 1.0,
+        "localization_errors_after_affine": {
+          "max_m": 1.432677149772644,
+          "mean_m": 0.39871227741241455,
+          "median_m": 0.36361920833587646,
+          "p90_m": 0.7137830257415771,
+          "p95_m": 0.8432045578956604
+        },
+        "loss_after": {
+          "diff": 0.14504448933221162,
+          "geo": 1.9928578956632672,
+          "new": 2.137902384995479
+        },
+        "loss_before": {
+          "diff": 0.19671611793019703,
+          "geo": 1.9952005809356321,
+          "new": 2.191916698865829
+        },
+        "method": "G1-Graph/diff-step",
+        "metrics": {
+          "ct": 0.9969820501676457,
+          "ks": 0.07915889981144135,
+          "tw": 0.9968941826852858
+        },
+        "mode": "graph",
+        "phase": "offline_embedding_gradient_probe",
+        "pointwise": {
+          "aligned_movement_median_m": 0.00811553784426123,
+          "by_initial_error_quintile": [
+            {
+              "count": 4200,
+              "improved_fraction": 0.5126190476190476,
+              "initial_error_m": [
+                0.0017963534272662338,
+                0.20367665432195653
+              ],
+              "mean_change_m": -0.00016507130871009495
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5303643724696356,
+              "initial_error_m": [
+                0.20367665432195653,
+                0.3113940676502803
+              ],
+              "mean_change_m": -0.0005361723320050245
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5470350083353179,
+              "initial_error_m": [
+                0.3113940676502803,
+                0.42017603798419473
+              ],
+              "mean_change_m": -0.0009509478250871056
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5748987854251012,
+              "initial_error_m": [
+                0.42017603798419473,
+                0.5675749218539052
+              ],
+              "mean_change_m": -0.0015244325386061326
+            },
+            {
+              "count": 4200,
+              "improved_fraction": 0.5842857142857143,
+              "initial_error_m": [
+                0.5675749218539052,
+                1.4631779654133883
+              ],
+              "mean_change_m": -0.002115279369294139
+            }
+          ],
+          "change_p95_m": 0.011678049587411662,
+          "first_order_mean_change_m": -0.0011786880045373271,
+          "first_order_toward_GT_fraction": 0.5555555555555556,
+          "improved_fraction": 0.5498404533981045,
+          "mean_change_m": -0.0010583884658215358,
+          "worsened_fraction": 0.4501595466018955
+        },
+        "source_embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+        "status": "diagnostic_only",
+        "step_rms_raw": 0.6542382717132569
+      },
+      "geo": {
+        "lambda": 1.0,
+        "localization_errors_after_affine": {
+          "max_m": 1.4608668088912964,
+          "mean_m": 0.39970433712005615,
+          "median_m": 0.3651404082775116,
+          "p90_m": 0.7132073640823364,
+          "p95_m": 0.8452234268188477
+        },
+        "loss_after": {
+          "diff": 0.1971477298686038,
+          "geo": 1.9513617626993776,
+          "new": 2.1485094925679813
+        },
+        "loss_before": {
+          "diff": 0.19671611793019703,
+          "geo": 1.9952005809356321,
+          "new": 2.191916698865829
+        },
+        "method": "G1-Graph/geo-step",
+        "metrics": {
+          "ct": 0.9969586275598985,
+          "ks": 0.07925945443672869,
+          "tw": 0.9968634814650783
+        },
+        "mode": "graph",
+        "phase": "offline_embedding_gradient_probe",
+        "pointwise": {
+          "aligned_movement_median_m": 0.00817529971690594,
+          "by_initial_error_quintile": [
+            {
+              "count": 4200,
+              "improved_fraction": 0.4738095238095238,
+              "initial_error_m": [
+                0.0017963534272662338,
+                0.20367665432195653
+              ],
+              "mean_change_m": 0.00031381865808449905
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.4903548463919981,
+              "initial_error_m": [
+                0.20367665432195653,
+                0.3113940676502803
+              ],
+              "mean_change_m": 0.0001881868701429789
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5094070016670635,
+              "initial_error_m": [
+                0.3113940676502803,
+                0.42017603798419473
+              ],
+              "mean_change_m": -0.00011384289077057408
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5175041676589665,
+              "initial_error_m": [
+                0.42017603798419473,
+                0.5675749218539052
+              ],
+              "mean_change_m": -0.0002402596026913264
+            },
+            {
+              "count": 4200,
+              "improved_fraction": 0.5285714285714286,
+              "initial_error_m": [
+                0.5675749218539052,
+                1.4631779654133883
+              ],
+              "mean_change_m": -0.00047991999820683504
+            }
+          ],
+          "change_p95_m": 0.011698525827345221,
+          "first_order_mean_change_m": -0.0002665305461429775,
+          "first_order_toward_GT_fraction": 0.516549983330952,
+          "improved_fraction": 0.5039291327332476,
+          "mean_change_m": -6.640497836976535e-05,
+          "worsened_fraction": 0.49607086726675237
+        },
+        "source_embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+        "status": "diagnostic_only",
+        "step_rms_raw": 0.6542382717132569
+      },
+      "new": {
+        "lambda": 1.0,
+        "localization_errors_after_affine": {
+          "max_m": 1.438672661781311,
+          "mean_m": 0.3988837003707886,
+          "median_m": 0.36413413286209106,
+          "p90_m": 0.7137335538864136,
+          "p95_m": 0.8432486057281494
+        },
+        "loss_after": {
+          "diff": 0.15600571702872926,
+          "geo": 1.9667004498076113,
+          "new": 2.1227061668363407
+        },
+        "loss_before": {
+          "diff": 0.19671611793019703,
+          "geo": 1.9952005809356321,
+          "new": 2.191916698865829
+        },
+        "method": "G1-Graph/new-step",
+        "metrics": {
+          "ct": 0.9969819615900763,
+          "ks": 0.07914597533407211,
+          "tw": 0.9968950271052275
+        },
+        "mode": "graph",
+        "phase": "offline_embedding_gradient_probe",
+        "pointwise": {
+          "aligned_movement_median_m": 0.008454647596298473,
+          "by_initial_error_quintile": [
+            {
+              "count": 4200,
+              "improved_fraction": 0.5088095238095238,
+              "initial_error_m": [
+                0.0017963534272662338,
+                0.20367665432195653
+              ],
+              "mean_change_m": -4.98760059490233e-05
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5136937366039533,
+              "initial_error_m": [
+                0.20367665432195653,
+                0.3113940676502803
+              ],
+              "mean_change_m": -0.0003348115860029254
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5410812098118599,
+              "initial_error_m": [
+                0.3113940676502803,
+                0.42017603798419473
+              ],
+              "mean_change_m": -0.0008201030528915905
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5691831388425815,
+              "initial_error_m": [
+                0.42017603798419473,
+                0.5675749218539052
+              ],
+              "mean_change_m": -0.0013228029873153583
+            },
+            {
+              "count": 4200,
+              "improved_fraction": 0.5888095238095238,
+              "initial_error_m": [
+                0.5675749218539052,
+                1.4631779654133883
+              ],
+              "mean_change_m": -0.0019072419012680813
+            }
+          ],
+          "change_p95_m": 0.01168222390919766,
+          "first_order_mean_change_m": -0.001052249467805391,
+          "first_order_toward_GT_fraction": 0.5550316711911225,
+          "improved_fraction": 0.5443158546459018,
+          "mean_change_m": -0.0008869758309647618,
+          "worsened_fraction": 0.4556841453540982
+        },
+        "source_embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+        "status": "diagnostic_only",
+        "step_rms_raw": 0.6542382717132569
+      }
+    }
+  },
+  "identity": {
+    "gradient_cosine_geo_diff": 0.08564238889237606,
+    "gradient_rms": {
+      "diff": 4.4785939849079354e-06,
+      "geo": 3.2694369503114222e-06,
+      "new": 5.766719700118042e-06
+    },
+    "initial_loss": {
+      "diff": 0.21432520801117977,
+      "geo": 1.9876772511013316,
+      "new": 2.2020024591125114
+    },
+    "steps": {
+      "diff": {
+        "lambda": 1.0,
+        "localization_errors_after_affine": {
+          "max_m": 1.4023852348327637,
+          "mean_m": 0.397239089012146,
+          "median_m": 0.3611241281032562,
+          "p90_m": 0.7124841213226318,
+          "p95_m": 0.8405583500862122
+        },
+        "loss_after": {
+          "diff": 0.15892813310414994,
+          "geo": 1.9849565598474948,
+          "new": 2.143884692951645
+        },
+        "loss_before": {
+          "diff": 0.21432520801117977,
+          "geo": 1.9876772511013316,
+          "new": 2.2020024591125114
+        },
+        "method": "G1-Identity/diff-step",
+        "metrics": {
+          "ct": 0.9970005156578401,
+          "ks": 0.07921095890973748,
+          "tw": 0.9969116641432105
+        },
+        "mode": "identity",
+        "phase": "offline_embedding_gradient_probe",
+        "pointwise": {
+          "aligned_movement_median_m": 0.007978489617252619,
+          "by_initial_error_quintile": [
+            {
+              "count": 4200,
+              "improved_fraction": 0.49238095238095236,
+              "initial_error_m": [
+                0.001997385877795604,
+                0.2025671363739417
+              ],
+              "mean_change_m": -5.134107281992649e-05
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5375089306977852,
+              "initial_error_m": [
+                0.2025671363739417,
+                0.30895651371996363
+              ],
+              "mean_change_m": -0.0006849319499201405
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5465587044534413,
+              "initial_error_m": [
+                0.30895651371996363,
+                0.41895106463924875
+              ],
+              "mean_change_m": -0.0008097638461347514
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5870445344129555,
+              "initial_error_m": [
+                0.41895106463924875,
+                0.566902462370383
+              ],
+              "mean_change_m": -0.0017150526884412963
+            },
+            {
+              "count": 4200,
+              "improved_fraction": 0.5880952380952381,
+              "initial_error_m": [
+                0.566902462370383,
+                1.42926310508319
+              ],
+              "mean_change_m": -0.0022585768372707427
+            }
+          ],
+          "change_p95_m": 0.011327368092524196,
+          "first_order_mean_change_m": -0.0012276823158804794,
+          "first_order_toward_GT_fraction": 0.555269800447683,
+          "improved_fraction": 0.5503167119112254,
+          "mean_change_m": -0.0011039381391999001,
+          "worsened_fraction": 0.4496832880887746
+        },
+        "source_embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+        "status": "diagnostic_only",
+        "step_rms_raw": 0.6542382717132569
+      },
+      "geo": {
+        "lambda": 1.0,
+        "localization_errors_after_affine": {
+          "max_m": 1.4286110401153564,
+          "mean_m": 0.398324191570282,
+          "median_m": 0.36198705434799194,
+          "p90_m": 0.7129194736480713,
+          "p95_m": 0.8425300121307373
+        },
+        "loss_after": {
+          "diff": 0.21400066038766039,
+          "geo": 1.9444770554364825,
+          "new": 2.158477715824143
+        },
+        "loss_before": {
+          "diff": 0.21432520801117977,
+          "geo": 1.9876772511013316,
+          "new": 2.2020024591125114
+        },
+        "method": "G1-Identity/geo-step",
+        "metrics": {
+          "ct": 0.9969757356428368,
+          "ks": 0.07932673644078715,
+          "tw": 0.9968811324522584
+        },
+        "mode": "identity",
+        "phase": "offline_embedding_gradient_probe",
+        "pointwise": {
+          "aligned_movement_median_m": 0.008279917000024157,
+          "by_initial_error_quintile": [
+            {
+              "count": 4200,
+              "improved_fraction": 0.4716666666666667,
+              "initial_error_m": [
+                0.001997385877795604,
+                0.2025671363739417
+              ],
+              "mean_change_m": 0.0004056175150662011
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.4941652774470112,
+              "initial_error_m": [
+                0.2025671363739417,
+                0.30895651371996363
+              ],
+              "mean_change_m": 0.0001459415497677852
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.49106930221481304,
+              "initial_error_m": [
+                0.30895651371996363,
+                0.41895106463924875
+              ],
+              "mean_change_m": 0.00012027623628968057
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5189330793045963,
+              "initial_error_m": [
+                0.41895106463924875,
+                0.566902462370383
+              ],
+              "mean_change_m": -0.0002272726560584984
+            },
+            {
+              "count": 4200,
+              "improved_fraction": 0.5233333333333333,
+              "initial_error_m": [
+                0.566902462370383,
+                1.42926310508319
+              ],
+              "mean_change_m": -0.0005386496178710411
+            }
+          ],
+          "change_p95_m": 0.011961219891470903,
+          "first_order_mean_change_m": -0.00022616719262055584,
+          "first_order_toward_GT_fraction": 0.513406677144354,
+          "improved_fraction": 0.49983330952040766,
+          "mean_change_m": -1.8821937939451602e-05,
+          "worsened_fraction": 0.5001666904795923
+        },
+        "source_embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+        "status": "diagnostic_only",
+        "step_rms_raw": 0.6542382717132569
+      },
+      "new": {
+        "lambda": 1.0,
+        "localization_errors_after_affine": {
+          "max_m": 1.4079992771148682,
+          "mean_m": 0.3974275290966034,
+          "median_m": 0.36085179448127747,
+          "p90_m": 0.712295651435852,
+          "p95_m": 0.8409590721130371
+        },
+        "loss_after": {
+          "diff": 0.1693211572939754,
+          "geo": 1.9605810945609832,
+          "new": 2.1299022518549586
+        },
+        "loss_before": {
+          "diff": 0.21432520801117977,
+          "geo": 1.9876772511013316,
+          "new": 2.2020024591125114
+        },
+        "method": "G1-Identity/new-step",
+        "metrics": {
+          "ct": 0.9970002510983447,
+          "ks": 0.07920218981705011,
+          "tw": 0.9969095086579199
+        },
+        "mode": "identity",
+        "phase": "offline_embedding_gradient_probe",
+        "pointwise": {
+          "aligned_movement_median_m": 0.008389105592086062,
+          "by_initial_error_quintile": [
+            {
+              "count": 4200,
+              "improved_fraction": 0.495952380952381,
+              "initial_error_m": [
+                0.001997385877795604,
+                0.2025671363739417
+              ],
+              "mean_change_m": 6.83060290036434e-05
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5256013336508693,
+              "initial_error_m": [
+                0.2025671363739417,
+                0.30895651371996363
+              ],
+              "mean_change_m": -0.0004920303861003438
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.535127411288402,
+              "initial_error_m": [
+                0.30895651371996363,
+                0.41895106463924875
+              ],
+              "mean_change_m": -0.000591313289546681
+            },
+            {
+              "count": 4199,
+              "improved_fraction": 0.5703738985472732,
+              "initial_error_m": [
+                0.41895106463924875,
+                0.566902462370383
+              ],
+              "mean_change_m": -0.0014857396855269764
+            },
+            {
+              "count": 4200,
+              "improved_fraction": 0.5823809523809523,
+              "initial_error_m": [
+                0.566902462370383,
+                1.42926310508319
+              ],
+              "mean_change_m": -0.0020766490494697172
+            }
+          ],
+          "change_p95_m": 0.011519402167748827,
+          "first_order_mean_change_m": -0.0010816764812454783,
+          "first_order_toward_GT_fraction": 0.5507453445730343,
+          "improved_fraction": 0.5418869362289851,
+          "mean_change_m": -0.0009154937238427937,
+          "worsened_fraction": 0.4581130637710149
+        },
+        "source_embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+        "status": "diagnostic_only",
+        "step_rms_raw": 0.6542382717132569
+      }
+    }
+  }
+}

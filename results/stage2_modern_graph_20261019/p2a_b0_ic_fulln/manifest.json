@@ -1,0 +1,706 @@
+{
+  "G3": {
+    "IC8-P": {
+      "label": "SURVIVOR",
+      "survivors": 2,
+      "targets": 0,
+      "total": 9,
+      "valid": 9
+    },
+    "IC9-G": {
+      "label": "NO_GO_EXPLORATORY",
+      "survivors": 0,
+      "targets": 0,
+      "total": 9,
+      "valid": 9
+    },
+    "IC9-P": {
+      "label": "NO_GO_EXPLORATORY",
+      "survivors": 0,
+      "targets": 0,
+      "total": 9,
+      "valid": 9
+    },
+    "Robust-IC-all": {
+      "label": "SURVIVOR",
+      "survivors": 2,
+      "targets": 0,
+      "total": 27,
+      "valid": 27
+    }
+  },
+  "N": 20997,
+  "artifacts_checked": {
+    "baseline_metric_max_difference": 0.0,
+    "comparison_rows_checked": 84,
+    "comparison_sources_protocols_pass": true,
+    "fulln_configurations": 27,
+    "max_feas": 3.510502175218163e-17,
+    "max_prox": 1.9979413021448008e-06,
+    "phase": "P2A_FULL_N",
+    "protected_count": 49,
+    "protected_inputs_unchanged": true,
+    "retries": 0,
+    "stop": "P2A only; no P2B/P3/P4/P5",
+    "valid": 27,
+    "visual_review": "Viewed native J/IC8/IC9-P/G and matched mid raw/affine plus larger-budget affine; plot_chart style and GT colors consistent"
+  },
+  "checkpoint_selection": "last iter meeting frozen numerical stopping; no GT; no training weights",
+  "code": [
+    {
+      "bytes": 8744,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\ic_cuda.py",
+      "sha256": "b67849f133f0a2aead0720fc0ee894094af4917bea64f4284460880fde64c2c1"
+    },
+    {
+      "bytes": 5283,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\ic_solver.py",
+      "sha256": "58b9cfa1b7fa91bd6879065b200456a7b02d0527524298cb82b1c7aacbbd45f9"
+    },
+    {
+      "bytes": 12203,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\run_ic_fulln.py",
+      "sha256": "01a9b0841761cd3d369f6b8573b7a620b8be753f148873b0eefebb3832d5e470"
+    }
+  ],
+  "code_final": [
+    {
+      "bytes": 19668,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\evaluate_ic_fulln.py",
+      "sha256": "ce586a8126eda7deef888d11a2cdc040963687e31718d3d54aba4cba08be2496"
+    },
+    {
+      "bytes": 8744,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\ic_cuda.py",
+      "sha256": "b67849f133f0a2aead0720fc0ee894094af4917bea64f4284460880fde64c2c1"
+    },
+    {
+      "bytes": 5283,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\ic_solver.py",
+      "sha256": "58b9cfa1b7fa91bd6879065b200456a7b02d0527524298cb82b1c7aacbbd45f9"
+    },
+    {
+      "bytes": 12203,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\run_ic_fulln.py",
+      "sha256": "01a9b0841761cd3d369f6b8573b7a620b8be753f148873b0eefebb3832d5e470"
+    }
+  ],
+  "commands": [
+    [
+      "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+      "-m",
+      "methods.stage2_modern_graph.run_ic_fulln",
+      "--phase",
+      "run"
+    ]
+  ],
+  "completed": [
+    "ic8-p_a50_eta100",
+    "ic9-p_a50_eta100",
+    "ic9-g_a50_eta100",
+    "ic8-p_a20_eta050",
+    "ic8-p_a20_eta100",
+    "ic8-p_a20_eta150",
+    "ic8-p_a50_eta050",
+    "ic8-p_a50_eta150",
+    "ic8-p_a80_eta050",
+    "ic8-p_a80_eta100",
+    "ic8-p_a80_eta150",
+    "ic9-p_a20_eta050",
+    "ic9-p_a20_eta100",
+    "ic9-p_a20_eta150",
+    "ic9-p_a50_eta050",
+    "ic9-p_a50_eta150",
+    "ic9-p_a80_eta050",
+    "ic9-p_a80_eta100",
+    "ic9-p_a80_eta150",
+    "ic9-g_a20_eta050",
+    "ic9-g_a20_eta100",
+    "ic9-g_a20_eta150",
+    "ic9-g_a50_eta050",
+    "ic9-g_a50_eta150",
+    "ic9-g_a80_eta050",
+    "ic9-g_a80_eta100",
+    "ic9-g_a80_eta150"
+  ],
+  "completed_date": "2026-10-20",
+  "delta0": 0.09517167367990964,
+  "documentation": [
+    {
+      "bytes": 54951,
+      "path": "D:\\diffusion_refined_charting\\docs\\tasks\\Stage2_2026-10-19.md",
+      "sha256": "14d5bc6c4609c92aadfcb2391e53e7a460ebbac60b450e592234a31a2a4b361d"
+    },
+    {
+      "bytes": 13709,
+      "path": "D:\\diffusion_refined_charting\\docs\\research\\research_state.md",
+      "sha256": "175dba8fe046244367cf3a827c3bd7942bd7a5dc043c9db55de88ed7325fd22f"
+    },
+    {
+      "bytes": 69514,
+      "path": "D:\\diffusion_refined_charting\\docs\\research\\experiment_log.md",
+      "sha256": "28997716b978813aaf482ea08cde81de747c3b064bca36a2ff6e8011399b2a8b"
+    },
+    {
+      "bytes": 21077,
+      "path": "D:\\diffusion_refined_charting\\docs\\research\\experiment_registry.md",
+      "sha256": "d07fbed45641f816445c6cc84652636ebd1798bc73e9a4f524bee5458463c6ba"
+    }
+  ],
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128"
+  },
+  "final_status": "P2A_COMPLETED_STOP_FOR_USER_REVIEW",
+  "formal_numerical_code_unchanged": true,
+  "git_branch": "codex/new-stage1",
+  "git_head": "f63652fc3bec725f4fddd1105d13e288cbf233dc",
+  "grid": [
+    {
+      "alpha": 0.5,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a50_eta100"
+    },
+    {
+      "alpha": 0.5,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a50_eta100"
+    },
+    {
+      "alpha": 0.5,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a50_eta100"
+    },
+    {
+      "alpha": 0.2,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a20_eta050"
+    },
+    {
+      "alpha": 0.2,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a20_eta100"
+    },
+    {
+      "alpha": 0.2,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a20_eta150"
+    },
+    {
+      "alpha": 0.5,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a50_eta050"
+    },
+    {
+      "alpha": 0.5,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a50_eta150"
+    },
+    {
+      "alpha": 0.8,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a80_eta050"
+    },
+    {
+      "alpha": 0.8,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a80_eta100"
+    },
+    {
+      "alpha": 0.8,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a80_eta150"
+    },
+    {
+      "alpha": 0.2,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a20_eta050"
+    },
+    {
+      "alpha": 0.2,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a20_eta100"
+    },
+    {
+      "alpha": 0.2,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a20_eta150"
+    },
+    {
+      "alpha": 0.5,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a50_eta050"
+    },
+    {
+      "alpha": 0.5,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a50_eta150"
+    },
+    {
+      "alpha": 0.8,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a80_eta050"
+    },
+    {
+      "alpha": 0.8,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a80_eta100"
+    },
+    {
+      "alpha": 0.8,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a80_eta150"
+    },
+    {
+      "alpha": 0.2,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a20_eta050"
+    },
+    {
+      "alpha": 0.2,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a20_eta100"
+    },
+    {
+      "alpha": 0.2,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a20_eta150"
+    },
+    {
+      "alpha": 0.5,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a50_eta050"
+    },
+    {
+      "alpha": 0.5,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a50_eta150"
+    },
+    {
+      "alpha": 0.8,
+      "eta": 0.04758583683995482,
+      "eta_factor": 0.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a80_eta050"
+    },
+    {
+      "alpha": 0.8,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a80_eta100"
+    },
+    {
+      "alpha": 0.8,
+      "eta": 0.14275751051986446,
+      "eta_factor": 1.5,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a80_eta150"
+    }
+  ],
+  "last_completed": "ic9-g_a80_eta150",
+  "metric_protocol": {
+    "aligned_keys": {
+      "B0": "b0",
+      "B0+S2-CG": "b0_s2_cg",
+      "B0+S2-J": "b0_s2_j"
+    },
+    "alignment": "separate affine fit and evaluation on all identical N nodes",
+    "chart_quality": "same-node transductive; no held-out claim",
+    "colors": "same GT x/y mapping in all four panels",
+    "embeddings": {
+      "B0": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+      "B0+S2-CG": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_cg\\embedding.npz",
+      "B0+S2-J": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\embedding.npz"
+    },
+    "metric_subset_path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\comparison\\metric_subset_seed10.npy",
+    "metric_subset_size": 4199,
+    "metric_subset_source": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\metric_subset_seed10.npy",
+    "num_samples": 20997,
+    "plot_function": "run_adp_siamese.plot_chart (external axes; align=False for raw)",
+    "seed": 10
+  },
+  "numerical_protocol": {
+    "algorithm": "same-objective PDHG",
+    "cuda_graph": "50 identical steps with exact guarded replay for box or zero-aux certificate failure",
+    "dtype": "float64",
+    "feasibility_stop": 1e-09,
+    "initial_max_iter": 30000,
+    "retries": 1,
+    "retry_max_iter": 120000,
+    "step_balance": "s=max(1,min_observation_radius/beta); tau=t0*s,sigma=t0/s; tau*sigma*norm_bound=.9025",
+    "tolerance": 2e-06
+  },
+  "phase": "P2A_FULL_N",
+  "protected_inputs": [
+    {
+      "bytes": 11548,
+      "path": "D:\\diffusion_refined_charting\\AGENTS.md",
+      "sha256": "536b80bba241cd559d3fd4a6ef44344dc5441dfc8b7f824db68af77cee114655"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+      "sha256": "8382214735e441f2b18905c9e6faa490674d7b0837717170ca3489d01d832d8e"
+    },
+    {
+      "bytes": 33720,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\comparison\\metric_subset_seed10.npy",
+      "sha256": "a99deb7a912ecd199c7f4b834cf941d53dd5bdccaeab7a0461e88459c5bcdf09"
+    },
+    {
+      "bytes": 5283,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\ic_solver.py",
+      "sha256": "58b9cfa1b7fa91bd6879065b200456a7b02d0527524298cb82b1c7aacbbd45f9"
+    },
+    {
+      "bytes": 4690,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\framelet_solver.py",
+      "sha256": "baa3ca4e846b8ffea247e6d2a7074892096c9f027f25702b2b37406c9256ee83"
+    },
+    {
+      "bytes": 13070,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\edge_small.py",
+      "sha256": "ff42b8deb55d4367a906d64b3a5082c2a89b54a02594cf09e9035506bb2a9667"
+    },
+    {
+      "bytes": 2180,
+      "path": "D:\\diffusion_refined_charting\\common_metrics.py",
+      "sha256": "e26561d78735f5e5b939d3934f123a784e2a4d5b510aa8264b3732a206479a44"
+    },
+    {
+      "bytes": 10149,
+      "path": "D:\\diffusion_refined_charting\\run_adp_siamese.py",
+      "sha256": "c53f4ecd42b42b03e4fd697243395183a7efe13c09678d7025486de6b5ee6091"
+    },
+    {
+      "bytes": 6822,
+      "path": "D:\\diffusion_refined_charting\\methods\\g1_acf_graph_fcf\\compare.py",
+      "sha256": "4b3f6defe6449d3e2279f3ec288ce04a42b6ff7fb1a6823937e59e6548d4d1fa"
+    },
+    {
+      "bytes": 2371,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\cg_residual_history.json",
+      "sha256": "69422c69d25dd9a5439a7b6ed0f0aeac22b20493990302906dda896b143dbf0a"
+    },
+    {
+      "bytes": 1009100,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\chart_gauge.npz",
+      "sha256": "fe8d9efdf15a9cb1c006d35dad083e35f2a973634c660e0e93626c6eca682ac1"
+    },
+    {
+      "bytes": 486,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\completion_checks.json",
+      "sha256": "20d8931609bfa43ef3b367411274104c06fbf2a35b239d757adf136cf137ba5e"
+    },
+    {
+      "bytes": 986,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\delta0.json",
+      "sha256": "1e60c0f5d844595395ba457e07b6f2a725078020aa9b01fd7cced576c7ccc8fe"
+    },
+    {
+      "bytes": 10326,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\G0.csv",
+      "sha256": "649dceed1b2b06c87cd2c0280cf584a6a115450df58a49b90c5ef47ee7fac829"
+    },
+    {
+      "bytes": 13689,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\G0.json",
+      "sha256": "5b34d606a2de2956fbf946540e422f3956ecfd243b60adac7ec72ab41df1d0d0"
+    },
+    {
+      "bytes": 935,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\git_diff_stat.txt",
+      "sha256": "ae799a5d43b1c2c50516e564a2340c5a35cddac94413664c0bd9b73c06ec52e2"
+    },
+    {
+      "bytes": 1527,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph_checks.json",
+      "sha256": "82a57394a71713bbb34a20720bb56ffd6924e2e0dd6c4b2168f6734e1ee6e973"
+    },
+    {
+      "bytes": 266,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\historical_comparison.json",
+      "sha256": "79274eefa144a96d401f5455e88c7f02d031bcd083acfacdb2c228cf02d69db4"
+    },
+    {
+      "bytes": 1904,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\historical_reference.json",
+      "sha256": "1505ff834129460254510a91f487a421580adc33eacbace0a61c8323b98469a9"
+    },
+    {
+      "bytes": 13710,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\immutability_checks.json",
+      "sha256": "9ca033710d7df681a704ca83bd8c35e5716a54a5817c59b62370080cea6f6dc7"
+    },
+    {
+      "bytes": 1434,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\input_checks.json",
+      "sha256": "77ab8ee3f555e549aee7fad481ad451db7bc44c7af7c27a7f6247303472eb2c3"
+    },
+    {
+      "bytes": 4738,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\input_file_hashes.csv",
+      "sha256": "971067737c33c75636d36a464f2a5ec591906e6cdfef3d921b5e604296444333"
+    },
+    {
+      "bytes": 7131,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\input_provenance.json",
+      "sha256": "ff63f4acb3aa7d033e522ad8cf25df93be0d09b2ff5eff45bb1b8b749cf00cb1"
+    },
+    {
+      "bytes": 13334,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\manifest.json",
+      "sha256": "4d78066113626a798b0b5d0c129dbe6131a7a1c9f7591e19a09ad05c0fb036ce"
+    },
+    {
+      "bytes": 11123,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\REPORT.md",
+      "sha256": "7570229db41a9df6418689a3128a1f2bf37878ce6c1cf75ae9f166ec595a272e"
+    },
+    {
+      "bytes": 158,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\run_command.txt",
+      "sha256": "122a815ba42144650ba8e99d93529434849ebd4d20eb1a380476d42d28c1d117"
+    },
+    {
+      "bytes": 999,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\solver_checks.json",
+      "sha256": "895d51401f85251e6879222324941761c7c4ad203ab97eae2472bb82a5214a04"
+    },
+    {
+      "bytes": 209,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\unit_tests.json",
+      "sha256": "1bbca8dfc550e5a552d2d343b785e239c75c4e488b858e1ab69f769aa60b2385"
+    },
+    {
+      "bytes": 1009104,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\comparison\\aligned_charts.npz",
+      "sha256": "d9b83f4bcee552dcc7fce8f5413fa85f33e1ae25a8f8acec0a10e4eb482af371"
+    },
+    {
+      "bytes": 861,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\comparison\\comparison.csv",
+      "sha256": "c185003d71828341eeab0fe6ee6f8b8373cb55c3f59238558ce4427f130a2f3d"
+    },
+    {
+      "bytes": 1000,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\comparison\\comparison.md",
+      "sha256": "41aa60c59aea38fe4cade4da5356da982faf7bfd518c9c8bae9be55d395b1ea1"
+    },
+    {
+      "bytes": 1118,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\comparison\\eval_protocol.json",
+      "sha256": "6a2ec4eafdb8ecd7e8fb5ea9e082debf2dc522f0d2945a4c1d4b51242cf74062"
+    },
+    {
+      "bytes": 616314,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\comparison\\four_column_affine_channel_chart.png",
+      "sha256": "2e0c5bd6b94c1efb2431e15baf62d77afa36f948c29d962e2222d1f536e43531"
+    },
+    {
+      "bytes": 741476,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\comparison\\four_column_raw_channel_chart.png",
+      "sha256": "0b479eb5007e058f0afc29c0800ec197ccf7382e7a5e3c9ec4cc150f63186d66"
+    },
+    {
+      "bytes": 24959930,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\edges_and_degrees.npz",
+      "sha256": "4279c0c0ab552ea94633bf22248b8e5b2ef3d26c9a5b84c7e9bc013aa5b7ccfd"
+    },
+    {
+      "bytes": 11572308,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\G128.npz",
+      "sha256": "7bc0a6ba32199ce248bea5cba886b26953a34b5bb27e08c7b9b60656883231ee"
+    },
+    {
+      "bytes": 43001984,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\geodesic_top512.npy",
+      "sha256": "7b6708af03913174950cc43d20ebe08674c5460f6351bcce28661dff71477f19"
+    },
+    {
+      "bytes": 4854775,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\incidence_D.npz",
+      "sha256": "e719adc3f518d6432733b62945c7d21d7dfa30a0ba52579fc1196bf33b00e257"
+    },
+    {
+      "bytes": 13000615,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\L_csr_float64.npz",
+      "sha256": "a8d68901eb86cd58cfbd560c52de44e5a17b4e24d33da2c2827608ff88c69fad"
+    },
+    {
+      "bytes": 340677,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_cg\\chart.png",
+      "sha256": "19e27346e13ae0ea4085f0ac6c20e7071b2225f2ba39ff13437ec6f1472a9657"
+    },
+    {
+      "bytes": 672672,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_cg\\embedding.npz",
+      "sha256": "fb3c84dfef7bcc2f2eb08307d93f5e4f22ee7361feab8b242beecd52314a1c93"
+    },
+    {
+      "bytes": 1337,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_cg\\result.json",
+      "sha256": "b17d9d97bce68d7d2b7ac63eba4f0dca0584e5f344508f73e65751d66d125457"
+    },
+    {
+      "bytes": 554,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_cg\\run_config.json",
+      "sha256": "22ba9f955bdc28a64f4a80c48890471e762447624bde8850668c3a711b594306"
+    },
+    {
+      "bytes": 339960,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\chart.png",
+      "sha256": "531eb5ab1f03f30fc99e83e2ffa9dfb211b0b624d05adaedae1b4870e0c23700"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\embedding.npz",
+      "sha256": "4f0de40087b91b011261f8e9e8cdeca43972ccdaff7f4c39ef3649a34e5de4ac"
+    },
+    {
+      "bytes": 1011,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\result.json",
+      "sha256": "3ca0788d152bbbcd4fd71c83e62d9b970bc60f527f6cc6b333db7ee5c9aadafb"
+    },
+    {
+      "bytes": 420,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\run_config.json",
+      "sha256": "8eb77685a1944aeeedb4326f9717bcc85b5f1020c3ad007fb56ad1a6ca7d5b41"
+    },
+    {
+      "bytes": 10166,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\manifest.json",
+      "sha256": "bdf114245cb40afc09b2e61a56c0dfc247d53d738c0aee6682277ebca6c5597a"
+    },
+    {
+      "bytes": 119739,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_edge_solver_repair\\manifest.json",
+      "sha256": "9b5ce91f2f775f47f6b7d07b074b071f4c001d707a5d5aa37cc6a833ae11d5d7"
+    }
+  ],
+  "protected_inputs_unchanged": true,
+  "run_wall_time_s": 1344.5738482000306,
+  "status": "P2A_COMPLETED",
+  "stop": "P2A only; await user review; P2B/P3/P4/P5 not executed",
+  "stop_after": "P2A evaluation/G3 only",
+  "stopped": true,
+  "tests": [
+    {
+      "bytes": 3127,
+      "path": "D:\\diffusion_refined_charting\\tests\\test_stage2_ic_cuda.py",
+      "sha256": "054c6c6292fec9a4b58d7626f872e6182ac4bbbf20ee7b560a31f2e63ba6bf2c"
+    },
+    {
+      "bytes": 1085,
+      "path": "D:\\diffusion_refined_charting\\tests\\test_stage2_p2a_g3.py",
+      "sha256": "dbb742c6842bf121a546e383c7d3483f80e7c0d09c96a14c00f7be3a7d8b20bd"
+    }
+  ],
+  "valid_configurations": 27
+}

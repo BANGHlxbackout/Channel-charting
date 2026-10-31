@@ -1,0 +1,221 @@
+{
+  "charts": {
+    "B0": {
+      "dataset": "datasets\\adp_old_shard4",
+      "distance_run": "results\\adp_old_fused\\stride1_n20997_seed10",
+      "elapsed_s": 1633.5547530651093,
+      "history": [
+        {
+          "batch_size": 500,
+          "loss": 49.771529296239216,
+          "lr": 0.01,
+          "requested_samples": 150000,
+          "samples": 150000,
+          "session": 1
+        },
+        {
+          "batch_size": 1000,
+          "loss": 3.2021830749511717,
+          "lr": 0.01,
+          "requested_samples": 150000,
+          "samples": 150000,
+          "session": 2
+        },
+        {
+          "batch_size": 1500,
+          "loss": 2.7454474711418153,
+          "lr": 0.008,
+          "requested_samples": 150000,
+          "samples": 150000,
+          "session": 3
+        },
+        {
+          "batch_size": 2000,
+          "loss": 2.535494254430135,
+          "lr": 0.004,
+          "requested_samples": 150000,
+          "samples": 150000,
+          "session": 4
+        },
+        {
+          "batch_size": 3000,
+          "loss": 2.4276881980895997,
+          "lr": 0.001,
+          "requested_samples": 150000,
+          "samples": 150000,
+          "session": 5
+        },
+        {
+          "batch_size": 4000,
+          "loss": 2.4370864082027124,
+          "lr": 0.0005,
+          "requested_samples": 150000,
+          "samples": 148000,
+          "session": 6
+        },
+        {
+          "batch_size": 5000,
+          "loss": 2.39899841149648,
+          "lr": 0.0002,
+          "requested_samples": 150000,
+          "samples": 150000,
+          "session": 7
+        },
+        {
+          "batch_size": 6000,
+          "loss": 2.368188571929932,
+          "lr": 0.0001,
+          "requested_samples": 150000,
+          "samples": 150000,
+          "session": 8
+        }
+      ],
+      "localization_errors_after_affine": {
+        "max_m": 7.893630027770996,
+        "mean_m": 0.409347265958786,
+        "median_m": 0.37222808599472046,
+        "p90_m": 0.7141520380973816,
+        "p95_m": 0.8557930588722229
+      },
+      "margin": 51.49518966674805,
+      "method": "ADP + timestamp fused + geodesic + Siamese FCF",
+      "metric_subset_fraction": 0.2,
+      "metric_subset_size": 4199,
+      "metrics": {
+        "ct": 0.9957121024091857,
+        "ks": 0.0840268307097306,
+        "n_neighbors": 209,
+        "tw": 0.9959871853305127
+      },
+      "num_samples": 20997,
+      "paper": "Angle-Delay Profile-Based and Timestamp-Aided Dissimilarity Metrics for Channel Charting",
+      "run_name": "stride1_n20997_seed10",
+      "seed": 10,
+      "stride": 1
+    },
+    "G1-Graph": {
+      "actual_steps": 2000,
+      "best_step": 1920,
+      "best_validation_loss": 1.8726577758789062,
+      "dataset": "D:\\diffusion_refined_charting\\datasets\\adp_old_shard4",
+      "distance_run": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10",
+      "dropout": 0.1,
+      "feature_chunk_size": 128,
+      "feature_mode": "stream",
+      "first_train_pair_hash": "d645688026a9a3d2930547069e7d5c6432148b26e67e0346fa9ee52ae4c29f9d",
+      "hidden_dim": 512,
+      "input_dim": 26624,
+      "learning_rate": 0.001,
+      "localization_errors_after_affine": {
+        "max_m": 1.4631786346435547,
+        "mean_m": 0.39977070689201355,
+        "median_m": 0.3645780682563782,
+        "p90_m": 0.7144079804420471,
+        "p95_m": 0.8463372588157654
+      },
+      "margin": 51.49518966674805,
+      "max_steps": 2000,
+      "metrics": {
+        "ct": 0.9969470488290759,
+        "ks": 0.07933974003817006,
+        "n_neighbors": 209,
+        "tw": 0.996848713648453
+      },
+      "mode": "graph",
+      "neighbors": 20,
+      "num_layers": 2,
+      "num_samples": 20997,
+      "optimizer": "AdamW",
+      "pairs_per_step": 65536,
+      "parameter_count": 14162434,
+      "peak_vram_bytes": 707461120,
+      "phase": "full",
+      "protocol": "same-node transductive chart quality; GT used only after training",
+      "seed": 10,
+      "status": "completed",
+      "stride": 1,
+      "total_time_s": 6241.559580000001,
+      "train_time_s": 6224.643790000002,
+      "validation_pair_hash": "86664796b714af93838f11d8c37aebc3b895913671b9347d231072aed4772f80",
+      "validation_pairs": 200000,
+      "weight_decay": 1e-05
+    },
+    "G1-Identity": {
+      "actual_steps": 2000,
+      "best_step": 1920,
+      "best_validation_loss": 1.8625240325927734,
+      "dataset": "D:\\diffusion_refined_charting\\datasets\\adp_old_shard4",
+      "distance_run": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10",
+      "dropout": 0.1,
+      "feature_chunk_size": 128,
+      "feature_mode": "stream",
+      "first_train_pair_hash": "d645688026a9a3d2930547069e7d5c6432148b26e67e0346fa9ee52ae4c29f9d",
+      "hidden_dim": 512,
+      "input_dim": 26624,
+      "learning_rate": 0.001,
+      "localization_errors_after_affine": {
+        "max_m": 1.4292629957199097,
+        "mean_m": 0.3983430862426758,
+        "median_m": 0.36171627044677734,
+        "p90_m": 0.7139160633087158,
+        "p95_m": 0.8431971073150635
+      },
+      "margin": 51.49518966674805,
+      "max_steps": 2000,
+      "metrics": {
+        "ct": 0.9969656416128634,
+        "ks": 0.0794014101751083,
+        "n_neighbors": 209,
+        "tw": 0.9968684174648
+      },
+      "mode": "identity",
+      "neighbors": 20,
+      "num_layers": 2,
+      "num_samples": 20997,
+      "optimizer": "AdamW",
+      "pairs_per_step": 65536,
+      "parameter_count": 14162434,
+      "peak_vram_bytes": 698310656,
+      "phase": "full",
+      "protocol": "same-node transductive chart quality; GT used only after training",
+      "seed": 10,
+      "status": "completed",
+      "stride": 1,
+      "total_time_s": 5309.294396400001,
+      "train_time_s": 5292.062650499996,
+      "validation_pair_hash": "86664796b714af93838f11d8c37aebc3b895913671b9347d231072aed4772f80",
+      "validation_pairs": 200000,
+      "weight_decay": 1e-05
+    }
+  },
+  "distance_run": {
+    "dataset": "datasets\\adp_old_shard4",
+    "elapsed_s": 10036.992896080017,
+    "exact_notebook_gamma": false,
+    "gamma": 12.983333587646484,
+    "localization_errors_after_affine": {
+      "max_m": 9.143817004361429,
+      "mean_m": 0.5274875493593388,
+      "median_m": 0.40032283109936206,
+      "p90_m": 0.8836756526987996,
+      "p95_m": 1.1302861132491517
+    },
+    "mds_iter": 80,
+    "mds_n_init": 4,
+    "mds_reduction": 1,
+    "mds_samples": 20997,
+    "method": "ADP + timestamp fused + geodesic + metric MDS",
+    "metrics": {
+      "ct": 0.9845334810356814,
+      "ks": 0.10628553959910944,
+      "n_neighbors": 1049,
+      "tw": 0.9898523791426833
+    },
+    "neighbors": 20,
+    "num_samples": 20997,
+    "paper": "Angle-Delay Profile-Based and Timestamp-Aided Dissimilarity Metrics for Channel Charting",
+    "run_name": "stride1_n20997_seed10",
+    "seed": 10,
+    "stride": 1
+  }
+}

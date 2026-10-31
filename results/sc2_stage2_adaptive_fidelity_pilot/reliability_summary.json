@@ -1,0 +1,43 @@
+{
+  "c_directed_max": 0.9999986159306564,
+  "c_directed_mean": 0.4081404963538552,
+  "c_directed_min": 2.2227116072821086e-07,
+  "epsilon": 1e-08,
+  "h_directed_max": 0.9998986013600648,
+  "h_directed_mean": 0.3305263606691596,
+  "h_directed_min": 0.0,
+  "local_k": 64,
+  "log_s": -0.1772104346881429,
+  "q_fo": {
+    "largest_tie_multiplicity": 1,
+    "max": 0.8039710235598099,
+    "mean": 0.4081404963538552,
+    "min": 0.00017101133295161213,
+    "tie_group_count": 0,
+    "tied_item_count": 0,
+    "unique_value_count": 20997
+  },
+  "q_sc2": {
+    "largest_tie_multiplicity": 1,
+    "max": 0.5414257523811355,
+    "mean": 0.12724139573856036,
+    "min": 3.849493667995528e-05,
+    "tie_group_count": 0,
+    "tied_item_count": 0,
+    "unique_value_count": 20997
+  },
+  "s_directed_max": 0.951964718741322,
+  "s_directed_mean": 0.12724139573856036,
+  "s_directed_min": 0.0,
+  "symmetric_union_checks": {
+    "diagonal_nnz": 0,
+    "directed_edge_count": 1343808,
+    "finite": true,
+    "max_directional_disagreement": 0.0,
+    "nonnegative": true,
+    "reciprocal_directed_pair_count": 571798,
+    "symmetric_nnz": 1544020,
+    "undirected_union_edge_count": 772010
+  },
+  "tau": 0.4310747558002
+}

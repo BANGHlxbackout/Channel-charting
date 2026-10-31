@@ -1,0 +1,232 @@
+[
+  {
+    "final_window": {
+      "equality_residual": {
+        "max": 0.0051048920819782,
+        "min": 0.001449065733769271
+      },
+      "objective": {
+        "max": 259.96434276589963,
+        "min": 259.8140250458914
+      },
+      "row_sum_residual": {
+        "max": 0.045446479817690455,
+        "min": 0.004088858060541933
+      },
+      "stationarity": {
+        "max": 0.0010731287145936698,
+        "min": 0.00040122482768335154
+      }
+    },
+    "finite": true,
+    "last_iteration": 5000,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\attempt1_history.csv"
+  },
+  {
+    "final_window": {
+      "equality_residual": {
+        "max": 0.0046876188918918565,
+        "min": 0.001122989927841333
+      },
+      "objective": {
+        "max": 259.96805268261636,
+        "min": 259.79065845426334
+      },
+      "row_sum_residual": {
+        "max": 0.042972882195141615,
+        "min": 0.010231482099410383
+      },
+      "stationarity": {
+        "max": 0.0010596338633919518,
+        "min": 0.0003119436402156849
+      }
+    },
+    "finite": true,
+    "last_iteration": 15000,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-author\\attempt2_history.csv"
+  },
+  {
+    "final_window": {
+      "equality_residual": {
+        "max": 0.004816041320954741,
+        "min": 0.0011667828411295368
+      },
+      "objective": {
+        "max": 259.9870499935009,
+        "min": 259.8074283578297
+      },
+      "row_sum_residual": {
+        "max": 0.04385536213603147,
+        "min": 0.006388372400288667
+      },
+      "stationarity": {
+        "max": 0.0010844381530887336,
+        "min": 0.00030731505260123387
+      }
+    },
+    "finite": true,
+    "last_iteration": 5000,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\attempt1_history.csv"
+  },
+  {
+    "final_window": {
+      "equality_residual": {
+        "max": 0.004404513151460636,
+        "min": 0.0007585999436025577
+      },
+      "objective": {
+        "max": 259.9783356889558,
+        "min": 259.81799132731476
+      },
+      "row_sum_residual": {
+        "max": 0.041651472916931165,
+        "min": 0.005467641072883667
+      },
+      "stationarity": {
+        "max": 0.000914931722894853,
+        "min": 0.00025460504124111825
+      }
+    },
+    "finite": true,
+    "last_iteration": 15000,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\dot-p-small-prior\\attempt2_history.csv"
+  },
+  {
+    "final_window": {
+      "equality_residual": {
+        "max": 0.005675461562249154,
+        "min": 0.0008110059327969228
+      },
+      "objective": {
+        "max": 256.4598277126341,
+        "min": 256.19331233901914
+      },
+      "row_sum_residual": {
+        "max": 0.04657303319418604,
+        "min": 0.005149209205720928
+      },
+      "stationarity": {
+        "max": 0.0010015186012744396,
+        "min": 0.00030063439755115674
+      }
+    },
+    "finite": true,
+    "last_iteration": 5000,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\attempt1_history.csv"
+  },
+  {
+    "final_window": {
+      "equality_residual": {
+        "max": 0.00430556283784046,
+        "min": 0.0006189409627950456
+      },
+      "objective": {
+        "max": 256.4367823533163,
+        "min": 256.2187897689594
+      },
+      "row_sum_residual": {
+        "max": 0.03382372702103209,
+        "min": 0.004515660544522682
+      },
+      "stationarity": {
+        "max": 0.000803140430790262,
+        "min": 0.00024195377195932393
+      }
+    },
+    "finite": true,
+    "last_iteration": 15000,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-author\\attempt2_history.csv"
+  },
+  {
+    "final_window": {
+      "equality_residual": {
+        "max": 0.002132976968069807,
+        "min": 0.0003987441870738003
+      },
+      "objective": {
+        "max": 256.4081914042144,
+        "min": 256.3260903077173
+      },
+      "row_sum_residual": {
+        "max": 0.025041843890460824,
+        "min": 0.0031008852807573595
+      },
+      "stationarity": {
+        "max": 0.00045098521771323556,
+        "min": 0.00012890774832934626
+      }
+    },
+    "finite": true,
+    "last_iteration": 5000,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\attempt1_history.csv"
+  },
+  {
+    "final_window": {
+      "equality_residual": {
+        "max": 0.002005263129556794,
+        "min": 0.0003707245524267384
+      },
+      "objective": {
+        "max": 256.4063012946198,
+        "min": 256.32838216932663
+      },
+      "row_sum_residual": {
+        "max": 0.023515939672140607,
+        "min": 0.00287165501161446
+      },
+      "stationarity": {
+        "max": 0.0004217049005168432,
+        "min": 0.00012086677373145
+      }
+    },
+    "finite": true,
+    "last_iteration": 15000,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\fe-p-small-prior\\attempt2_history.csv"
+  },
+  {
+    "final_window": {
+      "equality_residual": {
+        "max": 0.003701525536208436,
+        "min": 0.0021476738034715876
+      },
+      "objective": {
+        "max": 190.71872168947712,
+        "min": 190.67817157839949
+      },
+      "row_sum_residual": {
+        "max": 0.0,
+        "min": 0.0
+      },
+      "stationarity": {
+        "max": 0.0003431925939438727,
+        "min": 0.00019489481835734576
+      }
+    },
+    "finite": true,
+    "last_iteration": 5000,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\attempt1_history.csv"
+  },
+  {
+    "final_window": {
+      "equality_residual": {
+        "max": 0.0004993477700369599,
+        "min": 0.00034763474139137135
+      },
+      "objective": {
+        "max": 190.70121058921643,
+        "min": 190.69544122024456
+      },
+      "row_sum_residual": {
+        "max": 0.0,
+        "min": 0.0
+      },
+      "stationarity": {
+        "max": 4.960560561399803e-05,
+        "min": 3.190237670715408e-05
+      }
+    },
+    "finite": true,
+    "last_iteration": 15000,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\sef-p-small-author\\attempt2_history.csv"
+  }
+]

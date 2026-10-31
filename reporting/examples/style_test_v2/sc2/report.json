@@ -1,0 +1,93 @@
+{
+  "report": {
+    "title": "历史实验样式测试：精修图连接权重调整",
+    "date": "2026 年 10 月 28 日",
+    "scope": "历史结果，非本周新实验 · DICHASUS · N = 20,997",
+    "summary": "共同支持评分选边后，平均误差从 0.318748 m 降至 0.318021 m，但 P95 从 0.634640 m 升至 0.636267 m；20 次距离分层随机选边的平均误差中位数为 0.317755 m。本次定向规则未显示优于随机对照的收益。",
+    "internal_terms": [
+      "SC²",
+      "SC2",
+      "D_geo",
+      "seed"
+    ]
+  },
+  "repository": {
+    "remote": "origin",
+    "url": "https://gitee.com/cactus-jacque/diffusion-charting",
+    "branch": "codex/sc2-stage2-edge-consensus",
+    "commit": "f927cd53669f1eca1230e982233d1c04bb4b3f24",
+    "published": [
+      {
+        "label": "技术报告",
+        "path": "results/sc2_stage2_edge_consensus/REPORT.md"
+      },
+      {
+        "label": "主结果",
+        "path": "results/sc2_stage2_edge_consensus/result.json"
+      },
+      {
+        "label": "20 次随机指标",
+        "path": "results/sc2_stage2_edge_consensus/complete_metrics_followup.json"
+      },
+      {
+        "label": "选边诊断数据",
+        "path": "results/sc2_stage2_edge_consensus/posthoc_edge_and_sample_audit.json"
+      },
+      {
+        "label": "逐点误差数据",
+        "path": "results/sc2_stage2_edge_consensus/posthoc_sample_errors.npz"
+      }
+    ],
+    "pending": []
+  },
+  "pages": [
+    {
+      "heading": "问题与做法",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "原有精修图中的部分连接可能不可靠。本次根据连接两端是否得到共同邻居支持，选择部分连接将权重减半；随机对照在相同距离层选择相同数量的连接。初始图谱和其余精修条件保持不变。"
+        },
+        {
+          "type": "figure",
+          "path": "reporting/examples/style_test_v2/sc2/figures/selected_fraction_zh.png",
+          "width_cm": 16.8,
+          "caption": "图 1  真实位置仅用于事后诊断。在每个测地距离层，把候选连接中物理跨度最高的 10% 标为“偏大”；图示两种选边集合落入该类的比例。",
+          "source": {
+            "kind": "derived",
+            "input": "results/sc2_stage2_edge_consensus/posthoc_edge_and_sample_audit.json"
+          }
+        },
+        {
+          "type": "paragraph",
+          "lead": "观察",
+          "text": "定向选边中 28.1% 属于跨度偏大连接，随机对照为 10.1%。这说明评分挑出的连接不同，不能单凭此图推断精修效果。"
+        }
+      ]
+    },
+    {
+      "heading": "结果与边界",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "定向选边降低了平均误差，却使 P95 变差；其平均误差也未低于距离分层随机对照。随机结果是 20 个选边掩码对同一张图谱的逐指标中位数，不是 20 份独立数据。"
+        },
+        {
+          "type": "figure",
+          "path": "reporting/examples/style_test_v2/sc2/figures/repair_harm_zh.png",
+          "width_cm": 16.8,
+          "caption": "图 2  相对原图的逐点误差变化；蓝色为改善，红色为恶化。右侧随机图仅是一次选边示例，不能代表 20 次的中位数图谱。",
+          "source": {
+            "kind": "derived",
+            "input": "results/sc2_stage2_edge_consensus/posthoc_sample_errors.npz"
+          }
+        },
+        {
+          "type": "paragraph",
+          "lead": "结论边界",
+          "text": "共同支持评分确实偏向物理跨度较大的连接，但这次固定规则没有证明定向减弱这些连接能带来更好的整体图谱。真实位置只用于选边后评价和离线诊断，不参与评分或权重调整。"
+        }
+      ]
+    }
+  ]
+}

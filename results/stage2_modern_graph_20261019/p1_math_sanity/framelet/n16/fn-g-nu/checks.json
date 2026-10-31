@@ -1,0 +1,23 @@
+{
+  "active_bands": [
+    "low2",
+    "high1",
+    "high2"
+  ],
+  "converged": true,
+  "delta": 0.053675733067370175,
+  "dual_residual": 1.756139768607987e-07,
+  "initial_objective": 0.009807437760431916,
+  "iterations": 32,
+  "lowpass_constraint_max_abs": 0.0,
+  "lowpass_shrinkage_weight": 0.0,
+  "nu": 0.1,
+  "objective": 0.00820379796519577,
+  "pcg_max_relative_residual": 9.451721863526714e-12,
+  "primal_residual": 8.439377034122686e-08,
+  "reference_objective": 0.00820379797189505,
+  "relative_objective_gap": 8.166071425171862e-10,
+  "selected_n": 3,
+  "stationarity": 1.7561397995399857e-07,
+  "u_step_dense_relative_error": 7.122469929229055e-12
+}

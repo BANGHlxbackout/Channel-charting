@@ -1,0 +1,52 @@
+{
+  "N": 256,
+  "Sblock_relative_gap": 0.00015380950173455766,
+  "Ublock_relative_gap": 6.963916416356488e-05,
+  "converged": false,
+  "diagonal_max": 0.0,
+  "equality_residual": 0.0003773182286335654,
+  "feasible_initial_objective": 349.1135785061217,
+  "feasible_objective": 256.40852531985246,
+  "finite_objective_decrease": 92.70505318626925,
+  "fixed_S_Ublock_reference_objective": 256.39067048786035,
+  "fixed_U_Sblock_reference_objective": 256.0008208333814,
+  "global_joint_reference": "N/A: joint Eq17/Eq6 is nonconvex; convex block references only",
+  "initialization": "prior",
+  "iterations": 15000,
+  "learned_nonzero_fraction": 0.588134765625,
+  "learned_support_overlap": 0.021974885844748857,
+  "localization_errors_after_affine": {
+    "max_m": 0.36558513902083095,
+    "mean_m": 0.11900307218844705,
+    "median_m": 0.10853679987040854,
+    "p90_m": 0.21918197065641465,
+    "p95_m": 0.24096826550215633
+  },
+  "method": "FE-P-small-prior",
+  "metrics": {
+    "ct": 0.9762641898864809,
+    "ks": 0.09516347912088766,
+    "tw": 0.9735810113519092
+  },
+  "num_samples": 256,
+  "objective": 256.36999837708595,
+  "pcg_max_relative_residual": 9.999776456249072e-11,
+  "penalties": {
+    "mu1": 10.0,
+    "mu2": 2.5403645518979925,
+    "mu3": 10.0,
+    "mu4": 10.0,
+    "rho": 1.0
+  },
+  "phase": "P1_synthetic_math",
+  "produces_denoised_chart": true,
+  "row_sum_max": 1.003098535968883,
+  "row_sum_min": 0.9986548710925317,
+  "row_sum_residual": 0.0030985359688830982,
+  "scope": "synthetic coordinates only; not DICHASUS performance",
+  "signed_coefficient_min": 0.0,
+  "source_support_delta": 11.502251226354577,
+  "stationarity": 0.00034597836960607647,
+  "status": "NONCONVERGED",
+  "time_s": 69.09271739999531
+}

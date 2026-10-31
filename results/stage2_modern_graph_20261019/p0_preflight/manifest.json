@@ -1,0 +1,288 @@
+{
+  "cg_config": {
+    "atol": 0.0,
+    "maxiter": 5000,
+    "preconditioner": "inverse diagonal of I+lambda L",
+    "rtol": 1e-10
+  },
+  "code": [
+    {
+      "bytes": 23825,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p0\\preflight.py",
+      "sha256": "18d991b81fdb56dd6145283a3491f52daeafad297446f74f3852638c5c150523"
+    },
+    {
+      "bytes": 2176,
+      "path": "D:\\diffusion_refined_charting\\tests\\test_stage2_p0.py",
+      "sha256": "16e7e57c67d3406e5e071c4cc19296598a563b02b3003647727b9d23bebdca1d"
+    }
+  ],
+  "command": [
+    "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+    "-m",
+    "diagnostics.stage2_p0.preflight",
+    "--out-dir",
+    "results\\stage2_modern_graph_20261019\\p0_preflight",
+    "--device",
+    "cuda:0"
+  ],
+  "delta0": 0.09517167367990964,
+  "distance_directory_listing": [
+    "adp.npy",
+    "chart.png",
+    "distance_data.npz",
+    "embedding.npz",
+    "fused.npy",
+    "geodesic.npy",
+    "geodesic_top512.npy",
+    "result.json"
+  ],
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+    "scipy": "1.17.1",
+    "torch": "2.11.0+cu128"
+  },
+  "gate": "G0 PASS; STOP before P1",
+  "git_branch": "codex/new-stage1",
+  "git_head": "f63652fc3bec725f4fddd1105d13e288cbf233dc",
+  "initial_git_status": " D CF_HRD/README.md\n D CF_HRD/__init__.py\n D CF_HRD/closed_loop_validation.md\n D CF_HRD/plot_residual_student_charts.py\n D CF_HRD/run_cross_fitted_teacher.py\n D CF_HRD/run_landmark_context.py\n D CF_HRD/run_residual_student.py\n D CF_HRD/run_stage5_evaluation.py\n D codex_idea/cross_fitted_harmonic_residual_distillation.md\n M common_metrics.py\n D docs/tasks/sc2_stage2_edge_consensus.md\n D preprocess_adp_old_shard.py\n M run_adp_siamese.py\n?? .codex/\n?? AGENTS.md\n?? archive/\n?? codex_idea/archive/\n?? diagnostics/stage2_p0/\n?? docs/PROJECT_GUIDE.md\n?? docs/research/\n?? docs/superpowers/plans/2026-07-09-smoothness-audited-adaptive-diffusion.md\n?? docs/tasks/D1_A_B_C_v2_2026-10-17.md\n?? docs/tasks/G1_ACF_2026-10-17.md\n?? docs/tasks/G1_GraphFCF.md\n?? docs/tasks/G1_S2_2026-10-17.md\n?? docs/tasks/Stage2_2026-10-19.md\n?? docs/tasks/archive/\n?? docs/tasks/baseline_optimization_next_cycle.md\n?? docs/tasks/geodesic_stage1_loss.md\n?? docs/tasks/phase2c_empirical_diagnosis.md\n?? methods/multiview_edge_uncertainty/\n?? methods/sc2_stage2_adaptive_fidelity/\n?? run_smoothness_audited_refined_charting.py\n?? tests/test_g1_graph_propagation_diagnostic.py\n?? tests/test_g1_stage2_comparison.py\n?? tests/test_multiview_adp_gate0.py\n?? tests/test_sc2_stage2_adaptive_fidelity.py\n?? tests/test_stage2_p0.py\n?? tmp/\n",
+  "output_hashes": [
+    {
+      "bytes": 11572308,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\G128.npz",
+      "sha256": "7bc0a6ba32199ce248bea5cba886b26953a34b5bb27e08c7b9b60656883231ee"
+    },
+    {
+      "bytes": 4854775,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\incidence_D.npz",
+      "sha256": "e719adc3f518d6432733b62945c7d21d7dfa30a0ba52579fc1196bf33b00e257"
+    },
+    {
+      "bytes": 13000615,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\L_csr_float64.npz",
+      "sha256": "a8d68901eb86cd58cfbd560c52de44e5a17b4e24d33da2c2827608ff88c69fad"
+    },
+    {
+      "bytes": 24959930,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\edges_and_degrees.npz",
+      "sha256": "4279c0c0ab552ea94633bf22248b8e5b2ef3d26c9a5b84c7e9bc013aa5b7ccfd"
+    },
+    {
+      "bytes": 986,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\delta0.json",
+      "sha256": "1e60c0f5d844595395ba457e07b6f2a725078020aa9b01fd7cced576c7ccc8fe"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\embedding.npz",
+      "sha256": "4f0de40087b91b011261f8e9e8cdeca43972ccdaff7f4c39ef3649a34e5de4ac"
+    },
+    {
+      "bytes": 672672,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_cg\\embedding.npz",
+      "sha256": "fb3c84dfef7bcc2f2eb08307d93f5e4f22ee7361feab8b242beecd52314a1c93"
+    }
+  ],
+  "parameters": {
+    "graph_k": 128,
+    "iterations": 200,
+    "lambda_smooth": 0.15,
+    "top_k": 512
+  },
+  "phase": "P0",
+  "protected_inputs": [
+    {
+      "bytes": 11548,
+      "path": "D:\\diffusion_refined_charting\\AGENTS.md",
+      "sha256": "536b80bba241cd559d3fd4a6ef44344dc5441dfc8b7f824db68af77cee114655"
+    },
+    {
+      "bytes": 1763496164,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic.npy",
+      "sha256": "de464ef9598757a9893e78a4a5335ac9ebbd363be14863e316e816005e73439d"
+    },
+    {
+      "bytes": 336470,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\distance_data.npz",
+      "sha256": "3680b93db493598e544fb5017c8afe5ac5942843602c96fe510290480272806e"
+    },
+    {
+      "bytes": 877,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\result.json",
+      "sha256": "9860d2282654da127007a7e024dd6f536a86e9820d6b7273f76cadc251836021"
+    },
+    {
+      "bytes": 33720,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\metric_subset_seed10.npy",
+      "sha256": "a99deb7a912ecd199c7f4b834cf941d53dd5bdccaeab7a0461e88459c5bcdf09"
+    },
+    {
+      "bytes": 1617,
+      "path": "D:\\diffusion_refined_charting\\results\\diffusion_refined_charting\\stride1_n20997_k128_lambda0.15_seed10\\result.json",
+      "sha256": "c1f4eb4f401fc4a9c41b91a9ff9c10eaef6f58a5545fd31bf2fb6563e03afb02"
+    },
+    {
+      "bytes": 7958,
+      "path": "D:\\diffusion_refined_charting\\run_diffusion_refined_charting.py",
+      "sha256": "f255b92cadf4da770ea3986d1589bfc54c4c24f9fb82f7019a3c07b3987aab0f"
+    },
+    {
+      "bytes": 2180,
+      "path": "D:\\diffusion_refined_charting\\common_metrics.py",
+      "sha256": "e26561d78735f5e5b939d3934f123a784e2a4d5b510aa8264b3732a206479a44"
+    },
+    {
+      "bytes": 10149,
+      "path": "D:\\diffusion_refined_charting\\run_adp_siamese.py",
+      "sha256": "c53f4ecd42b42b03e4fd697243395183a7efe13c09678d7025486de6b5ee6091"
+    },
+    {
+      "bytes": 6822,
+      "path": "D:\\diffusion_refined_charting\\methods\\g1_acf_graph_fcf\\compare.py",
+      "sha256": "4b3f6defe6449d3e2279f3ec288ce04a42b6ff7fb1a6823937e59e6548d4d1fa"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+      "sha256": "8382214735e441f2b18905c9e6faa490674d7b0837717170ca3489d01d832d8e"
+    },
+    {
+      "bytes": 2224,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+      "sha256": "ca71c242dd526e3d6395e1b5653b069d2e5d9979a5fe199db352efe33a9ff768"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+      "sha256": "b18c41e09a7565a960219eb9725f75dd68813badd2d67f49677aa46b7f9bd2fd"
+    },
+    {
+      "bytes": 1523,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\result.json",
+      "sha256": "aeed670ab487ac9776dfb64f0349f7dac44fc5acd9579e3ac2f9388b21670576"
+    },
+    {
+      "bytes": 1534,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\run_config.json",
+      "sha256": "0e5e42f010ccd8fd233be62d0d50a7949ce5197cba2c5befedf687c18850be3c"
+    },
+    {
+      "bytes": 56660853,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\model_best.pt",
+      "sha256": "d4747d5cbdc81e3d11fc4fc97e7a6c2f8b44bd72fd49464da3384aec2f59c461"
+    },
+    {
+      "bytes": 1933,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\graph_metadata.json",
+      "sha256": "683c33d6a8f05a41678b53c1df5b3f93bbb0f1aed3a4928cb4b013d86eda128f"
+    },
+    {
+      "bytes": 408,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\feature_metadata.json",
+      "sha256": "4f4420b63883922629fbe4e4e5654e029aa079d8eeab4ffb18b67212582150cd"
+    },
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+      "sha256": "b6d33dc77bbeecd308aaa5c0cf5168d75300cca8c71b3a9acd74fb309c778960"
+    },
+    {
+      "bytes": 1523,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\result.json",
+      "sha256": "3dbabf24672d071aff5e98c87889fc1b5d534888ca3c63364d2f02599b64799b"
+    },
+    {
+      "bytes": 1528,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\run_config.json",
+      "sha256": "83783dded22eb7b585e71012a32f0f21d7ebb1297d748396133d0f1a9b03dced"
+    },
+    {
+      "bytes": 56660853,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\model_best.pt",
+      "sha256": "38486e2c773117898610008672617ba159d4c0a3d2aa541757f50b5d961dd714"
+    },
+    {
+      "bytes": 1930,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\graph_metadata.json",
+      "sha256": "9db3c5eaa8e8096d33f9dd02c368f52d61e05b3e99d7dd7ed3dfdc8e771e4b04"
+    },
+    {
+      "bytes": 408,
+      "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\feature_metadata.json",
+      "sha256": "4f4420b63883922629fbe4e4e5654e029aa079d8eeab4ffb18b67212582150cd"
+    },
+    {
+      "bytes": 1763496164,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\adp.npy",
+      "sha256": "823bea633fddeb9e80eb25dc2b578ffca9e28eeda8101b2e5962c5b33a7e37f1"
+    },
+    {
+      "bytes": 449872,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\chart.png",
+      "sha256": "941dd8a470937810c23dcdacd4a3e15fdac8b6ac3d530f221686e46cfcb20e21"
+    },
+    {
+      "bytes": 672672,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\embedding.npz",
+      "sha256": "624dce8e15a6d2c7c40553a331ed4923a58863de7c8e4d4f01f7c98e5ebc41f1"
+    },
+    {
+      "bytes": 1763496164,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\fused.npy",
+      "sha256": "4ec665404fbb2be7508743aa4bbfcb523e45fea33a85cbc2234b6ce6cde6ebd7"
+    },
+    {
+      "bytes": 43001984,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic_top512.npy",
+      "sha256": "7b6708af03913174950cc43d20ebe08674c5460f6351bcce28661dff71477f19"
+    }
+  ],
+  "results": {
+    "B0": {
+      "ct": 0.9957121024091857,
+      "ks": 0.0840268307097306,
+      "max_m": 7.893630027770996,
+      "mean_m": 0.409347265958786,
+      "median_m": 0.37222808599472046,
+      "p90_m": 0.7141520380973816,
+      "p95_m": 0.8557930588722229,
+      "peak_vram_bytes": null,
+      "source_json": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+      "train_time_s": null,
+      "tw": 0.9959871853305127
+    },
+    "B0+S2-CG": {
+      "ct": 0.9982195937874608,
+      "ks": 0.06506456867429661,
+      "max_m": 1.1414315380410822,
+      "mean_m": 0.31874793833859877,
+      "median_m": 0.2929166435001435,
+      "p90_m": 0.5586743200122963,
+      "p95_m": 0.6346392331934765,
+      "peak_vram_bytes": null,
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_cg\\result.json",
+      "train_time_s": null,
+      "tw": 0.998222526526258
+    },
+    "B0+S2-J": {
+      "ct": 0.9982195917343384,
+      "ks": 0.06506457235343836,
+      "max_m": 1.1414313316345215,
+      "mean_m": 0.31874796748161316,
+      "median_m": 0.2929166555404663,
+      "p90_m": 0.5586746335029602,
+      "p95_m": 0.6346399784088135,
+      "peak_vram_bytes": null,
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\result.json",
+      "train_time_s": null,
+      "tw": 0.998222526526258
+    }
+  },
+  "scope": "P0 only; stop for user review; no P1 or new regularizers",
+  "status": "PASS",
+  "task_path": "D:\\diffusion_refined_charting\\docs\\tasks\\Stage2_2026-10-19.md",
+  "total_time_s": 31.302467400033493
+}

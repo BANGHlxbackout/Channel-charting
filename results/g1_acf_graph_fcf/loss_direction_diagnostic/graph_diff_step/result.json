@@ -1,0 +1,87 @@
+{
+  "lambda": 1.0,
+  "localization_errors_after_affine": {
+    "max_m": 1.432677149772644,
+    "mean_m": 0.39871227741241455,
+    "median_m": 0.36361920833587646,
+    "p90_m": 0.7137830257415771,
+    "p95_m": 0.8432045578956604
+  },
+  "loss_after": {
+    "diff": 0.14504448933221162,
+    "geo": 1.9928578956632672,
+    "new": 2.137902384995479
+  },
+  "loss_before": {
+    "diff": 0.19671611793019703,
+    "geo": 1.9952005809356321,
+    "new": 2.191916698865829
+  },
+  "method": "G1-Graph/diff-step",
+  "metrics": {
+    "ct": 0.9969820501676457,
+    "ks": 0.07915889981144135,
+    "tw": 0.9968941826852858
+  },
+  "mode": "graph",
+  "phase": "offline_embedding_gradient_probe",
+  "pointwise": {
+    "aligned_movement_median_m": 0.00811553784426123,
+    "by_initial_error_quintile": [
+      {
+        "count": 4200,
+        "improved_fraction": 0.5126190476190476,
+        "initial_error_m": [
+          0.0017963534272662338,
+          0.20367665432195653
+        ],
+        "mean_change_m": -0.00016507130871009495
+      },
+      {
+        "count": 4199,
+        "improved_fraction": 0.5303643724696356,
+        "initial_error_m": [
+          0.20367665432195653,
+          0.3113940676502803
+        ],
+        "mean_change_m": -0.0005361723320050245
+      },
+      {
+        "count": 4199,
+        "improved_fraction": 0.5470350083353179,
+        "initial_error_m": [
+          0.3113940676502803,
+          0.42017603798419473
+        ],
+        "mean_change_m": -0.0009509478250871056
+      },
+      {
+        "count": 4199,
+        "improved_fraction": 0.5748987854251012,
+        "initial_error_m": [
+          0.42017603798419473,
+          0.5675749218539052
+        ],
+        "mean_change_m": -0.0015244325386061326
+      },
+      {
+        "count": 4200,
+        "improved_fraction": 0.5842857142857143,
+        "initial_error_m": [
+          0.5675749218539052,
+          1.4631779654133883
+        ],
+        "mean_change_m": -0.002115279369294139
+      }
+    ],
+    "change_p95_m": 0.011678049587411662,
+    "first_order_mean_change_m": -0.0011786880045373271,
+    "first_order_toward_GT_fraction": 0.5555555555555556,
+    "improved_fraction": 0.5498404533981045,
+    "mean_change_m": -0.0010583884658215358,
+    "worsened_fraction": 0.4501595466018955
+  },
+  "source_embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+  "status": "diagnostic_only",
+  "step_rms_raw": 0.6542382717132569
+}

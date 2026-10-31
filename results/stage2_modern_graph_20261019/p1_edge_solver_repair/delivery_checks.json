@@ -1,0 +1,9 @@
+{
+  "comparison_json_consistency": true,
+  "legacy_npz_json_export_contract": true,
+  "legacy_replay_max_difference": 0.0,
+  "no_channel_chart_files": true,
+  "protected_hash_count": 434,
+  "protected_hashes_pass": true,
+  "visual_review": "Viewed n256 SEF and FE both initializations; numerical traces only; legends and termination lengths correct"
+}

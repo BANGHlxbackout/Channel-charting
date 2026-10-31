@@ -1,0 +1,34 @@
+{
+  "status": "P2A_COMPLETED",
+  "valid": 27,
+  "G3": {
+    "IC8-P": {
+      "valid": 9,
+      "total": 9,
+      "survivors": 2,
+      "targets": 0,
+      "label": "SURVIVOR"
+    },
+    "IC9-P": {
+      "valid": 9,
+      "total": 9,
+      "survivors": 0,
+      "targets": 0,
+      "label": "NO_GO_EXPLORATORY"
+    },
+    "IC9-G": {
+      "valid": 9,
+      "total": 9,
+      "survivors": 0,
+      "targets": 0,
+      "label": "NO_GO_EXPLORATORY"
+    },
+    "Robust-IC-all": {
+      "valid": 27,
+      "total": 27,
+      "survivors": 2,
+      "targets": 0,
+      "label": "SURVIVOR"
+    }
+  }
+}

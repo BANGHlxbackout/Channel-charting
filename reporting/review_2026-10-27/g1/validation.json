@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checks": {
+    "docx_package": true,
+    "page_geometry_matches_template": true,
+    "font_and_paragraph_styles_match_template": true,
+    "title_and_date": true,
+    "no_template_placeholders": true,
+    "all_result_images_embedded": true,
+    "figures_have_named_sources": true,
+    "editable_table_count": true,
+    "table_values_match_csv_and_json": true,
+    "same_node_indices_and_positions": true,
+    "metric_subset_valid": true,
+    "gitee_links_point_to_verified_commit": true,
+    "pending_files_not_linked_as_published": true,
+    "rendered_page_count": true,
+    "all_page_previews": true
+  },
+  "docx_sha256": "cd5e3fd5bf4dea475cf34147317d0508d8036a65a43b9b113952fd01ef6f7106",
+  "gitee_commit": "3f3ee72f551546ff0657259365b30266502174d9",
+  "published_gitee_paths": [
+    "results/g1_acf_graph_fcf/REPORT.md",
+    "results/g1_acf_graph_fcf/comparison/comparison.csv",
+    "results/g1_acf_graph_fcf/comparison/four_column_raw_channel_chart.png",
+    "results/g1_acf_graph_fcf/comparison/four_column_affine_channel_chart.png",
+    "results/g1_acf_graph_fcf/comparison/aligned_charts.npz",
+    "methods/g1_acf_graph_fcf/run.py",
+    "methods/g1_acf_graph_fcf/compare.py"
+  ],
+  "pending_gitee_paths": [
+    "results/adp_old_siamese/stride1_n20997_seed10/result.json",
+    "results/g1_acf_graph_fcf/stride1_n20997_seed10_identity_full/result.json",
+    "results/g1_acf_graph_fcf/stride1_n20997_seed10_graph_full/result.json"
+  ],
+  "manual_review_required": [
+    "导师可读性、研究结论和图表解释",
+    "目标电脑 Word 的最终字体与分页",
+    "待上传结果 JSON 发布后重新核验 Gitee 链接"
+  ]
+}

@@ -1,0 +1,14 @@
+ CF_HRD/README.md                                   | 440 ---------------
+ CF_HRD/__init__.py                                 |   1 -
+ CF_HRD/closed_loop_validation.md                   | 413 --------------
+ CF_HRD/plot_residual_student_charts.py             | 127 -----
+ CF_HRD/run_cross_fitted_teacher.py                 | 173 ------
+ CF_HRD/run_landmark_context.py                     | 292 ----------
+ CF_HRD/run_residual_student.py                     | 295 ----------
+ CF_HRD/run_stage5_evaluation.py                    | 219 --------
+ .../cross_fitted_harmonic_residual_distillation.md | 621 ---------------------
+ common_metrics.py                                  |   4 +
+ docs/tasks/sc2_stage2_edge_consensus.md            |  59 --
+ preprocess_adp_old_shard.py                        | 121 ----
+ run_adp_siamese.py                                 |  27 +-
+ 13 files changed, 20 insertions(+), 2772 deletions(-)

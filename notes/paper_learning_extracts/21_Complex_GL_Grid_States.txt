@@ -1,0 +1,74 @@
+FILE: 21_Complex_GL_Grid_States.pdf
+PAGES: 11
+TITLE: 
+
+ABSTRACT/FRONT:
+aplacian Regularizer for
+Inferencing Grid States
+Chinthaka Dinesh, Junfei Wang, Gene Cheung, and Pirathayin i Srikantha
+Emails: dineshc@yorku.ca, junfeiw@yorku.ca, genec@york u.ca, and psrikan@yorku.ca
+Department of Electrical Engineering and Computer Science , Y ork University, Toronto, ON, Canada
+Abstract—To maintain stable grid operations, system monitor-
+ing and control processes require the computation of grid st ates
+(e.g., voltage magnitude and angles) at high granularity. I t is
+necessary to infer these grid states from measurements gene rated
+by a limited number of sensors like phasor measurement units
+(PMUs) that can be subjected to delays and losses due to chann el
+artefacts, and/or adversarial attacks (e.g. denial of serv ice,
+jamming, etc.). We propose a novel graph signal processing ( GSP)
+based algorithm to interpolate states of the entire grid fro m
+observations of a small number of grid measurements. It is a
+two-stage process, where ﬁrst an underlying Hermitian grap h
+is learnt empirically from existing grid datasets ofﬂine. T hen,
+the graph is used to interpolate missing grid signal samples
+online in linear time. With our proposal, we can reconstruct
+grid signals with signiﬁcantly smaller number of observati ons
+when compared to traditional approaches (e.g. state estima tion).
+In contrast to existing GSP approaches, we do not require
+knowledge of the underlying grid structure and parameters a nd
+are able to guarantee fast spectral optimization. We demons trate
+the computational efﬁcacy and accuracy of our proposal via
+practical studies conducted on the IEEE 118 bus system.
+I. I NTRODUCTION
+The modern electric grid is composed of intermittent gen-
+eration sources and variable consumer demands that push
+the system to operate close to its limits. Elevated situatio nal
+awareness where operators are able to rapidly infer the stat es
+of every electrical node ( i.e., bus) at highly granular intervals is
+necessary to ensure reliable grid operations. A costly appr oach
+would be to deploy sensors such as phasor measurement
+units on every bus [1]. Instead, using a limited number of
+sensors from which the electrical states of all nodes in the
+grid are inferred is a more efﬁcient solution [2]. Other fact ors
+that can reduce the availability of grid measurements inclu de
+adversarial attacks ( e.g., denial of service) and/or issues in
+the communication layer ( e.g., delays, packet losses). Tra-
+ditional state estimation processes require knowledge of t he
+underlying grid topology and parameters. Also, these must
+be supplied with at least 2N sensor measurements (where
+N is the total number of buses in the grid) that satisfy the
+observability criteria to allow for accurate state estimat ion [3].
+Moreover, due to the non-linearity of the mapping between
+grid measurements and states, linear state estimation ( i.e., DC
+state estimation) is widely utilized to support practical s ystem
+operations. However, as numerous assumptions that include
+voltage magnitude of all buses being 1 p.u. are made which
+are not valid in practice, the estimated states will not accu rately
+reﬂect the actual operation conditions of the grid [4].
+In this paper, we leverage on the historical grid data
+available to infer grid states from a small subset of grid
+measureme
+
+INTRO:
+
+
+CONCLUSION/LAST:
+This figure "Her_graph_v3.png" is available in "png"
+ format from:
+http://arxiv.org/ps/2307.01906v2
+This figure "Her_graph_v4.png" is available in "png"
+ format from:
+http://arxiv.org/ps/2307.01906v2
+This figure "box_plot.png" is available in "png"
+ format from:
+http://arxiv.org/ps/2307.01906v2

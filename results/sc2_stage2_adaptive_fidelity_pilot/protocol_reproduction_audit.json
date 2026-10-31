@@ -1,0 +1,54 @@
+{
+  "adaptive_uniform_vs_current_original_solver": {
+    "max_abs_chart_coordinate": 0.000244140625,
+    "mean_abs_chart_coordinate": 1.98572324734414e-05
+  },
+  "adaptive_uniform_vs_saved": {
+    "localization_error_absolute_differences": {
+      "max_m": 3.5762786865234375e-07,
+      "mean_m": 0.0,
+      "median_m": 4.470348358154297e-07,
+      "p90_m": 5.960464477539063e-08,
+      "p95_m": 6.556510925292969e-07
+    },
+    "max_abs_chart_coordinate": 0.000274658203125,
+    "mean_abs_chart_coordinate": 2.0905992641928606e-05,
+    "metrics_absolute_differences": {
+      "ct": 1.7598192902923415e-09,
+      "ks": 7.930986561932585e-10,
+      "tw": 7.860526030079029e-08
+    }
+  },
+  "amended_gate": {
+    "max_abs_passed": true,
+    "max_abs_tolerance": 0.0005,
+    "mean_abs_passed": true,
+    "mean_abs_tolerance": 5e-05,
+    "metric_agreement_passed": true,
+    "metric_tolerance": 1e-05,
+    "passed": true
+  },
+  "current_original_solver_vs_saved": {
+    "localization_errors_after_affine": {
+      "max_m": 1.1414315700531006,
+      "mean_m": 0.31874796748161316,
+      "median_m": 0.2929162085056305,
+      "p90_m": 0.5586743950843811,
+      "p95_m": 0.6346393823623657
+    },
+    "max_abs_chart_coordinate": 0.000274658203125,
+    "mean_abs_chart_coordinate": 2.151182161469478e-05,
+    "metrics": {
+      "ct": 0.998219592614248,
+      "ks": 0.06506457255817757,
+      "n_neighbors": 209,
+      "tw": 0.998222526526258
+    }
+  },
+  "initial_strict_gate": {
+    "artifact": "protocol_mismatch.json",
+    "observed_uniform_vs_saved_max_abs": 0.000274658203125,
+    "status": "superseded_by_solver_drift_gate",
+    "tolerance_max_abs": 0.0001
+  }
+}

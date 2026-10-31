@@ -1,0 +1,30 @@
+{
+  "commit": "4db39904e4099d82cef686d4732c33150814ece4",
+  "files": [
+    {
+      "file": "utils.py",
+      "url": "https://raw.githubusercontent.com/bzho3923/GNN_DoT/4db39904e4099d82cef686d4732c33150814ece4/utils.py",
+      "sha256": "8720e2ee53384c022d9c17bf1160f48cb5d8746d50a9c89e55e9c7fcb64ecf30"
+    },
+    {
+      "file": "denoising_filters.py",
+      "url": "https://raw.githubusercontent.com/bzho3923/GNN_DoT/4db39904e4099d82cef686d4732c33150814ece4/denoising_filters.py",
+      "sha256": "1bc48598521dce6c3f193f173c437d26f8baa8d3dae553933390dfba3cd4d4f9"
+    },
+    {
+      "file": "main.py",
+      "url": "https://raw.githubusercontent.com/bzho3923/GNN_DoT/4db39904e4099d82cef686d4732c33150814ece4/main.py",
+      "sha256": "91cadb0784e61cd3c4e0c263e5174df3be361944870b8344e134336cde16b83a"
+    },
+    {
+      "file": "config.py",
+      "url": "https://raw.githubusercontent.com/bzho3923/GNN_DoT/4db39904e4099d82cef686d4732c33150814ece4/config.py",
+      "sha256": "5abb848463224ac86395e30f15d6816503d9b1de127807d1a6fcf06e4015a63c"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/bzho3923/GNN_DoT/4db39904e4099d82cef686d4732c33150814ece4/README.md",
+      "sha256": "ff43f421dfca6447924b2f661220cbb839bd4415fa8476a381eb63a153b344b5"
+    }
+  ]
+}

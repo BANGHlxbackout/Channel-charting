@@ -1,0 +1,87 @@
+{
+  "lambda": 1.0,
+  "localization_errors_after_affine": {
+    "max_m": 1.4023852348327637,
+    "mean_m": 0.397239089012146,
+    "median_m": 0.3611241281032562,
+    "p90_m": 0.7124841213226318,
+    "p95_m": 0.8405583500862122
+  },
+  "loss_after": {
+    "diff": 0.15892813310414994,
+    "geo": 1.9849565598474948,
+    "new": 2.143884692951645
+  },
+  "loss_before": {
+    "diff": 0.21432520801117977,
+    "geo": 1.9876772511013316,
+    "new": 2.2020024591125114
+  },
+  "method": "G1-Identity/diff-step",
+  "metrics": {
+    "ct": 0.9970005156578401,
+    "ks": 0.07921095890973748,
+    "tw": 0.9969116641432105
+  },
+  "mode": "identity",
+  "phase": "offline_embedding_gradient_probe",
+  "pointwise": {
+    "aligned_movement_median_m": 0.007978489617252619,
+    "by_initial_error_quintile": [
+      {
+        "count": 4200,
+        "improved_fraction": 0.49238095238095236,
+        "initial_error_m": [
+          0.001997385877795604,
+          0.2025671363739417
+        ],
+        "mean_change_m": -5.134107281992649e-05
+      },
+      {
+        "count": 4199,
+        "improved_fraction": 0.5375089306977852,
+        "initial_error_m": [
+          0.2025671363739417,
+          0.30895651371996363
+        ],
+        "mean_change_m": -0.0006849319499201405
+      },
+      {
+        "count": 4199,
+        "improved_fraction": 0.5465587044534413,
+        "initial_error_m": [
+          0.30895651371996363,
+          0.41895106463924875
+        ],
+        "mean_change_m": -0.0008097638461347514
+      },
+      {
+        "count": 4199,
+        "improved_fraction": 0.5870445344129555,
+        "initial_error_m": [
+          0.41895106463924875,
+          0.566902462370383
+        ],
+        "mean_change_m": -0.0017150526884412963
+      },
+      {
+        "count": 4200,
+        "improved_fraction": 0.5880952380952381,
+        "initial_error_m": [
+          0.566902462370383,
+          1.42926310508319
+        ],
+        "mean_change_m": -0.0022585768372707427
+      }
+    ],
+    "change_p95_m": 0.011327368092524196,
+    "first_order_mean_change_m": -0.0012276823158804794,
+    "first_order_toward_GT_fraction": 0.555269800447683,
+    "improved_fraction": 0.5503167119112254,
+    "mean_change_m": -0.0011039381391999001,
+    "worsened_fraction": 0.4496832880887746
+  },
+  "source_embedding": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+  "status": "diagnostic_only",
+  "step_rms_raw": 0.6542382717132569
+}

@@ -1,0 +1,34 @@
+{
+  "affected_configs": [
+    "ic8_q95_eta050",
+    "ic8_q99_eta050",
+    "ic8_q995_eta050"
+  ],
+  "authorization": "User: steps may be adjusted; inspect convergence and plan rationale",
+  "first_max_iter": 60000,
+  "initial_orchestration_code": {
+    "bytes": 15867,
+    "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\archive\\p2ar_initial_budget\\ic8_scale_experiment.py",
+    "sha256": "5ce7402438cb9d10b5578f27a0c29554bb34eadc2555fd23d969d745ced514b8"
+  },
+  "interrupted_partial": {
+    "config": "ic8_q95_eta050",
+    "last_iteration": 15550,
+    "logged_solver_time_s": 304.71934599999804,
+    "observed_peak_vram_bytes": 468262400,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\interrupted_runs\\ic8_q95_eta050_before_budget_update"
+  },
+  "max_attempts": 1,
+  "no_GT_metrics_computed": true,
+  "prior_process_wall_time_s": 4375.2075193,
+  "unchanged": [
+    "objective",
+    "alpha",
+    "eta",
+    "D",
+    "W",
+    "tau/sigma rule",
+    "prox tolerance",
+    "feasibility tolerance"
+  ]
+}

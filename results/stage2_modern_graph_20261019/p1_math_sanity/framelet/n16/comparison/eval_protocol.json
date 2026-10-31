@@ -1,0 +1,23 @@
+{
+  "aligned_keys": {
+    "FN-G-delta": "fn_g_delta",
+    "FN-G-nu": "fn_g_nu",
+    "FN-P": "fn_p",
+    "Observation": "observation"
+  },
+  "alignment": "separate affine fit and evaluation on all identical N nodes",
+  "chart_quality": "same-node transductive; no held-out claim",
+  "colors": "same GT x/y mapping in all four panels",
+  "embeddings": {
+    "FN-G-delta": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-delta\\embedding.npz",
+    "FN-G-nu": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-g-nu\\embedding.npz",
+    "FN-P": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\fn-p\\embedding.npz",
+    "Observation": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\observation\\embedding.npz"
+  },
+  "metric_subset_path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\comparison\\metric_subset_seed10.npy",
+  "metric_subset_size": 3,
+  "metric_subset_source": "seeded random sample",
+  "num_samples": 16,
+  "plot_function": "run_adp_siamese.plot_chart (external axes; align=False for raw)",
+  "seed": 10
+}

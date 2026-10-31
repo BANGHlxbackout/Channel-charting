@@ -1,0 +1,53 @@
+{
+  "chart": "results\\heldout\\seed10\\diffusion_oos\\chart.png",
+  "chart_alignment": "train_fitted_affine_applied_to_test",
+  "dataset": "datasets\\adp_old_shard4",
+  "diffusion_oos_test_localization_errors": {
+    "max_m": 2.074054002761841,
+    "mean_m": 0.42500483989715576,
+    "median_m": 0.3811413645744324,
+    "p90_m": 0.7274144887924194,
+    "p95_m": 0.8577808141708374
+  },
+  "diffusion_oos_test_metrics": {
+    "ct": 0.9960829473620739,
+    "ks": 0.08142617389539779,
+    "n_neighbors": 209,
+    "tw": 0.9934435839275337
+  },
+  "distance_run": "results\\heldout\\seed10\\adp_fused_train",
+  "elapsed_s": 13.287748575210571,
+  "entry_m": 32,
+  "fcf_test": "results\\heldout\\seed10\\adp_siamese\\embedding_test.npz",
+  "fcf_test_localization_errors": {
+    "max_m": 7.52541446685791,
+    "mean_m": 0.5766052007675171,
+    "median_m": 0.5007317066192627,
+    "p90_m": 1.0126441717147827,
+    "p95_m": 1.2026140689849854
+  },
+  "fcf_test_metrics": {
+    "ct": 0.9911282190571745,
+    "ks": 0.1083250756004707,
+    "n_neighbors": 209,
+    "tw": 0.9883927439736467
+  },
+  "fcf_train": "results\\heldout\\seed10\\adp_siamese\\embedding_train.npz",
+  "full_distance_run": "results\\adp_old_fused\\stride1_n20997_seed10",
+  "gamma_train": 13.316666603088379,
+  "graph_k": 128,
+  "k": 128,
+  "lambda_oos": 0.15,
+  "num_test": 4199,
+  "num_train": 16798,
+  "oos_distance": "min-plus extension from direct test-to-train fused distance into train geodesic graph",
+  "output_npz": "results\\heldout\\seed10\\diffusion_oos\\embedding_test.npz",
+  "protocol": "diffusion_refined_oos_heldout",
+  "seed": 10,
+  "top_k": 512,
+  "train_refinement": "results\\heldout\\seed10\\diffusion_train\\embedding_train.npz",
+  "uses_test_positions_for_evaluation_only": true,
+  "uses_test_positions_for_extension": false,
+  "uses_test_test_graph": false,
+  "weight_formula": "exp(-(d_oos_geo^2)/(sigma_test*sigma_train))"
+}

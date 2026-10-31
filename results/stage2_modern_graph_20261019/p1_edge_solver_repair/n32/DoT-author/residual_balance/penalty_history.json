@@ -1,0 +1,353 @@
+[
+  {
+    "dual": 0.021120032572855853,
+    "iteration": 100,
+    "new_mu": 5.0,
+    "old_mu": 10.0,
+    "penalty": "mu1",
+    "primal": 0.00031752036157502785,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.0004941184714988853,
+    "iteration": 100,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 0.00023540471647855008,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.004738055562455177,
+    "iteration": 100,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu4",
+    "primal": 0.0028231253999999044,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.00547019567175885,
+    "iteration": 150,
+    "new_mu": 2.5,
+    "old_mu": 5.0,
+    "penalty": "mu1",
+    "primal": 0.00047977514043328376,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 6.550917375956771e-05,
+    "iteration": 150,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 0.0001722437711630125,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.0051543541073513265,
+    "iteration": 150,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu4",
+    "primal": 0.0020462716245579302,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.0018884387911309918,
+    "iteration": 200,
+    "new_mu": 2.5,
+    "old_mu": 2.5,
+    "penalty": "mu1",
+    "primal": 0.0005982613744948417,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.00016020745292972004,
+    "iteration": 200,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 9.193001656093834e-05,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.003389411326543749,
+    "iteration": 200,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu4",
+    "primal": 0.001106511811423,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.003095568710442769,
+    "iteration": 250,
+    "new_mu": 2.5,
+    "old_mu": 2.5,
+    "penalty": "mu1",
+    "primal": 0.00044621547465657465,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 9.433465422547361e-05,
+    "iteration": 250,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 8.442155002409929e-05,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.003656902946579384,
+    "iteration": 250,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu4",
+    "primal": 0.0009017538105135809,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.0008198222673446335,
+    "iteration": 300,
+    "new_mu": 2.5,
+    "old_mu": 2.5,
+    "penalty": "mu1",
+    "primal": 0.00015912321223900494,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 9.441168470496948e-05,
+    "iteration": 300,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 3.154877604100634e-05,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.0004890940662370787,
+    "iteration": 300,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu4",
+    "primal": 0.0003293726856465406,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 0.00023125420195476313,
+    "iteration": 350,
+    "new_mu": 2.5,
+    "old_mu": 2.5,
+    "penalty": "mu1",
+    "primal": 4.686041401018388e-05,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 1.0582077322890227e-05,
+    "iteration": 350,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 7.807338178886968e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 8.38390063646609e-05,
+    "iteration": 350,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu4",
+    "primal": 8.650481914122921e-05,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 4.5861681463423147e-05,
+    "iteration": 400,
+    "new_mu": 1.25,
+    "old_mu": 2.5,
+    "penalty": "mu1",
+    "primal": 4.285074521997219e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 3.7492650345415076e-06,
+    "iteration": 400,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 5.317434371452182e-07,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 5.578812749195675e-05,
+    "iteration": 400,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu4",
+    "primal": 6.26095663477817e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 7.029547164234637e-06,
+    "iteration": 450,
+    "new_mu": 1.25,
+    "old_mu": 1.25,
+    "penalty": "mu1",
+    "primal": 2.7673473748785594e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 7.514383255786048e-07,
+    "iteration": 450,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 2.993261334678916e-07,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 5.801750969708535e-05,
+    "iteration": 450,
+    "new_mu": 5.0,
+    "old_mu": 10.0,
+    "penalty": "mu4",
+    "primal": 3.0782855224146366e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 7.750019514756119e-06,
+    "iteration": 500,
+    "new_mu": 1.25,
+    "old_mu": 1.25,
+    "penalty": "mu1",
+    "primal": 7.894732459361205e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 1.3535490954487125e-06,
+    "iteration": 500,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 4.5836925058722637e-07,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 6.114700056564474e-06,
+    "iteration": 500,
+    "new_mu": 5.0,
+    "old_mu": 5.0,
+    "penalty": "mu4",
+    "primal": 1.1597987429685885e-05,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 7.860601377887948e-07,
+    "iteration": 550,
+    "new_mu": 1.25,
+    "old_mu": 1.25,
+    "penalty": "mu1",
+    "primal": 2.0212130020580685e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 1.1314193797588633e-07,
+    "iteration": 550,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 2.561770376426422e-07,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 3.432736915789029e-06,
+    "iteration": 550,
+    "new_mu": 5.0,
+    "old_mu": 5.0,
+    "penalty": "mu4",
+    "primal": 5.09077763487154e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 5.035116960060511e-07,
+    "iteration": 600,
+    "new_mu": 1.25,
+    "old_mu": 1.25,
+    "penalty": "mu1",
+    "primal": 1.3611579417082858e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 2.0144633934685374e-08,
+    "iteration": 600,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 1.6866171285423894e-07,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 2.2644849041832322e-06,
+    "iteration": 600,
+    "new_mu": 5.0,
+    "old_mu": 5.0,
+    "penalty": "mu4",
+    "primal": 3.379929073703711e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 3.351404902921215e-07,
+    "iteration": 650,
+    "new_mu": 1.25,
+    "old_mu": 1.25,
+    "penalty": "mu1",
+    "primal": 9.246079244992618e-07,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 2.5454458279322374e-08,
+    "iteration": 650,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 1.1314550982499632e-07,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 1.5595376806567198e-06,
+    "iteration": 650,
+    "new_mu": 5.0,
+    "old_mu": 5.0,
+    "penalty": "mu4",
+    "primal": 2.2778304485720347e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 2.1084983338396672e-07,
+    "iteration": 700,
+    "new_mu": 1.25,
+    "old_mu": 1.25,
+    "penalty": "mu1",
+    "primal": 6.643231331735802e-07,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 8.568410751354497e-09,
+    "iteration": 700,
+    "new_mu": 10.0,
+    "old_mu": 10.0,
+    "penalty": "mu3",
+    "primal": 7.870305205599324e-08,
+    "unscaled_multiplier_relative_error": 0.0
+  },
+  {
+    "dual": 1.1220162539459486e-06,
+    "iteration": 700,
+    "new_mu": 5.0,
+    "old_mu": 5.0,
+    "penalty": "mu4",
+    "primal": 1.6006050679085733e-06,
+    "unscaled_multiplier_relative_error": 0.0
+  }
+]

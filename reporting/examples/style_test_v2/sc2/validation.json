@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checks": {
+    "docx_package": true,
+    "page_geometry_matches_template": true,
+    "font_and_paragraph_styles_match_template": true,
+    "template_styles_match_reference": true,
+    "paragraph_roles_from_reference": true,
+    "title_and_date": true,
+    "no_template_placeholders": true,
+    "all_result_images_embedded": true,
+    "figures_fit_page_width": true,
+    "embedded_figures_at_least_180_dpi": true,
+    "each_figure_has_centered_caption": true,
+    "figures_have_named_sources": true,
+    "editable_table_count": true,
+    "table_color_and_font_match_reference": true,
+    "gitee_links_point_to_verified_commit": true,
+    "pending_files_not_linked_as_published": true,
+    "internal_ids_absent_from_reader_text": true,
+    "execution_log_phrases_absent": true,
+    "rendered_page_count": true,
+    "rendered_pages_are_a4": true,
+    "all_page_previews": true
+  },
+  "docx_sha256": "46d4a227e5bbb53ad9a71d209ce071b8edd9d2a2ea8516e5fce9460b3793a477",
+  "gitee_commit": "f927cd53669f1eca1230e982233d1c04bb4b3f24",
+  "published_gitee_paths": [
+    "results/sc2_stage2_edge_consensus/REPORT.md",
+    "results/sc2_stage2_edge_consensus/result.json",
+    "results/sc2_stage2_edge_consensus/complete_metrics_followup.json",
+    "results/sc2_stage2_edge_consensus/posthoc_edge_and_sample_audit.json",
+    "results/sc2_stage2_edge_consensus/posthoc_sample_errors.npz"
+  ],
+  "pending_gitee_paths": [],
+  "manual_review_required": [
+    "逐页检查图内文字、图例、裁切、留白和分页",
+    "检查导师能否不读技术日志就理解正文表达",
+    "在目标电脑的 Word 中确认字体替换和分页"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "cg_config": {
+    "atol": 0.0,
+    "maxiter": 5000,
+    "preconditioner": "inverse diagonal of I+lambda L",
+    "rtol": 1e-10
+  },
+  "command": [
+    "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+    "-m",
+    "diagnostics.stage2_p0.preflight",
+    "--out-dir",
+    "results\\stage2_modern_graph_20261019\\p0_preflight",
+    "--device",
+    "cuda:0"
+  ],
+  "device": "cuda:0",
+  "graph_k": 128,
+  "iterations": [
+    42,
+    42
+  ],
+  "lambda_smooth": 0.15,
+  "phase": "P0",
+  "solver_kind": "CG",
+  "top_k": 512
+}

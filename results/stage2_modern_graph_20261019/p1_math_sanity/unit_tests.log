@@ -1,0 +1,10 @@
+test_framelet_exact_u_step_and_reference (tests.test_stage2_p1_math.P1MathTests.test_framelet_exact_u_step_and_reference) ... ok
+test_framelet_zero_mode_and_adjoint (tests.test_stage2_p1_math.P1MathTests.test_framelet_zero_mode_and_adjoint) ... ok
+test_ic8_huber (tests.test_stage2_p1_math.P1MathTests.test_ic8_huber) ... ok
+test_ic_convex_references_and_eta_zero (tests.test_stage2_p1_math.P1MathTests.test_ic_convex_references_and_eta_zero) ... ok
+test_sef_convex_reference (tests.test_stage2_p1_math.P1MathTests.test_sef_convex_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.573s
+
+OK

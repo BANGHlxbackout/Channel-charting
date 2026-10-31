@@ -1,0 +1,35 @@
+{
+  "g1": {
+    "original_copy_sha256_equal": true,
+    "files_sha256": {
+      "docx": "cd5e3fd5bf4dea475cf34147317d0508d8036a65a43b9b113952fd01ef6f7106",
+      "pdf": "7d1a5c86779fe281eec537b98bb829a2910b5ae9c5a633d2634c05648e7c3822",
+      "spec": "099c02c02a17431d59a7b82a82fe3a02701ba3600bf6876dd59d86554af665f1",
+      "validation": "1fc48ca37d434c38a7e9eabe2ed2ff42290600b610222ebdbb7582b81ed6f6c2",
+      "page_1": "eb32a29ff672219e21db3831e0d1dc372e7c096cce0965099d68856832887812",
+      "page_2": "2f5ddbd427f40d37ed0f8ed6093b56edf0704c9b9b32ef69fadf189cea6facd4",
+      "page_3": "c0123336f33155a206fae986d51fc5f09c28b1c33bed49a1f4e98512b5e7a3f1"
+    },
+    "pages": 3,
+    "editable_tables": 1,
+    "embedded_images": 5,
+    "automated_checks": "15/15",
+    "gitee_commit": "3f3ee72f551546ff0657259365b30266502174d9"
+  },
+  "sc2": {
+    "original_copy_sha256_equal": true,
+    "files_sha256": {
+      "docx": "a1d79bf7939f66f1fed1f72520b497e6c7257789e5336c34c9e28a572cd36402",
+      "pdf": "db33161568a49bd7319669438cefeef99fd74feda565deccb5dbbdca2933a7a9",
+      "spec": "4170195f06bedfa5a7467f3654ffe0a982e9bbc26120302ceb12794f23397eb6",
+      "validation": "eb64b3cc117771f14a035c6d21c467c19a931055e9d540df76bc48c7c20e25aa",
+      "page_1": "a3b9993580b2a370a7ba7c2530e0efc6436b88d58561f5a089f4fce074662806",
+      "page_2": "1fb2d189a61111e45c7db41253b1c02f75fb901f84edc8c8d1032792aecfa600"
+    },
+    "pages": 2,
+    "editable_tables": 0,
+    "embedded_images": 2,
+    "automated_checks": "12/12",
+    "gitee_commit": "f927cd53669f1eca1230e982233d1c04bb4b3f24"
+  }
+}

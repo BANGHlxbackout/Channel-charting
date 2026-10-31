@@ -1,0 +1,373 @@
+{
+  "N": 20997,
+  "command": "D:\\anaconda3\\envs\\diffusion_charting\\python.exe methods/sc2_stage2_adaptive_fidelity/run_pilot.py",
+  "date": "2026-09-25",
+  "environment": {
+    "cuda_device_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "device": "cuda:0",
+    "executable": "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+    "scipy": "1.17.1",
+    "torch": "2.11.0+cu128",
+    "torch_cuda_available": true
+  },
+  "epsilon": 1e-08,
+  "experiment_id": "EXP-SC2-STAGE2-ADAPTIVE-FIDELITY-001",
+  "graph_k": 128,
+  "ground_truth_usage": "positions are used only for diagnostics and evaluation after reliability and solves",
+  "input_audit": {
+    "N": 20997,
+    "baseline_json": {
+      "device_recorded": null,
+      "graph_k": 128,
+      "iterations": 200,
+      "lambda_smooth": 0.15
+    },
+    "cache_distance_sorted": true,
+    "cache_dtype": "int32",
+    "cache_shape": [
+      20997,
+      512
+    ],
+    "cache_unique_nonself": true,
+    "distance_dtype": "float32",
+    "distance_shape": [
+      20997,
+      20997
+    ],
+    "indices_match": true,
+    "sampled_boundary_records": [
+      {
+        "boundary_distance": 83.83585357666016,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 83.83585357666016,
+        "excluded_min_distance": 83.89759063720703,
+        "row": 14455,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 55.8973503112793,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 55.8973503112793,
+        "excluded_min_distance": 55.973976135253906,
+        "row": 2851,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 77.05794525146484,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 77.05794525146484,
+        "excluded_min_distance": 77.12987518310547,
+        "row": 16280,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 72.55170440673828,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 72.55170440673828,
+        "excluded_min_distance": 72.5789566040039,
+        "row": 8468,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 75.62290954589844,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 75.62290954589844,
+        "excluded_min_distance": 75.66755676269531,
+        "row": 19195,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 70.42803955078125,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 70.42803955078125,
+        "excluded_min_distance": 70.44918823242188,
+        "row": 20081,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 67.93427276611328,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 67.93427276611328,
+        "excluded_min_distance": 68.06049346923828,
+        "row": 4938,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 71.84356689453125,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 71.84356689453125,
+        "excluded_min_distance": 71.9305419921875,
+        "row": 20044,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 69.72644805908203,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 69.72644805908203,
+        "excluded_min_distance": 69.76454162597656,
+        "row": 7098,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 92.66014862060547,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 92.66014862060547,
+        "excluded_min_distance": 92.68976593017578,
+        "row": 19599,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 70.88162994384766,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 70.88162994384766,
+        "excluded_min_distance": 70.89032745361328,
+        "row": 17660,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 63.992225646972656,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 63.992225646972656,
+        "excluded_min_distance": 64.0850830078125,
+        "row": 10794,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 90.46550750732422,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 90.46550750732422,
+        "excluded_min_distance": 90.47288513183594,
+        "row": 20995,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 65.19600677490234,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 65.19600677490234,
+        "excluded_min_distance": 65.2211685180664,
+        "row": 10756,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 68.22909545898438,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 68.22909545898438,
+        "excluded_min_distance": 68.24446105957031,
+        "row": 3130,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 73.3111801147461,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 73.3111801147461,
+        "excluded_min_distance": 73.37570190429688,
+        "row": 19705,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 65.75434875488281,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 65.75434875488281,
+        "excluded_min_distance": 65.77571105957031,
+        "row": 170,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 82.5298843383789,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 82.5298843383789,
+        "excluded_min_distance": 82.54219818115234,
+        "row": 5535,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 73.4485855102539,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 73.4485855102539,
+        "excluded_min_distance": 73.45059204101562,
+        "row": 15715,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 86.2369384765625,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 86.2369384765625,
+        "excluded_min_distance": 86.24646759033203,
+        "row": 8620,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 91.56720733642578,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 91.56720733642578,
+        "excluded_min_distance": 91.5728759765625,
+        "row": 8928,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 70.28129577636719,
+        "boundary_tie_count": 2,
+        "cached_max_distance": 70.28129577636719,
+        "excluded_min_distance": 70.28129577636719,
+        "row": 12085,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 96.26837921142578,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 96.26837921142578,
+        "excluded_min_distance": 96.27118682861328,
+        "row": 17373,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 72.81063842773438,
+        "boundary_tie_count": 2,
+        "cached_max_distance": 72.81063842773438,
+        "excluded_min_distance": 72.81160736083984,
+        "row": 10999,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 65.98995208740234,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 65.98995208740234,
+        "excluded_min_distance": 65.99542999267578,
+        "row": 1507,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 72.81848907470703,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 72.81848907470703,
+        "excluded_min_distance": 72.88643646240234,
+        "row": 3216,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 85.20246887207031,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 85.20246887207031,
+        "excluded_min_distance": 85.2509765625,
+        "row": 4354,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 63.868980407714844,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 63.868980407714844,
+        "excluded_min_distance": 63.880489349365234,
+        "row": 17468,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 81.49424743652344,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 81.49424743652344,
+        "excluded_min_distance": 81.51960754394531,
+        "row": 17321,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 95.55619812011719,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 95.55619812011719,
+        "excluded_min_distance": 95.6138916015625,
+        "row": 17365,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 76.7367172241211,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 76.7367172241211,
+        "excluded_min_distance": 76.78218078613281,
+        "row": 16620,
+        "within_boundary_tolerance": true
+      },
+      {
+        "boundary_distance": 68.59051513671875,
+        "boundary_tie_count": 1,
+        "cached_max_distance": 68.59051513671875,
+        "excluded_min_distance": 68.60907745361328,
+        "row": 15814,
+        "within_boundary_tolerance": true
+      }
+    ],
+    "sampled_boundary_rows": [
+      14455,
+      2851,
+      16280,
+      8468,
+      19195,
+      20081,
+      4938,
+      20044,
+      7098,
+      19599,
+      17660,
+      10794,
+      20995,
+      10756,
+      3130,
+      19705,
+      170,
+      5535,
+      15715,
+      8620,
+      8928,
+      12085,
+      17373,
+      10999,
+      1507,
+      3216,
+      4354,
+      17468,
+      17321,
+      17365,
+      16620,
+      15814
+    ],
+    "sampled_boundary_tie_row_count": 2
+  },
+  "inputs": {
+    "distance_run": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10",
+    "geodesic": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic.npy",
+    "geodesic_top512": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10\\geodesic_top512.npy",
+    "init_embedding": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+    "saved_stage2_baseline": "D:\\diffusion_refined_charting\\results\\diffusion_refined_charting\\stride1_n20997_k128_lambda0.15_seed10\\embedding.npz",
+    "saved_stage2_json": "D:\\diffusion_refined_charting\\results\\diffusion_refined_charting\\stride1_n20997_k128_lambda0.15_seed10\\result.json"
+  },
+  "iterations": 200,
+  "lambda_smooth": 0.15,
+  "local_k": 64,
+  "metric_subset_fraction": 0.2,
+  "metric_subset_rule": "random.sample(range(N), int(0.2*N)) with Python random.seed(10)",
+  "output_root": "D:\\diffusion_refined_charting\\results\\sc2_stage2_adaptive_fidelity_pilot",
+  "question": "Does second-order local agreement identify which Y0 samples should be held more strongly during Stage-2 refinement?",
+  "seed": 10,
+  "stage2_graph": {
+    "dtype": "float32",
+    "nnz": 3088334,
+    "shape": [
+      20997,
+      20997
+    ],
+    "weight_max": 0.9999990463256836,
+    "weight_min": 0.08263929933309555,
+    "weight_sum": 1727021.625
+  },
+  "top_k": 512,
+  "uniform_reproduction_gate": {
+    "max_abs_passed": true,
+    "max_abs_tolerance": 0.0005,
+    "mean_abs_passed": true,
+    "mean_abs_tolerance": 5e-05,
+    "metric_agreement_passed": true,
+    "metric_tolerance": 1e-05,
+    "passed": true
+  },
+  "working_directory": "D:\\diffusion_refined_charting"
+}

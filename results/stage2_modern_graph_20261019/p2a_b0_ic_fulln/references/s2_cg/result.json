@@ -1,0 +1,26 @@
+{
+  "embedding_source": {
+    "bytes": 672672,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_cg\\embedding.npz",
+    "sha256": "fb3c84dfef7bcc2f2eb08307d93f5e4f22ee7361feab8b242beecd52314a1c93"
+  },
+  "evaluation_status": "EVALUATED_FROZEN_PROTOCOL",
+  "localization_errors_after_affine": {
+    "max_m": 1.1414315380410822,
+    "mean_m": 0.31874793833859877,
+    "median_m": 0.2929166435001435,
+    "p90_m": 0.5586743200122963,
+    "p95_m": 0.6346392331934765
+  },
+  "method": "s2_cg",
+  "metrics": {
+    "ct": 0.9982195937874608,
+    "ks": 0.06506456867429661,
+    "tw": 0.998222526526258
+  },
+  "original_result": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_cg\\result.json",
+  "peak_vram_bytes": null,
+  "phase": "P2A_REUSED_FROZEN_REFERENCE",
+  "status": "FROZEN_REFERENCE",
+  "train_time_s": null
+}

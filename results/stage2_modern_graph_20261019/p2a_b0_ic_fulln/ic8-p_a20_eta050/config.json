@@ -1,0 +1,9 @@
+{
+  "alpha": 0.2,
+  "eta": 0.04758583683995482,
+  "eta_factor": 0.5,
+  "group": false,
+  "kind": "IC8",
+  "method": "IC8-P",
+  "slug": "ic8-p_a20_eta050"
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "N": 20997,
+    "alpha": 0.5,
+    "box": [
+      [
+        -2.7077402035882443,
+        -3.5093943308371127
+      ],
+      [
+        3.1094007427277717,
+        2.849967825156498
+      ]
+    ],
+    "certified_zero_aux_steps": 1000,
+    "converged": false,
+    "cuda_graph_error": null,
+    "cuda_graph_used": true,
+    "eta": 0.09517167367990964,
+    "feasibility": [
+      0.0,
+      0.0
+    ],
+    "group": false,
+    "guarded_chunk_replays": 0,
+    "iterations": 1000,
+    "kind": "IC9",
+    "objective": [
+      39.319439951454605,
+      55.12106364076846
+    ],
+    "radius": [
+      9.631605110626088,
+      9.86993449533925
+    ],
+    "sigma": 0.0014970890558255673,
+    "solve_time_s": 8.659639100020286,
+    "stage": "SANITY_FULL_N_NOT_FORMAL",
+    "stationarity": [
+      0.02234766465176219,
+      0.02261562097352687
+    ],
+    "tau": 0.0014970890558255673,
+    "wall_time_s": 8.981205000018235
+  },
+  {
+    "N": 20997,
+    "alpha": 0.5,
+    "box": null,
+    "certified_zero_aux_steps": 1000,
+    "converged": false,
+    "cuda_graph_error": null,
+    "cuda_graph_used": true,
+    "eta": 0.09517167367990964,
+    "feasibility": [
+      0.0
+    ],
+    "group": true,
+    "guarded_chunk_replays": 0,
+    "iterations": 1000,
+    "kind": "IC9",
+    "objective": [
+      71.6670254966632
+    ],
+    "radius": [
+      13.790700633010863
+    ],
+    "sigma": 0.0014970890558255673,
+    "solve_time_s": 8.568354399991222,
+    "stage": "SANITY_FULL_N_NOT_FORMAL",
+    "stationarity": [
+      0.018958268538373752
+    ],
+    "tau": 0.0014970890558255673,
+    "wall_time_s": 8.69765709998319
+  }
+]

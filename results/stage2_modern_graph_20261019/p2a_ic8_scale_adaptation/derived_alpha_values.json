@@ -1,0 +1,71 @@
+{
+  "GT_used": false,
+  "delta0_used_for_generation": false,
+  "derivation": "alpha=2*kappa/(1+2*kappa)",
+  "etas": [
+    0.03,
+    0.08,
+    0.16,
+    0.32,
+    0.5
+  ],
+  "inputs": [
+    {
+      "bytes": 504696,
+      "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+      "sha256": "8382214735e441f2b18905c9e6faa490674d7b0837717170ca3489d01d832d8e"
+    },
+    {
+      "bytes": 11572308,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\G128.npz",
+      "sha256": "7bc0a6ba32199ce248bea5cba886b26953a34b5bb27e08c7b9b60656883231ee"
+    },
+    {
+      "bytes": 4854775,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\incidence_D.npz",
+      "sha256": "e719adc3f518d6432733b62945c7d21d7dfa30a0ba52579fc1196bf33b00e257"
+    },
+    {
+      "bytes": 24959930,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\edges_and_degrees.npz",
+      "sha256": "4279c0c0ab552ea94633bf22248b8e5b2ef3d26c9a5b84c7e9bc013aa5b7ccfd"
+    },
+    {
+      "bytes": 1009100,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\chart_gauge.npz",
+      "sha256": "fe8d9efdf15a9cb1c006d35dad083e35f2a973634c660e0e93626c6eca682ac1"
+    }
+  ],
+  "parameters": [
+    {
+      "alpha": 0.2441313527262478,
+      "alpha_source": "q95",
+      "input_edge_exceed_count": 147971,
+      "input_edge_exceed_fraction": 0.09582577532093355,
+      "input_pool_exceed_entries": 154417,
+      "input_pool_exceed_fraction": 0.05000009713975237,
+      "kappa": 0.1614905933767557,
+      "quantile": 0.95
+    },
+    {
+      "alpha": 0.31110304399606037,
+      "alpha_source": "q99",
+      "input_edge_exceed_count": 27865,
+      "input_edge_exceed_fraction": 0.018045327998849864,
+      "input_pool_exceed_entries": 30884,
+      "input_pool_exceed_fraction": 0.010000213707455217,
+      "kappa": 0.22579795228060293,
+      "quantile": 0.99
+    },
+    {
+      "alpha": 0.3441908057988971,
+      "alpha_source": "q995",
+      "input_edge_exceed_count": 12731,
+      "input_edge_exceed_fraction": 0.008244574582930474,
+      "input_pool_exceed_entries": 15442,
+      "input_pool_exceed_fraction": 0.005000106853727608,
+      "kappa": 0.2624168804298217,
+      "quantile": 0.995
+    }
+  ]
+}

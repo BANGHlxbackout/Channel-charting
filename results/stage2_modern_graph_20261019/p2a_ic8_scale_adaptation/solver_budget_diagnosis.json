@@ -1,0 +1,131 @@
+{
+  "GT_used": false,
+  "U_relative_difference_30000_vs_accepted": 2.3833146861256826e-13,
+  "accepted_iteration": 32250,
+  "accepted_max_prox": 1.985809718370118e-06,
+  "amendment": {
+    "affected_configs": [
+      "ic8_q95_eta050",
+      "ic8_q99_eta050",
+      "ic8_q995_eta050"
+    ],
+    "authorization": "User: steps may be adjusted; inspect convergence and plan rationale",
+    "first_max_iter": 60000,
+    "initial_orchestration_code": {
+      "bytes": 15867,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\archive\\p2ar_initial_budget\\ic8_scale_experiment.py",
+      "sha256": "5ce7402438cb9d10b5578f27a0c29554bb34eadc2555fd23d969d745ced514b8"
+    },
+    "interrupted_partial": {
+      "config": "ic8_q95_eta050",
+      "last_iteration": 15550,
+      "logged_solver_time_s": 304.71934599999804,
+      "observed_peak_vram_bytes": 468262400,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\interrupted_runs\\ic8_q95_eta050_before_budget_update"
+    },
+    "max_attempts": 1,
+    "no_GT_metrics_computed": true,
+    "prior_process_wall_time_s": 4375.2075193,
+    "unchanged": [
+      "objective",
+      "alpha",
+      "eta",
+      "D",
+      "W",
+      "tau/sigma rule",
+      "prox tolerance",
+      "feasibility tolerance"
+    ]
+  },
+  "ball_budget_scaling": [
+    {
+      "converged": true,
+      "eta": 0.03,
+      "final_prox": [
+        1.8886319231377874e-06,
+        1.8902558615941727e-06
+      ],
+      "iterations": 1950,
+      "sigma": 0.012417822191728814,
+      "step_scale": 3.036073047224118,
+      "tau": 0.11446425071773336
+    },
+    {
+      "converged": true,
+      "eta": 0.08,
+      "final_prox": [
+        1.8489074309697374e-06,
+        1.8512853171910105e-06
+      ],
+      "iterations": 5200,
+      "sigma": 0.004656683321898305,
+      "step_scale": 8.096194792597649,
+      "tau": 0.30523800191395567
+    },
+    {
+      "converged": true,
+      "eta": 0.16,
+      "final_prox": [
+        1.94333091685906e-06,
+        1.946793763476935e-06
+      ],
+      "iterations": 10350,
+      "sigma": 0.0023283416609491524,
+      "step_scale": 16.192389585195297,
+      "tau": 0.6104760038279113
+    },
+    {
+      "converged": true,
+      "eta": 0.32,
+      "final_prox": [
+        1.98531738984369e-06,
+        1.9900968643098572e-06
+      ],
+      "iterations": 20650,
+      "sigma": 0.0011641708304745762,
+      "step_scale": 32.384779170390594,
+      "tau": 1.2209520076558227
+    },
+    {
+      "converged": false,
+      "eta": 0.5,
+      "final_prox": [
+        4.5740701869106375e-06,
+        4.590912786852409e-06
+      ],
+      "iterations": 30000,
+      "sigma": 0.0007450693315037288,
+      "step_scale": 50.6012174537353,
+      "tau": 1.9077375119622229
+    }
+  ],
+  "diagnosis": "BUDGET_LIMIT_AND_SLOW_DUAL_RELAXATION; not divergence or a demonstrated objective failure",
+  "direct_primal_KKT_using_exact_quadratic_gradient_xy": [
+    6.430155308307279e-14,
+    1.401236431568763e-13
+  ],
+  "dual_prox_xy": [
+    4.574070207053959e-06,
+    4.59091280709581e-06
+  ],
+  "fitted_decay_rate_xy": [
+    0.00037257904518357764,
+    0.00037257946436988505
+  ],
+  "initial_cap": 30000,
+  "interpretation": "When scale>1, sigma/(2*beta)=base/(2*min(radius)); increasing eta slows dual relaxation. Final actual certificate is still required.",
+  "max_prox_at_initial_cap": 4.590912786852409e-06,
+  "objective_relative_change_5000_to_30000": 8.064848802297662e-11,
+  "plan_judgment": "Objective, matched-eta control and input-only thresholds are coherent. A uniform 30000 cap from the smaller old eta range is insufficient at eta=.50; repeated cold restarts waste work. No evidence here requires changing alpha, graph or objective.",
+  "predicted_threshold_iteration_xy": [
+    32219.21353129611,
+    32229.07165920471
+  ],
+  "primal_prox_xy": [
+    3.0035407726914794e-16,
+    2.0365177634668648e-16
+  ],
+  "step_product_times_operator_norm_bound": 0.9024999999999999,
+  "step_rule": "scale=max(1,min(radius)/beta); tau=base*scale; sigma=base/scale",
+  "theoretical_dual_relaxation_log_rate": 0.00037246529194216884
+}

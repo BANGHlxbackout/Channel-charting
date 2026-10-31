@@ -1,0 +1,189 @@
+{
+  "context": "results\\CF_HRD\\seed10\\landmark_context\\context.npz",
+  "description": "Train fixed ridge residual students on train-only teacher residuals and export train/test chart predictions. No test labels, test positions, or test statistics are used for training, scaling, or model selection.",
+  "elapsed_s": 0.23598504066467285,
+  "embedding_test": "results\\heldout\\seed10\\adp_siamese\\embedding_test.npz",
+  "embedding_train": "results\\heldout\\seed10\\adp_siamese\\embedding_train.npz",
+  "num_test": 4199,
+  "num_train": 16798,
+  "protocol": "cf_hrd_stage4_residual_student",
+  "ridge_alpha": 1.0,
+  "seed": 10,
+  "teacher_train": "results\\CF_HRD\\seed10\\cross_fitted_teacher\\teacher_train.npz",
+  "uses_test_labels_for_training": false,
+  "uses_test_positions": false,
+  "uses_test_statistics_for_scaling": false,
+  "variants": {
+    "q_only": {
+      "delta_norm_summary": {
+        "teacher_train": {
+          "max": 284.7038879394531,
+          "mean": 19.840618133544922,
+          "median": 16.907888412475586,
+          "p90": 38.46811294555664,
+          "p95": 44.06367492675781
+        },
+        "test": {
+          "max": 55.57036209106445,
+          "mean": 15.85448169708252,
+          "median": 14.80090045928955,
+          "p90": 27.30194664001465,
+          "p95": 31.113018035888672
+        },
+        "train": {
+          "max": 62.99386215209961,
+          "mean": 15.82927131652832,
+          "median": 14.733461380004883,
+          "p90": 27.51496124267578,
+          "p95": 31.782691955566406
+        }
+      },
+      "feature_standardization": {
+        "mean_shape": [
+          128
+        ],
+        "std_max": 0.07604554295539856,
+        "std_min": 0.0343099907040596,
+        "std_shape": [
+          128
+        ]
+      },
+      "model_config": {
+        "feature_dim": 128,
+        "feature_set": "q_only",
+        "intercept_regularized": false,
+        "model": "closed_form_ridge_regression",
+        "ridge_alpha": 1.0,
+        "seed": 10,
+        "standardization": "mean/std fitted on train only; applied unchanged to test"
+      },
+      "test_embedding": "results\\CF_HRD\\seed10\\residual_student\\q_only_embedding_test.npz",
+      "train_embedding": "results\\CF_HRD\\seed10\\residual_student\\q_only_embedding_train.npz",
+      "train_residual_fit": {
+        "mae": 8.107450485229492,
+        "mse": 127.24287414550781,
+        "relative_norm_mean": 0.6380898356437683,
+        "rmse": 11.280198097229004,
+        "target_norm_mean": 19.840618133544922,
+        "target_norm_p95": 44.06367492675781,
+        "vector_norm_mean": 12.660097122192383,
+        "vector_norm_median": 11.09419059753418,
+        "vector_norm_p95": 26.836387634277344
+      }
+    },
+    "y0_only": {
+      "delta_norm_summary": {
+        "teacher_train": {
+          "max": 284.7038879394531,
+          "mean": 19.840618133544922,
+          "median": 16.907888412475586,
+          "p90": 38.46811294555664,
+          "p95": 44.06367492675781
+        },
+        "test": {
+          "max": 29.90885353088379,
+          "mean": 13.821599006652832,
+          "median": 14.0707368850708,
+          "p90": 21.391265869140625,
+          "p95": 24.50669288635254
+        },
+        "train": {
+          "max": 30.993709564208984,
+          "mean": 13.827288627624512,
+          "median": 13.977485656738281,
+          "p90": 21.71983528137207,
+          "p95": 24.901460647583008
+        }
+      },
+      "feature_standardization": {
+        "mean_shape": [
+          2
+        ],
+        "std_max": 130.6031494140625,
+        "std_min": 127.12226104736328,
+        "std_shape": [
+          2
+        ]
+      },
+      "model_config": {
+        "feature_dim": 2,
+        "feature_set": "y0_only",
+        "intercept_regularized": false,
+        "model": "closed_form_ridge_regression",
+        "ridge_alpha": 1.0,
+        "seed": 10,
+        "standardization": "mean/std fitted on train only; applied unchanged to test"
+      },
+      "test_embedding": "results\\CF_HRD\\seed10\\residual_student\\y0_only_embedding_test.npz",
+      "train_embedding": "results\\CF_HRD\\seed10\\residual_student\\y0_only_embedding_train.npz",
+      "train_residual_fit": {
+        "mae": 9.925766944885254,
+        "mse": 179.30917358398438,
+        "relative_norm_mean": 0.7796151041984558,
+        "rmse": 13.390637397766113,
+        "target_norm_mean": 19.840618133544922,
+        "target_norm_p95": 44.06367492675781,
+        "vector_norm_mean": 15.468045234680176,
+        "vector_norm_median": 13.432682037353516,
+        "vector_norm_p95": 33.906089782714844
+      }
+    },
+    "y0_q": {
+      "delta_norm_summary": {
+        "teacher_train": {
+          "max": 284.7038879394531,
+          "mean": 19.840618133544922,
+          "median": 16.907888412475586,
+          "p90": 38.46811294555664,
+          "p95": 44.06367492675781
+        },
+        "test": {
+          "max": 61.67085647583008,
+          "mean": 17.557992935180664,
+          "median": 16.035873413085938,
+          "p90": 31.96678352355957,
+          "p95": 35.85992431640625
+        },
+        "train": {
+          "max": 59.98600769042969,
+          "mean": 17.564546585083008,
+          "median": 15.904894828796387,
+          "p90": 32.232208251953125,
+          "p95": 36.27399444580078
+        }
+      },
+      "feature_standardization": {
+        "mean_shape": [
+          130
+        ],
+        "std_max": 130.6031494140625,
+        "std_min": 0.0343099907040596,
+        "std_shape": [
+          130
+        ]
+      },
+      "model_config": {
+        "feature_dim": 130,
+        "feature_set": "y0_q",
+        "intercept_regularized": false,
+        "model": "closed_form_ridge_regression",
+        "ridge_alpha": 1.0,
+        "seed": 10,
+        "standardization": "mean/std fitted on train only; applied unchanged to test"
+      },
+      "test_embedding": "results\\CF_HRD\\seed10\\residual_student\\y0_q_embedding_test.npz",
+      "train_embedding": "results\\CF_HRD\\seed10\\residual_student\\y0_q_embedding_train.npz",
+      "train_residual_fit": {
+        "mae": 6.444014072418213,
+        "mse": 83.66964721679688,
+        "relative_norm_mean": 0.5088127255439758,
+        "rmse": 9.147110939025879,
+        "target_norm_mean": 19.840618133544922,
+        "target_norm_p95": 44.06367492675781,
+        "vector_norm_mean": 10.095158576965332,
+        "vector_norm_median": 8.877779006958008,
+        "vector_norm_p95": 21.030607223510742
+      }
+    }
+  }
+}

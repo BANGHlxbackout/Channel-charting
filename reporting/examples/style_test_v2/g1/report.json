@@ -1,0 +1,179 @@
+{
+  "report": {
+    "title": "历史实验样式测试：初始图谱的邻居传播对照",
+    "date": "2026 年 10 月 28 日",
+    "scope": "历史结果，非本周新实验 · DICHASUS · N = 20,997",
+    "summary": "在同一批样本上，两种新网络的平均误差均低于原始 Siamese；但图邻居传播方法为 0.3998 m，略高于无邻居传播对照的 0.3983 m。本次结果未显示邻居传播的独立收益。",
+    "internal_terms": [
+      "B0",
+      "G1-Identity",
+      "G1-Graph"
+    ]
+  },
+  "repository": {
+    "remote": "origin",
+    "url": "https://gitee.com/cactus-jacque/diffusion-charting",
+    "branch": "codex/new-stage1",
+    "commit": "3f3ee72f551546ff0657259365b30266502174d9",
+    "published": [
+      {
+        "label": "技术报告",
+        "path": "results/g1_acf_graph_fcf/REPORT.md"
+      },
+      {
+        "label": "完整比较 CSV",
+        "path": "results/g1_acf_graph_fcf/comparison/comparison.csv"
+      },
+      {
+        "label": "误差图数据",
+        "path": "results/g1_acf_graph_fcf/comparison/aligned_charts.npz"
+      },
+      {
+        "label": "方法代码",
+        "path": "methods/g1_acf_graph_fcf/run.py"
+      }
+    ],
+    "pending": [
+      {
+        "label": "原图逐行结果 JSON",
+        "path": "results/adp_old_siamese/stride1_n20997_seed10/result.json"
+      },
+      {
+        "label": "无传播逐行结果 JSON",
+        "path": "results/g1_acf_graph_fcf/stride1_n20997_seed10_identity_full/result.json"
+      },
+      {
+        "label": "图传播逐行结果 JSON",
+        "path": "results/g1_acf_graph_fcf/stride1_n20997_seed10_graph_full/result.json"
+      }
+    ]
+  },
+  "comparison": {
+    "csv": "results/g1_acf_graph_fcf/comparison/comparison.csv",
+    "protocol": "results/g1_acf_graph_fcf/comparison/eval_protocol.json",
+    "methods": [
+      {
+        "id": "B0",
+        "name": "原Siamese"
+      },
+      {
+        "id": "G1-Identity",
+        "name": "无传播网络"
+      },
+      {
+        "id": "G1-Graph",
+        "name": "图传播网络",
+        "emphasis": true
+      }
+    ]
+  },
+  "pages": [
+    {
+      "heading": "研究问题与对照",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "要判断两件事：新的节点表示和网络整体能否改善初始图谱；在相同网络条件下，交换邻居信息是否另有收益。真实位置不参与训练或选模。"
+        },
+        {
+          "type": "figure",
+          "path": "reporting/examples/style_test_v2/g1/figures/method_roles.png",
+          "width_cm": 16.8,
+          "caption": "图 1  节点特征、传播范围和训练监督分别承担的作用。",
+          "source": {
+            "kind": "derived",
+            "input": "results/g1_acf_graph_fcf/REPORT.md"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "第一项比较把两种新网络分别与原始 Siamese 比；第二项只比较两种新网络，二者使用相同特征、参数、点对和损失，仅传播邻接不同。"
+        },
+        {
+          "type": "figure",
+          "path": "reporting/examples/style_test_v2/g1/figures/propagation_control.png",
+          "width_cm": 16.8,
+          "caption": "图 2  图邻居传播与无邻居传播的受控比较。",
+          "source": {
+            "kind": "derived",
+            "input": "methods/g1_acf_graph_fcf/run.py"
+          }
+        }
+      ]
+    },
+    {
+      "heading": "仿射对齐后的图谱",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "四幅图使用同一批样本和相同的真实位置颜色映射。各方法分别做仿射对齐后展示；原始输出的方向与尺度任意，不用于直接判断形状优劣。"
+        },
+        {
+          "type": "figure",
+          "path": "reporting/examples/style_test_v2/g1/figures/affine_chart_2x2.png",
+          "width_cm": 16.8,
+          "caption": "图 3  真实位置、原始 Siamese、无邻居传播和图邻居传播的图谱对照。",
+          "source": {
+            "kind": "derived",
+            "input": "results/g1_acf_graph_fcf/comparison/aligned_charts.npz"
+          }
+        },
+        {
+          "type": "paragraph",
+          "lead": "图谱观察",
+          "text": "两种新网络都更清楚地呈现左上弧区与右下分支；两者轮廓接近，未见图邻居传播独有的结构修复。"
+        }
+      ]
+    },
+    {
+      "heading": "指标与结论",
+      "blocks": [
+        {
+          "type": "table",
+          "metrics": [
+            "ct",
+            "tw",
+            "ks",
+            "mean_m",
+            "p95_m",
+            "max_m"
+          ],
+          "methods": [
+            {
+              "id": "B0",
+              "name": "原始 Siamese"
+            },
+            {
+              "id": "G1-Identity",
+              "name": "无邻居传播"
+            },
+            {
+              "id": "G1-Graph",
+              "name": "图邻居传播",
+              "emphasis": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "CT、TW 衡量邻域保持，越高越好；KS 衡量距离保持误差，越低越好。图邻居传播的平均误差为 0.3998 m、P95 为 0.8463 m；无邻居传播分别为 0.3983 m 和 0.8432 m。"
+        },
+        {
+          "type": "figure",
+          "path": "reporting/examples/style_test_v2/g1/figures/error_cdf_zh.png",
+          "width_cm": 15.5,
+          "caption": "图 4  仿射对齐误差的累计分布。曲线接近，细微差别以表格数值为准。",
+          "source": {
+            "kind": "derived",
+            "input": "results/g1_acf_graph_fcf/comparison/aligned_charts.npz"
+          }
+        },
+        {
+          "type": "paragraph",
+          "lead": "结论边界",
+          "text": "三组图谱使用相同的 20,997 个节点；邻域指标在固定 4,199 节点上计算，位置误差在全部节点上分别拟合并评价仿射对齐。真实位置只用于训练后对齐与评价。这是单种子、同节点比较，不代表未见样本能力。"
+        }
+      ]
+    }
+  ]
+}

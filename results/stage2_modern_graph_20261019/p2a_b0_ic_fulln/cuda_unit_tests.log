@@ -1,0 +1,11 @@
+test_balanced_steps_same_convex_objective (tests.test_stage2_ic_cuda.CudaICTests.test_balanced_steps_same_convex_objective) ... D:\diffusion_refined_charting\methods\stage2_modern_graph\ic_cuda.py:17: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\Context.cpp:767.)
+  return torch.sparse_csr_tensor(torch.as_tensor(matrix.indptr.astype(np.int64),device=device),
+D:\diffusion_refined_charting\methods\stage2_modern_graph\ic_cuda.py:17: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\SparseCsrTensorImpl.cpp:51.)
+  return torch.sparse_csr_tensor(torch.as_tensor(matrix.indptr.astype(np.int64),device=device),
+ok
+test_same_iterates_including_active_auxiliary (tests.test_stage2_ic_cuda.CudaICTests.test_same_iterates_including_active_auxiliary) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 1.528s
+
+OK

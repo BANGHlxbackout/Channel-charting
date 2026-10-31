@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\diffusion_refined_charting\methods\stage2_modern_graph\ic8_scale_sanity.py", line 62, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\diffusion_refined_charting\methods\stage2_modern_graph\ic8_scale_sanity.py", line 18, in main
+    started=time.perf_counter();rows=[];alphas=read(ROOT/'derived_alpha_values.json')['values']
+                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'values'

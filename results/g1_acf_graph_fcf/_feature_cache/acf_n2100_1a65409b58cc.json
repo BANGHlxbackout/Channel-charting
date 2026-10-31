@@ -1,0 +1,13 @@
+{
+  "h_file": {
+    "path": "D:\\diffusion_refined_charting\\datasets\\adp_old_shard4\\H.npy",
+    "size": 69878144,
+    "mtime_ns": 1780304727771711200
+  },
+  "index_digest": "1a65409b58cc25d3a4b740ef3467ff8c78f14a7cdf910f5a5a0185be9fe1831d",
+  "shape": [
+    2100,
+    26624
+  ],
+  "dtype": "float32"
+}

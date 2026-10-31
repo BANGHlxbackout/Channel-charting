@@ -1,0 +1,30 @@
+{
+  "dataset": "datasets\\adp_old_shard4",
+  "elapsed_s": 2.1067376136779785,
+  "exact_notebook_gamma": false,
+  "gamma": 0.0833333358168602,
+  "localization_errors_after_affine": {
+    "max_m": 9.508668228850269,
+    "mean_m": 3.7523537906663478,
+    "median_m": 3.3990739942696564,
+    "p90_m": 6.469016934852046,
+    "p95_m": 6.912547787957909
+  },
+  "mds_iter": 10,
+  "mds_n_init": 1,
+  "mds_reduction": 10,
+  "mds_samples": 210,
+  "method": "ADP + timestamp fused + geodesic + metric MDS",
+  "metrics": {
+    "ct": 0.5270339086791529,
+    "ks": 0.6220067925375614,
+    "n_neighbors": 10,
+    "tw": 0.5665564940629209
+  },
+  "neighbors": 35,
+  "num_samples": 2100,
+  "paper": "Angle-Delay Profile-Based and Timestamp-Aided Dissimilarity Metrics for Channel Charting",
+  "run_name": "stride10_n2100_seed10",
+  "seed": 10,
+  "stride": 10
+}

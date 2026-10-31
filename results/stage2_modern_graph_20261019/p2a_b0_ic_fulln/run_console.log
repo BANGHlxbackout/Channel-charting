@@ -1,0 +1,37 @@
+D:\diffusion_refined_charting\methods\stage2_modern_graph\ic_cuda.py:18: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\Context.cpp:767.)
+  return torch.sparse_csr_tensor(torch.as_tensor(matrix.indptr.astype(np.int64),device=device),
+D:\diffusion_refined_charting\methods\stage2_modern_graph\ic_cuda.py:18: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\SparseCsrTensorImpl.cpp:51.)
+  return torch.sparse_csr_tensor(torch.as_tensor(matrix.indptr.astype(np.int64),device=device),
+{"config": "ic8-p_a50_eta100", "attempt": 1, "iteration": 5000, "objective": [1856.223652601263, 2935.9061824140135], "feasibility": [0.0, 1.7128670260001094e-17], "prox_residual": [2.805957108595524e-05, 2.8113412507672562e-05], "elapsed_s": 92.51070409995737, "peak_vram_bytes": 468262912}
+{"completed": 1, "config": "ic8-p_a50_eta100", "status": "VALID", "iterations": 6400, "delta": 0.09517167367990967, "prox": [1.8165526159894074e-06, 1.8200382199490265e-06]}
+{"completed": 2, "config": "ic9-p_a50_eta100", "status": "VALID", "iterations": 1400, "delta": 0.09517167367990965, "prox": [1.4503174067909326e-06, 2.0780466626683445e-08]}
+{"completed": 3, "config": "ic9-g_a50_eta100", "status": "VALID", "iterations": 1200, "delta": 0.09517167367990965, "prox": [1.4520838358715808e-06]}
+{"completed": 4, "config": "ic8-p_a20_eta050", "status": "VALID", "iterations": 4150, "delta": 0.04758583683995483, "prox": [1.3819057257174394e-06, 1.7453282010210055e-06]}
+{"config": "ic8-p_a20_eta100", "attempt": 1, "iteration": 5000, "objective": [2930.0872450045345, 4604.4747442444805], "feasibility": [0.0, 0.0], "prox_residual": [2.821730349516113e-05, 3.16717975680188e-05], "elapsed_s": 93.40905279997969, "peak_vram_bytes": 468262912}
+{"completed": 5, "config": "ic8-p_a20_eta100", "status": "VALID", "iterations": 6600, "delta": 0.09517167367990965, "prox": [1.6061489453314344e-06, 1.913162649189533e-06]}
+{"config": "ic8-p_a20_eta150", "attempt": 1, "iteration": 5000, "objective": [2371.8428159381965, 3772.695610539701], "feasibility": [0.0, 1.7128670260001094e-17], "prox_residual": [0.0005305484028378689, 0.0005181571252788641], "elapsed_s": 93.50387369998498, "peak_vram_bytes": 468262912}
+{"completed": 6, "config": "ic8-p_a20_eta150", "status": "VALID", "iterations": 9300, "delta": 0.14275751051986452, "prox": [1.917295680077414e-06, 1.8592502307487943e-06]}
+{"completed": 7, "config": "ic8-p_a50_eta050", "status": "VALID", "iterations": 3300, "delta": 0.04758583683995484, "prox": [1.5425947597244995e-06, 1.9979413021448008e-06]}
+{"config": "ic8-p_a50_eta150", "attempt": 1, "iteration": 5000, "objective": [1499.9614374717758, 2385.722510817084], "feasibility": [0.0, 1.7128670260001094e-17], "prox_residual": [0.0007281118869805974, 0.000729818222475393], "elapsed_s": 93.51460280001629, "peak_vram_bytes": 468262912}
+{"completed": 8, "config": "ic8-p_a50_eta150", "status": "VALID", "iterations": 9550, "delta": 0.14275751051986454, "prox": [1.928692838994926e-06, 1.9332094384875735e-06]}
+{"completed": 9, "config": "ic8-p_a80_eta050", "status": "VALID", "iterations": 3300, "delta": 0.04758583683995483, "prox": [1.7718175662652601e-06, 1.7754939832994616e-06]}
+{"config": "ic8-p_a80_eta100", "attempt": 1, "iteration": 5000, "objective": [742.4894610405053, 1174.362472965605], "feasibility": [0.0, 1.7128670260001094e-17], "prox_residual": [3.9945275260120095e-05, 4.005025873283347e-05], "elapsed_s": 93.63684769999236, "peak_vram_bytes": 468262912}
+{"completed": 10, "config": "ic8-p_a80_eta100", "status": "VALID", "iterations": 6550, "delta": 0.09517167367990968, "prox": [1.9286944410969e-06, 1.933763379664906e-06]}
+{"config": "ic8-p_a80_eta150", "attempt": 1, "iteration": 5000, "objective": [599.9845749887103, 954.2890043268335], "feasibility": [0.0, 1.7128670260001094e-17], "prox_residual": [0.001035817439339197, 0.0010390694734202291], "elapsed_s": 93.53150130005088, "peak_vram_bytes": 468262912}
+{"completed": 11, "config": "ic8-p_a80_eta150", "status": "VALID", "iterations": 9800, "delta": 0.1427575105198645, "prox": [1.981123519418611e-06, 1.987340821280341e-06]}
+{"completed": 12, "config": "ic9-p_a20_eta050", "status": "VALID", "iterations": 200, "delta": 0.04758583683995483, "prox": [1.3203528979891758e-07, 1.8484759997712673e-08]}
+{"completed": 13, "config": "ic9-p_a20_eta100", "status": "VALID", "iterations": 1350, "delta": 0.09517167367990967, "prox": [1.9929842094822582e-06, 3.767681959480006e-08]}
+{"completed": 14, "config": "ic9-p_a20_eta150", "status": "VALID", "iterations": 2800, "delta": 0.1427575105198645, "prox": [1.8148877968036411e-06, 1.3071423612488438e-08]}
+{"completed": 15, "config": "ic9-p_a50_eta050", "status": "VALID", "iterations": 200, "delta": 0.04758583683995483, "prox": [1.3219702086460596e-07, 1.8504522235511402e-08]}
+{"completed": 16, "config": "ic9-p_a50_eta150", "status": "VALID", "iterations": 2800, "delta": 0.1427575105198645, "prox": [1.826003770730711e-06, 1.312132121942917e-08]}
+{"completed": 17, "config": "ic9-p_a80_eta050", "status": "VALID", "iterations": 200, "delta": 0.04758583683995483, "prox": [1.3235914804383944e-07, 1.8524326772226656e-08]}
+{"completed": 18, "config": "ic9-p_a80_eta100", "status": "VALID", "iterations": 1400, "delta": 0.09517167367990965, "prox": [1.4566199453488935e-06, 2.0841852824284463e-08]}
+{"completed": 19, "config": "ic9-p_a80_eta150", "status": "VALID", "iterations": 2800, "delta": 0.1427575105198645, "prox": [1.837256751288878e-06, 1.3171601307523493e-08]}
+{"completed": 20, "config": "ic9-g_a20_eta050", "status": "VALID", "iterations": 200, "delta": 0.04758583683995483, "prox": [5.82018399734371e-08]}
+{"completed": 21, "config": "ic9-g_a20_eta100", "status": "VALID", "iterations": 1200, "delta": 0.09517167367990965, "prox": [1.448522421046056e-06]}
+{"completed": 22, "config": "ic9-g_a20_eta150", "status": "VALID", "iterations": 2350, "delta": 0.14275751051986452, "prox": [1.9043660551177424e-06]}
+{"completed": 23, "config": "ic9-g_a50_eta050", "status": "VALID", "iterations": 200, "delta": 0.04758583683995483, "prox": [5.824879800006557e-08]}
+{"completed": 24, "config": "ic9-g_a50_eta150", "status": "VALID", "iterations": 2350, "delta": 0.1427575105198645, "prox": [1.9106376067557865e-06]}
+{"completed": 25, "config": "ic9-g_a80_eta050", "status": "VALID", "iterations": 200, "delta": 0.04758583683995483, "prox": [5.829583202612938e-08]}
+{"completed": 26, "config": "ic9-g_a80_eta100", "status": "VALID", "iterations": 1200, "delta": 0.09517167367990965, "prox": [1.4556628063586743e-06]}
+{"completed": 27, "config": "ic9-g_a80_eta150", "status": "VALID", "iterations": 2350, "delta": 0.14275751051986452, "prox": [1.916950602287252e-06]}

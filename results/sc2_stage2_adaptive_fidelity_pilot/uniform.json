@@ -1,0 +1,37 @@
+{
+  "embedding_shape": [
+    20997,
+    2
+  ],
+  "eval_subset_seed": 10,
+  "eval_subset_size": 4199,
+  "fidelity": {
+    "max": 1.0,
+    "mean": 1.0,
+    "min": 1.0
+  },
+  "localization_errors_after_affine": {
+    "max_m": 1.1414313316345215,
+    "mean_m": 0.31874796748161316,
+    "median_m": 0.2929166555404663,
+    "p90_m": 0.5586743950843811,
+    "p95_m": 0.6346387267112732
+  },
+  "metrics": {
+    "ct": 0.9982195937874608,
+    "ks": 0.06506457295873366,
+    "n_neighbors": 209,
+    "tw": 0.998222526526258
+  },
+  "saved_baseline_reproduction": {
+    "amended_max_abs_tolerance": 0.0005,
+    "amended_mean_abs_tolerance": 5e-05,
+    "max_abs_chart_coordinate": 0.000274658203125,
+    "mean_abs_chart_coordinate": 2.0905992641928606e-05,
+    "metric_tolerance": 1e-05,
+    "passed": true,
+    "strict_original_task_gate_passed": false,
+    "strict_original_task_tolerance": 0.0001
+  },
+  "variant": "uniform"
+}

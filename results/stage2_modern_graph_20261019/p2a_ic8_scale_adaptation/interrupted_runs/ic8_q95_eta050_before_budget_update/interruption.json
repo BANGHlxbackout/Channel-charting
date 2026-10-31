@@ -1,0 +1,15 @@
+{
+  "GT_evaluated": false,
+  "last_logged_row": {
+    "elapsed_s": "304.71934599999804",
+    "feasibility": "[0.0, 6.851468104000437e-17]",
+    "iteration": "15550",
+    "l1_component": "[0.3125769209600906, 0.4001719909742759]",
+    "objective": "[601.1788761039529, 868.6590344089308]",
+    "peak_vram_bytes": "468262400",
+    "prox_residual": "[0.0011860406775009936, 0.0011900064049579582]",
+    "quadratic_component": "[600.8662991829929, 868.2588624179565]"
+  },
+  "no_final_state_or_embedding": true,
+  "status": "INTERRUPTED_FOR_STEP_BUDGET_UPDATE"
+}

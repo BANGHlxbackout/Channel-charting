@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checks": {
+    "docx_package": true,
+    "page_geometry_matches_template": true,
+    "font_and_paragraph_styles_match_template": true,
+    "title_and_date": true,
+    "no_template_placeholders": true,
+    "all_result_images_embedded": true,
+    "figures_have_named_sources": true,
+    "editable_table_count": true,
+    "gitee_links_point_to_verified_commit": true,
+    "pending_files_not_linked_as_published": true,
+    "rendered_page_count": true,
+    "all_page_previews": true
+  },
+  "docx_sha256": "a1d79bf7939f66f1fed1f72520b497e6c7257789e5336c34c9e28a572cd36402",
+  "gitee_commit": "f927cd53669f1eca1230e982233d1c04bb4b3f24",
+  "published_gitee_paths": [
+    "results/sc2_stage2_edge_consensus/REPORT.md",
+    "results/sc2_stage2_edge_consensus/posthoc_selected_edge_diagnostic.png",
+    "results/sc2_stage2_edge_consensus/posthoc_repair_harm_map.png"
+  ],
+  "pending_gitee_paths": [],
+  "manual_review_required": [
+    "导师可读性、研究结论和图表解释",
+    "目标电脑 Word 的最终字体与分页",
+    "待上传结果 JSON 发布后重新核验 Gitee 链接"
+  ]
+}

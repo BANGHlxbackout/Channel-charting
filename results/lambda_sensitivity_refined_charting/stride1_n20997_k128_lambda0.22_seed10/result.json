@@ -1,0 +1,46 @@
+{
+  "baseline_localization_errors_after_affine": {
+    "max_m": 7.893630027770996,
+    "mean_m": 0.409347265958786,
+    "median_m": 0.37222808599472046,
+    "p90_m": 0.7141520380973816,
+    "p95_m": 0.8557930588722229
+  },
+  "baseline_metrics": {
+    "ct": 0.9957121024091857,
+    "ks": 0.0840268307097306,
+    "n_neighbors": 209,
+    "tw": 0.9959871853305127
+  },
+  "dataset": "datasets\\adp_old_shard4",
+  "distance_run": "results\\adp_old_fused\\stride1_n20997_seed10",
+  "elapsed_s": 7.1700544357299805,
+  "graph_edges": 3088334,
+  "graph_k": 128,
+  "idea": "Estimate the UE manifold Laplace-Beltrami operator from the ADP/time geodesic graph, then solve a graph-harmonic Tikhonov problem that denoises the neural FCF chart while preserving the intrinsic channel manifold.",
+  "init_embedding": "results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+  "iterations": 200,
+  "lambda_smooth": 0.22,
+  "localization_errors_after_affine": {
+    "max_m": 1.1964319944381714,
+    "mean_m": 0.3250851333141327,
+    "median_m": 0.29795360565185547,
+    "p90_m": 0.5576795935630798,
+    "p95_m": 0.6529361009597778
+  },
+  "method": "Graph-harmonic diffusion refinement of ADP/time geodesic channel charts",
+  "metric_subset_fraction": 0.2,
+  "metric_subset_size": 4199,
+  "metrics": {
+    "ct": 0.9981677251678881,
+    "ks": 0.06695238100103865,
+    "n_neighbors": 209,
+    "tw": 0.9981418132957973
+  },
+  "num_samples": 20997,
+  "paper_context": "new method on the ADP-native DICHASUS channel charting dataset",
+  "run_name": "stride1_n20997_k128_lambda0.22_seed10",
+  "seed": 10,
+  "stride": 1,
+  "top_k": 512
+}

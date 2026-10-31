@@ -1,0 +1,17 @@
+{
+  "G0_rows": 14,
+  "all_G0_pass": true,
+  "protected_files_sha256_unchanged": true,
+  "AGENTS_sha256_unchanged": true,
+  "source_distance_directory_unchanged": true,
+  "output_hashes_verified": true,
+  "csv_matches_all_source_json_metrics": true,
+  "fresh_neighbors_equal_historical": true,
+  "G128_exactly_equals_saved_E1_CSR": true,
+  "unit_tests_passed": 3,
+  "images_visually_checked": [
+    "raw",
+    "affine"
+  ],
+  "P1_to_P5": "NOT RUN; STOP for user review"
+}

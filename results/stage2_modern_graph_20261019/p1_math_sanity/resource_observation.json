@@ -1,0 +1,10 @@
+{
+  "phase": "P1 Edge256",
+  "observed_at": "2026-10-19T18:48:30.4924532+08:00",
+  "pid": 18220,
+  "cpu_time_s": 561.640625,
+  "working_set_bytes": 53981184,
+  "peak_working_set_so_far_bytes": 868552704,
+  "peak_scope": "observed high-water mark before process completion; lower bound on final whole-process peak",
+  "gpu_used": false
+}

@@ -1,0 +1,8 @@
+test_complete_trace_and_zero_parameter_changes (tests.test_stage2_edge_repair.EdgeRepairTests.test_complete_trace_and_zero_parameter_changes) ... ok
+test_nonzero_dual_augmented_subproblems (tests.test_stage2_edge_repair.EdgeRepairTests.test_nonzero_dual_augmented_subproblems) ... ok
+test_penalty_change_preserves_multiplier (tests.test_stage2_edge_repair.EdgeRepairTests.test_penalty_change_preserves_multiplier) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.433s
+
+OK

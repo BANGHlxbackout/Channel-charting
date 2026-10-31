@@ -1,0 +1,54 @@
+{
+  "graph_hash": "c1c50ca7104d768f673c7c2756507a9a374f979303cb0574d98eac9a88a7a27e",
+  "graph_k": 128,
+  "iterations": [
+    42,
+    42
+  ],
+  "jacobi_reference_iterations": 200,
+  "lambda_smooth": 0.15,
+  "localization_errors_after_affine": {
+    "max_m": 1.1414315380410822,
+    "mean_m": 0.31874793833859877,
+    "median_m": 0.2929166435001435,
+    "p90_m": 0.5586743200122963,
+    "p95_m": 0.6346392331934765
+  },
+  "method": "B0+S2-CG",
+  "metrics": {
+    "ct": 0.9982195937874608,
+    "ks": 0.06506456867429661,
+    "tw": 0.998222526526258
+  },
+  "num_samples": 20997,
+  "phase": "P0",
+  "postprocess_time_s": 0.6631909999996424,
+  "seed": 10,
+  "solver": {
+    "atol": 0.0,
+    "dtype": "float64",
+    "info": [
+      0,
+      0
+    ],
+    "iterations": [
+      42,
+      42
+    ],
+    "maxiter": 5000,
+    "normalized_relative_residuals": [
+      9.950824284571387e-11,
+      8.908312353513265e-11
+    ],
+    "preconditioner": "inverse diagonal of I+lambda L",
+    "raw_relative_residuals": [
+      9.950824665322653e-11,
+      8.908313108193592e-11
+    ],
+    "rtol": 1e-10,
+    "time_s": 0.6631909999996424
+  },
+  "source_embedding": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+  "status": "completed",
+  "top_k": 512
+}

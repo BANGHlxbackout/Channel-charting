@@ -1,0 +1,18 @@
+{
+  "active_bands": [
+    "low2",
+    "high1",
+    "high2"
+  ],
+  "converged": true,
+  "dual_residual": 4.919768439268898e-08,
+  "iterations": 767,
+  "lowpass_shrinkage_weight": 0.0,
+  "nu": 0.1,
+  "objective": 0.010019841979791014,
+  "pcg_max_relative_residual": 9.984717259157969e-12,
+  "primal_residual": 1.8698853388045563e-07,
+  "rho": 2.369965232542439,
+  "stationarity": 4.919771050861662e-08,
+  "u_step_dense_relative_error": 7.801722856016158e-12
+}

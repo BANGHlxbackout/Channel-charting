@@ -42,6 +42,13 @@ class G1Tests(unittest.TestCase):
         torch.testing.assert_close(dense, dense.T, atol=1e-7, rtol=1e-7)
         self.assertTrue(torch.all(dense.diagonal() > 0))
         self.assertGreater(info["undirected_edges"], 0)
+        adp = fused.copy()
+        adp[3, 4] = adp[4, 3] = 8.0
+        adp_adj, adp_info = propagation_adjacency(graph, fused, adp=adp)
+        self.assertEqual(adp_info["affinity_source"], "adp_cost_on_fused_support")
+        np.testing.assert_array_equal(adj.indices().numpy(), adp_adj.indices().numpy())
+        self.assertGreater(float(torch.max(torch.abs(adj.values() - adp_adj.values()))), 1e-6)
+        torch.testing.assert_close(adp_adj.to_dense(), adp_adj.to_dense().T, atol=1e-7, rtol=1e-7)
         ident = identity_adjacency(len(x))
         h = torch.randn(len(x), 4)
         torch.testing.assert_close(torch.sparse.mm(ident, h), h)

@@ -1,0 +1,14 @@
+{
+  "cache_path": "results\\g1_acf_graph_fcf\\_feature_cache\\acf_n2100_1a65409b58cc.npy",
+  "dtype": "float32",
+  "h_file": {
+    "mtime_ns": 1780304727771711200,
+    "path": "D:\\diffusion_refined_charting\\datasets\\adp_old_shard4\\H.npy",
+    "size": 69878144
+  },
+  "index_digest": "1a65409b58cc25d3a4b740ef3467ff8c78f14a7cdf910f5a5a0185be9fe1831d",
+  "shape": [
+    2100,
+    26624
+  ]
+}

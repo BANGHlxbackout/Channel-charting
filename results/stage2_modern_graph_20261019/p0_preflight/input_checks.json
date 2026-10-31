@@ -1,0 +1,64 @@
+{
+  "B0": {
+    "N": 20997,
+    "dtype": "float32",
+    "finite": true,
+    "indices_equal": true,
+    "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+    "positions_equal": true,
+    "shape": [
+      20997,
+      2
+    ],
+    "std": [
+      163.082275390625,
+      167.1175537109375
+    ]
+  },
+  "D_geo": {
+    "dtype": "float32",
+    "finite_nonnegative": true,
+    "off_diagonal_zero_count": 0,
+    "shape": [
+      20997,
+      20997
+    ],
+    "zero_diagonal": true
+  },
+  "G1-Graph": {
+    "N": 20997,
+    "dtype": "float32",
+    "finite": true,
+    "indices_equal": true,
+    "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\embedding.npz",
+    "positions_equal": true,
+    "shape": [
+      20997,
+      2
+    ],
+    "std": [
+      169.0200653076172,
+      165.43154907226562
+    ]
+  },
+  "G1-Identity": {
+    "N": 20997,
+    "dtype": "float32",
+    "finite": true,
+    "indices_equal": true,
+    "path": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\embedding.npz",
+    "positions_equal": true,
+    "shape": [
+      20997,
+      2
+    ],
+    "std": [
+      156.99842834472656,
+      176.4513702392578
+    ]
+  },
+  "evaluation_subset": {
+    "matches_original_seed10_rule": true,
+    "size": 4199
+  }
+}

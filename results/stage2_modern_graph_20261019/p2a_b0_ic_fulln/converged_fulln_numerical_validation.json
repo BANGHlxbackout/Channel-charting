@@ -1,0 +1,88 @@
+[
+  {
+    "G2": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        1856.2236526012632,
+        2935.9061824140135
+      ],
+      "cuda_cpu_objective_relative_error": 1.224926075716127e-16,
+      "feasibility": 1.7128670260001094e-17,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.8200382199490265e-06,
+      "spread": 0.9560241668778799
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC8",
+      "method": "IC8-P",
+      "slug": "ic8-p_a50_eta100"
+    },
+    "stage": "CONVERGED_FULL_N_NUMERICAL_VALIDATION_NOT_GT_EVALUATION",
+    "status": "VALID"
+  },
+  {
+    "G2": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        33.91745656410195,
+        50.178063249565
+      ],
+      "cuda_cpu_objective_relative_error": 4.18983501558979e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.4503174067909326e-06,
+      "spread": 0.983197543649517
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": false,
+      "kind": "IC9",
+      "method": "IC9-P",
+      "slug": "ic9-p_a50_eta100"
+    },
+    "stage": "CONVERGED_FULL_N_NUMERICAL_VALIDATION_NOT_GT_EVALUATION",
+    "status": "VALID"
+  },
+  {
+    "G2": {
+      "auxiliary_max_abs": 0.0,
+      "auxiliary_nonzero_rows": 0,
+      "cpu_objective": [
+        60.25900318407934
+      ],
+      "cuda_cpu_objective_relative_error": 1.1791478421731152e-16,
+      "feasibility": 0.0,
+      "finite": true,
+      "indices_positions_identical": true,
+      "largest_identical_point_fraction": 4.76258513120922e-05,
+      "objective_no_sustained_worsening": true,
+      "prox": 1.4520838358715808e-06,
+      "spread": 0.982942396627596
+    },
+    "config": {
+      "alpha": 0.5,
+      "eta": 0.09517167367990964,
+      "eta_factor": 1.0,
+      "group": true,
+      "kind": "IC9",
+      "method": "IC9-G",
+      "slug": "ic9-g_a50_eta100"
+    },
+    "stage": "CONVERGED_FULL_N_NUMERICAL_VALIDATION_NOT_GT_EVALUATION",
+    "status": "VALID"
+  }
+]

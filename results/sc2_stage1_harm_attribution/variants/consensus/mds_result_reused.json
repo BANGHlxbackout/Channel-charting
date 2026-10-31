@@ -1,0 +1,33 @@
+{
+  "indices_definition": "np.arange(0,20997,10)",
+  "localization_errors_after_affine": {
+    "max_m": 9.38056014471423,
+    "mean_m": 0.5824605953776879,
+    "median_m": 0.49548322770016673,
+    "p90_m": 0.9477581015124562,
+    "p95_m": 1.1736640974416326
+  },
+  "max_iter": 80,
+  "metrics": {
+    "ct": 0.987894897608889,
+    "ks": 0.11014286729685768,
+    "n_neighbors": 105,
+    "tw": 0.991686341546574
+  },
+  "n_init": 4,
+  "num_samples": 2100,
+  "per_sample_error_summary": {
+    "count": 2100,
+    "max": 9.38056014471423,
+    "mean": 0.5824605953776879,
+    "median": 0.49548322770016673,
+    "min": 0.013325678682953814,
+    "p01": 0.06561302253871122,
+    "p25": 0.31220265258987534,
+    "p75": 0.694979818718633,
+    "p95": 1.1736640974416326
+  },
+  "seed": 10,
+  "source": "results\\sc2_stage1_consensus_pilot\\consensus\\mds.npz",
+  "variant": "consensus"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": {
+    "docx_zip_integrity": true,
+    "template_unchanged": true,
+    "page_geometry": true,
+    "styles_retained": true,
+    "native_editable_table": true,
+    "table_matches_source_json": true,
+    "embedded_image_count": true,
+    "reference_diagrams_retained": true,
+    "result_images_match_sources": true,
+    "same_node_order": true,
+    "metric_subset": true,
+    "three_rendered_pages": true,
+    "preview_images": true,
+    "title_and_date_present": true,
+    "old_placeholder_absent": true
+  },
+  "comparison_csv": "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\comparison\\comparison.csv",
+  "source_json": [
+    "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+    "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_identity_full\\result.json",
+    "D:\\diffusion_refined_charting\\results\\g1_acf_graph_fcf\\stride1_n20997_seed10_graph_full\\result.json"
+  ],
+  "preview_pdf": "D:\\diffusion_refined_charting\\results\\meeting_report_g1_20261027\\preview\\刘梓健-2026-10-27.pdf",
+  "manual_review_required": [
+    "导师可读性和结论措辞",
+    "在目标电脑的 Word 中最后确认分页与字体替换"
+  ]
+}

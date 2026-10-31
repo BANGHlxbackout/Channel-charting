@@ -1,0 +1,15 @@
+{
+  "box": [
+    -2.1622116466380845,
+    2.7572151178655306
+  ],
+  "converged": true,
+  "feasibility": 0.0,
+  "iterations": 100,
+  "objective": 2.3316058044987504,
+  "radius": 0.0,
+  "sigma": 0.2747379156205963,
+  "stationarity": 1.0931683941413142e-08,
+  "tau": 0.2747379156205963,
+  "zero_output_error": 0.0
+}

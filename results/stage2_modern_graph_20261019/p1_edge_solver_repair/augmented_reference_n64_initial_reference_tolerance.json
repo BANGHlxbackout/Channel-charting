@@ -1,0 +1,155 @@
+[
+  {
+    "N": 64,
+    "method": "SEF",
+    "references": {
+      "E": {
+        "iterations": 9,
+        "reference_objective": 1.5672418353625996,
+        "solve_time_s": 0.0021658,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "Q": [],
+      "S": {
+        "iterations": 11,
+        "reference_objective": 44.671312036431914,
+        "solve_time_s": 0.0529633,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "U": null,
+      "Y": {
+        "iterations": 0,
+        "reference_objective": 47.00636100158641,
+        "solve_time_s": 0.0057233,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      }
+    },
+    "relative_solution_errors": {
+      "E": 1.0330870719221143e-10,
+      "S": 5.8957728810353857e-08,
+      "Y": 1.1788774448271198e-14,
+      "dual1_update": 2.220446049250313e-15,
+      "dual4_update": 1.1102230246251565e-16
+    },
+    "status": "PASS",
+    "threshold": 1e-06
+  },
+  {
+    "N": 64,
+    "method": "FE",
+    "references": {
+      "E": {
+        "iterations": 10,
+        "reference_objective": 1.2129167150458569,
+        "solve_time_s": 0.0032884,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "Q": [],
+      "S": {
+        "iterations": 11,
+        "reference_objective": 62.000123766617534,
+        "solve_time_s": 0.0532093,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "U": {
+        "iterations": 0,
+        "reference_objective": 1.2711278203929717,
+        "solve_time_s": 0.0122524,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "Y": {
+        "iterations": 0,
+        "reference_objective": 65.35997448236436,
+        "solve_time_s": 0.0063218,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      }
+    },
+    "relative_solution_errors": {
+      "E": 3.981707747584807e-08,
+      "S": 6.0888312822172765e-06,
+      "U": 1.0012561060964076e-12,
+      "Y": 8.958308683457857e-15,
+      "dual1_update": 3.3306690738754696e-15,
+      "dual4_update": 1.6653345369377348e-16
+    },
+    "status": "FAIL",
+    "threshold": 1e-06
+  },
+  {
+    "N": 64,
+    "method": "DoT",
+    "references": {
+      "E": {
+        "iterations": 10,
+        "reference_objective": 1.1687361588230227,
+        "solve_time_s": 0.0013505,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "Q": [
+        {
+          "iterations": 8,
+          "reference_objective": 1.5257887794298693e-24,
+          "solve_time_s": 0.0012184,
+          "solver": "CLARABEL",
+          "status": "optimal"
+        },
+        {
+          "iterations": 10,
+          "reference_objective": 0.8125280044450724,
+          "solve_time_s": 0.0009852,
+          "solver": "CLARABEL",
+          "status": "optimal"
+        },
+        {
+          "iterations": 9,
+          "reference_objective": 0.2906570184627244,
+          "solve_time_s": 0.0008721,
+          "solver": "CLARABEL",
+          "status": "optimal"
+        }
+      ],
+      "S": {
+        "iterations": 12,
+        "reference_objective": 61.9857853678747,
+        "solve_time_s": 0.0501033,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "U": {
+        "iterations": 0,
+        "reference_objective": 1.5625637784256305,
+        "solve_time_s": 0.003323,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "Y": {
+        "iterations": 0,
+        "reference_objective": 65.21660605881414,
+        "solve_time_s": 0.0065969,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      }
+    },
+    "relative_solution_errors": {
+      "E": 3.038458594618883e-10,
+      "Q0": 1.4175591679606246e-13,
+      "Q1": 2.300506375206047e-07,
+      "Q2": 2.890497731190366e-09,
+      "S": 3.541882966796886e-06,
+      "U": 9.223945038216028e-12,
+      "Y": 1.2056062454219904e-14,
+      "dual1_update": 2.248201624865942e-15,
+      "dual4_update": 1.6653345369377348e-16
+    },
+    "status": "FAIL",
+    "threshold": 1e-06
+  }
+]

@@ -1,0 +1,386 @@
+{
+  "cases": [
+    {
+      "attempts": 1,
+      "config": "ball_glr_eta003",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 1950,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 2.105637096946659e-14,
+      "prox_residual": [
+        1.8886319231377874e-06,
+        1.8902558615941727e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ball_glr_eta003\\result.json",
+      "spread": 0.9948841761532614,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q95_eta003",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 2800,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 5.674837171584101e-14,
+      "prox_residual": [
+        1.4396993791165843e-06,
+        1.7953791109360477e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q95_eta003\\result.json",
+      "spread": 0.9936534633058789,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q99_eta003",
+      "converged": true,
+      "feasibility": [
+        4.388127719022704e-18,
+        0.0
+      ],
+      "iterations": 2700,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 3.5075446552330215e-14,
+      "prox_residual": [
+        1.7408211270286695e-06,
+        1.7421607193678174e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q99_eta003\\result.json",
+      "spread": 0.9938302516944786,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q995_eta003",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 2700,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 1.6697195895062527e-14,
+      "prox_residual": [
+        1.6957680514379044e-06,
+        1.6714084752291984e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q995_eta003\\result.json",
+      "spread": 0.9939503820096426,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ball_glr_eta008",
+      "converged": true,
+      "feasibility": [
+        1.7552510876090815e-17,
+        0.0
+      ],
+      "iterations": 5200,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 2.380836251666274e-14,
+      "prox_residual": [
+        1.8489074309697374e-06,
+        1.8512853171910105e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ball_glr_eta008\\result.json",
+      "spread": 0.9679513347945782,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q95_eta008",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 5650,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 4.3864574983917416e-14,
+      "prox_residual": [
+        1.4549384494624208e-06,
+        1.8368855962988485e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q95_eta008\\result.json",
+      "spread": 0.9679028153751223,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q99_eta008",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        1.7128670260001094e-17
+      ],
+      "iterations": 5350,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 7.67432429769666e-14,
+      "prox_residual": [
+        1.7155510806819752e-06,
+        1.8308957775526275e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q99_eta008\\result.json",
+      "spread": 0.9679479434089557,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q995_eta008",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 5300,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 3.28052240603138e-14,
+      "prox_residual": [
+        1.9082188470024992e-06,
+        1.936728361297139e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q995_eta008\\result.json",
+      "spread": 0.9679516591867954,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ball_glr_eta016",
+      "converged": true,
+      "feasibility": [
+        3.510502175218163e-17,
+        0.0
+      ],
+      "iterations": 10350,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 3.2280127900566555e-14,
+      "prox_residual": [
+        1.94333091685906e-06,
+        1.946793763476935e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ball_glr_eta016\\result.json",
+      "spread": 0.9007703305835421,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q95_eta016",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 10500,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 4.1107680486723053e-14,
+      "prox_residual": [
+        1.8900123336188282e-06,
+        1.8961713033821477e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q95_eta016\\result.json",
+      "spread": 0.9012532208430106,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q99_eta016",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 10550,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 2.565579766703268e-14,
+      "prox_residual": [
+        1.9339371214195232e-06,
+        1.9407339751617685e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q99_eta016\\result.json",
+      "spread": 0.9008129069710166,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q995_eta016",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 10550,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 5.803724287234483e-14,
+      "prox_residual": [
+        1.9931797728432845e-06,
+        1.9976227436798458e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q995_eta016\\result.json",
+      "spread": 0.900781941213128,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ball_glr_eta032",
+      "converged": true,
+      "feasibility": [
+        7.021004350436326e-17,
+        0.0
+      ],
+      "iterations": 20650,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 6.158638245319771e-14,
+      "prox_residual": [
+        1.98531738984369e-06,
+        1.9900968643098572e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ball_glr_eta032\\result.json",
+      "spread": 0.7409673965517138,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q95_eta032",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 20950,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 2.679863690714716e-14,
+      "prox_residual": [
+        1.964858881934741e-06,
+        1.9691984111748136e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q95_eta032\\result.json",
+      "spread": 0.7411997731661397,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q99_eta032",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 21050,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 3.5843695966210657e-14,
+      "prox_residual": [
+        1.978351765708913e-06,
+        1.9838205235535513e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q99_eta032\\result.json",
+      "spread": 0.7409745614499188,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q995_eta032",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 21100,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 4.137253261174767e-14,
+      "prox_residual": [
+        1.977689771360351e-06,
+        1.983731117388077e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q995_eta032\\result.json",
+      "spread": 0.7409678130737127,
+      "status": "PASS"
+    },
+    {
+      "attempts": 2,
+      "config": "ball_glr_eta050",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 32250,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 1.114885196159224e-14,
+      "prox_residual": [
+        1.9785244514371406e-06,
+        1.985809718370118e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ball_glr_eta050\\result.json",
+      "spread": 0.5463065950527294,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q95_eta050",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        6.851468104000437e-17
+      ],
+      "iterations": 32700,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 7.412975101450165e-14,
+      "prox_residual": [
+        1.991272172696369e-06,
+        1.9976978694076695e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q95_eta050\\result.json",
+      "spread": 0.5463192536533352,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q99_eta050",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        6.851468104000437e-17
+      ],
+      "iterations": 32850,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 1.2448944498466526e-14,
+      "prox_residual": [
+        1.990245704768103e-06,
+        1.9985878369914073e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q99_eta050\\result.json",
+      "spread": 0.5463065950527256,
+      "status": "PASS"
+    },
+    {
+      "attempts": 1,
+      "config": "ic8_q995_eta050",
+      "converged": true,
+      "feasibility": [
+        0.0,
+        0.0
+      ],
+      "iterations": 32950,
+      "max_duplicate_fraction": 4.76258513120922e-05,
+      "objective_error": 1.0025727049098157e-14,
+      "prox_residual": [
+        1.9715423048805312e-06,
+        1.979944246175878e-06
+      ],
+      "source_json": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p2a_ic8_scale_adaptation\\ic8_q995_eta050\\result.json",
+      "spread": 0.546306595052725,
+      "status": "PASS"
+    }
+  ],
+  "total": 20,
+  "valid": 20
+}

@@ -1,0 +1,33 @@
+{
+  "graph_hash": "c1c50ca7104d768f673c7c2756507a9a374f979303cb0574d98eac9a88a7a27e",
+  "graph_k": 128,
+  "iterations": 200,
+  "lambda_smooth": 0.15,
+  "localization_errors_after_affine": {
+    "max_m": 1.1414313316345215,
+    "mean_m": 0.31874796748161316,
+    "median_m": 0.2929166555404663,
+    "p90_m": 0.5586746335029602,
+    "p95_m": 0.6346399784088135
+  },
+  "method": "B0+S2-J",
+  "metrics": {
+    "ct": 0.9982195917343384,
+    "ks": 0.06506457235343836,
+    "tw": 0.998222526526258
+  },
+  "num_samples": 20997,
+  "phase": "P0",
+  "postprocess_time_s": 0.47659900004509836,
+  "seed": 10,
+  "solver": {
+    "dtype": "float32, original function unchanged",
+    "iterations": 200,
+    "peak_vram_bytes": 111771648,
+    "relative_raw_linear_residual": 2.345189742450161e-06,
+    "time_s": 0.47659900004509836
+  },
+  "source_embedding": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+  "status": "completed",
+  "top_k": 512
+}

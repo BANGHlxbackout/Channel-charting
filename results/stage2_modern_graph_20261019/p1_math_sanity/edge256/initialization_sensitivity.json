@@ -1,0 +1,8 @@
+{
+  "nonconvex_global_optimality": "not claimed",
+  "relative_output_differences": {
+    "DoT-P-small": 0.0015027831194431985,
+    "FE-P-small": 0.013604447948662422
+  },
+  "scope": "256-node implementation smoke; does not replace P3 512/1024 G4 stability gate"
+}

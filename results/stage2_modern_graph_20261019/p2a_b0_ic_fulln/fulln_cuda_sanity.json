@@ -1,0 +1,80 @@
+[
+  {
+    "N": 20997,
+    "alpha": 0.5,
+    "box_projection_replay_chunks": 0,
+    "cuda_graph_error": null,
+    "cuda_graph_used": true,
+    "eta": 0.09517167367990964,
+    "feasibility": [
+      0.0,
+      0.0
+    ],
+    "group": false,
+    "iterations": 100,
+    "kind": "IC8",
+    "objective": [
+      1856.2237325235199,
+      2935.906226556037
+    ],
+    "peak_vram_bytes": 468262400,
+    "solve_time_s": 1.9147461000247858,
+    "stage": "SANITY_FULL_N_100_NOT_FORMAL_RESULT",
+    "stationarity": [
+      0.01152106006097407,
+      0.011611833398079474
+    ],
+    "wall_time_s": 2.148286100011319
+  },
+  {
+    "N": 20997,
+    "alpha": 0.5,
+    "box_projection_replay_chunks": 0,
+    "cuda_graph_error": null,
+    "cuda_graph_used": true,
+    "eta": 0.09517167367990964,
+    "feasibility": [
+      0.0,
+      0.0
+    ],
+    "group": false,
+    "iterations": 100,
+    "kind": "IC9",
+    "objective": [
+      64.34450280352613,
+      87.01681578471374
+    ],
+    "peak_vram_bytes": 418603520,
+    "solve_time_s": 2.432383099978324,
+    "stage": "SANITY_FULL_N_100_NOT_FORMAL_RESULT",
+    "stationarity": [
+      0.11419305322631955,
+      0.1306955148286207
+    ],
+    "wall_time_s": 2.5541657999856398
+  },
+  {
+    "N": 20997,
+    "alpha": 0.5,
+    "box_projection_replay_chunks": 0,
+    "cuda_graph_error": null,
+    "cuda_graph_used": true,
+    "eta": 0.09517167367990964,
+    "feasibility": [
+      0.0
+    ],
+    "group": true,
+    "iterations": 100,
+    "kind": "IC9",
+    "objective": [
+      131.5853718575842
+    ],
+    "peak_vram_bytes": 393437696,
+    "solve_time_s": 2.4371472999919206,
+    "stage": "SANITY_FULL_N_100_NOT_FORMAL_RESULT",
+    "stationarity": [
+      0.16017822898057424
+    ],
+    "wall_time_s": 2.5570561999920756
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "alpha": 0.2,
+  "eta": 0.09517167367990964,
+  "eta_factor": 1.0,
+  "group": true,
+  "kind": "IC9",
+  "method": "IC9-G",
+  "slug": "ic9-g_a20_eta100"
+}

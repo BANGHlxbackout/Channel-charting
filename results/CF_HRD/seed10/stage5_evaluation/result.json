@@ -1,0 +1,183 @@
+{
+  "description": "Fit affine alignment on train embeddings only, apply the same transform to held-out test embeddings, and report held-out localization and chart metrics for FCF and CF-HRD residual-student variants.",
+  "elapsed_s": 11.653119802474976,
+  "embedding_test": "results\\heldout\\seed10\\adp_siamese\\embedding_test.npz",
+  "embedding_train": "results\\heldout\\seed10\\adp_siamese\\embedding_train.npz",
+  "methods": {
+    "fcf": {
+      "affine_transform_shape": [
+        3,
+        3
+      ],
+      "test_embedding": "results\\heldout\\seed10\\adp_siamese\\embedding_test.npz",
+      "test_localization_errors": {
+        "max_m": 7.52541446685791,
+        "mean_m": 0.5766052007675171,
+        "median_m": 0.5007317066192627,
+        "p90_m": 1.0126441717147827,
+        "p95_m": 1.2026140689849854
+      },
+      "test_metrics": {
+        "ct": 0.9911282190571745,
+        "ks": 0.1083250756004707,
+        "n_neighbors": 209,
+        "tw": 0.9883927439736467
+      },
+      "train_embedding": "results\\heldout\\seed10\\adp_siamese\\embedding_train.npz",
+      "train_localization_errors": {
+        "max_m": 7.0105180740356445,
+        "mean_m": 0.5628963708877563,
+        "median_m": 0.49238675832748413,
+        "p90_m": 1.003797173500061,
+        "p95_m": 1.1875226497650146
+      }
+    },
+    "q_only": {
+      "affine_transform_shape": [
+        3,
+        3
+      ],
+      "test_embedding": "results\\CF_HRD\\seed10\\residual_student\\q_only_embedding_test.npz",
+      "test_localization_delta_vs_fcf": {
+        "max_m": 0.13157367706298828,
+        "mean_m": -0.06304079294204712,
+        "median_m": -0.05332782864570618,
+        "p90_m": -0.12765777111053467,
+        "p95_m": -0.10146307945251465
+      },
+      "test_localization_errors": {
+        "max_m": 7.656988143920898,
+        "mean_m": 0.51356440782547,
+        "median_m": 0.4474038779735565,
+        "p90_m": 0.884986400604248,
+        "p95_m": 1.1011509895324707
+      },
+      "test_metric_delta_vs_fcf": {
+        "ct": -0.0011321976125625577,
+        "ks": -0.007056310012515193,
+        "tw": -0.0003191619942475299
+      },
+      "test_metrics": {
+        "ct": 0.989996021444612,
+        "ks": 0.1012687655879555,
+        "n_neighbors": 209,
+        "tw": 0.9880735819793992
+      },
+      "train_embedding": "results\\CF_HRD\\seed10\\residual_student\\q_only_embedding_train.npz",
+      "train_localization_errors": {
+        "max_m": 7.428952217102051,
+        "mean_m": 0.4897826015949249,
+        "median_m": 0.42716026306152344,
+        "p90_m": 0.8560595512390137,
+        "p95_m": 1.043381929397583
+      }
+    },
+    "y0_only": {
+      "affine_transform_shape": [
+        3,
+        3
+      ],
+      "test_embedding": "results\\CF_HRD\\seed10\\residual_student\\y0_only_embedding_test.npz",
+      "test_localization_delta_vs_fcf": {
+        "max_m": 0.0,
+        "mean_m": 0.0,
+        "median_m": -1.1920928955078125e-07,
+        "p90_m": -3.5762786865234375e-07,
+        "p95_m": 0.0
+      },
+      "test_localization_errors": {
+        "max_m": 7.52541446685791,
+        "mean_m": 0.5766052007675171,
+        "median_m": 0.5007315874099731,
+        "p90_m": 1.012643814086914,
+        "p95_m": 1.2026140689849854
+      },
+      "test_metric_delta_vs_fcf": {
+        "ct": 0.0001305354735370301,
+        "ks": 4.537134929286091e-05,
+        "tw": 1.1821585880533725e-05
+      },
+      "test_metrics": {
+        "ct": 0.9912587545307115,
+        "ks": 0.10837044694976355,
+        "n_neighbors": 209,
+        "tw": 0.9884045655595273
+      },
+      "train_embedding": "results\\CF_HRD\\seed10\\residual_student\\y0_only_embedding_train.npz",
+      "train_localization_errors": {
+        "max_m": 7.0105180740356445,
+        "mean_m": 0.5628963708877563,
+        "median_m": 0.49238699674606323,
+        "p90_m": 1.0037972927093506,
+        "p95_m": 1.187522292137146
+      }
+    },
+    "y0_q": {
+      "affine_transform_shape": [
+        3,
+        3
+      ],
+      "test_embedding": "results\\CF_HRD\\seed10\\residual_student\\y0_q_embedding_test.npz",
+      "test_localization_delta_vs_fcf": {
+        "max_m": -0.23225784301757812,
+        "mean_m": -0.08951562643051147,
+        "median_m": -0.07464200258255005,
+        "p90_m": -0.18276309967041016,
+        "p95_m": -0.1815180778503418
+      },
+      "test_localization_errors": {
+        "max_m": 7.293156623840332,
+        "mean_m": 0.4870895743370056,
+        "median_m": 0.42608970403671265,
+        "p90_m": 0.8298810720443726,
+        "p95_m": 1.0210959911346436
+      },
+      "test_metric_delta_vs_fcf": {
+        "ct": 0.0005543990878845717,
+        "ks": -0.009254418587624186,
+        "tw": 0.0009103451176124544
+      },
+      "test_metrics": {
+        "ct": 0.9916826181450591,
+        "ks": 0.09907065701284651,
+        "n_neighbors": 209,
+        "tw": 0.9893030890912592
+      },
+      "train_embedding": "results\\CF_HRD\\seed10\\residual_student\\y0_q_embedding_train.npz",
+      "train_localization_errors": {
+        "max_m": 6.887678146362305,
+        "mean_m": 0.4622602164745331,
+        "median_m": 0.40500932931900024,
+        "p90_m": 0.8012697696685791,
+        "p95_m": 0.9919922351837158
+      }
+    }
+  },
+  "num_test": 4199,
+  "num_train": 16798,
+  "protocol": "cf_hrd_stage5_heldout_evaluation",
+  "residual_student_run": "results\\CF_HRD\\seed10\\residual_student",
+  "seed": 10,
+  "uses_test_positions_for_evaluation_only": true,
+  "uses_train_affine_for_test": true,
+  "verdict": {
+    "positive_stage5_signal": true,
+    "y0_q_better_than_y0_only": {
+      "max_m": true,
+      "mean_m": true,
+      "p90_m": true,
+      "p95_m": true
+    },
+    "y0_q_improves_fcf": {
+      "max_m": true,
+      "mean_m": true,
+      "p90_m": true,
+      "p95_m": true
+    },
+    "y0_q_metric_delta_vs_fcf": {
+      "ct_delta": 0.0005543990878845717,
+      "ks_delta": -0.009254418587624186,
+      "tw_delta": 0.0009103451176124544
+    }
+  }
+}

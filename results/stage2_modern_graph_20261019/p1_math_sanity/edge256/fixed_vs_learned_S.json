@@ -1,0 +1,28 @@
+{
+  "dot-p-small": {
+    "comparisons": {
+      "author": {
+        "output_relative_difference": 0.0908201965072169,
+        "structure_frobenius_difference": 11.321899669216233
+      },
+      "prior": {
+        "output_relative_difference": 0.09092383969275718,
+        "structure_frobenius_difference": 11.380192682197581
+      }
+    },
+    "reference_objective": 263.5951939067354
+  },
+  "fe-p-small": {
+    "comparisons": {
+      "author": {
+        "output_relative_difference": 0.13563421167433137,
+        "structure_frobenius_difference": 11.530698295281967
+      },
+      "prior": {
+        "output_relative_difference": 0.1352226172878888,
+        "structure_frobenius_difference": 11.502251226354577
+      }
+    },
+    "reference_objective": 262.2734055292899
+  }
+}

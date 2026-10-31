@@ -1,0 +1,26 @@
+{
+  "a": 233.503696422285,
+  "anchor": "original Jacobi200 output, not CG or GT-selected output",
+  "c": [
+    -0.14667023454724093,
+    0.05161070973663731
+  ],
+  "delta0": 0.09517167367990964,
+  "denominator_centered_frobenius": 33835.48328562125,
+  "formula": "||Z_B0+S2-J-Y_B0||_F / ||Y_B0-mean(Y_B0)||_F",
+  "input_B0": {
+    "bytes": 504696,
+    "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+    "sha256": "8382214735e441f2b18905c9e6faa490674d7b0837717170ca3489d01d832d8e"
+  },
+  "jacobi_output": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\embedding.npz",
+  "jacobi_output_hash": "4f0de40087b91b011261f8e9e8cdeca43972ccdaff7f4c39ef3649a34e5de4ac",
+  "normalized_delta0": 0.09517167367990967,
+  "numerator_frobenius": 3220.179574061183,
+  "parameters": {
+    "graph_k": 128,
+    "iterations": 200,
+    "lambda_smooth": 0.15,
+    "top_k": 512
+  }
+}

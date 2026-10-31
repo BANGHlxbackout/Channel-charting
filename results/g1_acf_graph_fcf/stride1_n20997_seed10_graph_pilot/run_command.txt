@@ -1,0 +1,1 @@
+D:\anaconda3\envs\diffusion_charting\python.exe run_g1_acf_graph_fcf.py --data-path datasets/adp_old_shard4 --distance-run results/adp_old_fused/stride1_n20997_seed10 --stride 1 --seed 10 --mode graph --phase pilot --device cuda:0 --feature-mode stream --feature-chunk-size 128 --max-steps 5 --eval-every 5 --patience-evals 2 --out-dir results/g1_acf_graph_fcf

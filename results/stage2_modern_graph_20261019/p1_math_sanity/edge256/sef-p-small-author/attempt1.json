@@ -1,0 +1,18 @@
+{
+  "converged": false,
+  "diagonal_max": 0.0,
+  "equality_residual": 0.002584643872109312,
+  "feasible_objective": 191.42870194434096,
+  "iterations": 5000,
+  "objective": 190.69238154815838,
+  "pcg_max_relative_residual": 0.0,
+  "penalties": {
+    "mu1": 10.0,
+    "mu2": 2.5403645518979925,
+    "mu3": 10.0,
+    "mu4": 10.0,
+    "rho": 1.0
+  },
+  "row_sum_residual": 0.0,
+  "stationarity": 0.00024320185909647453
+}

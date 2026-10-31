@@ -1,0 +1,51 @@
+D:\diffusion_refined_charting\methods\g1_acf_graph_fcf\graph_utils.py:116: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\Context.cpp:767.)
+  adj = torch.sparse_coo_tensor(indices, values_t, (n, n)).coalesce()
+{"step": 5, "train_loss": 246.43026733398438, "lr": 5e-05, "elapsed_s": 27.266126500006067, "validation_loss": 246.96682739257812}
+RESULT {
+  "status": "completed",
+  "phase": "pilot",
+  "mode": "graph",
+  "affinity_source": "adp",
+  "dataset": "D:\\diffusion_refined_charting\\datasets\\adp_old_shard4",
+  "distance_run": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10",
+  "num_samples": 20997,
+  "stride": 1,
+  "seed": 10,
+  "input_dim": 26624,
+  "hidden_dim": 512,
+  "num_layers": 2,
+  "dropout": 0.1,
+  "neighbors": 20,
+  "margin": 51.49518966674805,
+  "feature_mode": "stream",
+  "feature_chunk_size": 128,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "pairs_per_step": 65536,
+  "validation_pairs": 200000,
+  "validation_pair_hash": "86664796b714af93838f11d8c37aebc3b895913671b9347d231072aed4772f80",
+  "first_train_pair_hash": "d645688026a9a3d2930547069e7d5c6432148b26e67e0346fa9ee52ae4c29f9d",
+  "max_steps": 5,
+  "best_step": 5,
+  "best_validation_loss": 246.96682739257812,
+  "actual_steps": 5,
+  "train_time_s": 27.51049210000201,
+  "total_time_s": 47.973617299998295,
+  "peak_vram_bytes": 707292672,
+  "parameter_count": 14162434,
+  "metrics": {
+    "ct": 0.7040742310418048,
+    "tw": 0.6146531028069239,
+    "ks": 0.5989681920981041,
+    "n_neighbors": 209
+  },
+  "localization_errors_after_affine": {
+    "mean_m": 3.4922306537628174,
+    "median_m": 3.214146614074707,
+    "p90_m": 6.270279407501221,
+    "p95_m": 7.216507434844971,
+    "max_m": 10.748052597045898
+  },
+  "protocol": "same-node transductive chart quality; GT used only after training"
+}

@@ -1,0 +1,5 @@
+{
+  "message": "Uniform Stage-2 reproduction failed; adaptive variants were not run.",
+  "tolerance": 0.0001,
+  "uniform_saved_embedding_max_abs": 0.000274658203125
+}

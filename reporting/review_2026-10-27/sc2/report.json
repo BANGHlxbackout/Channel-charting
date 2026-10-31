@@ -1,0 +1,69 @@
+{
+  "report": {
+    "title": "连接权重调整的对照汇报",
+    "date": "2026 年 10 月 9 日",
+    "scope": "DICHASUS · N = 20,997",
+    "summary": "按共同支持评分调整连接权重后，平均误差略降，但高误差端变差，也没有超过按相同距离范围随机选边的对照。"
+  },
+  "repository": {
+    "remote": "origin",
+    "url": "https://gitee.com/cactus-jacque/diffusion-charting",
+    "branch": "codex/sc2-stage2-edge-consensus",
+    "commit": "f927cd53669f1eca1230e982233d1c04bb4b3f24",
+    "published": [
+      {
+        "label": "技术报告",
+        "path": "results/sc2_stage2_edge_consensus/REPORT.md"
+      },
+      {
+        "label": "选边诊断图",
+        "path": "results/sc2_stage2_edge_consensus/posthoc_selected_edge_diagnostic.png"
+      },
+      {
+        "label": "逐点损害图",
+        "path": "results/sc2_stage2_edge_consensus/posthoc_repair_harm_map.png"
+      }
+    ],
+    "pending": []
+  },
+  "pages": [
+    {
+      "heading": "问题与方法",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "原有精修图中的连接可能有误。实验尝试根据邻近关系的共同支持程度选择部分连接，将其权重减半，并与相同数量、相同距离范围的随机选边比较。"
+        },
+        {
+          "type": "figure",
+          "path": "results/sc2_stage2_edge_consensus/posthoc_selected_edge_diagnostic.png",
+          "width_cm": 15.5,
+          "caption": "图 1  两种选边方法中，物理跨度偏大的连接所占比例。",
+          "source": {
+            "kind": "gitee",
+            "path": "results/sc2_stage2_edge_consensus/posthoc_selected_edge_diagnostic.png"
+          }
+        }
+      ]
+    },
+    {
+      "heading": "观察与结论",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "定向选边使平均误差从 0.318748 m 降至 0.318021 m，P95 却从 0.634640 m 升至 0.636267 m；随机对照的平均误差中位数为 0.317755 m。该评分能挑出跨度偏大的连接，但尚不能指导有净收益的调整。"
+        },
+        {
+          "type": "figure",
+          "path": "results/sc2_stage2_edge_consensus/posthoc_repair_harm_map.png",
+          "width_cm": 14.5,
+          "caption": "图 2  与原图相比，两种方法各自修复和损害的样本位置。",
+          "source": {
+            "kind": "gitee",
+            "path": "results/sc2_stage2_edge_consensus/posthoc_repair_harm_map.png"
+          }
+        }
+      ]
+    }
+  ]
+}

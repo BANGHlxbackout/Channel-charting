@@ -1,0 +1,238 @@
+{
+  "alpha": 0.5,
+  "author_sources": {
+    "commit": "4db39904e4099d82cef686d4732c33150814ece4",
+    "files": [
+      {
+        "file": "utils.py",
+        "sha256": "8720e2ee53384c022d9c17bf1160f48cb5d8746d50a9c89e55e9c7fcb64ecf30",
+        "url": "https://raw.githubusercontent.com/bzho3923/GNN_DoT/4db39904e4099d82cef686d4732c33150814ece4/utils.py"
+      },
+      {
+        "file": "denoising_filters.py",
+        "sha256": "1bc48598521dce6c3f193f173c437d26f8baa8d3dae553933390dfba3cd4d4f9",
+        "url": "https://raw.githubusercontent.com/bzho3923/GNN_DoT/4db39904e4099d82cef686d4732c33150814ece4/denoising_filters.py"
+      },
+      {
+        "file": "main.py",
+        "sha256": "91cadb0784e61cd3c4e0c263e5174df3be361944870b8344e134336cde16b83a",
+        "url": "https://raw.githubusercontent.com/bzho3923/GNN_DoT/4db39904e4099d82cef686d4732c33150814ece4/main.py"
+      },
+      {
+        "file": "config.py",
+        "sha256": "5abb848463224ac86395e30f15d6816503d9b1de127807d1a6fcf06e4015a63c",
+        "url": "https://raw.githubusercontent.com/bzho3923/GNN_DoT/4db39904e4099d82cef686d4732c33150814ece4/config.py"
+      },
+      {
+        "file": "README.md",
+        "sha256": "ff43f421dfca6447924b2f661220cbb839bd4415fa8476a381eb63a153b344b5",
+        "url": "https://raw.githubusercontent.com/bzho3923/GNN_DoT/4db39904e4099d82cef686d4732c33150814ece4/README.md"
+      }
+    ]
+  },
+  "code": [
+    {
+      "bytes": 6360,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\edge_small.py",
+      "sha256": "636f70d63feb2bccf787f61c16a9851dc56a2cf024ceeb8d75d70154c21f5695"
+    },
+    {
+      "bytes": 3543,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\framelet_operator.py",
+      "sha256": "1ee67207cc1b468a168d61fc59d4beef24d9fb252e541ac561b33220f070d21f"
+    },
+    {
+      "bytes": 4690,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\framelet_solver.py",
+      "sha256": "baa3ca4e846b8ffea247e6d2a7074892096c9f027f25702b2b37406c9256ee83"
+    },
+    {
+      "bytes": 5283,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\ic_solver.py",
+      "sha256": "58b9cfa1b7fa91bd6879065b200456a7b02d0527524298cb82b1c7aacbbd45f9"
+    },
+    {
+      "bytes": 90,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\__init__.py",
+      "sha256": "d0e5afa658cae9b6fae38a303630ab8a9b79dd0a84ee3e5fbceb6d0d9ea04421"
+    },
+    {
+      "bytes": 1013,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\cases.py",
+      "sha256": "2477ddfee31f2663593812713b318f9b5415948f36d7df780596e6c36e6fa0a2"
+    },
+    {
+      "bytes": 3190,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\reference.py",
+      "sha256": "c12293462f73e3f5f125a765e6565c0e6580f74adc8ffc54e8482aa7d022548f"
+    },
+    {
+      "bytes": 30308,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\run.py",
+      "sha256": "95d705db67a5f7804c0b524bf067018fdab8d96cefb5283125db0960dfa03d82"
+    },
+    {
+      "bytes": 70,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\__init__.py",
+      "sha256": "6e81ea5e66be83bd02b9d120b1ef4f9a11b76b983514903bbb2bd99f96eaff77"
+    }
+  ],
+  "commands": [
+    [
+      "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+      "-m",
+      "diagnostics.stage2_p1.run",
+      "--family",
+      "ic"
+    ],
+    [
+      "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+      "-m",
+      "diagnostics.stage2_p1.run",
+      "--family",
+      "framelet"
+    ],
+    [
+      "D:\\anaconda3\\envs\\diffusion_charting\\python.exe",
+      "-m",
+      "diagnostics.stage2_p1.run",
+      "--family",
+      "edge"
+    ]
+  ],
+  "edge_smoke_size": 256,
+  "environment": {
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+    "scipy": "1.17.1"
+  },
+  "eta": 0.09517167367990964,
+  "families": {
+    "Edge": "FAIL",
+    "Framelet": "PASS",
+    "IC": "PASS"
+  },
+  "final_code": [
+    {
+      "bytes": 6360,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\edge_small.py",
+      "sha256": "636f70d63feb2bccf787f61c16a9851dc56a2cf024ceeb8d75d70154c21f5695"
+    },
+    {
+      "bytes": 3543,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\framelet_operator.py",
+      "sha256": "1ee67207cc1b468a168d61fc59d4beef24d9fb252e541ac561b33220f070d21f"
+    },
+    {
+      "bytes": 4690,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\framelet_solver.py",
+      "sha256": "baa3ca4e846b8ffea247e6d2a7074892096c9f027f25702b2b37406c9256ee83"
+    },
+    {
+      "bytes": 5283,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\ic_solver.py",
+      "sha256": "58b9cfa1b7fa91bd6879065b200456a7b02d0527524298cb82b1c7aacbbd45f9"
+    },
+    {
+      "bytes": 90,
+      "path": "D:\\diffusion_refined_charting\\methods\\stage2_modern_graph\\__init__.py",
+      "sha256": "d0e5afa658cae9b6fae38a303630ab8a9b79dd0a84ee3e5fbceb6d0d9ea04421"
+    },
+    {
+      "bytes": 1013,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\cases.py",
+      "sha256": "2477ddfee31f2663593812713b318f9b5415948f36d7df780596e6c36e6fa0a2"
+    },
+    {
+      "bytes": 3190,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\reference.py",
+      "sha256": "c12293462f73e3f5f125a765e6565c0e6580f74adc8ffc54e8482aa7d022548f"
+    },
+    {
+      "bytes": 22868,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\report.py",
+      "sha256": "191f450d588cf8690126f3a9b0698c53aa8dbb675664d6a6094ca7084cd6c074"
+    },
+    {
+      "bytes": 30361,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\run.py",
+      "sha256": "4ac60aeee078d1934623b2369f75bb1634997caa00d2aa8a438a602857ac508d"
+    },
+    {
+      "bytes": 70,
+      "path": "D:\\diffusion_refined_charting\\diagnostics\\stage2_p1\\__init__.py",
+      "sha256": "6e81ea5e66be83bd02b9d120b1ef4f9a11b76b983514903bbb2bd99f96eaff77"
+    }
+  ],
+  "gate_count": 82,
+  "gate_fail_count": 9,
+  "git_branch": "codex/new-stage1",
+  "git_head": "f63652fc3bec725f4fddd1105d13e288cbf233dc",
+  "initial_git_status": " D CF_HRD/README.md\n D CF_HRD/__init__.py\n D CF_HRD/closed_loop_validation.md\n D CF_HRD/plot_residual_student_charts.py\n D CF_HRD/run_cross_fitted_teacher.py\n D CF_HRD/run_landmark_context.py\n D CF_HRD/run_residual_student.py\n D CF_HRD/run_stage5_evaluation.py\n D codex_idea/cross_fitted_harmonic_residual_distillation.md\n M common_metrics.py\n D docs/tasks/sc2_stage2_edge_consensus.md\n D preprocess_adp_old_shard.py\n M run_adp_siamese.py\n?? .codex/\n?? AGENTS.md\n?? archive/\n?? codex_idea/archive/\n?? diagnostics/stage2_p0/\n?? diagnostics/stage2_p1/\n?? docs/PROJECT_GUIDE.md\n?? docs/research/\n?? docs/superpowers/plans/2026-07-09-smoothness-audited-adaptive-diffusion.md\n?? docs/tasks/D1_A_B_C_v2_2026-10-17.md\n?? docs/tasks/G1_ACF_2026-10-17.md\n?? docs/tasks/G1_GraphFCF.md\n?? docs/tasks/G1_S2_2026-10-17.md\n?? docs/tasks/Stage2_2026-10-19.md\n?? docs/tasks/archive/\n?? docs/tasks/baseline_optimization_next_cycle.md\n?? docs/tasks/geodesic_stage1_loss.md\n?? docs/tasks/phase2c_empirical_diagnosis.md\n?? methods/multiview_edge_uncertainty/\n?? methods/sc2_stage2_adaptive_fidelity/\n?? methods/stage2_modern_graph/\n?? references/\n?? run_smoothness_audited_refined_charting.py\n?? tests/test_g1_graph_propagation_diagnostic.py\n?? tests/test_g1_stage2_comparison.py\n?? tests/test_multiview_adp_gate0.py\n?? tests/test_sc2_stage2_adaptive_fidelity.py\n?? tests/test_stage2_p0.py\n?? tests/test_stage2_p1_math.py\n?? tmp/\n",
+  "phase": "P1",
+  "phase_status": {
+    "P0": "PASS accepted by user",
+    "P1": "P1_COMPLETED_WITH_BLOCKER",
+    "P2A": "STOP not authorized",
+    "P2B": "STOP not authorized",
+    "P3": "STOP not authorized",
+    "P4": "STOP not authorized",
+    "P5": "STOP not authorized"
+  },
+  "protected_inputs": [
+    {
+      "bytes": 11548,
+      "path": "D:\\diffusion_refined_charting\\AGENTS.md",
+      "sha256": "536b80bba241cd559d3fd4a6ef44344dc5441dfc8b7f824db68af77cee114655"
+    },
+    {
+      "bytes": 986,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\delta0.json",
+      "sha256": "1e60c0f5d844595395ba457e07b6f2a725078020aa9b01fd7cced576c7ccc8fe"
+    },
+    {
+      "bytes": 13334,
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\manifest.json",
+      "sha256": "4d78066113626a798b0b5d0c129dbe6131a7a1c9f7591e19a09ad05c0fb036ce"
+    }
+  ],
+  "protected_inputs_unchanged": true,
+  "reference": {
+    "cvxpy": "1.9.3",
+    "installed_solvers": [
+      "CLARABEL",
+      "SCS",
+      "SCIPY",
+      "HIGHS",
+      "OSQP"
+    ],
+    "solver": "CLARABEL"
+  },
+  "reporting_code_change": "run.py only changed completed vs NONCONVERGED artifact status; report.py added after math runs began. Solver/cases/reference sources unchanged.",
+  "run_times_s": [
+    9.545380399969872,
+    26.8746872000047,
+    735.9366339999833
+  ],
+  "scope": "small-graph math only; STOP before P2A",
+  "solver_code_unchanged_during_run": true,
+  "status": "P1_COMPLETED_WITH_BLOCKER",
+  "stop": "P1 only; P2A awaits user review",
+  "synthetic_nu": 0.1,
+  "synthetic_sizes": [
+    16,
+    32,
+    64
+  ],
+  "test_source": {
+    "bytes": 3447,
+    "path": "D:\\diffusion_refined_charting\\tests\\test_stage2_p1_math.py",
+    "sha256": "3f8b568b56b649055dd24f6a50fa23713b0282022b957d9bc3ed7fc6e216e348"
+  },
+  "visual_review": {
+    "inspected": "IC/FN comparison for N16/32/64 and raw+affine Edge256, all original plot format; failed Edge columns labeled NONCONVERGED",
+    "real_data_performance_claim": false,
+    "status": "PASS"
+  }
+}

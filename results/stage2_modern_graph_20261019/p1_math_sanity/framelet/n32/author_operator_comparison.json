@@ -1,0 +1,10 @@
+{
+  "active_bands": [
+    "low2",
+    "high1",
+    "high2"
+  ],
+  "author_commit": "4db39904e4099d82cef686d4732c33150814ece4",
+  "minimal_n": 3,
+  "relative_error": 1.6876378911052096e-16
+}

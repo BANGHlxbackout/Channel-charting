@@ -1,0 +1,353 @@
+{
+  "IC8_active_count": 10,
+  "IC8_advisor_count": 0,
+  "IC8_distinct_count": 8,
+  "IC8_survivor_count": 0,
+  "IC8_target_count": 0,
+  "IC8_task_status": "NO_GO_EXPLORATORY",
+  "configurations": {
+    "ball_glr_eta003": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.15265512282258853,
+        "mean_m": -0.16105506536420275,
+        "p95_m": -0.23286117433640394
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.15265505764454404,
+        "mean_m": -0.1610549592093471,
+        "p95_m": -0.2328597266698737
+      }
+    },
+    "ball_glr_eta008": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": 0.00336523273110721,
+        "mean_m": -0.0014355535594732895,
+        "p95_m": -0.009105995732506072
+      },
+      "relative_improvement_vs_J": {
+        "ks": 0.0033652890868236048,
+        "mean_m": -0.0014354619985733747,
+        "p95_m": -0.009104810806736726
+      }
+    },
+    "ball_glr_eta016": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.1603025456561642,
+        "mean_m": -0.12642793241104375,
+        "p95_m": -0.22435522234880517
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.1603024800456885,
+        "mean_m": -0.12642782942213465,
+        "p95_m": -0.2243537846702462
+      }
+    },
+    "ball_glr_eta032": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.8303373272691957,
+        "mean_m": -0.6772639409471116,
+        "p95_m": -0.880995152691277
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.8303372237709287,
+        "mean_m": -0.6772637875954604,
+        "p95_m": -0.880992943964307
+      }
+    },
+    "ball_glr_eta050": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -1.3830726914079619,
+        "mean_m": -1.0512694365054496,
+        "p95_m": -1.2847478709742812
+      },
+      "relative_improvement_vs_J": {
+        "ks": -1.383072556654717,
+        "mean_m": -1.0512692489586075,
+        "p95_m": -1.2847451881474619
+      }
+    },
+    "ic8_q95_eta003": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.15617218167470953,
+        "mean_m": -0.1456171082345954,
+        "p95_m": -0.21419538506028943
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.15617211629778943,
+        "mean_m": -0.14561700349122672,
+        "p95_m": -0.21419395931174878
+      }
+    },
+    "ic8_q95_eta008": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": 0.0015402852891402273,
+        "mean_m": -0.004510165863581892,
+        "p95_m": -0.008477405383736088
+      },
+      "relative_improvement_vs_J": {
+        "ks": 0.0015403417480501125,
+        "mean_m": -0.004510074021571257,
+        "p95_m": -0.008476221196078404
+      }
+    },
+    "ic8_q95_eta016": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.16557051364776787,
+        "mean_m": -0.12904478716564258,
+        "p95_m": -0.23130815249020745
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.1655704477394096,
+        "mean_m": -0.1290446839374754,
+        "p95_m": -0.23130670664728703
+      }
+    },
+    "ic8_q95_eta032": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.8353192918511321,
+        "mean_m": -0.6818557734924369,
+        "p95_m": -0.88375110442896
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.8353191880711548,
+        "mean_m": -0.6818556197209559,
+        "p95_m": -0.8837488924658599
+      }
+    },
+    "ic8_q95_eta050": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -1.383585361115338,
+        "mean_m": -1.051677920952737,
+        "p95_m": -1.2852496839303273
+      },
+      "relative_improvement_vs_J": {
+        "ks": -1.3835852263331037,
+        "mean_m": -1.0516777333685474,
+        "p95_m": -1.2852470005142627
+      }
+    },
+    "ic8_q995_eta003": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.152080027547353,
+        "mean_m": -0.1474257873233932,
+        "p95_m": -0.21777097694763145
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.15207996240182786,
+        "mean_m": -0.14742568241465764,
+        "p95_m": -0.21776954700051207
+      }
+    },
+    "ic8_q995_eta008": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": 0.003380750939586465,
+        "mean_m": -0.001403470569145931,
+        "p95_m": -0.009117956136929251
+      },
+      "relative_improvement_vs_J": {
+        "ks": 0.0033808072944253673,
+        "mean_m": -0.0014033790111793528,
+        "p95_m": -0.009116771197115603
+      }
+    },
+    "ic8_q995_eta016": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.1602784680862636,
+        "mean_m": -0.12636170084431317,
+        "p95_m": -0.22437092005266118
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.16027840247714936,
+        "mean_m": -0.12636159786145962,
+        "p95_m": -0.22436948235566945
+      }
+    },
+    "ic8_q995_eta032": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.830345547021243,
+        "mean_m": -0.6772639800632616,
+        "p95_m": -0.8810148631490266
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.830345443522511,
+        "mean_m": -0.6772638267116067,
+        "p95_m": -0.8810126543989117
+      }
+    },
+    "ic8_q995_eta050": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -1.3830726914079046,
+        "mean_m": -1.051269436505448,
+        "p95_m": -1.2847478709742732
+      },
+      "relative_improvement_vs_J": {
+        "ks": -1.3830725566546598,
+        "mean_m": -1.0512692489586062,
+        "p95_m": -1.2847451881474539
+      }
+    },
+    "ic8_q99_eta003": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.15294825852097801,
+        "mean_m": -0.14622735789538988,
+        "p95_m": -0.21529331038311272
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.1529481933263579,
+        "mean_m": -0.14622725309622628,
+        "p95_m": -0.2152918833453517
+      }
+    },
+    "ic8_q99_eta008": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": 0.0033789382825879745,
+        "mean_m": -0.0014680719262976296,
+        "p95_m": -0.009115522027101771
+      },
+      "relative_improvement_vs_J": {
+        "ks": 0.003378994637529375,
+        "mean_m": -0.001467980362424572,
+        "p95_m": -0.009114337090146335
+      }
+    },
+    "ic8_q99_eta016": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.1603949047132067,
+        "mean_m": -0.12633698774691596,
+        "p95_m": -0.22370705916276287
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.16039483909750843,
+        "mean_m": -0.1263368847663219,
+        "p95_m": -0.22370562224529866
+      }
+    },
+    "ic8_q99_eta032": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -0.8304130638245771,
+        "mean_m": -0.6772810868064696,
+        "p95_m": -0.8806650114957006
+      },
+      "relative_improvement_vs_J": {
+        "ks": -0.8304129603220275,
+        "mean_m": -0.6772809334532506,
+        "p95_m": -0.8806628031563933
+      }
+    },
+    "ic8_q99_eta050": {
+      "ADVISOR_HIT": false,
+      "SOLVER_LEVEL_GAIN_ONLY": false,
+      "SURVIVOR": false,
+      "TARGET_HIT": false,
+      "label": "NO_GO",
+      "relative_improvement_vs_CG": {
+        "ks": -1.3830726914079114,
+        "mean_m": -1.0512694365054491,
+        "p95_m": -1.284747870974276
+      },
+      "relative_improvement_vs_J": {
+        "ks": -1.3830725566546667,
+        "mean_m": -1.051269248958607,
+        "p95_m": -1.2847451881474568
+      }
+    }
+  },
+  "mechanism_positive_count": 3,
+  "mechanism_status": "POSITIVE_EXPLORATORY_SIGNAL",
+  "stop": "20 configurations completed; no new grid, branch, perturbation or training authorized"
+}

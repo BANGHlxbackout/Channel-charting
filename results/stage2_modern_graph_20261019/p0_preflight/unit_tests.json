@@ -1,0 +1,6 @@
+{
+  "command": "D:\\anaconda3\\envs\\diffusion_charting\\python.exe -m unittest tests.test_stage2_p0 -v",
+  "tests": 3,
+  "passed": 3,
+  "scope": "P0 incidence and quadratic-baseline checks only; no P1"
+}

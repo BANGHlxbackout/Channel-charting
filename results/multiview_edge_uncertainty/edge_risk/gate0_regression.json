@@ -1,0 +1,202 @@
+{
+  "status": "confirmed",
+  "input": {
+    "data_path": "D:\\diffusion_refined_charting\\datasets\\adp_old_shard4",
+    "distance_run": "D:\\diffusion_refined_charting\\results\\adp_old_fused\\stride1_n20997_seed10"
+  },
+  "config": {
+    "block_size": 64,
+    "device": "cuda:0",
+    "k_view": 20,
+    "kappa_check": 0.5,
+    "source_indices": [
+      0,
+      677,
+      1354,
+      2031,
+      2709,
+      3386,
+      4063,
+      4741,
+      5418,
+      6095,
+      6772,
+      7450,
+      8127,
+      8804,
+      9482,
+      10159,
+      10836,
+      11513,
+      12191,
+      12868,
+      13545,
+      14223,
+      14900,
+      15577,
+      16254,
+      16932,
+      17609,
+      18286,
+      18964,
+      19641,
+      20318,
+      20996
+    ]
+  },
+  "software": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "torch": "2.11.0+cu128"
+  },
+  "checks": {
+    "view_mapping": {
+      "passed": true,
+      "stored_views": [
+        "C",
+        "B",
+        "A",
+        "D"
+      ]
+    },
+    "input_shapes_and_order": {
+      "passed": true,
+      "n": 20997,
+      "h_shape": [
+        20997,
+        32,
+        13
+      ],
+      "matrix_shape": [
+        20997,
+        20997
+      ],
+      "neighbors": 20,
+      "gamma": 12.983333587646484
+    },
+    "raw_csi_order_spotcheck": {
+      "passed": true,
+      "checked_raw_indices": [
+        0,
+        4
+      ],
+      "max_h_abs": 0.0,
+      "max_timestamp_abs": 0.0
+    },
+    "baseline_graph": {
+      "passed": true,
+      "nnz": 419940,
+      "components": 1,
+      "self_edges": 0
+    },
+    "baseline_shortest_paths": {
+      "passed": true,
+      "sources": [
+        0,
+        677,
+        1354,
+        2031,
+        2709,
+        3386,
+        4063,
+        4741,
+        5418,
+        6095,
+        6772,
+        7450,
+        8127,
+        8804,
+        9482,
+        10159,
+        10836,
+        11513,
+        12191,
+        12868,
+        13545,
+        14223,
+        14900,
+        15577,
+        16254,
+        16932,
+        17609,
+        18286,
+        18964,
+        19641,
+        20318,
+        20996
+      ],
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "mismatches": 0
+    },
+    "baseline_reciprocal_weights": {
+      "passed": true,
+      "differing_pairs": 2759,
+      "max_abs_difference": 1.1444091796875e-05
+    },
+    "view_adp_range_and_sum": {
+      "passed": true,
+      "min_by_view": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_by_view": [
+        12.900444984436035,
+        12.88093090057373,
+        12.852424621582031,
+        12.875384330749512
+      ],
+      "max_abs_regression": 9.5367431640625e-06,
+      "regression_mismatches": 0
+    },
+    "local_scales": {
+      "passed": true,
+      "min_by_view": [
+        0.05656147003173828,
+        0.05386543273925781,
+        0.08763504028320312,
+        0.1144866943359375
+      ],
+      "max_by_view": [
+        9.765287399291992,
+        9.723417282104492,
+        9.446919441223145,
+        9.533849716186523
+      ]
+    },
+    "view_symmetry_sample": {
+      "passed": true,
+      "tested_pairs": 1024,
+      "max_abs": 1.9073486328125e-06
+    },
+    "score_finite_and_permutation": {
+      "passed": true,
+      "s95": 0.36862263868974504,
+      "adp_source_edges": 49626,
+      "time_source_edges": 179147
+    },
+    "fused_source_and_cost": {
+      "passed": true,
+      "max_abs": 0.0,
+      "source_mismatches": 0
+    },
+    "kappa_zero_exact_graph": {
+      "passed": true
+    },
+    "risk_graph_invariants": {
+      "passed": true,
+      "components": 1,
+      "max_reciprocal_factor_difference": 2.384185791015625e-07,
+      "max_baseline_reciprocal_cost_difference": 1.1444091796875e-05,
+      "changed_entries": 77762
+    }
+  },
+  "elapsed_s": 30.038562536239624,
+  "artifacts": [
+    "edge_risk/edge_observations.npz",
+    "edge_risk/gate0_regression.json"
+  ]
+}

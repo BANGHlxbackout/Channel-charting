@@ -1,0 +1,44 @@
+[
+  {
+    "N": 256,
+    "metric_subset_size": 51,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\comparison\\comparison.csv",
+    "status": "PASS"
+  },
+  {
+    "N": 16,
+    "metric_subset_size": 3,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\comparison\\comparison.csv",
+    "status": "PASS"
+  },
+  {
+    "N": 32,
+    "metric_subset_size": 6,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\comparison\\comparison.csv",
+    "status": "PASS"
+  },
+  {
+    "N": 64,
+    "metric_subset_size": 12,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\comparison\\comparison.csv",
+    "status": "PASS"
+  },
+  {
+    "N": 16,
+    "metric_subset_size": 3,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\comparison\\comparison.csv",
+    "status": "PASS"
+  },
+  {
+    "N": 32,
+    "metric_subset_size": 6,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\comparison\\comparison.csv",
+    "status": "PASS"
+  },
+  {
+    "N": 64,
+    "metric_subset_size": 12,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\comparison\\comparison.csv",
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "evaluation_status": "EVALUATED_FROZEN_PROTOCOL",
+  "localization_errors_after_affine": {
+    "max_m": 1.1414313316345215,
+    "mean_m": 0.31874796748161316,
+    "median_m": 0.2929166555404663,
+    "p90_m": 0.5586746335029602,
+    "p95_m": 0.6346399784088135
+  },
+  "method": "s2_j",
+  "metrics": {
+    "ct": 0.9982195917343384,
+    "ks": 0.06506457235343836,
+    "tw": 0.998222526526258
+  },
+  "original_result": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\result.json",
+  "peak_vram_bytes": null,
+  "phase": "P2A_R_REUSED_REFERENCE",
+  "source": {
+    "bytes": 504696,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\s2_j\\embedding.npz",
+    "sha256": "4f0de40087b91b011261f8e9e8cdeca43972ccdaff7f4c39ef3649a34e5de4ac"
+  },
+  "status": "FROZEN_REFERENCE",
+  "train_time_s": null
+}

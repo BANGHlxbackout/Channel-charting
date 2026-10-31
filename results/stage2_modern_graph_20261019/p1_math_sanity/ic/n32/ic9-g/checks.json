@@ -1,0 +1,20 @@
+{
+  "alpha": 0.5,
+  "coordinate_results": [
+    {
+      "converged": true,
+      "feasibility": 0.0,
+      "initial_optimal_aux_objective": 1.9043501779208396,
+      "objective": 0.4601215822314136,
+      "objective_decrease": 1.444228595689426,
+      "reference_objective": 0.4601215836094807,
+      "relative_objective_gap": 2.99500643734884e-09,
+      "stationarity": 4.835563567248163e-08
+    }
+  ],
+  "eta": 0.09517167367990964,
+  "kind": "IC9-G",
+  "max_feasibility": 0.0,
+  "max_objective_gap": 2.99500643734884e-09,
+  "max_stationarity": 4.835563567248163e-08
+}

@@ -1,0 +1,155 @@
+[
+  {
+    "N": 32,
+    "method": "SEF",
+    "references": {
+      "E": {
+        "iterations": 9,
+        "reference_objective": 1.7244791119452625,
+        "solve_time_s": 0.0007305,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "Q": [],
+      "S": {
+        "iterations": 12,
+        "reference_objective": 30.375090028829085,
+        "solve_time_s": 0.010985,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "U": null,
+      "Y": {
+        "iterations": 0,
+        "reference_objective": 30.767986802620804,
+        "solve_time_s": 0.0048663,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      }
+    },
+    "relative_solution_errors": {
+      "E": 3.9656780114994305e-10,
+      "S": 8.101213064637901e-07,
+      "Y": 2.9618210552586686e-15,
+      "dual1_update": 3.3861802251067274e-15,
+      "dual4_update": 1.6653345369377348e-16
+    },
+    "status": "PASS",
+    "threshold": 1e-06
+  },
+  {
+    "N": 32,
+    "method": "FE",
+    "references": {
+      "E": {
+        "iterations": 9,
+        "reference_objective": 0.14053277264548597,
+        "solve_time_s": 0.0004624,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "Q": [],
+      "S": {
+        "iterations": 12,
+        "reference_objective": 34.5000528196706,
+        "solve_time_s": 0.0147823,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "U": {
+        "iterations": 0,
+        "reference_objective": 0.14230505007362584,
+        "solve_time_s": 0.0003635,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "Y": {
+        "iterations": 0,
+        "reference_objective": 23.224507683817002,
+        "solve_time_s": 0.0011683,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      }
+    },
+    "relative_solution_errors": {
+      "E": 6.284008665810522e-10,
+      "S": 2.884731891690551e-08,
+      "U": 1.0618388029536083e-11,
+      "Y": 5.0626796174693915e-15,
+      "dual1_update": 2.168404344971009e-15,
+      "dual4_update": 1.6653345369377348e-16
+    },
+    "status": "PASS",
+    "threshold": 1e-06
+  },
+  {
+    "N": 32,
+    "method": "DoT",
+    "references": {
+      "E": {
+        "iterations": 8,
+        "reference_objective": 0.10226991571537042,
+        "solve_time_s": 0.0004327,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "Q": [
+        {
+          "iterations": 7,
+          "reference_objective": 2.8251986564761632e-21,
+          "solve_time_s": 0.0004245,
+          "solver": "CLARABEL",
+          "status": "optimal"
+        },
+        {
+          "iterations": 10,
+          "reference_objective": 0.40500647724263267,
+          "solve_time_s": 0.000576,
+          "solver": "CLARABEL",
+          "status": "optimal"
+        },
+        {
+          "iterations": 8,
+          "reference_objective": 0.1365357960385432,
+          "solve_time_s": 0.0004753,
+          "solver": "CLARABEL",
+          "status": "optimal"
+        }
+      ],
+      "S": {
+        "iterations": 12,
+        "reference_objective": 34.59571476145158,
+        "solve_time_s": 0.0099118,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "U": {
+        "iterations": 0,
+        "reference_objective": 0.36938767134558037,
+        "solve_time_s": 0.0012405,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      },
+      "Y": {
+        "iterations": 0,
+        "reference_objective": 23.204791649668035,
+        "solve_time_s": 0.0030147,
+        "solver": "CLARABEL",
+        "status": "optimal"
+      }
+    },
+    "relative_solution_errors": {
+      "E": 2.3106844953388475e-09,
+      "Q0": 8.56470891945844e-12,
+      "Q1": 1.9908503689799734e-07,
+      "Q2": 1.7164826807127048e-09,
+      "S": 2.0773413710983457e-07,
+      "U": 6.176346157023185e-12,
+      "Y": 4.26099448762794e-15,
+      "dual1_update": 3.2057689836051395e-15,
+      "dual4_update": 1.6653345369377348e-16
+    },
+    "status": "PASS",
+    "threshold": 1e-06
+  }
+]

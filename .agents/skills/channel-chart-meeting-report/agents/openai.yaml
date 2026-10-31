@@ -1,0 +1,3 @@
+interface:
+  display_name: "Channel Charting 组会 Word"
+  short_description: "按历史 Word 样式生成并验收可追溯的中文组会汇报"

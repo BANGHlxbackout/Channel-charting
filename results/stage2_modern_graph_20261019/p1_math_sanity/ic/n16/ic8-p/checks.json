@@ -1,0 +1,30 @@
+{
+  "alpha": 0.5,
+  "coordinate_results": [
+    {
+      "converged": true,
+      "feasibility": 1.892893961680789e-17,
+      "initial_optimal_aux_objective": 1.7248504672722582,
+      "objective": 1.215213792754822,
+      "objective_decrease": 0.5096366745174361,
+      "reference_objective": 1.2152137928167004,
+      "relative_objective_gap": 5.091966585900713e-11,
+      "stationarity": 7.042115152020829e-10
+    },
+    {
+      "converged": true,
+      "feasibility": 0.0,
+      "initial_optimal_aux_objective": 1.2893392240304307,
+      "objective": 0.9492756609620615,
+      "objective_decrease": 0.34006356306836916,
+      "reference_objective": 0.949275660977152,
+      "relative_objective_gap": 1.5896841178966797e-11,
+      "stationarity": 1.4800377973388602e-06
+    }
+  ],
+  "eta": 0.09517167367990964,
+  "kind": "IC8-P",
+  "max_feasibility": 1.892893961680789e-17,
+  "max_objective_gap": 5.091966585900713e-11,
+  "max_stationarity": 1.4800377973388602e-06
+}

@@ -1,0 +1,63 @@
+{
+  "run_id": "p2_baseline_shard4_seed10-lambda_b1.0-lambda_box1.0-powtype0-Pthresh16.2-Mp3-Tc5-Mt0.8-1tperanch-bs100-lr0.001-100epochs-hidden832-fereim-schpar50",
+  "data_path": "D:\\diffusion_refined_charting\\datasets\\P2_shard4",
+  "num_samples": 20997,
+  "train_samples": 16798,
+  "test_samples": 4199,
+  "seed": 10,
+  "learning_type": "Triplet",
+  "feature_method": "reim",
+  "num_epochs": 100,
+  "batch_size": 100,
+  "lambda_b": 1.0,
+  "lambda_box": 1.0,
+  "M_t": 0.8,
+  "M_b": 0.8,
+  "M_p": 3.0,
+  "P_thresh": 16.2,
+  "strict_p2_check": false,
+  "expected_num_samples": 20997,
+  "p2_preflight": {
+    "0": {
+      "users_with_pairs": 18227,
+      "num_pairs": 24972,
+      "num_wrong": 6567,
+      "false_ratio": 0.2629745314752523,
+      "avg_pairs_per_u": 1.1893127589655665
+    },
+    "3": {
+      "users_with_pairs": 6470,
+      "num_pairs": 6805,
+      "num_wrong": 227,
+      "false_ratio": 0.033357825128581924,
+      "avg_pairs_per_u": 0.32409391817878747
+    },
+    "6": {
+      "users_with_pairs": 1614,
+      "num_pairs": 1617,
+      "num_wrong": 0,
+      "false_ratio": 0.0,
+      "avg_pairs_per_u": 0.0770110015716531
+    }
+  },
+  "train": {
+    "KS": 0.2284504920244217,
+    "TW": 0.9621916916146319,
+    "CT": 0.9799878247940039,
+    "mean_error_m": 1.4800000190734863,
+    "median_error_m": 1.2999999523162842,
+    "p90_error_m": 2.640000104904175,
+    "p95_error_m": 3.0999999046325684,
+    "max_error_m": 5.309999942779541
+  },
+  "test": {
+    "KS": 0.22923319041728973,
+    "TW": 0.9611742579968098,
+    "CT": 0.9777274229938399,
+    "mean_error_m": 1.4700000286102295,
+    "median_error_m": 1.2999999523162842,
+    "p90_error_m": 2.619999885559082,
+    "p95_error_m": 3.109999895095825,
+    "max_error_m": 6.050000190734863
+  }
+}

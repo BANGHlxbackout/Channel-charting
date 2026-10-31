@@ -1,0 +1,7 @@
+{
+  "iterations": 18,
+  "reference_objective": 64.00002465568754,
+  "solve_time_s": 0.0681959,
+  "solver": "CLARABEL",
+  "status": "optimal"
+}

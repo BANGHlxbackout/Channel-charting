@@ -1,0 +1,127 @@
+[
+  {
+    "S_row": 0.0,
+    "components": {
+      "fidelity": 0.0,
+      "framelet": 0.0,
+      "group_E": 0.5224670193494082,
+      "l1_S": 190.17539945959734
+    },
+    "degree_definition": "original weighted adjacency row sum; no normalization",
+    "degree_mean": 2.5403645518979925,
+    "degree_min": 0.7419456343509283,
+    "degree_sum": 650.3333252858861,
+    "equality": 0.00038677523589113346,
+    "initialization": "author",
+    "method": "SEF",
+    "missing_historical_state": [
+      "Y",
+      "multipliers",
+      "Q",
+      "Y-row/self residual trajectories",
+      "dual residuals",
+      "per-component objective trajectories"
+    ],
+    "note": "historical missing trajectories must be obtained by instrumented fixed-policy replay; not reconstructed by assumption"
+  },
+  {
+    "S_row": 0.01953216041092587,
+    "components": {
+      "fidelity": 0.32811786573516694,
+      "framelet": 0.0,
+      "group_E": 0.0,
+      "l1_S": 255.99290563016723
+    },
+    "degree_definition": "original weighted adjacency row sum; no normalization",
+    "degree_mean": 2.5403645518979925,
+    "degree_min": 0.7419456343509283,
+    "degree_sum": 650.3333252858861,
+    "equality": 0.002573480307817322,
+    "initialization": "author",
+    "method": "FE",
+    "missing_historical_state": [
+      "Y",
+      "multipliers",
+      "Q",
+      "Y-row/self residual trajectories",
+      "dual residuals",
+      "per-component objective trajectories"
+    ],
+    "note": "historical missing trajectories must be obtained by instrumented fixed-policy replay; not reconstructed by assumption"
+  },
+  {
+    "S_row": 0.0030985359688830982,
+    "components": {
+      "fidelity": 0.3683291277750492,
+      "framelet": 0.0,
+      "group_E": 0.0,
+      "l1_S": 256.0016692493109
+    },
+    "degree_definition": "original weighted adjacency row sum; no normalization",
+    "degree_mean": 2.5403645518979925,
+    "degree_min": 0.7419456343509283,
+    "degree_sum": 650.3333252858861,
+    "equality": 0.0003773182286335654,
+    "initialization": "prior",
+    "method": "FE",
+    "missing_historical_state": [
+      "Y",
+      "multipliers",
+      "Q",
+      "Y-row/self residual trajectories",
+      "dual residuals",
+      "per-component objective trajectories"
+    ],
+    "note": "historical missing trajectories must be obtained by instrumented fixed-policy replay; not reconstructed by assumption"
+  },
+  {
+    "S_row": 0.02374957297347524,
+    "components": {
+      "fidelity": 1.55989528732127,
+      "framelet": 2.303057717881498,
+      "group_E": 0.0,
+      "l1_S": 256.00499932425623
+    },
+    "degree_definition": "original weighted adjacency row sum; no normalization",
+    "degree_mean": 2.5403645518979925,
+    "degree_min": 0.7419456343509283,
+    "degree_sum": 650.3333252858861,
+    "equality": 0.002807908067578111,
+    "initialization": "author",
+    "method": "DoT",
+    "missing_historical_state": [
+      "Y",
+      "multipliers",
+      "Q",
+      "Y-row/self residual trajectories",
+      "dual residuals",
+      "per-component objective trajectories"
+    ],
+    "note": "historical missing trajectories must be obtained by instrumented fixed-policy replay; not reconstructed by assumption"
+  },
+  {
+    "S_row": 0.030618984611461397,
+    "components": {
+      "fidelity": 1.555637004331963,
+      "framelet": 2.3073448720360332,
+      "group_E": 0.0,
+      "l1_S": 255.96005347397318
+    },
+    "degree_definition": "original weighted adjacency row sum; no normalization",
+    "degree_mean": 2.5403645518979925,
+    "degree_min": 0.7419456343509283,
+    "degree_sum": 650.3333252858861,
+    "equality": 0.0032751719232170452,
+    "initialization": "prior",
+    "method": "DoT",
+    "missing_historical_state": [
+      "Y",
+      "multipliers",
+      "Q",
+      "Y-row/self residual trajectories",
+      "dual residuals",
+      "per-component objective trajectories"
+    ],
+    "note": "historical missing trajectories must be obtained by instrumented fixed-policy replay; not reconstructed by assumption"
+  }
+]

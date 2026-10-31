@@ -1,0 +1,8 @@
+{
+  "pid": 40944,
+  "command": "\"D:\\anaconda3\\envs\\diffusion_charting\\python.exe\" -m methods.stage2_modern_graph.ic8_scale_experiment --phase run",
+  "start": "2026-10-20T08:19:19.4427040Z",
+  "stopped": "2026-10-20T09:32:14.6502233Z",
+  "process_wall_time_s": 4375.2075193,
+  "reason": "User-authorized step budget correction; preserve 17 completed configurations and archive partial IC8-q95 eta050; not a numerical failure"
+}

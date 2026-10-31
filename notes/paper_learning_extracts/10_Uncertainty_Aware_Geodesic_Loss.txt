@@ -1,0 +1,204 @@
+FILE: 10_Uncertainty_Aware_Geodesic_Loss.pdf
+PAGES: 8
+TITLE: 
+
+ABSTRACT/FRONT:
+Uncertainty-Aware Dimensionality Reduction for
+Channel Charting with Geodesic Loss
+Florian Euchner , Phillip Stephan , Stephan ten Brink
+Institute of Telecommunications, Pfaffenwaldring 47, University of Stuttgart, 70569 Stuttgart, Germany
+{euchner,stephan,tenbrink}@inue.uni-stuttgart.de
+Abstract—Channel Charting is a dimensionality reduction
+technique that learns to reconstruct a low-dimensional, physically
+interpretable map of the radio environment by taking advantage
+of similarity relationships found in high-dimensional channel
+state information. One particular family of Channel Charting
+methods relies on pseudo-distances between measured CSI data-
+points, computed using dissimilarity metrics. We suggest several
+techniques to improve the performance of dissimilarity metric-
+based Channel Charting. For one, we address an issue related to a
+discrepancy between Euclidean distances and geodesic distances
+that occurs when applying dissimilarity metric-based Channel
+Charting to datasets with nonconvex low-dimensional structure.
+Furthermore, we incorporate the uncertainty of dissimilarities
+into the learning process by modeling dissimilarities not as
+deterministic quantities, but as probability distributions. Our
+framework facilitates the combination of multiple dissimilarity
+metrics in a consistent manner . Additionally, latent space dynam-
+ics like constrained acceleration due to physical inertia are easily
+taken into account thanks to changes in the training procedure.
+We demonstrate the achieved performance improvements for
+localization applications on a measured channel dataset.
+I. I NTRODUCTION
+Wireless Channel Charting [1] is a data-driven machine
+learning method that uses channel state information (CSI)
+available at the base station to learn a map of relative
+user equipment (UE) positions, known as the channel chart.
+By leveraging the concept of dimensionality reduction, the
+channel chart is created without requiring labeled data,
+making Channel Charting a self-supervised technique. The
+learned mapping from high-dimensional CSI space to the
+low-dimensional latent space (the channel chart) is called
+forward charting function (FCF). Having access to an FCF
+and hence relative locations enables various applications, such
+as absolute user localization after appropriate alignment of
+coordinate frames [2], pilot allocation [3], or CSI compression
+for frequency division duplex (FDD) massive multiple-input
+multiple-output (MIMO) [4]. In the context of this work, we
+focus on Channel Charting in a distributed or non-distributed
+(massive) MIMO system for user localization and evaluate
+our proposed technique in terms of localization performance
+metrics. It is, however, reasonable to assume that proposals
+that improve localization accuracy will likely also have a
+positive impact on other applications of Channel Charting.
+This work is supported by the German Federal Ministry of Education and
+Research (BMBF) within the projects Open6GHub (grant no. 16KISK019)
+and KOMSENS-6G (grant no. 16KISK113).
+−10 −6 −2 2
+−15
+−10
+−5
+Coordinate x1 [m]
+Coordinate x2 [m]
+−10 −6 −2 2
+Coordinate x1 [m]
+Fig. 1. Information about dataset and environment: Top view map with
+antenna arrays drawn to scale, their orientation indicated by the green sectors
+(left) and
+
+INTRO:
+
+
+CONCLUSION/LAST:
+not necessarily need to be the very shortest paths through
+the manifold anymore, now that Lgeo as in Sec. VI compares
+path lengths through the channel chart to path lengths through
+the manifold. This is different than with Lsiam, where the
+Euclidean distance in the Channel Chart was used and it was
+very important for the paths to be as straight as possible
+to match the linear, direct path of the Euclidean distance.
+Nevertheless, even with Lgeo, the paths should still be short,
+since q(i,j)
+m may be sub-sampled as previously described.
+Therefore, we suggest the following approach for finding short
+paths (not necessarily short est paths) through the graph G:
+• Generate a realization of d(i,j) | ∆ for every type of
+dissimilarity metric ∆ and every distinct pair / edge (i, j).
+• Construct the fully connected graph G with the realiza-
+tions of d(i,j) | ∆ as edge weights. If there are multiple
+dissimilarity metrics, pick the smallest realization d(i,j)
+for each edge and remember this choice for later.
+• As previously, run the shortest path algorithm on the k-
+neighbors graph of G to find the shortest paths q(i,j)
+m .
+• Repeat this procedure several times and remember all
+q(i,j)
+m . Each time, the shortest paths for one particular
+realization are found, which are short paths when con-
+sidering a graph with probabilistic edge weights.
+Now that we have a collection of short paths q(i,j)
+m , we can
+randomly select a batch of short paths in every training step.
+4) Total Path Lengths: ∆(i,j)
+geo is the sum of individual
+dissimilarities along a path q(i,j)
+m . In the same way, d(i,j)
+geo
+models the distribution of the sum of individual distances d(i,j)
+along the path, that is
+d(i,j)
+geo =
+M (i,j)
+X
+m=1
+d
+
+q(i,j)
+m−1,q(i,j)
+m
+
+∼ N
+
+µ(i,j)
+geo ,
+
+σ(i,j)
+geo
+2
+.
+By modeling all conditional distributions p(d | ∆ADP) as
+Gaussian, we can be sure that the total length d(i,j)
+geo of some
+path q(i,j)
+m is also normally distributed in our model. µ(i,j)
+geo is
+easily determined as the sum of all means along the path, i.e.,
+µ(i,j)
+geo =
+M (i,j)
+X
+m=1
+µ
+
+q(i,j)
+m−1,q(i,j)
+m
+
+where µ
+
+q(i,j)
+m−1,q(i,j)
+m
+
+is the modeled mean of the distribution
+of d(i,j) | ∆ for the remembered choice of dissimilarity metric.
+Computing the variance of d(i,j)
+geo is not as straightforward
+though, since it requires a model for the correlation between
+different dissimilarities to determine the covariances, i.e.,
+
+σ(i,j)
+geo
+2
+=
+Mi,jX
+m=1
+
+σ
+
+q(i,j)
+m−1,q(i,j)
+m
+2
++ 2
+X
+1≤a<b≤m
+Cov (da, db)
+where we used abbreviations da = d
+
+q(i,j)
+a−1 ,q(i,j)
+a
+
+and db =
+d
+
+q(i,j)
+b−1 ,q(i,j)
+b
+
+. Remember that da and db are Gaussian proba-
+bility distributions whose distribution parameters were derived
+from some dissimilarity metric ∆ based on a conditional
+distribution p(d | ∆). da and db may have been derived from
+−10 −5 0−15
+−10
+−5
+Coordinate ˜z1 [m]
+Coordinate ˜z2 [m]
+−10 −6 −2 2
+−10
+−5
+Coordinate ˜z1 [m]
+Coordinate ˜z2 [m]
+Fig. 7. Learned Channel Chart trained on CSI dataset S contai

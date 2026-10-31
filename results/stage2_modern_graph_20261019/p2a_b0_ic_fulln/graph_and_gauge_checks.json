@@ -1,0 +1,32 @@
+{
+  "N": 20997,
+  "center": [
+    -0.14667023454724093,
+    0.05161070973663731
+  ],
+  "graph_source": {
+    "bytes": 11572308,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\G128.npz",
+    "sha256": "7bc0a6ba32199ce248bea5cba886b26953a34b5bb27e08c7b9b60656883231ee"
+  },
+  "ic_weights": {
+    "max": 1.7882410508531559,
+    "mean": 1.0,
+    "min": 0.14777912841434257
+  },
+  "incidence_source": {
+    "bytes": 4854775,
+    "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p0_preflight\\graph\\incidence_D.npz",
+    "sha256": "e719adc3f518d6432733b62945c7d21d7dfa30a0ba52579fc1196bf33b00e257"
+  },
+  "laplacian_incidence_relative_error": 6.302024979491185e-16,
+  "no_GT_in_solver": true,
+  "raw_weights": {
+    "max": 0.9999990463256836,
+    "mean": 0.5592081927929078,
+    "min": 0.08263929933309555
+  },
+  "scale": 233.503696422285,
+  "transformation": "W_IC = original W / original undirected positive-edge mean",
+  "undirected_edges": 1544167
+}

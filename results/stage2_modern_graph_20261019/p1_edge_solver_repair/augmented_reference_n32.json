@@ -1,0 +1,161 @@
+[
+  {
+    "N": 32,
+    "method": "SEF",
+    "references": {
+      "E": {
+        "iterations": 10,
+        "reference_objective": 1.724479111894953,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      },
+      "Q": [],
+      "S": {
+        "iterations": 14,
+        "native_objective": 30.375090028519438,
+        "reference_objective": 30.37509002851955,
+        "relative_objective_gap": 3.7427654573163085e-15,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      },
+      "U": null,
+      "Y": {
+        "iterations": 0,
+        "reference_objective": 30.767986802620804,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      }
+    },
+    "relative_solution_errors": {
+      "E": 3.986874263046256e-12,
+      "S": 2.8745163691695785e-10,
+      "Y": 2.9618210552586686e-15,
+      "dual1_update": 3.3861802251067274e-15,
+      "dual4_update": 1.6653345369377348e-16
+    },
+    "status": "PASS",
+    "threshold": 1e-06
+  },
+  {
+    "N": 32,
+    "method": "FE",
+    "references": {
+      "E": {
+        "iterations": 10,
+        "reference_objective": 0.14053277262396097,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      },
+      "Q": [],
+      "S": {
+        "iterations": 13,
+        "native_objective": 34.50005281962521,
+        "reference_objective": 34.500052819625715,
+        "relative_objective_gap": 1.46227411600567e-14,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      },
+      "U": {
+        "iterations": 0,
+        "reference_objective": 0.14230505007362584,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      },
+      "Y": {
+        "iterations": 0,
+        "reference_objective": 23.224507683817002,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      }
+    },
+    "relative_solution_errors": {
+      "E": 6.286525982543004e-12,
+      "S": 3.2616901122986584e-10,
+      "U": 1.0618388029536083e-11,
+      "Y": 5.0626796174693915e-15,
+      "dual1_update": 2.168404344971009e-15,
+      "dual4_update": 1.6653345369377348e-16
+    },
+    "status": "PASS",
+    "threshold": 1e-06
+  },
+  {
+    "N": 32,
+    "method": "DoT",
+    "references": {
+      "E": {
+        "iterations": 10,
+        "reference_objective": 0.102269915372764,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      },
+      "Q": [
+        {
+          "iterations": 9,
+          "reference_objective": 2.8372236270062693e-29,
+          "solver": "CLARABEL",
+          "status": "optimal",
+          "tolerance": 1e-12
+        },
+        {
+          "iterations": 12,
+          "reference_objective": 0.4050064770760494,
+          "solver": "CLARABEL",
+          "status": "optimal",
+          "tolerance": 1e-12
+        },
+        {
+          "iterations": 9,
+          "reference_objective": 0.13653579602129895,
+          "solver": "CLARABEL",
+          "status": "optimal",
+          "tolerance": 1e-12
+        }
+      ],
+      "S": {
+        "iterations": 14,
+        "native_objective": 34.59571476139335,
+        "reference_objective": 34.59571476139341,
+        "relative_objective_gap": 1.6430768739092973e-15,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      },
+      "U": {
+        "iterations": 0,
+        "reference_objective": 0.36938767134558037,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      },
+      "Y": {
+        "iterations": 0,
+        "reference_objective": 23.204791649668035,
+        "solver": "CLARABEL",
+        "status": "optimal",
+        "tolerance": 1e-12
+      }
+    },
+    "relative_solution_errors": {
+      "E": 2.3812132427025874e-13,
+      "Q0": 8.993981671975122e-16,
+      "Q1": 2.0487065391001584e-11,
+      "Q2": 1.7164954972637786e-11,
+      "S": 1.1542080381526809e-10,
+      "U": 6.176346157023185e-12,
+      "Y": 4.26099448762794e-15,
+      "dual1_update": 3.2057689836051395e-15,
+      "dual4_update": 1.6653345369377348e-16
+    },
+    "status": "PASS",
+    "threshold": 1e-06
+  }
+]

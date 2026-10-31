@@ -1,0 +1,47 @@
+{
+  "alpha": 0.5,
+  "coordinate_results": [
+    {
+      "converged": true,
+      "feasibility": 0.0,
+      "initial_optimal_aux_objective": 1.1728475687677418,
+      "objective": 0.5747679759801937,
+      "objective_decrease": 0.5980795927875481,
+      "reference_objective": 0.5747679760188024,
+      "relative_objective_gap": 6.717262169437845e-11,
+      "stationarity": 1.2598440479442704e-06
+    },
+    {
+      "converged": true,
+      "feasibility": 1.4011629634355847e-17,
+      "initial_optimal_aux_objective": 1.210287229071417,
+      "objective": 0.5612482974400048,
+      "objective_decrease": 0.6490389316314122,
+      "reference_objective": 0.5612482975531714,
+      "relative_objective_gap": 2.0163372914562032e-10,
+      "stationarity": 1.2709258637431968e-06
+    }
+  ],
+  "eta": 0.09517167367990964,
+  "kind": "IC8-P",
+  "localization_errors_after_affine": {
+    "max_m": 0.18722770917858234,
+    "mean_m": 0.06369553551392781,
+    "median_m": 0.05464697075209954,
+    "p90_m": 0.10837212833113759,
+    "p95_m": 0.14310170312458922
+  },
+  "max_feasibility": 1.4011629634355847e-17,
+  "max_objective_gap": 2.0163372914562032e-10,
+  "max_stationarity": 1.2709258637431968e-06,
+  "method": "IC8-P",
+  "metrics": {
+    "ct": 1.0,
+    "ks": 0.05753970108264607,
+    "tw": 1.0
+  },
+  "num_samples": 32,
+  "phase": "P1_synthetic_math",
+  "scope": "synthetic coordinates only; not DICHASUS performance",
+  "status": "completed"
+}

@@ -1,0 +1,139 @@
+FILE: 06_Augmenting_CC_Localization.pdf
+PAGES: 7
+TITLE: 
+
+ABSTRACT/FRONT:
+Augmenting Channel Charting with Classical
+Wireless Source Localization Techniques
+Florian Euchner , Phillip Stephan , Stephan ten Brink
+Institute of Telecommunications, Pfaffenwaldring 47, University of Stuttgart, 70569 Stuttgart, Germany
+{euchner,stephan,tenbrink}@inue.uni-stuttgart.de
+Abstract—Channel Charting aims to construct a map of the
+radio environment by leveraging similarity relationships found in
+high-dimensional channel state information. Although resulting
+channel charts usually accurately represent local neighborhood
+relationships, even under conditions with strong multipath prop-
+agation, they often fall short in capturing global geometric fea-
+tures. On the other hand, classical model-based localization meth-
+ods, such as triangulation and multilateration, can easily localize
+signal sources in the global coordinate frame. However, these
+methods rely heavily on the assumption of line-of-sight channels
+and distributed antenna deployments. Based on measured data,
+we compare classical source localization techniques to channel
+charts with respect to localization performance. We suggest and
+evaluate methods to enhance Channel Charting with model-
+based localization approaches: One approach involves using
+information derived from classical localization methods to map
+channel chart locations to physical positions after conventional
+training of the forward charting function. Foremost, though, we
+suggest to incorporate information from model-based approaches
+during the training of the forward charting function in what
+we call “augmented Channel Charting”. We demonstrate that
+Channel Charting can outperform classical localization methods
+on the considered dataset.
+Index Terms—Channel Charting, massive MIMO, localization
+I. I NTRODUCTION
+Wireless localization systems are commonplace: Smart-
+phones and cars navigate thanks to global navigation satellite
+systems (GNSSs), lost items can be found with the help of
+ultra-wideband (UWB) tags, Bluetooth beacons enable local-
+ization of assets in factories and emergency responders can
+access approximate caller locations determined by the cellular
+network. Many common wireless localization systems rely on
+a few common of techniques to determine the position of user
+equipments (UEs) (like smartphones, becons or cars), namely
+angle of arrival (AoA) estimation and subsequent triangulation,
+time of arrival (ToA) estimation and subsequent multilatera-
+tion, receive power-based multilateration or a combination of
+aforementioned methods. What these localization techniques
+have in common is that they are model-based: They rely on the
+assumption of a certain channel model, for example relying
+on the existence of a sufficiently strong line-of-sight (LoS)
+channel, or assuming a certain fading model with a specific
+path loss coefficient.
+This work is supported by the German Federal Ministry of Education and
+Research (BMBF) within the projects Open6GHub (grant no. 16KISK019)
+and KOMSENS-6G (grant no. 16KISK113).
+More recently, the concept of Channel Charting has been
+introduced [1] as a data-driven approach that learns a so-called
+channel chart, a kind of map of the radio environment. One of
+the initially proposed applications of Channel Charting was
+relative localization, but additional work sugg
+
+INTRO:
+
+
+CONCLUSION/LAST:
+zation
+errors for all classical (maximum likelihood-based) and Channel Charting-
+based methods
+looks very similar to the reference data. The performance
+metrics in Section VI show that augmented Channel Charting
+outperforms all the other source localization techniques.
+VI. R ESULTS , COMPARISON AND CONCLUSION
+The top view maps for different localization techniques are
+shown in Fig. 2 and Fig. 3. Clearly, Fig. 3c approximates the
+“ground truth” positions in Fig. 1c best and also exhibits the
+smallest number of outlier estimates. To compare estimation
+techniques more objectively beyond this visual intuition, we
+introduce a set of formal performance criteria, which are com-
+monly used in literature to quantify localization performance.
+We write the “ground truth” positions as x(l) and the position
+estimates as ˆx(l) and compute the metrics over the complete
+dataset S. First of all, the mean absolute error (MAE) and
+distance root mean square (DRMS) are defined as
+MAE = 1
+L
+LX
+l=1
+∥x(l) − ˆx(l)∥2 and
+DRMS =
+vuut 1
+L
+LX
+l=1
+∥x(l) − ˆx(l)∥2
+2.
+Furtheremore, we define the circular error probable (CEP)
+and the 95 th percentile radius (R95) as the median and 95 th
+percentile of the empirical distribution of the localization error x(l) − ˆx(l) 
+2, and also consider the empirical cumulative
+distribution function (eCDF) of this error. Finally, we borrow
+the well-known dimensionality reduction performance metrics
+continuity (CT) and trustworthiness (TW) (level of preserva-
+tion of local geometry), and Kruskal’s stress (KS) (level of
+preservation of global geometry) from Channel Charting litera-
+ture, as defined, e.g., in [4] or [12]. We abbreviate the classical
+ML-based approach solely relying on ToA information (as in
+III-A) as “ML: ToA”, triangulation, which solely uses AoA
+information (as in III-B) as “ML: AoA” and the classical
+approach with the joint likelihood function (as in III-C) as
+TABLE I
+PERFORMANCE COMPARISON OF ALL CLASSICAL (MAXIMUM LIKELIHOOD -BASED ) AND CHANNEL CHARTING -BASED METHODS
+Loss MAE ↓ DRMS ↓ CEP ↓ R95 ↓ KS ↓ CT/TW ↑
+ML: ToA L(l)
+T oA 2.314 m 3 .090 m 1 .715 m 6 .298 m 0 .980 0 .871/0.933
+ML: AoA L(l)
+AoA 0.909 m 1 .643 m 0 .574 m 2 .563 m 0 .236 0 .932/0.936
+ML: AoA / ToA L(l)
+AoA/T oA 0.676 m 1 .228 m 0 .462 m 1 .763 m 0 .214 0 .965/0.970
+CC: Tc ◦ Cθ L(l)
+siam 0.490 m 0 .584 m 0 .441 m 1 .026 m 0 .071 0.996/0.996
+CC: Cθ,aug L(l)
+aug 0.401 m 0 .483 m 0 .369 m 0 .789 m 0 .070 0.995/0.995
+“ML: AoA/ToA”. We abbreviate the Channel Charting-based
+solution that applies the optimal affine transform (as in IV-D)
+as “CC: Tc ◦ Cθ” and augmented Channel Charting as “CC:
+Cθ,aug.
+The eCDFs in Fig. 4 show, unsurprisingly, that joint
+(AoA/ToA) classical ML optimization outperforms pure tri-
+angulation or multilateration. Pure AoA-based triangulation
+is much better than pure ToA-based multilateration, which is
+expected given the relatively low signal bandwidth and the
+small geometric scale of the measurement environment. Most
+importantly, though, the eCDFs in Fig. 4 also show that the
+two Channel Charting-based methods clearly outperform all
+classical techniques. The same conclusion can be arrived at by
+comparing the performance metrics in Tab. I: The two Channel
+Charting-based techniques outperform the classical methods
+with respect to all

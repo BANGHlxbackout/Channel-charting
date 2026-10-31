@@ -1,0 +1,26 @@
+{
+  "embedding_source": {
+    "bytes": 504696,
+    "path": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\embedding.npz",
+    "sha256": "8382214735e441f2b18905c9e6faa490674d7b0837717170ca3489d01d832d8e"
+  },
+  "evaluation_status": "EVALUATED_FROZEN_PROTOCOL",
+  "localization_errors_after_affine": {
+    "max_m": 7.893630027770996,
+    "mean_m": 0.409347265958786,
+    "median_m": 0.37222808599472046,
+    "p90_m": 0.7141520380973816,
+    "p95_m": 0.8557930588722229
+  },
+  "method": "b0",
+  "metrics": {
+    "ct": 0.9957121024091857,
+    "ks": 0.0840268307097306,
+    "tw": 0.9959871853305127
+  },
+  "original_result": "D:\\diffusion_refined_charting\\results\\adp_old_siamese\\stride1_n20997_seed10\\result.json",
+  "peak_vram_bytes": null,
+  "phase": "P2A_REUSED_FROZEN_REFERENCE",
+  "status": "FROZEN_REFERENCE",
+  "train_time_s": null
+}

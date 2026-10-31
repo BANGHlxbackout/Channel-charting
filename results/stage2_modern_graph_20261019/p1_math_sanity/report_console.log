@@ -1,0 +1,83 @@
+warning: in the working copy of 'common_metrics.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'run_adp_siamese.py', LF will be replaced by CRLF the next time Git touches it
+{
+  "families": {
+    "IC": "PASS",
+    "Framelet": "PASS",
+    "Edge": "FAIL"
+  },
+  "gates": 82,
+  "failures": 9,
+  "comparisons": [
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\edge256\\comparison\\comparison.csv",
+      "N": 256,
+      "metric_subset_size": 51,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n16\\comparison\\comparison.csv",
+      "N": 16,
+      "metric_subset_size": 3,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n32\\comparison\\comparison.csv",
+      "N": 32,
+      "metric_subset_size": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\framelet\\n64\\comparison\\comparison.csv",
+      "N": 64,
+      "metric_subset_size": 12,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n16\\comparison\\comparison.csv",
+      "N": 16,
+      "metric_subset_size": 3,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n32\\comparison\\comparison.csv",
+      "N": 32,
+      "metric_subset_size": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\diffusion_refined_charting\\results\\stage2_modern_graph_20261019\\p1_math_sanity\\ic\\n64\\comparison\\comparison.csv",
+      "N": 64,
+      "metric_subset_size": 12,
+      "status": "PASS"
+    }
+  ],
+  "fixed_controls": {
+    "fe-p-small": {
+      "reference_objective": 262.2734055292899,
+      "comparisons": {
+        "author": {
+          "output_relative_difference": 0.13563421167433137,
+          "structure_frobenius_difference": 11.530698295281967
+        },
+        "prior": {
+          "output_relative_difference": 0.1352226172878888,
+          "structure_frobenius_difference": 11.502251226354577
+        }
+      }
+    },
+    "dot-p-small": {
+      "reference_objective": 263.5951939067354,
+      "comparisons": {
+        "author": {
+          "output_relative_difference": 0.0908201965072169,
+          "structure_frobenius_difference": 11.321899669216233
+        },
+        "prior": {
+          "output_relative_difference": 0.09092383969275718,
+          "structure_frobenius_difference": 11.380192682197581
+        }
+      }
+    }
+  }
+}

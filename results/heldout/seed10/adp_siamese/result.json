@@ -1,0 +1,104 @@
+{
+  "dataset": "datasets\\adp_old_shard4",
+  "distance_run": "results\\heldout\\seed10\\adp_fused_train",
+  "elapsed_s": 3216.92400765419,
+  "history": [
+    {
+      "batch_size": 500,
+      "loss": 33.2582587313652,
+      "lr": 0.01,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 1
+    },
+    {
+      "batch_size": 1000,
+      "loss": 3.7750366226832073,
+      "lr": 0.01,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 2
+    },
+    {
+      "batch_size": 1500,
+      "loss": 3.5165421843528746,
+      "lr": 0.008,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 3
+    },
+    {
+      "batch_size": 2000,
+      "loss": 3.3129844951629637,
+      "lr": 0.004,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 4
+    },
+    {
+      "batch_size": 3000,
+      "loss": 3.228082551956177,
+      "lr": 0.001,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 5
+    },
+    {
+      "batch_size": 4000,
+      "loss": 3.2270546281659924,
+      "lr": 0.0005,
+      "requested_samples": 150000,
+      "samples": 148000,
+      "session": 6
+    },
+    {
+      "batch_size": 5000,
+      "loss": 3.1997693538665772,
+      "lr": 0.0002,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 7
+    },
+    {
+      "batch_size": 6000,
+      "loss": 3.1952281761169434,
+      "lr": 0.0001,
+      "requested_samples": 150000,
+      "samples": 150000,
+      "session": 8
+    }
+  ],
+  "metric_subset_fraction": 0.2,
+  "num_test": 4199,
+  "num_train": 16798,
+  "protocol": "heldout_fcf",
+  "seed": 10,
+  "seed10_historical_visibility": true,
+  "test_localization_errors": {
+    "max_m": 7.52541446685791,
+    "mean_m": 0.5766052007675171,
+    "median_m": 0.5007317066192627,
+    "p90_m": 1.0126441717147827,
+    "p95_m": 1.2026140689849854
+  },
+  "test_metrics": {
+    "ct": 0.9911282190571745,
+    "ks": 0.1083250756004707,
+    "n_neighbors": 209,
+    "tw": 0.9883927439736467
+  },
+  "train_localization_errors": {
+    "max_m": 7.0105180740356445,
+    "mean_m": 0.5628963708877563,
+    "median_m": 0.49238675832748413,
+    "p90_m": 1.003797173500061,
+    "p95_m": 1.1875226497650146
+  },
+  "train_metric_subset_size": 3359,
+  "train_metrics": {
+    "ct": 0.9925912530711863,
+    "ks": 0.10340081649971299,
+    "n_neighbors": 167,
+    "tw": 0.9895761770152316
+  }
+}
