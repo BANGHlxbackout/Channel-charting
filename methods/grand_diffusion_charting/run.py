@@ -291,7 +291,7 @@ def main() -> None:
     parser.add_argument(
         "--device", default="cuda:0" if torch.cuda.is_available() else "cpu"
     )
-    parser.add_argument("--hidden-dim", type=int, default=256)
+    parser.add_argument("--hidden-dim", type=int, default=512)
     parser.add_argument("--dropout", type=float, default=0.1)
     parser.add_argument("--diffusion-steps", type=int, default=8)
     parser.add_argument("--diffusion-time", type=float, default=1.0)
