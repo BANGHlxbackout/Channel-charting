@@ -26,18 +26,17 @@ def _normalise_edge_attr(adp_d: np.ndarray, fused_d: np.ndarray,
 
 
 def build_graph(adp: np.ndarray, fused: np.ndarray, timestamps: np.ndarray,
-                source: str, neighbors: int, device: torch.device
+                source: str, neighbors: int, edge_attr_mode: str,
+                device: torch.device
                 ) -> tuple[dict[str, torch.Tensor], dict[str, Any]]:
-    """Build a symmetric, locally scaled kNN graph and sparse operators.
-
-    The graph is sparse because the channel-charting manifold assumption is
-    local: adding every possible edge is not automatically more informative.
-    """
+    """Build a symmetric, locally scaled kNN graph and sparse operators."""
     n = int(adp.shape[0])
     if adp.shape != (n, n) or fused.shape != (n, n) or len(timestamps) != n:
         raise ValueError("ADP, fused, and timestamp dimensions do not match")
     if source not in {"adp", "fused"}:
         raise ValueError(f"unknown graph source: {source}")
+    if edge_attr_mode not in {"adp", "multiview"}:
+        raise ValueError(f"unknown edge attribute mode: {edge_attr_mode}")
     d_graph = adp if source == "adp" else fused
     k = min(max(2, int(neighbors)), n - 1)
 
@@ -78,6 +77,9 @@ def build_graph(adp: np.ndarray, fused: np.ndarray, timestamps: np.ndarray,
     undirected_attr, attr_scales = _normalise_edge_attr(
         adp_edge, fused_edge, time_edge
     )
+    if edge_attr_mode == "adp":
+        # Controlled setting: the adaptive gate sees ADP edge distance only.
+        undirected_attr[:, 1:] = 0.0
 
     src = np.concatenate((left, right))
     dst = np.concatenate((right, left))
@@ -112,6 +114,7 @@ def build_graph(adp: np.ndarray, fused: np.ndarray, timestamps: np.ndarray,
     component_sizes = np.bincount(labels, minlength=n_components)
     metadata = {
         "graph_source": source,
+        "edge_attr_mode": edge_attr_mode,
         "neighbors_per_node": k,
         "num_nodes": n,
         "num_undirected_edges": int(len(left)),
