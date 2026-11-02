@@ -26,15 +26,15 @@ class ChannelChartingModel(nn.Module):
         self.dropout = nn.Dropout(dropout)
 
         if model_type == "gcn":
+            # Three GCN layers: hidden -> hidden -> 2D chart.
             self.gcn_layers = nn.ModuleList([
-                nn.Linear(hidden_dim, hidden_dim) for _ in range(3)
+                nn.Linear(hidden_dim, hidden_dim),
+                nn.Linear(hidden_dim, hidden_dim),
+                nn.Linear(hidden_dim, 2),
             ])
             self.gcn_norms = nn.ModuleList([
-                nn.LayerNorm(hidden_dim) for _ in range(3)
+                nn.LayerNorm(hidden_dim), nn.LayerNorm(hidden_dim)
             ])
-            self.chart_head = nn.Sequential(
-                nn.Linear(hidden_dim, hidden_dim), nn.GELU(), nn.Linear(hidden_dim, 2)
-            )
         else:
             if model_type == "adaptive":
                 self.edge_projection = nn.Linear(hidden_dim, 16, bias=False)
@@ -158,11 +158,13 @@ class ChannelChartingModel(nn.Module):
         h0 = self._encode(features, chunk_size)
         if self.model_type == "gcn":
             h = h0
-            for layer, norm in zip(self.gcn_layers, self.gcn_norms):
+            for layer_index, layer in enumerate(self.gcn_layers):
                 message = torch.sparse.mm(graph["adj"], h)
-                h = F.gelu(norm(layer(h + message)))
-                h = self.dropout(h)
-            return self.chart_head(h)
+                h = layer(h + message)
+                if layer_index < 2:
+                    h = F.gelu(self.gcn_norms[layer_index](h))
+                    h = self.dropout(h)
+            return h
 
         if self.model_type == "heat":
             states = self._integrate_heat(h0, graph["adj"])
