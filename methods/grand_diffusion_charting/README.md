@@ -10,7 +10,7 @@ Three encoders share the same geodesic pair-distance training objective:
 
 | Model | Propagation | Purpose |
 |---|---|---|
-| `gcn` | Three fixed graph-convolution layers | Controlled GNN baseline, close in spirit to the 2026 Channel Charting graph paper |
+| `gcn` | Three fixed graph-convolution layers | Three-layer GCN with a 512-dimensional CSI projection, aligned with the 2026 Channel Charting graph paper |
 | `heat` | Fixed graph heat equation, solved with RK4 | Test whether multi-scale heat diffusion helps |
 | `adaptive` | Edge-conditioned anisotropic diffusion with a fidelity term | Test whether learned conductance can suppress unreliable propagation |
 
@@ -76,12 +76,14 @@ python -m methods.grand_diffusion_charting.run --distance-run results/adp_fused/
 
 To compare the fused graph, change `--graph-source adp` to `--graph-source fused`. To assess seed sensitivity, repeat with seeds 11 and 12. Keep all other settings identical when comparing models.
 
+The 2026 paper gives k=20 in its graph-construction section and k=30 in its experiment setup. The default k=30 here follows the reported experiment setting.
+
 Useful parameters:
 
 - `--neighbors 30`: kNN degree.
 - `--diffusion-steps 8`: RK4 steps.
 - `--diffusion-time 1.0`: total diffusion time.
-- `--hidden-dim 256`: latent width.
+- `--hidden-dim 512`: latent width; matches the 2026 paper's GNN projection width.
 - `--max-steps 2000`: maximum training steps.
 - `--pairs-per-step 65536`: geodesic pairs per update.
 
