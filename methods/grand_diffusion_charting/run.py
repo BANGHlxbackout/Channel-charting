@@ -85,8 +85,10 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     if not np.all(np.isfinite(adp)) or not np.all(np.isfinite(fused)) or not np.all(np.isfinite(geo)):
         raise ValueError("distance matrices contain non-finite values")
 
-    run_name = (f"{args.model}_{args.features}_{args.graph_source}_k{args.neighbors}_"
-                f"stride{args.stride}_n{n}_seed{args.seed}")
+    run_name = (
+        f"{args.model}_{args.features}_{args.graph_source}_e{args.edge_attr_mode}_"
+        f"k{args.neighbors}_stride{args.stride}_n{n}_seed{args.seed}"
+    )
     out_dir = args.out_dir / run_name
     if out_dir.exists() and any(out_dir.iterdir()) and not args.force:
         raise FileExistsError(
@@ -95,7 +97,8 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     graph, graph_meta = build_graph(
-        adp, fused, timestamps, args.graph_source, args.neighbors, device
+        adp, fused, timestamps, args.graph_source, args.neighbors,
+        args.edge_attr_mode, device
     )
     graph_meta.update({
         "source_distance_run": str(args.distance_run.resolve()),
@@ -216,10 +219,11 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         raise RuntimeError("embedding is non-finite or collapsed")
 
     positions = data.ue_pos[indices]  # Evaluation only.
-    eval_rng = np.random.default_rng(args.seed + 300000)
-    subset = np.sort(eval_rng.choice(
-        n, size=max(1, int(0.2 * n)), replace=False
-    ))
+    # Match the repository's existing G1 evaluation subset exactly.
+    subset = np.asarray(
+        random.Random(args.seed).sample(range(n), max(1, int(0.2 * n))),
+        dtype=np.int64
+    )
     metrics = chart_metrics(positions[subset], embedding[subset])
     errors = localization_error_summary(positions, embedding)
     np.savez(
@@ -240,7 +244,8 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     )
     result = {
         "status": "completed", "model": args.model, "features": args.features,
-        "graph_source": args.graph_source, "dataset": str(args.data_path.resolve()),
+        "graph_source": args.graph_source, "edge_attr_mode": args.edge_attr_mode,
+        "dataset": str(args.data_path.resolve()),
         "distance_run": str(args.distance_run.resolve()), "num_samples": n,
         "stride": args.stride, "seed": args.seed, "input_dim": input_dim,
         "hidden_dim": args.hidden_dim, "neighbors": args.neighbors,
@@ -278,6 +283,7 @@ def main() -> None:
     parser.add_argument("--model", choices=("gcn", "heat", "adaptive"), default="adaptive")
     parser.add_argument("--features", choices=("raw", "acf"), default="raw")
     parser.add_argument("--graph-source", choices=("adp", "fused"), default="adp")
+    parser.add_argument("--edge-attr-mode", choices=("adp", "multiview"), default="adp")
     parser.add_argument("--neighbors", type=int, default=30)
     parser.add_argument("--stride", type=int, default=1)
     parser.add_argument("--max-samples", type=int, default=None)
